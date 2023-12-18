@@ -1,0 +1,23 @@
+name: pre-merge
+on:
+  # push:
+  #   branches:
+  #     - main
+  pull_request:
+
+permissions: write-all
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: ⬇️ Install snap
+        run: sudo apt update && sudo apt install snapd
+
+      - name: ⬇️ Install vale
+        run: sudo snap install vale --edge
+
+      - name: 🧪 Lint distributed contents
+        run: bash ci/vale.bash

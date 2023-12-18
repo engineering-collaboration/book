@@ -1,0 +1,3 @@
+    - [ ] Career paths
+    - [ ] Promotion criteria
+    - [ ] Pay scales

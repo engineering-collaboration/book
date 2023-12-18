@@ -1,2 +1,9 @@
-# book
-The anatomy of collaboration in software presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations.
+# Creating a Book
+
+Once you have the `mkdocs` CLI tool installed, you can use it to create and render a book.
+
+## Serving a book
+
+```sh
+mkdocs serve
+```
