@@ -1,0 +1,90 @@
+site_name: The anatomy of collaboration in software
+repo_url: https://github.com/the-anatomy-of-collaboration/book
+repo_name: the-anatomy-of-collaboration/book
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: src/overrides
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  icon:
+    repo: fontawesome/brands/github 
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: white
+      accent: custom
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.footer
+    - content.action.edit
+    - header.autohide
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.indexes
+    - navigation.tabs
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/daniellanner/
+    - icon: fontawesome/brands/github 
+      link: https://github.com/daniellanner
+    - icon: fontawesome/solid/globe
+      link: https://daniellanner.io
+copyright: Written by <a href="https://daniellanner.io" target="_blank">Daniel Lanner</a>
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Home:
+    - 'index.md'
+  - Book:
+    - Introduction:
+      - './book/introduction/README.md'
+      - Motivation: './book/introduction/motivation.md'
+      - DevOps, DevSecOps, Agile: './book/introduction/agile.md'
+      - Blameless Culture: './book/introduction/culture.md'
+
+    - The anatomy of a software company:
+      - './book/anatomy-of-a-software-company/README.md'
+      - An Enabling Organization: './book/anatomy-of-a-software-company/department-organization.md'
+      - Autonomous team structure: './book/anatomy-of-a-software-company/teams.md'
+      - Internal Supporting Teams: './book/anatomy-of-a-software-company/supporting-teams.md'
+      - Communication Channels: './book/anatomy-of-a-software-company/communications-channels.md'
+      - Team Interactions: './book/anatomy-of-a-software-company/team-interaction-modes.md'
+      - Standardization: './book/anatomy-of-a-software-company/standards.md'
+      - Innersourcing: './book/anatomy-of-a-software-company/innersourcing.md'
+      - Team Education and Training: './book/anatomy-of-a-software-company/team-education.md'
+
+    - The anatomy of managing a team:
+      - './book/anatomy-of-managing-a-team/README.md'
+
+    - The anatomy of a code change:
+      - './book/anatomy-of-a-code-change/README.md'
+
+  - Resources: 'resources.md'
+  - Changelog: 'changelog.md'
