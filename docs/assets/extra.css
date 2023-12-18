@@ -1,0 +1,28 @@
+/*
+Dark theme:
+Night           #14151A
+White           #FFFFFF
+Robin egg blue  #4ECDC4
+Light Red       #FF6B6B
+Naples Yellow   #FFE66D
+*/
+
+[data-md-color-scheme="slate"] {
+    /* background color */
+    --md-default-bg-color: #14151A;
+    /* top bar background color */
+    --md-primary-fg-color: #14151A;
+    /* top bar font color color */
+    --md-primary-bg-color: #ffffff;
+    /* current state anchor color */
+    --md-typeset-a-color:  #ffffff;
+    /* hover color */
+    --md-accent-fg-color:  #4ECDC4;
+  }
+
+  [data-md-color-scheme="default"] {
+    /* current state anchor color */
+    --md-typeset-a-color: #14151A;
+    /* hover color */
+    --md-accent-fg-color: #4ECDC4;
+  }

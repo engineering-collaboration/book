@@ -1,0 +1,68 @@
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+  {{ super() }}
+
+<!-- Hide default rendered content of mkdocs -->
+<style>
+  .md-content__inner {
+    display: none;
+  }
+</style>
+
+<!-- Use stylesheet generated from tailwind -->
+<style>
+  {% include "style.html" %}
+</style>
+<div class="bg-book-night">
+
+  <div class="flex justify-between w-full px-4 py-1 bg-book-naples-yellow">
+    <div class="flex items-center mx-auto">
+        <p class="flex items-center text-sm font-normal text-book-night">
+            <span>⚠️ This book is still <b>in development</b> and released as a preview</span>
+        </p>
+    </div>
+  </div>
+
+  <div class="py-8 px-4 mx-auto max-w-screen-lg lg:py-16">
+      <div class="mb-12">
+          <h1 class="text-white text-xl md:text-3xl font-extrabold mb-2 mt-1">The anatomy of collaboration in software</h1>
+          <p class="text-sm font-normal text-gray-400 mb-6">
+            Software companies are required to adapt to rapid technological, economical, and political change in order to viably compete on any market. This fact introduces the paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
+          </p>
+          <p class="text-sm font-normal text-gray-400 mb-6">
+            <i>The anatomy of collaboration in software</i> presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion will provide us with the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+          </p>
+          
+          <a href="./book/introduction" class="text-sm inline-flex justify-center items-center py-2.5 px-5 font-medium text-center text-book-night rounded-lg bg-book-robin-egg-blue hover:bg-book-tiffany-blue focus:ring-4 focus:ring-book-tiffany-blue">
+              Go to book
+              <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+          </a>
+      </div>
+
+      <div class="mt-4">
+          <h2 class="text-white text-xl font-extrabold mb-2 mt-0">
+              Free and open source
+          </h2>
+          <p class="text-sm font-normal text-gray-400 mb-4">
+            The content of <i>The anatomy of collaboration in software</i> is available open source on GitHub.
+            We believe in shared growth of knowledge and value contributions and edits from the community.
+          </p>
+          <a href="https://github.com/the-anatomy-of-collaboration/book" class="text-book-robin-egg-blue hover:underline font-medium text-sm inline-flex items-center">Visit on GitHub
+              <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+          </a>
+      </div>
+
+  </div>
+</div>
+{% endblock %}
+
+
+
+<!-- Application footer -->
+{% block footer %}{% endblock %}
