@@ -8,7 +8,8 @@ The acronym CI/CD refers to three continuous practices.
 
 It is a software development practice where developers integrate code frequently, and the system automatically builds, tests and deploys the code to production. This helps teams to detect and fix errors quickly, improve collaboration among developers and increase the speed of delivering new features to users.
 
-> The terms **Continuous Deployment** and **Continuous Delivery** have been used interchangeably to such a degree that there's a probable chance our team uses these terms vice versa. I'm not partial to any order. In this text we *deploy* to test (stage) and *deliver* to production (client).
+!!! note
+    The terms **Continuous Deployment** and **Continuous Delivery** have been used interchangeably to such a degree that there's a probable chance our team uses these terms vice versa. I'm not partial to any order. In this text we *deploy* to test (stage) and *deliver* to production (client).
 
 The goal of CI/CD is to reduce the time between writing code and releasing it to production, while ensuring that the code is of high quality and is not prone to errors. Tasks that require no thinking are better than by machines. People are incredibly bad at not thinking and repetition. It's frustrating work that reduces employment satisfaction.
 
@@ -33,11 +34,13 @@ As the CI tests changes to our source code, CD tests the changes to our compiled
 - Running the staged application and the current production application side-by-side with current production data.
 - A beta program of power users that subscribe to so-called *nightly builds*
 
-> Remember the **Change fail rate** of the motivational chapter?
-> 
-> We Expect our change rate to rise while working on our CD. As our company is transitioning to new workflows and tool-sets legacy code will have to be transitioned to work in a new environment. While other metrics may see immediate minor improvement the change rate may initially rise.
 
-# Continuous Delivery
+!!! note
+    Remember the **Change fail rate** of the motivational chapter?
+    
+    We Expect our change rate to rise while working on our CD. As our company is transitioning to new workflows and tool-sets legacy code will have to be transitioned to work in a new environment. While other metrics may see immediate minor improvement the change rate may initially rise.
+
+## Continuous Delivery
 
 Continuous Delivery (CD) is an extension of continuous deployment. It describes the automation process of delivering the tried and tested package from a testing environment to production.
 
@@ -69,7 +72,6 @@ You build it, you own it. Increases transparency, feedback loops, learning for n
 
 Teams that did well with faster lead times and frequent deployments experience reduced stress, seem to manage professional duties more easily during work hours, and report higher employee satisfaction. The developers of these teams also appeared to identify more strongly with the product they worked on and the organization they worked for.
 
-
 ## Shift Left
 
 If people are working around rules, processes or systems because they get in the way that's no use.
@@ -87,7 +89,6 @@ How can tools be used to encourage specific behaviour?
 - Everyone is responsible
 - Configuraiton management
 
-
 ## Shift Left
 
 If we consider our development in a chronological order from left to right, left being the conception of a product, right being the release of the final product, the amount of time needed to fix an error grows exponentially.
@@ -95,7 +96,3 @@ If we consider our development in a chronological order from left to right, left
 Shifting left refers to detecting problems in our project as early as possible and ideally minimize their impact on our project. A bug fixed on the developers machine during development is a lot cheaper than a bug fixed on a live deployment with multiple dependencies.
 
 To quote (TODO: insert dude), shifting left is about "paying attention to the low fuel warning light on an automobile versus running out of gas on the highway".
-
-
-
-
