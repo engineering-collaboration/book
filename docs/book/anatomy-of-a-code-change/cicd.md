@@ -6,14 +6,12 @@ The acronym CI/CD refers to three continuous practices.
 - Continuous Deployment
 - Continuous Delivery
 
-It is a software development practice where developers integrate code frequently, and the system automatically builds, tests and deploys the code to production. This helps teams to detect and fix errors quickly, improve collaboration among developers and increase the speed of delivering new features to users.
+The process describes a software development practice where developers integrate code frequently, and the system automatically builds, tests and deploys the code to production. The integration discipline combined with automation practices support teams to detect and fix errors quickly and increase the speed of delivering new features to users while ensuring that the code is of high quality and is not prone to errors.
 
 !!! note
-    The terms **Continuous Deployment** and **Continuous Delivery** have been used interchangeably to such a degree that there's a probable chance our team uses these terms vice versa. I'm not partial to any order. In this text we *deploy* to test (stage) and *deliver* to production (client).
+    The terms **Continuous Deployment** and **Continuous Delivery** have been used interchangeably to such a degree that there's a probable chance our team uses these terms vice versa. We are not partial to any order. In this text we *deploy* to test (stage) and *deliver* to production (client).
 
-The goal of CI/CD is to reduce the time between writing code and releasing it to production, while ensuring that the code is of high quality and is not prone to errors. Tasks that require no thinking are better than by machines. People are incredibly bad at not thinking and repetition. It's frustrating work that reduces employment satisfaction.
-
-If an organization has no continuous integration strategy in place, it typically is set up to merge all branching source code together on one day (known as *merge day*). The resulting work can be tedious, manual, and time-intensive and slow down release cadence significantly. The procedure to verify a stable version expands from hours to weeks or months as the volume of changes is rampant.
+If an organization has no continuous integration strategy in place, it typically is set up to merge all branching source code together on one day (known as *merge day*). The resulting work is tedious, manual, and time-intensive and slow down release cadence significantly. The procedure to verify a stable version expands from hours to weeks or months as the volume of changes is rampant.
 
 ## Continuous Integration
 
@@ -34,10 +32,9 @@ As the CI tests changes to our source code, CD tests the changes to our compiled
 - Running the staged application and the current production application side-by-side with current production data.
 - A beta program of power users that subscribe to so-called *nightly builds*
 
-
 !!! note
     Remember the **Change fail rate** of the motivational chapter?
-    
+
     We Expect our change rate to rise while working on our CD. As our company is transitioning to new workflows and tool-sets legacy code will have to be transitioned to work in a new environment. While other metrics may see immediate minor improvement the change rate may initially rise.
 
 ## Continuous Delivery
@@ -50,19 +47,26 @@ Continuous delivery is not appropriate for all software projects. It requires a 
 
 ## Responsibility
 
-With CI/CD engineers should be responsible for their individual integrations into the main branch. This has numerous advantages over having dedicated branch masters or build masters. A wide familiarity with our version control tool-set removes hard dependencies on specialized individuals. Instead of extinguishing petty fires and solving day-to-day problems these individuals are now free to build more sophisticated tooling and automate tedious processes.
-
-Engineers integrating into main and verifying their changes work as intended minimizes downstream surprises. If the same person writes the source code, the tests, the documentation and is in charge of integrating the changes successfully, chances are pretty high that unexpected behavior is caught immediately.
-
-Additionally, engineers who supervise their changes from commit to integration to subsequent release identified more strongly with the product they worked on and the organization they worked for. (TODO: insert reference)
-
-Having the engineers be responsible for their individual integrations into the main branch has numerous advantages. A wide familiarity with our version control toolset removes hard dependencies on specialized individuals. Instead of extinguishing petty fires and solving day-to-day problems these individuals are now free to build more sophisticated tooling and automate tedious processes.
+Engineers are responsible for their individual integrations into the main branch and the subsequent deployment to production Engineers integrating into main and verifying their changes work as intended minimizes downstream surprises. If the same person writes the source code, the tests, the documentation and is in charge of integrating the changes successfully, chances are pretty high that unexpected behavior is caught immediately.
 
 Engineers integrating into main and verifying their changes work as intended minimizes downstream surprises.
 
-- Removes branch master or buildmaster
+Additionally, engineers who supervise their changes from commit to integration to subsequent release identified more strongly with the product they worked on and the organization they worked for. (TODO: insert reference)
+
+
+Some organizations employ dedicated build masters or branch masters who's job it is to manage integrations and ensure consistent deployments. This practice leads to unnecessary handoffs and dependencies between teams. Instead of extinguishing petty fires and solving day-to-day problems these individuals are now free to build more sophisticated tooling and automate tedious processes.
+
+## Shift Left
+
+If we consider our development in a chronological order from left to right, left being the conception of a product, right being the release of the final product, the amount of time needed to fix an error grows exponentially.
+
+Shifting left refers to detecting problems in our project as early as possible and ideally minimize their impact on our project. A bug fixed on the developers machine during development is a lot cheaper than a bug fixed on a live deployment with multiple dependencies.
+
+To quote (TODO: insert dude), shifting left is about "paying attention to the low fuel warning light on an automobile versus running out of gas on the highway".
 
 ## Employee satisfaction
+
+Tasks that require no thinking are better than by machines. People are incredibly bad at not thinking and repetition. It's frustrating work that reduces employment satisfaction.
 
 As mentioned, teams that do well with continuous delivery and tracking changes from commit to release identify more strongly with the product they worked on and the organization they worked for.
 
@@ -72,7 +76,7 @@ You build it, you own it. Increases transparency, feedback loops, learning for n
 
 Teams that did well with faster lead times and frequent deployments experience reduced stress, seem to manage professional duties more easily during work hours, and report higher employee satisfaction. The developers of these teams also appeared to identify more strongly with the product they worked on and the organization they worked for.
 
-## Shift Left
+## Owning our pipeline
 
 If people are working around rules, processes or systems because they get in the way that's no use.
 Also make sure that once established, all members are following the processes or systems.
@@ -88,11 +92,3 @@ How can tools be used to encourage specific behaviour?
 - Computers perform repetitive tasks, people solve problems
 - Everyone is responsible
 - Configuraiton management
-
-## Shift Left
-
-If we consider our development in a chronological order from left to right, left being the conception of a product, right being the release of the final product, the amount of time needed to fix an error grows exponentially.
-
-Shifting left refers to detecting problems in our project as early as possible and ideally minimize their impact on our project. A bug fixed on the developers machine during development is a lot cheaper than a bug fixed on a live deployment with multiple dependencies.
-
-To quote (TODO: insert dude), shifting left is about "paying attention to the low fuel warning light on an automobile versus running out of gas on the highway".
