@@ -13,6 +13,9 @@ The process describes a software development practice where developers integrate
 
 If an organization has no continuous integration strategy in place, it typically is set up to merge all branching source code together on one day, known as *merge day*. The resulting work is tedious, manual, and time-intensive. Verifying a stable version this way slows down release cadence from hours to weeks with the high volume of changes.
 
+- Work in Small batches
+- Computers perform repetitive tasks, people solve problems
+
 ## Continuous Integration
 
 Continuous Integration (CI) is as a software development practice where members of a team integrate their work frequently to the shared source code. Each integration is verified by automated builds and tests to detect integration errors as quickly as possible. The fundamental goal of CI is to automatically catch problematic changes as early as possible by continuously assembling and testing complex and rapidly evolving ecosystems.
@@ -57,14 +60,7 @@ Some organizations employ dedicated build masters or branch masters who's job it
 
 Engineers integrating into main and verifying their changes work as intended minimizes downstream surprises. If the same person writes the source code, the tests, the documentation and is in charge of integrating the changes successfully, chances are pretty high that unexpected behavior is caught immediately.
 
-Different developers and different departments have different criteria on how to define successful implementation or collaboration. It is important that each team owns the end-to-end workflow to implement the respective criteria themselves. There is no DevOps department that solves problems for them. DevOps may initially help provide a setup and provide a number of services via a platform, but teams themselves implement and own their ci/cd pipeline.
-
-If people are working around rules, processes or systems because they get in the way that's no use. Also make sure that once established, all members are following the processes or systems. In order to maintain a blameless, learning-focused environment, teams values, culture and tools must match.
-
-- Work in Small batches
-- Computers perform repetitive tasks, people solve problems
-- Everyone is responsible
-- Configuraiton management
+Different departments and developers have different criteria on how to define successful implementation or collaboration. A devops focused enabling team may initially help provide a setup with foundational services, but each vertical team owns and subsequently implement respective end-to-end workflow. Vertical teams design and enforce criteria for the success of the team, as people regularly bypassing rules or processes renders these mute.
 
 ## Employee satisfaction
 
