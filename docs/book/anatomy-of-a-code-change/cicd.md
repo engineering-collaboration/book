@@ -8,15 +8,12 @@ The acronym CI/CD refers to three continuous practices.
 
 The process describes a software development practice where developers integrate code frequently, and the system automatically builds, tests and deploys the code to production. The discipline combined with automation practices support teams to detect and fix errors quickly and increase the speed of delivering new features to users while ensuring that the code is of high quality and resistant to errors.
 
+The biggest asset our employees bring to the company is the experience and skill of solving domain problems creatively. CI/CD shifts the responsibility of mindless repetitive tasks to computers, freeing up our teams to do their best work. 
+
 !!! note
     The terms **Continuous Deployment** and **Continuous Delivery** have been used interchangeably to such a degree that there's a probable chance our team uses these terms vice versa. We are not partial to any order. In this book we *deploy* to test (stage) and *deliver* to production (client).
 
-If an organization has no continuous integration strategy in place, it typically is set up to merge all branching source code together on one day, known as *merge day*. The resulting work is tedious, manual, and time-intensive. Verifying a stable version this way slows down release cadence from hours to weeks with the high volume of changes.
-
-- Work in Small batches
-- Computers perform repetitive tasks, people solve problems
-
-Tasks that require no thinking are better than by machines. Mindless repetition is frustrating work that reduces employment satisfaction.
+If an organization has no continuous integration strategy in place, it typically is set up to merge all branching source code together on one day, known as *merge day*. The resulting work is tedious, manual, and time-intensive. Verifying a stable version this way slows down release cadence from hours to weeks with the high volume of changes. CI/CD with collaborative project management splits work into small batches, minimizing integration work.
 
 ## Continuous Integration
 
