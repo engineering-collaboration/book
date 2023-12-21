@@ -23,7 +23,9 @@ whiteboarding
 overcommunicate
 undercommunicate
 nightly
-[?i]ci
-[?i]cd
-[?i]cicd
-[?i]ci/cd
+ci
+CI
+cd
+CD
+CICD
+cicd
