@@ -2,7 +2,7 @@
 name: 📝 Proofread
 about: Report typos, spelling, or grammar
 title: 📝 Fix error in [chapter]
-labels: patch
+labels: proofread
 assignees: daniellanner
 
 ---

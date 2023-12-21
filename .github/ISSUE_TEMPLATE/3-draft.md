@@ -2,7 +2,7 @@
 name: 🪶 Draft
 about: Write a chapter
 title: 🪶 Draft chapter about [topic]
-labels: major
+labels: draft
 assignees: daniellanner
 
 ---

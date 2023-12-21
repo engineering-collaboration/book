@@ -2,7 +2,7 @@
 name: 🖊️ Edit
 about: Suggest rework of paragraphs or information flow
 title: 🖊️ Edit [improvement] in [chapter]
-labels: minor
+labels: edit
 assignees: daniellanner
 
 ---
