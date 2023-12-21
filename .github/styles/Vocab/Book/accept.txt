@@ -22,3 +22,10 @@ rollout
 whiteboarding
 overcommunicate
 undercommunicate
+nightly
+ci
+CI
+cd
+CD
+CICD
+cicd

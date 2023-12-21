@@ -9,7 +9,7 @@ The practices covered in this part may be extended beyond our engineering depart
 
 The current progress of this section:
 
-- [ ] CICD
+- [x] CICD
 - [ ] Product and implementation decisions
 - [ ] TBD
 - [ ] Commits
