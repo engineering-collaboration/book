@@ -16,6 +16,8 @@ If an organization has no continuous integration strategy in place, it typically
 - Work in Small batches
 - Computers perform repetitive tasks, people solve problems
 
+Tasks that require no thinking are better than by machines. Mindless repetition is frustrating work that reduces employment satisfaction.
+
 ## Continuous Integration
 
 Continuous Integration (CI) is as a software development practice where members of a team integrate their work frequently to the shared source code. Each integration is verified by automated builds and tests to detect integration errors as quickly as possible. The fundamental goal of CI is to automatically catch problematic changes as early as possible by continuously assembling and testing complex and rapidly evolving ecosystems.
@@ -64,14 +66,6 @@ Different departments and developers have different criteria on how to define su
 
 ## Employee satisfaction
 
-Additionally, engineers who supervise their changes from commit to integration to subsequent release identified more strongly with the product they worked on and the organization they worked for.
+According to the study done by Accelerate, teams that did well with CI/CD experience higher employee satisfaction. Trust in our testing and deployment pipeline increases confidence in the work done. This trust not only reduces stress during work hours, but also increases the quality of down time with family and friends.
 
-Tasks that require no thinking are better than by machines. People are incredibly bad at not thinking and repetition. It's frustrating work that reduces employment satisfaction.
-
-As mentioned, teams that do well with continuous delivery and tracking changes from commit to release identify more strongly with the product they worked on and the organization they worked for.
-
-Before implementing CD, the engineers working at the Bing team at Microsoft reported a work/life balance satisfaction score of 38%. After implementing these technical practices, the scores jumped to 75%. The difference is striking. It means the technical staff were better able to manage professional duties during work hours and keep stress of work at work.
-
-You build it, you own it. Increases transparency, feedback loops, learning for next feature. Less friction and turnover compared to "maintenance" engineers.
-
-Teams that did well with faster lead times and frequent deployments experience reduced stress, seem to manage professional duties more easily during work hours, and report higher employee satisfaction. The developers of these teams also appeared to identify more strongly with the product they worked on and the organization they worked for.
+Members of autonomous vertical teams accompany changes through inception, implementation, and release. Teams who release changes autonomously identify more strongly with the product they worked on and the organization they worked for. The saying *You build it, you own it* increases the connection to the feature and supports organic transparency, feedback loops, and learning.
