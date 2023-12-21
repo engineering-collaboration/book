@@ -57,11 +57,10 @@ Using CI/CD to shift left refers to detecting problems in our project as <!-- va
 
 ## Responsibility
 
-Some organizations employ dedicated
 <!-- vale alex.Race = NO -->
-build masters or branch masters
+<!-- build masters branch masters -->
+Some organizations employ dedicated build masters or branch masters who's job it is to manage integrations and ensure consistent deployments. This practice leads to unnecessary handoffs and dependencies between teams. With CI/CD practices within vertical teams engineers are responsible for their individual integrations into the main branch and the subsequent deployment to production.
 <!-- vale alex.Race = YES -->
-who's job it is to manage integrations and ensure consistent deployments. This practice leads to unnecessary handoffs and dependencies between teams. With CI/CD practices within vertical teams engineers are responsible for their individual integrations into the main branch and the subsequent deployment to production.
 
 Engineers integrating into main and verifying their changes work as intended minimizes downstream surprises. When the same person writes the source code, the tests, the documentation and is in charge of integrating the changes, chances are pretty high that unexpected behavior is caught during this process.
 
@@ -71,8 +70,7 @@ Different departments and developers have different criteria on how to define su
 
 According to the study done by Accelerate, teams that did well with CI/CD experience higher employee satisfaction. Trust in our testing and deployment pipeline increases confidence in the work done. This trust reduces stress during work hours and also increases the quality of down time with family and friends.
 
-Members of autonomous vertical teams accompany changes through inception, implementation, and release. Teams who release changes autonomously identify more strongly with the product they worked on and the organization they worked for. The saying
 <!-- vale Vale.Avoid = NO -->
-*you build it, you own it*
+<!-- you build it, you own it -->
+Members of autonomous vertical teams accompany changes through inception, implementation, and release. Teams who release changes autonomously identify more strongly with the product they worked on and the organization they worked for. The saying *you build it, you own it* increases the connection to the feature and supports organic transparency, feedback loops, and learning.
 <!-- vale Vale.Avoid = YES -->
-increases the connection to the feature and supports organic transparency, feedback loops, and learning.
