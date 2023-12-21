@@ -20,9 +20,9 @@ While the structure of this book does follow the reciprocal typical career progr
 
 A couple decades ago the core business of organization was run through sales, marketing, and HR departments. IT was considered a necessary cost factor that was at best overlooked, at worst the first destination of budget cuts. Today, the situation appears to be reversed.
 
-This book covers a lot of ground and not all of it is confined within an engineering frustum. When reading this book, consider how the practices described within can be used in tandem with departments outside of development or ops to inject more efficient communication channels into our iteration process.
+This book covers a lot of ground and not all of it is confined within an engineering frustum. When reading this book, consider how the practices described within can be used in tandem with departments outside of engineering to inject more efficient communication channels into our iteration process.
 
-This book does not include source code, does not advocate for any particular tech stack and does not assume the use of any tool or platform (~*~Part III does expect minor experience in version control).
+This book does not include source code, does not advocate for any particular tech stack, and does not assume the use of any tool or platform (~*~Part III does expect minor experience in version control).
 
 ### This is not a step-by-step guide
 
@@ -36,6 +36,6 @@ That being said, we found the concepts written in this book to be helpful for a 
 
 We avoid the term "best practices" in this book. "Best" is subject to industries, personalities, geographic location, diversity of staff, size of organization, and numerous other factors that using the superlative is pure hubris. The strategies in this book are shared without righteous zeal.
 
-The concepts discussed in this book should be applied by implementing small changes for a limited number of teams. We should start with an isolated team for low cost and low risk to verify the positive effect we intend to implement in our organization.
+The concepts discussed in this book should be applied by implementing small changes for a limited number of teams. We reduce the cost and risk of verifying the positive effect we intend to implement in our organization by testing the changes within an isolated team.
 
 Lastly, while we do our best to keep the language as inclusive as possible there is a non-zero chance that certain words or phrases will not be received in the way they were meant to be. Language is difficult. The written word is difficult. Please read this book with the positive intent that it was penned in.
