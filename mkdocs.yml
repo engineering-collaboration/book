@@ -77,6 +77,7 @@ nav:
       - Communication Channels: './book/anatomy-of-a-software-company/communications-channels.md'
       - Team Interactions: './book/anatomy-of-a-software-company/team-interaction-modes.md'
       - Standardization: './book/anatomy-of-a-software-company/standards.md'
+      - Documenting Decisions: './book/anatomy-of-a-software-company/document-decisions.md'
       - Innersourcing: './book/anatomy-of-a-software-company/innersourcing.md'
       - Team Education and Training: './book/anatomy-of-a-software-company/team-education.md'
 
