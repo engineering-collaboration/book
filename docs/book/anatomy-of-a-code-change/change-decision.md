@@ -1,4 +1,4 @@
-# Feature decisions
+# Game plan
 
 ## Documenting decisions
 
@@ -54,3 +54,4 @@ The implementing engineer utlimately pulls the trigger on the decision and is tr
 Document the decision on whatever platform, or PR, reference the design doc.
 
 
+The implementing engineer has full trust on implementation decisions as long as the output matches the agreed upon design doc. Should implementation decisions turn out to be costly the design doc may be revisited with the stakeholders.
