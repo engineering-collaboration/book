@@ -6,7 +6,7 @@ After product features have been milled into sprint tasks and the tasks assigned
 
 For a majority of changes before diving straight into producing code we write a short design document with behavior expectations. These documents are short references to avoid misunderstandings between all stakeholders in the implementation process and typically contain expected input and output parameters, REST, GRPC or GraphQL schemas or domain specific agreements such as storage decisions based on data access frequency. Design documents are an imperative for larger scoped changes or inter team changes. 
 
-We avoid turning this process into unnecessary red tape by only involving the minimum amount of people and discussing the minimum of shared requirements, typically the engineer implementing the task, an engineer from the customer team, and optionally a tech lead. These conversations happen organically verbally or in team chats. We make it a habit of copying the information to a publicly available platform, preferably in form of [Documenting Decisions]().
+We avoid turning this process into unnecessary red tape by involving the minimum amount of people necessary and strictly discussing the minimum of requirements for the task. The people involved can be limited to the engineer implementing the task, an engineer from the customer team, and optionally a tech lead. These conversations typically happen organically verbally or in team chats. We make it a habit of copying the information to a publicly available platform, preferably in form of [Documenting Decisions]().
 
 ## Existing solutions
 
