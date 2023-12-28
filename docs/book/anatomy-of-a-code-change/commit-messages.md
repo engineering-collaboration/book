@@ -1,5 +1,12 @@
 # Commit messages
 
+# keep commits inherntly consistent
+
+do not mix feauters and whitespace
+bugifxes and feautres
+fixes across different bugs
+commit frequently
+
 Writing commit messages sucks. Keeping messages short, concise and descriptive produces a significant cognitive load. The urge to type "Did things" or "Updated stuff" and be done with is completely natural.
 
 The use of well formed commit messages improves readability and traceability of the repository. Thankfully, there is a set of good practices that can help structure our commit messages and ease cognitive burden.

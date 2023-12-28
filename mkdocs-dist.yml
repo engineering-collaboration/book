@@ -86,6 +86,7 @@ nav:
     - The anatomy of a code change:
       - './book/anatomy-of-a-code-change/README.md'
       - CICD: './book/anatomy-of-a-code-change/cicd.md'
+      - Planning Implementations: './book/anatomy-of-a-code-change/change-decision.md'
 
   - Resources: 'resources.md'
   - Changelog: 'changelog.md'
