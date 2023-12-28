@@ -24,7 +24,7 @@ Recover from down time is the process of identifying a show stopping problem in 
 
 ### Change fail rate
 
-Change fail rate appraises how often the distributed software executable do not match the desired expectations. New code deployments should minimize required unexpected fixes.
+Change fail rate appraises how often the distributed software executable does not match the desired expectations. New code deployments should minimize required unexpected fixes.
 
 ## Metrics by *Accelerate*
 
@@ -35,4 +35,4 @@ The study compared these key capabilities of software distribution between high 
 - **170x** faster mean time to recover from down time
 - **1/5** of fails on changes
 
-Building these paradigms into the core of software development enabled high performers to double the probability of reaching their business goals than low performers across industries and departments. Improving our software delivery effectiveness will improve our ability to incorporate customer feedback more effectively.
+Building these paradigms into the core of software development enabled high performers to double the probability of reaching their business goals compared to low performers across industries and departments. Improving our software delivery effectiveness will improve our ability to incorporate customer feedback more effectively.
