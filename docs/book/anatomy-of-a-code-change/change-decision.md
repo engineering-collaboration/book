@@ -14,7 +14,7 @@ Making decisions is a speculative process. Even ones deduced from considerable e
 
 The more context we are able to give, the more transparent our decision is communicated. We explain the relevant success indicators and evaluate potential options. We include the names and titles of the people involved in the decision as a future contact for context we cannot translate into written form.
 
-Every decision has advantages and disadvantages which are unambiguously weighed against each other. If the decision evaluation process is written down and available, people are more likely to accept a conscious decision and its drawbacks.
+Every decision has advantages and disadvantages which are unambiguously weighed against each other. If the decision evaluation process is written down and available, people are more willing to accept a conscious decision and its drawbacks.
 
 [Red Hat published an article](https://www.redhat.com/architect/architecture-decision-records) about their process of documenting software architecture decisions using *architecture decision records*, but a general base framework for recording decisions includes the following properties.
 
