@@ -29,9 +29,9 @@ Once completed, we merge the changes back into main and delete the development b
 
 ### Release branches (optional)
 
-A branch dedicated to packaging and releasing a version of the product. While development branches are expected to merge back to trunk, a release branch is never merged and is expected to be abandoned eventually. We will talk about release branches in detail in chapter 8.
+Release branches within the context of TBD do not refer to a single parallel branch that releases are merged into. A release branch is a reference to a commit within the main branch. We discuss release branches in details in [Release Mechanisms]().
 
-A release branch offers a certain flexibility for dealing with delivery and deployment, while not hindering Helix engineers at working on the next sprint on the main branch. Note that release branches are **never** merged back to master/main. Ideally, these branches are abandoned or marked as stale after a while. The head of the release branch is the currently published version.
+While development branches are expected to merge back to main, a release branch is never merged and is expected to be eventually abandoned and marked as stale.
 
 ## Feature flags
 

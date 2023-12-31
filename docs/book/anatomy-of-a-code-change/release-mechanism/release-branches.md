@@ -20,3 +20,7 @@ commits on release branches are only bug fixes, not features, never bump the maj
 If storage permits it, archive release branches into separate repos after release cycles
 
 Release branches make the process more complex and more likely to introduce regression bugs.
+
+Long term support versions of app, argument to be made to move to seperate repository.
+
+ The head of the version specific release branch is the latest published patch of that minor version.
