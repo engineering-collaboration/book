@@ -31,7 +31,7 @@ Once completed, we merge the changes back into main and delete the development b
 
 Release branches within the context of TBD do not refer to a single parallel branch that releases are merged into. A release branch is a reference to a commit within the main branch. We discuss release branches in detail in [Release Mechanisms]().
 
-While development branches are expected to merge back to main, a release branch is never merged and is expected to be eventually abandoned and marked as stale.
+While development branches merge back into main, a release branch is never merged and is expected to be eventually abandoned and marked as stale.
 
 ## Feature flags
 
