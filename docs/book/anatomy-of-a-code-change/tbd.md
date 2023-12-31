@@ -8,34 +8,24 @@ TBD centers around enabling Continuous Integration and by extension Continuous D
 
 Published by the titular companies [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow) and [Microsoft Release Flow](https://devblogs.microsoft.com/devops/release-flow-how-we-do-branching-on-the-vsts-team/) are flavours of TBD Differentiating between these concepts is a purely academic exercise. Two variables diverge between the two concepts:
 
-1. Feature branch life time
-2. Release mechanisms
+1. The **life time of our development branches** mapped to (sub)tasks of our assigned work, ranging from a couple hours up to a couple days.
+2. The **release mechanisms** defined to kick off our release procedure and how we deal with hotfixes of live versions.
 
-In praxis, we tune these two variables to the most sensible approach for our teams needs. The practices overlap so magnificently that we feel comfortable calling them near identical. Within this book we refer to all practices via the umbrella term TBD.
-
-### Feature branch life time
-
-In TBD we integrate feature branches into the main branch often and in a timely manner, ranging from within a couple hours up to a couple days. Feature branches map to (sub)tasks of our assigned work.
-
-### Release mechanisms
-
-We will discuss these in detail in chapter 8. Release mechanisms define how we kick off the release procedure and how we deal with hotfixes of live versions.
+We tune these two variables to the most sensible approach for our teams needs. The practices overlap so magnificently that we feel comfortable calling them near identical. Within this book we refer to all practices via the umbrella term TBD.
 
 ## TBD Branches
 
-Branches are a part of your everyday development process. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. The larger the team is, the higher the integration frequency should be. Also eases burden of review as more people are available.
-
 TBD differentiates between three types of branches.
 
-### Trunk
-
-Aka **main branch** aka **master branch**. The branch where **all** other branches diverge from and merge to.
+1. The **main branch** where all other branches diverge from and merge to.
+2. Short-lived **development branches** for working on changes.
+3. Depending on our release strategy, optional long-lived **release branches** dedicated to per release to packaging a version of the product.
 
 ### Development branches
 
-Aka **feature branches**. Short-lived branches for working on features and bug fixes. **All** development branches are branched out of the latest commit of main. Upon completion of the work, the development branch is merged back into main and deleted after a successful integration. If your team uses a ticketing or task tracking system it is generally considered a good idea to reference the ticket in the branch name, e.g. REF-1234-fix-cad-currency.
+For every change to our code base we spawn a new development branch to encapsulate our work. **All** development branches source out of the latest commit of the main branch. During development we commit often to the development branch and push changes to the remote repository to avoid any loss of work due to hardware errors.
 
-During development it is advised to commit often and push these changes to the remote repository to avoid any loss of work due to hardware errors. On the branch the developer goes through the usual cycle of writing tests, writing code, running tests and committing frequently (commits can always be squashed later).
+Once completed, we merge the changes back into main and delete the development branch after the successful integration. The larger the team is, the higher the integration frequency should be.
 
 ### Release branches (optional)
 
