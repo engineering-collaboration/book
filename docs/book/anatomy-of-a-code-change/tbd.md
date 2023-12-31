@@ -29,7 +29,7 @@ Once completed, we merge the changes back into main and delete the development b
 
 ### Release branches (optional)
 
-Release branches within the context of TBD do not refer to a single parallel branch that releases are merged into. A release branch is a reference to a commit within the main branch. We discuss release branches in details in [Release Mechanisms]().
+Release branches within the context of TBD do not refer to a single parallel branch that releases are merged into. A release branch is a reference to a commit within the main branch. We discuss release branches in detail in [Release Mechanisms]().
 
 While development branches are expected to merge back to main, a release branch is never merged and is expected to be eventually abandoned and marked as stale.
 
@@ -51,8 +51,6 @@ This allows teams to experiment with new features, gradually roll out changes to
 
 ## Protected Branches
 
-Protected branches prevent unapproved changed to be integrated into specific branches. Once a branch is protected, only specified users or roles - typically termed *Codeowners* - can make changes to it.
+Protected branches prevent unapproved integrations. Once a branch is protected it authorizes only specified users or roles, termed *codeowners*, to apply changes. Limiting the authorized people helps us to prevent accidental or unintended changes until these have been reviewed and accepted before changes are made to critical parts of a project.
 
-This helps to prevent accidental or unintended changes and promote collaboration and code review. This ensure that only approved changes are made to critical parts of a project.
-
-Deciding if and which branches are protected is a team decision. This is a tool for avoiding *accidental* breaking changes or deployments by building hard dependencies to key personal into your development pipeline. Carefully consider the additional overhead,  redundancies, and overrides needed to maintain continous integration in this environment. You may not want to block the deployment of an urgent hotfix until a code owner has been made available to approve the changes.
+Deciding if and which branches are protected is our teams decision. This is a tool for avoiding *accidental* breaking changes or deployments NOT for building hard dependencies to key personal into your development pipeline. Within teams we offer the option to override the branch protection. Blocking the deployment of an urgent hotfix because of a codeowner's vacation is suboptimal.
