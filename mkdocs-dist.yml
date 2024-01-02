@@ -88,6 +88,7 @@ nav:
       - CICD: './book/anatomy-of-a-code-change/cicd.md'
       - Planning Implementations: './book/anatomy-of-a-code-change/change-decision.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/tbd.md'
+      - Commits: './book/anatomy-of-a-code-change/commit-messages.md'
 
   - Resources: 'resources.md'
   - Changelog: 'changelog.md'
