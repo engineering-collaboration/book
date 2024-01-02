@@ -17,7 +17,8 @@ The use of well formed commit messages improves readability and traceability of 
 
 **Example**
 
-```commit eb0b56b19017ab5c16c745e6da39c53126924ed6  
+```
+commit eb0b56b19017ab5c16c745e6da39c53126924ed6  
 Author: Dinah Mite <dinah.mite@snowtrack.io>  
 Date:   Fri Aug 1 22:57:55 2014 +0200
 
@@ -57,7 +58,8 @@ Git commit messages can contain multiline description paragraphs. If we feel we 
 
 **Example**
 
-```commit eb0b56b19017ab5c16c745e6da39c53126924ed6  
+```
+commit eb0b56b19017ab5c16c745e6da39c53126924ed6  
 Author: Dinah Mite <dinah.mite@snowtrack.io>  
 Date:   Fri Aug 1 22:57:55 2014 +0200
 
