@@ -31,7 +31,7 @@ Once completed, we merge the changes back into main and delete the development b
 
 Release branches within the context of TBD do not refer to a single parallel branch that releases are merged into. A release branch is a reference to a commit within the main branch. We discuss release branches in detail in [Release Mechanisms]().
 
-While development branches merge back into main, a release branch is never merged and is expected to be eventually abandoned and marked as stale.
+While development branches merge back into main, a release branch is never merged and is expected to be <!-- vale write-good.Weasel = NO -->eventually<!-- vale write-good.Weasel = YES --> abandoned and marked as stale.
 
 ## Feature flags
 
@@ -41,7 +41,9 @@ Feature flags are a software development technique that allows us to enable or d
 
 Large features expand our ideal development branch lifetime of a couple days. We break these tasks down to subtasks and integrate our partially done feature work to our main branch periodically. This practice minimizes the risks and review effort of single massive merge requests. Using feature flags, we guard the execution of a set of instructions and prohibit any propagation to exposed UI's or API's.
 
+<!-- vale Vale.Terms = NO -->
 ### Rollout via feature flags
+<!-- vale Vale.Terms = YES -->
 
 Feature flags enable us to devise strategies of releasing software features in a controlled and scalable manner by toggling the visibility and functionality of a feature without having to deploy new code to our application .
 
@@ -49,6 +51,6 @@ This allows our teams to experiment with new features, gradually roll out change
 
 ## Protected Branches
 
-Protected branches prevent unapproved integrations. Once a branch is protected, it authorizes only specified users or roles, termed *codeowners*, to apply changes. Limiting the authorized people fends off accidental or unintended commits until these have been reviewed and accepted before alterations are made to critical parts of a project.
+Protected branches prevent unapproved integrations by authorizing <!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> specified users or roles, termed *codeowners*, to apply changes. Limiting the authorized people fends off accidental or unintended commits until these have been reviewed and accepted before alterations are made to critical parts of a project.
 
 Deciding if and which branches are protected is our teams decision. Protecting branches is a tool for avoiding *accidental* breaking changes or deployments NOT for building hard dependencies to key personal into our development pipeline. Within teams we offer the option to override the branch protection. Blocking the deployment of an urgent hotfix because of a codeowner's vacation is suboptimal.
