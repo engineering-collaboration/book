@@ -19,7 +19,7 @@ TBD differentiates between three types of branches.
 
 1. The **main branch** where all other branches diverge from and merge to.
 2. Short-lived **development branches** for working on changes.
-3. Depending on our release strategy, optional long-lived **release branches** dedicated to per release to packaging a version of the product.
+3. Depending on our release strategy, optional long-lived **release branches** dedicated per release to package a version of the product.
 
 ### Development branches
 
@@ -35,22 +35,20 @@ While development branches merge back into main, a release branch is never merge
 
 ## Feature flags
 
-Feature flags, also known as feature toggles, are a software development technique that allows developers to enable or disable specific features or parts of their application.
-
-Feature flags can be implemented using configuration files, environment variables, or command line flags. They can be used to turn a feature on or off for a specific user, group of users, or for the entire application. This allows teams to test and refine new features without interference.
+Feature flags are a software development technique that allows us to enable or disable specific parts of our application. They toggle software behavior on or off for all users, groups of users, or individual users. This allows our teams to test and refine new features without interference.
 
 ### Guard work in progress
 
-Features that take longer to develop than a couple hours or days should be partially integrated to `main` often to verify that individual parts of our feature compile and work in our program. These partial solutions should be unavailable to other processes and not exposed in the UI. You can use feature flags to prohibit the execution of a set of instructions guarded by the flag.
+Large features expand our ideal development branch lifetime of a couple days. We break these tasks down to subtasks and integrate our partially done feature work to our main branch periodically. This practice minimizes the risks and review effort of single massive merge requests. Using feature flags, we guard the execution of a set of instructions and prohibit any propagation to exposed UI's or API's.
 
 ### Rollout via feature flags
 
-Feature flags can be used for devising strategies of releasing software features in a controlled and scalable manner. They allow developers to toggle the visibility and functionality of a feature in an application without having to deploy new code.
+Feature flags enable us to devise strategies of releasing software features in a controlled and scalable manner by toggling the visibility and functionality of a feature without having to deploy new code to our application .
 
-This allows teams to experiment with new features, gradually roll out changes to a subset of users, and quickly disable a feature if it has unexpected consequences. This helps to increase the speed and efficiency of software delivery, while also providing greater control and stability.
+This allows our teams to experiment with new features, gradually roll out changes to a subset of users, and quickly disable a feature with unexpected consequences. Remotely toggling feature flags increases the speed and efficiency of our software delivery, while also providing greater control and stability.
 
 ## Protected Branches
 
-Protected branches prevent unapproved integrations. Once a branch is protected it authorizes only specified users or roles, termed *codeowners*, to apply changes. Limiting the authorized people helps us to prevent accidental or unintended changes until these have been reviewed and accepted before changes are made to critical parts of a project.
+Protected branches prevent unapproved integrations. Once a branch is protected, it authorizes only specified users or roles, termed *codeowners*, to apply changes. Limiting the authorized people fends off accidental or unintended commits until these have been reviewed and accepted before alterations are made to critical parts of a project.
 
-Deciding if and which branches are protected is our teams decision. This is a tool for avoiding *accidental* breaking changes or deployments NOT for building hard dependencies to key personal into your development pipeline. Within teams we offer the option to override the branch protection. Blocking the deployment of an urgent hotfix because of a codeowner's vacation is suboptimal.
+Deciding if and which branches are protected is our teams decision. Protecting branches is a tool for avoiding *accidental* breaking changes or deployments NOT for building hard dependencies to key personal into our development pipeline. Within teams we offer the option to override the branch protection. Blocking the deployment of an urgent hotfix because of a codeowner's vacation is suboptimal.
