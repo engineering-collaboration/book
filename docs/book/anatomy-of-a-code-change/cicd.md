@@ -17,7 +17,7 @@ If an organization has no continuous integration strategy in place, it typically
 
 ## Continuous Integration
 
-Continuous Integration (CI) is as a software development practice where members of a team integrate their work frequently to the shared source code. Each integration is verified by automated builds and tests to detect integration errors as quickly as possible. The fundamental goal of CI is to automatically catch problematic changes as <!-- vale write-good.Weasel = NO -->early<!-- vale write-good.Weasel = YES --> as possible by continuously assembling and testing complex and rapidly evolving ecosystems.
+Continuous Integration (CI) is a software development practice where members of a team integrate their work frequently to the shared source code. Each integration is verified by automated builds and tests to detect integration errors as quickly as possible. The fundamental goal of CI is to automatically catch problematic changes as <!-- vale write-good.Weasel = NO -->early<!-- vale write-good.Weasel = YES --> as possible by continuously assembling and testing complex and rapidly evolving ecosystems.
 
 This offers verifiable and <!-- vale write-good.Weasel = NO -->timely<!-- vale write-good.Weasel = YES --> proof that the application is good to progress to the next stage. We don't need to hope that all contributors are careful, responsible and thorough; we can just guarantee the working state of our application at various points in time.
 

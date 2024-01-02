@@ -29,3 +29,7 @@ cd
 CD
 CICD
 cicd
+codeowner
+hotfix
+subtask
+UI
