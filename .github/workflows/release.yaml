@@ -45,8 +45,14 @@ jobs:
       with:
         python-version: 3.x
 
+    - name: ⬇️ Install dependencies for social cards
+      run: sudo apt-get update && sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev pngquant
+
     - name: ⬇️ Install mkdocs
       run: pip install mkdocs-material 
+
+    - name: ⬇️ Install social card plugin
+      run: pip install "mkdocs-material[imaging]"
 
     - name: 🤖 Build site
       run: mkdocs build -f mkdocs-dist.yml
