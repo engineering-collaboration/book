@@ -1,0 +1,1 @@
+Advanced users of version control tools may follow the practices outlined within [this GitHub](https://github.blog/2022-06-30-write-better-commits-build-better-projects/) blog article about structuring a story of your commits before merging via merge commit.

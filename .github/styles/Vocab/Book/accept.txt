@@ -33,3 +33,5 @@ codeowner
 hotfix
 subtask
 UI
+whitespace
+IDE

@@ -12,7 +12,7 @@ The current progress of this section:
 - [x] CICD
 - [x] Planning implementations
 - [x] Trunk based development
-- [ ] Commits
+- [x] Commits
 - [ ] Pull Requests
 - [ ] Static Analyses
 - [ ] Code Reviews

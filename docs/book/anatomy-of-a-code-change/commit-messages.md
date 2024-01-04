@@ -1,90 +1,63 @@
-# Commit messages
+# Commits
 
-# keep commits inherntly consistent
+We commit frequently and push changes often. Contrary to our main branch, not all commits to our development branch need to compile or pass tests.
 
-do not mix feauters and whitespace
-bugifxes and feautres
-fixes across different bugs
-commit frequently
+With frequent commits we make our life easier as we have multiple saved states to track and rollback changes during development. Periodically pushing changes stores these at a second site to prevent data loss in case of problems with our development machine.
 
-Writing commit messages sucks. Keeping messages short, concise and descriptive produces a significant cognitive load. The urge to type "Did things" or "Updated stuff" and be done with is completely natural.
+Development commits are viewed less often than merge commits. As we aspire to keep the scope of our chances as small as needed our development commits will seldom be visible in our main branch. We heavily encourage work in progress commits and pushes. Commits can be cleaned up (as discussed in [Merging]()), but progress lost is lost forever.
 
-The use of well formed commit messages improves readability and traceability of the repository. Thankfully, there is a set of good practices that can help structure our commit messages and ease cognitive burden.
+## Commit isolation
 
-- Limit the subject line to 50 characters
-- Capitalize the subject line
-- Do not end the subject line with a period
+When we do find ourselves having introduced unexpected changes to a production service with a large scoped change and development commits, clean commits support future engineers in fixing problems more efficiently and reduce frustration in stressful situations.
 
-**Example**
+Keeping commits inherently consistent streamlines work and improves comparing changes. The changes committed relate with each other and associate with the commit message. As most IDE's visualise the commit message and changes per code line, isolated commits with a well-formed commit message transparently communicate changes. Combining multiple bug fixes and feature development changes into a single commit message muddies the communicated intent of our change.
 
-```commit eb0b56b19017ab5c16c745e6da39c53126924ed6  
-Author: Dinah Mite <dinah.mite@snowtrack.io>  
-Date:   Fri Aug 1 22:57:55 2014 +0200
+As we isolate computational changes, we also avoid wedging in housekeeping alterations. Refactors, variable or method naming updates, and whitespace fixes are committed separately from behavior updates in order to improve the readability of critical diffs.
 
-   Simplify serialize.h's exception handling
-```
+## Commit messages
 
-## Wording of commit subject lines
+The urge to type "Did random things" and be done with is natural. Keeping messages short, concise, and descriptive requires significant cognitive load. Yet, the use of well formed commit messages improves readability and traceability of our changes. Following good practices for structuring our commit messages eases our cognitive burden.
 
-- Use the present tense ("Add feature" not "Added feature")
-- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-- Do not reference issues and pull requests within the subject line
-- Reference issues and pull requests liberally within the description
+### Subject line
 
-A properly formed Git commit subject line should always be able to complete the following sentence:
+- We limit the subject line to 50 characters
+- We capitalize the subject line
+- We do not end the subject line with a period
+- We use the present tense ("Add feature" not "Added feature")
+- We use the imperative mood ("Move cursor to…" not "Moves cursor to…")
 
-"*If applied, this commit will* \<insert our subject line here\>"
+A properly formed Git commit subject line <!-- vale write-good.Weasel = NO -->correctly<!-- vale write-good.Weasel = YES --> completes the following sentence, "**If applied, this commit will** <insert our subject line here\>"
 
-**Example**  
+**If applied, this commit will** Cap the number of threads for concurrent uploads ✅  
+**If applied, this commit will** Capped the number of threads for concurrent uploads ❌  
+**If applied, this commit will** Concurrent uploads now cap the number of threads ❌  
 
-*If applied, this commit will* refactor subsystem X for readability ✅  
-*If applied, this commit will* refactored subsystem X for readability ❌  
-*If applied, this commit will* subsystem X being refactored for Dinah's rebase ❌  
+Within the subject line we disregard implementation strategies, since our fellow developers review the code changes and a glance at the commit diff conveys that information. Commit messages default to commence with the verbs "add", "remove", "update", or "refactor". We can improve our messages by starting the subject line with a representative verb, anchoring future readers to receive information in the intended context.
 
-I find it helpful to start the message with a descriptive verb that does a lot of heavy lifting. I typically try to turn one of the representative words into a verb.
+*Update authentication flow to be streamlined* --> *Streamline authentication flow*  
+*Add authentication for user with OpenID* --> *Authenticate user via OpenID*  
 
-- e.g. *Update authentication flow to be streamlined* --> *Streamline authentication flow*
-- e.g. *Add authentication for user with OpenID* --> *Authenticate user via OpenID*
+### Description paragraph
 
-## Description paragraph
-
-Git commit messages can contain multiline description paragraphs. If we feel we cannot convey necessary information in a 50 character subject append a description using the following format:
+With the dominance of the leading git platforms and trunk based development, description paragraphs have become atypical. Detailed reasoning of changes have moved to [Pull Requests](). Nevertheless, Git commit messages can contain multi-line description paragraphs which are considered well-formed when:
 
 - A commit message consists of a subject line and a description
-- Separate subject from description with a blank line
-- Wrap the description at 72 characters
-- Use the description to explain what and why vs. how
+- We separate subject from description with a blank line
+- We wrap the description at 72 characters
 
 **Example**
 
-```commit eb0b56b19017ab5c16c745e6da39c53126924ed6  
-Author: Dinah Mite <dinah.mite@snowtrack.io>  
-Date:   Fri Aug 1 22:57:55 2014 +0200
-
-   Simplify serialize.h's exception handling
-
-   Remove the 'state' and 'exceptmask' from serialize.h's stream
-   implementations, as well as related methods.
-
-   As exceptmask always included 'failbit', and setstate was always
-   called with bits = failbit, all it did was immediately raise an
-   exception. Get rid of those variables, and replace the setstate
-   with direct exception throwing (which also removes some dead
-   code).
 ```
+commit bef8d931a985b9879a7ca0e4ef07f082bec1a52c
+Author: Daniel Lanner <hello@daniellanner.io>
+Date:   Tue Jan 2 16:10:00 2024 +0100
 
-### When to add description paragraphs
+   Cap the number of threads for concurrent uploads
 
-A detailed message description is helpful for obscure and opaque changes and bug fixes for difficult to reproduce circumstances. 
+   When uploading a high number of items some http calls time out leading
+   to errors. We limit the number of active worker threads to 16 and queue
+   the items to be uploaded.
 
-Do not be hampered by unnecessary zeal. Developers are used to reading code and a quick glance at the diff conways the same amount of information as reading through the message description. More so, as we'll see HOW the changes were made.
-I tend to stick to message subjects only and write commit message descriptions between two and six times per year when I deem it necessary.
+   Failed items are retried as defined in const UPLOAD_MAX_RETRY.
 
-My commit messages were very lax for years. That is until the day I was hunting down an obscure bug that required me to understand certain code changes over the last three years where the original author had already moved to a different company. Let's collectively make each other's life a little bit easier.
-
-## Summary
-
-- Primarily focus on the subject line
-- Find a descriptive verb to start the message with. If we're struggling, fall back to one of the classics (Update, Add, Remove, Refactor, ...).
-- Once in a while, if necessary, add a commit message description paragraph
-- Don't be too hard on ourselves, the commits will be squashed anyway
+```

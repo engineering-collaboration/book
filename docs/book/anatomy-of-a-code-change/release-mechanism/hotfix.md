@@ -4,8 +4,6 @@ It may occur that a certain release may receive some bug reports which cannot wa
 
 As we do not want to maintain multiple differing versions it is imperative to fix these bugs for the current development cycle. We do this as usual by creating a development branch, fixing the bug, submitting a merge request and merging our development branch back to main/master. One additional step is to **cherry pick** the changes of the bugfix to the release branch.
 
-![ubi-release-bug](../uploads/2c2124312e83ec034bf931bf990df53a/ubi-release-bug.png)
-
 This may sometimes need some investigation as the bug may not be reproducible on the main/master branch. It will sometimes not be avoidable to do actual work on the release branch. Should this be the case verify that the fix makes it to main/master to avoid future regressions.
 
 # Fix outdated releases
