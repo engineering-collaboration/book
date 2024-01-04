@@ -4,15 +4,15 @@ We commit frequently and push changes often. Contrary to our main branch, not al
 
 With frequent commits we make our life easier as we have multiple saved states to track and rollback changes during development. Periodically pushing changes stores these at a second site to prevent data loss in case of problems with our development machine.
 
-## Commit Hygiene
+## Commit isolation
 
-Development commits are viewed less often than merge commits. As we aspire to keep the scope of our chances as small as needed our development commits will likely never be visible in our main branch. If we ever do find ourselves having introduced unexpected changes to a production service with a large scoped change, clean commits support future engineers in fixing problems more efficiently and reduce frustration in stressful situations.
+Development commits are viewed less often than merge commits. As we aspire to keep the scope of our chances as small as needed our development commits will likely never be visible in our main branch. We heavily encourage work in progress commits and pushes. Commits can be cleaned up (as discussed in [Merging]()), but progress lost is lost forever.
 
-Keeping commits inherently consistent by subject streamlines work and changes. Most IDE's visualise the commit changes per line. Isolated commits with a well-formed commit message transparently communicates changes. 
+When we do find ourselves having introduced unexpected changes to a production service with a large scoped change and development commits, clean commits support future engineers in fixing problems more efficiently and reduce frustration in stressful situations.
 
-The readability of diff's between commits is greatly improved if whitespace changes are committed separately.
+Keeping commits inherently consistent streamlines work and improves comparing changes. The changes committed relate with each other and associate with the commit message. As most IDE's visualise the commit message and changes per code line, isolated commits with a well-formed commit message transparently communicate changes. Combining multiple bugfixes and feature development changes into a single commit message muddies the communicated intent of our change.
 
-We heavily encourage work in progress commits and pushes. Commits can be cleaned up (as discussed in [Merging]()), but progress lost is lost forever.
+As we isolate computational changes, we also avoid wedging in housekeeping alterations. Refactors, variable or method naming updates, and whitespace fixes are committed separately from behavior updates in order to improve the readability of critical diffs.
 
 ## Commit messages
 
