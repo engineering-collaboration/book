@@ -1,4 +1,4 @@
-# Commits during development
+# Commits
 
 We commit frequently and push changes often. Contrary to our main branch, not all commits to our development branch need to compile or pass tests.
 
