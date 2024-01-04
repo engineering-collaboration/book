@@ -1,10 +1,18 @@
-# Commits
+# Commits during development
 
-keep commits inherntly consistent
-do not mix feauters and whitespace
-bugifxes and feautres
-fixes across different bugs
-commit frequently
+We commit frequently and push changes often. Contrary to our main branch, not all commits to our development branch need to compile or pass tests.
+
+With frequent commits we make our life easier as we have multiple saved states to track and rollback changes during development. Periodically pushing changes stores these at a second site to prevent data loss in case of problems with our development machine.
+
+## Commit Hygiene
+
+Development commits are viewed less often than merge commits. As we aspire to keep the scope of our chances as small as needed our development commits will likely never be visible in our main branch. If we ever do find ourselves having introduced unexpected changes to a production service with a large scoped change, clean commits support future engineers in fixing problems more efficiently and reduce frustration in stressful situations.
+
+Keeping commits inherently consistent by subject streamlines work and changes. Most IDE's visualise the commit changes per line. Isolated commits with a well-formed commit message transparently communicates changes. 
+
+The readability of diff's between commits is greatly improved if whitespace changes are committed separately.
+
+We heavily encourage work in progress commits and pushes. Commits can be cleaned up (as discussed in [Merging]()), but progress lost is lost forever.
 
 ## Commit messages
 
@@ -23,7 +31,6 @@ A properly formed Git commit subject line correctly completes the following sent
 **If applied, this commit will** Cap the number of threads for concurrent uploads ✅  
 **If applied, this commit will** Capped the number of threads for concurrent uploads ❌  
 **If applied, this commit will** Concurrent uploads now cap the number of threads ❌  
-
 
 ### Description paragraph
 
@@ -52,7 +59,6 @@ Date:   Tue Jan 2 16:10:00 2024 +0100
 
 ### Wording
 
-
 A detailed message description is helpful for obscure and opaque changes and bug fixes for difficult to reproduce circumstances. 
 
 I find it helpful to start the message with a descriptive verb that does a lot of heavy lifting. I typically try to turn one of the representative words into a verb.
@@ -64,3 +70,5 @@ Do not be hampered by unnecessary zeal. Developers are used to reading code and 
 I tend to stick to message subjects only and write commit message descriptions between two and six times per year when I deem it necessary.
 
 My commit messages were very lax for years. That is until the day I was hunting down an obscure bug that required me to understand certain code changes over the last three years where the original author had already moved to a different company. Let's collectively make each other's life a little bit easier.
+
+We preface this chapter reiterating that we are not righteous zealots distanced from reality. Let us enjoy our collection of good practices for commits and strive to whichever parts we deem most useful.

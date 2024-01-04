@@ -4,6 +4,11 @@ Pull Requests (PR) aka Merge Requests are a proven strategy of ensuring a high l
 
 The PR is the major process of how code changes are introduced to the product. To streamline this process, define clear guidelines for the pull request process, including the steps that need to be automated, the tools that will be used, and the expected outcomes.
 
+Use common sense to isolate seperate PR and bugfixes. We strive to increase productivity, not slow it down. Seperate PR's are not bureaucratic red tape, but A/B tests of rolling back changes enables us to test regression bugs vs bugs introduced in new features.
+
+bugifxes and feautres
+fixes across different bugs
+
 ### Title
 
 Establish and communicate guidelines for PR titles to ensure consistency across development. These guidelines may cover structural and syntactial language properties of the title.
