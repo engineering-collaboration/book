@@ -1,4 +1,9 @@
-# Supporting Teams
+---
+title: Internal supporting teams
+description: It is common to have complex or shared problems that do not fall may be solved more efficiently by supporting teams within an organization. Besides working directly on public product features. Stream-aligned teams may deliver internal practices.
+---
+
+# Internal supporting teams
 
 !!! abstract "This section is heavily based on the book *Team Topologies*."
 

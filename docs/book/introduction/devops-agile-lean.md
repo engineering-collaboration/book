@@ -1,4 +1,9 @@
-# DevOps, DevSecOps, Agile, Lean
+---
+title: DevOps, Agile, Lean
+description: We prioritize delivering working software as swiftly as possible, and then continuously improving it through a series of iterative cycles. Using this approach we create organic feedback loops between development and customers. 
+---
+
+# DevOps, Agile, Lean
 
 Arguably these terms have become quite fashionable. Most notably "agile" has been a trending term for a while with various flavours popping up over the years and multiple consultancies and tooling providers offer "best practice" solutions.
 

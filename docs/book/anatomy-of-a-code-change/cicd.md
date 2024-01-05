@@ -1,3 +1,8 @@
+---
+title: CI/CD
+description: The process describes a software development practice where developers integrate code frequently, and the system automatically builds, tests and deploys the code to production.
+---
+
 # CI/CD
 
 The acronym CI/CD refers to three continuous practices.

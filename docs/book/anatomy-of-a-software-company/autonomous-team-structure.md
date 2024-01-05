@@ -1,3 +1,10 @@
+---
+title: Autonomous team structure
+description: When teams are partitioned via disciplines, every costumer facing feature has multiple inter-team handoffs and inter-team communication to perform. This approach drastically reduces velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
+---
+
+# Autonomous team structure
+
 ## Org Charts
 
 An Organizational chart (org chart) is a helpful organigram for visualizing the level of responsibility and compliance, essentially illustrating "who is in charge of what and whom". Typically the CEO or board are the ultimate decision makers for problems that make their way to the top of the chart. For day-to-day practices the org chart shows the strategically placed chain of command for each business division. The higher up the org chart we go, the more long-term decisions we encounter.

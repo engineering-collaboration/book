@@ -1,3 +1,8 @@
+---
+title: Innersourcing
+description: Innersourcing is the practice of sharing source code, practices, documentation within an organization. Much like open source projects, the motivation is to reduce duplicate work and increase velocity for market mandated features.
+---
+
 # Innersourcing
 
 Innersourcing is the practice of sharing source code, practices, documentation within an organization. Much like open source projects, the motivation is to reduce duplicate work and increase velocity for market mandated features. Through innersourcing practices and communication channels we share tools, libraries, and platforms globally through our organization.

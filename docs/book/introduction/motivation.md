@@ -1,3 +1,8 @@
+---
+title: Motivation
+description: The book Accelerate by whatnot etc presents the findings of the largest study done in the field of software products and continuous delivery. The study done in 2017 focused on four key capabilities for software product releases.
+---
+
 # Motivation
 
 !!! abstract "This section is heavily based on the book *Accelerate*."
