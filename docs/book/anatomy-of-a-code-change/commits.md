@@ -1,8 +1,13 @@
+---
+title: Commits
+description: Frequent commits make our life easier as we have multiple saved states to track and rollback changes during development. Periodically pushing changes stores these at a second site to prevent data loss in case of problems with our development machine.
+---
+
 # Commits
 
 We commit frequently and push changes often. Contrary to our main branch, not all commits to our development branch need to compile or pass tests.
 
-With frequent commits we make our life easier as we have multiple saved states to track and rollback changes during development. Periodically pushing changes stores these at a second site to prevent data loss in case of problems with our development machine.
+Frequent commits make our life easier as we have multiple saved states to track and rollback changes during development. Periodically pushing changes stores these at a second site to prevent data loss in case of problems with our development machine.
 
 Development commits are viewed less often than merge commits. As we aspire to keep the scope of our chances as small as needed our development commits will seldom be visible in our main branch. We heavily encourage work in progress commits and pushes. Commits can be cleaned up (as discussed in [Merging]()), but progress lost is lost forever.
 

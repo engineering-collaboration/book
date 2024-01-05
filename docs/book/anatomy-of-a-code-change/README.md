@@ -1,3 +1,8 @@
+---
+title: The anatomy of a code change
+description: The anatomy of a code change covers the day-to-day processes for streamlining technical product development. It focuses on a solid foundation of CI/CD which can be extended by our organization. Utilizing automation we can reduce cognitive load and ensure consistent deliveries of our product.
+---
+
 # The anatomy of a code change
 
 !!! note

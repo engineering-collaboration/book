@@ -1,3 +1,8 @@
+---
+title: Trunk based development
+description: Trunk based development (TBD) is a source-control branching model, where we frequently integrate code into a single main branch. By employing TBD techniques we resist any pressure to create other long-lived development branches.
+---
+
 # Trunk based development
 
 Trunk based development (TBD) is a source-control branching model, where we frequently integrate code into a single main branch. By employing TBD techniques we resist any pressure to create other long-lived development branches.

@@ -1,6 +1,6 @@
 ---
 title: CI/CD
-description: A short description
+description: The process describes a software development practice where developers integrate code frequently, and the system automatically builds, tests and deploys the code to production.
 ---
 
 # CI/CD

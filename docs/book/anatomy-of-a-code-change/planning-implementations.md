@@ -1,3 +1,8 @@
+---
+title: Planning implementations
+description: Making decisions is a speculative process. Even ones deduced from considerable experience and data points are still predicting the future. Recording our decision making process and the outcomes improves the precision of our fortune telling over time as we can identify successful and unsuccessful patterns.
+---
+
 # Planning implementations
 
 After product features have been milled into sprint tasks and the tasks assigned to respective teams and engineers, we start planning our implementation.

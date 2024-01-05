@@ -83,19 +83,19 @@ nav:
     - Introduction:
       - './book/introduction/README.md'
       - Motivation: './book/introduction/motivation.md'
-      - DevOps, Agile, Lean: './book/introduction/agile.md'
-      - Blameless Culture: './book/introduction/culture.md'
+      - DevOps, Agile, Lean: './book/introduction/devops-agile-lean.md'
+      - Blameless Culture: './book/introduction/blameless-culture.md'
 
     - The anatomy of a software company:
       - './book/anatomy-of-a-software-company/README.md'
-      - An Enabling Organization: './book/anatomy-of-a-software-company/department-organization.md'
-      - Autonomous team structure: './book/anatomy-of-a-software-company/teams.md'
-      - Internal Supporting Teams: './book/anatomy-of-a-software-company/supporting-teams.md'
-      - Communication Channels: './book/anatomy-of-a-software-company/communications-channels.md'
-      - Team Interactions: './book/anatomy-of-a-software-company/team-interaction-modes.md'
-      - Standardization: './book/anatomy-of-a-software-company/standards.md'
+      - An Enabling Organization: './book/anatomy-of-a-software-company/an-enabling-organization.md'
+      - Autonomous team structure: './book/anatomy-of-a-software-company/autonomous-team-structure.md'
+      - Internal Supporting Teams: './book/anatomy-of-a-software-company/internal-supporting-teams.md'
+      - Communication Channels: './book/anatomy-of-a-software-company/communication-channels.md'
+      - Team Interactions: './book/anatomy-of-a-software-company/team-interactions.md'
+      - Standardization: './book/anatomy-of-a-software-company/standardization.md'
       - Innersourcing: './book/anatomy-of-a-software-company/innersourcing.md'
-      - Team Education and Training: './book/anatomy-of-a-software-company/team-education.md'
+      - Team Education and Training: './book/anatomy-of-a-software-company/team-education-and-training.md'
 
     - The anatomy of managing a team:
       - './book/anatomy-of-managing-a-team/README.md'
@@ -103,9 +103,9 @@ nav:
     - The anatomy of a code change:
       - './book/anatomy-of-a-code-change/README.md'
       - CICD: './book/anatomy-of-a-code-change/cicd.md'
-      - Planning Implementations: './book/anatomy-of-a-code-change/change-decision.md'
-      - Trunk Based Development: './book/anatomy-of-a-code-change/tbd.md'
-      - Commits: './book/anatomy-of-a-code-change/commit-messages.md'
+      - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
+      - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'
+      - Commits: './book/anatomy-of-a-code-change/commits.md'
 
   - Resources: 'resources.md'
   - Changelog: 'changelog.md'
