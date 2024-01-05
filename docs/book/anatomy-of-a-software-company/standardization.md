@@ -1,4 +1,9 @@
-# Standards
+---
+title: Standardization
+description: Standardization is a double edged sword. Though it improves communication across the organization, we might inadvertently limit a teams capabilities to efficiently and creatively do their work.
+---
+
+# Standardization
 
 Autonomous vertical teams eliminate dependencies and handoffs to other teams for a successful application deployment. Yet teams do interact with one another and team members collaborate within a team. To reduce friction across our organization it makes sense to standardize a certain set of dynamic variables.
 

@@ -1,4 +1,9 @@
-# Communication Forms between Teams
+---
+title: Team interactions
+description: Large scale organizations rely on a multitude of autonomous teams solving the respective domain problems in an efficient manner. When autonomous teams interact we ensure distinct ownership and responsibility of the domains by applying communication based on promise theory.
+---
+
+# Team interactions
 
 Conway's law is not defined solely by the architecture of our teams, but these sub systems communicate with each other. Use people who are skilled in technical API design to help build boundaries between teams within an organization.
 

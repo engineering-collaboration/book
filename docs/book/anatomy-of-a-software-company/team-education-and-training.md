@@ -1,4 +1,9 @@
-# Team Education and Training
+---
+title: Team education and training
+description: Our teams and team members grow organically through overcoming challenges within their daily work. In order to build a learning organization our teams and team members also need guidance and coaching to grow into more senior ones. As an organization, we place growth as a specific goal and take actionable steps to increase and share our body of knowledge over time.
+---
+
+# Team education and training
 
 Our teams and team members grow organically through overcoming challenges within their daily work. In order to build a learning organization our teams and team members also need guidance and coaching to grow into more senior ones. As an organization, we place growth as a specific goal and take actionable steps to increase and share our body of knowledge over time.
 

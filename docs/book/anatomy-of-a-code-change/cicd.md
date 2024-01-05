@@ -1,3 +1,8 @@
+---
+title: CI/CD
+description: A short description
+---
+
 # CI/CD
 
 The acronym CI/CD refers to three continuous practices.

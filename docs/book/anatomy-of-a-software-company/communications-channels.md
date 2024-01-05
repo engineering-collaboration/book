@@ -1,3 +1,8 @@
+---
+title: Communication Channels
+description: A broad collection of communication tools allows us to enable channels of various types of information exchange. From low-noise high-concentration work to collaborative work and cross-disciplinary brainstorming.
+---
+
 # Communication Channels
 
 Communication is all exchange of information necessary to complete our task. The typical tools available for us to cultivate levels of communication are (but not limited to):

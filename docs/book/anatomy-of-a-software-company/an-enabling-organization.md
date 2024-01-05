@@ -1,4 +1,9 @@
-# Organization as enabling entity
+---
+title: An enabling organization
+description: Facilitating collaboration structures promotes a collaboration culture and thinking. Facilitating communication channels fosters clean and efficient communication between people. Facilitating transparent requirements for career progression within our organization supports organic professional development of our employees.
+---
+
+# An enabling organization
 
 We cannot change peoples behavior by changing their minds, we change their minds by changing peoples behavior.
 
