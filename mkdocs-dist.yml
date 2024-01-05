@@ -1,4 +1,14 @@
 site_name: The anatomy of collaboration in software
+site_author: Daniel Lanner
+site_url: https://the-anatomy-of-collaboration.io/
+site_description: >-
+  The anatomy of collaboration in software presents a vertical slice of strategies 
+  that have proven useful for a broad spectrum of organizations. This brief literary 
+  excursion provides the foundation for building an autonomous, flexible, and 
+  collaborative environment at the core of our company.
+
+copyright: Written by <a href="https://daniellanner.io" target="_blank">Daniel Lanner</a>
+
 repo_url: https://github.com/the-anatomy-of-collaboration/book
 repo_name: the-anatomy-of-collaboration/book
 edit_uri: edit/main/docs/
@@ -36,6 +46,7 @@ theme:
     - navigation.instant.progress
     - navigation.indexes
     - navigation.tabs
+
 extra:
   social:
     - icon: fontawesome/brands/linkedin
@@ -44,7 +55,16 @@ extra:
       link: https://github.com/daniellanner
     - icon: fontawesome/solid/globe
       link: https://daniellanner.io
-copyright: Written by <a href="https://daniellanner.io" target="_blank">Daniel Lanner</a>
+
+extra_css:
+  - assets/extra.css
+
+plugins:
+  - social:
+      cards_layout_options:
+        background_color: "#14151A"
+        color: "#ffffff"
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -56,9 +76,6 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-extra_css:
-  - assets/extra.css
-
 nav:
   - Home:
     - 'index.md'
@@ -66,7 +83,7 @@ nav:
     - Introduction:
       - './book/introduction/README.md'
       - Motivation: './book/introduction/motivation.md'
-      - DevOps, DevSecOps, Agile: './book/introduction/agile.md'
+      - DevOps, Agile, Lean: './book/introduction/agile.md'
       - Blameless Culture: './book/introduction/culture.md'
 
     - The anatomy of a software company:

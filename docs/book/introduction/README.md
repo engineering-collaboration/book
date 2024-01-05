@@ -1,13 +1,13 @@
 ---
 title: Introduction
-description: The anatomy of collaboration in software presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion will provide us with the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+description: The anatomy of collaboration in software presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
 ---
 
 # Introduction
 
 Software companies are required to adapt to rapid technological, economical, and political change in order to viably compete on any market. This fact introduces the paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 
-*The anatomy of collaboration in software* presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion will provide us with the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+*The anatomy of collaboration in software* presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
 
 ## Structure
 
