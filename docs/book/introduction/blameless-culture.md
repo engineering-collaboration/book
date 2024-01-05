@@ -1,3 +1,8 @@
+---
+title: Blameless culture
+description: When humans are blamed and punished for errors we nourish a self-centered community that opposes transparent communication, which leads to covering up mistakes and pushing them down the line. When discovered in time, these mistakes are costly to fix.
+---
+
 # Blameless culture
 
 When humans are blamed and punished for errors we nourish a self-centered community that opposes transparent communication, which leads to covering up mistakes and pushing them down the line. When discovered in time, these mistakes are costly to fix.
