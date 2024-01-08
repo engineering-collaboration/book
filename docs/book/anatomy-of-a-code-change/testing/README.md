@@ -1,24 +1,22 @@
 # Tests
 
-Throughout our industry people consensually lament the lack of documentation across the board. Testing, contrarily, has become a somewhat divisive topic. If not done adequately for your use case your company might be better off doing significantly less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
+Throughout our industry we consensually lament the lack of documentation across the board. Testing, contrarily, has become a somewhat divisive topic. If not done adequately for our use case we might be better off doing significantly less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
 
-This chapter covers what I have found to be generally most useful. From all the chapters in this book, this is the one you will want to shy away from directly applying to your situation. Successful and sensible testing has to be modeled to your teams needs and evolve over time. Revisit your testing strategy periodically, after significant events, and post mortems.
+This chapter covers what we have found to be generally most useful. From all the chapters in this book, this is the one we shy away from directly applying to our situations. Successful and sensible testing has to be modeled to our teams needs and evolve over time. We revisit our testing strategy periodically, especially after significant events or post mortems.
 
 ## Test Driven Development
 
 A term often cited in software engineering job listings is *Test Driven Development* (TDD). TDD is the practice of writing tests for features before working on the source code of a feature. The feature is complete once the implementation successfully passes all tests and edge cases.
 
-I am not a tremendous advocate of systematic TDD, but I do find the practice encouraging for writing down my strategy to tackle problems in small increments. I find it especially useful for problems that modify data purely in memory.
-
-The upside of TDD sees diminishing returns with growing complexity of implementations. Functions using file i/o, using network i/o, or reliant on environment configurations are difficult to write tests for. Even more so before the implementation is available.
+TBD encourages us to write down a strategy to tackle problems in small increments, especially useful for problems that modify data purely in memory. The upside of TDD sees diminishing returns with growing complexity of implementations. Functions using file i/o, using network i/o, or reliant on environment configurations are difficult to write tests for. Even more so before the implementation is available.
 
 ## When to test what
 
-Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code a varying suite of automated tests ensure the correct integration of code changes at different times.
+Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code change a varying suite of automated tests ensure the correct integration of code changes at different times.
 
-- Unit tests ensure correct behaviour within a system.
-- Integrations tests ensure correct behaviour between embedded or connected systems.
-- End-to-end tests ensure correct behaviour across the entire product.
+- Unit tests (small scoped tests) ensure correct behaviour within a system.
+- Integrations tests (medium scoped tests) ensure correct behaviour between embedded or connected systems.
+- End-to-end tests (large scoped tests) ensure correct behaviour across the entire product.
 
 The nature of these tests are outlined in detail in their individual chapters.
 
