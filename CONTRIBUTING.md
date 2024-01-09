@@ -22,11 +22,19 @@ Contributions are made to this repo via Issues and Pull Requests (PRs). A few ge
 
 ### Issues
 
+No issues are needed for proofreading tasks, minor edits. These changes are low maintenance and can be covered within a PR.
+
+Open issues for requesting additional chapters, major edits, or bugs in the rendered distributed version.
+
 Issues should be used to report problems with the library, request a new feature, or to discuss potential changes before a PR is created. When you create a new Issue, a template will be loaded that will guide you through collecting and providing the information we need to investigate.
 
 If you find an Issue that addresses the problem you're having, please add your own reproduction information to the existing issue rather than creating a new one. Adding a [reaction](https://github.blog/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) can also help be indicating to our maintainers that a particular problem is affecting more than just the reporter.
 
 ## Writing style
+
+The book addresses readers exclusively in the plural first-person form. We do not use "I" or "you".
+
+English prime confines contributors unreasonably while writing. We consider it a good strategy to parse our written 
 
 ## Lint the book
 

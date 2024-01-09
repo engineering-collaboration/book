@@ -1,14 +1,9 @@
 <p align="center">
   <a href="https://www.the-anatomy-of-collaboration.io/">
-    <img src="https://raw.githubusercontent.com/the-anatomy-of-collaboration/book/main/docs/assets/logo.png" width="32" alt="The anatomy of collaboration in software">
+    <img src="https://raw.githubusercontent.com/the-anatomy-of-collaboration/book/main/docs/assets/logo.png" width="64" alt="The anatomy of collaboration in software">
   </a>
 </p>
-
-<p align="center">
-  <strong>
-    The anatomy of collaboration in software
-  </strong>
-</p>
+<br>
 
 The book *The anatomy of collaboration in software* presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
 
@@ -31,9 +26,7 @@ mkdocs serve
 
 ## Contributing
 
-The [contribution guidelines](CONTRIBUTING.md) document the process of installing necessary dependencies and successfully integrating changes.
-
-Check the [issues](https://github.com/the-anatomy-of-collaboration/book/issues) if your desired changes are already being worked on or open an issue before starting to work on any changes. 
+The [contribution guidelines](CONTRIBUTING.md) document the process of installing necessary dependencies and successfully integrating changes. Check the [issues](https://github.com/the-anatomy-of-collaboration/book/issues) and active branches if your desired changes are already being worked on.
 
 ## Versioning
 
