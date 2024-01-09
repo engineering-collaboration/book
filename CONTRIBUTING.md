@@ -13,33 +13,36 @@ Reading and following these guidelines will help us make the contribution proces
 
 ## Getting Started
 
-Contributions are made to this repo via Issues and Pull Requests (PRs). If we have never contributed before, we see [the first timer's guide on the *auth0* blog](https://auth0.com/blog/a-first-timers-guide-to-an-open-source-project/) for resources and tips on how to get started. A few general guidelines:
+Contributions are made to this repo via Issues and Pull Requests (PRs). If we have never contributed before, [the first timer's guide on the *auth0* blog](https://auth0.com/blog/a-first-timers-guide-to-an-open-source-project/) showcases tips on how to get started. A few general guidelines:
 
 - We create Issues for chapter drafts, major edits, and distribution changes before starting any work.
-- No Issues are needed for proofreading tasks and minor edits. Feedback is handled in PR's.
-- We search for existing Issues and PR's before creating our own.
+- No Issues are needed for proofreading tasks and minor edits. Feedback is handled in PRs.
+- We search for existing Issues and PRs before creating our own.
 
-We work hard to makes sure issues are handled in a timely manner but a friendly ping in the comment thread as a reminder is welcome.
+We work hard to ensure issues are handled in a timely manner, but a friendly ping in the comment thread as a reminder is welcome.
 
 ## Prose
 
-The book addresses readers exclusively in the plural first-person form. We do not use "I" or "you".
+The contents of this book follow four basic editorial rules for prose which are enforced with our linting tools.
 
-English prime confines contributors unreasonably while writing. We consider it a good strategy to parse our written 
+- The book addresses readers exclusively in the plural first-person form, *we*. We do not use *I* or *you*.
+- We write with certainty. *Trunk based development can support CI/CD* becomes *Trunk based development supports CI/CD*.
+- We avoid weasel words and unnecessary filler words.
+- When feasible, we prefer English Prime. We avoid all forms of the verb *to be*.
 
 ## Linting
 
-We verify our prose using [vale.sh](), a CLI tool for whatever. Follow the installation instructions here.
+We verify our prose using [vale.sh](), an open-source, command-line tool for editorial style guides. Download and install the tool via [the installation instructions](https://vale.sh/docs/vale-cli/installation/).
 
-This repository contains two mkdocs configurations. `mkdocs.yaml` for local development and `mkdocs-dist.yaml` for building and distributing the published site. The configurations differ mainly in the navigation section.
+This repository contains two MkDocs configurations. `mkdocs.yaml` for local development and `mkdocs-dist.yaml` for building and distributing the published site. The configurations differ mainly in the navigation section.
 
-The bash script located at `ci/vale.bash` parses `mkdocs-dist.yaml` and analysis only chapters to be published. This eliminates noise for work in progress notes when linting our prose using the following command.
+The bash script located at `ci/vale.bash` parses `mkdocs-dist.yaml` and analysis only the chapters to be published. This eliminates noise for work in progress notes when linting our prose using the following command.
 
 ```sh
 bash ci/vale.bash
 ```
 
-PR's will only be integrated with zero errors, warnings, or suggestions.
+PRs will only be integrated with zero errors, warnings, or suggestions.
 
 > When polishing our chapter we comment the line `write-good.E-Prime = NO` in `.vale.ini`. While english prime is too confining of a requirement for integration testing, it does highlight potential writing improvements.
 
