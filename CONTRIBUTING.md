@@ -48,16 +48,14 @@ PRs will only be integrated with zero errors, warnings, or suggestions.
 
 ## Pull Request
 
-In general, PRs should:
+To successfully integrate our changes into the main branch, we follow some basic rules.
 
-- Only fix/add the functionality in question **OR** address wide-spread whitespace/style issues, not both.
-- Address a single concern in the least number of changed lines as possible.
-- Label
-- We keep the commit history clean. Local rebase, and merge using the *Squash and merge* option.
+- For major edits, drafts, and meta changes we open an Issue to discuss our proposal first.
+- We limit the changes to the topic in question.
+- We label our PR accordingly
+- We retain a linear commit history. We rebase locally on latest main and force push our development branch, then merge using the *Squash and merge* option.
 
-For major edits, drafts, and meta changes we open an Issue to discuss our proposal first.
-
-In general, we follow the ["fork-and-pull" Git workflow](https://github.com/susam/gitpr).
+Non-maintainers follow the ["fork-and-pull" Git workflow](https://github.com/susam/gitpr).
 
 1. Fork the repository to your own Github account
 2. Clone the project to your machine
