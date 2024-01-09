@@ -26,7 +26,7 @@ Once installed, we create and render a book using `mkdocs serve`. This command a
 
 ## Contributing
 
-The [contribution guidelines](CONTRIBUTING.md) document guidelines regarding prose and successfully integrating changes.
+The [contribution guidelines](CONTRIBUTING.md) document strategies regarding prose and successfully integrating changes.
 
 ## Versioning
 
