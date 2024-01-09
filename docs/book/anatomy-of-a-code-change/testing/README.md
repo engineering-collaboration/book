@@ -1,8 +1,8 @@
 # Tests
 
-Throughout our industry we consensually lament the lack of documentation across the board. Testing, contrarily, has become a somewhat divisive topic. If not done adequately for our use case we might be better off doing significantly less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
+Throughout our industry we consensually lament the lack of documentation across the board. Testing, contrarily, has become a somewhat divisive topic. If not done adequately for our use case we are better off doing significantly less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
 
-This chapter covers what we have found to be generally most useful. From all the chapters in this book, this is the one we shy away from directly applying to our situations. Successful and sensible testing has to be modeled to our teams needs and evolve over time. We revisit our testing strategy periodically, especially after significant events or post mortems.
+This chapter covers what we have found to be generally most useful. From all the chapters in this book, we discourage directly applying this chapter to our situation. Successful and sensible testing is modeled to our teams needs and evolve over time. We revisit our testing strategy periodically, especially after significant events or post mortems.
 
 ## Test Driven Development
 
@@ -26,13 +26,13 @@ In his 2009 book "Succeeding with agile" Mike Cohn provided the metaphorical rep
 
 The base of the pyramid relies on numerous small-scoped unit tests which are run most frequently. The mid-layer consists of a reduced number of Integration tests. The pinnacle of the pyramid consists of automated end-to-end tests. These require complex setups and long running operations.
 
-From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. This means if we have 1000 SST, we aim for 100 MST, and no more than 10 LST. A common antipattern is what is referred to as a test snow cone, or inverted pyramid. Here, there are little to no small-scoped tests with all the coverage in large-scoped tests. These projects tend to have slow test runs and very long feedback cycles.
+From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. This means if we have 1000 SST, we aim for 100 MST, and no more than 10 LST. A common antipattern is what is referred to as a test snow cone, or inverted pyramid. Here, there are little to no small-scoped tests with all the coverage in large-scoped tests. These projects have slow test runs and very long feedback cycles.
 
 ## Hermetic environments
 
-Tests run on various machines and runners by various users and scripts on various operating systems and environments. Failing tests due to (TODO: synonymon) different environmental configurations are an infuriating hindrance and will most likely build resentment towards writing and executing tests in the first place. For that reason and others a hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful.
+Tests run on various machines and runners by various users and scripts on various operating systems and environments. Failing tests due to drifting environmental configurations are an infuriating hindrance and will build resentment towards writing and executing tests in the first place.
 
-For unit tests this means the set up, execution and tear down of tests should be confined for each unit test. Tests should provide accurate information regardless of the order in which they are run.
+For that reason a hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful. Tests set up, execute and tear down independently and in a confined manner. Tests provide accurate information regardless of the order in which they are run.
 
 For integration tests and end-to-end tests this means the environment and infrastructure they are executed in is provided with the tests themselves. This ensures the environment is consistent across all executions. Using container tools such as Docker and Infrastructure as Code (IaC) workflows ensures consistent configuration across platforms and machines.
 
@@ -54,11 +54,11 @@ See if we can test a higher layer of abstraction of the functionality. If not, t
 
 ## Tests as documentation
 
-Software documentation is notoriously unreliable and it is common for documentation to have a tenuous relationship to the code. Clear and focused tests provide context as to the purpose and limitations of code segments. Additionally, documentation mostly does not cover certain edge cases or default return values. Tests of edge cases demonstrates expected behavior for future developers consuming our code. Writing and executing tests also streamlines pull requests as code reviewers spends less effort verifying the code works as expected if the change has tests that demonstrate code correctness.
+Software documentation is notoriously unreliable and it is common for documentation to have a tenuous relationship to the code. Clear and focused tests provide context as to the purpose and limitations of code segments. Additionally, documentation seldomly covers certain edge cases or default return values. Tests of edge cases demonstrates expected behavior for future developers consuming our code. Writing and executing tests also streamlines pull requests as code reviewers spends less effort verifying the code works as expected if the change has tests that demonstrate code correctness.
 
 ## Who writes tests?
 
-Before tackling the issue of writing tests teams typically agree on tooling. Some languages come with native testing tools, others require frameworks and external dependencies to execute test code. Factor in that different testing stages typically have different requirements and we are faced with quite a collection of tools.
+Before tackling the issue of writing tests teams agree on tooling. Some languages come with native testing tools, others require frameworks and external dependencies to execute test code. Factor in that different testing stages typically have different requirements and we are faced with quite a collection of tools.
 
 It is reasonable to assign the selection, maintenance or development of test tooling to dedicated teams. It is not reasonable, in fact it is highly discouraged, to move the responsibility of testing away from the developer writing the functionality. This change is sometimes introduced when the complexity of testing increases, such as end-to-end tests involving UI, middleware, backend services, and database entries. In order to reduce cycle times it is imperative that developers write, manage, and understand the tests themselves.
 
