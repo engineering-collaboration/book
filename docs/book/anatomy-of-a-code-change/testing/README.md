@@ -14,9 +14,9 @@ TBD encourages us to write down a strategy to tackle problems in small increment
 
 Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code change a varying suite of automated tests ensure the correct integration of code changes at different times.
 
-- Unit tests (small scoped tests) ensure correct behaviour within a system.
-- Integrations tests (medium scoped tests) ensure correct behaviour between embedded or connected systems.
-- End-to-end tests (large scoped tests) ensure correct behaviour across the entire product.
+- Unit tests ([Small Scoped Tests](./small-scoped-tests.md)) ensure correct behavior within a system.
+- Integrations tests ([Medium Scoped Tests](./medium-scoped-tests.md)) ensure correct behavior between embedded or connected systems.
+- End-to-end tests ([Large Scoped Tests](./large-scoped-tests.md)) ensure correct behavior across the entire product.
 
 The nature of these tests are outlined in detail in their individual chapters.
 
@@ -24,15 +24,13 @@ The nature of these tests are outlined in detail in their individual chapters.
 
 In his 2009 book "Succeeding with agile" Mike Cohn provided the metaphorical representation of the testing pyramid. The three layered structure indicates guidelines for the amount of automated testing for each practice.
 
-The foundation of the pyramid consists of small-scoped unit tests. These are the tests you want to have to most of in your project and that you run most frequently.
+The base of the pyramid relies on numerous small-scoped unit tests which are run most frequently. The mid-layer consists of a reduced number of Integration tests. The pinnacle of the pyramid consists of automated end-to-end tests. These require complex setups and long running operations.
 
-Looking upwards you want to have a reduced number of Integration tests. The top of the pyramid consists of automated end-to-end tests. These are typically complex setups and long running operations.
-
-A common antipattern is what is referred to as a test snow cone, or inverted pyramid. Here, there are little to no small-scoped tests with all the coverage in large-scoped tests. These projects tend to have slow test runs and very long feedback cycles.
+From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. This means if we have 1000 SST, we aim for 100 MST, and no more than 10 LST. A common antipattern is what is referred to as a test snow cone, or inverted pyramid. Here, there are little to no small-scoped tests with all the coverage in large-scoped tests. These projects tend to have slow test runs and very long feedback cycles.
 
 ## Hermetic environments
 
-Tests are run on various machines and runners by various users and scripts on various operating systems and environments. Failing tests due to (TODO: synonymon) different environmental configurations are an infuriating hindrance and will most likely build resentment towards writing and executing tests in the first place. For that reason and others a hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful.
+Tests run on various machines and runners by various users and scripts on various operating systems and environments. Failing tests due to (TODO: synonymon) different environmental configurations are an infuriating hindrance and will most likely build resentment towards writing and executing tests in the first place. For that reason and others a hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful.
 
 For unit tests this means the set up, execution and tear down of tests should be confined for each unit test. Tests should provide accurate information regardless of the order in which they are run.
 
@@ -40,25 +38,23 @@ For integration tests and end-to-end tests this means the environment and infras
 
 ## Testing over time
 
-The most important property of your testing suite is that developers have trust in the process. This is not hyperbole and the superlative is earned. Make the former statement your absolute priority.
+The most important property of our testing suite is our developers trust in the process. The superlative is earned and we make the former statement our absolute priority. Tests are added when bugs are reported. Tests are removed when they become brittle, flaky, redundant or even just inconvenient. Tests are moved to be executed at a different time than they are at the moment. The following statements are red flags to be addressed immediately:
 
-This means your tests evolve over time. Tests are added when bugs are reported. Tests are removed when they become brittle, flaky, redundant or even just inconvenient. Tests are moved to be executed at a different time than they are at the moment. The following statements are red flags to be addressed immediately:
+**"All tests passed, except for Test A. That one fails about 60% of the time though, so I'm ignoring it."**
 
-"All tests passed, except for Test A. That one fails about 60% of the time though, so I'm ignoring it."
+Brittle tests normalize the tendency of ignoring failed tests. If that mindset is introduced, our product testing becomes an expensive waste of time instead of a useful tool of shifting left.
 
-Brittle tests normalize the tendency of ignoring failed tests. If that mindset is introduced into your product testing becomes an expensive waste of time instead of a useful tool of shifting left.
-
-"That test takes about 20 minutes, just merge the code now. We don't have time for this!"
+**"That test takes about 20 minutes, just merge the code now. We don't have time for this!"**
 
 Consider removing the test if it doesn't provide the appropriate value. 20 mins is a long time to occupy machines that may be better suited for other jobs. If the test is necessary consider shifting it right, e.g. from pre-merge to post-merge.
 
-"Every time I touch that function the tests fail, it's a huge pain in the ass!"
+**"Every time I touch that function the tests fail, it's a huge pain in the ass!"**
 
-See if you can test a higher layer of abstraction of the functionality. If not, throw it away. the upmost priority is not building resentment towards processes and having developers actively use the automated test suite.
+See if we can test a higher layer of abstraction of the functionality. If not, throw it away. the upmost priority is not building resentment towards processes and having developers actively use the automated test suite.
 
 ## Tests as documentation
 
-Software documentation is notoriously unreliable and it is common for documentation to have a tenuous relationship to the code. Clear and focused tests provide context as to the purpose and limitations of code segments. Additionally, documentation mostly does not cover certain edge cases or default return values. Tests of edge cases demonstrates expected behavior for future developers consuming your code. Writing and executing tests also streamlines pull requests as code reviewers spends less effort verifying the code works as expected if the change has tests that demonstrate code correctness.
+Software documentation is notoriously unreliable and it is common for documentation to have a tenuous relationship to the code. Clear and focused tests provide context as to the purpose and limitations of code segments. Additionally, documentation mostly does not cover certain edge cases or default return values. Tests of edge cases demonstrates expected behavior for future developers consuming our code. Writing and executing tests also streamlines pull requests as code reviewers spends less effort verifying the code works as expected if the change has tests that demonstrate code correctness.
 
 ## Who writes tests?
 

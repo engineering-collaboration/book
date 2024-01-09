@@ -121,10 +121,9 @@ nav:
       - Testing:
         - Testing: './book/anatomy-of-a-code-change/testing/README.md'
         - Good Practices: './book/anatomy-of-a-code-change/testing/best-practices.md'
-        - Small Scoped Tests: './book/anatomy-of-a-code-change/testing/unit-tests.md'
-        - Medium Scoped Tests: './book/anatomy-of-a-code-change/testing/integration-tests.md'
-        - Large Scoped Tests: './book/anatomy-of-a-code-change/testing/e2e-tests.md'
-        - Test Data: './book/anatomy-of-a-code-change/testing/test-data.md'
+        - Small Scoped Tests: './book/anatomy-of-a-code-change/testing/small-scoped-tests.md'
+        - Medium Scoped Tests: './book/anatomy-of-a-code-change/testing/medium-scoped-tests.md'
+        - Large Scoped Tests: './book/anatomy-of-a-code-change/testing/large-scoped-tests.md'
         - Manual Testing: './book/anatomy-of-a-code-change/testing/manual-tests.md'
         - Benchmark Tests: './book/anatomy-of-a-code-change/testing/benchmark-tests.md'
         - Testing in Production: './book/anatomy-of-a-code-change/testing/in-production.md'
