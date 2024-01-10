@@ -108,6 +108,7 @@ nav:
       - Commits: './book/anatomy-of-a-code-change/commits.md'
       - Testing:
         - './book/anatomy-of-a-code-change/testing/README.md'
+        - Good Practices: './book/anatomy-of-a-code-change/testing/good-practices.md'
 
   - Resources: 'resources.md'
   - Changelog: 'changelog.md'
