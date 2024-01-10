@@ -119,7 +119,7 @@ nav:
         - Summary: './book/anatomy-of-a-code-change/merge/summary.md'
 
       - Testing:
-        - Testing: './book/anatomy-of-a-code-change/testing/README.md'
+        - './book/anatomy-of-a-code-change/testing/README.md'
         - Good Practices: './book/anatomy-of-a-code-change/testing/best-practices.md'
         - Small Scoped Tests: './book/anatomy-of-a-code-change/testing/small-scoped-tests.md'
         - Medium Scoped Tests: './book/anatomy-of-a-code-change/testing/medium-scoped-tests.md'

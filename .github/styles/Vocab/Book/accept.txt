@@ -2,6 +2,7 @@ Bottcher
 Etha
 Bernstain
 Lazer
+Cohn
 API
 CTO
 daily
@@ -35,3 +36,5 @@ subtask
 UI
 whitespace
 IDE
+expectedly
+middleware

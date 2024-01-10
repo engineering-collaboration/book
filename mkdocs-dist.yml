@@ -106,6 +106,8 @@ nav:
       - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'
       - Commits: './book/anatomy-of-a-code-change/commits.md'
+      - Testing:
+        - './book/anatomy-of-a-code-change/testing/README.md'
 
   - Resources: 'resources.md'
   - Changelog: 'changelog.md'
