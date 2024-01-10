@@ -8,7 +8,7 @@ This chapter covers what we have found to be generally most useful. From all the
 
 A term often cited in software engineering job listings is *Test Driven Development* (TDD). TDD is the practice of writing tests for features before working on the source code of a feature. The feature is complete once the implementation successfully passes all tests and edge cases.
 
-TBD encourages us to write down a strategy to tackle problems in small increments, especially useful for problems that modify data purely in memory. The upside of TDD sees diminishing returns with growing complexity of implementations. Functions using file i/o, using network i/o, or reliant on environment configurations are difficult to write tests for. Even more so before the implementation is available.
+TDD encourages us to write down a strategy to tackle problems in small increments, especially useful for problems that modify data purely in memory. The upside of TDD sees diminishing returns with growing complexity of implementations. Functions using file i/o, using network i/o, or reliant on environment configurations are difficult to write tests for. Even more so before the implementation is available.
 
 ## When to test what
 
@@ -54,7 +54,9 @@ See if we can test a higher layer of abstraction of the functionality. If not, t
 
 ## Tests as documentation
 
-Software documentation is notoriously unreliable and it is common for documentation to have a tenuous relationship to the code. Clear and focused tests provide context as to the purpose and limitations of code segments. Additionally, documentation seldomly covers certain edge cases or default return values. Tests of edge cases demonstrates expected behavior for future developers consuming our code. Writing and executing tests also streamlines pull requests as code reviewers spends less effort verifying the code works as expected if the change has tests that demonstrate code correctness.
+Software documentation is notoriously unreliable and commonly has a tenuous relationship with the realities of the code it references. Written documentation about behavior of edge cases or default return values are not to be trusted. No matter the extend of the drift, documentation still functions, tests break.
+
+Clear and focused tests provide context as to the purpose and limitations of code segments. Tests of edge cases demonstrates expected behavior for teams consuming our code. Tests demonstrating expected behavior streamline pull requests as code reviewers spend less manual effort verifying code correctness.
 
 ## Who writes tests?
 
