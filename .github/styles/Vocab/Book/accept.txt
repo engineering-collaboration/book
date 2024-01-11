@@ -3,6 +3,7 @@ Etha
 Bernstain
 Lazer
 Cohn
+Hyrum
 API
 CTO
 daily
@@ -38,3 +39,5 @@ whitespace
 IDE
 expectedly
 middleware
+json
+virtualized
