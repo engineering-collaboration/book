@@ -1,25 +1,26 @@
 # Integration Tests
 
-As with Unit tests, Integrations tests as a name is biased towards whatever our experience has been with them. We therefore move up from Small Scoped Tests to Medium Scoped Tests (MST).
+As with the term *Unit tests*, *Integrations tests* invoke bias towards our experiences with them. We therefore advance our naming from Small Scoped Tests to Medium Scoped Tests (MST). MSTs are the second and penultimate layer of the testing pyramid. These verify correct and expected behavior between embedded systems and connected systems.
 
-MST's are the second and penultimate layer of the testing pyramid. These verify correct and expected behaviour between (sub-)systems. MST's include tests that
-
-- test various infrastructure considerations, such as operating systems, disks, network.
-- test interactions between different subsystems of your product, e.g. a service with a database, a service with a relating service.
+MSTs test interactions between our code and our infrastructure environments, such as operating systems, file i/o, and network i/o. Additionally we test interplay between subsystems of our product, e.g. a service with a database, a service with a connected service.
 
 ## Test doubles
 
-A test double is an object or function that can stand in for a real implementation in a test. We might make use of test doubles if the code base isn't designed with testing in mind or setting up the environment for tests carries too much cost.
+Test doubles stand in for real implementations during the testing procedure. These doubles shadow dependencies to complex or costly to set up for automated hermetic testing. E.g. setting up a copy of a third party platform in order to validate API calls. Test doubles also function as deputies for legacy code structured with limited testability.
 
-Typical terms for test double are stubs, mocks, and fakes. These terms refer to implementation strategies with that differ on fidelity and execution cost. Perfect fidelity might not be feasible. Test doubles often need to be vastly simpler than the real implementation in order to be suitable for use in tests.
+Typical terms for test double are stubs, mocks, and fakes. These terms refer to implementation strategies that differ in terms of fidelity and execution cost. Perfect fidelity is not be feasible, as doubles need to be vastly simpler than the real implementation in order to be suitable to be used in our tests.
 
-## Prefer testing with real implementations
+## Prefer testing against real implementations
 
-A fake requires more effort and more domain experience to create because it needs to behave similarly to the real implementation. If the real implementation changes, so must the fake. Test doubles lead to testing against processes instead of behaviors, which we prefer to avoid (as covered in the Good Practices section).
+A fake requires more effort and more domain experience to create, because it needs to behave similarly to the real implementation. If the real implementation changes, so must the fake. Test doubles lead to testing against processes instead of behaviors, which we prefer to avoid (as covered in the Good Practices section).
 
 A fake database would usually not have the fidelity to a real database. a fake should maintain fidelity to the API contracts. A fake does not keep fidelity to latency and resource consumption.
 
-With modern software testing against real implementations becomes more and more commonplace. It is typical to build and test against all operating systems on your build machines. It has become trivial to spin up lightweight ephemeral containers of your preferred database for MST's.
+With modern software development tooling, testing against real implementations becomes more and more commonplace. It is typical to build and test against all operating systems on your build machines. It has become trivial to spin up lightweight ephemeral containers of our preferred database for MST's.
+
+## When
+
+MSTs complexity and computational requirements position the execution after code changes are merged to main. If we find that our MSTs to utilize less resources as expected and code integrations to our main branch frequently fail, we consider moving them to pre-merge.
 
 ## Summary
 
