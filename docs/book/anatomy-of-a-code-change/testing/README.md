@@ -18,7 +18,7 @@ Testing is not a one-off task done as a step in the waterfall methodology. Throu
 - Integrations tests ([Medium Scoped Tests](./medium-scoped-tests.md)) ensure correct behavior between embedded or connected systems.
 - End-to-end tests ([Large Scoped Tests](./large-scoped-tests.md)) ensure correct behavior across the entire product.
 
-The nature of these tests are outlined in detail in their individual chapters.
+The nature of these tests are outlined in detail in their individual chapters. The scope of the tests relate to the execution time and complexity of the test environment.
 
 ### The testing Pyramid
 

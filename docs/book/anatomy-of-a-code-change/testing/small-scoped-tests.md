@@ -1,35 +1,22 @@
-# Unit Tests
+# Small scoped tests
 
-The nondescript name *unit test* causes confusion as to what is and what is not included in a unit. This lack of expressive naming has led to a plethora of interpretations and strategies. Insert Name uses the term "small scoped tests" in the book "Software Engineering at Google". I am hardly likely to do a better job at coming up with a name than Google, so this book will refer to tests in this chapter as Small Scoped Tests (SST).
-
-SSTs are the foundation of Mike Cohn's testing pyramid. Meaning theses tests build the foundation of rapid and successful continuous integration and should be the most widespread use of tests in your code.
+The nondescript name *unit test* causes confusion as to what is and what is not included in a unit. The lack of expressive naming has led to a plethora of interpretations and strategies. The book "Software Engineering at Google" introduces the term "small scoped tests" (SST) which we decided to appropriate.
 
 // insert image of testing pyramid
 
-SST's are concise and fast. Products commonly contain thousands of unit tests that are executed within seconds. A complete suite of passing unit tests increases the confidence of introducing changes to the code base.
+SSTs build the foundation of Mike Cohn's testing pyramid, enabling rapid and successful continuous integration. SSTs are the most widespread kind of tests within our code as they are concise and fast. Applications commonly contain thousands of SSTs executed within seconds. A complete suite of passing SSTs increases the confidence of introducing non-breaking changes to our code base.
 
-SST's consist of the smallest possible testable entity of your code. In most cases this is going to be a public method or function. Unit tests confirm correct and expected behavior of a single public function executed at runtime in memory.
+## What is not in a SST?
 
-## What is not in a Unit test?
+SST's consist of the smallest possible testable entity in our code to confirm expected process of a single public behavior executed in memory. SSTs do not rely on environmental factors, including file operations, network operations, and implementations specific to operating systems. The other fundamental constraint on small tests are that they do not sleep, perform I/O operations, or make any blocking calls.
 
-Unit tests do not rely on any external implementations. This includes disk operations, network operations, and implementations specific to operating systems. The other fundamental constraint on small tests are that they aren't allowed to sleep, perform I/O operations, or make any blocking calls. This means that small tests aren't allowed to access the network or disk. We will talk about how to handle these instances in the Medium Scale Tests.
+SSTs do not access the network, disk, or OS processes. These factors are covered by Medium Scaled Tests.
 
 ## When do I perform SST's?
 
 SST's are the most common form of test with the lowest time consumption. SST's are typically run at every step of the development cycle.
 
-- The devs machine
-- on pre-merge
-- on post-merge
-- release
-
-Correct behaviour
-Dependencies on edge cases
-Dependencies of return values
-every public facing behaviour will eventually be depended on
-
-Test behaviours, not implementation.
-
-Split tests into behaviours, not all possible return values of a method. 
-
-
+- Our development machine
+- On pre-merge checks
+- On post-merge checks
+- On pre-release checks
