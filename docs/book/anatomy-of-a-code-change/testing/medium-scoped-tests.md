@@ -1,4 +1,4 @@
-# Integration Tests
+# Medium Scoped Tests
 
 As with the term *Unit tests*, *Integrations tests* invoke bias towards our experiences with them. We therefore advance our naming from Small Scoped Tests to Medium Scoped Tests (MST). MSTs are the second and penultimate layer of the testing pyramid. These verify correct and expected behavior between embedded systems and connected systems.
 
