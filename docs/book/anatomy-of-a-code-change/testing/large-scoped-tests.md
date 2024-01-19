@@ -16,14 +16,12 @@ An increasing amount of teams staging changes to the same environment inflates t
 
 Similar to test doubles introduced in MSTs, contract testing presents an alternative to testing against implementations in an LST environment. Whereas test doubles require technology domain experience, contract testing is built upon cross team communications effort. Establishing consumer-driven contracts formalize the clear lines of communication between vertical teams enforced by the team interactions discussed in [Team Interactions](../../anatomy-of-a-software-company/team-interactions.md).
 
-Consumer driven contracts
+Contract tests validate established agreements between teams as instituted in the consumer-driven contracts. Contracts are drawn up between team members of the consumer service and the provider service, both of whom participate in writing the contract tests. All consumer contract tests are run against our pending implementation in the provider services to certify our changes do not break dependent behavior.
 
-Schema testing, API testing, contract testing
+Contract testing extends static strategies such as API testing and schema testing, and requires more collaboration between contract parties. API testing and schema testing work exceptionally well when our organization embraces documentation driven development, a practice where documentation is written first and boilerplate code is generated based on the schema of the documentation.
 
-Contract testing works exceptionally well when our organization embraces documentation driven development, a practice where documentation is written first and boilerplate code is generated based on the schema of the documentation. OpenAPI (previously Swagger) schemas is a popular standard with a rich economy of open source tooling. The obvious dependency of contract testing is a lack of documentation drift, something realistically only achievable if the documentation drives source code, not the other way round.
-
-A good practice here is to have someone from the producer and consumer teams collaborate on creating the tests, so perhaps peopler from the web shop.
+The obvious dependency of this kind of testing is a lack of documentation drift, something realistically only achievable if the documentation drives source code, not the other way round. OpenAPI (previously Swagger) is a popular standard with a rich economy of open source tooling.
 
 ## Executing LSTs
 
-Done before release, or periodically on the main branch.
+The sheer herculean effort of running LSTs excludes them from being run as part of the merging process. At minimum, though, we run LSTs as part of the pre-release process. To minimize interference of resources with active development, other opportune moments are periodic nighttime runs of the current main branch during the week. While LSTs can be run over the weekend, coming to the office on a Monday morning to failed test alerts of non-production technology is a stressful way to start the week.
