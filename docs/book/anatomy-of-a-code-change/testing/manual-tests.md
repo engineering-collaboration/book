@@ -24,3 +24,5 @@ Move Manual testing to automated testing
 Automated Usability Testing: Testing the software to ensure that it is user-friendly and meets the needs of its intended users.
 Automated Accessability Testing:
 
+Is behaviour learned from other sources applicable to this product?
+Is behaviour within this prouct consistent?
