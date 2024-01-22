@@ -1,6 +1,6 @@
 # Benchmark tests
 
-When releasing new versions of our software our acceptance criteria exceed operational functionality and stability. In order to avoid performance regression of any kind we run our changes through relevant benchmark tests (BT). As the word *benchmark* indicates, these tests check for discrete metrics for a certain facet of our software.
+When releasing new versions of our software our acceptance criteria exceed operational functionality and stability. In order to avoid performance regression of any kind we run our changes through relevant benchmark tests. As the word *benchmark* indicates, these tests check for discrete metrics for a certain facet of our software. The evaluated benchmarks of our software indicate wether our organization meets the acceptance criteria of stakeholders and compare our performance to competitors on the market.
 
 ## Performance tests
 
@@ -12,20 +12,20 @@ Additionally, we may measure performance increasing strategies of cache effectiv
 
 ## Robustness tests
 
-While performance tests evaluate our proficiency when everything goes well, robustness tests asses our capacity of dealing with failures ranging from minor to critical.
+While *performance tests* evaluate our proficiency when everything goes well, *robustness tests* asses our capacity of dealing with increased load and failures. 
 
-Spike Traffic
-Scalability
-Disaster Recovery
+We evaluate our our system's ability to adapt to traffic spikes and increased resource requirements by scaling up or down in terms of hardware, software, or network resources. We test our system's conduct under extreme conditions or beyond its expected maximum capacity, pinpointing the stress our software handles before breaking. When things break we want them to break well-defined and promptly. Non-determinism and unknown states in our software are hazardous things.
 
-Stress Testing: Stress testing is aimed at evaluating how well a system performs under extreme conditions or beyond its expected maximum capacity. This helps identify the breaking point of the system and how it recovers from failures.
-
-Scalability Testing: This type of testing measures the system's ability to scale up or down in terms of hardware, software, or network resources. It ensures that the system can handle increased load by adding more resources.
-
-Acceptance Testing: Testing the software to ensure that it meets the acceptance criteria and satisfies the needs of the stakeholders.
+After the worst has happened and our software crashed either due to a lack of scalability or malicious third party attacks we test our disaster recovery measures. Shorter durations to fully recover from down time minimize potential costs and revenue losses to our organization.
 
 ## Accessability tests
 
-## Executing BTs
+We maximize the number of potential users by making certain our software is usable by a broad spectrum of people. Traditionally, accessability was related to physical traits, such as vision, mobility and motor skills, hearing, speech, or cognitive disabilities. Depending on our product we utilize a mix of static and runtime tests to verify perceptability and input options for various senses to interact with our software. We test for contrasting color palette, labeling, navigation, text-to-speech, font size and zooms, and inspect our UI's and API's against our design system to ensure internal consistency within the software.
+
+We extend physical accessability traits with by demographic, economical and geographical factors. We test whether our software runs on a broad range of devices, potential outdated hardware, and with low-bandwidth internet. Our payment options and processing works beyond US credit cards, our application layout is formatted for reading both left-to-right and right-to-left, our software uses culturally invariants of upper-case and lower-case characters when processing input text and we support a broad range of character encoding.
+
+If our distribution location requires regulatory compliance, we appraise those when releasing changes of our software. We test against these requirements when packaging localized versions of our package.
+
+## Executing Benchmark Tests
 
 Run performance tests regularly (every couple days overnight). The longer you go without running performance tests, the harder it can be to track down the culprit.
