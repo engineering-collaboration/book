@@ -126,7 +126,8 @@ nav:
         - Large Scoped Tests: './book/anatomy-of-a-code-change/testing/large-scoped-tests.md'
         - Benchmark Tests: './book/anatomy-of-a-code-change/testing/benchmark-tests.md'
         - Manual Tests: './book/anatomy-of-a-code-change/testing/manual-tests.md'
-        - Testing in Production: './book/anatomy-of-a-code-change/testing/in-production.md'
+        - Testing in Production: './book/anatomy-of-a-code-change/testing/testing-in-production.md'
+        - Testing Strategy: './book/anatomy-of-a-code-change/testing/testing-strategy.md'
 
       - Documentation:
         - Documentation: './book/anatomy-of-a-code-change/documentation/README.md'

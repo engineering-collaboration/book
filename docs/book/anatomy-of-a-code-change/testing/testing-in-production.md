@@ -4,7 +4,7 @@ The vast majority of tests focus on preprodcution validation. Specifically we ar
 
 Testing does not end once our software is deployed. It is embarrassing for our company if we are the last to know whether our live software is running or not. We do not rely on bug reports from our user base to be made aware of active problems. Since our production deployment varies to our test environment we either test in production or live a lie.
 
-## Rollouts
+## Incremental rollouts
 
 When releasing new versions we can roll our changes out to the public in iterations. Blue-green deployments and canary releases appraise working functionality and evaluate product decisions with a subset of our user base before fully committing to distributing changes. We cover these procedures in detail in the chapter [Release Strategies]().
 
@@ -23,4 +23,6 @@ contact forms
 
 registering fake user and perform tasks
 
-## chaos engineering
+## Chaos engineering
+
+
