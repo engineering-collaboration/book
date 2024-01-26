@@ -30,6 +30,10 @@ IT Revolution, 17.09.2019
 Mark Burgess  
 O'Reilly Media, Inc., 09.06.2015  
 
+**Why the Internet only just works**  
+Mark Handley  
+BT Technology Journal, Vol 24 No 3, July 2006  
+
 ## Youtube
 
 [**Cloud Native Computing Foundation**](https://www.youtube.com/@cncf)  

@@ -1,6 +1,6 @@
 # Testing in production
 
-The vast majority of tests focus on preprodcution validation. Specifically we are using tests to ensure software is of sufficient quality before it is deployed into production. Passing (or failing) tests area gating condition for deciding whether the software should be deployed.
+The vast majority of tests focus on pre-production validation. Specifically we are using tests to ensure software is of sufficient quality before it is deployed into production. Passing (or failing) tests area gating condition for deciding whether the software should be deployed.
 
 Testing does not end once our software is deployed. It is embarrassing for our company if we are the last to know whether our live software is running or not. We do not rely on bug reports from our user base to be made aware of active problems. Since our production deployment varies to our test environment we either test in production or live a lie.
 
@@ -10,19 +10,16 @@ When releasing new versions we can roll our changes out to the public in iterati
 
 ## Production systems
 
-A live system used by a high number of users functions differently than our internal test environment. Our system copes with a higher amount of users, noise, requests, bots, infrastructure dependencies.
+A live system used by a high number of users functions differently than our internal test environment. Our system copes with a higher amount of users, requests, bots, noise, infrastructure dependencies.
 
-cache (in)validation
-Availability
-token timeouts
+Aspects of our system need to be verified in production to assess real world functionality. We monitor and evaluate caching and cache invalidation, token timeouts, availability across zones, and other metrics indicative of performance and system health.
 
-third party
-links
-refs
-contact forms
+As we do not have full control of our third party integrations and partner contracts, these may only be effectively tested continuously in live environments. We certify working anchors, referral links, and third party modules periodically in order to maintain agreements with partner entities and proactively provide feedback in case of outages.
 
-registering fake user and perform tasks
+Registering fake users, our manual and automated tests perform tasks to verify expected outcomes of LSTs within the noisy live environments. Utilizing this pool of fake users, the product and quality departments uncover unexpected or opaque behavior for varying user groups.
 
 ## Chaos engineering
 
+If not pioneered by Netflix, chaos engineering is most definitely being spearheaded by the streaming service. It is a practice of purposefully wrecking system services of our live production software. As Netflix reached a global scale of constant availability, the chance of outages across a worldwide service reaches a certainty. Natural disasters, political interference, limitations of physics combined with a global IT infrastructure that [only just works](http://www0.cs.ucl.ac.uk/staff/m.handley/papers/only-just-works.pdf) constrain the workings of our offering.
 
+By introducing [Chaos Monkey](https://netflix.github.io/chaosmonkey/), a tool wreaking havoc on production systems, the mindset of engineers switched from *services might fail* to *services will absolutely be killed*. This practice leads to more robust systems as potential fragilities like network timeouts are elevated to the norm instead of outliers. When they do happen, the system and its services are designed to cope.
