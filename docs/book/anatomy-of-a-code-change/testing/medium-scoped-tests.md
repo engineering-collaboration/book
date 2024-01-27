@@ -2,7 +2,7 @@
 
 As with the term *Unit tests*, the expression *Integrations tests* conjures a bias towards differing implementation strategies. We therefore advance our naming from *Small Scoped Tests* to *Medium Scoped Tests* (MST). MSTs are the second and penultimate layer of the testing pyramid. These verify correct and expected behavior between **embedded systems and connected systems**.
 
-MSTs verify interactions between code and the environment it is run in, such as operating systems, file i/o, and network i/o. Additionally we test interplay between subsystems of our product, e.g. a service with a database, a service with a connected service.
+MSTs verify interactions between code and the environment it is run in, such as operating systems, file i/o, and network i/o. We further test interplay between subsystems of our product, e.g. a service with a database, a service with a connected service.
 
 ## Test doubles
 
@@ -14,7 +14,7 @@ Depending on the implementation, test doubles are called *stubs*, *mocks*, or *f
 
 A fake requires effort and domain knowledge in order to behave similarly to the real implementation. If the real implementation changes, so must the fake. Depending on the doubles used, the nature of testing against these organically leads to testing against processes instead of behaviors, which leads to brittle tests (as covered in the Good Practices section).
 
-The simplicity of test doubles compared to their complex counterparts reduces flakiness of MST's. When tests fail against test doubles we are fairly certain the issues originate in our source, rather than the dependency.
+The simplicity of test doubles compared to their complex counterparts reduces flakiness of MST's. When tests fail against test doubles we gain certainty that the issues originate in our source, rather than the dependency.
 
 A fake database does not have the fidelity of a real database, but maintains fidelity to the API contracts. A fake does not keep fidelity to latency and resource consumption and is therefore unreliable to provide information about race conditions, timeouts, or benchmarking.
 
