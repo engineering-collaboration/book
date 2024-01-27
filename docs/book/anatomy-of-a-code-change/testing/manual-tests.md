@@ -16,7 +16,7 @@ During security tests and penetration tests allies uncover and exploit vulnerabi
 
 ## Executing manual tests
 
-Strategies in user experience and accessability steadily move from manual testing to automated testing. As security testing shifted left more and more our terms evolved, DevOps is referred to DevSecOps.
+Strategies in user experience and accessibility steadily move from manual testing to automated testing. As security testing shifted left more and more our terms evolved, DevOps is referred to DevSecOps.
 Move Manual testing to automated testing
 
 Security Engineers and QA Engineers work closely with product owners, feature engineers, site reliability engineers, and the user base to evolve feature life-cycles and testing strategies.

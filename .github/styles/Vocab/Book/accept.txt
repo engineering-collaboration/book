@@ -41,3 +41,7 @@ expectedly
 middleware
 json
 virtualized
+LST
+MST
+SST
+[Ee]xplorative
