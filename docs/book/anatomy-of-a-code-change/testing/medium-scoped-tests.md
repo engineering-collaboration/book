@@ -23,3 +23,5 @@ With modern software development tooling, testing against real implementations b
 ## Executing MSTs
 
 MSTs complexity and computational requirements position their execution after code changes are merged to main. If we find that our MSTs utilize less resources as expected and code integrations to our main branch frequently fail, we consider moving them to pre-merge.
+
+![Medium Scoped Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/mst-execution.webp)

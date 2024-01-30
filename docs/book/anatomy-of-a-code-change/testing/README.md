@@ -24,9 +24,11 @@ The nature of these tests are outlined in detail in their individual chapters. T
 
 In his 2009 book "Succeeding with agile" Mike Cohn provided the metaphorical representation of the testing pyramid. The three layered structure indicates guidelines for the amount of automated testing for each scope.
 
-The base of the pyramid relies on numerous small-scoped unit tests which are run most frequently. The mid-layer consists of a reduced number of integration tests. The pinnacle of the pyramid consists of automated end-to-end tests. These require complex setups and long running operations.
+![Testing Pyramid](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-pyramid.webp)
 
-From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. If we have 1000 SST, we aim for 100 MST, and no more than 10 LST. A common anti-pattern is what is referred to as a test snow cone, or inverted pyramid. Here, there are little to no small-scoped tests with all the coverage in large-scoped tests. These projects have slow test runs and long feedback cycles.
+The base of the pyramid relies on numerous small-scoped unit tests which are run most frequently. The mid-layer consists of a reduced number of integration tests. The pinnacle of the pyramid consists of automated end-to-end tests. These require complex setups and long running operations. From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. If we have 1000 SST, we aim for 100 MST, and no more than 10 LST.
+
+A common anti-pattern is what is referred to as a test snow cone, or inverted pyramid. Here, there are little to no small-scoped tests with all the coverage in large-scoped tests. These projects have slow test runs and long feedback cycles.
 
 ## Hermetic environments
 
