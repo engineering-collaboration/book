@@ -10,29 +10,34 @@ A term often cited in software engineering job listings is *Test Driven Developm
 
 TDD encourages us to write down a strategy to tackle problems in small increments. The upside of TDD sees diminishing returns with growing complexity of implementations. Functions using file i/o, using network i/o, or reliant on environment configurations are difficult to write tests for. Even more so before the implementation is available.
 
+## The testing Pyramid
+
+In the 2009 book "Succeeding with agile" Mike Cohn provides the metaphorical representation of the testing pyramid. The three layered structure indicates guidelines for the amount of automated testing for each scope. The nature of these tests are outlined in detail in their individual chapters. The scope of the tests relate to the execution time and complexity of the test environment.
+
+[![Testing Pyramid](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-pyramid.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-pyramid.png)
+
+The base of the pyramid relies on numerous small-scoped unit tests which are run most frequently. Unit tests ([Small Scoped Tests](./small-scoped-tests.md)) ensure correct behavior within a system.
+
+The mid-layer consists of a reduced number of integration tests. Integrations tests ([Medium Scoped Tests](./medium-scoped-tests.md)) ensure correct behavior between embedded or connected systems.
+
+The pinnacle of the pyramid consists of automated end-to-end tests. These require complex setups and long running operations. End-to-end tests ([Large Scoped Tests](./large-scoped-tests.md)) ensure correct behavior across the entire product.
+
+From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. If we have 1000 SST, we aim for 100 MST, and no more than 10 LST. A common anti-pattern is what is referred to as a test snow cone, or inverted pyramid. Here, there are little to no small-scoped tests with all the coverage in labour and time intensive manual tests. These projects have slow test runs and long feedback cycles.
+
 ## When to test what
 
 Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code change a varying suite of automated tests ensure the correct integration of code changes at different times.
 
-- Unit tests ([Small Scoped Tests](./small-scoped-tests.md)) ensure correct behavior within a system.
-- Integrations tests ([Medium Scoped Tests](./medium-scoped-tests.md)) ensure correct behavior between embedded or connected systems.
-- End-to-end tests ([Large Scoped Tests](./large-scoped-tests.md)) ensure correct behavior across the entire product.
-
-The nature of these tests are outlined in detail in their individual chapters. The scope of the tests relate to the execution time and complexity of the test environment.
-
-### The testing Pyramid
-
-In his 2009 book "Succeeding with agile" Mike Cohn provided the metaphorical representation of the testing pyramid. The three layered structure indicates guidelines for the amount of automated testing for each scope.
-
-[![Testing Pyramid](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-pyramid.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-pyramid.png)
-
-The base of the pyramid relies on numerous small-scoped unit tests which are run most frequently. The mid-layer consists of a reduced number of integration tests. The pinnacle of the pyramid consists of automated end-to-end tests. These require complex setups and long running operations. From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. If we have 1000 SST, we aim for 100 MST, and no more than 10 LST.
-
-A common anti-pattern is what is referred to as a test snow cone, or inverted pyramid. Here, there are little to no small-scoped tests with all the coverage in large-scoped tests. These projects have slow test runs and long feedback cycles.
+Dev
+pre-merge
+post-merge
+pre-release
+post-release
+periodically
 
 ## Hermetic environments
 
-Tests run on various machines and runners, by various users and scripts, on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place.
+Tests run on various machines and runners, by various users and scripts, on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place. As developers we are able to replicate failing tests on the CICD runners on our machines.
 
 A hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful. Tests set up, execute and tear down independently and in a confined manner. Tests provide accurate information regardless of the order in which they are run.
 
