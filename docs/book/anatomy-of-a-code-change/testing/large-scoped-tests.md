@@ -24,4 +24,4 @@ Contract testing extends static strategies such as API testing and schema testin
 
 The sheer herculean effort of running LSTs excludes them from being run as part of the merging process. At minimum, though, we run LSTs as part of the pre-release process. To minimize interference of resources with active development, other opportune moments are periodic nighttime runs of the current main branch during the week. While LSTs can be run over the weekend, coming to the office on a Monday morning to failed test alerts of non-production technology is a stressful way to start the week.
 
-![Large Scoped Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/lst-execution.webp)
+[![Large Scoped Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/lst-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/lst-execution.png)

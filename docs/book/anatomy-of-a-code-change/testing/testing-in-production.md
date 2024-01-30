@@ -2,7 +2,7 @@
 
 The vast majority of tests focus on pre-production validation. Specifically we are using tests to ensure software is of sufficient quality before it is deployed into production. Passing (or failing) tests area gating condition for deciding whether the software should be deployed.
 
-![Testing In Production Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-in-prod-execution.webp)
+[![Testing In Production Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-in-prod-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-in-prod-execution.png)
 
 Testing does not end once our software is deployed. It is embarrassing for our company if we are the last to know whether our live software is running or not. We do not rely on bug reports from our user base to be made aware of active problems. Since our production deployment varies to our test environment we either test in production or live a lie.
 

@@ -30,4 +30,4 @@ If our distribution location requires regulatory compliance, we appraise those w
 
 We run benchmark tests multiple times a week during low-traffic hours during the week, or on the weekend. The longer we go without running performance tests, the harder it can be to track down the culprit.
 
-![Benchmark Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/benchmark-execution.webp)
+[![Benchmark Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/benchmark-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/benchmark-execution.png)

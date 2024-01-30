@@ -2,7 +2,7 @@
 
 Over this chapter we discussed the type of testing done with rough guidelines to optimize test utility versus execution complexity, cost, and time. The following presents a solid base testing strategy that our organization can start working from.
 
-![Testing Strategy](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-strategy.webp)
+[![Testing Strategy](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-strategy.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-strategy.png)
 
 - Development and pre-merge:
     - Static analyses
