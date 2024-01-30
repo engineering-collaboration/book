@@ -1,4 +1,9 @@
-# Good practices when writing tests
+---
+title: Good practices
+description: Before delving deeper into distinct testing scopes and strategies we examine generally applicable good practices when it comes to writing tests.
+---
+
+# Good practices
 
 Before delving deeper into distinct testing scopes and strategies we examine generally applicable good practices when it comes to writing tests.
 

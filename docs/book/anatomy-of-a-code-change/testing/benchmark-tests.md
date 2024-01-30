@@ -1,3 +1,8 @@
+---
+title: Benchmark tests
+description: In order to avoid performance regression of any kind we run our changes through relevant benchmark tests. As the word benchmark indicates, these tests check for discrete metrics for a certain facet of our software.
+---
+
 # Benchmark tests
 
 When releasing new versions of our software our acceptance criteria exceed operational functionality and stability. In order to avoid performance regression of any kind we run our changes through relevant benchmark tests. As the word *benchmark* indicates, these tests check for discrete metrics for a certain facet of our software. The evaluated benchmarks of our software indicate wether our organization meets the acceptance criteria of stakeholders and compare our performance to competitors on the market.

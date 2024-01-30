@@ -1,3 +1,8 @@
+---
+title: Testing in production
+description: Testing does not end once our software is deployed. Since our production deployment varies to our test environment we either test in production or live a lie.
+---
+
 # Testing in production
 
 The vast majority of tests focus on pre-production validation. Specifically we are using tests to ensure software is of sufficient quality before it is deployed into production. Passing (or failing) tests area gating condition for deciding whether the software should be deployed.

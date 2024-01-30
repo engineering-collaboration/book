@@ -1,4 +1,9 @@
-# Medium Scoped Tests
+---
+title: Medium scoped tests
+description: Medium scoped tests are the second and penultimate layer of the testing pyramid. These verify correct and expected behavior between embedded systems and connected systems.
+---
+
+# Medium scoped tests
 
 As with the term *Unit tests*, the expression *Integrations tests* conjures a bias towards differing implementation strategies. We therefore advance our naming from *Small Scoped Tests* to *Medium Scoped Tests* (MST). MSTs are the second and penultimate layer of the testing pyramid. These verify correct and expected behavior between **embedded systems and connected systems**.
 

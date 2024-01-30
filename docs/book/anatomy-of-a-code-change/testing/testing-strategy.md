@@ -1,4 +1,9 @@
-# Testing Strategy
+---
+title: Testing strategy
+description: Depending on our product, technology, and client demographic we evolve our procedure into what works for us. The balance between our cost and duration of LSTs, benchmark tests and manual tests balances with the frequency of faulty integrations ultimately defines the execution order, dependency, and concurrency fitted to our needs.
+---
+
+# Testing strategy
 
 Over this chapter we discussed the type of testing done with rough guidelines to optimize test utility versus execution complexity, cost, and time. The following presents a solid base testing strategy that our organization can start working from.
 

@@ -1,3 +1,8 @@
+---
+title: Manual tests
+description: The feasibility of automated tests has its limits. Human usability aspects are best evaluated with human judgement.
+---
+
 # Manual tests
 
 The feasibility of automated tests has its limits. Human usability aspects are best evaluated with human judgement.

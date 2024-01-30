@@ -1,3 +1,8 @@
+---
+title: Large scoped tests
+description: Large scoped tests verify the flow of commands from user input across different API's, serialization strategies and verifies the returned behavior is as expected.
+---
+
 # Large scoped tests
 
 Large scoped tests (LST) test the flow of commands from user input across different API's, serialization strategies and verifies the returned behavior is as expected.

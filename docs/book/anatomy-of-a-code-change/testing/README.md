@@ -1,4 +1,9 @@
-# Tests
+---
+title: Testing
+description: Testing has become a somewhat divisive topic. If not done adequately for our use case we are better off doing less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
+---
+
+# Testing
 
 Testing has become a somewhat divisive topic. If not done adequately for our use case we are better off doing less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
 

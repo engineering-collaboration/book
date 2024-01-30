@@ -1,3 +1,8 @@
+---
+title: Small scoped tests
+description: Small scoped tests are the most widespread kind of tests within our code as they are concise and fast. Applications commonly contain thousands of Small scoped tests that executed within seconds.
+---
+
 # Small scoped tests
 
 The nondescript name *unit test* causes confusion as to what is and what is not included in a unit. The lack of expressive naming has led to a plethora of interpretations and strategies. The book *Software Engineering at Google* introduces the term *small scoped tests* (SST) which we decided to appropriate.
