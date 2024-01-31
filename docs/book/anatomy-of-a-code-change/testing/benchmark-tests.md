@@ -5,15 +5,15 @@ description: In order to avoid performance regression of any kind we run our cha
 
 # Benchmark tests
 
-When releasing new versions of our software our acceptance criteria exceed operational functionality and stability. In order to avoid performance regression of any kind we run our changes through relevant benchmark tests. As the word *benchmark* indicates, these tests check for discrete metrics for a certain facet of our software. The evaluated benchmarks of our software indicate wether our organization meets the acceptance criteria of stakeholders and compare our performance to competitors on the market.
+When releasing new versions of our software our acceptance criteria exceed operational functionality and stability. In order to avoid performance regression of any kind, we run our changes through relevant benchmark tests. As the word *benchmark* indicates, these tests check for discrete metrics for a certain facet of our software. The evaluated benchmarks of our software indicate wether our organization meets the acceptance criteria of stakeholders and compare our performance to competitors on the market.
 
 ## Performance tests
 
-Testing against performance identifies performance bottlenecks within our software, and, if done over time, helps us avoid introducing performance regressions with our changes. Performance is defined as any metric occurring during runtime we care about and decide to document.
+Testing against performance identifies efficiency bottlenecks within our software, and, if done over time, helps us avoid introducing performance regressions with our changes. We define performance as any metric occurring during runtime we care about and decide to document.
 
-For example, we identify issues related to memory leaks and resource management by running our software at full capacity for an extended amount of time. We measure the system's maximum load and user interactions by continuously incrementing the amount of concurrent calls until a processing error crops up. We measure acceptable loading time of a web page and response times for user interactions to ensure our system meets acceptable latency standards.
+For example, we identify issues related to memory leaks and resource management by running our software at full capacity for an extended amount of time. We measure the system's maximum load and user interactions by continuously incrementing the amount of concurrent calls until processing errors crop up. We measure acceptable loading time of a web page and response times for user interactions to ensure our system meets acceptable latency standards.
 
-We may measure performance increasing strategies of cache effectiveness, edge content delivery, lazy loading, deferred executions, or whatever else we identify as crucial for our use cases.
+We may measure performance-increasing strategies of cache effectiveness, edge content delivery, lazy loading, deferred executions, or whatever else we identify as crucial for our use cases.
 
 ## Robustness tests
 
@@ -25,9 +25,9 @@ After the worst has happened and our software crashed either due to a lack of sc
 
 ## Accessibility tests
 
-We maximize the number of potential users by making certain our software is usable by a broad spectrum of people. Traditionally, accessibility was related to physical traits, such as vision, mobility and motor skills, hearing, speech, or cognitive disabilities. Depending on our product we utilize a mix of static and runtime tests to verify perceptibility and input options for various senses to interact with our software. We test for contrasting color palette, labeling, navigation, text-to-speech, font size and zooms, and inspect our UIs and APIs against our design system to ensure internal consistency within the software.
+We maximize the number of potential users by making certain our software is usable by a broad spectrum of people. Traditionally, accessibility was related to physical traits, such as vision, mobility and motor skills, hearing, speech, or cognitive disabilities. Depending on our product we utilize a mix of static and runtime tests to verify perceptibility and input options for various senses to interact with our software. We test for contrasting color palettes, labeling, navigation, text-to-speech, font size and content zooming, and inspect our UIs and APIs against our design system to ensure internal consistency within the software.
 
-We extend physical accessibility traits with by demographic, economical and geographic factors. We test whether our software runs on a broad range of devices, potential outdated hardware, and with low-bandwidth internet. Our payment options and processing works beyond US credit cards, our application layout is formatted for reading both left-to-right and right-to-left, our software uses culturally invariants of upper-case and lower-case characters when processing input text and we support a broad range of character encoding.
+We extend physical accessibility traits with demographic, economical and geographic factors. We test whether our software runs on a broad range of devices, potential outdated hardware, and with low-bandwidth internet. Our payment options and processing works beyond US credit cards, our application layout adapts for reading both left-to-right and right-to-left, our software uses culturally invariants of upper-case and lower-case characters when processing input text and we support a broad range of character encoding.
 
 If our distribution location requires regulatory compliance, we appraise those when releasing changes of our software. We test against these requirements when packaging localized versions of our package.
 
