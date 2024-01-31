@@ -5,13 +5,13 @@ description: Before delving deeper into distinct testing scopes and strategies w
 
 # Good practices
 
-Before delving deeper into distinct testing scopes and strategies we examine generally applicable good practices when it comes to writing tests.
+Before delving deeper into distinct testing scopes and strategies, we examine generally applicable good practices when it comes to writing tests.
 
-## Test against public facing API's
+## Test against public facing APIs
 
-When writing tests we assume as little as possible of the implementation. We write tests for public facing interfaces, not private ones. Private implementations change more frequently over time as additional feature requests come in and code is refactored, moved to libraries, or removed entirely.
+When writing tests we assume as little as possible of the implementation. We compose tests for public facing interfaces, not private ones. Private implementations change more frequently over time as additional feature requests come in and code is refactored, moved to libraries, or removed entirely.
 
-When refactoring code we run tests to ensure we haven't changed behavior for implementations that call the public facing methods and API's. Testing against private implementations seldom make sense as we actively just changed the private implementation.
+When refactoring code we run tests to ensure we haven't changed behavior for implementations that call the public facing methods and APIs. Testing against private implementations increases the workload, as we actively just changed the private implementation and are now required to update the tests. It is a hurdle comprised of more effort than benefit.
 
 ## Test behavior, not processes
 
@@ -40,9 +40,9 @@ func Test_SerializeStringSuccess(t *testing.T) {
 
 The above implementation tests whether `my_utils.WriteString` writes the given input string to a file provided via a path. The problem with the above test lies within the fact that we are testing against the *process* of **how** `my_utils.WriteString` serializes the given string input.
 
-The implementation becomes brittle with every future evolution of `my_utils.WriteString`. It cannot account for any additional tasks that are performed, such as byte padding, prefixing metadata, serializing as clear text json vs binary json, etc., assuming that we are writing directly to a filesystem, instead of a virtualized environment or an in-memory database.
+The implementation becomes brittle with every future evolution of `my_utils.WriteString`. It cannot account for any additional tasks that are performed, such as byte padding, prefixing metadata, or serializing as clear text json vs binary json; assuming we output directly to a filesystem, instead of a virtualized environment or an in-memory database.
 
-These aspects are worth testing at a later stage in the product lifecycle for specialized software consumed by millions of clients. Assuming we are not working on products for healthcare or aviation, we prioritize development velocity over full process coverage and add tests <!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> after specific problems occurred in production. Instead, we write tests against the *behavior* of **what** we expect to happen.
+These aspects *might* be worth testing at a later stage in the product lifecycle for specialized software consumed by millions of clients. Assuming we are not working on products for healthcare or aviation, we prioritize development velocity over full process coverage and add tests <!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> after specific problems occurred in production. Instead, we write tests against the *behavior* of **what** we expect to happen.
 
 ```golang
 func Test_SerializeStringSuccess(t *testing.T) {
@@ -82,13 +82,13 @@ If the above implementation fails we can now reasonably assume that changes done
 
 Hyrum's law states that every public facing behavior of our implementation will be relied upon. While this includes error types and return codes, it also covers incidental actions, such as data layouts (e.g. if a seemingly random return value always follows the same pattern) and execution time (e.g. performance upgrades might trigger hitherto undetected race conditions).
 
-We cannot foresee or control how third party systems depend on our implementation and we question the feasibility of testing all public facing characteristics of our implementation. We are aware that changes might be incompatible with current dependencies and it is up to us to weigh the responsibility we delegate to our consumers.
+We cannot foresee or control how third party systems depend upon our implementation and we question the feasibility of testing all public facing characteristics of our implementation. We are aware that changes might be incompatible with current dependencies and it is up to us to weigh the responsibility we delegate to our consumers.
 
 ## Naming of tests
 
-Method oriented tests are named after the method being tested. Names of behavior driven tests offer the chance to convey useful information, as the name of a test is the first token visible to us when a test fails.
+Method oriented tests are named after the method being tested. Names of behavior driven tests offer the chance to convey useful information, as the name is the first token visible to us on failing tests.
 
-A good name describes the actions being taken on a system and the expected outcome. Test method names are more verbose than production code method names as the use case is different. We never write code that calls these, and their names frequently need to be read by humans in reports. The extra verbosity is worth it.
+A good name describes the actions being taken on a system and the expected outcome. We encourage increased verbosity in test method names compared to production code method names as the use case is different. We never write code that calls these, and their names frequently need to be read by humans in reports. The extra verbosity is worth it.
 
 Concise naming combined with clear failure messages enable us to fix our implementation transgressions with poise and grace. Test method naming and error messages follow the acronym DAMP (descriptive and meaningful phrases) rather than DRY (don't repeat yourself).
 
