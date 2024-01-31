@@ -1,52 +1,52 @@
 ---
 title: Testing
-description: Testing has become a somewhat divisive topic. If not done adequately for our use case we are better off doing less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
+description: Testing is a complex and divisive topic. If not done adequately for our use case, we are better off doing less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
 ---
 
 # Testing
 
-Testing has become a somewhat divisive topic. If not done adequately for our use case we are better off doing less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
+Testing is a complex and divisive topic. If not done adequately for our use case, we are better off doing less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
 
-This chapter covers what we have found to be generally most useful. From all the chapters in this book, testing is the least directly applicable. Successful and sensible testing is modeled to our teams needs and evolves over time. We revisit our testing strategy periodically, after significant events, and post-mortems.
+This chapter covers what we have found to be generally most useful. Despite our good intentions we do want to point out that testing is the least directly applicable undertaking from all recommendations in this book. Successful and sensible testing is modeled against our teams needs and evolves over time. We revisit our testing strategy periodically and after significant events.
 
 ## Test Driven Development
 
-A term often cited in software engineering job listings is *Test Driven Development* (TDD). TDD is the practice of writing tests for features before working on the source code of a feature. A completed implementation passes all tests and edge cases.
+A term often cited in software engineering job listings is *Test Driven Development* (TDD). TDD is the practice of writing tests for the behavior of a feature before working on the source code. A implementation is considered complete once it passes all tests and edge cases.
 
-TDD encourages us to write down a strategy to tackle problems in small increments. The upside of TDD sees diminishing returns with growing complexity of implementations. Functions using file i/o, using network i/o, or reliant on environment configurations are difficult to write tests for. Even more so before the implementation is available.
+TDD encourages us to consider and transcribe a strategy to tackle problems in small increments. The upside of TDD sees diminishing returns with growing complexity of implementations. Functions using file i/o or network i/o, or processes reliant on environment configurations are difficult to write tests for. Even more so before the implementation is available.
 
 ## The testing Pyramid
 
-In the 2009 book "Succeeding with agile" Mike Cohn provides the metaphorical representation of the testing pyramid. The three layered structure indicates guidelines for the amount of automated testing for each scope. The nature of these tests are outlined in detail in their individual chapters. The scope of the tests relate to the execution time and complexity of the test environment.
+In the 2009 book "Succeeding with agile" Mike Cohn provides the metaphorical representation of the testing pyramid. The three layered structure indicates guidelines for the amount of automated testing for each scope. The scope of the tests relate to the execution time and complexity of the test environment. The nature of these tests are outlined in detail in their individual chapters.
 
 [![Testing Pyramid](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-pyramid.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-pyramid.png)
 
-The base of the pyramid relies on numerous small-scoped unit tests which are run most frequently. Unit tests ([Small Scoped Tests](./small-scoped-tests.md)) ensure correct behavior within a system.
+The base of the pyramid relies on numerous small scoped unit tests which are run most frequently. Unit tests ([Small Scoped Tests](./small-scoped-tests.md)) ensure correct behavior within a system.
 
-The mid-layer consists of a reduced number of integration tests. Integrations tests ([Medium Scoped Tests](./medium-scoped-tests.md)) ensure correct behavior between embedded or connected systems.
+The mid-layer consists of a reduced number of integration tests ([Medium Scoped Tests](./medium-scoped-tests.md)) ensuring correct behavior between embedded or connected systems.
 
-The pinnacle of the pyramid consists of automated end-to-end tests. These require complex setups and long running operations. End-to-end tests ([Large Scoped Tests](./large-scoped-tests.md)) ensure correct behavior across the entire product.
+The pinnacle of the pyramid consists of automated end-to-end tests ([Large Scoped Tests](./large-scoped-tests.md)). These ensure correct behavior across the entire product and require complex setups and are generally long running operations.
 
-From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. If we have 1000 SST, we aim for 100 MST, and no more than 10 LST. A common anti-pattern is what is referred to as a test snow cone, or inverted pyramid. Here, there are little to no small-scoped tests with all the coverage in labour and time intensive manual tests. These projects have slow test runs and long feedback cycles.
+From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. If we have 1000 SST, we aim for 100 MST, and no more than 10 LST. A common anti-pattern is what we refer to as a test snow cone, or inverted pyramid. These projects contain little to no small scoped tests with all the testing done in labour and time intensive manual tests. The emerging results are slow test runs and long feedback cycles.
 
 ## When to test what
 
-Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code change a varying suite of automated tests ensure the correct integration of code changes at different times.
+Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code change a varying suite of automated tests ensure the correct integration of code changes at different times. Tests are executed ...
 
-Dev
-pre-merge
-post-merge
-pre-release
-post-release
-periodically
+- ... on our developers machine during development;
+- ... on pull requests (**Pre-merge**);
+- ... after a merge into main (**Post-merge**);
+- ... periodically on the main branch;
+- ... when creating a release candidate (**Pre-release**);
+- ... against the live version of our software (**Post-release**).
 
 ## Hermetic environments
 
-Tests run on various machines and runners, by various users and scripts, on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place. As developers we are able to replicate failing tests on the CICD runners on our machines.
+Tests run on various machines and runners, by various users and scripts, on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place.
 
 A hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful. Tests set up, execute and tear down independently and in a confined manner. Tests provide accurate information regardless of the order in which they are run.
 
-Medium and large scoped tests provide the environment and infrastructure needed to execute expectedly. Using container tools such as Docker and Infrastructure as Code (IaC) workflows ensures consistent configuration across platforms and machines. Small scoped tests run without requiring a dedicated hermetic environment. Our testing suite performs as intended on every machine regardless of environmental configurations.
+Medium and large scoped tests provide the environment and infrastructure needed to execute expectedly. Using container tools such as Docker and Infrastructure as Code (IaC) workflows ensures consistent configuration across platforms and machines. Small scoped tests run without requiring a dedicated hermetic environment. Our testing suite performs as intended on every machine regardless of environmental configurations. As developers we are able to replicate failing tests on the CICD runners on our machines.
 
 ## Testing over time
 
