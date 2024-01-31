@@ -29,7 +29,7 @@ The pinnacle of the pyramid consists of automated end-to-end tests ([Large Scope
 
 From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. If we have 1000 SST, we aim for 100 MST, and no more than 10 LST. A common anti-pattern is what we refer to as a test snow cone, or inverted pyramid. These projects contain little to no small scoped tests with all the testing done in labour and time intensive manual tests. The emerging results are slow test runs and long feedback cycles.
 
-## When to test what
+## When to test
 
 Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code change a varying suite of automated tests ensure the correct integration of code changes at different times. Tests are executed ...
 
