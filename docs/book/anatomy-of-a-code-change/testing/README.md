@@ -46,19 +46,19 @@ Tests run on various machines and runners, by various users and scripts, on vari
 
 A hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful. Tests set up, execute and tear down independently and in a confined manner. Tests provide accurate information regardless of the order in which they are run.
 
-Medium and large scoped tests provide the environment and infrastructure needed to execute expectedly. Using container tools such as Docker and Infrastructure as Code (IaC) workflows ensures consistent configuration across platforms and machines. Small scoped tests run without requiring a dedicated hermetic environment. Our testing suite performs as intended on every machine regardless of environmental configurations. As developers we are able to replicate failing tests on the CICD runners on our machines.
+Medium and large scoped tests provide the environment and infrastructure needed to execute expectedly. Using container tools such as Docker and [Infrastructure as Code]() (IaC) workflows ensures consistent configuration across platforms and machines. Small scoped tests run without requiring a dedicated hermetic environment. Our testing suite performs as intended on every machine regardless of environmental configurations. As developers we are able to replicate failing tests on the CICD runners on our machines.
 
 ## Testing over time
 
-The most important property of our testing suite is our developers trust in the process. The superlative is earned and we make the former statement our absolute priority. Tests are added when bugs are reported. Tests are removed when they become brittle, flaky, redundant or even just inconvenient. Tests are moved to be executed at a different time than they are at the moment. The following statements are red flags to be addressed:
+The most important property of our testing suite is our developers trust in the process. The rare superlative is warranted and we elevate the former statement to our absolute priority. We add tests, when bugs are reported. We remove tests, when they become brittle, flaky, redundant or even just inconvenient. We move tests to be executed at a different times, when the current setup proves inefficient or ineffective. The following statements are red flags to be addressed:
 
 **"All tests passed, except for Test A. That one fails about 60% of the time though, so I'm ignoring it."**
 
-Brittle tests normalize the tendency of ignoring failed tests. If that mindset is introduced, our product testing becomes an expensive waste of time instead of a useful tool of shifting left.
+Brittle tests normalize the tendency of ignoring failed tests. Introducing that mindset turns our product testing into an expensive waste of time instead of a useful tool of shifting left.
 
 **"That test takes about twenty minutes, just merge the code now. We don't have time for this!"**
 
-Consider removing the test if it doesn't provide the appropriate value. Twenty minutes is a long time to occupy machines that may be better suited for other jobs. If the test is necessary consider shifting it right, e.g. from pre-merge to post-merge.
+We remove the test should it not provide the appropriate value. Twenty minutes is a long time to occupy machines that may be better suited for other jobs. If the test is necessary, we consider shifting it right, e.g. from pre-merge to post-merge.
 
 <!-- vale proselint.Cliches = NO -->
 <!-- vale write-good.Cliches = NO -->
@@ -68,16 +68,16 @@ Consider removing the test if it doesn't provide the appropriate value. Twenty m
 <!-- vale write-good.Cliches = YES -->
 <!-- vale proselint.Cliches = YES -->
 
-See if we can test a higher layer of abstraction of the functionality. If not, throw it away. The upmost priority is not building resentment towards processes and having developers actively use the automated test suite.
+See if we can test a higher layer of abstraction of the functionality. If not, we throw it away. The upmost priority is for developers to actively use the automated test suite and not build resentment towards the process.
 
 ## Tests as documentation
 
-Software documentation is notoriously unreliable and commonly has a tenuous relationship with the realities of the code it references. Written documentation about behavior of edge cases or default return values are not to be trusted. No matter the extend of the drift, documentation still functions, tests break.
+Software documentation is notoriously unreliable and commonly has a tenuous relationship with the realities of the code it references. Written documentation about behavior of edge cases or default return values are not to be trusted. No matter the extend of the drift, documentation still "functions". Tests break.
 
-Clear and focused tests provide context as to the purpose and limitations of code segments. Tests of edge cases demonstrate expected behavior for teams consuming our code. Tests demonstrating expected behavior streamline pull requests as code reviewers spend less manual effort verifying code correctness.
+Clear and focused tests provide context as to the purpose and limitations of code segments. Tests of edge cases demonstrate expected behavior for teams consuming our code. Demonstrated expected behavior streamlines pull requests, as code reviewers spend less manual effort verifying code correctness.
 
 ## Who writes tests?
 
-Some languages come with native testing tools, others require frameworks and external dependencies to execute test code. Factor in that different testing stages typically have different requirements and we are faced with quite a collection of tools. It is reasonable to assign the selection, maintenance or development of test tooling to dedicated teams.
+Some languages come with native testing tools, others require frameworks and external dependencies to execute test code. Factor in, that different testing stages typically have different requirements and we are faced with quite a collection of tools. It is reasonable to assign the selection, maintenance or development of test tooling to dedicated teams.
 
-It is not reasonable, in fact it is highly discouraged, to move the responsibility of writing and executing the tests themselves away from the developer writing the functionality. This change is sometimes introduced when the complexity of testing increases, such as end-to-end tests involving UI, middleware, backend services, and database entries. In order to reduce cycle times it is imperative that developers write, manage, and understand the tests.
+It is **not** reasonable, in fact it is highly discouraged, to move the responsibility of writing and executing the tests away from the developer writing the functionality. This change is sometimes introduced when the complexity of testing increases, such as end-to-end tests involving UI, middleware, backend services, and database entries. In order to reduce cycle times it is imperative that developers write and maintain the tests.
