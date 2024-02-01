@@ -6,4 +6,5 @@
 
 ## Tasklist
 
+- [ ] Add metadata for social cards to new chapter
 - [ ] Add new chapters to `mkdocs-dist.yaml`
