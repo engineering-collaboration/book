@@ -76,6 +76,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: 🤖 Install git lfs
+      run: git lfs install
+
     - name: 🤖 Checkout main branch for PR
       run: git checkout main
 
