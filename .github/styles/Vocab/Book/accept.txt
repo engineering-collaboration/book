@@ -45,3 +45,4 @@ LST
 MST
 SST
 [Ee]xplorative
+[Nn]ightly

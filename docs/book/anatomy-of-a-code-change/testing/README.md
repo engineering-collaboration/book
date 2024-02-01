@@ -31,14 +31,14 @@ From bottom to top, every layer of the pyramid reduces the amount of tests by an
 
 ## When to test
 
-Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code change a varying suite of automated tests ensure the correct integration of code changes at different times. Tests are executed ...
+Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code change a varying suite of automated tests ensure the correct integration of code changes at different times. Tests are executed …
 
-- ... on our developers machine during development;
-- ... on pull requests (**Pre-merge**);
-- ... after a merge into main (**Post-merge**);
-- ... periodically on the main branch;
-- ... when creating a release candidate (**Pre-release**);
-- ... against the live version of our software (**Post-release**).
+- … on our developers machine during development;
+- … on pull requests (**Pre-merge**);
+- … after a merge into main (**Post-merge**);
+- … periodically on the main branch;
+- … when creating a release candidate (**Pre-release**);
+- … against the live version of our software (**Post-release**).
 
 ## Hermetic environments
 

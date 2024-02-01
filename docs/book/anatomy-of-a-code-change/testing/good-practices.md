@@ -42,7 +42,7 @@ The above implementation tests whether `my_utils.WriteString` writes the given i
 
 The implementation becomes brittle with every future evolution of `my_utils.WriteString`. It cannot account for any additional tasks that are performed, such as byte padding, prefixing metadata, or serializing as clear text json vs binary json; assuming we output directly to a filesystem, instead of a virtualized environment or an in-memory database.
 
-These aspects *might* be worth testing at a later stage in the product lifecycle for specialized software consumed by millions of clients. Assuming we are not working on products for healthcare or aviation, we prioritize development velocity over full process coverage and add tests <!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> after specific problems occurred in production. Instead, we write tests against the *behavior* of **what** we expect to happen.
+These aspects *might* be worth testing at a later stage in the product lifecycle for specialized software consumed by millions of clients. Assuming we are not working on products for healthcare or aviation, we prioritize development velocity over full process coverage and add tests solely after specific problems occurred in production. Instead, we write tests against the *behavior* of **what** we expect to happen.
 
 ```golang
 func Test_SerializeStringSuccess(t *testing.T) {
