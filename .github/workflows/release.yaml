@@ -85,6 +85,7 @@ jobs:
         git reset --hard
         git lfs install
         git lfs pull
+        git restore **/*.png
 
     - name: 🤖 Create PR for changelog
       uses: peter-evans/create-pull-request@v6
