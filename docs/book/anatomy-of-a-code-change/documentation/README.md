@@ -1,6 +1,6 @@
 # Documentation
 
-Everybodies favourite topic. Documentation is the one topic 99% of the industry agree that it is insufficiently done and 98% agree that writing additional documentation is a hassle they cannot be arsed to do.
+Everybodies favourite topic. Documentation is the one topic 99% of the industry agree that it is insufficiently done and 98% agree that writing additional documentation is a hassle they cannot be arsed to do. Throughout our industry we consensually lament the lack of documentation across the board. 
 
 ## Documentation drive development
 

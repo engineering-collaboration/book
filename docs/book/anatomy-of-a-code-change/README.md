@@ -22,7 +22,7 @@ The current progress of this section:
 - [ ] Static Analyses
 - [ ] Code Reviews
 - [ ] Merging
-- [ ] Testing
+- [x] Testing
 - [ ] Documentation
 - [ ] Release Mechanisms
 - [ ] Artifact Management

@@ -106,6 +106,16 @@ nav:
       - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'
       - Commits: './book/anatomy-of-a-code-change/commits.md'
+      - Testing:
+        - './book/anatomy-of-a-code-change/testing/README.md'
+        - Good Practices: './book/anatomy-of-a-code-change/testing/good-practices.md'
+        - Small Scoped Tests: './book/anatomy-of-a-code-change/testing/small-scoped-tests.md'
+        - Medium Scoped Tests: './book/anatomy-of-a-code-change/testing/medium-scoped-tests.md'
+        - Large Scoped Tests: './book/anatomy-of-a-code-change/testing/large-scoped-tests.md'
+        - Benchmark Tests: './book/anatomy-of-a-code-change/testing/benchmark-tests.md'
+        - Manual Tests: './book/anatomy-of-a-code-change/testing/manual-tests.md'
+        - Testing in Production: './book/anatomy-of-a-code-change/testing/testing-in-production.md'
+        - Testing Strategy: './book/anatomy-of-a-code-change/testing/testing-strategy.md'
 
   - Resources: 'resources.md'
   - Changelog: 'changelog.md'

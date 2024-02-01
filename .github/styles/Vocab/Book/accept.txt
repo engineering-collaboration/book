@@ -2,6 +2,8 @@ Bottcher
 Etha
 Bernstain
 Lazer
+Cohn
+Hyrum
 API
 CTO
 daily
@@ -35,3 +37,12 @@ subtask
 UI
 whitespace
 IDE
+expectedly
+middleware
+json
+virtualized
+LST
+MST
+SST
+[Ee]xplorative
+[Nn]ightly
