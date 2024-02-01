@@ -13,7 +13,7 @@ Alas, testing does not end once our software is in production. It would be embar
 
 ## Incremental rollouts
 
-When releasing new versions we roll our changes out to the public in iterations. Blue-green deployments and canary releases appraise working functionality and evaluate product decisions with a subset of our user base before fully committing to distributing changes. We cover these procedures in detail in [Release Strategies]().
+When releasing new versions we roll our changes out to the public in iterations. Blue-green deployments and canary releases appraise working functionality and evaluate product decisions with a subset of our user base before fully committing to distributing changes. We cover these procedures in detail in [Release Strategies (*WIP)]().
 
 ## Production systems
 
