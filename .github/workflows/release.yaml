@@ -76,29 +76,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: 🤖 Checkout main branch for PR
-      run: git checkout main
-
-    - name: 🤖 Force git lfs
-      run: |
-        git lfs uninstall
-        git reset --hard
-        git lfs install
-        git lfs pull
-        git restore **/*.png
-
-    - name: 🤖 Create PR for changelog
-      uses: peter-evans/create-pull-request@v6
-      with:
-        branch: changelog/patch
-        title: 🤖 Prepend latest changelog
-        body: Automated changelog changes by GitHub action.
-        labels: meta
-        assignees: daniellanner
-        reviewers: daniellanner
-        add-paths: |
-            docs/changelog.md
-
   #######################
   ##### DEPLOY SITE #####
   #######################
