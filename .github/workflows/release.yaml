@@ -79,8 +79,15 @@ jobs:
     - name: 🤖 Checkout main branch for PR
       run: git checkout main
 
+    - name: 🤖 Force git lfs
+      run: |
+        git lfs uninstall
+        git reset --hard
+        git lfs install
+        git lfs pull
+
     - name: 🤖 Create PR for changelog
-      uses: peter-evans/create-pull-request@v5
+      uses: peter-evans/create-pull-request@v6
       with:
         branch: changelog/patch
         title: 🤖 Prepend latest changelog
