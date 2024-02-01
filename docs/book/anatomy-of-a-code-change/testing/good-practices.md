@@ -84,6 +84,12 @@ Hyrum's law states that every public facing behavior of our implementation will 
 
 We cannot foresee or control how third party systems depend upon our implementation and we question the feasibility of testing all public facing characteristics of our implementation. We are aware that changes might be incompatible with current dependencies and it is up to us to weigh the responsibility we delegate to our consumers.
 
+## When tests break
+
+Accidental breaking changes aside, changes to products will inevitably cease to pass established tests. We may have encountered a brittle test which is not scaling with our product changes. Depending on the severity of the fragility we resolve the issue synchronously or asynchronously. Prominent brittleness may be removed by slightly altering the test and sending the initial author a direct message to corroborate our changes. Opaque tests may require a meeting to determine a resolution.
+
+Failing tests for working code is an indicator of backwards incompatibility. If these consequences have already been discussed, we ensure they are present within the [Design Document](../planning-implementations.md) and verified by all stakeholders. In case we find our design doc lacking, it is imperative to communicate the situation to our team lead until a strategy is agreed upon by all involved departments. While this sounds histrionic, most cases resolve themselves astutely with a brief email chain.
+
 ## Naming of tests
 
 Method oriented tests are named after the method being tested. Names of behavior driven tests offer the chance to convey useful information, as the name is the first token visible to us on failing tests.
