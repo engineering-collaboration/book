@@ -19,6 +19,19 @@ We statically verify our system follows the guidelines defined within our design
 
 During security tests and <!-- vale alex.ProfanityMaybe = NO -->penetration<!-- vale alex.ProfanityMaybe = YES --> tests allies uncover and exploit vulnerabilities in our system before malicious entities take advantage of them. Domain experts stress the boundaries in systems, trying to effectively break our software. Broken states in our systems lead to flaws in our product, e.g. multiple shipments of a single order.
 
+## Nightly, alpha, and beta programs
+
+So far we have discussed manual tests done internally or by third party providers. A common strategy to demonstrate build stability and user acceptance is to offer early releases to a restricted control group consisting of power users. Sorted by recency, these programs are termed
+
+- Nightly releases - A build of our current head of the main branch.
+- Alpha releases - The first phase in our product release cycle. We cooperate with power users on customer acceptance for features.
+- Beta releases - The second phase in our product release cycle. We iterate on feature stability with a wider audience.
+- Tech streams - Full releases of our product with limited warranty. Participants access releases a quarter early to authenticate that the upgrade functions with their projects and infrastructure.
+
+The major benefit of early access programs is the user diversity. Our software is tested across a broad spectrum of cultures, hardware combinations, software requirements, and security restrictions. No other testing environment consolidates feedback about localization flaws, crashes with select hardware drivers, or mistaken runtime assumptions.
+
+These (semi-)public manual testing strategies require dedicated personnel with product experience qualified in communications. This is much less a technological role than it is a mediatory role. Often times our software builds the base of the livelihood of our users. Perceived detrimental changes fuel anxiety and emotional responses.
+
 ## Executing manual tests
 
 Strategies in user experience and accessibility steadily move from manual testing to automated testing. As security testing shifted left more and more our terms evolved, e.g. DevOps is now referred to as DevSecOps. Regardless of labels, we intend to shift all feasible product aspects left and introduce them to earlier testing stages.
