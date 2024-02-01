@@ -46,7 +46,7 @@ Tests run on various machines and runners, by various users and scripts, on vari
 
 A hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful. Tests set up, execute and tear down independently and in a confined manner. Tests provide accurate information regardless of the order in which they are run.
 
-Medium and large scoped tests provide the environment and infrastructure needed to execute expectedly. Using container tools such as Docker and [Infrastructure as Code]() (IaC) workflows ensures consistent configuration across platforms and machines. Small scoped tests run without requiring a dedicated hermetic environment. Our testing suite performs as intended on every machine regardless of environmental configurations. As developers we are able to replicate failing tests on the CICD runners on our machines.
+Medium and large scoped tests provide the environment and infrastructure needed to execute expectedly. Using container tools such as Docker and [Infrastructure as Code (*WIP)]() (IaC) workflows ensures consistent configuration across platforms and machines. Small scoped tests run without requiring a dedicated hermetic environment. Our testing suite performs as intended on every machine regardless of environmental configurations. As developers we are able to replicate failing tests on the CICD runners on our machines.
 
 ## Testing over time
 
