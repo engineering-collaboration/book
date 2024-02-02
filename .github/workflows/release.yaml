@@ -76,6 +76,19 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: 🤖 Checkout main branch for PR
+      run: git checkout main
+
+    - name: 🤖 Create PR for changelog
+      uses: peter-evans/create-pull-request@v6
+      with:
+        branch: changelog/patch
+        title: 🤖 Prepend latest changelog
+        body: Automated changelog changes by GitHub action.
+        labels: meta
+        assignees: daniellanner
+        reviewers: daniellanner
+
   #######################
   ##### DEPLOY SITE #####
   #######################
