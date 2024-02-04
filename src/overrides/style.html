@@ -82,6 +82,11 @@
   margin-bottom: 3rem
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto
+}
+
 .-mr-1 {
   margin-right: -0.25rem
 }
@@ -1120,43 +1125,41 @@
 }
 
 @media (min-width: 768px) {
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:col-span-5 {
+  .md\:col-span-5 {
     grid-column: span 5 / span 5
   }
 
-  .lg\:col-span-7 {
+  .md\:col-span-7 {
     grid-column: span 7 / span 7
   }
 
-  .lg\:mb-0 {
+  .md\:mb-0 {
     margin-bottom: 0px
   }
 
-  .lg\:mb-24 {
+  .md\:mb-24 {
     margin-bottom: 6rem
   }
 
-  .lg\:grid {
+  .md\:grid {
     display: grid
   }
 
-  .lg\:grid-cols-12 {
+  .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr))
   }
 
-  .lg\:gap-8 {
+  .md\:gap-8 {
     gap: 2rem
   }
 
-  .lg\:py-16 {
+  .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1
   }
 }
