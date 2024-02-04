@@ -1,4 +1,4 @@
-# The anatomy of collaboration - Code of Conduct
+# OpenCollaboration - Code of Conduct
 
 ## Our Pledge
 
