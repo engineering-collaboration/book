@@ -9,8 +9,8 @@ site_description: >-
 
 copyright: Written by <a href="https://daniellanner.io" target="_blank">Daniel Lanner</a>
 
-repo_url: https://github.com/the-anatomy-of-collaboration/book
-repo_name: the-anatomy-of-collaboration/book
+repo_url: https://github.com/opencollabbook/book
+repo_name: opencollabbook/book
 edit_uri: edit/main/docs/
 
 theme:

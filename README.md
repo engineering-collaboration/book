@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.the-anatomy-of-collaboration.io/">
-    <img src="https://raw.githubusercontent.com/the-anatomy-of-collaboration/book/main/docs/assets/logo.png" width="64" alt="The anatomy of collaboration in software">
+    <img src="https://raw.githubusercontent.com/opencollabbook/book/main/docs/assets/logo.png" width="64" alt="The anatomy of collaboration in software">
   </a>
 </p>
 <br>
