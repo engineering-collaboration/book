@@ -1,4 +1,4 @@
 ---
-title: The anatomy of collaboration in software
+title: OpenCollaboration
 template: home.html
 ---

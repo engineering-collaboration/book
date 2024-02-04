@@ -5,11 +5,11 @@
 </p>
 <br>
 
-The book *The anatomy of collaboration in software* presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+The book *OpenCollaboration* presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
 
 ## Roadmap
 
-*The anatomy of collaboration in software* is under heavy development and undergoes continuous editing and restructuring. The main development currently focuses on polishing Part III. The additional roadmap for the v1 release currently looks as follows.
+*OpenCollaboration* is under heavy development and undergoes continuous editing and restructuring. The main development currently focuses on polishing Part III. The additional roadmap for the v1 release currently looks as follows.
 
 - [x] Introduction
 - [x] Part I (missing graphics)
@@ -20,7 +20,7 @@ The book *The anatomy of collaboration in software* presents a vertical slice of
 
 ## Running locally
 
-*The anatomy of collaboration in software* is written in Markdown and built to HTML via [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). In order to start working locally, follow the instructions to [install Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/).
+*OpenCollaboration* is written in Markdown and built to HTML via [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). In order to start working locally, follow the instructions to [install Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/).
 
 Once installed, we create and render a book using `mkdocs serve`. This command automatically detects and hot reloads changes to the Markdown source.
 
@@ -30,7 +30,7 @@ The [contribution guidelines](CONTRIBUTING.md) document strategies regarding pro
 
 ## Versioning
 
-*The anatomy of collaboration in software* follows the [semantic versioning](http://semver.org/) scheme.
+*OpenCollaboration* follows the [semantic versioning](http://semver.org/) scheme.
 
 - Patches include fixes to orthography, grammar, and punctuation.
 - Minor version bumps cover larger edits and new chapters.
@@ -38,7 +38,7 @@ The [contribution guidelines](CONTRIBUTING.md) document strategies regarding pro
 
 ## Licensing
 
-*The anatomy of collaboration in software* is licensed under the **CC-BY-4.0** license, please review the [LICENSE file](LICENSE) for further details.
+*OpenCollaboration* is licensed under the **CC-BY-4.0** license, please review the [LICENSE file](LICENSE) for further details.
 
 ## Built with ❤️ and
 

@@ -1,17 +1,17 @@
 ---
 title: Introduction
-description: The anatomy of collaboration in software presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+description: OpenCollaboration presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
 ---
 
 # Introduction
 
 Software companies are required to adapt to rapid technological, economical, and political change in order to viably compete on any market. This fact introduces the paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 
-*The anatomy of collaboration in software* presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+*OpenCollaboration* presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
 
 ## Structure
 
-*The anatomy of collaboration in software* is structured into three sections dealing with processes on different levels of our organization.
+*OpenCollaboration* is structured into three sections dealing with processes on different levels of our organization.
 
 - *The anatomy of a software company* covers how to optimally establish our teams and improve organic collaboration while limiting noise. We discuss established strategies of nurturing a growth mindset for sustainably increasing the complexity of our product, expanding the number of teams within our organization, and progress the professional expertise of our employees. The topics discussed in this section are solutions to problems encountered by technology officers and software architects.
 - *The anatomy of managing a team* frames supporting principles of leading a team. (WIP) This section covers day to day encounters of technical and team leads.
