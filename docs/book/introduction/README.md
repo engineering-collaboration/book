@@ -15,7 +15,7 @@ Software companies are required to adapt to rapid technological, economical, and
 
 - *The anatomy of a software company* covers how to optimally establish our teams and improve organic collaboration while limiting noise. We discuss established strategies of nurturing a growth mindset for sustainably increasing the complexity of our product, expanding the number of teams within our organization, and progress the professional expertise of our employees. The topics discussed in this section are solutions to problems encountered by technology officers and software architects.
 - *The anatomy of managing a team* frames supporting principles of leading a team. This section covers day to day encounters of technical and team leads.
-- *The anatomy of a code change* analyses good practices for day to day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequencies of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
+- *The anatomy of a code change* analyzes good practices for day to day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequencies of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
 
 While the structure of this book does follow the reciprocal typical career progression of an engineer, we encourage all readers to glance at every section. Certain sociotechnical dependencies become more visible when digesting the entire book.
 

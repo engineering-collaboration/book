@@ -19,7 +19,7 @@ The current progress of this section:
 - [x] Trunk based development
 - [x] Commits
 - [ ] Pull Requests
-- [ ] Static Analyses
+- [ ] Static Analysis
 - [ ] Code Reviews
 - [ ] Merging
 - [x] Testing

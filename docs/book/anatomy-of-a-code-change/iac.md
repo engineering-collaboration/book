@@ -10,6 +10,6 @@ Snowflake servers have gotten their current configuration by a combination of ma
 
 Versioning of IaC configs
 
-Tests, static analyses, pull requests
+Tests, static analysis, pull requests
 All versions can be restored to any time we would need it from the past
 
