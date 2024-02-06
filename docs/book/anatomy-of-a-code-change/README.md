@@ -18,18 +18,18 @@ The current progress of this section:
 - [x] Planning implementations
 - [x] Trunk based development
 - [x] Commits
-- [ ] Pull Requests
-- [ ] Static Analysis
-- [ ] Code Reviews
+- [ ] Pull requests
+- [ ] Static analysis
+- [ ] Code reviews
 - [ ] Merging
 - [x] Testing
 - [ ] Documentation
-- [ ] Release Mechanisms
-- [ ] Artifact Management
-- [ ] Release Strategies
-- [ ] Repository Strategies
-- [ ] Infrastructure as Code
-- [ ] Monitoring and Observability
+- [ ] Release mechanisms
+- [ ] Artifact management
+- [ ] Release strategies
+- [ ] Repository strategies
+- [ ] Infrastructure as code
+- [ ] Monitoring and observability
 
 ## Version Control
 
