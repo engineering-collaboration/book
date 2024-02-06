@@ -1,6 +1,6 @@
 # Static analysis
 
-Upon creating PR's you may want to verify good practices of the implementation. Static analyses refers to tooling that checks the submitted code in its raw state. Opposed to tests that analyse code execution, static analyses reviews the syntax of the typed code.
+Upon creating PR's you may want to verify good practices of the implementation. Static analysis refers to tooling that checks the submitted code in its raw state. Opposed to tests that analyze code execution, static analysis reviews the syntax of the typed code.
 
 This step verifies that the engineer followed agreed upon processes on how to achieve the required features.
 

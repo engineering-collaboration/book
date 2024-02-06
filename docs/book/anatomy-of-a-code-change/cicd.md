@@ -28,7 +28,7 @@ This offers verifiable and <!-- vale write-good.Weasel = NO -->timely<!-- vale w
 
 ## Continuous Deployment
 
-Continuous Deployment (CD) is an extension of continuous integration. After the static analyses has passed and the code changes have been integrated and we build the application and run automated integration tests.
+Continuous Deployment (CD) is an extension of continuous integration. After the static analysis has passed and the code changes have been integrated and we build the application and run automated integration tests.
 
 As the CI tests changes to our source code, CD tests the changes to our compiled machine code. If all tests pass we are certain to have a functioning package of our application. These packages are now staged for testing. Typical deployment testing can consist of one or more of the following mechanisms:
 

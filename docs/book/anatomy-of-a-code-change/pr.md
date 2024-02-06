@@ -37,9 +37,9 @@ Provide context why a particular constrain exists to make it feel less arbitrary
 
 Identify opportunities for automation in the pull request process, such as code linting, testing, and code coverage analysis.
 
-Opposed to tests that analyse code execution, static analyses reviews the syntax of the typed code.
+Opposed to tests that analyze code execution, static analysis reviews the syntax of the typed code.
 
-**Static Analysis** verifies good practices of the implementation. It scores HOW the engineer structured their implementation. Use automated code quality checks, such as code linting and style checks, to ensure that the code meets the required standards. We talk about the intricacies of static analyses in the [static analyses chapter]().
+**Static Analysis** verifies good practices of the implementation. It scores HOW the engineer structured their implementation. Use automated code quality checks, such as code linting and style checks, to ensure that the code meets the required standards. We talk about the intricacies of static analysis in the [static analysis chapter]().
 
 **Lightweight Tests** verify the acceptance criteria of the implementation and check that the engineer has not unintentially introduced new bugs or regressions. We talk about the intricacies of testing strategies in the [testing chapter]().
 

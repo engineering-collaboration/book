@@ -14,8 +14,8 @@ Software companies are required to adapt to rapid technological, economical, and
 *OpenCollaboration* is structured into three sections dealing with processes on different levels of our organization.
 
 - *The anatomy of a software company* covers how to optimally establish our teams and improve organic collaboration while limiting noise. We discuss established strategies of nurturing a growth mindset for sustainably increasing the complexity of our product, expanding the number of teams within our organization, and progress the professional expertise of our employees. The topics discussed in this section are solutions to problems encountered by technology officers and software architects.
-- *The anatomy of managing a team* frames supporting principles of leading a team. (WIP) This section covers day to day encounters of technical and team leads.
-- *The anatomy of a code change* analyses good practices for day to day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequencies of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
+- *The anatomy of managing a team* frames supporting principles of leading a team. This section covers day to day encounters of technical and team leads.
+- *The anatomy of a code change* analyzes good practices for day to day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequencies of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
 
 While the structure of this book does follow the reciprocal typical career progression of an engineer, we encourage all readers to glance at every section. Certain sociotechnical dependencies become more visible when digesting the entire book.
 
@@ -44,3 +44,28 @@ We avoid the term "best practices" in this book. "Best" is subject to industries
 The concepts discussed in this book should be applied by implementing small changes for a limited number of teams. We reduce the cost and risk of verifying the positive effect we intend to implement in our organization by testing the changes within an isolated team.
 
 Lastly, while we do our best to keep the language as inclusive as possible there is a non-zero chance that certain words or phrases will not be received in the way they were meant to be. Language is difficult. The written word is difficult. Please read this book with the positive intent that it was penned in.
+
+## Current progress
+
+We are hard at work on *The anatomy of a code change* and are releasing new chapters periodically. A breakdown of our progress with a detailed list of chapters is available on the individual section pages.
+
+- [x] Introduction
+    - [x] Notes and structure
+    - [x] First draft
+    - [x] Polish
+    - [ ] Edit for v1.0.0
+- [x] [The anatomy of a software company](../anatomy-of-a-software-company/README.md)
+    - [x] Notes and structure
+    - [x] First draft
+    - [x] Polish
+    - [ ] Edit for v1.0.0
+- [ ] [The anatomy of managing a team](../anatomy-of-managing-a-team/README.md)
+    - [ ] Notes and structure
+    - [ ] First draft
+    - [ ] Polish
+    - [ ] Edit for v1.0.0
+- [ ] [The anatomy of a code change](../anatomy-of-a-code-change/README.md)
+    - [x] Notes and structure
+    - [ ] First draft
+    - [ ] Polish
+    - [ ] Edit for v1.0.0

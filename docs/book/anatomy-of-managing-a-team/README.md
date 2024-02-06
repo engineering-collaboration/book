@@ -7,7 +7,7 @@ This part discusses the responsibilities of team and tech leads, common pitfalls
 
 The current progress of this section:
 
-- [ ] Culture, Diversity, and Language
+- [ ] Culture, diversity, and language
 - [ ] Leading by serving
 - [ ] Managing individual needs of team members
 - [ ] Building professional trust within a team
