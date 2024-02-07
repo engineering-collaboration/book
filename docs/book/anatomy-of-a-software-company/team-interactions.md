@@ -27,7 +27,7 @@ To highlight the difference of the two approaches we are borrowing a quote from 
     *"The roots of Toyota's success lie not in its organizational structures but in developing capability and habits in it's people."*  
     - Mike Rother
 
-In the previous chapter we argued for public per default communication. We stand by this assessment, but that does not mean we encourage collaborating via an organization wide free-for-all. In order to get work done it is necessary to define sensible and effective interactions between teams.
+While we incentivize organization-wide public communication (as discussed in [Communication Channels](./communication-channels.md)), we do not encourage teams collaborating via an organization wide free-for-all. In order to get work done it is necessary to define sensible and effective interactions between teams.
 
 The book *Team Topologies* lists three interaction modes between teams. Through framing interaction modes with a *promise theory* and consistent communication styles for each team and interaction mode, we encourage an increase of confidence and trust between teams.
 
