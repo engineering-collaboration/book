@@ -10,9 +10,9 @@ Autonomous vertical teams eliminate dependencies and handoffs to other teams for
 Standardization is a double edged sword. Though it improves communication across the organization, we might inadvertently limit a teams capabilities to efficiently and creatively do their work.
 
 <!-- vale write-good.Weasel = NO -->
-- Only standardize what is strictly necessary.
-- Only standardize the lowest common denominator of what is necessary.
-- If there is an open source solution, use the open source solution.
+- We only standardize what is strictly necessary.
+- We only standardize the lowest common denominator of what is necessary.
+- If there is an open source solution, we use the open source solution.
 <!-- vale write-good.Weasel = YES -->
 
 ## Standardizing schemas instead of tools
