@@ -57,7 +57,7 @@ Typical facilitating scenarios include:
 
 ## Putting it all together
 
-Combining the practices of [autonomous vertical teams](./autonomous-team-structure.md), [internal supporting teams](internal-supporting-teams.md), and the team interactions discussed within this chapter, we may start visualizing the positioning our teams. When designing team boundaries and interaction modes we commit to the Inverse Conway Maneuver to map our communication channels to our software architecture. The following picture showcases an academic slice of a larger company. It presents our teams and interactions for educational purposes solely.
+Combining the practices of [autonomous vertical teams](./autonomous-team-structure.md), [internal supporting teams](internal-supporting-teams.md), and the team interactions discussed within this chapter, we start visualizing our team structure. When designing team boundaries and interaction modes, we commit to the *Inverse Conway Maneuver* to map our communication channels to our software architecture. The following picture showcases an academic slice of a larger company. It presents our teams and interactions for educational purposes solely.
 
 [![Team Topology](../../assets/images/book/anatomy-of-a-software-company/team-topology.webp)](../../assets/images/book/anatomy-of-a-software-company/team-topology.png)
 
@@ -75,7 +75,7 @@ Due to the available pixel real estate of the image, the relationship between fe
 
 ## Workspace design
 
-We have influence on communication behavior of our teams. As with the Inverse Conway maneuver, we ask ourselves who we want to communicate with whom how frequently and design our workspaces around this mandate. This approach works for both physical and virtual workspaces.
+We have influence on communication behavior of our teams. As with the *Inverse Conway Maneuver*, we ask ourselves who we want to communicate with whom how frequently and design our workspaces around this mandate. This approach works for both physical and virtual workspaces.
 
 The most physical method for steering communication within an office is, quite physically, walls. We plan who shares an office with whom and the physical distance between teams. We arrange our vertical teams by rooms, floors, and buildings. Subtler influences of communication behaviour is established by designing the viewing angles of individual contributors. For office workers we strategically place table arrangements, whiteboards, plants, and décor.
 
