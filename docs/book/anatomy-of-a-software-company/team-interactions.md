@@ -55,6 +55,10 @@ Typical facilitating scenarios include:
 - Adoption of new tools, where skeleton systems are set up by the facilitating team and handed over to the vertical team at the end of the phase.
 - Political duties or user insights from vertical teams adopting new feature rollouts from X-as-a-Service interactions.
 
+### Putting it together
+
+[![Team Topology](../../assets/images/book/anatomy-of-a-software-company/team-topology.webp)](../../assets/images/book/anatomy-of-a-software-company/team-topology.png)
+
 ## Workspace design
 
 We have influence on communication behavior of our teams. As with the Inverse Conway maneuver, we ask ourselves who we want to communicate with whom how frequently and design our workspaces around this mandate. This approach works for both physical and virtual workspaces.
