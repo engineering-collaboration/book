@@ -61,13 +61,13 @@ Combining the practices of [autonomous vertical teams](./autonomous-team-structu
 
 [![Team Topology](../../assets/images/book/anatomy-of-a-software-company/team-topology.webp)](../../assets/images/book/anatomy-of-a-software-company/team-topology.png)
 
-Starting from the product side, we have two vertical teams releasing to the consumer facing side of our software, the check-out team and the web shop team. From customer feedback, to design, to code, and release, these teams own the entire development lifecycle of their team's feature.
+Exploring the product teams, the check-out team and the web shop team release features to the consumer facing side of our software. These vertical teams own the entire development lifecycle of their respective feature, from customer feedback to design, code, testing, and delivery.
 
-As the cognitive load of global payment systems exceeded the team's limits, we split off a dedicated team for compliance and localization of payment. The team is collaborating closely with the check-out team to establish requirements and services for payment interactions. Over time the payment team will offer either a set of libraries or a platform for payment via the *X-as-a-service* interaction.
+As the cognitive load of global payment systems exceeds the check-out team's limits, we split off a dedicated team for compliance and localization of payments. Initially the team collaborates meticulously with the check-out team to establish requirements and services for payment interactions. Over time, the payment team offers either a set of libraries or a platform for payments via the *x-as-a-service* interaction.
 
 The 3D rendering team already matured from a *collaboration* state, offering sophisticated 3D rendering libraries as a service to display products within an additional dimension. Our web shop team consumes the libraries and over time the communication has receded to reading the provided documentation of the API.
 
-Our vertical platform teams working on the product search component and the metrics deliver their respective releases to the internal platform, accessible to all all across the company. The platform teams consolidate fragmented implementations into shared performant implementations.
+Our vertical platform teams working on the product search component and the metrics deliver their respective releases to the internal platform, accessible to all teams across the company. The platform teams consolidate fragmented implementations into shared high performance implementations.
 
 Our CICD research team spent the last months evaluating tools and offerings for advanced testing practices. Facilitating our metrics team, our research team is presenting and validating its findings in a low-risk internal environment. As soon as the metrics team is self reliant with the new practices, we start facilitating the next vertical team.
 
