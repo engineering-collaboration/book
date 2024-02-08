@@ -5,19 +5,9 @@ description: When teams are partitioned via disciplines, every costumer facing f
 
 # Autonomous team structure
 
-## Org Charts
-
-An Organizational chart (org chart) is a helpful organigram for visualizing the level of responsibility and compliance, essentially illustrating "who is in charge of what and whom". Typically the CEO or board are the ultimate decision makers for problems that make their way to the top of the chart. For day-to-day practices the org chart shows the strategically placed chain of command for each business division. The higher up the org chart we go, the more long-term decisions we encounter.
-
-Org charts are NOT a device to visualize communication channels and team structures within organizations. Any practical planing of team responsibilities or day-to-day tasks based on org charts is an inherently flawed process as teams and products within software companies strive to adapt to market conditions, that is what we're trying to achieve with this book anyway.
-
-A healthy business is not built upon software alone and an org chart has little relationship with our engineers and inserting any names of our workforce into our the chart is pointless. Reasonable org chart updates include changes to geographic compliance responsibilities, drastic updates to our organizations cap table.
+Before getting into the structure of teams, let's have a brief excursion into anthropology. What is the suggested cognitive limit to the number of people with whom one can maintain stable social relationships?
 
 ## Team size
-
-Before getting into the structure of teams, let's have a brief excursion into anthropology.
-
-What is the suggested cognitive limit to the number of people with whom one can maintain stable social relationships?
 
 A number was first proposed in the 1990s by British anthropologist Robin Dunbar. Based on the behavior of primates, Dunbar proposed that humans can comfortably maintain 150 active contacts. A further break down 50 meaningful trust, 15 people with whom we share a strong trust, and 5 people with whom we have a deep trust.
 
@@ -29,11 +19,15 @@ A common pattern we want to avoid in our organization is to design teams by disc
 
 When teams are partitioned via disciplines, every costumer facing feature has multiple inter-team handoffs and inter-team communication to perform. This approach drastically reduces velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
 
+[![Horizontal Teams](../../assets/images/book/anatomy-of-a-software-company/horizontal-teams.webp)](../../assets/images/book/anatomy-of-a-software-company/horizontal-teams.png)
+
 Structuring teams via technical boundaries directs organic inertia towards misguided goals. Instead of focusing on the best customer experience, our backend team will focus on building the best backend the team can envision, regardless of organizational needs.
 
 ## Vertical teams
 
 Rapid delivery cycles are achieved by designing teams as autonomous vertical structures. A vertical team is aligned to a single product or service, feature, user journey, or user persona. This team is empowered to build and deliver customer value as quickly and independently as possible. The team does not require hand-offs to other teams to perform parts of the task.
+
+[![Vertical Teams](../../assets/images/book/anatomy-of-a-software-company/vertical-teams.webp)](../../assets/images/book/anatomy-of-a-software-company/vertical-teams.png)
 
 Vertical members include all disciplines across the necessary tech stack. Typically a vertical team has members versed in the following areas:
 
@@ -67,3 +61,11 @@ A vertical team works on any sort of deliverable or outcome within an organizati
 ## Cognitive load
 
 Just as we design teams after our software architecture, we want ensure our software architecture considers the maximum cognitive load of a team. If during our software design process we realize a certain module exceeds the capacity of what can realistically be achieved with a team size following Dunbar's number, we should consider splitting it into submodules for dedicated teams.
+
+## Organizational Charts
+
+An Organizational chart (org chart) is a helpful organigram for visualizing the level of responsibility and compliance, essentially illustrating "who is in charge of what and whom". Typically the CEO or board are the ultimate decision makers for problems that make their way to the top of the chart. For day-to-day practices the org chart shows the strategically placed chain of command for each business division. The higher up the org chart we go, the more long-term decisions we encounter.
+
+Org charts are NOT a device to visualize communication channels and team structures within organizations. Any practical planing of team responsibilities or day-to-day tasks based on org charts is an inherently flawed process as teams and products within software companies strive to adapt to market conditions, that is what we're trying to achieve with this book anyway.
+
+A healthy business is not built upon software alone and an org chart has little relationship with our engineers and inserting any names of our workforce into our the chart is pointless. Reasonable org chart updates include changes to geographic compliance responsibilities, drastic updates to our organizations cap table.

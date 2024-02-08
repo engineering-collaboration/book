@@ -27,7 +27,7 @@ To highlight the difference of the two approaches we are borrowing a quote from 
     *"The roots of Toyota's success lie not in its organizational structures but in developing capability and habits in it's people."*  
     - Mike Rother
 
-In the previous chapter we argued for public per default communication. We stand by this assessment, but that does not mean we encourage collaborating via an organization wide free-for-all. In order to get work done it is necessary to define sensible and effective interactions between teams.
+While we incentivize organization-wide public communication (as discussed in [Communication Channels](./communication-channels.md)), we do not encourage teams collaborating via an organization wide free-for-all. In order to get work done it is necessary to define sensible and effective interactions between teams.
 
 The book *Team Topologies* lists three interaction modes between teams. Through framing interaction modes with a *promise theory* and consistent communication styles for each team and interaction mode, we encourage an increase of confidence and trust between teams.
 
@@ -55,9 +55,25 @@ Typical facilitating scenarios include:
 - Adoption of new tools, where skeleton systems are set up by the facilitating team and handed over to the vertical team at the end of the phase.
 - Political duties or user insights from vertical teams adopting new feature rollouts from X-as-a-Service interactions.
 
+## Putting it all together
+
+Combining the practices of [autonomous vertical teams](./autonomous-team-structure.md), [internal supporting teams](internal-supporting-teams.md), and the team interactions discussed within this chapter, we start visualizing our team structure. When designing team boundaries and interaction modes, we commit to the *Inverse Conway Maneuver* and map our communication channels to our software architecture. The following picture showcases an academic slice of a larger company.
+
+[![Team Topology](../../assets/images/book/anatomy-of-a-software-company/team-topology.webp)](../../assets/images/book/anatomy-of-a-software-company/team-topology.png)
+
+Exploring the product teams, the check-out team and the web shop team release features to the consumer facing side of our software. These vertical teams own the entire development lifecycle of their respective feature, from customer feedback to design, code, testing, and delivery. Contrary to the image's austerity, our organization consists mainly of product feature teams. We aim for one supporting team for every six to nine product teams.
+
+As the cognitive load of global payment systems exceeds the check-out team's limits, we split off a dedicated team for compliance and localization of payments. Initially the team collaborates meticulously with the check-out team to establish requirements and services for payment interactions. Over time, the payment team offers either a set of libraries or a platform for payments via the *x-as-a-service* interaction.
+
+The 3D rendering team already matured from a *collaboration* state, offering sophisticated 3D rendering libraries as a service to display products within an additional dimension. Our web shop team consumes the libraries and over time the communication has receded to reading the provided documentation of the API.
+
+Our vertical platform teams working on the product search component and the metrics deliver their respective releases to the internal platform, accessible to all teams across the company. The platform teams consolidate fragmented implementations into shared high performance implementations.
+
+Our CICD research team spent the last months evaluating tools and strategies for advanced testing practices. Facilitating our metrics team, our research team is presenting and validating its findings in a low-risk internal environment. As soon as the metrics team reaches self reliance with the new practices, the CICD R&D team move to facilitate the next vertical team.
+
 ## Workspace design
 
-We have influence on communication behavior of our teams. As with the Inverse Conway maneuver, we ask ourselves who we want to communicate with whom how frequently and design our workspaces around this mandate. This approach works for both physical and virtual workspaces.
+We have influence on communication behavior of our teams. As with the *Inverse Conway Maneuver*, we ask ourselves who we want to communicate with whom how frequently and design our workspaces around this mandate. This approach works for both physical and virtual workspaces.
 
 The most physical method for steering communication within an office is, quite physically, walls. We plan who shares an office with whom and the physical distance between teams. We arrange our vertical teams by rooms, floors, and buildings. Subtler influences of communication behaviour is established by designing the viewing angles of individual contributors. For office workers we strategically place table arrangements, whiteboards, plants, and décor.
 
