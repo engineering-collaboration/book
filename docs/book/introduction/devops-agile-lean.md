@@ -5,7 +5,7 @@ description: We prioritize delivering working software as swiftly as possible, a
 
 # DevOps, Agile, Lean
 
-Arguably these terms have become quite fashionable. Most notably "agile" has been a trending term for a while with various flavours popping up over the years and multiple consultancies and tooling providers offer "best practice" solutions.
+Arguably these terms have become quite fashionable. Most notably "Agile" has been a trending term for a while with various flavours popping up over the years and multiple consultancies and tooling providers offering "best practice" solutions.
 
 In order to avoid any tribalism, bias, or emotional connotation this book will avoid these terms as best feasible and use the titular term "collaboration" concluding this chapter.
 
@@ -25,7 +25,7 @@ Ideally, each change integrated into our product keeps our product in a delivera
 
 All of our teams are able to produce and release working software by themselves. They are self-organizing and take responsibility for developing and releasing different aspects of our software. Teams are able to design, implement and release changes to software products without the need of hand-offs, approvals, or dependencies on another team. 
 
-Every organization is founded on the fact that its employees do more than their assigned tasks. A body as complex as an organization cannot be planned into every minute detail. Autonomy of work, autonomy of communication is mandatory. If people are micro-managed or forced into overbearing bureaucratic processes our organization's deliveries comes to a halt.
+Every organization is founded on the fact that its employees do more than their assigned tasks. A body as complex as an organization cannot be planned into every minute detail. Autonomy of work, autonomy of communication is mandatory. If people are micro-managed or forced into overbearing bureaucratic processes, our organization's deliveries come to a halt.
 
 ### Continuous improvement
 
