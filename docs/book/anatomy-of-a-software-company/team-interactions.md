@@ -61,7 +61,7 @@ Combining the practices of [autonomous vertical teams](./autonomous-team-structu
 
 [![Team Topology](../../assets/images/book/anatomy-of-a-software-company/team-topology.webp)](../../assets/images/book/anatomy-of-a-software-company/team-topology.png)
 
-Exploring the product teams, the check-out team and the web shop team release features to the consumer facing side of our software. These vertical teams own the entire development lifecycle of their respective feature, from customer feedback to design, code, testing, and delivery.
+Exploring the product teams, the check-out team and the web shop team release features to the consumer facing side of our software. These vertical teams own the entire development lifecycle of their respective feature, from customer feedback to design, code, testing, and delivery. Contrary to the image's austerity, our organization consists mainly of product feature teams. We aim for one supporting team for every six to nine product teams.
 
 As the cognitive load of global payment systems exceeds the check-out team's limits, we split off a dedicated team for compliance and localization of payments. Initially the team collaborates meticulously with the check-out team to establish requirements and services for payment interactions. Over time, the payment team offers either a set of libraries or a platform for payments via the *x-as-a-service* interaction.
 
@@ -69,9 +69,7 @@ The 3D rendering team already matured from a *collaboration* state, offering sop
 
 Our vertical platform teams working on the product search component and the metrics deliver their respective releases to the internal platform, accessible to all teams across the company. The platform teams consolidate fragmented implementations into shared high performance implementations.
 
-Our CICD research team spent the last months evaluating tools and offerings for advanced testing practices. Facilitating our metrics team, our research team is presenting and validating its findings in a low-risk internal environment. As soon as the metrics team is self reliant with the new practices, we start facilitating the next vertical team.
-
-Due to the available pixel real estate of the image, the relationship between feature teams and supporting teams is presented out of balance. Our organization consists of one supporting team for every six to nine feature teams.
+Our CICD research team spent the last months evaluating tools and strategies for advanced testing practices. Facilitating our metrics team, our research team is presenting and validating its findings in a low-risk internal environment. As soon as the metrics team reaches self reliance with the new practices, the CICD R&D team move to facilitate the next vertical team.
 
 ## Workspace design
 
