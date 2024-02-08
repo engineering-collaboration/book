@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.the-anatomy-of-collaboration.io/">
-    <img src="https://raw.githubusercontent.com/opencollabbook/book/main/docs/assets/logo.png" width="64" alt="The anatomy of collaboration in software">
+  <a href="https://www.opencollaboration.io/">
+    <img src="https://www.opencollaboration.io/assets/logo.png" width="64" alt="OpenCollaboration">
   </a>
 </p>
 <br>
@@ -12,7 +12,7 @@ The book *OpenCollaboration* presents a vertical slice of strategies that have p
 *OpenCollaboration* is under heavy development and undergoes continuous editing and restructuring. The main development currently focuses on polishing Part III. The additional roadmap for the v1 release currently looks as follows.
 
 - [x] Introduction
-- [x] Part I (missing graphics)
+- [x] Part I
 - [ ] Part II
 - [ ] Part III (in progress)
 - [ ] Home page
