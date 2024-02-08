@@ -4,6 +4,8 @@ Bernstain
 Lazer
 Cohn
 Hyrum
+Jez
+Forsgren
 API
 CTO
 daily

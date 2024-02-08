@@ -9,11 +9,11 @@ description: The book Accelerate by whatnot etc presents the findings of the lar
 
 Compared to other industries, software products have low up front costs and require low distribution efforts. These aspects enable us to create cheap prototypes of products and provide them to users globally with little overhead. 
 
-If these traits are limited our business loses its ability to pivot with market changes and we are at the mercy of our competitors. While it is not always necessary to act, the decision to do so should be driven by business factors, not technological limits.
+If these traits are limited, our business loses its ability to pivot with market changes and we are at the mercy of our competitors. While it is not always necessary to act, the decision to do so should be driven by business factors, not technological limits.
 
 ## Key capabilities by *Accelerate*
 
-The book Accelerate by whatnot etc presents the findings of the largest study done in the field of software products and continuous delivery. The study done in 2017 focused on four key capabilities for software product releases.
+The book Accelerate by Nicole Forsgren, Jez Humble, and Gene Kim presents the findings of the largest study done in the field of software products and continuous delivery. It was done in 2017 and focused on four key capabilities for software product releases.
 
 ### Code deployment
 
@@ -21,7 +21,7 @@ Code deployment measures the frequency of how often we release new versions of o
 
 ### Commit to deploy
 
-Commit to deploy describes the lead time from the last software change to make it into a new release for code deployment.
+Commit to deploy describes the lead time from the last software change making it into a new release for code deployment.
 
 ### Recover from down time
 
