@@ -17,17 +17,17 @@ Software companies are required to adapt to rapid technological, economical, and
 - *The anatomy of managing a team* frames supporting principles of leading a team. This section covers day to day encounters of technical and team leads.
 - *The anatomy of a code change* analyzes good practices for day to day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequencies of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
 
-While the structure of this book does follow the reciprocal typical career progression of an engineer, we encourage all readers to glance at every section. Certain sociotechnical dependencies become more visible when digesting the entire book.
+While the structure of this book follows the reciprocal typical career progression of an engineer, we encourage all readers to glance at every section. Certain sociotechnical dependencies become more visible when digesting the entire book.
 
 ## What this book is NOT
 
 ### This is not an engineering book
 
-A couple decades ago the core business of organization was run through sales, marketing, and HR departments. IT was considered a necessary cost factor that was at best overlooked, at worst the first destination of budget cuts. Today, the situation appears to be reversed.
+A couple decades ago the core business of an organization was run through sales, marketing, and HR departments. IT was considered a necessary cost factor that was at best overlooked, at worst the first target of budget cuts. Today, the situation appears to be reversed.
 
-This book covers a lot of ground and not all of it is confined within an engineering frustum. When reading this book, consider how the practices described within can be used in tandem with departments outside of engineering to inject more efficient communication channels into our iteration process.
+This book covers a lot of ground and not all of it is confined within an engineering frustum. When reading this book, we consider how the practices described within can be used in tandem with departments outside of engineering. We might improve the efficiency of our communication channels within our iteration process.
 
-This book does not include source code, does not advocate for any particular tech stack, and does not assume the use of any tool or platform (~*~Part III does expect minor experience in version control).
+This book does not include source code, does not advocate for any particular tech stack, and does not assume the use of any tool or platform (~*~ *The anatomy of a code change* requires experience with version control).
 
 ### This is not a step-by-step guide
 
@@ -66,6 +66,6 @@ We are hard at work on *The anatomy of a code change* and are releasing new chap
     - [ ] Edit for v1.0.0
 - [ ] [The anatomy of a code change](../anatomy-of-a-code-change/README.md)
     - [x] Notes and structure
-    - [ ] First draft
+    - [ ] First draft (in progress)
     - [ ] Polish
     - [ ] Edit for v1.0.0
