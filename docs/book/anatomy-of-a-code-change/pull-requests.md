@@ -1,21 +1,16 @@
 # Pull Requests
 
-Pull Requests (PR) aka Merge Requests are a proven strategy of ensuring a high level of quality when integrating new work into the main branch. Most distributions of source control system offer some sort of web absed user interface for creating PR's.
+Once we are satisfied with the state of our development branch and believe our changes are ready to be integrated into main, we open a pull request (PR). PRs pave the way for successfully introducing high quality changes into our main branch and ultimately our product.
 
-The PR is the major process of how code changes are introduced to the product. To streamline this process, define clear guidelines for the pull request process, including the steps that need to be automated, the tools that will be used, and the expected outcomes.
+All serious source control platforms offer automation, tooling, and UIs for creating and reviewing PRs. We establish clear guidelines on how to structure our PRs and design a streamlined process with automated and manual steps for accepting a change. We do not advocate for any specific source control platform or their implementation of PRs. As with all things, differing solutions come with various pros and cons. That being said, at the very least our PRs consist of the following attributes.
 
-Use common sense to isolate seperate PR and bugfixes. We strive to increase productivity, not slow it down. Seperate PR's are not bureaucratic red tape, but A/B tests of rolling back changes enables us to test regression bugs vs bugs introduced in new features.
+## Title
 
-bugifxes and feautres
-fixes across different bugs
+The title is the first descriptive feature we see when reviewing a PR. We establish structural and syntactical guidelines for consistent PR titles across the department. Typically, these follow the same rules as [commits](./commits.md).
 
-### Title
+We avoid relying on branch names or PR titles for kicking off automation procedures and move these dependencies from title prefixes to labels. Titles are read by humans, not computers. We might however consume PR titles for creating automated changelogs.
 
-Establish and communicate guidelines for PR titles to ensure consistency across development. These guidelines may cover structural and syntactial language properties of the title.
-
-Avoid relying on PR titles for automation procedures and try to move these dependencies from title prefixes to labels. Titles are read by humans, not computers.
-
-### Description
+## Description
 
 A short description highlighting what changed over the course of the development branch. A good description follows an approved structure for documenting changes. Communicate what this feature is trying to achieve. What is the reason for you to have worked on it. Typically this section is about two sentences to a paragraph.
 
@@ -23,7 +18,7 @@ Relevant documentation of code should be contained to comments in the source cod
 
 Asa general rule, choose to share information that gives context for the code review and keep it short to reduce cognitive load.
 
-### Labels
+## Labels
 
 Attaching labels to PR's improves its organzational capabilities. Using labels you can filter for PR's or kick off specific automation tasks. Labels can categorized by the nature of the development task (feature, bugfix, documentation), the severity of the changes (patch, minor, major), or organizational information (department, milestone, etc)
 
@@ -51,12 +46,7 @@ Ensure that the automation process is effective and meets the needs of the proje
 
 Request reviews by certain personell or personell groups. These reviews are essential for consistent high quality code integrations and horizontal distribution of knowledge. There are various strategies on who to request reviews from depending on team size and the nature of your changes.
 
-It typically makes sense to involve people across two ends of a spectrum, e.g. one senior person and one junior person can share different insights during the review. Having people across departments review your code improves cross department collaboration and spreads the knowledge horizontally.
-
-Should it appear that a major burden of the code reviews are done by a limited amount of number, consider implementing processes or tools that spreads review requests evenly across team members.
-
 We will discuss code reviews in greater depth in the next chapter.
-
 
 ## Templates
 
@@ -66,3 +56,10 @@ Most source control platforms offer the ability to write templates for PR's. Usi
 - Automatic label assignment
 - Automatic reviewer assignements
 - References to external resources, e.g. JIRA tickets
+
+## Isolation of PRs
+
+Use common sense to isolate seperate PR and bugfixes. We strive to increase productivity, not slow it down. Seperate PR's are not bureaucratic red tape, but A/B tests of rolling back changes enables us to test regression bugs vs bugs introduced in new features.
+
+bugifxes and feautres
+fixes across different bugs
