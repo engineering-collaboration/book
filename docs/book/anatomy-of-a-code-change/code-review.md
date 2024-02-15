@@ -1,5 +1,12 @@
 # Code review
 
+pre-merge review vs post-merge
+
+sync vs async
+
+do not explain decisions in code review, fix code to be explanatory
+
+code reviews are not a platform for discussing implementation strategies
 
 Request reviews by certain personell or personell groups. These reviews are essential for consistent high quality code integrations and horizontal distribution of knowledge. There are various strategies on who to request reviews from depending on team size and the nature of our changes.
 
