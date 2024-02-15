@@ -100,7 +100,7 @@ nav:
       - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'
       - Commits: './book/anatomy-of-a-code-change/commits.md'
-      - Pull Requests: './book/anatomy-of-a-code-change/pr.md'
+      - Pull Requests: './book/anatomy-of-a-code-change/pull-requests.md'
       - Static Analysis: './book/anatomy-of-a-code-change/static-analysis.md'
       - Code Reviews: './book/anatomy-of-a-code-change/code-review.md'
 
