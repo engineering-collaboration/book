@@ -8,15 +8,25 @@ All serious source control platforms offer automation, tooling, and UIs for crea
 
 The title is the first descriptive feature we see when reviewing a PR. We establish structural and syntactical guidelines for consistent PR titles across the department. Typically, these follow the same rules as [commits](./commits.md).
 
-We avoid relying on branch names or PR titles for kicking off automation procedures and move these dependencies from title prefixes to labels. Titles are read by humans, not computers. We might however consume PR titles for creating automated changelogs.
+- We limit the subject line to 50 characters
+- We capitalize the subject line
+- We do not end the subject line with a period
+- We use the present tense ("Add feature" not "Added feature")
+- We use the imperative mood ("Move cursor to…" not "Moves cursor to…")
+
+We avoid relying on branch names or PR title prefixes for kicking off automation procedures. We handle subjective automation by applying labels to our PR. Titles are read by humans, not computers. We might however consume PR titles for creating automated changelogs.
 
 ## Description
 
 A short description highlighting what changed over the course of the development branch. A good description follows an approved structure for documenting changes. Communicate what this feature is trying to achieve. What is the reason for you to have worked on it. Typically this section is about two sentences to a paragraph.
 
-Relevant documentation of code should be contained to comments in the source code itself. However, in the context of the code integration it is a good idea to document any particular findings you made along the way and share why you made the decisions you did. Any quirks, outstanding to-do's or motivation behind necessary refactors should be mentioned in the description.
+Meta data exceeding a label is placed as comments in the first lines of the description. These are invisible to readers and will be loaded first by runners.
 
-Asa general rule, choose to share information that gives context for the code review and keep it short to reduce cognitive load.
+A good description starts with a short paragraph summarizing the changes. Should the changes be extensive, we begin with a TLDR; section. Asa  general rule, choose to share information that gives context for the code review and keep it short to reduce cognitive load.
+
+Followed by all necessary URLs to resources, such as the task ticket and the design doc.
+
+Relevant documentation of code should be contained to comments in the source code itself. However, in the context of the code integration it is a good idea to document any particular findings you made along the way and share why you made the decisions you did. Any quirks, outstanding to-do's or motivation behind necessary refactors should be mentioned in the description.
 
 ## Labels
 
