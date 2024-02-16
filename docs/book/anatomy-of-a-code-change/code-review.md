@@ -14,30 +14,18 @@ It typically makes sense to involve people across two ends of a spectrum, e.g. o
 
 Should it appear that a major burden of the code reviews are done by a limited amount of number, consider implementing processes or tools that spreads review requests evenly across team members.
 
+linters, style checkers, and code analyzers to catch simple mistakes before manual review. use available tools, such as suggestions, AI
 
 Establish clear guidelines and expectations for the code review process. This includes defining the scope, the goals, and the timeline of the code review. Transplarently communicate both what to do and what not to do.
 
-Focus on the Code: Code reviews should be focused on the code itself and not the developer who wrote it. Feedback should be constructive and aimed at improving the code, not criticizing the person who wrote it.
+Feedback should be constructive and aimed at improving the code, not criticizing the person who wrote it. positive intent by the receiving party
 
-Use Automated Tools: Use automated tools like linters, style checkers, and code analyzers to catch simple mistakes and improve code quality.
+Provide Specific Feedback: suggest alternatives if necessary.
 
-Review Small Chunks of Code: It's best to review small chunks of code at a time, rather than trying to review an entire project in one go. This helps to keep the review focused and ensures that nothing is missed.
-
-Review Code Early: The earlier code is reviewed, the easier it is to make changes. It's better to catch mistakes early on, rather than having to make significant changes later in the development cycle.
-
-Provide Specific Feedback: Feedback should be specific and actionable. It's helpful to provide examples of how the code can be improved, and to suggest alternatives if necessary.
-
-Collaborate and Discuss: Code reviews should be a collaborative process, with both the reviewer and the developer working together to improve the code. It's important to encourage discussion and open communication to ensure that everyone is on the same page.
-
-Review Regularly: Code reviews should be conducted regularly, ideally on a daily or weekly basis. This helps to catch mistakes early on and ensures that the code is always improving.
-
-Learn from Previous Reviews: It's important to learn from previous reviews and use this knowledge to improve the code review process. This includes identifying common mistakes and establishing good practices for code development.
-
-Follow Up: It's important to follow up on feedback and ensure that the suggested changes have been made. This helps to ensure that the code is of high quality and meets the project requirements.
+Collaborate and Discuss: Code reviews should be a collaborative process, with both the reviewer and the developer working together to improve the code. encourage discussion and open communication to ensure that everyone is on the same page. learn from previous reviews and use this knowledge to improve the code review process. This includes identifying common mistakes and establishing good practices for code development.
 
 ---
 
 If someone does well at something and the praise they recieve is "Good hob, you're so smart", the emphasis on smartness pushes them toward a fixed mindset. If, on the other hand, someone is given the praise "Good job, you worked hard on that", they will associate the their successes with the effort they put in.
 
 It's one thing to assume good intentions, but can we go further? What good intentions can I identify with that this person holds? What might their positive motivations be?
-
