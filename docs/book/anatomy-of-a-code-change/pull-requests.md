@@ -10,7 +10,7 @@ bugifxes and feautres
 fixes across different bugs
 no refactors
 
-## Parts of a Pull Request
+## Outlining a Pull Request
 
 We establish clear guidelines on how to structure our PRs and design a streamlined process with automated and manual steps for accepting a change. We do not advocate for any specific source control platform or their implementation of PRs. As with all things, differing solutions come with various pros and cons. That being said, at the very least our PRs consist of the following attributes.
 
@@ -43,17 +43,19 @@ As a label is only a single point of information we consider what information we
 
 ## Merging constraints
 
-We subjugate requested integrations to a certain amount of scrutiny. This scrutiny comes in the form of automated reviews and manual reviews to ensure high quality code integrations. For every step we provide context why that particular constrain exists to make it feel less arbitrary. People are less likely to push back against rules when there is a clear reason behind them. A branch that passes tests is also referred to as being "green".
+We subjugate requested integrations to a certain amount of scrutiny. This scrutiny comes in the form of automated reviews and manual reviews to ensure high quality code integrations. A branch that passes tests is also referred to as being "green".
+
+For every step we provide context why that particular constrain exists to make it feel less arbitrary. People are less likely to push back against rules when there is a clear reason behind them.
 
 ### Automated Reviews
 
-Ensure that the automation process is effective and meets the needs of the project and the project's stakeholders. This includes communicating regularly, sharing feedback, and working together to resolve issues.
+Successful implementations of TBD and CICD into our organization center around automation and constant improvement of processes and said automation. The first gating process of analyzing code changes of a pull request executes light-weight operations to verify the state of our development branch.
 
-[Static Analysis]() verifies good practices of the implementation. It scores HOW the engineer structured their implementation. Use automated code quality checks, such as code linting and style checks, to ensure that the code meets the required standards.
+[Static Analysis]() checks how we structure and write our implementation. Rather than executing the software, automated code-linting and style-checks ensure that our changes meet the required standards. This process identifies agreed upon standards, such as naming conventions, whitespace, and error handling and flags the use of blacklisted libraries, legacy code, or deprecated implementations.
 
-[Small Scoped Tests](./testing/small-scoped-tests.md) verify the acceptance criteria of the implementation and check that the engineer has not unintentially introduced new bugs or regressions.
+Automated tests verify the functional runtime criteria of the implementation and warn us about introduced errors or regressions. The chapter [Testing](./testing/README.md) outlines a complete testing strategy for the lifecycle of a code change.
 
-As with everything in this bool, continuously improve the automation process by identifying areas for improvement and implementing changes to optimize the process. Implementation practices evolve and your system should evolve with them.
+In the spirit of this book we continuously refine our automation process by identifying areas for improvement and regularly communicate within our team to optimize the process. As our system evolves, our integration processes evolve with it.
 
 ### Manual Reviews
 
