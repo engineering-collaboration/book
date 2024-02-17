@@ -2,14 +2,6 @@
 
 Once we are satisfied with the state of our development branch and believe our changes are ready to be integrated into main, we open a pull request (PR). PRs pave the way for successfully introducing high quality changes into our main branch and ultimately our product. All serious source control platforms offer automation, tooling, and UIs for creating and reviewing PRs.
 
-## Isolation of Pull Requests
-
-Use common sense to isolate seperate PR and bugfixes. We strive to increase productivity, not slow it down. Seperate PR's are not bureaucratic red tape, but A/B tests of rolling back changes enables us to test regression bugs vs bugs introduced in new features.
-
-bugifxes and feautres
-fixes across different bugs
-no refactors
-
 ## Outlining a Pull Request
 
 We establish clear guidelines on how to structure our PRs and design a streamlined process with automated and manual steps for accepting a change. We do not advocate for any specific source control platform or their implementation of PRs. As with all things, differing solutions come with various pros and cons. That being said, at the very least our PRs consist of the following attributes.
@@ -70,3 +62,18 @@ Wherever possible we reduce the workload of composing PRs by offering templates 
 When creating standard templates, we keep internal structure of description paragraphs to a minimum. The less we assume of changes, the more broadly applicable it is. We standardize the headlines and formatting of PR description templates by the four points discussed above.
 
 Beyond static text templates our organization may offer dynamic tooling building sophisticated PRs via the API of our source control platform in combination with internal platforms. Additionally, generative text tools are a high productivity replacement for static boilerplate content when describing code changes of our PR.
+
+
+## Pull Request isolation
+
+When creating a PR we do not mix solutions across tasks. If a feature happens to fix a bug, we certainly reference it, but otherwise we create separate PRs for fixes across different bugs, work on various features, refactors of code and white space issues.
+
+An amalgamation of labor usually happens when we come across faulty code while working on our feature. In this case we precede by creating another branch from latest main, fix the bug in question, open a PR for our fix and integrate it into main. If our fix passes the process and tests, we rebase our feature branch to latest main and continue our work.
+
+
+
+Use common sense to isolate separate PR and bugfixes. We strive to increase productivity, not slow it down. Seperate PR's are not bureaucratic red tape, but A/B tests of rolling back changes enables us to test regression bugs vs bugs introduced in new features.
+
+bugifxes and feautres
+fixes across different bugs
+no refactors
