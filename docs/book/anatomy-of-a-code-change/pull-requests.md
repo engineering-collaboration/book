@@ -63,17 +63,10 @@ When creating standard templates, we keep internal structure of description para
 
 Beyond static text templates our organization may offer dynamic tooling building sophisticated PRs via the API of our source control platform in combination with internal platforms. Additionally, generative text tools are a high productivity replacement for static boilerplate content when describing code changes of our PR.
 
-
 ## Pull Request isolation
 
 When creating a PR we do not mix solutions across tasks. If a feature happens to fix a bug, we certainly reference it, but otherwise we create separate PRs for fixes across different bugs, work on various features, refactors of code and white space issues.
 
 An amalgamation of labor usually happens when we come across faulty code while working on our feature. In this case we precede by creating another branch from latest main, fix the bug in question, open a PR for our fix and integrate it into main. If our fix passes the process and tests, we rebase our feature branch to latest main and continue our work.
 
-
-
-Use common sense to isolate separate PR and bugfixes. We strive to increase productivity, not slow it down. Seperate PR's are not bureaucratic red tape, but A/B tests of rolling back changes enables us to test regression bugs vs bugs introduced in new features.
-
-bugifxes and feautres
-fixes across different bugs
-no refactors
+We strive to increase productivity, not slow it down. The isolation PRs does not represent bureaucratic red tape, but increases code stability and transparency. Frequent integrations with passing tests demonstrate working code. When tests break on a PR with multiple bugfixes and feature development we struggle to identify the issue. Code reviews become a burden. Diff view is opaque when feautures are introduced with a lot of whitespace fixes.
