@@ -65,9 +65,8 @@ We discuss these reviews in detail in the chapter [Code Reviews]().
 
 ## Templates
 
-Most source control platforms offer the ability to write templates for PR's. Using templates you can guide fellow developers into an approved framework. Consider adding additional meta information in templates, such as:
+Wherever possible we reduce the workload of composing PRs by offering templates and boilerplate content. Using templates we pave the way for our engineers to follow standardized titles, descriptions, labels, and assign reviewers. We list often forgotten tasks for our engineers to check before opening a PR.
 
-- A to-do list for the PR
-- Automatic label assignment
-- Automatic reviewer assignements
-- References to external resources, e.g. JIRA tickets
+When creating standard templates, we keep internal structure of description paragraphs to a minimum. The less we assume of changes, the more broadly applicable it is. We standardize the headlines and formatting of PR description templates by the four points discussed above.
+
+Beyond static text templates our organization may offer dynamic tooling building sophisticated PRs via the API of our source control platform in combination with internal platforms. Additionally, generative text tools are a high productivity replacement for static boilerplate content when describing code changes of our PR.
