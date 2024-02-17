@@ -1,10 +1,20 @@
 # Pull Requests
 
-Once we are satisfied with the state of our development branch and believe our changes are ready to be integrated into main, we open a pull request (PR). PRs pave the way for successfully introducing high quality changes into our main branch and ultimately our product.
+Once we are satisfied with the state of our development branch and believe our changes are ready to be integrated into main, we open a pull request (PR). PRs pave the way for successfully introducing high quality changes into our main branch and ultimately our product. All serious source control platforms offer automation, tooling, and UIs for creating and reviewing PRs.
 
-All serious source control platforms offer automation, tooling, and UIs for creating and reviewing PRs. We establish clear guidelines on how to structure our PRs and design a streamlined process with automated and manual steps for accepting a change. We do not advocate for any specific source control platform or their implementation of PRs. As with all things, differing solutions come with various pros and cons. That being said, at the very least our PRs consist of the following attributes.
+## Isolation of Pull Requests
 
-## Title
+Use common sense to isolate seperate PR and bugfixes. We strive to increase productivity, not slow it down. Seperate PR's are not bureaucratic red tape, but A/B tests of rolling back changes enables us to test regression bugs vs bugs introduced in new features.
+
+bugifxes and feautres
+fixes across different bugs
+no refactors
+
+## Parts of a Pull Request
+
+We establish clear guidelines on how to structure our PRs and design a streamlined process with automated and manual steps for accepting a change. We do not advocate for any specific source control platform or their implementation of PRs. As with all things, differing solutions come with various pros and cons. That being said, at the very least our PRs consist of the following attributes.
+
+### Title
 
 The title is the first descriptive feature we see when reviewing a PR. We establish structural and syntactical guidelines for consistent PR titles across the department. Typically, these follow the same rules as [Commits](./commits.md).
 
@@ -16,7 +26,7 @@ The title is the first descriptive feature we see when reviewing a PR. We establ
 
 We avoid relying on branch names or PR title prefixes for kicking off automation procedures. We handle subjective automation by applying labels to our PR. Titles are read by humans, not computers. We might however consume PR titles for creating automated changelogs.
 
-## Description
+### Description
 
 We have the opportunity to share more detailed information within the description of a PR to highlight what changed over the course of the development branch. As with titles, a description follows an approved structure for documenting changes.
 
@@ -25,7 +35,7 @@ We have the opportunity to share more detailed information within the descriptio
 - To improve the context, we reference all necessary internal resources, such as the URLs to our ticket and the design doc. These are resources relating to our task itself, not resources relating to our implementation.
 - Finally, we complete the description with information aimed for future documentation, rather than the code review. We document our decisions and findings as discussed in [Documenting Decisions](). We append benchmark data of libraries, note the pros and cons of our decision and discuss future TODOs. While relevant documentation of code should be contained to comments in the source code itself, this section covers information to verbose for code comments and helpful to colleagues searching for intention behind changes.
 
-## Labels
+### Labels
 
 We label PRs to kick off specific automation tasks, and to subsequently filter them for specific categories. Using labels, we describe the nature of the development task, the severity of the changes, organizational information, the status of our task, and whatever else makes sense to us.
 
@@ -33,23 +43,17 @@ As a label is only a single point of information we consider what information we
 
 ## Merging constraints
 
-It makes sense to subjugate requested integrations to a certain amount of scrutiny. This scrutiny comes in the form of automated reviews and manual reviews to ensure high quality code integrations.
-
-Provide context why a particular constrain exists to make it feel less arbitrary. People are less likely to push back against rules when there is a clear reason behind them.
+We subjugate requested integrations to a certain amount of scrutiny. This scrutiny comes in the form of automated reviews and manual reviews to ensure high quality code integrations. For every step we provide context why that particular constrain exists to make it feel less arbitrary. People are less likely to push back against rules when there is a clear reason behind them. A branch that passes tests is also referred to as being "green".
 
 ### Automated Reviews
 
-Identify opportunities for automation in the pull request process, such as code linting, testing, and code coverage analysis.
+Ensure that the automation process is effective and meets the needs of the project and the project's stakeholders. This includes communicating regularly, sharing feedback, and working together to resolve issues.
 
-Opposed to tests that analyze code execution, static analysis reviews the syntax of the typed code.
+[Static Analysis]() verifies good practices of the implementation. It scores HOW the engineer structured their implementation. Use automated code quality checks, such as code linting and style checks, to ensure that the code meets the required standards.
 
-**Static Analysis** verifies good practices of the implementation. It scores HOW the engineer structured their implementation. Use automated code quality checks, such as code linting and style checks, to ensure that the code meets the required standards. We talk about the intricacies of static analysis in the [static analysis chapter]().
+[Small Scoped Tests](./testing/small-scoped-tests.md) verify the acceptance criteria of the implementation and check that the engineer has not unintentially introduced new bugs or regressions.
 
-**Lightweight Tests** verify the acceptance criteria of the implementation and check that the engineer has not unintentially introduced new bugs or regressions. We talk about the intricacies of testing strategies in the [testing chapter]().
-
-A branch that passes tests is also referred to as being "green".
-
-Ensure that the automation process is effective and meets the needs of the project and the project's stakeholders. This includes communicating regularly, sharing feedback, and working together to resolve issues. As with everything in this bool, continuously improve the automation process by identifying areas for improvement and implementing changes to optimize the process. Implementation practices evolve and your system should evolve with them.
+As with everything in this bool, continuously improve the automation process by identifying areas for improvement and implementing changes to optimize the process. Implementation practices evolve and your system should evolve with them.
 
 ### Manual Reviews
 
@@ -65,10 +69,3 @@ Most source control platforms offer the ability to write templates for PR's. Usi
 - Automatic label assignment
 - Automatic reviewer assignements
 - References to external resources, e.g. JIRA tickets
-
-## Isolation of PRs
-
-Use common sense to isolate seperate PR and bugfixes. We strive to increase productivity, not slow it down. Seperate PR's are not bureaucratic red tape, but A/B tests of rolling back changes enables us to test regression bugs vs bugs introduced in new features.
-
-bugifxes and feautres
-fixes across different bugs
