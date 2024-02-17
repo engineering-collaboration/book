@@ -40,3 +40,9 @@ Problems are always more difficult than initially assumed and we try to avoid re
 We make use of our [innersource](../anatomy-of-a-software-company/innersourcing.md) channels and internal tech community to search for code, documentation, or engineers who have encountered a similar problem and verify if their workings are applicable for our use case. Minor modifications to existing code repositories are preferable over constructing personal solutions. All code we introduce into our organization increases potential maintenance work and bugs.
 
 Having covered our basis of existing implementations, we get to work. As the implementing engineer we have full trust on implementation decisions as long as the output matches the agreed upon design doc. If the documented requirements turn out to be costly during development, we revisit the design doc with the stakeholders.
+
+## Splitting integrations
+
+To avoid long-living development branches we integrate our work frequently into main. If necessary, we split our feature development into sensible coherent packages which can be integrated using feature flags and reviewed and tested separately.
+
+There are no hard metrics for this process as it is completely based upon experience and this decision is owned by the implementing engineer. Frequent integrations of small incremental changes increase code stability and reduce code review burden, yet missing context might make the reasoning behind code changes opaque.
