@@ -123,17 +123,17 @@ nav:
         - Testing in Production: './book/anatomy-of-a-code-change/testing/testing-in-production.md'
         - Testing Strategy: './book/anatomy-of-a-code-change/testing/testing-strategy.md'
 
-      - Documentation:
-        - Documentation: './book/anatomy-of-a-code-change/documentation/README.md'
-        - Documentation in Code: './book/anatomy-of-a-code-change/documentation/inline.md'
-        - Documentation for Disciplines: './book/anatomy-of-a-code-change/documentation/for-disciplines.md'
-
       - Release Mechanisms:
         - './book/anatomy-of-a-code-change/release-mechanism/README.md'
         - Tags: './book/anatomy-of-a-code-change/release-mechanism/tags.md'
         - Branches: './book/anatomy-of-a-code-change/release-mechanism/release-branches.md'
         - Live at Head: './book/anatomy-of-a-code-change/release-mechanism/live-at-head.md'
         - Hotfixes: './book/anatomy-of-a-code-change/release-mechanism/hotfix.md'
+
+      - Documentation:
+        - Documentation: './book/anatomy-of-a-code-change/documentation/README.md'
+        - Documentation in Code: './book/anatomy-of-a-code-change/documentation/inline.md'
+        - Documentation for Disciplines: './book/anatomy-of-a-code-change/documentation/for-disciplines.md'
 
       - Artifact Management: './book/anatomy-of-a-code-change/artifact-management.md'
       - Release Strategies: './book/anatomy-of-a-code-change/release-strategies.md'
