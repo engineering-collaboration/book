@@ -59,9 +59,9 @@ In the spirit of this book we continuously refine our automation process by iden
 
 ### Manual Reviews
 
-Request reviews by certain personell or personell groups. These reviews are essential for consistent high quality code integrations and horizontal distribution of knowledge. There are various strategies on who to request reviews from depending on team size and the nature of your changes.
+After our code changes passed the automated reviews successfully, it's time for another pair of eyes to go over our work. We request reviews from (a group of) colleagues to verify our digital labor. Manual reviews increase readability of the code, catch mistakes missed by our automation suite and distribute knowledge of the software horizontally across our team.
 
-We will discuss code reviews in greater depth in the next chapter.
+We discuss these reviews in detail in the chapter [Code Reviews]().
 
 ## Templates
 
