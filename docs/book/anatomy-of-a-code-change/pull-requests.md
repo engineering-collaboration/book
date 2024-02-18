@@ -35,7 +35,7 @@ As a label represents a single point of information, we consider what informatio
 
 ## Merging Constraints
 
-We subject requested integrations to a certain amount of scrutiny. This scrutiny comes in the form of automated reviews and manual reviews to ensure high-quality code integrations. A branch that passes tests is also referred to as *being green*.
+We subject requested integrations to a certain amount of scrutiny. This scrutiny comes in the form of automated reviews and manual reviews to ensure high-quality code integrations. A branch that passes tests is referred to as *being green*.
 
 For every step, we provide context as to why that particular constraint exists to make it feel less arbitrary. People are less inclined to push back against rules when there is a clear reason behind them.
 
