@@ -40,6 +40,8 @@ Testing is not a one-off task done as a step in the waterfall methodology. Throu
 - … when creating a release candidate (**Pre-release**);
 - … against the live version of our software (**Post-release**).
 
+For every step we provide context why that particular constrain exists to make it feel less arbitrary. People are less inclined to push back against rules when there is a clear reason behind them.
+
 ## Hermetic environments
 
 Tests run on various machines and runners, by various users and scripts, on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place.

@@ -97,10 +97,10 @@ nav:
     - The anatomy of a code change:
       - './book/anatomy-of-a-code-change/README.md'
       - CICD: './book/anatomy-of-a-code-change/cicd.md'
-      - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'
+      - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Commits: './book/anatomy-of-a-code-change/commits.md'
-      - Pull Requests: './book/anatomy-of-a-code-change/pr.md'
+      - Pull Requests: './book/anatomy-of-a-code-change/pull-requests.md'
       - Static Analysis: './book/anatomy-of-a-code-change/static-analysis.md'
       - Code Reviews: './book/anatomy-of-a-code-change/code-review.md'
 
@@ -123,17 +123,17 @@ nav:
         - Testing in Production: './book/anatomy-of-a-code-change/testing/testing-in-production.md'
         - Testing Strategy: './book/anatomy-of-a-code-change/testing/testing-strategy.md'
 
-      - Documentation:
-        - Documentation: './book/anatomy-of-a-code-change/documentation/README.md'
-        - Documentation in Code: './book/anatomy-of-a-code-change/documentation/inline.md'
-        - Documentation for Disciplines: './book/anatomy-of-a-code-change/documentation/for-disciplines.md'
-
       - Release Mechanisms:
         - './book/anatomy-of-a-code-change/release-mechanism/README.md'
         - Tags: './book/anatomy-of-a-code-change/release-mechanism/tags.md'
         - Branches: './book/anatomy-of-a-code-change/release-mechanism/release-branches.md'
         - Live at Head: './book/anatomy-of-a-code-change/release-mechanism/live-at-head.md'
         - Hotfixes: './book/anatomy-of-a-code-change/release-mechanism/hotfix.md'
+
+      - Documentation:
+        - Documentation: './book/anatomy-of-a-code-change/documentation/README.md'
+        - Documentation in Code: './book/anatomy-of-a-code-change/documentation/inline.md'
+        - Documentation for Disciplines: './book/anatomy-of-a-code-change/documentation/for-disciplines.md'
 
       - Artifact Management: './book/anatomy-of-a-code-change/artifact-management.md'
       - Release Strategies: './book/anatomy-of-a-code-change/release-strategies.md'

@@ -15,16 +15,16 @@ The practices covered in this part may be extended beyond our engineering depart
 The current progress of this section:
 
 - [x] CICD
-- [x] Planning implementations
 - [x] Trunk based development
+- [x] Planning implementations
 - [x] Commits
-- [ ] Pull requests
+- [x] Pull requests
 - [ ] Static analysis
 - [ ] Code reviews
 - [ ] Merging
 - [x] Testing
-- [ ] Documentation
 - [ ] Release mechanisms
+- [ ] Documentation
 - [ ] Artifact management
 - [ ] Release strategies
 - [ ] Repository strategies

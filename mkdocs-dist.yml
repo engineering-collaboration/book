@@ -103,9 +103,10 @@ nav:
     - The anatomy of a code change:
       - './book/anatomy-of-a-code-change/README.md'
       - CICD: './book/anatomy-of-a-code-change/cicd.md'
-      - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'
+      - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Commits: './book/anatomy-of-a-code-change/commits.md'
+      - Pull Requests: './book/anatomy-of-a-code-change/pull-requests.md'
       - Testing:
         - './book/anatomy-of-a-code-change/testing/README.md'
         - Good Practices: './book/anatomy-of-a-code-change/testing/good-practices.md'
