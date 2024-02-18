@@ -1,3 +1,8 @@
+---
+title: Pull Requests
+description: Pull requests pave the way for introducing high-quality changes into our main branch and ultimately our product.
+---
+
 # Pull Requests
 
 Once we are satisfied with the state of our development branch and believe our changes are ready to be integrated into main, we open a pull request (PR). PRs pave the way for introducing high-quality changes into our main branch and ultimately our product. All serious source control platforms offer automation, tooling, and UIs for creating and reviewing PRs.
