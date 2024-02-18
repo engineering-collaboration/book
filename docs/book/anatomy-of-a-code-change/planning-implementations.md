@@ -45,4 +45,4 @@ Having covered our basis of existing implementations, we get to work. As the imp
 
 To avoid long-living development branches we integrate our work frequently into main. If necessary, we split our feature development into sensible coherent packages which can be integrated using feature flags and reviewed and tested separately.
 
-There are no hard metrics for this process as it is completely based upon experience and this decision is owned by the implementing engineer. Frequent integrations of small incremental changes increase code stability and reduce code review burden, yet missing context might make the reasoning behind code changes opaque.
+This process lacks hard metrics as it is predominately based upon experience and this decision is owned by the implementing engineer. Frequent integrations of small incremental changes increase code stability and reduce code review burden, yet missing context might make the reasoning behind code changes opaque.

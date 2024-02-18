@@ -48,3 +48,4 @@ MST
 SST
 [Ee]xplorative
 [Nn]ightly
+rebase
