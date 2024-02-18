@@ -5,9 +5,7 @@ description: Facilitating collaboration structures promotes a collaboration cult
 
 # An enabling organization
 
-We cannot change peoples behavior by changing their minds, we change their minds by changing peoples behavior.
-
-Preaching "best" practices and academic anecdotes will not change the culture present in our organization. Our culture is controlled by the professional and social frameworks we establish within our organization. The values and beliefs explicitly and implicitly framed by our organizations hierarchy and interactions drive our cultural movement.
+We cannot change peoples behavior by changing their minds, we change their minds by changing peoples behavior. Preaching "best" practices and academic anecdotes will not change the culture present in our organization. Our culture is controlled by the professional and social frameworks we establish within our organization. The values and beliefs explicitly and implicitly framed by our organizations hierarchy and interactions drive our cultural movement.
 
 Hence, facilitating collaboration structures promotes a collaboration culture and thinking. Facilitating communication channels fosters clean and efficient communication between people. Facilitating transparent requirements for career progression within our organization supports organic professional development of our employees.
 
