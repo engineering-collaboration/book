@@ -1,6 +1,6 @@
 ---
 title: Medium-scoped tests
-description: Medium-scoped tests are the second and penultimate layer of the testing pyramid. These verify correct and expected behavior between embedded systems and connected systems.
+description: MSTs are the second and penultimate layer of Mike Cohn's testing pyramid. These verify correct and expected behavior between embedded systems and connected systems.
 ---
 
 # Medium-scoped tests

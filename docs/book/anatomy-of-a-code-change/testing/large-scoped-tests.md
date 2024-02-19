@@ -1,6 +1,6 @@
 ---
 title: Large-scoped tests
-description: Large-scoped tests verify the flow of commands from user input across different APIs, serialization strategies and verifies the returned behavior is as expected.
+description: Large-scoped tests test the flow of commands from user input across different APIs, serialization strategies, and verify that the returned behavior is as expected.
 ---
 
 # Large-scoped tests
