@@ -15,7 +15,7 @@ To prevent turning this process into unnecessary red tape, we involve the minimu
 
 ### Documenting decisions
 
-Making decisions is a speculative process. Even those deduced from considerable experience and data points are still predicting the future. Recording our decision-making process and the outcomes improves the precision of our fortune-telling over time, as we can identify successful and unsuccessful patterns.
+Making decisions is a speculative process. Even those deduced from considerable experience and data points are still predicting the future. Recording the process of our conclusions and the outcomes improves the precision of our fortune-telling over time, as we can identify successful and unsuccessful patterns.
 
 The more context we are able to provide, the more transparent our decision is communicated. We explain the relevant success indicators, evaluate potential options, and include the names and titles of the people involved in the decision as future contacts for context that cannot be translated into written form.
 
