@@ -1,11 +1,11 @@
 ---
-title: Medium scoped tests
-description: Medium scoped tests are the second and penultimate layer of the testing pyramid. These verify correct and expected behavior between embedded systems and connected systems.
+title: Medium-scoped tests
+description: Medium-scoped tests are the second and penultimate layer of the testing pyramid. These verify correct and expected behavior between embedded systems and connected systems.
 ---
 
-# Medium scoped tests
+# Medium-scoped tests
 
-As with the term *unit tests*, the expression *integrations tests* conjures a bias towards differing implementation strategies. We therefore advance our naming from *small scoped tests* to *medium scoped tests* (MST). MSTs are the second and penultimate layer of [Mike Cohn's testing pyramid](../#the-testing-pyramid). These verify correct and expected behavior between **embedded systems and connected systems**.
+As with the term *unit tests*, the expression *integrations tests* conjures a bias towards differing implementation strategies. We therefore advance our naming from *small-scoped tests* to *medium-scoped tests* (MST). MSTs are the second and penultimate layer of [Mike Cohn's testing pyramid](../#the-testing-pyramid). These verify correct and expected behavior between **embedded systems and connected systems**.
 
 MSTs verify interactions between the code and execution environment, e.g. operating systems, file i/o, network i/o, and the interplay between subsystems of our product, e.g. a service with a database, a service with a connected service.
 
@@ -29,4 +29,4 @@ With modern software development tooling, testing against real implementations b
 
 MSTs complexity and computational requirements position them to be executed after code changes are merged to main. Should we find that our MSTs utilize less resources as expected and code integrations to our main branch frequently fail, we consider moving them to pre-merge.
 
-[![Medium Scoped Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/mst-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/mst-execution.png)
+[![Medium-Scoped Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/mst-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/mst-execution.png)

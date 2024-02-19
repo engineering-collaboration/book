@@ -1,11 +1,11 @@
 ---
-title: Large scoped tests
-description: Large scoped tests verify the flow of commands from user input across different APIs, serialization strategies and verifies the returned behavior is as expected.
+title: Large-scoped tests
+description: Large-scoped tests verify the flow of commands from user input across different APIs, serialization strategies and verifies the returned behavior is as expected.
 ---
 
-# Large scoped tests
+# Large-scoped tests
 
-Large scoped tests (LST) test the flow of commands from user input across different APIs, serialization strategies and verifies the returned behavior is as expected.
+Large-scoped tests (LST) test the flow of commands from user input across different APIs, serialization strategies and verifies the returned behavior is as expected.
 
 Within the cosmology of automated testing LSTs represent the most expensive, complex, and lengthy test suite to set up and execute. Commonly referred to as *end-to-end tests* or *system tests*, they cover the pinnacle of the testing pyramid. From bottom to top, every layer of the pyramid reduces the amount of tests by an order of magnitude. A project containing 1000 SST, includes 100 MST, and comprises no more than 10 LST.
 
@@ -29,4 +29,4 @@ Contract testing extends static strategies such as API testing and schema testin
 
 The sheer herculean effort of running LSTs excludes them from being run as part of the merging process. At minimum, though, we run LSTs as part of the pre-release process. We may execute LST on our main branch periodically during the week, preferably at nighttime to minimize interference of resources with active development. While LSTs can be run over the weekend, coming to the office on a Monday morning to failed test alerts of non-production technology is a stressful way to start the week.
 
-[![Large Scoped Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/lst-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/lst-execution.png)
+[![Large-Scoped Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/lst-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/lst-execution.png)
