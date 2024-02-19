@@ -8,34 +8,22 @@ The most fundamental form of static analysis uses pattern matching to ensure our
 
 Maintaining a consistent code base reduces friction when integrating our work within and across our teams by reducing the cognitive load when reading code. People can focus on the content of what is being written, if the syntax layout is identical to the layout of their work.
 
-## Security
+- consistent documentation layout
+
+## Security and SBOM
 
 Resource leak detection
+Race conditions
 Call graph analysis
 data flow analysis
-
-Agreed upon implementations
-
 - No exceptions
 - Internal libraries vs standard libraries
 - No legacy code
 
-Documentation
+## Using static analysis
 
-- consistent documentation layout
+Monitor the progress of the static analysis process over time. This includes tracking the number and severity of issues detected, as well as the time it takes to address them. This helps to ensure that the process is effective and that the code is of high quality.
 
+Define clear goals for the static analysis process. This includes identifying the types of issues that need to be detected, the severity of the issues, and the level of coverage required. Focus on detecting high-impact issues first, such as security vulnerabilities and critical bugs. This ensures that the most important issues are addressed first. Customize the analysis rules to suit the project's specific needs. This includes adding or removing rules as necessary, and adjusting the severity of the rules to match the project's requirements. Static analysis should be a collaborative process, with developers and security experts working together to identify and address issues. It's important to encourage open communication and discussion to ensure that everyone is on the same page.
 
-Set Clear Goals: Define clear goals for the static analysis process. This includes identifying the types of issues that need to be detected, the severity of the issues, and the level of coverage required.
-
-Establish Baselines: Establish baseline metrics for the code before the analysis begins. This helps to measure the effectiveness of the static analysis process and track improvements over time.
-
-
-Focus on High-Impact Issues: Focus on detecting high-impact issues first, such as security vulnerabilities and critical bugs. This ensures that the most important issues are addressed first.
-
-Customize Rules: Customize the analysis rules to suit the project's specific needs. This includes adding or removing rules as necessary, and adjusting the severity of the rules to match the project's requirements.
-
-Collaborate and Discuss: Static analysis should be a collaborative process, with developers and security experts working together to identify and address issues. It's important to encourage open communication and discussion to ensure that everyone is on the same page.
-
-Automate Remediation: Whenever possible, automate the remediation of issues detected by the static analysis process. This helps to ensure that issues are addressed quickly and consistently.
-
-Monitor Progress: Monitor the progress of the static analysis process over time. This includes tracking the number and severity of issues detected, as well as the time it takes to address them. This helps to ensure that the process is effective and that the code is of high quality.
+Whenever possible, automate the remediation of issues detected by the static analysis process. This helps to ensure that issues are addressed quickly and consistently.
