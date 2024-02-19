@@ -1,0 +1,16 @@
+language: "en"
+early_access: false
+reviews:
+    high_level_summary: true
+    review_status: true
+    request_changes_workflow: false
+    poem: false
+    collapse_walkthrough: false
+    auto_review:
+        labels: draft
+    path_instructions:
+        - path: "**/*.md"
+          instructions: |
+              "Highlight errors in grammar, readability, and structure. Limit the number of reviews to ten."
+chat:
+    auto_reply: false
