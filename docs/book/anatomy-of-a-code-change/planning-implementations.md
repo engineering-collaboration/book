@@ -1,6 +1,6 @@
 ---
 title: Planning implementations
-description: Making decisions is a speculative process. Even those deduced from considerable experience and data points are still predicting the future. Recording our decision-making process and the outcomes improves the precision of our fortune-telling over time, as we can identify successful and unsuccessful patterns.
+description: Making decisions is a speculative process. Even those deduced from considerable experience and data points are still predicting the future. If the decisions are documented, people are more willing to accept a conscious decision and its drawbacks.
 ---
 
 # Planning implementations
