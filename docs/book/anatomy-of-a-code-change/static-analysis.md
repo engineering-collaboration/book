@@ -1,14 +1,18 @@
 # Static analysis
 
-Upon creating PR's you may want to verify good practices of the implementation. Static analysis refers to tooling that checks the submitted code in its raw state. Opposed to tests that analyze code execution, static analysis reviews the syntax of the typed code.
+Static analysis scans the syntax of our code without actually executing it. It verifies that we follow agreed-upon conventions in our solution to maintain consistent readability, avoid bugs, and prevent security vulnerabilities before running our code. Static analysis is run at every step of our code change; pre-merge, post-merge, and pre-release.
 
-This step verifies that the engineer followed agreed upon processes on how to achieve the required features.
+## Readability
 
-Internally agreed formatting of the code
+The most fundamental form of static analysis uses pattern matching to ensure our compliance to an internally agreed code formatting. We follow our organization's conventions regarding the type of whitespace, indentation, maximum line length, naming of objects, etc. We execute code linters specific to the programming language and extend these to cover the needs of our team.
 
-- Whitespace
-- Variable naming
-- Method naming
+Maintaining a consistent code base reduces friction when integrating our work within and across our teams by reducing the cognitive load when reading code. People can focus on the content of what is being written, if the syntax layout is identical to the layout of their work.
+
+## Security
+
+Resource leak detection
+Call graph analysis
+data flow analysis
 
 Agreed upon implementations
 
@@ -21,17 +25,10 @@ Documentation
 - consistent documentation layout
 
 
-Static analysis is the process of analyzing code without actually executing it. It is an important part of software development as it helps to detect potential bugs, security vulnerabilities, and code quality issues early on in the development cycle. Here are some good practices for conducting effective static analysis:
-
-Choose the Right Tool: There are many static analysis tools available, each with its own strengths and weaknesses. Choose a tool that is well-suited for the project and that can detect the types of issues that are important for the project.
-
 Set Clear Goals: Define clear goals for the static analysis process. This includes identifying the types of issues that need to be detected, the severity of the issues, and the level of coverage required.
 
 Establish Baselines: Establish baseline metrics for the code before the analysis begins. This helps to measure the effectiveness of the static analysis process and track improvements over time.
 
-Run Analysis Regularly: Static analysis should be run regularly throughout the development cycle, ideally after each major code change. This helps to detect issues early on and ensure that the code is of high quality.
-
-Integrate with CI/CD: Static analysis should be integrated with the continuous integration/continuous deployment (CI/CD) pipeline. This ensures that issues are caught early and that code is not deployed until it meets the required standards.
 
 Focus on High-Impact Issues: Focus on detecting high-impact issues first, such as security vulnerabilities and critical bugs. This ensures that the most important issues are addressed first.
 
