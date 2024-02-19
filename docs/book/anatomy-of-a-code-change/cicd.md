@@ -54,7 +54,7 @@ Continuous delivery is not appropriate for all software projects. It requires a 
 
 !!! quote
     *"Shifting left is about paying attention to the low fuel warning light on an automobile versus running out of gas on the highway."*  
-    - Misquoted, need author
+    - Misquoted
 
 If we consider our development in chronological order from left to right, left being the conception of a product, right being the release of the final product, the amount of time needed to fix an error grows exponentially.
 
