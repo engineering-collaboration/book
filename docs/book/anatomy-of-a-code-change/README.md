@@ -19,7 +19,7 @@ The current progress of this section:
 - [x] Planning implementations
 - [x] Commits
 - [x] Pull requests
-- [ ] Static analysis
+- [x] Static analysis
 - [ ] Code reviews
 - [ ] Merging
 - [x] Testing
