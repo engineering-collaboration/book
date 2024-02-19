@@ -1,27 +1,27 @@
 ---
 title: Testing in production
-description: Testing does not end once our software is deployed. Since our production deployment varies to our test environment we either test in production or live a lie.
+description: Testing does not end once our software is deployed. Since our production deployment varies from our test environment, we either test in production or live a lie.
 ---
 
 # Testing in production
 
-The vast majority of tests focus on pre-production validation. Specifically we are using tests to ensure software is of sufficient quality before it is deployed into production. Test outcomes influence the decision whether our software should be deployed.
+The vast majority of tests focus on pre-production validation, specifically using tests to ensure that the software is of sufficient quality before deploying it into production. Test outcomes influence the decision on whether our software should be deployed.
 
 [![Testing In Production Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-in-prod-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-in-prod-execution.png)
 
-Alas, testing does not end once our software is in production. It would be embarrassing for our company, if we are the last to know whether our live software is running or not. We do not rely on bug reports from our user base to be made aware of active problems. Since our production deployment varies to our test environment, we either test in production or live a lie.
+Alas, testing does not end once our software is in production. It would be embarrassing for our company if we were the last to know whether our live software is running or not. We do not rely on bug reports from our user base to be made aware of active problems. Since our production deployment varies from our test environment, we either test in production or live a lie.
 
 ## Incremental rollouts
 
-When releasing new versions we roll our changes out to the public in iterations. Blue-green deployments and canary releases appraise working functionality and evaluate product decisions with a subset of our user base before fully committing to distributing changes. We cover these procedures in detail in [Release Strategies (*WIP)]().
+When releasing new versions, we roll out our changes to the public in iterations. Blue-green deployments and canary releases appraise working functionality and evaluate product decisions with a subset of our user base before fully committing to distributing changes. We cover these procedures in detail in [Release Strategies (*WIP)]().
 
 ## Production systems
 
 A live system used by a high number of users functions differently than our internal test environment. Our system copes with a higher amount of users, requests, bots, noise, and infrastructure dependencies.
 
-Aspects of our systems need to be verified in production to assess real world functionality. We monitor and evaluate caching and cache invalidation, token timeouts, availability across zones, and other metrics indicative of performance and system health.
+Aspects of our systems need to be verified in production to assess real-world functionality. We monitor and evaluate caching and cache invalidation, token timeouts, availability across zones, and other metrics indicative of performance and system health.
 
-As we do not have full control of our third party integrations and partner contracts, these may solely be effectively tested continuously in live environments. We certify working anchors, referral links, and third party modules periodically in order to maintain agreements with partner entities and proactively provide feedback in case of outages.
+As we do not have full control over our third-party integrations and partner contracts, these may solely be effectively tested continuously in live environments. We certify working anchors, referral links, and third-party modules periodically to maintain agreements with partner entities and proactively provide feedback in case of outages.
 
 Registering fake users, our manual and automated tests perform tasks to verify expected outcomes of LSTs within the noisy live environments. Utilizing this pool of fake users, the product and quality departments uncover unexpected or opaque behavior for varying user groups.
 

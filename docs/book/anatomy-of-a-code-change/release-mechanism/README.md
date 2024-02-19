@@ -25,8 +25,8 @@ Release candidates allow you to run testing processes or distiliining processes 
 
 Smaller workflows will likely find more success by just failing a release workflow.
 
-### Large scoped tests
+### Large-scoped tests
 
 All tests must pass in order for a release to be successful and signed.
 
-This is typically when we want to execute the Large Scoped Tests, as these tend to be time intensive.
+This is typically when we want to execute the Large-Scoped Tests, as these tend to be time intensive.
