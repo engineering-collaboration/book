@@ -1,6 +1,6 @@
 ---
 title: Standardization
-description: Standardization is a double edged sword. Though it improves communication across the organization, we might inadvertently limit a teams capabilities to efficiently and creatively do their work.
+description: Standardization is a double-edged sword. Although it improves communication across the organization, we might inadvertently limit a team's capabilities to efficiently and creatively do their work.
 ---
 
 # Standardization
