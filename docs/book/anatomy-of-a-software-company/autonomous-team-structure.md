@@ -5,11 +5,11 @@ description: When teams are partitioned via disciplines, every costumer facing f
 
 # Autonomous team structure
 
-Before getting into the structure of teams, let's have a brief excursion into anthropology. What is the suggested cognitive limit to the number of people with whom one can maintain stable social relationships?
+Before delving into the structure of teams, let's have a brief excursion into anthropology. What is the suggested cognitive limit to the number of people with whom one can maintain stable social relationships?
 
 ## Team size
 
-A number was first proposed in the 1990s by British anthropologist Robin Dunbar. Based on the behavior of primates, Dunbar proposed that humans can comfortably maintain 150 active contacts. A further break down 50 meaningful trust, 15 people with whom we share a strong trust, and 5 people with whom we have a deep trust.
+A number was first proposed in the 1990s by British anthropologist Robin Dunbar. Based on the behavior of primates, Dunbar proposed that humans can comfortably maintain 150 active contacts. Delving deeper, we are capable of 50 meaningful relationships, 15 people with whom we share a strong relationship, and 5 people whom we deeply trust.
 
 Naturally, these numbers are not absolute. Using these numbers as a reference point the overall industry recommendation is to have a team sized between 3 people as a minimum and 9 people as a maximum. Amazon famously put it as "A team should be fed with 2 pizzas" - which may work in the US, but I guarantee that we will starve our European employees.
 
