@@ -24,7 +24,7 @@ Hence, facilitating collaboration structures promotes a collaborative culture an
     *"Someone who claims to be an [Software] architect needs both technical and social skills. They also need a remit that is broader than pure technology - they need to have a say in business strategies, organizational structures, and personnel issues."*  
     - Allan Kelly
 
-The above quotes refer to Conway's Law. In laymen's terms, it observes the universal law that our software architecture ultimately copies our organization's team layout. Typically, this is interpreted as a warning in organizations with strict disciplinary silos.
+The above quotes refer to Conway's Law. In layman's terms, it observes the universal law that our software architecture ultimately copies our organization's team layout. Typically, this is interpreted as a warning in organizations with strict disciplinary silos.
 
 Within this book (and several others written by smarter people), we redefine Conway's Law not as a hurdle but as a tool. The *Inverse Conway Maneuver* states that we design our organization around our desired software architecture and continuous delivery flow, not the other way around. Moving people and teams in a way to design communication channels more efficiently will ultimately and organically lead to less friction in software delivery.
 
