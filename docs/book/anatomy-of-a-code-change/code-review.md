@@ -1,7 +1,7 @@
 # Code review
 
-pre-merge review vs post-merge
-
+pre-merge review vs post-merge vs dev pair programming vs every 2 sprints
+open-source vs team
 sync vs async
 
 do not explain decisions in code review, fix code to be explanatory
