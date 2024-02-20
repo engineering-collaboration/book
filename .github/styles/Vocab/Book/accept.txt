@@ -49,3 +49,5 @@ SST
 [Ee]xplorative
 [Nn]ightly
 rebase
+dereference
+multithreading
