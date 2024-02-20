@@ -107,6 +107,7 @@ nav:
       - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Commits: './book/anatomy-of-a-code-change/commits.md'
       - Pull Requests: './book/anatomy-of-a-code-change/pull-requests.md'
+      - Static Analysis: './book/anatomy-of-a-code-change/static-analysis.md'
       - Testing:
         - './book/anatomy-of-a-code-change/testing/README.md'
         - Good Practices: './book/anatomy-of-a-code-change/testing/good-practices.md'
