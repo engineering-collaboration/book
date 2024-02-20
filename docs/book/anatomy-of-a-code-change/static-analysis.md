@@ -1,3 +1,8 @@
+---
+title: Static analysis
+description: Static analysis scans the syntax of our code without actually executing it. It verifies that we follow agreed-upon conventions in our solution to maintain consistent readability, avoid bugs, and prevent security vulnerabilities before running our code.
+---
+
 # Static analysis
 
 Static analysis scans the syntax of our code without actually executing it. It verifies that we follow agreed-upon conventions in our solution to maintain consistent readability, avoid bugs, and prevent security vulnerabilities before running our code. Static analysis is run at every step of our code change: pre-merge, post-merge, and pre-release.
