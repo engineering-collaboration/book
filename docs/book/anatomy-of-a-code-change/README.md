@@ -20,7 +20,7 @@ The current progress of this section:
 - [x] Commits
 - [x] Pull requests
 - [x] Static analysis
-- [ ] Code reviews
+- [x] Code reviews
 - [ ] Merging
 - [x] Testing
 - [ ] Release mechanisms
