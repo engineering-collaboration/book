@@ -23,20 +23,25 @@ Code reviews can be voluntary. We ask our colleagues to look over critical or dr
 
 ### Pair programming
 
-The earliest form of code review in the development cycle is practising pair programming. We partner engineers to tackle complicated or complex tasks together in the same editor. Whether sharing a physical machine, or remotely via screen share, the important characteristic is that only one person types.
+The earliest form of code review in the development cycle is practising pair programming. We partner engineers to tackle complicated or complex tasks together in the same editor. Whether sharing a physical machine, or remotely via screen share, the defining characteristic of pair programming is that only one person types.
 
-While initially this seems as a reduncancy of resources, when practicing pair programming for tasks requirign high cognitive load, the development time is shortened and the resulting code quality is improved.
+While initially this seems as a reduncancy of resources, when practicing pair programming for tasks requirign high cognitive load, the paper *The Costs and Benefits of Pair Programming* by Alistair Cockburn and Laurie Williams estimated that the overhead costs of purely development time for two developers working on a problem side-by-side are about 15% (instead of an expected 100%). These 15% are assuredly offset by the increase of code quality, code stability, and sharing of knowledge.
 
-**The Costs and Benefits of Pair Programming**  
-Alistair Cockburn and Laurie Williams  
+Alas, the relative cost of pair programming multiplies with increasing triviality of the problem.
 
 ### Pre-merge code review
 
-As we cannot expect our colleagues to be at our constant beck and call, pre-merge code review comes at the cost of development velocity. If every PR requires a review before it is merged, our integrations to main come to a halt, and the number of PRs pile up over the sprint. Pre-merge code reviews are necessary for contributions originating from outside of our team, but if our organization does not operate in the industries of health care or aerospace engineering, reviewing every change done by our team is overkill.
+Pre-merge code review are a form of manual quality assurance before approving a PR. After our changes have passed our automated test suite, we assign reviewers to the PR, who approve the code or request further changes to be made before the code is merged into main.
+
+As we cannot expect our colleagues to be at our constant beck and call, pre-merge code review comes at the cost of development velocity. If every PR requires a review before it is merged, our integrations to main come to a halt, and the number of PRs pile up over the sprint.
+
+Pre-merge code reviews are necessary for contributions originating from outside of our team. For organizations that do not operate in the industries of health care or aerospace engineering, reviewing every change done within a team is overkill.
 
 ### Post-merge code review
 
 With post-merge reviews, we integrate our code changes from our development into main as soon as our automated pre-merge test suite passes. The changes are reviewed during the day at the convenience of our colleagues, and, should further changes be requested during the review, we open a new development branch to address the feedback. Post-merge reviews ensures steady development velocity, while still involving the team in changes.
+
+Post-merge reviews are the de-facto standard for distributed teams and early stage projects.
 
 ### Eventual code review
 
@@ -64,6 +69,6 @@ Positive words are never wasted. When we come across work we deem pleasant, we c
 
 ## Receiving a code review
 
-do not explain decisions in code review, fix code to be explanatory
+First and foremost, we remove any emotional involvement into the process and our solution. The initial mindset of having ones work reviewed is comparable to being back in school and expecting favorable grades. Pre-merge mistakes in the world of professional software engineering do not lead to a failing grade, but only to professional growth. We embrace all feedback in the positive intent it was typed in.
 
-positive intent by the receiving party
+As much as the setting is not school, it is also not a job interview. The statement "I do not understand what is happening here" is not solved by a detailed explanation in the PR comment section. Instead, we increase the readability of our work through comments, formatting, or naming, and ask whether the offending syntax is clearer now.
