@@ -25,7 +25,7 @@ Code reviews can be voluntary. We ask our colleagues to look over critical or dr
 
 The earliest form of code review in the development cycle is practising pair programming. We partner engineers to tackle complicated or complex tasks together in the same editor. Whether sharing a physical machine, or remotely via screen share, the defining characteristic of pair programming is that only one person types.
 
-While initially this seems as a reduncancy of resources, when practicing pair programming for tasks requirign high cognitive load, the paper *The Costs and Benefits of Pair Programming* by Alistair Cockburn and Laurie Williams estimated that the overhead costs of purely development time for two developers working on a problem side-by-side are about 15% (instead of an expected 100%). These 15% are assuredly offset by the increase of code quality, code stability, and sharing of knowledge.
+While initially this seems as a redundancy of resources, when practicing pair programming for tasks requiring high cognitive load, the paper *The Costs and Benefits of Pair Programming* by Alistair Cockburn and Laurie Williams estimated that the overhead costs of purely development time for two developers working on a problem side-by-side are about 15% (instead of an expected 100%). These 15% are assuredly offset by the increase of code quality, code stability, and sharing of knowledge.
 
 Alas, the relative cost of pair programming multiplies with increasing triviality of the problem.
 
@@ -49,7 +49,7 @@ Team internal post sprint presentations and code reviews. This process is additi
 
 ## Reviewing code
 
-We review code as soon as it has passed our automated tests; from static analysis, over small-scoped tests and medium-scoped tests, to AI powered reviews. Frankly, it's difficult to think of a bigger waste of our engineers time than reviewing whitespace and code convention issues. These should be taken care of by automated linters and style checkers.
+We review code after it has passed our automated tests; from static analysis, over small-scoped tests and medium-scoped tests, to AI powered reviews. Frankly, it's difficult to think of a bigger waste of our engineers time than reviewing whitespace and code convention issues. These should be taken care of by automated linters and style checkers.
 
 Every member of our team reviews code; it is not a practice done by a select few senior engineers or product owners. When we observe that a major burden of the code reviews is carried by a limited amount of colleagues, we implement processes or tools to spread review requests evenly across team members. Regardless of seniority, every engineer grows when reviewing code, or when their work is being reviewed. Relieving certain personell groups of code reviews, deprives them of professional and personal growth.
 
