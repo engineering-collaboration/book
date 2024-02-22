@@ -44,27 +44,23 @@ Team internal post sprint presentations and code reviews. This process is additi
 
 ## Reviewing code
 
-linters, style checkers, and code analyzers to catch simple mistakes before manual review. use available tools, such as suggestions, AI
-if a majority of reviews deal with line spaces, new lines, indentations, bracket positions, we need an automated linter
+We review code as soon as it has passed our automated tests; from static analysis, over small-scoped tests and medium-scoped tests, to AI powered reviews. Frankly, it's difficult to think of a bigger waste of our engineers time than reviewing whitespace and code convention issues. These should be taken care of by automated linters and style checkers.
 
+Every member of our team reviews code; it is not a practice done by a select few senior engineers or product owners. When we observe that a major burden of the code reviews is carried by a limited amount of colleagues, we implement processes or tools to spread review requests evenly across team members. Regardless of seniority, every engineer grows when reviewing code, or when their work is being reviewed. Relieving certain personell groups of code reviews, deprives them of professional and personal growth.
 
-If someone does well at something and the praise they recieve is "Good hob, you're so smart", the emphasis on smartness pushes them toward a fixed mindset. If, on the other hand, someone is given the praise "Good job, you worked hard on that", they will associate the their successes with the effort they put in.
+The more people we involve in code reviews, the broader we share product knowledge across the team, alas the more we potentially decelerate development velocity. When multiple people review code changes, we source them across the ends of the spectrum of seniority of disciplines. Junior engineers and senior engineers share different insights when reading code.
 
-It's one thing to assume good intentions, but can we go further? What good intentions can I identify with that this person holds? What might their positive motivations be?
+Code reviews are not the platform to discuss feature aspects or high-level implementation strategies. If we are interested in decisions made, not as an evaluation, but due to professional curiousity, we may consult the Design Document. Beyond documented decisions we always have the opportunity talk privately over a coffee to learn about the driving factors of the current solution.
 
-sync vs async
+A code review is not aimed to point out long-term strategies, but to highlight immediate changes necessary for the code to be executed safely and readable for immediate maintenance by members other than the original author.
 
-code reviews are not a platform for discussing implementation strategies
+If possible, we prefer to do code reviews synchronously via screen share. By assessing the revisions together, we are able to discuss the work and request needed additional changes within minutes. Asynchronous reviews with comments and replies have the tendency to span days as notifications are missed. When reviewing asynchronously (e.g. due to geographic locations of team members), we move the process to post-merge, as not to hinder development.
 
-Request reviews by certain personell or personell groups. These reviews are essential for consistent high quality code integrations and horizontal distribution of knowledge. There are various strategies on who to request reviews from depending on team size and the nature of our changes.
+When reviewing code we focus on constructive actionable feedback for improving the code, we do not direct any feedback at the person who wrote it. This practice applies to both requesting changes and approving code. We praise a person's work ("You did good work on this"), rather than the person themselves ("Good job, you are smart"). The former emphasis continued growth as a person and within a team, the latter applauds subjective work in what is a collaborative process. Letting your colleagues now the high esteem you hold them in is best left for annual performance reviews and when drinking an unprofessional amount of alcohol during a work gathering.
 
-It typically makes sense to involve people across two ends of a spectrum, e.g. one senior person and one junior person can share different insights during the review. Having people across departments review our code improves cross department collaboration and spreads the knowledge horizontally.
+When requesting changes we make use of all tooling provided. From placing comments directly into the source code to typing out change suggestions.
 
-Should it appear that a major burden of the code reviews are done by a limited amount of number, consider implementing processes or tools that spreads review requests evenly across team members.
-
-Feedback should be constructive and aimed at improving the code, not criticizing the person who wrote it. positive intent by the receiving party
-
-suggest alternatives if necessary
+Positive words are never wasted. When we come across work we deem pleasant, we comment upon this; be it well structured documentation, transparent tests, helpful error messages, informative design documents, or educational PR descriptions.
 
 ## Receiving a code review
 
