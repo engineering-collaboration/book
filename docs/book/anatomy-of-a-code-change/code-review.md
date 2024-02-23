@@ -1,12 +1,14 @@
 # Code review
 
-learn from previous reviews and use this knowledge to improve the code review process. This includes identifying common mistakes and establishing good practices for code development.
+The practice of code review is a manual step in the CI/CD process. Our changes are inspected by another engineer for general readability and errors that slipped through our automated test suite. Everybody makes mistakes and two pairs of eyes is better than one.
 
-automate as much as possible
+Code reviews are an excellent point in time for gathering data for future automation. Identifying common mistakes and establishing automation practices to rectify these automatically for future development cycles lies at the heart of continuous improvement and the spirit of this book.
+
+We review and improve the process of code reviews over time, as this practice has the potential to become a bottleneck for development velocity if our practices do not evolve with our needs.
 
 ## Benefits of code review
 
-Code review is mainly understood to serve as a gating mechanism to assess changes by colleagues before these are added to our software product. While increasing code quality is most certainly an aspect of this practice, this kind of code "critique" thinking hampers development velocity and decreases the other beneficial factors of code reviews.
+Unfortunately, code review is broadly (and misleadingly) understood to serve as a gating mechanism to assess changes by colleagues before these are added to our software product. While increasing code quality is most certainly an aspect of this practice, this kind of code "critique" thinking hampers development velocity and decreases the other beneficial factors of code reviews.
 
 ### Sharing knowledge
 
@@ -16,11 +18,15 @@ Sharing knowledge horizontally moves the burden from individuals to teams, meani
 
 ### Building trust
 
-Over time, having our code reviewed and reviewing our team member's code builds the mindset of a blameless culture. We dissacioate our work done as being "our" code and move emotional connotations from our contributions to the work our team does as a whole.
+Over time, having our code reviewed and reviewing our team member's code builds the mindset of a blameless culture. We dissociate our work done as being "our" code and move emotional connotations from our contributions to the work our team does as a whole.
 
-The sooner we embrace a collective mindset, the sooner our team builds professional trust across incidividual contributors. Within an open collaborative environment, we not only share knowledge about implementations within the product; but by "showing our workings", every team member grows technical competencies.
+The sooner we embrace a collective mindset, the sooner our team builds professional trust across contributors. Within an open collaborative environment, we not only share knowledge about implementations within the product; but by "showing our workings", every team member grows technical competencies.
 
 ### Increased code quality
+
+Finally, yes, code reviews improve the quality of the code. Having multiple engineers with different experiences and backgrounds study each others work leads to implementations which are standardized, readable, and performant. A fresh pair of eyes is more likely to find potential errors.
+
+
 
 ## Types of code review
 
