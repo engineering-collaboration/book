@@ -59,6 +59,10 @@ Post-merge reviews are the de-facto standard for distributed teams and early sta
 
 Team internal post sprint presentations and code reviews. This process is additional to post-sprint presentations as outlined in [Planning work (WIP)]() in *The anatomy of managing a team*. Team members present their diffs since the last review in order and synchronously go over them, and, if necessary, request additional changes. This exercise can be done in parallel in small groups. In order to spread the knowledge these groups rotate.
 
+### Choosing a strategy
+
+[![Types of Code Review](../../../assets/images/book/anatomy-of-a-code-change/types-of-code-review.webp)](../../../assets/images/book/anatomy-of-a-code-change/types-of-code-review.png)
+
 ## Review process
 
 We review code after it has passed our automated tests; from static analysis, over small-scoped tests and medium-scoped tests, to AI powered reviews. Frankly, it's difficult to think of a bigger waste of our engineers time than reviewing whitespace and code convention issues. These should be taken care of by automated linters and style checkers.
