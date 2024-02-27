@@ -34,6 +34,10 @@ O'Reilly Media, Inc., 09.06.2015
 Mark Handley  
 BT Technology Journal, Vol 24 No 3, July 2006  
 
+**The Costs and Benefits of Pair Programming**  
+Alistair Cockburn and Laurie Williams  
+February 2000  
+
 ## Youtube
 
 [**Cloud Native Computing Foundation**](https://www.youtube.com/@cncf)  
