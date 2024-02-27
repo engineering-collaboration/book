@@ -2,36 +2,35 @@
 
 The practice of code review is a manual step in the CI/CD process. Our changes are inspected by another engineer for general readability and errors that slipped through our automated test suite. Everybody makes mistakes and two pairs of eyes is better than one.
 
-Code reviews are an excellent point in time for gathering data for future automation. Identifying common mistakes and establishing automation practices to rectify these automatically for future development cycles lies at the heart of continuous improvement and the spirit of this book.
-
-We review and improve the process of code reviews over time, as this practice has the potential to become a bottleneck for development velocity if our practices do not evolve with our needs.
+Code reviews are an excellent point in time for gathering data for future automation. Identifying common mistakes and establishing automation practices to rectify these automatically for future development cycles lies at the heart of continuous improvement and the spirit of this book. We review and improve the process of code reviews over time, as this practice has the potential to become a bottleneck for development velocity if our practices do not evolve with our needs.
 
 ## Benefits of code review
 
-Unfortunately, code review is broadly (and misleadingly) understood to serve as a gating mechanism to assess changes by colleagues before these are added to our software product. While increasing code quality is most certainly an aspect of this practice, this kind of code "critique" thinking hampers development velocity and decreases the other beneficial factors of code reviews.
+Alas, it is to be said, code review is broadly (and misleadingly) understood to serve as a gating mechanism to assess changes by colleagues before these are added to our software product. While increasing code quality is most certainly an aspect of this practice, this kind of code "critique" thinking hampers development velocity and decreases the other beneficial factors of code reviews. Beyond quality assurance, code reviews provide us a tool for encouraging blameless interaction and culture within our team.
 
 ### Sharing knowledge
 
 Whether we fix bugs or build features into our code base we expand our knowledge of the product code base and the solution for the domain problem. During the code review process we share the gained knowledge with our team members. In turn, the feedback and its resolution grows our insight into the respective domain.
 
-Sharing knowledge horizontally moves the burden from individuals to teams, meaning even if our "specialist" is sick, on vacation, or has left our company, the work is competently done by the team.
+Sharing knowledge horizontally moves the burden from individuals to teams, meaning even if our "specialist" is sick, on vacation, or has left our company, the work is competently done by the team. As knowledge is shared horizontally, we reduce pressure on individuals and diversify responsibilities across our organization. This approach enables us to ensure consistent career progression as we remove hard dependencies of members within set positions.
 
 ### Building trust
 
 Over time, having our code reviewed and reviewing our team member's code builds the mindset of a blameless culture. We dissociate our work done as being "our" code and move emotional connotations from our contributions to the work our team does as a whole.
 
-The sooner we embrace a collective mindset, the sooner our team builds professional trust across contributors. Within an open collaborative environment, we not only share knowledge about implementations within the product; but by "showing our workings", every team member grows technical competencies.
+The sooner we embrace a collective mindset, the sooner our team builds professional trust across contributors. Within an open collaborative environment, we not only share knowledge about implementations within the product; but by "showing our workings", every team member refines their technical competencies.
+
+Teams that build in public, share work-in-progress, and confidently ask for the opinions of their peers uncover potential concerns earlier in the development phase and thus reduce the overall cost of producing working software.
 
 ### Increased code quality
 
-Finally, yes, code reviews improve the quality of the code. Having multiple engineers with different experiences and backgrounds study each others work leads to implementations which are standardized, readable, and performant. A fresh pair of eyes is more likely to find potential errors.
+Finally, yes, code reviews directly improve the quality of the code at hand. Having multiple engineers with different experiences and backgrounds study each others work, leads to implementations which are standardized, readable, and performant. A fresh pair of eyes is more likely to find potential errors.
 
-
+The immediate increase in code quality comes at an expense. It is our responsibility to measure and evaluate the short-term and long-term benefits of code reviews to the impact of development velocity. The next section describes different shapes of code review and the merits and drawbacks they coalesce.
 
 ## Types of code review
 
-Depending on our organization's priorities we position the code review process at different stages.
-Code reviews can be voluntary. We ask our colleagues to look over critical or drastic changes. Smaller changes that pass our testing suite we merge confidently.
+
 
 ### Pair programming
 
@@ -39,7 +38,7 @@ The earliest form of code review in the development cycle is practising pair pro
 
 While initially this seems as a redundancy of resources, when practicing pair programming for tasks requiring high cognitive load, the paper *The Costs and Benefits of Pair Programming* by Alistair Cockburn and Laurie Williams estimated that the overhead costs of purely development time for two developers working on a problem side-by-side are about 15% (instead of an expected 100%). These 15% are assuredly offset by the increase of code quality, code stability, and sharing of knowledge.
 
-Alas, the relative cost of pair programming multiplies with increasing triviality of the problem.
+The relative cost of pair programming multiplies with increasing triviality of the problem and is thus best reserved for consuming cognitive conundrums. The technique limits the gains of collaboration and exchange of knowledge to the two participating parties.
 
 ### Pre-merge code review
 
@@ -60,6 +59,10 @@ Post-merge reviews are the de-facto standard for distributed teams and early sta
 Team internal post sprint presentations and code reviews. This process is additional to post-sprint presentations as outlined in [Planning work (WIP)]() in *The anatomy of managing a team*. Team members present their diffs since the last review in order and synchronously go over them, and, if necessary, request additional changes. This exercise can be done in parallel in small groups. In order to spread the knowledge these groups rotate.
 
 ### Choosing a strategy
+
+We mold our strategy to the needs of our product lifecycle, team composition, team distribution, and industry, and review code at the relevant stages of our integration process. 
+
+Code reviews can be voluntary. We ask our colleagues to look over critical or drastic changes. Smaller changes that pass our testing suite we merge confidently.
 
 [![Types of Code Review](../../../assets/images/book/anatomy-of-a-code-change/types-of-code-review.webp)](../../../assets/images/book/anatomy-of-a-code-change/types-of-code-review.png)
 
