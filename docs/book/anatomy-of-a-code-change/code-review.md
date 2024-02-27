@@ -30,7 +30,7 @@ The immediate increase in code quality comes at an expense. It is our responsibi
 
 ## Types of code review
 
-
+Code reviews come in different shapes and sizes and it is up to us to establish suitable processes for our teams and products.
 
 ### Pair programming
 
@@ -50,13 +50,17 @@ Pre-merge code reviews are necessary for contributions originating from outside 
 
 ### Post-merge code review
 
-With post-merge reviews, we integrate our code changes from our development into main as soon as our automated pre-merge test suite passes. The changes are reviewed during the day at the convenience of our colleagues, and, should further changes be requested during the review, we open a new development branch to address the feedback. Post-merge reviews ensures steady development velocity, while still involving the team in changes.
+With post-merge reviews, we integrate our code changes from our development into main as soon as our automated pre-merge test suite passes. The changes are reviewed within a reasonable time at the convenience of our colleagues. Should further changes be requested during the review, we open a new development branch to address the feedback.
 
-Post-merge reviews are the de-facto standard for distributed teams and early stage projects.
+Post-merge reviews ensures steady development velocity, while still involving the team in changes and are the de-facto standard for distributed teams and early stage projects. Although immediacy of reviews is less of an issue compared to pre-merge reviews, we benefit from tooling to distribute reviews evenly across the team and reminds us of assigned reviews.
 
 ### Eventual code review
 
-Team internal post sprint presentations and code reviews. This process is additional to post-sprint presentations as outlined in [Planning work (WIP)]() in *The anatomy of managing a team*. Team members present their diffs since the last review in order and synchronously go over them, and, if necessary, request additional changes. This exercise can be done in parallel in small groups. In order to spread the knowledge these groups rotate.
+Team internal post sprint presentations and code reviews. This process is additional to post-sprint presentations as outlined in [Planning work (WIP)]() in *The anatomy of managing a team*. Team members present their diffs since the last review in order and synchronously go over them, and, if necessary, request additional changes. The difference to post-merge reviews is that eventual reviews are a scheduled event in which the entire team participates.
+
+To minimize the impact on time this exercise can be done in parallel in small groups. We shuffle the members for small groups in order to spread the knowledge across our team. This type of code review covers multiple changes over a period of time and we may block an appropriate amount of hours to review the changes synchronously.
+
+The eventual code review presents the code within the full context it is being executed, but due to scope of the changes are made up of ambiguous diffs. Successful eventual code reviews rely on the discipline of our team and consistent accommodation within our sprint plans.
 
 ### Choosing a strategy
 
