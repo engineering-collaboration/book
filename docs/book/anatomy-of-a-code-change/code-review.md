@@ -34,13 +34,13 @@ Code reviews come in different shapes and sizes and it is up to us to establish 
 
 ### Pair programming
 
-The earliest form of code review in the development cycle is practising pair programming. We partner engineers to tackle complicated or complex tasks together in the same editor. Whether sharing a physical machine, or remotely via screen share, the defining characteristic of pair programming is that only one person types.
+An early form of code review within the development cycle is pair programming. We partner engineers to tackle complicated or complex tasks together in the same editor. Whether sharing a physical machine, or remotely via screen share, the defining characteristic of pair programming is that only one person types.
 
 While initially this seems as a redundancy of resources, when practicing pair programming for tasks requiring high cognitive load, the paper *The Costs and Benefits of Pair Programming* by Alistair Cockburn and Laurie Williams estimated that the overhead costs of purely development time for two developers working on a problem side-by-side are about 15% (instead of an expected 100%). These 15% are assuredly offset by the increase of code quality, code stability, and sharing of knowledge.
 
 The relative cost of pair programming multiplies with increasing triviality of the problem and is thus best reserved for consuming cognitive conundrums. The technique limits the gains of collaboration and exchange of knowledge to the two participating parties.
 
-### Pre-merge code review
+### Pre-merge review
 
 Pre-merge code review are a form of manual quality assurance before approving a PR. After our changes have passed our automated test suite, we assign reviewers to the PR, who approve the code or request further changes to be made before the code is merged into main.
 
@@ -48,13 +48,13 @@ As we cannot expect our colleagues to be at our constant beck and call, pre-merg
 
 Pre-merge code reviews are necessary for contributions originating from outside of our team. For organizations that do not operate in the industries of health care or aerospace engineering, reviewing every change done within a team is overkill.
 
-### Post-merge code review
+### Post-merge review
 
 With post-merge reviews, we integrate our code changes from our development into main as soon as our automated pre-merge test suite passes. The changes are reviewed within a reasonable time at the convenience of our colleagues. Should further changes be requested during the review, we open a new development branch to address the feedback.
 
 Post-merge reviews ensures steady development velocity, while still involving the team in changes and are the de-facto standard for distributed teams and early stage projects. Although immediacy of reviews is less of an issue compared to pre-merge reviews, we benefit from tooling to distribute reviews evenly across the team and reminds us of assigned reviews.
 
-### Eventual code review
+### Eventual review
 
 Team internal post sprint presentations and code reviews. This process is additional to post-sprint presentations as outlined in [Planning work (WIP)]() in *The anatomy of managing a team*. Team members present their diffs since the last review in order and synchronously go over them, and, if necessary, request additional changes. The difference to post-merge reviews is that eventual reviews are a scheduled event in which the entire team participates.
 
@@ -64,11 +64,11 @@ The eventual code review presents the code within the full context it is being e
 
 ### Choosing a strategy
 
-We mold our strategy to the needs of our product lifecycle, team composition, team distribution, and industry, and review code at the relevant stages of our integration process. 
-
-Code reviews can be voluntary. We ask our colleagues to look over critical or drastic changes. Smaller changes that pass our testing suite we merge confidently.
+We mold our strategy to the needs of our product lifecycle, team composition, team distribution, and industry, and review code at the relevant stages of our integration process. While there's an argument to be made that pair-programming teams present their work to the team down the line, we only review code once. The review options presented are not accumulative.
 
 [![Types of Code Review](../../../assets/images/book/anatomy-of-a-code-change/types-of-code-review.webp)](../../../assets/images/book/anatomy-of-a-code-change/types-of-code-review.png)
+
+Pair-programming tackles complex tasks efficiently; high-security teams benefit from pre-merge reviews; post-merge reviews support high-velocity teams and teams distributed across timezones; periodical planned eventual reviews work great for established products and teams comprised of senior engineers.
 
 ## Review process
 
