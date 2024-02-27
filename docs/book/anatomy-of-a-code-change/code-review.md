@@ -6,7 +6,7 @@ Code reviews are an excellent point in time for gathering data for future automa
 
 ## Benefits of code review
 
-Alas, it is to be said, code review is broadly (and misleadingly) understood to serve as a gating mechanism to assess changes by colleagues before these are added to our software product. While increasing code quality is most certainly an aspect of this practice, this kind of code "critique" thinking hampers development velocity and decreases the other beneficial factors of code reviews. Beyond quality assurance, code reviews provide us a tool for encouraging blameless interaction and culture within our team.
+Alas, it is to be said, code review is broadly (and misleadingly) understood to serve as a gating mechanism to assess changes by colleagues before these are added to our software product. While increasing code quality is most certainly an aspect of this practice, this kind of code "critique" thinking hampers development velocity and decreases the other beneficial factors of code reviews. Beyond quality assurance, code reviews provide us a tool for encouraging blameless interaction and blameless culture within our team.
 
 ### Sharing knowledge
 
@@ -96,4 +96,4 @@ Positive words are never wasted. When we come across work we deem pleasant, we c
 
 First and foremost, we remove any emotional involvement into the process and our solution. The initial mindset of having ones work reviewed is comparable to being back in school and expecting favorable grades. Pre-merge mistakes in the world of professional software engineering do not lead to a failing grade, but only to professional growth. We embrace all feedback in the positive intent it was typed in.
 
-As much as the setting is not school, it is also not a job interview. The statement "I do not understand what is happening here" is not solved by a detailed explanation in the PR comment section. Instead, we increase the readability of our work through comments, formatting, or naming, and ask whether the offending syntax is clearer now.
+As much as the setting is not school, it is also not a job interview. The statement "I do not understand what is happening here" is not solved by a detailed explanation in the PR comment section. Instead, we increase the readability of our work through comments, formatting, or naming, and ask whether the offending syntax is clearer after our edits.
