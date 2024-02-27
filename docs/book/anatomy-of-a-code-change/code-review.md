@@ -1,4 +1,9 @@
-# Code review
+---
+title: Code reviews
+description: Beyond quality assurance, code reviews provide us a tool for encouraging blameless interaction and a blameless culture within our team.
+---
+
+# Code reviews
 
 The practice of code review is a manual step in the CI/CD process. Our changes are inspected by another engineer for general readability and errors that may have slipped through our automated test suite. Everybody makes mistakes, and two pairs of eyes are better than one.
 
