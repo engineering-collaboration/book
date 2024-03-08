@@ -27,11 +27,21 @@ In order to rectify our entanglement we rebase our work on the latest commit on 
 
 # Squash and merge
 
-A squash command combines the commits 
+Squashing an arbitrary amount of consecutive commits combines and replaces those changes into a single commit. By consolidating work-in-progress commits or bilaterally annulling commits we reduce noise in our project history.
+
+Most source control platforms offer the option of a server side *Squash and Merge* approach when integrating changes of a completed pull request (PR). The procedure squashes all commits of our development branch and appends our changes to the main branch as a single commit.
+
+For short-lived development branches focusing on fixing or adding a single responsibility, the development steps are less important than the changes themselves and the commits may be squashed and merged. Complex issues are documented as inline comments or within the PR description.
+
+With an hypothetical average of ten commits per development branch; by squashing, we reduce the growth of commits over time from 10,000 commits to 1,000 commits.
 
 ## Merge commit
 
-Advanced users of version control tools may follow the practices outlined within [this GitHub](https://github.blog/2022-06-30-write-better-commits-build-better-projects/) blog article about structuring a story of your commits before merging via merge commit.
+On occasion, the complexity of achieving a tasks or the volume of changes across multiple files requires chronological cataloging for transparency. Merge commits allow us to preserve the development commits we created within the repository without clobbering the main branch.
+
+When analyzing the main branch via `git log` or `git bisect` we are able to ignore the branching paths of merge commits and only step into them for a detailed view.
+
+As advanced users of version control tools we may follow the practices outlined within [this GitHub blog article](https://github.blog/2022-06-30-write-better-commits-build-better-projects/) about structuring a story of our commits before merging via merge commit.
 
 ## cherry pick
 
