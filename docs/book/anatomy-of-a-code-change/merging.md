@@ -1,14 +1,10 @@
 # Merging
 
+Merging is a little different between VCS solutions. This chapter does include git commands.
+
 A merge is a command that combines two or more branches into one. It takes the changes from the specified branch (called the "source" branch) and applies them to the current branch (called the "destination" branch). Git Merge creates a new commit that represents the merged state of both branches. This is the most common way to merge branches in Git.
 
-There are multiple ways of transfering changes from one branch to another in git. In this chapter we will go over those strategies and cover the scenarios in which they are useful and what to look out for.
-
-## Resolving conflicts
-
-If Git is able to automatically merge the changes without any conflicts, it will create a new commit that represents the merged state of both branches. This commit will have two parent commits: one from the master branch and one from the feature-branch.
-
-If there are conflicts between the changes in the two branches, Git will pause the merge process and ask you to resolve the conflicts manually. You can do this by opening the files with conflicts, editing them to resolve the conflicts, and then running git add on the changed files to stage them for commit. Once you have resolved all conflicts, you can run git commit to create the merge commit and complete the merge.
+There are multiple ways of transferring changes from one branch to another in git. In this chapter we will go over those strategies and cover the scenarios in which they are useful and what to look out for.
 
 ## Linear history
 
@@ -25,7 +21,7 @@ In order to rectify our entanglement we rebase our work on the latest commit on 
 !!! note
     When rebasing a branch we create new commits on our local machine that do no longer mirror the state of our remote repository. We either force push (with-lease) our changes, overriding the state of the remote repository or create a new branch from the head of our development branch and rebase and push that one; abandoning our development branch.
 
-# Squash and merge
+## Squash and merge
 
 Squashing an arbitrary amount of consecutive commits combines and replaces those changes into a single commit. By consolidating work-in-progress commits or bilaterally annulling commits we reduce noise in our project history.
 
@@ -39,17 +35,20 @@ With an hypothetical average of ten commits per development branch; by squashing
 
 On occasion, the complexity of achieving a tasks or the volume of changes across multiple files requires chronological cataloging for transparency. Merge commits allow us to preserve the development commits we created within the repository without clobbering the main branch.
 
-When analyzing the main branch via `git log` or `git bisect` we are able to ignore the branching paths of merge commits and only step into them for a detailed view.
+The particular branching view of a merge commit allows us to either ignore the development commits when analyzing the main branch via `git log` or `git bisect`, or step into them if we are interested in the history of the changes.
 
 As advanced users of version control tools we may follow the practices outlined within [this GitHub blog article](https://github.blog/2022-06-30-write-better-commits-build-better-projects/) about structuring a story of our commits before merging via merge commit.
 
-## cherry pick
+## Cherry picking
 
+The act of cherry picking commits cannot in good conscience be described as a merge. It is however, an additional way of transferring select commits between branches. The command `git cherry-pick` allows us to append an existing commit to our current `HEAD`.
 
-# Summary
+Optionally, cherry picking applies the contents of a commit to our current workspace, rather than appending a commit itself. This permits us to edit the content or revert unwanted modifications bundled within the cherry-picked change before creating a new commit in our development branch.
 
-It is very likely that you want to rebase regardless of your merging strategy
+## Resolving conflicts
 
-- Rebase branch and integrate
-- Rebase branch and merge commit
-- Rebase branch, squash branch and integrate
+Rebasing our feature branch prompts us more often than than merge commit. Worth it for linear history.
+
+If Git is able to automatically merge the changes without any conflicts, it will create a new commit that represents the merged state of both branches. This commit will have two parent commits: one from the master branch and one from the feature-branch.
+
+If there are conflicts between the changes in the two branches, Git will pause the merge process and ask you to resolve the conflicts manually. You can do this by opening the files with conflicts, editing them to resolve the conflicts, and then running git add on the changed files to stage them for commit. Once you have resolved all conflicts, you can run git commit to create the merge commit and complete the merge.
