@@ -10,11 +10,15 @@ There are multiple ways of transferring changes from one branch to another in gi
 
 When merging changes into software, we ensure a linear history of our project. The parent commit of our development branch is the latest commit on main. A linear history sequentially chronicles the evolution of our software and streamlines future reactionary development.
 
+[![Linear History](../../../assets/images/book/anatomy-of-a-code-change/linear-history.webp)](../../../assets/images/book/anatomy-of-a-code-change/linear-history.png)
+
 Sometimes we introduce unexpected breaking changes. A non-linear history makes it extremely difficult to identify and immediately roll back the offending commit. If left unattended, a non-linear history breaches the point of illegibility and emerges as being utterly useless. Future bug fixes and tracking changes over a period time devolve into frustratingly hair-pulling endeavors.
 
 ## Rebase
 
 We sprouted our development branch off the latest commit of main when sowing the seeds our work. Chances are, while developing our feature, our colleagues integrated their tasks into the main branch, thus cultivating a merge of our botanical offshoot into a non-linear history in the trunk branch.
+
+[![Rebase](../../../assets/images/book/anatomy-of-a-code-change/rebase.webp)](../../../assets/images/book/anatomy-of-a-code-change/rebase.png)
 
 In order to rectify our entanglement we rebase our work on the latest commit on main, fix occurring merge conflicts, and integrate our changes after successfully passing our automated test suite. A rebase precedes any merge into our main branch.
 
@@ -36,6 +40,8 @@ With an hypothetical average of ten commits per development branch; by squashing
 On occasion, the complexity of achieving a tasks or the volume of changes across multiple files requires chronological cataloging for transparency. Merge commits allow us to preserve the development commits we created within the repository without clobbering the main branch.
 
 The particular branching view of a merge commit allows us to either ignore the development commits when analyzing the main branch via `git log` or `git bisect`, or step into them if we are interested in the history of the changes.
+
+[![Merge Commit](../../../assets/images/book/anatomy-of-a-code-change/merge-commit.webp)](../../../assets/images/book/anatomy-of-a-code-change/merge-commit.png)
 
 As advanced users of version control tools we may follow the practices outlined within [this GitHub blog article](https://github.blog/2022-06-30-write-better-commits-build-better-projects/) about structuring a story of our commits before merging via merge commit.
 
