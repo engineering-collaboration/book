@@ -1,14 +1,15 @@
 # Merging
 
-Merging is a little different between VCS solutions. This chapter does include git commands.
+Depending on the discipline, concept of repository streams, and branch isolation, merging changes differs between version control solutions. Universally, we discuss the idea of re-integrating changes to our main software product, or uniting changes of differing origins.
 
-A merge is a command that combines two or more branches into one. It takes the changes from the specified branch (called the "source" branch) and applies them to the current branch (called the "destination" branch). Git Merge creates a new commit that represents the merged state of both branches. This is the most common way to merge branches in Git.
+!!! note
+    Since merging varies between tooling, we focus on the practices within Git. This chapter is one of the rare exceptions that includes technical commands and ties to a specific platform.
 
-There are multiple ways of transferring changes from one branch to another in git. In this chapter we will go over those strategies and cover the scenarios in which they are useful and what to look out for.
+*Git* includes various strategies on converging changes to a single destination branch. Ungoverned, our project might grow in unnecessary complexity, include opaque processes, or lose information relevant for future fixes. This chapter details merging policies for successful lon-term integrations in trunk-based development.
 
 ## Linear history
 
-When merging changes into software, we ensure a linear history of our project. The parent commit of our development branch is the latest commit on main. A linear history sequentially chronicles the evolution of our software and streamlines future reactionary development.
+Regardless or our approach, when merging changes into software, we ensure a linear history of our project. The parent commit of our development branch is the latest commit on main. A linear history sequentially chronicles the evolution of our software and streamlines future reactionary development.
 
 [![Linear History](../../../assets/images/book/anatomy-of-a-code-change/linear-history.webp)](../../../assets/images/book/anatomy-of-a-code-change/linear-history.png)
 
@@ -16,11 +17,11 @@ Sometimes we introduce unexpected breaking changes. A non-linear history makes i
 
 ## Rebase
 
-We sprouted our development branch off the latest commit of main when sowing the seeds our work. Chances are, while developing our feature, our colleagues integrated their tasks into the main branch, thus cultivating a merge of our botanical offshoot into a non-linear history in the trunk branch.
+We sprouted our development branch off of the latest commit of main when sowing the seeds our work. Chances are, while developing our feature, our colleagues integrated their tasks into the main branch, thus putting us in the position of cultivating a non-linear history should we merge our botanical offshoot into the trunk unchanged.
+
+In order to rectify our entanglement, we rebase our work on the latest commit on main, fix occurring conflicts, and integrate our changes after successfully passing our automated test suite. A rebase precedes any merge into our main branch.
 
 [![Rebase](../../../assets/images/book/anatomy-of-a-code-change/rebase.webp)](../../../assets/images/book/anatomy-of-a-code-change/rebase.png)
-
-In order to rectify our entanglement we rebase our work on the latest commit on main, fix occurring merge conflicts, and integrate our changes after successfully passing our automated test suite. A rebase precedes any merge into our main branch.
 
 !!! note
     When rebasing a branch we create new commits on our local machine that do no longer mirror the state of our remote repository. We either force push (with-lease) our changes, overriding the state of the remote repository or create a new branch from the head of our development branch and rebase and push that one; abandoning our development branch.
@@ -43,7 +44,7 @@ The particular branching view of a merge commit allows us to either ignore the d
 
 [![Merge Commit](../../../assets/images/book/anatomy-of-a-code-change/merge-commit.webp)](../../../assets/images/book/anatomy-of-a-code-change/merge-commit.png)
 
-As advanced users of version control tools we may follow the practices outlined within [this GitHub blog article](https://github.blog/2022-06-30-write-better-commits-build-better-projects/) about structuring a story of our commits before merging via merge commit.
+[This *GitHub* blog article](https://github.blog/2022-06-30-write-better-commits-build-better-projects/) details practices for advanced users of *Git* about structuring a story of our commits when merging our work via a merge commit. The well-written paper outlines how thematically organized commits increase the readability of changes by spanning the dramatic arc of our development process; from partial implementations, to tests, refactors, polish, and documentation.
 
 ## Cherry picking
 
@@ -53,8 +54,6 @@ Optionally, cherry picking applies the contents of a commit to our current works
 
 ## Resolving conflicts
 
-Rebasing our feature branch prompts us more often than than merge commit. Worth it for linear history.
+*Git* merges compatible changes automatically. Resolving conflicts, however, requires manual intervention. We compare the clashing lines of changes and rectify the discord by editing the changes to accept a change from either source or manually edit a functioning resolution containing workings of both origins.
 
-If Git is able to automatically merge the changes without any conflicts, it will create a new commit that represents the merged state of both branches. This commit will have two parent commits: one from the master branch and one from the feature-branch.
-
-If there are conflicts between the changes in the two branches, Git will pause the merge process and ask you to resolve the conflicts manually. You can do this by opening the files with conflicts, editing them to resolve the conflicts, and then running git add on the changed files to stage them for commit. Once you have resolved all conflicts, you can run git commit to create the merge commit and complete the merge.
+When rebasing changes we find ourselves repeatedly resolving the same lines across commits; such is the nature of this process. We minimize our rebasing effort by integrating changes frequently into main, rebasing our development branch frequently, squashing development commits of our development branch.
