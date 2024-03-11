@@ -29,7 +29,7 @@ In order to rectify our entanglement, we rebase our work on the latest commit on
 [![Rebase](../../../assets/images/book/anatomy-of-a-code-change/rebase.webp)](../../../assets/images/book/anatomy-of-a-code-change/rebase.png)
 
 !!! note
-    When rebasing a branch, we create new commits on our local machine that no longer mirror the state of our remote repository. We either force-push (with-lease) our changes, overriding the state of the remote repository, or create a new branch from the head of our development branch and rebase and push that one, abandoning our development branch.
+    When rebasing a branch, we create new commits on our local machine that no longer mirror the state of our remote repository. We either force-push (with-lease) our changes, overriding the state of the remote repository, or create a new branch from the head of our development branch and rebase and push that one, abandoning our development branch. We do so with the respect and caution required when rewriting project history in a collaborative environment.
 
 ## Squash and merge
 
