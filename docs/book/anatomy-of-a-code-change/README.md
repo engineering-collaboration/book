@@ -21,7 +21,7 @@ The current progress of this section:
 - [x] Pull requests
 - [x] Static analysis
 - [x] Code reviews
-- [ ] Merging
+- [x] Merging
 - [x] Testing
 - [ ] Release mechanisms
 - [ ] Documentation
