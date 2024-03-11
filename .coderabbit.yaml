@@ -9,9 +9,6 @@ reviews:
     auto_review:
         labels:
           - draft
-    path_instructions:
-        - path: "**/*.md"
-          instructions: |
-              "Highlight errors in grammar, readability, and structure. Limit the number of reviews to ten."
+
 chat:
     auto_reply: false
