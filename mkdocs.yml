@@ -103,14 +103,7 @@ nav:
       - Pull Requests: './book/anatomy-of-a-code-change/pull-requests.md'
       - Static Analysis: './book/anatomy-of-a-code-change/static-analysis.md'
       - Code Reviews: './book/anatomy-of-a-code-change/code-review.md'
-
-      - Merging:
-        - './book/anatomy-of-a-code-change/merge/README.md'
-        - Merge Commit: './book/anatomy-of-a-code-change/merge/merge-commit.md'
-        - Rebase: './book/anatomy-of-a-code-change/merge/rebase.md'
-        - Squash: './book/anatomy-of-a-code-change/merge/squash.md'
-        - Cherry Pick: './book/anatomy-of-a-code-change/merge/cherry-pick.md'
-        - Summary: './book/anatomy-of-a-code-change/merge/summary.md'
+      - Merging: './book/anatomy-of-a-code-change/merging.md'
 
       - Testing:
         - './book/anatomy-of-a-code-change/testing/README.md'
