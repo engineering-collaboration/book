@@ -52,3 +52,5 @@ SST
 rebase
 dereference
 multithreading
+[Rr]ebase
+[Rr]ebasing

@@ -13,13 +13,13 @@ Regardless or our approach, when merging changes into software, we ensure a line
 
 [![Linear History](../../../assets/images/book/anatomy-of-a-code-change/linear-history.webp)](../../../assets/images/book/anatomy-of-a-code-change/linear-history.png)
 
-Sometimes we introduce unexpected breaking changes. A non-linear history makes it extremely difficult to identify and immediately roll back the offending commit. If left unattended, a non-linear history breaches the point of illegibility and emerges as being utterly useless. Future bug fixes and tracking changes over a period time devolve into frustratingly hair-pulling endeavors.
+Sometimes we introduce unexpected breaking changes. A non-linear history complicates identifying and reverting a offending commit. If left unattended, a non-linear history breaches the point of illegibility and emerges as being utterly useless. Future bug fixes and tracking changes over a period time devolve into frustratingly hair-pulling endeavors.
 
 ## Rebase
 
 We sprouted our development branch off of the latest commit of main when sowing the seeds our work. Chances are, while developing our feature, our colleagues integrated their tasks into the main branch, thus putting us in the position of cultivating a non-linear history should we merge our botanical offshoot into the trunk unchanged.
 
-In order to rectify our entanglement, we rebase our work on the latest commit on main, fix occurring conflicts, and integrate our changes after successfully passing our automated test suite. A rebase precedes any merge into our main branch.
+In order to rectify our entanglement, we rebase our work on the latest commit on main, fix occurring conflicts, and integrate our changes after passing our automated test suite. A rebase precedes any merge into our main branch.
 
 [![Rebase](../../../assets/images/book/anatomy-of-a-code-change/rebase.webp)](../../../assets/images/book/anatomy-of-a-code-change/rebase.png)
 
@@ -56,4 +56,4 @@ Optionally, cherry picking applies the contents of a commit to our current works
 
 *Git* merges compatible changes automatically. Resolving conflicts, however, requires manual intervention. We compare the clashing lines of changes and rectify the discord by editing the changes to accept a change from either source or manually edit a functioning resolution containing workings of both origins.
 
-When rebasing changes we find ourselves repeatedly resolving the same lines across commits; such is the nature of this process. We minimize our rebasing effort by integrating changes frequently into main, rebasing our development branch frequently, squashing development commits of our development branch.
+When rebasing changes we find ourselves recurrently resolving the same lines across commits; such is the nature of this process. We minimize our rebasing effort by integrating changes frequently into main, rebasing our development branch frequently, squashing development commits of our development branch.
