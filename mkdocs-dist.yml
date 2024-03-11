@@ -120,6 +120,7 @@ nav:
         - Manual Tests: './book/anatomy-of-a-code-change/testing/manual-tests.md'
         - Testing in Production: './book/anatomy-of-a-code-change/testing/testing-in-production.md'
         - Testing Strategy: './book/anatomy-of-a-code-change/testing/testing-strategy.md'
+      - Release Mechanisms: './book/anatomy-of-a-code-change/release-mechanisms.md'
 
   - Resources: 'resources.md'
   - Changelog: 'changelog.md'
