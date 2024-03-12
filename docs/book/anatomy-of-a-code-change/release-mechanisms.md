@@ -59,8 +59,11 @@ This is difficult. Our testing and deployment strategies have to be solid. Even 
 
 A green head is deployed and used
 
+## Hotfixes
 
-## Hotfix the previous release
+The world is messy and does not follow "good practices". as engineers we enable our teams, not discipline them on using deprecated items; there's time in the post mortem for it. Sometimes things are on fire, and need to be put out with what is at hand, not wait for the fire department to wield the massive truck through a busy city centre.
+
+The engineer on call must be able to build and release, override processes set in place.
 
 It may occur that a certain release may receive some bug reports which cannot wait until the next version or cycle. In these cases the bugfix needs to be committed to the release branch in order to create a new version.
 
