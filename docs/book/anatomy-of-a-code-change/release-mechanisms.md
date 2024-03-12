@@ -1,44 +1,30 @@
 # Release Mechanisms
 
-Unlike other git workflows you might have come across, TBD does not encourage a permanent single release branch (There are however a form of release branches that we will talk about). As every merge into the `trunk` branch aims to be stable, we should theoretically be able to release at any commit from the trunk branch.
+We identified requirements, planned and implemented our changes, integrated our work into our software and passed all tests thrown at our software thus far. Time has come to showcase our team's prowess to the public.
 
-In practice, this is not desirable for every project, especially customer facing suites. For internal services it is not uncommon to have multiple releases per day.
+Building our product with the practices detailed in this book, we are able to release our software hassle-free at any time. The decision of when to release depends on business and product factors, not technological limits.
 
-Regardless of your release schedule, theoretically you want to be able to release at any time. This is the core goal that TBD and CI/CD works towards.
+Internal services not uncommonly deploy multiple releases per day. As autonomous vertical teams we create and deploy releases of our software without dependencies and handoffs to other teams.
 
-While your product team may favour monthly releases, this setup will enable you to do so. Move away from yearly releases.
+## Release candidate
 
-## Who releases?
+When we have decided on releasing the current state of our software, we flag it as a release candidate. In an ideal world, the release candidate is promoted to the published release without any further changes. In reality, further modifications are necessary; either to fix unwanted behavior, or to distill additional information for distribution.
 
-Releases should be done by code owners.
-Add a way to circumvent the above rule for hotfixes
+We subject our release candidate to the pre-release testing suite we established in our [Testing Strategy](./testing/testing-strategy.md), ranging from static analysis, small-, medium-, and large-scoped tests, benchmark tests, and manual tests to verify the quality of our release. A passing release candidate paired with positive manual reports green-lights our release process of the candidate automatically, or informs our team to manually perform the release of our approved software changes.
 
-## The release process
+The release procedure packages and signs our binary build, writes the changelog, compiles the up-to-date documentation, and uploads all created artifacts to our distribution platform.
 
-Regardless of our release mechanism, we want to make sure to cover the processes.
+## Releasing via tags
 
-### Release candidate
+Within trunk-based development (TBD) release candidates are most commonly referenced via tags to the commit on our main branch. A Git tag following a standardized pattern (e.g. `rc*.*.*`) kicks off our testing suite for our release version (e.g. `rc1.23.4`). Verified candidates mark the same commit for release with a release tag `v1.23.4`.
 
-For large and complex services, environments or deployment pipelines it can be beneficial to distinguish between release candidates and releases.
+Unsuccessful release candidates require additional changes and we follow our TBD practices of creating a development branch to work on a patch, create a pull request, merge our changes and flag the resulting commit as a new release candidate `rc1.23.5`.
 
-Release candidates allow you to run testing processes or distiliining processes delayed or in parallel or batches. A successful release candidate workflow then triggers an actual release workflow.
+Release procedures typically generate meta information related to our release. Data bundled into our distributed binary is treated as ephemeral and deposed of after the process has completed, but we serialize lasting data and add it to our source code via automated pull requests. 
 
-Smaller workflows will likely find more success by just failing a release workflow.
+Naturally, the tag patterns used in this chapter are subject to change as they follow the needs of our organizations release strategy.
 
-### Large-scoped tests
-
-All tests must pass in order for a release to be successful and signed.
-
-This is typically when we want to execute the Large-Scoped Tests, as these tend to be time intensive.
-
-# Tags
-
-The most common way to mark and trigger releases is to tag a commit on the `trunk` branch with a certain format. Typically this is `v0.0.0` or `r0.0.0` and `rc0.0.0` for release candidates. Naturally, the format can be whatever makes most sense for our product or department.
-
-This is the most straight forward way to implement a release workflow and all major VCS platforms come equipped with the tooling to listen to tags on certain branches.
-
-
-# Release branches
+## Releasing via branches
 
 The first and foremost thing to note here is that when talking about release branches in TBD, we are NOT talking about a single permanent release branch as seen in other git workflows.
 
@@ -65,7 +51,7 @@ Long term support versions of app, argument to be made to move to seperate repos
 
  The head of the version specific release branch is the latest published patch of that minor version.
 
-# Live at `HEAD`
+## Live at `HEAD`
 
 Live at head is the holy grail of TBD and CI/CD. The closer we can get to this, the more flexible and agile our entire company is.
 
@@ -74,7 +60,7 @@ This is difficult. Our testing and deployment strategies have to be solid. Even 
 A green head is deployed and used
 
 
-### Hotfix the previous release
+## Hotfix the previous release
 
 It may occur that a certain release may receive some bug reports which cannot wait until the next version or cycle. In these cases the bugfix needs to be committed to the release branch in order to create a new version.
 
