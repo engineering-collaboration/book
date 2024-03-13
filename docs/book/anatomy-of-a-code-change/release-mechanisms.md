@@ -26,21 +26,15 @@ Naturally, the tag patterns used in this chapter are subject to change as they f
 
 ## Releasing via branches
 
-Projects with a high number of contributors or a lengthy release process benefit moving from releasing via tags to releasing via branches. When talking of release branches we do not propose a single long living release branch to merge into. After clearing our test suite, every candidate spawns an individual branch to reference the commit on main we plan to distribute.
+Projects with a high number of contributors or a lengthy release process benefit moving from releasing via tags to releasing via branches. However, when talking of release branches we do not propose a single long living release branch to merge into. After clearing our test suite, every candidate spawns an individual branch to reference the commit on main we plan to distribute.
 
-Isolating our release branch from our main branch steadies developer velocity and change integration to our software for the small overhead of introducing an additional conceptual branch model. Extended deployment evaluation noise free, Extensive distill processes noise free
+Isolating our release branch from our main branch steadies developer velocity and change integration to our software for the small overhead of introducing an additional conceptual branch model. We detach feature development from finishing our deployment evaluation and distill our software distribution free of irrelevant noise.
 
-The head of the version specific release branch is the latest published patch of that minor version.
-
-Noisy branches, we will need to implement some filtering when viewing branches.
-
-There should never be changes in a release branch that is not in main
-
-Release branches do not advocate long term support, just because it's easier does not mean we should do it.
+The steadily growing number of release branches reduces legibility of the project unless a filtering mechanism screens these when listing repository branches. Besides verbosity, an pervasive display of multiple release branches institutes a mindset of long-term support for each version and fragments our workforce and deliveries. We aim to consolidate all consumers to the latest version of our product. No change is exclusive to a release branch and not available in our main branch.
 
 ## Live at `HEAD`
 
-Live at head is the holy grail of TBD and CI/CD. The closer we can get to this, the more flexible and agile our entire company is.
+Live at head represents the holy grail of TBD and CI/CD. The closer we can get to this, the more flexible and agile our entire company is.
 
 This is difficult. Our testing and deployment strategies have to be solid. Even if Live-at-head is done manually with release tags, this is what we are aiming for when implementing TBD and CI/CD.
 
