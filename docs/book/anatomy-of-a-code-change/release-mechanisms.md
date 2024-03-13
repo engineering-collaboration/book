@@ -34,11 +34,9 @@ The steadily growing number of release branches reduces legibility of the projec
 
 ## Live at `HEAD`
 
-Live at head represents the holy grail of TBD and CI/CD. The closer we can get to this, the more flexible and agile our entire company is.
+Live at head represents the holy grail of TBD and CI/CD. Every integration to our main branch passing our test suites is built and deployed. This deployment strategy both requires and strengthens the integration and testing discipline of our team. Knowing that our CI/CD processes publishes our integrations immediately, puts the stability of the product to the forefront of our mind when working on changes.
 
-This is difficult. Our testing and deployment strategies have to be solid. Even if Live-at-head is done manually with release tags, this is what we are aiming for when implementing TBD and CI/CD.
-
-A green head is deployed and used
+Live at head only succeeds with robust and continuously improving automation suites for testing, analysis, documentation, and contract verification between teams. While the approach is not sensible for all types of software products, the technical ability to achieve the state guarantees our competence to react to market demands as feasibly as possible.
 
 ## Hotfixes
 
