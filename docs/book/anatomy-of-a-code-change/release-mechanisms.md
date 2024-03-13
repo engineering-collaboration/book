@@ -26,30 +26,17 @@ Naturally, the tag patterns used in this chapter are subject to change as they f
 
 ## Releasing via branches
 
-The first and foremost thing to note here is that when talking about release branches in TBD, we are NOT talking about a single permanent release branch as seen in other git workflows.
+Projects with a high number of contributors or a lengthy release process benefit moving from releasing via tags to releasing via branches. When talking of release branches we do not propose a single long living release branch to merge into. After clearing our test suite, every candidate spawns an individual branch to reference the commit on main we plan to distribute.
 
-```
-What's the problem with a single dedicated release branch?
-```
+Isolating our release branch from our main branch steadies developer velocity and change integration to our software for the small overhead of introducing an additional conceptual branch model. Extended deployment evaluation noise free, Extensive distill processes noise free
 
-If tags cannot satisfy the complex workflows we have for our release, we use the more powerful reference type in git of branches. Why would we want to do this?
-
-- We know our release will be a LTS and will require multiple secluded commits
-- Our distill process is complex and will require multiple automated commits
+The head of the version specific release branch is the latest published patch of that minor version.
 
 Noisy branches, we will need to implement some filtering when viewing branches.
 
-What is important?
-
 There should never be changes in a release branch that is not in main
-commits on release branches are only bug fixes, not features, never bump the major or minor version on a release branch
-If storage permits it, archive release branches into separate repos after release cycles
 
-Release branches make the process more complex and more likely to introduce regression bugs.
-
-Long term support versions of app, argument to be made to move to seperate repository.
-
- The head of the version specific release branch is the latest published patch of that minor version.
+Release branches do not advocate long term support, just because it's easier does not mean we should do it.
 
 ## Live at `HEAD`
 
@@ -72,6 +59,8 @@ As we do not want to maintain multiple differing versions it is imperative to fi
 This may sometimes need some investigation as the bug may not be reproducible on the main/master branch. It will sometimes not be avoidable to do actual work on the release branch. Should this be the case verify that the fix makes it to main/master to avoid future regressions.
 
 # Fix outdated releases
+
+We always make production changes this way, starting in master; that’s because how the code gets into production is as important as the code that ultimately gets there. If we were to hotfix production directly, we might accidentally forget to bring a change back to master for the next release. But by bringing changes into master first, we ensure that we never have regressions in production.
 
 We try and avoid working on release branches. Before attempting any changes on outdated versions make sure that:
 
