@@ -7,7 +7,7 @@ description: From release candidate to distribution in highly collaborative envi
 
 We identified requirements, planned and implemented our changes, integrated our work into our software, and passed all tests thrown at our software thus far. Time has come to showcase our team's prowess to the public.
 
-Building our product with the practices detailed in this book, we are able to release our software hassle-free at any time. The decision of when to release depends on business and product factors, not technological limits. Internal services not uncommonly deploy multiple releases per day. As autonomous vertical teams, we create and deploy releases of our software without dependencies and handoffs to other teams.
+Building our product with the practices detailed in this book, we can release our software hassle-free at any time. The decision of when to release depends on business and product factors, not technological limits. Internal services not uncommonly deploy multiple releases per day. As autonomous vertical teams, we create and deploy releases of our software without dependencies and handoffs to other teams.
 
 ## Release candidate
 
@@ -59,7 +59,7 @@ Our customer depends on a year-old version and makes heavy use of deprecated fun
 
 We locate the commit dating back to the release on our main branch and, if we're not working with release branches, create a new branch for our fix. As our first action, we examine our changelogs whether the reported error has been resolved in our software since the time of the release. Should we find this to be the case, we replicate the fix to our newly created outdated release branch. Preferably by cherry-picking the remedying commit, otherwise by copying the solution manually.
 
-We might find that over the course of our latest releases, we, in fact, have not tackled our vexatious issue. In which case, we get to work as we would with any change and create a development branch from the latest commit on main. Even if the current request relates to an outdated release, we patch the issue on our main branch first before cherry-picking the resolution to the outdated release branch. This way we ensure the problem does not reappear as a future regression.
+We might find that over the course of our latest releases, we, in fact, have not tackled our vexatious issue. In which case, we get to work as we would with any change and create a development branch from the latest commit on main. Even if the current request relates to an outdated release, we patch the issue on our main branch first. By cherry-picking the resolution to the outdated release branch after, we avoid the problem reappearing as a future regression.
 
 ### Overriding protections
 
