@@ -34,25 +34,25 @@ The steadily growing number of release branches reduces legibility of the projec
 
 ## Live at `HEAD`
 
-Live at head represents the holy grail of TBD and CI/CD. Every integration to our main branch passing our test suites is built and deployed. This deployment strategy both requires and strengthens the integration and testing discipline of our team. Knowing that our CI/CD processes publishes our integrations immediately, puts the stability of the product to the forefront of our mind when working on changes.
+Live at head represents the holy grail of TBD and CI/CD. Every integration to our main branch passing our test suites is built and deployed. This deployment strategy both requires and strengthens the integration and testing discipline of our team. Knowing that our CI/CD processes publishes our integrations on merge leads to a focus on product stability when working on changes.
 
-Live at head only succeeds with robust and continuously improving automation suites for testing, analysis, documentation, and contract verification between teams. While the approach is not sensible for all types of software products, the technical ability to achieve the state guarantees our competence to react to market demands as feasibly as possible.
+Live at head <!-- write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> succeeds with robust and continuously improving automation suites for testing, analysis, documentation, and contract verification between teams. While the approach is not sensible for all types of software products, the technical ability to achieve the state guarantees our competence to react to market demands as feasibly as possible.
 
 ## Hotfixes
 
 It has been our experience that we sometimes produce illicit behavior in our software. Despite all our good intentions, competent code review, and a plethora of automated tests, we do and will continue to introduce errors into our workings. Predominantly low-impact issues we address serenely for our next planned release.
 
-Other times, production is on fire and serenity nowhere to be found. In the spirit of cooperation we are awoken at 3am and informed of a surplus of errors originating from our software. After a brief introduction to the problem we concur the findings.
+Other times, production is on fire and serenity nowhere to be found. In the spirit of cooperation we are awoken at 3 a.m. and informed of a surplus of errors originating from our software. After a brief introduction to the problem we concur the findings.
 
 Our immediate task demands to have production running again. If production consumes our software as a dependency initial success might be found in altering the dependent version; either roll-back to a functioning state, or, if consuming an outdated version and the error has been fixed since then, bumping the offending dependency. When rolling back and rolling back over is not an option, it is time to rub the sleep out of our eyes and get to work.
 
 ### Fixing a current release
 
-An oversight, or ambiguous requirement caught up with us in the end. We follow the same procedure as any bugfix, spawn a development branch from latest main, eliminate the error, add a test to avoid a reappearance, create a PR, pass the test suite, SKIP a possible pre-merge code review, integrate our changes and finally hit the release button.
+An oversight, or ambiguous requirement caught up with us in the end. We follow the same procedure as any bug fix, spawn a development branch from latest main, eliminate the error, add a test to avoid a reappearance, create a PR, pass the test suite, **SKIP** a possible pre-merge code review, integrate our changes, and hit the release button.
 
 ### Fixing an outdated release
 
-Our costumer depends on a year-old version and makes heavy use of deprecated functionality. The risk of updating to a newer release is deemed as significant and uncomfortable. The reasoning of ignored deprecation warnings until launch day at 3am is unclear and we silently note the need for a future post-mortem.
+Our costumer depends on a year-old version and makes heavy use of deprecated functionality. The risk of updating to a newer release is deemed as significant and uncomfortable. The reasoning of ignored deprecation warnings until launch day at 3 a.m. is unclear and we discreetly write down the need for a future post-mortem.
 
 We locate the commit dating back to the release on our main branch and, if we're not working with release branches, create a new branch for our fix. As our first action, we examine our changelogs whether the reported error has been resolved in our software since the time of the release. Should we find this to be the case, we replicate the fix to our newly created outdated release branch. Preferably by cherry-picking the remedying commit, otherwise by copying the solution manually.
 
