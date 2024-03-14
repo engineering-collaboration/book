@@ -40,33 +40,24 @@ Live at head only succeeds with robust and continuously improving automation sui
 
 ## Hotfixes
 
-The world is messy and does not follow "good practices". as engineers we enable our teams, not discipline them on using deprecated items; there's time in the post mortem for it. Sometimes things are on fire, and need to be put out with what is at hand, not wait for the fire department to wield the massive truck through a busy city centre.
+It has been our experience that we sometimes produce illicit behavior in our software. Despite all our good intentions, competent code review, and a plethora of automated tests, we do and will continue to introduce errors into our workings. Predominantly low-impact issues we address serenely for our next planned release.
 
-The engineer on call must be able to build and release, override processes set in place.
+Other times, production is on fire and serenity nowhere to be found. In the spirit of cooperation we are awoken at 3am and informed of a surplus of errors originating from our software. After a brief introduction to the problem we concur the findings.
 
-It may occur that a certain release may receive some bug reports which cannot wait until the next version or cycle. In these cases the bugfix needs to be committed to the release branch in order to create a new version.
+Our immediate task demands to have production running again. If production consumes our software as a dependency initial success might be found in altering the dependent version; either roll-back to a functioning state, or, if consuming an outdated version and the error has been fixed since then, bumping the offending dependency. When rolling back and rolling back over is not an option, it is time to rub the sleep out of our eyes and get to work.
 
-As we do not want to maintain multiple differing versions it is imperative to fix these bugs for the current development cycle. We do this as usual by creating a development branch, fixing the bug, submitting a merge request and merging our development branch back to main/master. One additional step is to **cherry pick** the changes of the bugfix to the release branch.
+### Fixing a current release
 
-This may sometimes need some investigation as the bug may not be reproducible on the main/master branch. It will sometimes not be avoidable to do actual work on the release branch. Should this be the case verify that the fix makes it to main/master to avoid future regressions.
+An oversight, or ambiguous requirement caught up with us in the end. We follow the same procedure as any bugfix, spawn a development branch from latest main, eliminate the error, add a test to avoid a reappearance, create a PR, pass the test suite, SKIP a possible pre-merge code review, integrate our changes and finally hit the release button.
 
-# Fix outdated releases
+### Fixing an outdated release
 
-We always make production changes this way, starting in master; that’s because how the code gets into production is as important as the code that ultimately gets there. If we were to hotfix production directly, we might accidentally forget to bring a change back to master for the next release. But by bringing changes into master first, we ensure that we never have regressions in production.
+Our costumer depends on a year-old version and makes heavy use of deprecated functionality. The risk of updating to a newer release is deemed as significant and uncomfortable. The reasoning of ignored deprecation warnings until launch day at 3am is unclear and we silently note the need for a future post-mortem.
 
-We try and avoid working on release branches. Before attempting any changes on outdated versions make sure that:
+We locate the commit dating back to the release on our main branch and, if we're not working with release branches, create a new branch for our fix. As our first action, we examine our changelogs whether the reported error has been resolved in our software since the time of the release. Should we find this to be the case, we replicate the fix to our newly created outdated release branch. Preferably by cherry-picking the remedying commit, otherwise by copying the solution manually.
 
-* The issue is not fixed in a later version
-* The issue is fixed in a later version, but production vehemently argues against updating
+We might find that over the course of our latest releases, we, in fact, have not tackled our vexatious issue. In which case, we get to work as we would with any change and create a development branch from the latest commit on main. Even if the current request relates to an outdated release, we patch the issue on our main branch first before cherry-picking the resolution to the outdated release branch. This way we ensure the problem does not reappear as a future regression.
 
-There are two strategies on how to work on an outdated release branch.
+### Overriding protections
 
-## Cherry pick
-
-It may be the case that our main branch and the maintained release branch have diverged significantly. In case that a reported bug is not reproducible on the main branch, check if a fix to the reported behavior was committed since the release branching. Should a fix have been committed, attempt to cherry pick the changes into the release branch.
-
-## Branch from release
-
-If no fix has been found the foremost priority is to get production unstuck by fixing the issue on the maintained version currently used by production. Create a branch from release and follow the typical integration steps to merge your fix back into release.
-
-When fixing bugs for a maintained release version be certain that these changes are either redundant for the main branch, or applied to the main branch.
+During crises we are responsible to support and enable our colleagues and clients and require the full trust and privileges within our team to solve the problems at hand. Should immediate action be in opposition to everyday processes, we are authorized and able to override these with no slumbering peers picking up the phone.
