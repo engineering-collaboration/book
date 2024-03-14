@@ -1,10 +1,13 @@
+---
+title: Release Mechanisms
+description: From release candidate to distribution in highly collaborative environments.
+---
+
 # Release Mechanisms
 
 We identified requirements, planned and implemented our changes, integrated our work into our software, and passed all tests thrown at our software thus far. Time has come to showcase our team's prowess to the public.
 
-Building our product with the practices detailed in this book, we are able to release our software hassle-free at any time. The decision of when to release depends on business and product factors, not technological limits.
-
-Internal services not uncommonly deploy multiple releases per day. As autonomous vertical teams, we create and deploy releases of our software without dependencies and handoffs to other teams.
+Building our product with the practices detailed in this book, we are able to release our software hassle-free at any time. The decision of when to release depends on business and product factors, not technological limits. Internal services not uncommonly deploy multiple releases per day. As autonomous vertical teams, we create and deploy releases of our software without dependencies and handoffs to other teams.
 
 ## Release candidate
 
