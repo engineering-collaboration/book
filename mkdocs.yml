@@ -117,13 +117,13 @@ nav:
         - Testing Strategy: './book/anatomy-of-a-code-change/testing/testing-strategy.md'
 
       - Release Mechanisms: './book/anatomy-of-a-code-change/release-mechanisms.md'
+      - Release Strategies: './book/anatomy-of-a-code-change/release-strategies.md'
+
       - Documentation:
         - Documentation: './book/anatomy-of-a-code-change/documentation/README.md'
         - Documentation in Code: './book/anatomy-of-a-code-change/documentation/inline.md'
         - Documentation for Disciplines: './book/anatomy-of-a-code-change/documentation/for-disciplines.md'
 
-      - Artifact Management: './book/anatomy-of-a-code-change/artifact-management.md'
-      - Release Strategies: './book/anatomy-of-a-code-change/release-strategies.md'
       - Repository Strategies: './book/anatomy-of-a-code-change/repo.md'
       - Infrastructure as Code: './book/anatomy-of-a-code-change/iac.md'
       - Monitoring and Observability: './book/anatomy-of-a-code-change/monitoring.md'
