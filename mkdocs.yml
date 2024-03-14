@@ -96,7 +96,7 @@ nav:
 
     - The anatomy of a code change:
       - './book/anatomy-of-a-code-change/README.md'
-      - CICD: './book/anatomy-of-a-code-change/cicd.md'
+      - CI/CD: './book/anatomy-of-a-code-change/cicd.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'
       - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Commits: './book/anatomy-of-a-code-change/commits.md'
@@ -116,13 +116,7 @@ nav:
         - Testing in Production: './book/anatomy-of-a-code-change/testing/testing-in-production.md'
         - Testing Strategy: './book/anatomy-of-a-code-change/testing/testing-strategy.md'
 
-      - Release Mechanisms:
-        - './book/anatomy-of-a-code-change/release-mechanism/README.md'
-        - Tags: './book/anatomy-of-a-code-change/release-mechanism/tags.md'
-        - Branches: './book/anatomy-of-a-code-change/release-mechanism/release-branches.md'
-        - Live at Head: './book/anatomy-of-a-code-change/release-mechanism/live-at-head.md'
-        - Hotfixes: './book/anatomy-of-a-code-change/release-mechanism/hotfix.md'
-
+      - Release Mechanisms: './book/anatomy-of-a-code-change/release-mechanisms.md'
       - Documentation:
         - Documentation: './book/anatomy-of-a-code-change/documentation/README.md'
         - Documentation in Code: './book/anatomy-of-a-code-change/documentation/inline.md'

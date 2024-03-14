@@ -27,13 +27,7 @@ rollout
 whiteboarding
 overcommunicate
 undercommunicate
-nightly
-ci
-CI
-cd
-CD
-CICD
-cicd
+[Nn]ightly
 codeowner
 hotfix
 subtask
@@ -49,7 +43,7 @@ MST
 SST
 [Ee]xplorative
 [Nn]ightly
-rebase
+[Rr]ebase
 dereference
 multithreading
 [Rr]ebase

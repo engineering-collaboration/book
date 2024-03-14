@@ -102,7 +102,7 @@ nav:
 
     - The anatomy of a code change:
       - './book/anatomy-of-a-code-change/README.md'
-      - CICD: './book/anatomy-of-a-code-change/cicd.md'
+      - CI/CD: './book/anatomy-of-a-code-change/cicd.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'
       - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Commits: './book/anatomy-of-a-code-change/commits.md'
@@ -120,6 +120,7 @@ nav:
         - Manual Tests: './book/anatomy-of-a-code-change/testing/manual-tests.md'
         - Testing in Production: './book/anatomy-of-a-code-change/testing/testing-in-production.md'
         - Testing Strategy: './book/anatomy-of-a-code-change/testing/testing-strategy.md'
+      - Release Mechanisms: './book/anatomy-of-a-code-change/release-mechanisms.md'
 
   - Resources: 'resources.md'
   - Changelog: 'changelog.md'

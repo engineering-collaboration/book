@@ -131,7 +131,7 @@
 
 **Merged pull requests:**
 
-- 🌍 Add meta data and social cards [\#12](https://github.com/opencollabbook/book/pull/12) [[meta](https://github.com/opencollabbook/book/labels/meta)] [[automation](https://github.com/opencollabbook/book/labels/automation)] ([daniellanner](https://github.com/daniellanner))
+- 🌍 Add metadata and social cards [\#12](https://github.com/opencollabbook/book/pull/12) [[meta](https://github.com/opencollabbook/book/labels/meta)] [[automation](https://github.com/opencollabbook/book/labels/automation)] ([daniellanner](https://github.com/daniellanner))
 - 🪶  Add chapter about commits [\#11](https://github.com/opencollabbook/book/pull/11) ([daniellanner](https://github.com/daniellanner))
 - 🪶  Add chapter about trunk based development [\#10](https://github.com/opencollabbook/book/pull/10) [[draft](https://github.com/opencollabbook/book/labels/draft)] ([daniellanner](https://github.com/daniellanner))
 - 🤖 Prepend latest changelog [\#9](https://github.com/opencollabbook/book/pull/9) [[meta](https://github.com/opencollabbook/book/labels/meta)] ([github-actions[bot]](https://github.com/apps/github-actions))
@@ -162,7 +162,7 @@
 **Merged pull requests:**
 
 - 🤖  Fix templates [\#4](https://github.com/opencollabbook/book/pull/4) [[automation](https://github.com/opencollabbook/book/labels/automation)] ([daniellanner](https://github.com/daniellanner))
-- 🪶  Add chapter about cicd [\#3](https://github.com/opencollabbook/book/pull/3) [[draft](https://github.com/opencollabbook/book/labels/draft)] ([daniellanner](https://github.com/daniellanner))
+- 🪶  Add chapter about CI/CD [\#3](https://github.com/opencollabbook/book/pull/3) [[draft](https://github.com/opencollabbook/book/labels/draft)] ([daniellanner](https://github.com/daniellanner))
 - 🤖 Prepend latest changelog [\#2](https://github.com/opencollabbook/book/pull/2) [[meta](https://github.com/opencollabbook/book/labels/meta)] ([github-actions[bot]](https://github.com/apps/github-actions))
 
 
