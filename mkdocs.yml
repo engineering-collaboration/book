@@ -96,7 +96,7 @@ nav:
 
     - The anatomy of a code change:
       - './book/anatomy-of-a-code-change/README.md'
-      - CICD: './book/anatomy-of-a-code-change/cicd.md'
+      - CI/CD: './book/anatomy-of-a-code-change/cicd.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'
       - Planning Implementations: './book/anatomy-of-a-code-change/planning-implementations.md'
       - Commits: './book/anatomy-of-a-code-change/commits.md'

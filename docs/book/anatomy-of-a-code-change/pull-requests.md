@@ -46,7 +46,7 @@ For every step, we provide context as to why that particular constraint exists t
 
 ### Automated Reviews
 
-Successful implementations of TBD and CICD into our organization center around automation and constant improvement of processes and said automation. The first gating process of analyzing code changes of a pull request executes lightweight operations to verify the state of our development branch.
+Successful implementations of TBD and CI/CD into our organization center around automation and constant improvement of processes and said automation. The first gating process of analyzing code changes of a pull request executes lightweight operations to verify the state of our development branch.
 
 [Static Analysis]() checks how we structure and write our implementation. Rather than executing the software, automated code-linting and style-checks ensure that our changes meet the required standards. This process identifies agreed-upon standards, such as naming conventions, whitespace, and error handling, and flags the use of disallowed libraries, legacy code, or deprecated implementations.
 

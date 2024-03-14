@@ -162,7 +162,7 @@
 **Merged pull requests:**
 
 - 🤖  Fix templates [\#4](https://github.com/opencollabbook/book/pull/4) [[automation](https://github.com/opencollabbook/book/labels/automation)] ([daniellanner](https://github.com/daniellanner))
-- 🪶  Add chapter about cicd [\#3](https://github.com/opencollabbook/book/pull/3) [[draft](https://github.com/opencollabbook/book/labels/draft)] ([daniellanner](https://github.com/daniellanner))
+- 🪶  Add chapter about CI/CD [\#3](https://github.com/opencollabbook/book/pull/3) [[draft](https://github.com/opencollabbook/book/labels/draft)] ([daniellanner](https://github.com/daniellanner))
 - 🤖 Prepend latest changelog [\#2](https://github.com/opencollabbook/book/pull/2) [[meta](https://github.com/opencollabbook/book/labels/meta)] ([github-actions[bot]](https://github.com/apps/github-actions))
 
 

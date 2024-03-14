@@ -14,7 +14,7 @@ The practices covered in this part may be extended beyond our engineering depart
 
 The current progress of this section:
 
-- [x] CICD
+- [x] CI/CD
 - [x] Trunk based development
 - [x] Planning implementations
 - [x] Commits
