@@ -13,6 +13,7 @@ https://diataxis.fr/
 style guides
 
 docs as code
+version control
 
 vale.sh
 
@@ -30,3 +31,12 @@ Teaching documentation is the responsibility of engineering companies.
 - Make it worthwhile and findable... it's a waste of time if nobody reads it
 - Automate as much as possible
 - Know your audience
+
+Making documentation
+Generating documentation
+
+Text, images, videos
+Transcripts, alt texts
+
+Full video documentations
+semantic connections to error messages
