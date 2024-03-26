@@ -49,17 +49,30 @@ Semantic versioning is a best effort solution to dependency management. The prac
 
 Nevertheless, it's one of the better systems we currently have and we would be foolhardy not to follow it.
 
-### Downstream Dependencies
+### Upstream Dependencies
 
-SBOMS
+It is neither achievable, advisable, nor affordable to build every facet of our software internally. We solve problems relating to our business cases. We avoid reinventing the wheel, working on problems with publicly available solutions, avoid the Not Invented Here Syndrome is a decision-making error where we tend to value our own ideas above those conceived by people outside of our group.
+
+We routinely include packages of third-party providers, open-source solutions, or licensed software. Licensing, security, avaiablity.
+
+On top of manual due diligence, we employ technology and automation to verify the security and authorized usage of our dependencies. Vulnerabilities originating from third party modules due to human error, heterogeneous systems, or malicious intentions. Unpinned dependencies or outsourced dependencies provide attack vectors for supply chain attacks.
+
 Relying on the internet for our dependencies means that somebody else owns the availability and consistency of our builds.
+
+[SBOMS](https://www.ntia.gov/page/software-bill-materials)
+dependency bot
+codacy, npm vulnerabilities
+
+### Build Dependencies
+
+Hermetic environments. Caching. Pinned versions of build software.
+
+The same for the environment of our build machines, if our hermetic environment runs install scripts and `apt-get` is down, we will not be able to build and release.
 
 
 ## Changelists
 
-It is a good idea to
 Communicate to humans what changed
-
 
 ## Deployment strategies
 
