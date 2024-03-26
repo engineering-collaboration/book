@@ -117,6 +117,7 @@ nav:
         - Testing Strategy: './book/anatomy-of-a-code-change/testing/testing-strategy.md'
 
       - Release Mechanisms: './book/anatomy-of-a-code-change/release-mechanisms.md'
+      - Artifact Management: './book/anatomy-of-a-code-change/artifact-management.md'
       - Release Strategies: './book/anatomy-of-a-code-change/release-strategies.md'
 
       - Documentation:
