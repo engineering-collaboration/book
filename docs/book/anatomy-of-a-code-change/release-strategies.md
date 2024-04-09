@@ -12,19 +12,19 @@ Not all industries and software organizations follow the above distinction. Depe
 
 ## Validating preview builds
 
-Automated testing, manual testing and internal deployments within our organization are limited by our work environment, test data, and approximations of use cases. Our lack of imagination for edge cases seldomly reflect our costumers realities. Hence, as part of the development process we iterate on features with our customers.
+We validate our builds meticulously with automated testing, manual testing and internal deployments within our organization. Yet, the static nature of our test environment, test data, and test bias limits our aptitude to reflect our costumers realities. In order to deliver effectively, we gradually expose our changes to an increasing amount of users and minimize impact of faulty builds.
 
 ### Alpha versions
 
-Our customers clarify our initial requirement analysis before we start working on solutions. During development we share exploratory product builds with our customers to verify the chosen direction of development. We refer to these builds as **Alpha versions**. Alpha distributions consist of the earliest self-service implementations of new changes, although a lack of concise documentation requires some hand-holding of feature sets.
+Our customers clarify our initial requirement analysis before we start working on solutions. During development we share exploratory product builds with our customers to verify the chosen direction of development. We refer to these builds as Alpha versions. Alpha distributions consist of the earliest self-service implementations of new changes, although a lack of concise documentation requires some hand-holding of feature sets.
 
 They showcase the current design decisions and may not meet all requirements, but do not require complex setup procedures. The volume of support paired with the immediacy of feedback required motivates a reduced amount of participants. Alpha phases are a private affair with frequent communication.
 
 ### Beta versions
 
-We collaborate with our users through opt-in strategies and publish early access builds of our product with adapted licensing and limited warranty. The frequency and availability of preview releases is subject to what we are trying to achieve with a change.
+After our initial design and implementation, we widen the user base and publish early access builds of our product with adapted licensing and limited warranty. These beta phases consist of opt-in strategies for early adopters. The availability of beta releases is subject to what we are trying to achieve with a change.
 
-Through private beta versions we influence the availability of our preview releases to achieve our desired feedback cycle. We invite power users of our clients to experiment with builds containing specific features. These experimental distribution are available only to select few. Private beta schemes offer the opportunity to adapt features developed during alpha phase to a broader appeal. An increased amount of feedback.
+A private beta versions includes a limited amount of users to manage scale and feedback. Depending on the maturity of our product, the number varies from the hundreds to the thousands. Private beta schemes offer the opportunity to adapt features developed during alpha phase to a broader appeal. An increased amount of feedback. We invite power users of our clients to experiment with builds containing specific features. These experimental distribution are available only to select few.
 
 Ignoring marketing and community management, public beta versions verify backwards compatibility, and stability within a wider set of environments. Increased scale and diversity in client environments. We consider public beta phases as the last step before releasing a new set of changes to our product line.
 
