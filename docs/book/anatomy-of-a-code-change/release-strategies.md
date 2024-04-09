@@ -22,11 +22,11 @@ They showcase the current design decisions and may not meet all requirements, bu
 
 ### Beta versions
 
-After our initial design and implementation, we widen the user base and publish early access builds of our product with adapted licensing and limited warranty. These beta phases consist of opt-in strategies for early adopters. The availability of beta releases is subject to what we are trying to achieve with a change.
+After our initial design and implementation, we share early access builds with a wider user base. These beta phases consist of opt-in strategies for early adopters. With growing maturity of the changes, we increase the availability of our beta releases.
 
-A private beta versions includes a limited amount of users to manage scale and feedback. Depending on the maturity of our product, the number varies from the hundreds to the thousands. Private beta schemes offer the opportunity to adapt features developed during alpha phase to a broader appeal. An increased amount of feedback. We invite power users of our clients to experiment with builds containing specific features. These experimental distribution are available only to select few.
+A private beta scheme includes a limited amount of users to manage scale and feedback. Depending on the maturity of our product, the number varies from the hundreds to the thousands. Our private beta users appraise the changes for personal - and ultimately broader - appeal. Limiting the amount of participants reduces the overhead of communication and highlights common errors before testing at scale.
 
-Ignoring marketing and community management, public beta versions verify backwards compatibility, and stability within a wider set of environments. Increased scale and diversity in client environments. We consider public beta phases as the last step before releasing a new set of changes to our product line.
+We move from a confined number of power users to an increased amount of user, and feedback, with a public beta process. Ignoring marketing and community management, public beta versions verify backwards compatibility, handling increased scale, and stability within a wider set of environments. Preferably, we distribute preview versions with adapted licensing and limited warranty. We consider public the beta phases as the last step before releasing a new set of changes to our product line.
 
 ### Tech streams
 
