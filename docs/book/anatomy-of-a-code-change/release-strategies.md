@@ -30,13 +30,13 @@ We move from a confined number of power users to an increased amount of user, an
 
 ### Tech streams
 
-With increasing complexity of production environments the need for an additional acceptance staged arouse. Moving beyond self-concerning features acceptance and stability, tech streams offer our users to embed our software into their production systems and observe the behavior when interacting with third-party systems.
+With increasing complexity of production environments, customers developed the need for an additional acceptance staged. Unlike beta phases, tech streams move beyond self-concerning features, acceptance, and stability. Our users embed tech stream releases of our software into their production systems and observe the behavior when interacting with the organization's systems.
 
-Tech stream distributions are considered completed and production ready, the caveat being which production.  When offering tech streams, our changes are originally shipped as a tech stream, before incorporated into the our public release stream a quarter later.
+From nightly builds to tech streams.
 
-This three to six month delay enables us to verify the changes in various combinations of hardware, operating systems, drivers, locales, and interoperability between software products.
+Tech stream distributions are considered completed and production ready, the caveat being who's production they are used in. Our changes are originally shipped within a separate tech stream, before incorporated into the our public release stream the following quarter.
 
-As consumers of tech streams our engineers verify new builds in our production system with a buffer and the ability to provide feedback and bug reports.
+This three to six month delay enables our users to verify the changes in various combinations of hardware, operating systems, drivers, locales, and interoperability between software products. Hence, tech streams provide our customers with a buffer and the ability to provide feedback and bug reports.
 
 Why not just delay the acceptance of release builds. Around the millenium an accepted workflow was to wait for a product to be publicly available for a year before updating in order to achieve the same benefits as a tech stream. This practice is a security nightmare. When vulnerabilities are detected, we patch and distribute these immediately (in both the tech stream and release stream). Our customers are able to safely update the release without the additional changes.
 
