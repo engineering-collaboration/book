@@ -22,11 +22,11 @@ They showcase the current design decisions and may not meet all requirements, bu
 
 ### Beta versions
 
-After our initial design and implementation, we share early access builds with a wider user base. These beta phases consist of opt-in strategies for early adopters. With growing maturity of the changes, we increase the availability of our beta releases.
+After our initial design and implementation, we share early access builds - titled beta versions. We widen the recipient user base with early adopters, who opted-in to our beta program. With growing maturity of the changes, we increase the availability of our beta releases.
 
 A private beta scheme includes a limited amount of users to manage scale and feedback. Depending on the maturity of our product, the number varies from the hundreds to the thousands. Our private beta users appraise the changes for personal - and ultimately broader - appeal. Limiting the amount of participants reduces the overhead of communication and highlights common errors before testing at scale.
-
-We move from a confined number of power users to an increased amount of user, and feedback, with a public beta process. Ignoring marketing and community management, public beta versions verify backwards compatibility, handling increased scale, and stability within a wider set of environments. With increasing complexity of production environments, customers developed the need for an additional acceptance staged. Our users embed public beta releases of our software into their production systems and observe the behavior when interacting with the organization's systems.
+ 
+We promote our successful private beta program to a public one and invite more users and feedback. Public beta versions verify backwards compatibility, computing increased scale, and stability within a wider set of environments. With increasing complexity of production environments, our customers embed our public beta releases into their production systems to observe the behavior within their systems. Besides technological acceptance, our marketing team utilizes public betas for hyping releases and engaging the community.
 
 Preferably, we distribute preview versions with adapted licensing and limited warranty. We consider public the beta phases as the last step before releasing a new set of changes to our product line.
 
