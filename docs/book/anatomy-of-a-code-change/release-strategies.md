@@ -26,20 +26,15 @@ After our initial design and implementation, we share early access builds with a
 
 A private beta scheme includes a limited amount of users to manage scale and feedback. Depending on the maturity of our product, the number varies from the hundreds to the thousands. Our private beta users appraise the changes for personal - and ultimately broader - appeal. Limiting the amount of participants reduces the overhead of communication and highlights common errors before testing at scale.
 
-We move from a confined number of power users to an increased amount of user, and feedback, with a public beta process. Ignoring marketing and community management, public beta versions verify backwards compatibility, handling increased scale, and stability within a wider set of environments. Preferably, we distribute preview versions with adapted licensing and limited warranty. We consider public the beta phases as the last step before releasing a new set of changes to our product line.
+We move from a confined number of power users to an increased amount of user, and feedback, with a public beta process. Ignoring marketing and community management, public beta versions verify backwards compatibility, handling increased scale, and stability within a wider set of environments. With increasing complexity of production environments, customers developed the need for an additional acceptance staged. Our users embed public beta releases of our software into their production systems and observe the behavior when interacting with the organization's systems.
+
+Preferably, we distribute preview versions with adapted licensing and limited warranty. We consider public the beta phases as the last step before releasing a new set of changes to our product line.
 
 ### Tech streams
 
-With increasing complexity of production environments, customers developed the need for an additional acceptance staged. Unlike beta phases, tech streams move beyond self-concerning features, acceptance, and stability. Our users embed tech stream releases of our software into their production systems and observe the behavior when interacting with the organization's systems.
+Certain organizations and products moved from the Alpha, Beta, Release process to trunk-based development stimulated tech streams. Organizations use the term to indicate continuous public deliveries of experimental builds - referred to by the release frequency as daily builds, nightly builds, or weekly builds, or biweekly builds. "Biweekly" referring to every two weeks. While non-deterministic, it sounds better than "every-two-week" builds.
 
-From nightly builds to tech streams.
-
-Tech stream distributions are considered completed and production ready, the caveat being who's production they are used in. Our changes are originally shipped within a separate tech stream, before incorporated into the our public release stream the following quarter.
-
-This three to six month delay enables our users to verify the changes in various combinations of hardware, operating systems, drivers, locales, and interoperability between software products. Hence, tech streams provide our customers with a buffer and the ability to provide feedback and bug reports.
-
-Why not just delay the acceptance of release builds. Around the millenium an accepted workflow was to wait for a product to be publicly available for a year before updating in order to achieve the same benefits as a tech stream. This practice is a security nightmare. When vulnerabilities are detected, we patch and distribute these immediately (in both the tech stream and release stream). Our customers are able to safely update the release without the additional changes.
-
+We have the option of releasing preview builds via milestone versions, continuous experimental streams, or a hybrid version of the both approaches. To determine our initial strategy, we consider customer demands, regulatory compliance, patents and trademarks, maturity of CI/CD practices, and product release schedules, including marketing and partner contracts.
 
 ## Validating deployments and deliveries
 
@@ -103,4 +98,10 @@ Generally reduce lead time.
 
 If you have releases every week, it matters less if an engineer misses a deadline. The feature is shipped the week after.
 
+### Development cycles and Long term support
 
+Why not just delay the acceptance of release builds. Around the millenium an accepted workflow was to wait for a product to be publicly available for a year before updating in order to achieve the same benefits as a tech stream. This practice is a security nightmare. When vulnerabilities are detected, we patch and distribute these immediately (in both the tech stream and release stream). Our customers are able to safely update the release without the additional changes.
+
+Across industries *tech streams* may instead also denote active development cycles between major releases.
+
+This three to six month delay enables our users to verify the changes in various combinations of hardware, operating systems, drivers, locales, and interoperability between software products. Hence, tech streams provide our customers with a buffer and the ability to provide feedback and bug reports.
