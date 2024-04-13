@@ -60,15 +60,19 @@ The strategy provides actionable insights for changes to code or systemic strate
 
 ### Canary Releases
 
-Running successful deployments is another beast compared to handling live traffic in a produciton environment. We may never feel fully confident of changes until they run in production. To minimize the impact of a faulty delivery, we deliver changes gradually. 
+We mitigate the risk of faulty deliveries and minimize the impact of errors by delivering changes to production gradually. The term *Canary releases* originates from a coal mining practice of detecting carbon monoxide via canary birds. The tiny birds perished from the gasses before affecting the miners. A dead bird signaled immediate evacuation.
 
-Canary releases follow the titular practice of bringing canary birds into mine to check for breathable air. A dead canary signalled a rapid evacuation. When releasing with a canary methodology we prioritize a low-impact geographical region or low traffic time for an initial release of our changes.
+When releasing with a canary methodology we prioritize a low-impact demographic region for an initial release of our changes. We filter our demography by the chances we are deploying. We gather metrics through telemetry of our live production and over time we match regions to specific traits. Decisive factors of selecting a canary regions include:
 
-Another decisive factor of selecting our canary region relates to the nature of the changes and how they interact with traffic. Over time we observe regions to retain individual traits. The volume of traffic, the latency of connections, the average bandwidth. The prominence of end-devices ranging from mobile, to tablets, to computers and the average generation of the hardware.
+- Geographical location
+- Volume of traffic
+- Latency of connections
+- Average bandwidth
+- Prominence of end-devices ranging from mobile, to tablets, to computers and the average generation of the hardware
+- Input data and API use
+- Political climate and regulatory compliance
 
-Canary regions can be seperated by input data and API use.
-
-If we observe faulty behavior, we revert our deployment, fix the errors and repeat the process. Gradually we replace our global deployments with the changes, our highest impact region last.
+After defining the traits we deploy our changes to the low-impact area. Should our deployment work as expected, we gradually expand the perimeters of our release. If we observe faulty behavior, we revert our deployment, fix the errors and repeat the process. Eventually we replace our global deployments with the changes, our highest impact region last.
 
 ### Rolling updates
 
