@@ -76,7 +76,9 @@ After defining the traits we deploy our changes to the low-impact area. Should o
 
 ### Rolling updates
 
-Compared to canary releases, rolling updates split traffic horizontally, not vertically. We divert a low percentage of traffic to our new deployment to verify functionality. Over time the new release replaces all running instances of the previous production service.
+Canary releases split traffic vertically. With rolling updates we split traffic horizontally. We achieve this by diverting a low percentage of traffic to our new deployment and verify its functionality. While conceptually similar to parallel deployments, we do not duplicate traffic. Both versions are running in production and handle user traffic exclusively to each other.
+
+We gradually increase the percentage of traffic diverted to the updated service. Over time our new release handles a hundred percent of the traffic and replaces all running instances of the previous production service.
 
 Dependencies
 
