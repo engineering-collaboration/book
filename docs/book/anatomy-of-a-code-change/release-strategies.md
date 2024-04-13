@@ -38,13 +38,19 @@ We have the option of releasing preview builds via milestone versions, continuou
 
 ## Validating deployments and deliveries
 
-As Netflix no longer delivers packaged DVDs to our mailbox, we have moved beyond the era of "down for maintenance". No dedicated release personnel handles physical leavers and switches to provide our update to the customers.
+Netflix no longer delivers packaged DVDs to our mailbox, we have moved beyond the era of "down for maintenance". No dedicated release personnel handles physical leavers and switches to provide our update to the customers.
 
 Get the binaries to the location before starting transitions.
 
 ### Blue green deployment
 
-We establish a double buffer of our production system, called blue and green respectively. At any given time one of the two environments is live, while the other serves as a testing ground. We tunnel traffic two both systems to verify the functionality of our changes before going live. Once confident of our new deployment, we switch the live deployment.
+We provide two identical environments for our software, one called blue and one called green. At any given time, one of the two deployments provides live traffic, while the other serves as a staging environment for our changes. The two infrastructures are virtually - and sometimes physically - separated. We tunnel traffic two both systems to verify the functionality of our changes before going live.
+
+Traffic always runs through the live deployment and is duplicated to the staging environment. The infrastructure of both systems are as similar as possible. Serialized data moves unidirectionally from production to a read-only replica of our live database.
+
+Once confident in our changes, we switch deployments. The staging environment becomes our live deployment and vice versa. Thus, we establish a double buffer for our production system.
+
+Changes to database schemas are difficult, and long-running tasks must be resolved or transitioned to the new deployment. We ensure hermetic environments of our dependencies, as the entire system is deployed as a single unit.
 
 ### Parallel deployment
 
@@ -65,6 +71,10 @@ If we observe faulty behavior, we revert our deployment, fix the errors and repe
 ### Rolling updates
 
 Compared to canary releases, rolling updates split traffic horizontally, not vertically. We divert a low percentage of traffic to our new deployment to verify functionality. Over time the new release replaces all running instances of the previous production service.
+
+Dependencies
+
+Support across versions
 
 ### Feature toggles
 
