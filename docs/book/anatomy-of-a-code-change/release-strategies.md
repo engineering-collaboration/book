@@ -44,21 +44,23 @@ Get the binaries to the location before starting transitions.
 
 ### Blue green deployment
 
-We provide two identical environments for our software, one called blue and one called green. At any given time, one of the two deployments provides live traffic, while the other serves as a staging environment for our changes. The two infrastructures are virtually - and sometimes physically - separated. We tunnel traffic two both systems to verify the functionality of our changes before going live.
+We establish two identical environments for our software, one called blue and one called green. At any given time, one of the two deployments provides live traffic, while the other serves as a staging environment for our changes. The two infrastructures are virtually - and sometimes physically - separated. We tunnel traffic to both systems to verify the functionality of our changes.
 
-Traffic always runs through the live deployment and is duplicated to the staging environment. The infrastructure of both systems are as similar as possible. Serialized data moves unidirectionally from production to a read-only replica of our live database.
+Live traffic always runs through the live deployment and is duplicated to the staging environment with no external outcome. Serialized data moves unidirectionally from production to a read-only replica of our live database. Once confident in our changes, we swap the exposed system. The staging environment becomes our live deployment and vice versa. Thus, we establish a double buffer for our production system.
 
-Once confident in our changes, we switch deployments. The staging environment becomes our live deployment and vice versa. Thus, we establish a double buffer for our production system.
-
-Changes to database schemas are difficult, and long-running tasks must be resolved or transitioned to the new deployment. We ensure hermetic environments of our dependencies, as the entire system is deployed as a single unit.
+Both environments are running constantly and all services and dependencies are deployed when activating the live system. We avoid warm-up phases during system updates. The entire system is deployed as a single unit. With blue green deployments, we face challenges to verify changes that include modifications to database schemas. Plus, when switching our live deployment, we resolve long-running tasks or transition them to the new deployment.
 
 ### Parallel deployment
 
-Contrary to blue-green deployment, parallel executions do not run in segregated environments, but next to the current service in production. The distinction is. Parallel runs simplify A/B tests when upgrading services.
+Contrary to blue-green deployment, parallel deployments do not run in segregated environments. As the name suggests, we deploy our changes directly into production alongside the current live version. We route traffic to both versions to verify our changes.
 
-Running successful deployments is another beast compared to handling live traffic in a produciton environment. We may never feel fully confident of changes until they run in production. To minimize the impact of a faulty delivery, we deliver changes gradually. 
+Parallel deployments facilitate reliable A/B tests as we are running our services on identical traffic. We limit our services to read-only access to production data. Alternatively, we provide separate database nodes for every parallel execution we are running.
+
+The strategy provides actionable insights for changes to code or systemic strategies. We measure performance and scaling benefits of differing infrastructure, caching strategies, database types and architecture, and system design.
 
 ### Canary Releases
+
+Running successful deployments is another beast compared to handling live traffic in a produciton environment. We may never feel fully confident of changes until they run in production. To minimize the impact of a faulty delivery, we deliver changes gradually. 
 
 Canary releases follow the titular practice of bringing canary birds into mine to check for breathable air. A dead canary signalled a rapid evacuation. When releasing with a canary methodology we prioritize a low-impact geographical region or low traffic time for an initial release of our changes.
 
