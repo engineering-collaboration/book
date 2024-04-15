@@ -76,19 +76,21 @@ After defining the traits we deploy our changes to the low-impact area. Should o
 
 ### Rolling updates
 
-Canary releases split traffic vertically. With rolling updates we split traffic horizontally. We achieve this by diverting a low percentage of traffic to our new deployment and verify its functionality. While conceptually similar to parallel deployments, we do not duplicate traffic. Both versions are running in production and handle user traffic exclusively to each other.
+Canary releases introduce new changes vertically across demographics. Rolling updates divert a percentage of traffic to our new deployment horizontally to verify our functionality. While conceptually similar to parallel deployments, we do not duplicate traffic. Both versions are running in production and handle user traffic exclusively to each other.
 
 We gradually increase the percentage of traffic diverted to the updated service. Over time our new release handles a hundred percent of the traffic and replaces all running instances of the previous production service.
 
-Dependencies
+Rolling updates work well for self-contained changes in containerized environments. When shipping updates we steadily spin up the new containers and shut down the running containers. Large scale changes, or inter-service dependencies complicate this procedure. As we can not control all traffic flow our system needs to be able to support both versions of our software for the transition period.
 
-Support across versions
+When faced with the challenge of deploying large scale changes, we prefer canary releases with deterministic infrastructure over mixing multiple versions into our system.
 
 ### Feature toggles
 
-When updating via feature toggles, we have already shipped the code to production. We remotely activate feature toggles of our service without touching the codebase.
+With the discussed strategies, we activate new changes as soon as the binary artifacts are available. Updates to behavior - and rollbacks - replace the live artifacts. An alternative is rolling out updates using feature toggles. We ship our binaries with the changes initially deactivated.
 
-Before coming in the precarious position of 
+Our changes are physically present at the destination albeit without executing the changes. Once ready, we remotely activate the new features without replacing the distributed binaries. The strategy enables us to synchronize feature releases or deactivate faulty features without any downtime.
+
+If we deliver features to clients machine via feature toggles, we face the risk of users discovering or reverse-engineering our changes before our organization is ready to activate them.
 
 ## Release processes
 
