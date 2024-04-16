@@ -36,6 +36,8 @@ Certain organizations and products moved from the Alpha, Beta, Release process t
 
 We have the option of releasing preview builds via milestone versions, continuous experimental streams, or a hybrid version of the both approaches. To determine our initial strategy, we consider customer demands, regulatory compliance, patents and trademarks, maturity of CI/CD practices, and product release schedules, including marketing and partner contracts.
 
+Preview builds allow our users to verify the changes and various combinations of hardware, operating systems, drivers, locales, and interoperability between software products. Hence, they provide our customers with a buffer and the ability to provide feedback and bug reports.
+
 ## Validating deployments and deliveries
 
 Netflix no longer delivers packaged DVDs to our mailbox, we have moved beyond the era of "down for maintenance". No dedicated release personnel handles physical leavers and switches to provide our update to the customers.
@@ -94,34 +96,10 @@ If we deliver features to clients machine via feature toggles, we face the risk 
 
 ## Release processes
 
-Establishing a routine for release procedures reduces surprises. We do not delay releases for tight deadlines. If we release every week, missing a deadline matters less. The feature is shipped a week after. Squeezing in updates at the last second introduces schlampigkeit.
+Routines and automation reduce anxiety during our release procedure. As with all topics in this book, we aim to continuously improve our release practices; and practice makes perfect. Relying on manual interventions during the heat of the moment eventually backfires. Hence, we verify and improve our automation tooling after very incident and rehearse our responses periodically.
 
-We do not ship on Fridays or before holidays.
+Just as routines for release procedures reduce surprises, we do not force tight deadlines into releases. When we increase the frequency of releases, missing a deadline matters less. The book *Software Engineering at Google* succinctly states that *No binary is perfect*, and conventional wisdom states that *Perfect is the enemy of done*.
 
-practice, practice, practice. Tryying to remember something in the heat of the moment is a recipe for disaster.
+We avoid short notice slapdashery by not shipping last second changes. We avoid dealing with long period slapdashery by not releasing updates before planned down time. Unless contractually obligated we do not ship on Fridays or before holidays.
 
-No binary is perfect.
-
-Ship continously
-
-
-
-automation
-feedback
-
-how often
-what time
-demographic
-geographic
-
-Generally reduce lead time.
-
-If you have releases every week, it matters less if an engineer misses a deadline. The feature is shipped the week after.
-
-### Development cycles and Long term support
-
-Why not just delay the acceptance of release builds. Around the millenium an accepted workflow was to wait for a product to be publicly available for a year before updating in order to achieve the same benefits as a tech stream. This practice is a security nightmare. When vulnerabilities are detected, we patch and distribute these immediately (in both the tech stream and release stream). Our customers are able to safely update the release without the additional changes.
-
-Across industries *tech streams* may instead also denote active development cycles between major releases.
-
-This three to six month delay enables our users to verify the changes in various combinations of hardware, operating systems, drivers, locales, and interoperability between software products. Hence, tech streams provide our customers with a buffer and the ability to provide feedback and bug reports.
+The ability to confidently release at any time and deal with the responses, enables us to model a delivery strategy around our product and organization. We ship major updates according to the plans of our product and marketing team. We patch vulnerabilities immediately when our security team detects or suspects exposures.
