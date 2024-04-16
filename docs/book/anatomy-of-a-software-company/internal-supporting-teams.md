@@ -37,7 +37,7 @@ On a more egocentric note, an enabling team may also be set up to apply the proc
 
 When a vertical team comes across a task that requires specialized knowledge, it might be advisable to spin out that task into a separate team. Typically, these teams work on libraries that are then consumed by product teams. Examples are 3D rendering, time and date management, and image compression.
 
-The driving factor of establishing a complicated-subsystem is to reduce the cognitive load of a vertical team, not necessarily to share the component across multiple vertical teams. High communication with stream-aligned team during <!-- vale write-good.Weasel = NO -->early<!-- vale write-good.Weasel = YES --> exploration and development. Reduced interaction with stream-aligned team during later stages.
+The driving factor of establishing a complicated-subsystem is to reduce the cognitive load of a vertical team, not necessarily to share the component across multiple vertical teams. High communication with stream-aligned team during early exploration and development. Reduced interaction with stream-aligned team during later stages.
 
 ### Platform teams
 

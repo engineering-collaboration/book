@@ -48,3 +48,4 @@ dereference
 multithreading
 [Rr]ebase
 [Rr]ebasing
+early

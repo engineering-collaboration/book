@@ -21,14 +21,14 @@ During security tests and <!-- vale alex.ProfanityMaybe = NO -->penetration<!-- 
 
 ## Nightly, alpha, and beta programs
 
-Thus far, we have discussed manual tests done internally or by third-party providers. A common strategy to demonstrate build stability and user acceptance is to offer <!-- vale write-good.Weasel = NO -->early<!-- vale write-good.Weasel = YES --> releases to a restricted control group consisting of power users. Sorted by recency, these programs are termed:
+Thus far, we have discussed manual tests done internally or by third-party providers. A common strategy to demonstrate build stability and user acceptance is to offer early releases to a restricted control group consisting of power users. Sorted by recency, these programs are termed:
 
 - Nightly releases - A build of our current head of the main branch.
 - Alpha releases - The first phase in our product release cycle. We cooperate with power users on customer acceptance for features.
 - Beta releases - The second phase in our product release cycle. We iterate on feature stability with a wider audience.
-- Tech streams - Full releases of our product with limited warranty. Participants access releases a quarter <!-- vale write-good.Weasel = NO -->early<!-- vale write-good.Weasel = YES --> to authenticate that the upgrade functions with their projects and infrastructure.
+- Tech streams - Full releases of our product with limited warranty. Participants access releases a quarter early to authenticate that the upgrade functions with their projects and infrastructure.
 
-The major benefit of <!-- vale write-good.Weasel = NO -->early<!-- vale write-good.Weasel = YES --> access programs is the user diversity. Our software is tested across a broad spectrum of cultures, hardware combinations, software requirements, and security restrictions. No other testing environment consolidates feedback about localization flaws, crashes with select hardware drivers, or mistaken runtime assumptions.
+The major benefit of early access programs is the user diversity. Our software is tested across a broad spectrum of cultures, hardware combinations, software requirements, and security restrictions. No other testing environment consolidates feedback about localization flaws, crashes with select hardware drivers, or mistaken runtime assumptions.
 
 These (semi-)public manual testing strategies require dedicated personnel with product experience qualified in communications. This is much less a technological role than it is a mediatory role. Often, our software builds the base of the livelihood of our users. Perceived detrimental changes fuel anxiety and emotional responses.
 
