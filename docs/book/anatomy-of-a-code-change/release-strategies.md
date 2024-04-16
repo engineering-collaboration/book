@@ -6,7 +6,7 @@ The nomenclature between the individual steps of delivering software varies acro
 - **Deployment**: We define deployment as a subprocess of the release proceedings. Once a release candidate passed our automated testing suite, we deploy it for manual testing or to a staging environment. After verifying the intended improvements and a ensuring a lack of regressions, we promote the deployment to a deliverable.
 - **Delivery**: Clearing the deployment criteria, we launch our delivery automation system to distribute our built and tested artifacts. At the end of our delivery, our released changes have replaced the previous distributed implementation.
 
-The above cycle completes a CI/CD automation system. For a continuous improvement culture we monitor and observe our deliveries in production and include actionable feedback for the next cycle. Critically, we avoid siloing our development teams from operations and monitoring. Our feature developers rely on production usage metrics to make good decisions.
+The above cycle completes a CI/CD automation system. For a continuous improvement culture we monitor and observe our deliveries in production and include actionable feedback for the next cycle. Critically, we avoid isolating our development teams from operations and monitoring. Our feature developers rely on production usage metrics to make good decisions.
 
 Not all industries and software organizations follow the above distinction. Depending on deliverable scope, intended target audience, or distributed artifacts the steps above may be skipped, merged, altered, or extended. Using the above nomenclature as a baseline, we build a release pipeline modelled after our needs. The lack of cross-industry distinction complicates an evident structure for the chapter. Instead we share proven strategies for us to pick and choose for our product's validation and distribution.
 
@@ -32,7 +32,7 @@ Preferably, we distribute preview versions with adapted licensing and limited wa
 
 ### Tech streams
 
-Certain organizations and products moved from the Alpha, Beta, Release process to trunk-based development stimulated tech streams. Organizations use the term to indicate continuous public deliveries of experimental builds - referred to by the release frequency as daily builds, nightly builds, or weekly builds, or biweekly builds. "Biweekly" referring to every two weeks. While non-deterministic, it sounds better than "every-two-week" builds.
+Certain organizations and products moved from the Alpha, Beta, Release process to trunk-based development stimulated tech streams. Organizations use the term to indicate continuous public deliveries of experimental builds - referred to by the release frequency as daily builds, nightly builds, or <!-- vale write-good.Weasel = NO -->weekly<!-- vale write-good.Weasel = YES --> builds, or biweekly builds. "Biweekly" referring to every two weeks. While non-deterministic, it sounds better than "every-two-week" builds.
 
 We have the option of releasing preview builds via milestone versions, continuous experimental streams, or a hybrid version of the both approaches. To determine our initial strategy, we consider customer demands, regulatory compliance, patents and trademarks, maturity of CI/CD practices, and product release schedules, including marketing and partner contracts.
 
@@ -48,7 +48,7 @@ Get the binaries to the location before starting transitions.
 
 We establish two identical environments for our software, one called blue and one called green. At any given time, one of the two deployments provides live traffic, while the other serves as a staging environment for our changes. The two infrastructures are virtually - and sometimes physically - separated. We tunnel traffic to both systems to verify the functionality of our changes.
 
-Live traffic always runs through the live deployment and is duplicated to the staging environment with no external outcome. Serialized data moves unidirectionally from production to a read-only replica of our live database. Once confident in our changes, we swap the exposed system. The staging environment becomes our live deployment and vice versa. Thus, we establish a double buffer for our production system.
+Live traffic always runs through the live deployment and is duplicated to the staging environment with no external outcome. Serialized data moves unidirectionally from production to a <!-- vale write-good.Weasel = NO -->read-only<!-- vale write-good.Weasel = YES --> replica of our live database. Once confident in our changes, we swap the exposed system. The staging environment becomes our live deployment and vice versa. Thus, we establish a double buffer for our production system.
 
 Both environments are running constantly and all services and dependencies are deployed when activating the live system. We avoid warm-up phases during system updates. The entire system is deployed as a single unit. With blue green deployments, we face challenges to verify changes that include modifications to database schemas. Plus, when switching our live deployment, we resolve long-running tasks or transition them to the new deployment.
 
@@ -56,7 +56,7 @@ Both environments are running constantly and all services and dependencies are d
 
 Contrary to blue-green deployment, parallel deployments do not run in segregated environments. As the name suggests, we deploy our changes directly into production alongside the current live version. We route traffic to both versions to verify our changes.
 
-Parallel deployments facilitate reliable A/B tests as we are running our services on identical traffic. We limit our services to read-only access to production data. Alternatively, we provide separate database nodes for every parallel execution we are running.
+Parallel deployments facilitate reliable A/B tests, as we are running our services on identical traffic. We limit our services to read-<!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> access to production data or provide separate database nodes for every parallel execution we are running.
 
 The strategy provides actionable insights for changes to code or systemic strategies. We measure performance and scaling benefits of differing infrastructure, caching strategies, database types and architecture, and system design.
 
@@ -66,7 +66,7 @@ We mitigate the risk of faulty deliveries and minimize the impact of errors by d
 
 When releasing with a canary methodology we prioritize a low-impact demographic region for an initial release of our changes. We filter our demography by the chances we are deploying. We gather metrics through telemetry of our live production and over time we match regions to specific traits. Decisive factors of selecting a canary regions include:
 
-- Geographical location
+- Geographic location
 - Volume of traffic
 - Latency of connections
 - Average bandwidth
@@ -74,11 +74,11 @@ When releasing with a canary methodology we prioritize a low-impact demographic 
 - Input data and API use
 - Political climate and regulatory compliance
 
-After defining the traits we deploy our changes to the low-impact area. Should our deployment work as expected, we gradually expand the perimeters of our release. If we observe faulty behavior, we revert our deployment, fix the errors and repeat the process. Eventually we replace our global deployments with the changes, our highest impact region last.
+After defining the traits we deploy our changes to the low-impact area. Should our deployment work as expected, we gradually expand the perimeters of our release. If we observe faulty behavior, we revert our deployment, fix the errors and repeat the process. <!-- vale write-good.Weasel = NO -->Eventually<!-- vale write-good.Weasel = YES --> we replace our global deployments with the changes, our highest impact region last.
 
 ### Rolling updates
 
-Canary releases introduce new changes vertically across demographics. Rolling updates divert a percentage of traffic to our new deployment horizontally to verify our functionality. While conceptually similar to parallel deployments, we do not duplicate traffic. Both versions are running in production and handle user traffic exclusively to each other.
+Canary releases introduce new changes vertically across demographics. Rolling updates divert a percentage of traffic to our new deployment horizontally to verify our functionality. While conceptually similar to parallel deployments, we do not duplicate traffic. Both versions are running in production and handle user traffic individually.
 
 We gradually increase the percentage of traffic diverted to the updated service. Over time our new release handles a hundred percent of the traffic and replaces all running instances of the previous production service.
 
@@ -96,10 +96,10 @@ If we deliver features to clients machine via feature toggles, we face the risk 
 
 ## Release processes
 
-Routines and automation reduce anxiety during our release procedure. As with all topics in this book, we aim to continuously improve our release practices; and practice makes perfect. Relying on manual interventions during the heat of the moment eventually backfires. Hence, we verify and improve our automation tooling after very incident and rehearse our responses periodically.
+Routines and automation reduce anxiety during our release procedure. As with all topics in this book, we aim to continuously improve our release practices; and practice makes perfect. Relying on manual interventions during the heat of the moment ultimately backfires. Hence, we verify and improve our automation tooling after every incident and rehearse our responses periodically.
 
 Just as routines for release procedures reduce surprises, we do not force tight deadlines into releases. When we increase the frequency of releases, missing a deadline matters less. The book *Software Engineering at Google* succinctly states that *No binary is perfect*, and conventional wisdom states that *Perfect is the enemy of done*.
 
 We avoid short notice slapdashery by not shipping last second changes. We avoid dealing with long period slapdashery by not releasing updates before planned down time. Unless contractually obligated we do not ship on Fridays or before holidays.
 
-The ability to confidently release at any time and deal with the responses, enables us to model a delivery strategy around our product and organization. We ship major updates according to the plans of our product and marketing team. We patch vulnerabilities immediately when our security team detects or suspects exposures.
+The ability to confidently release at any time and deal with the responses, enables us to model a delivery strategy around our product and organization. We ship major updates according to the plans of our product and marketing team. We patch vulnerabilities when our security team detects or suspects exposures.
