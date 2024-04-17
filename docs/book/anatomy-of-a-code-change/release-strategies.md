@@ -1,3 +1,8 @@
+---
+title: Release Strategies
+description: Prominent techniques for verifying deployment builds and replacing our live software in a controlled manner.
+---
+
 # Release Strategies
 
 The nomenclature for the individual steps of delivering software varies across our industry. For the sake of this book, we define the terms and the chronology as follows:
