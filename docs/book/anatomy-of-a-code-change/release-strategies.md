@@ -1,6 +1,6 @@
 # Release Strategies
 
-The nomenclature between the individual steps of delivering software varies across our industry. For the sake of this book, we define the terms and the chronology as follows:
+The nomenclature for the individual steps of delivering software varies across our industry. For the sake of this book, we define the terms and the chronology as follows:
 
 - **Release**: A release builds and packages our software via the Release Mechanisms discussed in the previous chapter. The entire release process spans pre-release testing, deployment, and delivery.
 - **Deployment**: We define deployment as a subprocess of the release proceedings. Once a release candidate passes our automated testing suite, we deploy it for manual testing or to a staging environment. After verifying the intended improvements and ensuring a lack of regressions, we promote the deployment to a deliverable.
@@ -16,15 +16,15 @@ We validate our builds meticulously with automated and manual testing. Yet, the 
 
 ### Alpha versions
 
-We confirm the requirements of our changes with our customers, and - during development - share exploratory product builds to verify the chosen direction of progress. We refer to these builds as *Alpha versions*. Alpha distributions consist of the earliest self-service implementations of new changes and do not require complex setup procedures.
+We confirm the requirements of our changes with our customers and, during development, share exploratory product builds to verify the chosen direction of progress. We refer to these builds as *Alpha versions*. Alpha distributions consist of the earliest self-service implementations of new changes and do not require complex setup procedures.
 
-Although, conceivably, the inherent lack of concise documentation for work-in-progress features requires extra hand-holding. The volume of support and the immediacy of feedback limit the number of participants. Alpha phases are a private affair with frequent communication.
+However, the inherent lack of concise documentation for work-in-progress features requires extra hand-holding. The volume of support and the immediacy of feedback limit the number of participants. Alpha phases are a private affair with frequent communication.
 
 ### Beta versions
 
 After our initial implementation, we share *Beta versions* with a wider user base of early adopters. With increasing confidence in our changes, we increase the availability of our work-in-progress releases.
 
-A private beta program typically consist of hundreds to thousands of users, depending on the maturity of our product. Our private beta users appraise the changes for personal - and ultimately broader - appeal. Limiting participants reduces the overhead of communication and highlights common errors before testing at scale.
+A private beta program typically consists of hundreds to thousands of users, depending on the maturity of our product. Our private beta users appraise the changes for personal - and ultimately broader - appeal. Limiting participants reduces the overhead of communication and highlights common errors before testing at scale.
 
 We elevate successful private beta versions to public ones and make them available to a wider audience. Public beta programs verify backwards compatibility, scalability, and stability within a wider set of environments. Our customers embed the public beta releases into increasingly complex production systems to observe the behavior within their organization's environment.
 
@@ -32,7 +32,7 @@ Besides technological acceptance, our marketing team utilizes public betas for h
 
 ### Tech streams
 
-Certain organizations and products moved away from landmark Alpha and Beta preview versions, instead opting for a persistent *tech stream*, stimulated by trunk-based development. Organizations use the term to indicate continuous public deliveries of experimental builds - titled by the release frequency - as daily builds, nightly builds, <!-- vale write-good.Weasel = NO -->weekly<!-- vale write-good.Weasel = YES --> builds, or biweekly builds. "Biweekly" referring to every two weeks (it sounds better than "every-two-week" builds).
+Certain organizations and products have moved away from landmark Alpha and Beta preview versions, instead opting for a persistent *tech stream*, stimulated by trunk-based development. Organizations use the term to indicate continuous public deliveries of experimental builds - titled by the release frequency - as daily builds, nightly builds, weekly builds, or biweekly builds. "Biweekly" referring to every two weeks (it sounds better than "every-two-week" builds).
 
 In order to decide whether we release via landmark versions, tech streams, or a hybrid approach, we consider customer demands, regulatory compliance, patents and trademarks, maturity of CI/CD practices, and product release schedules, including marketing and partner contracts.
 
@@ -40,9 +40,9 @@ Preview builds allow our users to verify the changes and various combinations of
 
 ## Validating deployments and deliveries
 
-As Netflix no longer delivers packaged DVDs to our mailbox, we have moved beyond the era of "down for maintenance". We are able to ship updates without interrupting our service, we are able to localize releases, and we are able to react immediately to unexpected errors of new releases. Within this chapter we discuss prominent techniques for verifying deployment builds and replacing our currently live software in a controlled manner.
+As Netflix no longer delivers packaged DVDs to our mailbox, we have moved beyond the era of "down for maintenance". We are able to ship updates without interrupting our service, localize releases, and react to unexpected errors of new releases. Within this chapter, we discuss prominent techniques for verifying deployment builds and replacing our live software in a controlled manner.
 
-But firstly, all these strategies rely on a successful distribution of the generated artifacts. We get the binaries to the required location before starting any transitions. We ensure the built artifacts are complete, transferred from our build machine to the correct region of our distributed storage, and our production systems are authorized and able to download the updated version.
+However, all these strategies rely on the successful distribution of the generated artifacts. We get the binaries to the required location before starting any transitions. We ensure the built artifacts are complete, transferred from our build machine to the correct region of our distributed storage, and our production systems are authorized and able to download the updated version.
 
 ### Blue-green deployment
 
@@ -62,7 +62,7 @@ The strategy provides actionable insights for changes to code or systemic strate
 
 ### Canary Releases
 
-We mitigate the risk of faulty deliveries and minimize the impact of errors by delivering changes to production gradually. The term *Canary releases* originates from a coal mining practice of detecting carbon monoxide via canary birds. The tiny birds perish from the gases before affecting the miners. A dead bird signaled immediate evacuation.
+We mitigate the risk of faulty deliveries and minimize the impact of errors by delivering changes to production gradually. The term *Canary releases* originates from a coal mining practice of detecting carbon monoxide via canary birds. The tiny birds perish from the gases before affecting the miners. A dead bird signals immediate evacuation.
 
 When releasing with a canary methodology, we prioritize a low-impact demographic region for an initial release of our changes. We filter our demography by the chances we are deploying. We gather metrics through telemetry of our live production and over time we match regions to specific traits. Decisive factors of selecting a canary region include:
 
@@ -74,7 +74,10 @@ When releasing with a canary methodology, we prioritize a low-impact demographic
 - Input data and API use
 - Political climate and regulatory compliance
 
-After defining the traits, we deploy our changes to the low-impact area. Should our deployment work as expected, we gradually expand the perimeters of our release. If we observe faulty behavior, we revert our deployment, fix the errors, and repeat the process. <!-- vale write-good.Weasel = NO -->Eventually<!-- vale write-good.Weasel = YES -->, we replace our global deployments with the changes, our highest impact region last.
+<!-- vale write-good.Weasel = NO -->
+<!-- Eventually -->
+After defining the traits, we deploy our changes to the low-impact area. Should our deployment work as expected, we gradually expand the perimeters of our release. If we observe faulty behavior, we revert our deployment, fix the errors, and repeat the process. Eventually, we replace our global deployments with the changes, our highest impact region last.
+<!-- vale write-good.Weasel = YES -->
 
 ### Rolling updates
 
