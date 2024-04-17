@@ -32,9 +32,9 @@ Besides technological acceptance, our marketing team utilizes public betas for h
 
 ### Tech streams
 
-Certain organizations and products moved from the Alpha, Beta, Release process to trunk-based development stimulated tech streams. Organizations use the term to indicate continuous public deliveries of experimental builds - referred to by the release frequency as daily builds, nightly builds, or <!-- vale write-good.Weasel = NO -->weekly<!-- vale write-good.Weasel = YES --> builds, or biweekly builds. "Biweekly" referring to every two weeks. While non-deterministic, it sounds better than "every-two-week" builds.
+Certain organizations and products moved away from landmark Alpha and Beta preview versions, instead opting for a persistent *tech stream*, stimulated by trunk-based development. Organizations use the term to indicate continuous public deliveries of experimental builds - titled by the release frequency - as daily builds, nightly builds, <!-- vale write-good.Weasel = NO -->weekly<!-- vale write-good.Weasel = YES --> builds, or biweekly builds. "Biweekly" referring to every two weeks (it sounds better than "every-two-week" builds).
 
-We have the option of releasing preview builds via milestone versions, continuous experimental streams, or a hybrid version of both approaches. To determine our initial strategy, we consider customer demands, regulatory compliance, patents and trademarks, maturity of CI/CD practices, and product release schedules, including marketing and partner contracts.
+In order to decide whether we release via landmark versions, tech streams, or a hybrid approach, we consider customer demands, regulatory compliance, patents and trademarks, maturity of CI/CD practices, and product release schedules, including marketing and partner contracts.
 
 Preview builds allow our users to verify the changes and various combinations of hardware, operating systems, drivers, locales, and interoperability between software products. Hence, they provide our customers with a buffer and the ability to provide feedback and bug reports.
 
