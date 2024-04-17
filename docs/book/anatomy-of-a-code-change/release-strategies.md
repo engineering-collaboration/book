@@ -40,13 +40,13 @@ Preview builds allow our users to verify the changes and various combinations of
 
 ## Validating deployments and deliveries
 
-Netflix no longer delivers packaged DVDs to our mailbox; we have moved beyond the era of "down for maintenance". No dedicated release personnel handles physical deliveries and switches to provide our update to the customers.
+As Netflix no longer delivers packaged DVDs to our mailbox, we have moved beyond the era of "down for maintenance". We are able to ship updates without interrupting our service, we are able to localize releases, and we are able to react immediately to unexpected errors of new releases. Within this chapter we discuss prominent techniques for verifying deployment builds and replacing our currently live software in a controlled manner.
 
-Get the binaries to the location before starting transitions.
+But firstly, all these strategies rely on a successful distribution of the generated artifacts. We get the binaries to the required location before starting any transitions. We ensure the built artifacts are complete, transferred from our build machine to the correct region of our distributed storage, and our production systems are authorized and able to download the updated version.
 
 ### Blue-green deployment
 
-We establish two identical environments for our software, one called blue and one called green. At any given time, one of the two deployments provides live traffic, while the other serves as a staging environment for our changes. The two infrastructures are virtually - and sometimes physically - separated. We tunnel traffic to both systems to verify the functionality of our changes.
+We establish two identical environments for our software, one called blue and one called green. At any given time, one of the two deployments provides live traffic, while the other serves as a staging environment for our changes. The two infrastructures are virtually (and sometimes physically) separated. We tunnel traffic to both systems to verify the functionality of our changes.
 
 Live traffic always runs through the live deployment and is duplicated to the staging environment with no external outcome. Serialized data moves unidirectionally from production to a <!-- vale write-good.Weasel = NO -->read-only<!-- vale write-good.Weasel = YES --> replica of our live database. Once confident in our changes, we swap the exposed system. The staging environment becomes our live deployment and vice versa. Thus, we establish a double buffer for our production system.
 
@@ -88,7 +88,7 @@ When faced with the challenge of deploying large scale changes, we prefer canary
 
 ### Feature toggles
 
-With the discussed strategies, we activate new changes as soon as the binary artifacts are available. Updates to behavior - and rollbacks - replace the live artifacts. An alternative is rolling out updates using feature toggles. We ship our binaries with the changes initially deactivated.
+With the discussed strategies, we activate new changes as soon as the binary artifacts are available. Updates to behavior (and rollbacks) replace the live artifacts. An alternative is rolling out updates using feature toggles. We ship our binaries with the changes initially deactivated.
 
 Our changes are physically present at the destination albeit without executing the changes. Once ready, we remotely activate the new features without replacing the distributed binaries. The strategy enables us to synchronize feature releases or deactivate faulty features without any downtime.
 
