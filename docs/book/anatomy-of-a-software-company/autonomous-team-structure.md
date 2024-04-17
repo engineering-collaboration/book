@@ -15,7 +15,7 @@ Naturally, these numbers are not absolute. Using these numbers as a reference po
 
 ## The problem with horizontal teams
 
-A common pattern we want to avoid in our organization is designing teams by disciplines. Examples of this can be found in organizations during <!-- vale write-good.Weasel = NO -->early<!-- vale write-good.Weasel = YES --> web development. The teams were structured as a front-end department, working on the visual representation and interaction of websites, a back-end department working on the system logic of received input from the user, and the database department, working on serializing and querying data across user sessions.
+A common pattern we want to avoid in our organization is designing teams by disciplines. Examples of this can be found in organizations during early web development. The teams were structured as a front-end department, working on the visual representation and interaction of websites, a back-end department working on the system logic of received input from the user, and the database department, working on serializing and querying data across user sessions.
 
 When teams are partitioned via disciplines, every customer-facing feature has multiple inter-team handoffs and inter-team communication to perform. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
 

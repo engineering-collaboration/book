@@ -22,7 +22,7 @@ If an organization has no continuous integration strategy in place, it typically
 
 ## Continuous Integration
 
-Continuous Integration (CI) is a software development practice where members of a team integrate their work frequently into the shared source code. Each integration is verified by automated builds and tests to detect integration errors as quickly as possible. The fundamental goal of CI is to automatically catch problematic changes as <!-- vale write-good.Weasel = NO -->early<!-- vale write-good.Weasel = YES --> as possible by continuously assembling and testing complex and rapidly evolving ecosystems.
+Continuous Integration (CI) is a software development practice where members of a team integrate their work frequently into the shared source code. Each integration is verified by automated builds and tests to detect integration errors as quickly as possible. The fundamental goal of CI is to automatically catch problematic changes as early as possible by continuously assembling and testing complex and rapidly evolving ecosystems.
 
 This offers verifiable and <!-- vale write-good.Weasel = NO -->timely<!-- vale write-good.Weasel = YES --> proof that the application is good to progress to the next stage. We don't need to hope that all contributors are careful, responsible, and thorough; we can guarantee the working state of our application at various points in time.
 
@@ -58,7 +58,7 @@ Continuous delivery is not appropriate for all software projects. It requires a 
 
 If we consider our development in chronological order from left to right, left being the conception of a product, right being the release of the final product, the amount of time needed to fix an error grows exponentially.
 
-Using CI/CD to shift left refers to detecting problems in our project as <!-- vale write-good.Weasel = NO -->early<!-- vale write-good.Weasel = YES --> as possible and ideally minimizing their impact on our project. A bug fixed on the developer's machine during development is a lot cheaper than a bug fixed on a live deployment with multiple dependencies.
+Using CI/CD to shift left refers to detecting problems in our project as early as possible and ideally minimizing their impact on our project. A bug fixed on the developer's machine during development is a lot cheaper than a bug fixed on a live deployment with multiple dependencies.
 
 ## Responsibility
 

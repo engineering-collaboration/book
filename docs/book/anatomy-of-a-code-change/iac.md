@@ -13,3 +13,4 @@ Versioning of IaC configs
 Tests, static analysis, pull requests
 All versions can be restored to any time we would need it from the past
 
+desired state management

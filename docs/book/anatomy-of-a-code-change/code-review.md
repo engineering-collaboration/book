@@ -57,7 +57,7 @@ Pre-merge code reviews are necessary for contributions originating from outside 
 
 With post-merge reviews, we integrate our code changes from our development into main as soon as our automated pre-merge test suite passes. The changes are reviewed within a reasonable time at the convenience of our colleagues. Should further changes be requested during the review, we open a new development branch to address the feedback.
 
-Post-merge reviews ensure steady development velocity, while still involving the team in changes and are the de-facto standard for distributed teams and <!-- vale write-good.Weasel = NO -->early<!-- vale write-good.Weasel = YES --> stage projects. Although immediacy of reviews is less of an issue compared to pre-merge reviews, we benefit from tooling to distribute reviews evenly across the team and remind us of assigned reviews.
+Post-merge reviews ensure steady development velocity, while still involving the team in changes and are the de-facto standard for distributed teams and early stage projects. Although immediacy of reviews is less of an issue compared to pre-merge reviews, we benefit from tooling to distribute reviews evenly across the team and remind us of assigned reviews.
 
 ### Eventual review
 

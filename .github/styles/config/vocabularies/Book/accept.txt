@@ -48,3 +48,8 @@ dereference
 multithreading
 [Rr]ebase
 [Rr]ebasing
+early
+subprocess
+slapdashery
+unidirectionally
+weekly

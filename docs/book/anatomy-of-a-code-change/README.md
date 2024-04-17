@@ -23,10 +23,10 @@ The current progress of this section:
 - [x] Code reviews
 - [x] Merging
 - [x] Testing
-- [ ] Release mechanisms
-- [ ] Documentation
+- [x] Release mechanisms
 - [ ] Artifact management
-- [ ] Release strategies
+- [x] Release strategies
+- [ ] Documentation
 - [ ] Repository strategies
 - [ ] Infrastructure as code
 - [ ] Monitoring and observability
