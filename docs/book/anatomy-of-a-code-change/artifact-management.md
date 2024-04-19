@@ -18,29 +18,30 @@ The above list showcases interdependency between artifacts of a release. The art
 
 It is neither achievable, advisable, nor affordable to build every facet of our software internally. When our software reaches medium complexity, our build relies on both internal and external dependencies. By building upon dependencies, we focus our efforts on solving problems for our customers. The "Not Invented Here Syndrome" is a decision-making error where we tend to value our own ideas above those conceived by people outside of our group.
 
-Our software includes packages of third-party development kits, open-source solutions, and licensed products. We call these up-stream dependencies.
+Our software includes packages of third-party development kits, open-source solutions, and licensed products. We call these up-stream dependencies. Our teams scrutinize our up-stream dependencies for their licensing, security, and availability.
 
-We routinely include packages of third-party providers, open-source solutions, or licensed software. Licensing, security, avaiablity.
+### Licensing
 
-On top of manual due diligence, we employ technology and automation to verify the security and authorized usage of our dependencies. Vulnerabilities originating from third party modules due to human error, heterogeneous systems, or malicious intentions. Unpinned dependencies or outsourced dependencies provide attack vectors for supply chain attacks.
+Inadvertently introducing unfavorable licenses into our software exposes us to legal obligations that severely affect our product. Popular copyleft licenses prohibit commercial use of derivative work or mandate the publication of the source code under the same license. That being said, a recent rise of high-quality open-source software distributed under MIT and Apache 2.0 license accelerates our development of private commercial products.
 
-Relying on the internet for our dependencies means that somebody else owns the availability and consistency of our builds.
+In order to take advantage of existing solutions, without relying on the legal expertise of our engineers, we build tools to verify imports and dependencies into our codebase. We do this before every release at a minimum, or add it to our static analysis on pre-merge.
+
+### Security
+
+Consuming unvetted upstream dependencies provides an exploit pathway for supply chain attacks. Third-party code and binaries may introduce vulnerabilities into our software due to human error, heterogeneous systems, or malicious intentions.
 
 [SBOMS](https://www.ntia.gov/page/software-bill-materials)
 dependency bot
 codacy, npm vulnerabilities
 
-When our software reaches medium complexity, we introduce dependencies beyond internal software products.
 
- These 
+On top of manual due diligence, we employ technology and automation to verify the security and authorized usage of our dependencies.
 
-Dependency management is complex and a problem not solved to date.
-Communicate to tools what changed
+### Availability
 
-Dependency management has become somewhat of a complex computational conundrum. Increasing intricacy of software products and platforms
-
-Dependencies are hard
-Communicate to tools what changed
+Relying on the internet for our dependencies means that somebody else owns the availability and consistency of our builds.
+fixing errors, features
+down stream maintenance
 
 ## Semantic Versioning
 
@@ -49,7 +50,7 @@ Communicate to tools what changed
 
 Dependency management is a complex computational conundrum. The amount of permutations of compatibilities present in modern day software architectures makes automated technological approaches opaque and unreliable.
 
-To move the burden of identifying version dependencies from technological tools to sociocultural supervision, we tag our releases following a pattern standardized as semantic versioning. With the titular practice we infer the impact of changes from the structure of the release version `major.minor.patch`, e.g. `v1.23.45`.
+To move the burden of identifying version dependencies from technological tools to sociocultural supervision, we tag our releases following a pattern standardized as semantic versioning. With the titular practice, we infer the impact of changes from the structure of the release version `major.minor.patch`, e.g. `v1.23.45`.
 
 - We increment the `major` version, when we make incompatible API changes.
 - We increment the `minor` version, when we add functionality in a backward compatible manner.
