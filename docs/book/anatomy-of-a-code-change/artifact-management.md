@@ -41,6 +41,12 @@ Sometimes we discover a bug in an open-source project, or find room for improvem
 
 We balance the rate of adoption of version updates to our dependencies. Accepting the latest release of each package increases our risk of introducing incompatible changes, delaying adoption exposes us to security vulnerabilities and rising technical debt. Too much time between version bumps complicates the process of consolidating the new dependency version with our software. It also makes upstream fixes difficult.
 
+## Build and Test dependencies
+
+Owning our software dependencies is the first step of assuring consistent artifact quality and velocity. The next one is owning our build environment. When creating our binaries, we rely on certain tools and environments to be available. If our process runs install scripts and `apt-get` is down, we will not be able to create a release.
+
+We also rely on the homogeneity and isolation of our build procedures. Meaning, any previous action does not influence our current build process. Using containerization technology, we are able to create hermetic build environments offering the required tools. Once we are able to provide self-hosted hermetic environments we tackle the issue of build time performance and resource optimization. Especially monolith software designs seldomly require a full rebuild and benefit from shared compilation caches.
+
 ## Semantic Versioning
 
 !!! quote "[semver.org](https://semver.org/)"
@@ -58,12 +64,8 @@ Semantic versioning is a best effort solution to dependency management. The prac
 
 Nevertheless, it's one of the better systems we currently have and we would be foolhardy not to follow it.
 
-## Build and Test dependencies
+## Change lists
 
-Hermetic environments. Caching. Pinned versions of build software.
+As we shift the responsibility of dependency management from technological analysis to sociotechnical responsibility, we communicate changes in a human-readable way. Thus, every release is accompanied by a change list (or change log), a text file describing the work done for the release. Typically, bullet points of new features and fixed bugs.
 
-The same for the environment of our build machines, if our hermetic environment runs install scripts and `apt-get` is down, we will not be able to build and release.
-
-## Changelists
-
-Communicate to humans what changed
+The practices of trunk-based development make an automatic generation of change lists trivial. At release, we concatenate the titles and descriptions of our pull requests.
