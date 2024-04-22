@@ -9,6 +9,7 @@ Forsgren
 Cockburn
 API
 CTO
+SDK
 daily
 [Ss]ociotechnical
 reframe
@@ -53,3 +54,4 @@ subprocess
 slapdashery
 unidirectionally
 weekly
+unvetted

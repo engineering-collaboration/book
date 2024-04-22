@@ -24,7 +24,7 @@ The current progress of this section:
 - [x] Merging
 - [x] Testing
 - [x] Release mechanisms
-- [ ] Artifact management
+- [x] Artifact management
 - [x] Release strategies
 - [ ] Documentation
 - [ ] Repository strategies
