@@ -1,3 +1,8 @@
+---
+title: Artifact management
+description: How we manage a cornucopia of interdependent artifacts before, during, and after our build process.
+---
+
 # Artifact management
 
 Building a release produces a cornucopia of interdependent artifacts for us to manage. Depending on our product, a single release may build:
