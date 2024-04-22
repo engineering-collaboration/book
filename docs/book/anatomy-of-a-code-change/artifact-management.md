@@ -45,12 +45,17 @@ We balance the rate of adoption of version updates to our dependencies. Acceptin
 
 Owning our software dependencies is the first step of assuring consistent artifact quality and velocity. The next one is owning our build environment. When creating our binaries, we rely on certain tools and environments to be available. If our process runs install scripts and `apt-get` is down, we will not be able to create a release.
 
-We also rely on the homogeneity and isolation of our build procedures. Meaning, any previous action does not influence our current build process. Using containerization technology, we are able to create hermetic build environments offering the required tools. Once we are able to provide self-hosted hermetic environments we tackle the issue of build time performance and resource optimization. Especially monolith software designs seldomly require a full rebuild and benefit from shared compilation caches.
+We also rely on the homogeneity and isolation of our build procedures. Meaning, any previous action does not influence our current build process. Using containerization technology, we are able to create hermetic build environments offering the required tools. Once we are able to provide self-hosted hermetic environments we tackle the issue of build time performance and resource optimization. For example, monolith software designs seldom require a full rebuild and benefit from shared compilation caches.
 
 ## Semantic Versioning
-
+<!-- vale Vale.Avoid = NO -->
+<!-- vale write-good.Weasel = NO -->
+<!-- you -->
+<!-- likely -->
 !!! quote "[semver.org](https://semver.org/)"
     *In the world of software management there exists a dreaded place called “dependency hell.” The bigger your system grows and the more packages you integrate into your software, the more likely you are to find yourself, one day, in this pit of despair.*
+<!-- vale write-good.Weasel = YES -->
+<!-- vale Vale.Avoid = YES -->
 
 Dependency management is a complex computational conundrum. The amount of permutations of compatibilities present in modern day software architectures makes automated technological approaches opaque and unreliable.
 
@@ -60,9 +65,9 @@ To move the burden of identifying version dependencies from technological tools 
 - We increment the `minor` version, when we add functionality in a backward compatible manner.
 - We increment the `patch` version, when we make backward compatible bug fixes.
 
-Semantic versioning is a best effort solution to dependency management. The practice includes flaws and we accompany version bumps of our upstream dependencies with testing and security introspections. Assuming that releases are labeled correctly in the first place, Hyrum's law states that every public-facing behavior of a implementation will be relied upon, including incidental actions. Patch releases to our dependencies may be not compatible with our current system, if they coincidentally modify non-deterministic data layouts or execution time.
+Semantic versioning is a best effort solution to dependency management. The practice includes flaws and we accompany version bumps of our upstream dependencies with testing and security inspection. Assuming that releases are labeled accurately in the first place, Hyrum's law states that every public-facing behavior of a implementation will be relied upon, including incidental actions. Patch releases to our dependencies may be not compatible with our current system, if they coincidentally modify non-deterministic data layouts or execution time.
 
-Nevertheless, it's one of the better systems we currently have and we would be foolhardy not to follow it.
+Nevertheless, it's one of the better systems we have and we would be foolhardy not to follow it.
 
 ## Change lists
 
