@@ -13,7 +13,6 @@ Building a release produces a cornucopia of artifacts for various distributions,
 
 The above list showcases interdependency between artifacts of a release. The artifacts reference hard versions of each other and are useless if not found or drift. Our storage reference hard versions of the release artifacts and are available separately. Documentation of a specific version is available.
 
-
 ## Upstream Dependencies
 
 It is neither achievable, advisable, nor affordable to build every facet of our software internally. When our software reaches medium complexity, our build relies on both internal and external dependencies. By building upon dependencies, we focus our efforts on solving problems for our customers. The "Not Invented Here Syndrome" is a decision-making error where we tend to value our own ideas above those conceived by people outside of our group.
@@ -28,20 +27,19 @@ In order to take advantage of existing solutions, without relying on the legal e
 
 ### Security
 
-Consuming unvetted upstream dependencies provides an exploit pathway for supply chain attacks. Third-party code and binaries may introduce vulnerabilities into our software due to human error, heterogeneous systems, or malicious intentions.
+Consuming unvetted upstream dependencies provides an exploit pathway for supply chain attacks. Third-party code and binaries may introduce vulnerabilities into our software due to human error, heterogeneous systems, or malicious intentions. This issue developed such an exposure that a lot of development tools offer solutions of detecting vulnerabilities out of the box. At a minimum, we use them.
 
-[SBOMS](https://www.ntia.gov/page/software-bill-materials)
-dependency bot
-codacy, npm vulnerabilities
-
-
-On top of manual due diligence, we employ technology and automation to verify the security and authorized usage of our dependencies.
+Over the last years an effort towards a standardized format has been made. Mirroring traditional supply chain management, the [software bill of materials (SBOM)](https://www.ntia.gov/page/software-bill-materials) has emerged as a key building block in software security and software supply chain risk management. When distributing our software, we list the various components and dependencies within our product and system.
 
 ### Availability
 
-Relying on the internet for our dependencies means that somebody else owns the availability and consistency of our builds.
-fixing errors, features
-down stream maintenance
+Relying on the internet for our dependencies means that somebody else owns the availability and consistency of our builds. For projects in early phases, we embrace the trade-off to reduce the overhead of managing our build and development infrastructure. Contrarily, we ship mature project with a consistent quality and regularity achieved by owning our software's dependencies.
+
+We create a hermetic environment with our dependent packages, libraries, and SDKs and make it available within our organization. Automated tools scan for security vulnerabilities and version updates of our third-party artifacts. Our engineers verify, download and share updated versions of dependencies under their discretion.
+
+Sometimes we discover a bug in an open-source project, or find room for improvement in the current implementation. If appropriate, we instantiate a fork of the project in our organization's environment. A fork of a repository is a duplication of the source code with meta-data references to the original project. We fix our issue internally point our dependencies at our new internal solution. In the spirit of the open source community, we share our work with the original project using the contribution guidelines.
+
+We balance the rate of adoption of version updates to our dependencies. Accepting the latest release of each package increases our risk of introducing incompatible changes, delaying adoption exposes us to security vulnerabilities and rising technical debt. Too much time between version bumps complicates the process of consolidating the new dependency version with our software. It also makes upstream fixes difficult.
 
 ## Semantic Versioning
 
