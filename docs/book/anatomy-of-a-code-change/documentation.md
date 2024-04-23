@@ -1,3 +1,81 @@
+# Documentation
+
+Everybodies favourite topic. Documentation is the one topic 99% of the industry agree that it is insufficiently done and 98% agree that writing additional documentation is a hassle they cannot be arsed to do. Throughout our industry we consensually lament the lack of documentation across the board. 
+
+## Documentation drive development
+
+## Documentation automation
+
+## Documentation standards
+
+https://diataxis.fr/
+
+style guides
+
+docs as code
+version control
+
+vale.sh
+
+These are the phrases everybody was taught while learning programming.
+
+"I don't even know what I did 6 months ago."
+
+So if this is taught as a basis of software engineering, why is this still a problem?
+The problem is that while being taught software engineering, it is an inherently isolated task. You wrote the code, you submitted the code, and the code is reviewed without you present. Besides "cheating" and sharing code assignments in University there is no code collaboration. This means every graduate can invert a binary tree and tell you the Big O performance of dictionaries, but no graduate has experience writing documentation.
+
+Teaching documentation is the responsibility of engineering companies.
+
+- Explicitly plan documentation tickets
+- Make documentation part of the review process
+- Make it worthwhile and findable... it's a waste of time if nobody reads it
+- Automate as much as possible
+- Know your audience
+
+Making documentation
+Generating documentation
+
+Text, images, videos
+Transcripts, alt texts
+
+Full video documentations
+semantic connections to error messages
+
+# Who's gonna read it?
+
+While putting words to document consider how these words will eventually be received.
+
+- Culture (language, level of sophistication, humor)
+- Discipline (terms)
+- What are they trying to achieve?
+
+The absolute first priority when writing documentation has to be findability. The most informative testament of engineering brilliance written in beautiful prose with well thought out examples shares its value with a napkin on my desk if its just as difficult to find.
+
+## Documentation for Product
+
+For some to me inexplicable reason PM's love Confluence. Offer alternatives and accept your PM's final word. Then make machines do the writing. As with any code I am a big fan of embeding your documentation into a git repository and track the changes that way.
+
+Keep in mind this is documentation that YOU as the engineer want to share with the PM. It is not your job. Typically these are things regarding research of existing technology, reports on prototypes, decision making processes on the final product implementation.
+
+This is the stuff you reference when a couple months down the line a product owner changes their mind.
+
+## Documentation for Engineering
+
+"I am not too interested in the internals, I just want to spin it up and try it out."
+
+If over the last month five people asked you
+
+"Where do I find the implementation of that particular behaviour?"
+
+you might consider adding a FAQ to the docs.
+
+Documentation of processes.
+
+## Documentation for Clients
+
+Intuitive guide for pain points.
+
+
 # Inline Documentation
 
 Inline documentation refers to documentation embedded in the source code. This form of documentation is exclusively read by other developers. This documentation is the one read most frequently and crucial to be up-to-date.
