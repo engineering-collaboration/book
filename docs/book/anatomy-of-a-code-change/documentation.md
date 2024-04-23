@@ -1,14 +1,28 @@
 # Documentation
 
-Everybodies favourite topic. Documentation is the one topic 99% of the industry agree that it is insufficiently done and 98% agree that writing additional documentation is a hassle they cannot be arsed to do. Throughout our industry we consensually lament the lack of documentation across the board. 
+Documentation is our trade's collective bane. Similar to testing, documentation historically ranked as an afterthought of the software development cycle. Dissimilar to testing, incorrect documentation does not break our build. Errors and oversights frustrate our customers and fellow engineers only when clear documentation is needed, not before.
 
-## Documentation drive development
+This chapter shares proven strategies and standards to embed the process of documenting changes into our product cycle. Following these standards reduces the burden of writing documentation while increasing the quality.
 
-## Documentation automation
+## Teaching documentation
 
-## Documentation standards
+The act of learning programming (even when taught) is an inherently isolated task. We write code, submit code, and receive a review of our code. We learn about algorithms and data structures. We invert binary trees and study time complexities of hash table implementations. These are necessary lessons and build the foundation of our future career.
 
-https://diataxis.fr/
+However, when starting our journey into computer science our peers and mentors seldomly focus on documentation. We hear ominous warnings of undocumented code becoming unrecognizable to the author after six months. A warning slightly tampered by the fact that when starting out, our code will not survive six months.
+
+Thus, the responsibility of teaching documentation falls completely to engineering companies.
+
+## Shifting left on documentation
+
+We are aware how drifting and missing documentation inflicts long-term damage to our organization. Through the mid to late 2010s, modern delivery frequencies and market competitiveness evolved our mere awareness into actionable measures taken.
+
+- Explicitly plan documentation tickets
+- Make documentation part of the review process
+- Make it worthwhile and findable... it's a waste of time if nobody reads it
+- Automate as much as possible
+- Know your audience
+
+### Documentation as code
 
 style guides
 
@@ -17,23 +31,24 @@ version control
 
 vale.sh
 
-These are the phrases everybody was taught while learning programming.
-
-"I don't even know what I did 6 months ago."
-
-So if this is taught as a basis of software engineering, why is this still a problem?
-The problem is that while being taught software engineering, it is an inherently isolated task. You wrote the code, you submitted the code, and the code is reviewed without you present. Besides "cheating" and sharing code assignments in University there is no code collaboration. This means every graduate can invert a binary tree and tell you the Big O performance of dictionaries, but no graduate has experience writing documentation.
-
-Teaching documentation is the responsibility of engineering companies.
-
-- Explicitly plan documentation tickets
-- Make documentation part of the review process
-- Make it worthwhile and findable... it's a waste of time if nobody reads it
-- Automate as much as possible
-- Know your audience
-
 Making documentation
 Generating documentation
+
+automation
+
+### Documentation driven development
+
+OpenAPI
+
+
+
+Why then is documentation 
+
+Everybodies favourite topic. Documentation is the one topic 99% of the industry agree that it is insufficiently done and 98% agree that writing additional documentation is a hassle they cannot be arsed to do. Throughout our industry we consensually lament the lack of documentation across the board. 
+
+## Types of documentation
+
+https://diataxis.fr/
 
 Text, images, videos
 Transcripts, alt texts
@@ -41,7 +56,7 @@ Transcripts, alt texts
 Full video documentations
 semantic connections to error messages
 
-# Who's gonna read it?
+### Who's gonna read it?
 
 While putting words to document consider how these words will eventually be received.
 
