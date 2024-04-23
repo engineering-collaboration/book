@@ -26,7 +26,7 @@ The current progress of this section:
 - [x] Release mechanisms
 - [x] Artifact management
 - [x] Release strategies
-- [ ] Documentation
+- [x] Documentation
 - [ ] Repository strategies
 - [ ] Infrastructure as code
 - [ ] Monitoring and observability
