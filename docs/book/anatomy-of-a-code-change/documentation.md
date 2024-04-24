@@ -38,13 +38,18 @@ automation
 
 ### Documentation driven development
 
-OpenAPI
+Documentation drift arises due to increased velocity of source code compared to documentation. The term *documentation driven development* (DDD) evangelizes penning down production-quality documentation before implementing a solution. The purest form of DDD happens organically when [planning work using design documents](./planning-implementations.md).
 
+Arguably, a temporal reshuffling of our task list does not *drive* development. If writing source code follows writing documentation, we expect some automation to eliminate aspects of our work. In 2011 a schema based approach advocated a unified API generation with the release of Swagger API. Since then retitled OpenAPI, the standard allows us to write a definition file in yaml or json to automate boilerplate code. Once the OpenAPI schema is written, tooling can generate:
 
+- Boilerplate server code of endpoints and payloads for supported languages
+- Generic unit tests for our server code
+- Client libraries for supported languages
+- Static documentation for our API
+- Interactive documentation for our API
+- Test doubles and mock servers
 
-Why then is documentation 
-
-Everybodies favourite topic. Documentation is the one topic 99% of the industry agree that it is insufficiently done and 98% agree that writing additional documentation is a hassle they cannot be arsed to do. Throughout our industry we consensually lament the lack of documentation across the board. 
+An industry-wide motivation to consolidate open standards and the rapid inclusion of LLM tools in developer workflows promote future DDD practices and adoption. Let's see where this is going.
 
 ## Types of documentation
 
