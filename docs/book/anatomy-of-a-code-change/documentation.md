@@ -16,24 +16,24 @@ Thus, the responsibility of teaching documentation falls completely to engineeri
 
 We are aware how drifting and missing documentation inflicts long-term damage to our organization. Through the mid to late 2010s, modern delivery frequencies and market competitiveness evolved our mere awareness into actionable measures taken.
 
-- Explicitly plan documentation tickets
-- Make documentation part of the review process
-- Make it worthwhile and findable... it's a waste of time if nobody reads it
-- Automate as much as possible
-- Know your audience
+We actively plan for documentation in our work. We create tickets to reserve the necessary time for writing documentation and review it as we would the source code it accompanies. Shifting left on documentation mandates that we build automation tooling for continuous integration and deliver.
 
 ### Documentation as code
 
+Organically, source code changes faster than its documentation. We call this documentation drift. Ephemeral words stored on a separate platform with a fleeting relationship to the code it references is, at best, an expensive time sink; at worst, actively misleading.
+
+Source code evolves until our organization goes out of business. Useful documentation evolves at the same pace. As important us up-to-date documentation is for building upon the status quo, we need to be able to recall the documentation of the state of our code at any point in time. Hence, we administer documentation with version control systems (VCS).
+
+Modern VCS platforms enable us to search for code snippets across our entire organization. We examine references of implementations and investigate how they changed over time. Via dedicated windows and keyboard shortcuts we traverse all source code ever written within seconds. We apply the same standards to our documentation. Information that is impossible or difficult to find may as well not exist in the context of our work. Our engineers will spend an hour understanding the implementation itself if they cannot find the documentation within minutes.
+
+If we are able to find documentation, ensure the state of our code and documentation are in sync, we arrive at the question of quality and consistency. When writing source code we employ static analysis for styling, security, and error detection. We extend these practices to our documentation.
+
+On pull requests, the repository of this book scans the chapters using `vale.sh`. [See the examples.](https://github.com/opencollabbook/book/actions/workflows/pr.yaml)
+
 style guides
-
-docs as code
-version control
-
-vale.sh
 
 Making documentation
 Generating documentation
-
 automation
 
 ### Documentation driven development
@@ -49,6 +49,8 @@ Everybodies favourite topic. Documentation is the one topic 99% of the industry 
 ## Types of documentation
 
 https://diataxis.fr/
+
+- Know your audience
 
 Text, images, videos
 Transcripts, alt texts
