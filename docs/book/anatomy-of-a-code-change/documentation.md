@@ -51,7 +51,30 @@ Arguably, a temporal reshuffling of our task list does not *drive* development. 
 
 An industry-wide motivation to consolidate open standards and the rapid inclusion of LLM tools in developer workflows promote future DDD practices and adoption. Let's see where this is going.
 
-## Types of documentation
+## Diátaxis framework
+
+During his time at Canonical, [*Daniele Procida*](https://vurt.eu/) polished his work on a technical documentation framework, [*Diátaxis*](https://diataxis.fr/). This systematic approach to technical documentation separates it into four styles, tutorials, how-to guides, explanations, and technical references.
+
+The following image is taken straight from the Diataxis website.
+
+[![](https://diataxis.fr/_images/diataxis.png)](https://diataxis.fr/)
+
+
+### Tutorials
+
+### How-to guides
+
+### Explanations
+
+### Technical References
+
+
+As with everything in this book we improve our documentation iteratively. Procida warns against focusing too much on the Diaxis structure of existing documentation, and suggests to continously apply Diátaxis standards:
+
+- What user need is represented by this?
+- How well does it serve that need?
+- What can be added, moved, removed or changed to serve that need better?
+- Do its language and logic meet the requirements of this mode of documentation?
 
 https://diataxis.fr/
 
@@ -97,12 +120,21 @@ Documentation of processes.
 
 Intuitive guide for pain points.
 
+## Documentation media
 
-# Inline Documentation
+### Text
+
+### Images
+
+### Video
+
+### Transcripts
+
+### Embedded Documentation
 
 Inline documentation refers to documentation embedded in the source code. This form of documentation is exclusively read by other developers. This documentation is the one read most frequently and crucial to be up-to-date.
 
-## Comments
+#### Comments
 
 Keep it concise: Comments should be short and to the point. Avoid writing long paragraphs or unnecessary information. The purpose of a comment is to provide context, not to repeat the code.
 
@@ -120,7 +152,7 @@ Avoid redundant comments: Avoid commenting on obvious code or code that is self-
 
 Update comments as needed: Code changes over time, and comments can quickly become outdated. Make sure to update your comments as needed to reflect any changes in the code.
 
-## Naming
+#### Naming
 
 Use descriptive names: Variable names should be descriptive and convey the purpose of the variable. Avoid using single-letter or vague names like "x" or "temp". Instead, use names that accurately describe what the variable represents.
 
@@ -147,12 +179,12 @@ If `orderDesc` in the food delivery app actually sorts deliveries by descending 
 
 Please note, that the solution here is not spelling out every word in every variable. The solution is to be aware of the context your variables and functions are named within.
 
-### Naming Conventions
+#### Naming Conventions
 
 It's the 21st century. We have Intellisense. If I see another Hungarian noation I am going to scream.
 
 > Obviously, where there are industry standards, stick to them.
 
-### Naming Terms
+#### Naming Terms
 
 This is what you want to be focused on. Enforce a definition and naming of broad terms. Server vs backend vs service. Using consistent terms across the code base assists on establishing context for the code block.
