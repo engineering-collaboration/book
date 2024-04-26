@@ -36,6 +36,8 @@ Making documentation
 Generating documentation
 automation
 
+The absolute first priority when writing documentation has to be findability. The most informative testament of engineering brilliance written in beautiful prose with well thought out examples shares its value with a napkin on my desk if its just as difficult to find.
+
 ### Documentation driven development
 
 Documentation drift arises due to increased velocity of source code compared to documentation. The term *documentation driven development* (DDD) evangelizes penning down production-quality documentation before implementing a solution. The purest form of DDD happens organically when [planning work using design documents](./planning-implementations.md).
@@ -60,9 +62,36 @@ The following image is taken straight from the Diataxis website.
 [![](https://diataxis.fr/_images/diataxis.png)](https://diataxis.fr/)
 
 
+While putting words to document consider how these words will eventually be received.
+
+- Culture (language, level of sophistication, humor)
+- Discipline (terms)
+- What are they trying to achieve?
+
+
+
 ### Tutorials
 
+When learning new skills, tutorials are the first encounter with our future competencies. With little to no subject expertise, we mimic lessons shared in guided sessions to inaugurate us in the new topic.
+
+Although didactically presented by a teacher, tutorials are not lectures. We establish a journey with a set destination. Our lesson plan consists of a clear starting point, distinct progress, and a practical goal our student is able to run.
+
+As teachers, we are not able to determine what our students are going to learn, only to facilitate an environment of learning.
+
+Tutorials provide contact, comfort, and eventually confidence in the practice. nomenclature
+
+Deliver visible results early and often
+
+A tutorial is not the place for explanation. In a tutorial, the user is focused on correctly following your directions and getting the expected results. Later, when they are ready, they will seek explanation, but right now they are concerned with doing. Explanation distracts their attention from that, and blocks their learning.
+
+Aspire to perfect reliability or transparency
+
+
 ### How-to guides
+
+The student has a specific idea what to achieve.
+
+Intuitive guide for pain points.
 
 ### Explanations
 
@@ -86,25 +115,13 @@ Transcripts, alt texts
 Full video documentations
 semantic connections to error messages
 
-### Who's gonna read it?
-
-While putting words to document consider how these words will eventually be received.
-
-- Culture (language, level of sophistication, humor)
-- Discipline (terms)
-- What are they trying to achieve?
-
-The absolute first priority when writing documentation has to be findability. The most informative testament of engineering brilliance written in beautiful prose with well thought out examples shares its value with a napkin on my desk if its just as difficult to find.
-
-## Documentation for Product
+## Move or copy documentation to the end destination
 
 For some to me inexplicable reason PM's love Confluence. Offer alternatives and accept your PM's final word. Then make machines do the writing. As with any code I am a big fan of embeding your documentation into a git repository and track the changes that way.
 
 Keep in mind this is documentation that YOU as the engineer want to share with the PM. It is not your job. Typically these are things regarding research of existing technology, reports on prototypes, decision making processes on the final product implementation.
 
 This is the stuff you reference when a couple months down the line a product owner changes their mind.
-
-## Documentation for Engineering
 
 "I am not too interested in the internals, I just want to spin it up and try it out."
 
@@ -115,10 +132,6 @@ If over the last month five people asked you
 you might consider adding a FAQ to the docs.
 
 Documentation of processes.
-
-## Documentation for Clients
-
-Intuitive guide for pain points.
 
 ## Documentation media
 
