@@ -69,25 +69,45 @@ When creating a tutorial, we stay aware of the imbalance of expertise. Our lesso
 
 Although didactically presented by a teacher, tutorials are not lectures. We stay away from explanations that are not directly applicable to the task at hand. An overload of information convolutes our students path to an actionable result. As teachers, we are not able to determine what our students are going to learn, only to facilitate an environment of learning. Our student may pursue further knowledge later at their discretion and available cognitive load.
 
+More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/).
+
 ### How-to guides
 
-The student has a specific idea what to achieve.
+Exploring a subject matter using tutorials is a serendipity driven affair. How-to guides are the opposite. Our users have a goal in mind and looking for the instructions on how to achieve it. The task is set by the user, not by the teacher. We provide a logical sequence of actions documenting the minimal necessary steps for the task.
 
-Intuitive guide for pain points.
+Topics of how-to guides establish themselves organically for our product. Guides about common pain points are the most read documentation of our organization. How to install our product? How to connect to a specific authentication provider? How to build for a specific platform?
 
-How-to guides are directions that guide the reader through a problem or towards a result. How-to guides are goal-oriented.
-Well-written how-to guides that address the right questions are likely to be the most-read sections of your documentation.
-
-help the user accomplish a task
-
-The sequences of action in a how-to guide sometimes need to fork and overlap, and they have multiple entry and exit-points.
-Omit the unnecessary
-Describe a logical sequence
-
+More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/).
 
 ### Explanations
 
+It’s documentation that it makes sense to read while away from the product itself (one could say, explanation is the only kind of documentation that it might make sense to read in the bath).
+
+That’s a mistake; it may be less urgent than the other three, but it’s no less important.
+
+Make connections to other things, even to things outside the immediate topic, if that helps.
+
+design decisions, historical reasons, technical constraints
+
+Explanation can and must consider alternatives, counter-examples or multiple different approaches to the same question.
+
 ### Technical References
+
+Whereas the content of tutorials and how-to guides are led by needs of the user, reference material is led by the product it describes.
+
+Reference - information oriented, theoretical knowledge, that serves our work
+In the case of software, reference guides describe the software itself - APIs, classes, functions and so on - and how to use them.
+
+Reference material describes the machinery. It should be austere. One hardly reads reference material; one consults it.
+
+There should be no doubt or ambiguity in reference; it should be wholly authoritative.
+
+Reference material is useful when it is consistent. Standard patterns are what allow us to use reference material effectively. Your job is to place the material that your user needs know where they expect to find it, in a format that they are familiar with.
+
+the structure of the documentation should mirror the structure of the product, so that the user can work their way through them at the same time.
+
+Examples are valuable ways of providing illustration that helps readers understand reference, while avoiding the risk of becoming distracted from the job of describing.
+
 
 
 
