@@ -61,31 +61,13 @@ The following image is taken straight from the Diataxis website.
 
 [![](https://diataxis.fr/_images/diataxis.png)](https://diataxis.fr/)
 
-
-While putting words to document consider how these words will eventually be received.
-
-- Culture (language, level of sophistication, humor)
-- Discipline (terms)
-- What are they trying to achieve?
-
-
-
 ### Tutorials
 
-When learning new skills, tutorials are the first encounter with our future competencies. With little to no subject expertise, we mimic lessons shared in guided sessions to inaugurate us in the new topic.
+When we find ourselves interested in a new subject, we get started by entering the topic plus the word "tutorial" into our favorite search engine. The results of our query introduce us to guided sessions for us to follow. As we have no subject expertise as of yet, we gain contact, comfort, and eventually confidence in the new practice by mimicking the presented material.
 
-Although didactically presented by a teacher, tutorials are not lectures. We establish a journey with a set destination. Our lesson plan consists of a clear starting point, distinct progress, and a practical goal our student is able to run.
+When creating a tutorial, we stay aware of the imbalance of expertise. Our lesson plan consists of a clear starting point and a practical goal our student is able to run. We introduce them to the nomenclature of our documentation's subject. When progressing through the lesson, we provide frequent results to landmark the journey. A well-structured tutorial delivers transparent progress and reliable results.
 
-As teachers, we are not able to determine what our students are going to learn, only to facilitate an environment of learning.
-
-Tutorials provide contact, comfort, and eventually confidence in the practice. nomenclature
-
-Deliver visible results early and often
-
-A tutorial is not the place for explanation. In a tutorial, the user is focused on correctly following your directions and getting the expected results. Later, when they are ready, they will seek explanation, but right now they are concerned with doing. Explanation distracts their attention from that, and blocks their learning.
-
-Aspire to perfect reliability or transparency
-
+Although didactically presented by a teacher, tutorials are not lectures. We stay away from explanations that are not directly applicable to the task at hand. An overload of information convolutes our students path to an actionable result. As teachers, we are not able to determine what our students are going to learn, only to facilitate an environment of learning. Our student may pursue further knowledge later at their discretion and available cognitive load.
 
 ### How-to guides
 
@@ -93,9 +75,20 @@ The student has a specific idea what to achieve.
 
 Intuitive guide for pain points.
 
+How-to guides are directions that guide the reader through a problem or towards a result. How-to guides are goal-oriented.
+Well-written how-to guides that address the right questions are likely to be the most-read sections of your documentation.
+
+help the user accomplish a task
+
+The sequences of action in a how-to guide sometimes need to fork and overlap, and they have multiple entry and exit-points.
+Omit the unnecessary
+Describe a logical sequence
+
+
 ### Explanations
 
 ### Technical References
+
 
 
 As with everything in this book we improve our documentation iteratively. Procida warns against focusing too much on the Diaxis structure of existing documentation, and suggests to continously apply Diátaxis standards:
@@ -115,7 +108,18 @@ Transcripts, alt texts
 Full video documentations
 semantic connections to error messages
 
-## Move or copy documentation to the end destination
+## Docs for user
+
+
+While putting words to document consider how these words will eventually be received.
+
+- Culture (language, level of sophistication, humor)
+- Discipline (terms)
+- What are they trying to achieve?
+- What situation do they encounter the docs? stressful environment, error fixes
+
+Video docs are not much help if no audio available.
+Video docs are not helpful if too long without semantic segments
 
 For some to me inexplicable reason PM's love Confluence. Offer alternatives and accept your PM's final word. Then make machines do the writing. As with any code I am a big fan of embeding your documentation into a git repository and track the changes that way.
 
