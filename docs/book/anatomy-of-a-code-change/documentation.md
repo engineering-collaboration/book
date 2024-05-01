@@ -79,6 +79,14 @@ Topics of how-to guides establish themselves organically for our product. Guides
 
 More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/).
 
+### Technical References
+
+We mold the former types of documentation for the optimal experience of our user. We omit information for readability, and guide our reader through the immediately applicable features of our product. Technical reference, however, is fact. The information provided describes measurable and observable behavior. Software reference documentation outlines the anatomy and usage of APIs, classes, and functions. Besides the source code, references are considered as the definitive source of truth.
+
+High-quality reference material distinguishes itself with consistency, standards, and searchability. When consulting our references, our user knows exactly where to look and what format to expect. We do not deviate in layout or information within product references. Modern reference documentation showcases examples and may even offer interactive elements for better understanding.
+
+More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/).
+
 ### Explanations
 
 It’s documentation that it makes sense to read while away from the product itself (one could say, explanation is the only kind of documentation that it might make sense to read in the bath).
@@ -90,24 +98,6 @@ Make connections to other things, even to things outside the immediate topic, if
 design decisions, historical reasons, technical constraints
 
 Explanation can and must consider alternatives, counter-examples or multiple different approaches to the same question.
-
-### Technical References
-
-Whereas the content of tutorials and how-to guides are led by needs of the user, reference material is led by the product it describes.
-
-Reference - information oriented, theoretical knowledge, that serves our work
-In the case of software, reference guides describe the software itself - APIs, classes, functions and so on - and how to use them.
-
-Reference material describes the machinery. It should be austere. One hardly reads reference material; one consults it.
-
-There should be no doubt or ambiguity in reference; it should be wholly authoritative.
-
-Reference material is useful when it is consistent. Standard patterns are what allow us to use reference material effectively. Your job is to place the material that your user needs know where they expect to find it, in a format that they are familiar with.
-
-the structure of the documentation should mirror the structure of the product, so that the user can work their way through them at the same time.
-
-Examples are valuable ways of providing illustration that helps readers understand reference, while avoiding the risk of becoming distracted from the job of describing.
-
 
 
 
