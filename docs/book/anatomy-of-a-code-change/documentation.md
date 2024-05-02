@@ -36,6 +36,8 @@ Making documentation
 Generating documentation
 automation
 
+wiki vs repo vs third platform with hard refs
+
 The absolute first priority when writing documentation has to be findability. The most informative testament of engineering brilliance written in beautiful prose with well thought out examples shares its value with a napkin on my desk if its just as difficult to find.
 
 ### Documentation driven development
@@ -97,44 +99,53 @@ More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/
 
 ## Who is our reader?
 
-As with everything in this book we improve our documentation iteratively. Procida warns against focusing too much on the Diaxis structure of existing documentation, and suggests to continously apply Diátaxis standards:
+As with everything in this book we improve our documentation iteratively. Procida himself warns against focusing too much on the Diaxis structure of existing documentation, and suggests to continuously consider our reader's needs.
 
-- What user need is represented by this?
-- How well does it serve that need?
-- What can be added, moved, removed or changed to serve that need better?
-- Do its language and logic meet the requirements of this mode of documentation?
+### Language
 
-While putting words to document consider how these words will eventually be received.
+Our reader's background drives the language used. Technical expertise determines the use of certain words and acronyms. Documentation for engineers may use the term *HTTP* without ever writing out the full term or explaining its capabilities. Demographics and culture influence firstly in which language the documentation is written and in what tone.
 
-- Culture (language, level of sophistication, humor)
-- Discipline (terms)
-- What are they trying to achieve?
-- What situation do they encounter the docs? stressful environment, error fixes
+While we offer English documentation in Japan, we reference interpersonal communcation more formally than in other regions. Humor is also very subjective and region-influenced. Documentation within the same region might differ between organizational culture. Both of the writing entity and the reading entity.
 
-Video docs are not much help if no audio available.
-Video docs are not helpful if too long without semantic segments
+### Usecase
 
-For some to me inexplicable reason PM's love Confluence. Offer alternatives and accept your PM's final word. Then make machines do the writing. As with any code I am a big fan of embeding your documentation into a git repository and track the changes that way.
+Who are we writing the documentation for determines the form of documentation. Our reader's intention and situation decides what type of documentation we publish. A reader evaluating our product for potential future use differs greatly from an engineer debugging our tool.
 
-Keep in mind this is documentation that YOU as the engineer want to share with the PM. It is not your job. Typically these are things regarding research of existing technology, reports on prototypes, decision making processes on the final product implementation.
+Documentation can add to stressful or frustrating situations if our tool behaves unexpectedly and the engineer encounters a tutorial with 95% useless information. A technical reference with detailed insights referencing error codes and failures supports our reader more.
 
-This is the stuff you reference when a couple months down the line a product owner changes their mind.
 
 "I am not too interested in the internals, I just want to spin it up and try it out."
 
-If over the last month five people asked you
+If over the last month five people asked you. How-to in README
 
 "Where do I find the implementation of that particular behaviour?"
 
-you might consider adding a FAQ to the docs.
+you might consider adding a FAQ to the docs. Reference
 
 Documentation of processes.
 
 semantic connections to error messages
 
+### Platform
+
+Documentation for internal engineers might be in our version control system. Depending on our project management tools
+Platform of the documentation. Content, authentication needed?
+
+The best structured and worded documentation becomes worthless if it is not easily available to our target user. Like code, we build automation tools to distribute and deliver updates to our target platforms. Externally and internally. Development documentation primarily targeted towards engineers might be of interest to product owners and technical writers. These colleagues prefer other day-to-day platforms than our version control environment. Hence, we publish our docs to the tools. While design docs are written and edited on GitLab, a version is downstreamed to Confluence.
+
 ## Documentation media
 
+When selecting the appropriate media for our documentation we consider the following points:
+
+- Who is consuming the documentation?
+- What are we documenting?
+- How much effort is it to create the docs?
+- How much effort is it to maintain the docs?
+- How searchable is the format?
+
 ### Text
+
+
 
 ### Images
 
@@ -142,6 +153,9 @@ semantic connections to error messages
 
 Transcripts, alt texts
 Full video documentations
+
+Video docs are not much help if no audio available.
+Video docs are not helpful if too long without semantic segments
 
 ### Audio
 
