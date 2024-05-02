@@ -89,17 +89,13 @@ More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/
 
 ### Explanations
 
-It’s documentation that it makes sense to read while away from the product itself (one could say, explanation is the only kind of documentation that it might make sense to read in the bath).
+Another product-driven type of documentation is the explanation. Where technical references highlight facts of the current state of the software, explanations reason how we got to the current state. Explanations are still actionable, even when away from the product.
 
-That’s a mistake; it may be less urgent than the other three, but it’s no less important.
+This book covered decision docs and design docs, both are great examples for explanation documentation. Within these documents we consider implementation strategies, potential alternatives, and technical concessions we had to make. Explanations put other types of documentation into context.
 
-Make connections to other things, even to things outside the immediate topic, if that helps.
+More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/).
 
-design decisions, historical reasons, technical constraints
-
-Explanation can and must consider alternatives, counter-examples or multiple different approaches to the same question.
-
-
+## Who is our reader?
 
 As with everything in this book we improve our documentation iteratively. Procida warns against focusing too much on the Diaxis structure of existing documentation, and suggests to continously apply Diátaxis standards:
 
@@ -107,19 +103,6 @@ As with everything in this book we improve our documentation iteratively. Procid
 - How well does it serve that need?
 - What can be added, moved, removed or changed to serve that need better?
 - Do its language and logic meet the requirements of this mode of documentation?
-
-https://diataxis.fr/
-
-- Know your audience
-
-Text, images, videos
-Transcripts, alt texts
-
-Full video documentations
-semantic connections to error messages
-
-## Docs for user
-
 
 While putting words to document consider how these words will eventually be received.
 
@@ -147,6 +130,8 @@ you might consider adding a FAQ to the docs.
 
 Documentation of processes.
 
+semantic connections to error messages
+
 ## Documentation media
 
 ### Text
@@ -155,7 +140,10 @@ Documentation of processes.
 
 ### Video
 
-### Transcripts
+Transcripts, alt texts
+Full video documentations
+
+### Audio
 
 ### Embedded Documentation
 
