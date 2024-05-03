@@ -145,11 +145,36 @@ When selecting the appropriate media for our documentation we consider the follo
 
 ### Text
 
+Most commonly, we create written documentation.
 
++ searchable
++ low footprint
++ very consumable
++ easy to generate from sources
++ easy to update deltas
+- Takes a long time to create and maintain
+- Limited by author's writing ability
+- possibly ambugouis
 
 ### Images
 
++ pic says more than thousand words
++ replicateable
++ state understood
+- screenshot is quick to do
+- additional work needed for tagging, searching
+
 ### Video
+
+- storage needed
+- headphones needed
+- difficult to screen over
+- not easily searchable
+- redo the entire thing with small updates
++ most transparent form
++ quickly done
++ user can follow steps
++ no ambiguity
 
 Transcripts, alt texts
 Full video documentations
