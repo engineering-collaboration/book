@@ -33,15 +33,15 @@ We work on documentation using the same strategies and tools we use for working 
 !!! note 
     Every pull request introducing a new chapter into this book runs [static analysis using `vale.sh`](https://github.com/opencollabbook/book/actions/workflows/pr.yaml) and an AI editor to review and highlight grammatical inconsistencies.
 
-Extending our continuous delivery practices, we build and distribute documentation to our readers across all domains. Our project managers appreciate automated progress updates within their project management tool with the PR description. technical writers, 
+Extending our continuous delivery practices, we build and distribute documentation to our readers across all domains. Internally, our project managers appreciate automated progress updates within their project management tool with the PR description. Fellow engineers consume a reference documentation extracted from semantic components and comments of our source code.
 
-We extract semantic components and comments from our source code to build and share reference documentation. To reduce the workload of high-quality documentation, our engineers write documentation in editing formats, such as Markdown, LaTex, or AsciiDoc. During the build process we generate the needed presentation formats, e.g. upload HTML pages to our documentation webpage, email PDF documents to our sales team.
+To reduce the workload of high-quality documentation, our engineers write documentation in editing formats, such as Markdown, LaTex, or AsciiDoc. During the build process we generate the needed presentation formats, e.g. upload HTML pages to our documentation webpage, email PDF documents to our sales team.
 
 ### Documentation driven development
 
 Documentation drift arises due to increased velocity of source code compared to documentation. The term *documentation driven development* (DDD) evangelizes penning down production-quality documentation before implementing a solution. The purest form of DDD happens organically when [planning work using design documents](./planning-implementations.md).
 
-Arguably, a temporal reshuffling of our task list does not *drive* development. If writing source code follows writing documentation, we expect some automation to eliminate aspects of our work. In 2011 a schema based approach advocated a unified API generation with the release of Swagger API. Since then retitled OpenAPI, the standard allows us to write a definition file in yaml or json to automate boilerplate code. Once the OpenAPI schema is written, tooling can generate:
+Arguably, a temporal reshuffling of our task list does not *drive* development. If writing source code follows writing documentation, we expect automation to eliminate aspects of our work. In 2011 Swagger API, a schema based approach, advocated automated API generation. Since then retitled OpenAPI, the standard allows us to write a definition file to automate boilerplate code. Once the OpenAPI schema is written, tooling can generate:
 
 - Boilerplate server code of endpoints and payloads for supported languages
 - Generic unit tests for our server code
