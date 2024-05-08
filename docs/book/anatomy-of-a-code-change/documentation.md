@@ -62,7 +62,7 @@ The following image is taken straight from the Diataxis website.
 
 ### Tutorials
 
-When we find ourselves interested in a new subject, we get started by entering the topic plus the word "tutorial" into our favorite search engine. The results of our query introduce us to guided sessions for us to follow. As we have no subject expertise as of yet, we gain contact, comfort, and eventually confidence in the new practice by mimicking the presented material.
+When we find ourselves interested in a new subject, we get started by entering the topic plus the word "tutorial" into our favorite search engine. The result of our query introduces us to guided sessions and workshops. As we have no subject expertise as of yet, we gain contact, comfort, and eventually confidence in the new practice by mimicking the presented material.
 
 When creating a tutorial, we stay aware of the imbalance of expertise. Our lesson plan consists of a clear starting point and a practical goal our student is able to run. We introduce them to the nomenclature of our documentation's subject. When progressing through the lesson, we provide frequent results to landmark the journey. A well-structured tutorial delivers transparent progress and reliable results.
 
@@ -74,25 +74,25 @@ More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/
 
 Exploring a subject matter using tutorials is a serendipity driven affair. How-to guides are the opposite. Our users have a goal in mind and looking for the instructions on how to achieve it. The task is set by the user, not by the teacher. We provide a logical sequence of actions documenting the minimal necessary steps for the task.
 
-Topics of how-to guides establish themselves organically for our product. Guides about common pain points are the most read documentation of our organization. How to install our product? How to connect to a specific authentication provider? How to build for a specific platform?
+Topics of how-to guides establish themselves organically for our product. Guides about common pain points are the most read documentation of our organization. How to install our product. How to connect to a specific authentication provider. How to build for a specific platform.
 
-More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/).
+More details available at [diataxis.fr/how-to-guides](https://diataxis.fr/how-to-guides/).
 
 ### Technical References
 
-We mold the former types of documentation for the optimal experience of our user. We omit information for readability, and guide our reader through the immediately applicable features of our product. Technical reference, however, is fact. The information provided describes measurable and observable behavior. Software reference documentation outlines the anatomy and usage of APIs, classes, and functions. Besides the source code, references are considered as the definitive source of truth.
+The former types of documentation focus on the optimal experience for our user. We omit information for readability, and guide our reader through the immediately applicable features of our product. Technical reference, however, is fact. The information provided describes measurable and observable behavior. Software reference documentation outlines the anatomy and usage of APIs, classes, and functions. Besides the source code, references are considered as the definitive source of truth.
 
 High-quality reference material distinguishes itself with consistency, standards, and searchability. When consulting our references, our user knows exactly where to look and what format to expect. We do not deviate in layout or information within product references. Modern reference documentation showcases examples and may even offer interactive elements for better understanding.
 
-More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/).
+More details available at [diataxis.fr/reference](https://diataxis.fr/reference/).
 
 ### Explanations
 
-Another product-driven type of documentation is the explanation. Where technical references highlight facts of the current state of the software, explanations reason how we got to the current state. Explanations are still actionable, even when away from the product.
+Another product-driven type of documentation is the explanation. Where technical references highlight facts of the current state of the software, explanations reason how we got to the current state. Reading explanations does not require an available instance of the product.
 
-This book covered decision docs and design docs, both are great examples for explanation documentation. Within these documents we consider implementation strategies, potential alternatives, and technical concessions we had to make. Explanations put other types of documentation into context.
+We discussed [decision docs and design docs](./planning-implementations.md) in a previous chapter, both are great examples for explanation documentation. Within these documents we consider implementation strategies, potential alternatives, and technical concessions we had to make. Explanations put other types of documentation into context.
 
-More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/).
+More details available at [diataxis.fr/explanation](https://diataxis.fr/explanation/).
 
 ## Who is our reader?
 
