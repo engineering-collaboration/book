@@ -1,44 +1,41 @@
 # Documentation
 
-Documentation is our trade's collective bane. Similar to testing, documentation historically ranked as an afterthought of the software development cycle. Dissimilar to testing, incorrect documentation does not break our build. Errors and oversights frustrate our customers and fellow engineers only when clear documentation is needed, not before.
+Documentation is our trade's collective bane. Similar to testing, documentation historically ranked as an afterthought of the software development cycle. Dissimilar to testing, incorrect documentation does not break our build. Errors and oversights to documentation frustrate our users only when it is needed, not before.
 
-This chapter shares proven strategies and standards to embed the process of documenting changes into our product cycle. Following these standards reduces the burden of writing documentation while increasing the quality.
+This chapter shares proven strategies to embed the process of documenting changes into our product cycle. Following these standards reduces the burden of writing documentation while increasing the quality.
 
 ## Teaching documentation
 
 The act of learning programming (even when taught) is an inherently isolated task. We write code, submit code, and receive a review of our code. We learn about algorithms and data structures. We invert binary trees and study time complexities of hash table implementations. These are necessary lessons and build the foundation of our future career.
 
-However, when starting our journey into computer science our peers and mentors seldomly focus on documentation. We hear ominous warnings of undocumented code becoming unrecognizable to the author after six months. A warning slightly tampered by the fact that when starting out, our code will not survive six months.
+However, when starting our journey into computer science, our peers and mentors seldomly focus on documentation. We hear ominous warnings of undocumented code becoming unrecognizable to the author when revisiting a problem six months later. A warning slightly tampered by the fact that in the beginning of our journey our code will not survive six months.
 
-Thus, the responsibility of teaching documentation falls completely to engineering companies.
+Thus, the responsibility of teaching documentation falls completely to engineering companies. Within this avenue, we fill empty cups.
 
 ## Shifting left on documentation
 
-We are aware how drifting and missing documentation inflicts long-term damage to our organization. Through the mid to late 2010s, modern delivery frequencies and market competitiveness evolved our mere awareness into actionable measures taken.
+Drifting and missing documentation inflicts long-term damage to our organization. Through the mid-to-late 2010s, modern delivery frequencies and market competitiveness birthed prophylactic measures for documental detriments.
 
-We actively plan for documentation in our work. We create tickets to reserve the necessary time for writing documentation and review it as we would the source code it accompanies. Shifting left on documentation mandates that we build automation tooling for continuous integration and deliver.
+Our most effective prevention is to plan for documentation in our work by creating tickets and reserve the time necessary for writing it. Actively shifting left on documentation mandates that we build automation tooling for its continuous integration and delivery.
 
 ### Documentation as code
 
-Organically, source code changes faster than its documentation. We call this documentation drift. Ephemeral words stored on a separate platform with a fleeting relationship to the code it references is, at best, an expensive time sink; at worst, actively misleading.
+Organically, source code changes faster than its documentation. We call this documentation drift. Useful documentation evolves at the same pace as the source code it references. To ensure complementary development, we administer documentation within the same version control system as our code.
 
-Source code evolves until our organization goes out of business. Useful documentation evolves at the same pace. As important us up-to-date documentation is for building upon the status quo, we need to be able to recall the documentation of the state of our code at any point in time. Hence, we administer documentation with version control systems (VCS).
+Ephemeral words stored on a separate platform endure a high likelihood of becoming out-of-sync with up-to-date work. This practice is, at best, an expensive time sink, at worst, actively misleading. Documentation stored within a VCS correlates to the state of our code at any point in time.
 
-Modern VCS platforms enable us to search for code snippets across our entire organization. We examine references of implementations and investigate how they changed over time. Via dedicated windows and keyboard shortcuts we traverse all source code ever written within seconds. We apply the same standards to our documentation. Information that is impossible or difficult to find may as well not exist in the context of our work. Our engineers will spend an hour understanding the implementation itself if they cannot find the documentation within minutes.
+Sophisticated tools allow us to search code across our entire organization. We examine references of implementations and investigate how they changed over time via dedicated windows and keyboard shortcuts. We apply the same standards to our documentation. Informative documentation written in brilliant prose benefits our reader the same amount as the crumpled up doodles in our paper bin, if neither can be found. Our engineers will spend an hour understanding the implementation itself if they cannot find the documentation within minutes.
 
-If we are able to find documentation, ensure the state of our code and documentation are in sync, we arrive at the question of quality and consistency. When writing source code we employ static analysis for styling, security, and error detection. We extend these practices to our documentation.
+The foundational aspects of useful documentation cover findability and bidirectional correlation between documentation and product. Once we have satisfied these essentials, we consider strategies to improve our documents' quality and consistency. Managing documentation within version control allows us to extend our existing CI/CD processes to cover automation for documentation.
 
-On pull requests, the repository of this book scans the chapters using `vale.sh`. [See the examples.](https://github.com/opencollabbook/book/actions/workflows/pr.yaml)
+We work on documentation using the same strategies and tools we use for working on product features. Feature branches and pull requests for documentation offer a familiar environment for reviews and edits before integration. Documentation style guides necessitate form and structure of documentations. Which words to use, which words to avoid, code style of examples. Static analysis and automated tests verify our documentations compliance to our style guide. 
 
-style guides
+!!! note 
+    Every pull request introducing a new chapter into this book runs [static analysis using `vale.sh`](https://github.com/opencollabbook/book/actions/workflows/pr.yaml) and an AI editor to review and highlight grammatical inconsistencies.
 
-Making documentation
-Generating documentation
-automation
+Extending our continuous delivery practices, we build and distribute documentation to our readers across all domains. Our project managers appreciate automated progress updates within their project management tool with the PR description. technical writers, 
 
-wiki vs repo vs third platform with hard refs
-
-The absolute first priority when writing documentation has to be findability. The most informative testament of engineering brilliance written in beautiful prose with well thought out examples shares its value with a napkin on my desk if its just as difficult to find.
+We extract semantic components and comments from our source code to build and share reference documentation. To reduce the workload of high-quality documentation, our engineers write documentation in editing formats, such as Markdown, LaTex, or AsciiDoc. During the build process we generate the needed presentation formats, e.g. upload HTML pages to our documentation webpage, email PDF documents to our sales team.
 
 ### Documentation driven development
 
@@ -109,10 +106,13 @@ While we offer English documentation in Japan, we reference interpersonal commun
 
 ### Usecase
 
-Who are we writing the documentation for determines the form of documentation. Our reader's intention and situation decides what type of documentation we publish. A reader evaluating our product for potential future use differs greatly from an engineer debugging our tool.
+Our reader's intention and situation decides what type of documentation we publish. A reader evaluating our product for potential future use differs greatly from an engineer debugging our tool.
 
 Documentation can add to stressful or frustrating situations if our tool behaves unexpectedly and the engineer encounters a tutorial with 95% useless information. A technical reference with detailed insights referencing error codes and failures supports our reader more.
 
+Across a projects lifetime we document for different readers. Copywriting and marketing material informing our potential costumer about the strengths of our product.
+
+A quickstart guide omitting all unnecessary information. How can a user try our project with the least amount of steps possible. A FAQ answering the most frequently asked questions. A reference about specific implementation details 
 
 "I am not too interested in the internals, I just want to spin it up and try it out."
 
@@ -126,12 +126,9 @@ Documentation of processes.
 
 semantic connections to error messages
 
-### Platform
+wiki vs repo vs third platform with hard refs
 
-Documentation for internal engineers might be in our version control system. Depending on our project management tools
-Platform of the documentation. Content, authentication needed?
-
-The best structured and worded documentation becomes worthless if it is not easily available to our target user. Like code, we build automation tools to distribute and deliver updates to our target platforms. Externally and internally. Development documentation primarily targeted towards engineers might be of interest to product owners and technical writers. These colleagues prefer other day-to-day platforms than our version control environment. Hence, we publish our docs to the tools. While design docs are written and edited on GitLab, a version is downstreamed to Confluence.
+authentication needed
 
 ## Documentation media
 
@@ -149,7 +146,7 @@ Written text is the most widespread form of documentation. It is easily consumab
 
 All engineers testify to the required effort to produce high-quality written documentation. Any written work requires multiple rewrites to iron out ambiguities and comprehensive guides with logical steps. Any documentation is ultimately limited by the writing abilities of the author combined with the resources allocated to work on it.
 
-Modern tools enable us to render decent text from dictations.
+Modern tools enable us to render decent text from dictations. Modern tooling augment platform documentation with concise examples of client calls in various programming languages and the ability to call API endpoints in a sandbox environment without any setup.
 
 ### Images
 
@@ -165,29 +162,14 @@ Creating a screen recording of a feature requires less effort of our engineers t
 
 Video require additional resources to be stored, streamed, and viewed. We expect our user to have headphones or be in a quiet environment. Video documentations benefit from semantic tagging the content across the timeline. Video transcripts enhance searchability and accessability.
 
-### Interactive Documentation
-
-Examples and test stubs.
-
 ### Embedded Documentation
 
-Inline documentation refers to documentation embedded in the source code. This form of documentation is exclusively read by other developers. This documentation is the one read most frequently and crucial to be up-to-date.
+This form of documentation targets other developers reading our source code. It is the most frequently read and most crucial to be up-to-date. Inline comments address context and thoughts not easily readable in the code. Class and function comments provide insight of its usage.
 
-Comments should be short and to the point. Avoid writing long paragraphs or unnecessary information. The purpose of a comment is to provide context, not to repeat the code.
+Consistent naming and formatting reduces cognitive load when reading source code. A name is not a name in itself, but rather the context it is used within.
 
-Use consistent naming conventions throughout your codebase. This makes it easier for other developers to understand your code and helps maintain consistency across your project.
+In your opinion what does `orderDesc` mean in a food delivery app?
+In your opinion what does `orderDesc` mean in a spread sheet application?
 
-Avoid using reserved keywords or names that might conflict with existing functions or variables in your programming language.
-
-A name is not a name in itself, but rather the context it is used within.
-
-In my opinion it is absolutely fine and even preferable to call your variables `x` and `y`. While your TA might duct you points for not using `rectWidth` and `rectHeight` the Pythagorean theorem is not commonly referred to as `Cathetus^2 + Ancathetus^2 = Hypotenuse^2`.
-
-In your opinion what does `orderDesc` mean in the code base of a food delivery app?
-In your opinion what does `orderDesc` mean in the code base of a spread sheet application?
-
-If `orderDesc` in the food delivery app actually sorts deliveries by descending order you would probably role with it but would be a little surprised. Avoiding these little surprises goes a long way for code readability.
-
-Please note, that the solution here is not spelling out every word in every variable. The solution is to be aware of the context your variables and functions are named within.
-
+More important than 
 This is what you want to be focused on. Enforce a definition and naming of broad terms. Server vs backend vs service. Using consistent terms across the code base assists on establishing context for the code block.
