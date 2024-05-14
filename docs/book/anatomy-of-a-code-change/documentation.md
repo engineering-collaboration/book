@@ -68,6 +68,8 @@ When creating a tutorial, we stay aware of the imbalance of expertise. Our lesso
 
 Although didactically presented by a teacher, tutorials are not lectures. We stay away from explanations that are not directly applicable to the task at hand. An overload of information convolutes our students path to an actionable result. As teachers, we are not able to determine what our students are going to learn, only to facilitate an environment of learning. Our student may pursue further knowledge later at their discretion and available cognitive load.
 
+Our user explores our product with the help of tutorials and example procedures. Internally we create tutorials for demo projects to evangelize nouvelle technology or tools we created.
+
 More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/).
 
 ### How-to guides
@@ -75,6 +77,10 @@ More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/
 Exploring a subject matter using tutorials is a serendipity driven affair. How-to guides are the opposite. Our users have a goal in mind and looking for the instructions on how to achieve it. The task is set by the user, not by the teacher. We provide a logical sequence of actions documenting the minimal necessary steps for the task.
 
 Topics of how-to guides establish themselves organically for our product. Guides about common pain points are the most read documentation of our organization. How to install our product. How to connect to a specific authentication provider. How to build for a specific platform.
+
+For example, we create a quickstart guide omitting all unnecessary information. Our onboarding experience flourishes when users try our project with the least amount of steps possible. For sophisticated systems we explain how to migrate data from a third-party tool to our product.
+
+Besides onboarding, well-presented how-to guides dramatically reduce frustrations for common errors. Our readers are able to identify errors and navigate our guides to fix them in stressful environments.
 
 More details available at [diataxis.fr/how-to-guides](https://diataxis.fr/how-to-guides/).
 
@@ -84,6 +90,8 @@ The former types of documentation focus on the optimal experience for our user. 
 
 High-quality reference material distinguishes itself with consistency, standards, and searchability. When consulting our references, our user knows exactly where to look and what format to expect. We do not deviate in layout or information within product references. Modern reference documentation showcases examples and may even offer interactive elements for better understanding.
 
+A technical reference with detailed insights referencing error codes and failures supports our reader more.
+
 More details available at [diataxis.fr/reference](https://diataxis.fr/reference/).
 
 ### Explanations
@@ -92,27 +100,17 @@ Another product-driven type of documentation is the explanation. Where technical
 
 We discussed [decision docs and design docs](./planning-implementations.md) in a previous chapter, both are great examples for explanation documentation. Within these documents we consider implementation strategies, potential alternatives, and technical concessions we had to make. Explanations put other types of documentation into context.
 
+Across a projects lifetime we document for different readers. Copywriting and marketing material informing our potential costumer about the strengths of our product. FAQ
+
 More details available at [diataxis.fr/explanation](https://diataxis.fr/explanation/).
 
 ## Who is our reader?
 
-As with everything in this book we improve our documentation iteratively. Procida himself warns against focusing too much on the Diaxis structure of existing documentation, and suggests to continuously consider our reader's needs.
+As with everything in this book we improve our documentation iteratively. We continuously consider our reader's needs and extend, adapt, move, or delete our workings accordingly.
 
-### Language
+Our reader's background drives the language we use. Their technical expertise determines our use of words and acronyms. Documentation for engineers may include the acronym *HTTP* without ever writing out the full term or explaining its capabilities. For other disciplines we consider the relevance of technical information to the task our documentation is trying to achieve. Basics of networking might not be a requirement.
 
-Our reader's background drives the language used. Technical expertise determines the use of certain words and acronyms. Documentation for engineers may use the term *HTTP* without ever writing out the full term or explaining its capabilities. Demographics and culture influence firstly in which language the documentation is written and in what tone.
-
-While we offer English documentation in Japan, we reference interpersonal communcation more formally than in other regions. Humor is also very subjective and region-influenced. Documentation within the same region might differ between organizational culture. Both of the writing entity and the reading entity.
-
-### Usecase
-
-Our reader's intention and situation decides what type of documentation we publish. A reader evaluating our product for potential future use differs greatly from an engineer debugging our tool.
-
-Documentation can add to stressful or frustrating situations if our tool behaves unexpectedly and the engineer encounters a tutorial with 95% useless information. A technical reference with detailed insights referencing error codes and failures supports our reader more.
-
-Across a projects lifetime we document for different readers. Copywriting and marketing material informing our potential costumer about the strengths of our product.
-
-A quickstart guide omitting all unnecessary information. How can a user try our project with the least amount of steps possible. A FAQ answering the most frequently asked questions. A reference about specific implementation details 
+Beyond disciplines, demographics and culture influence the language and tone of what we write. Humor and interpersonal formality is subjective and region-influenced. Documentation within the same region might differ between organizational culture. We consider cultural elements when writing and when reading documentation.
 
 "I am not too interested in the internals, I just want to spin it up and try it out."
 
