@@ -63,7 +63,7 @@ During his time at Canonical, [*Daniele Procida*](https://vurt.eu/) polished his
 
 The following image is taken straight from the Diátaxis website.
 
-[![](https://diataxis.fr/_images/diataxis.png)](https://diataxis.fr/)
+[![Diátaxis framework](https://diataxis.fr/_images/diataxis.png)](https://diataxis.fr/)
 
 ### Tutorials
 
