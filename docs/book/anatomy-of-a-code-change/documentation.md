@@ -11,7 +11,7 @@ This chapter shares proven strategies to embed the process of documenting change
 
 ## Teaching documentation
 
-The act of learning programming (even when taught) is an inherently isolated task. We write code, submit code, and receive a review of our code. We learn about algorithms and data structures. We invert binary trees and study time complexities of hash table implementations. These are necessary lessons and build the foundation of our future career.
+The act of learning programming (even when taught) is an inherently isolated task. We write, submit, and receive reviews of our code. We learn about algorithms and data structures. We invert binary trees and study time complexities of hash table implementations. These are necessary lessons and build the foundation of our future career.
 
 However, when starting our journey into computer science, our peers and mentors seldom focus on documentation. We hear ominous warnings of undocumented code becoming unrecognizable to the author when revisiting a problem six months later. A warning slightly tempered by the fact that at the beginning of our journey, our code will not survive six months.
 
@@ -63,7 +63,7 @@ During his time at Canonical, [*Daniele Procida*](https://vurt.eu/) polished his
 
 The following image is taken straight from the Diátaxis website.
 
-[![Diátaxis framework](https://diataxis.fr/_images/diataxis.png)](https://diataxis.fr/)
+[![Diagram of the Diátaxis framework](https://diataxis.fr/_images/diataxis.png)](https://diataxis.fr/)
 
 ### Tutorials
 
@@ -85,7 +85,7 @@ Topics of how-to guides establish themselves organically for our product. Guides
 
 For example, we create a quickstart guide omitting all unnecessary information. Our onboarding experience flourishes when users try our project with the least amount of steps possible. For sophisticated systems, we explain how to migrate data from a third-party tool to our product.
 
-Besides onboarding, well-presented how-to guides dramatically reduce frustrations for common errors. Our readers are able to identify errors and navigate our guides to fix them in stressful environments.
+Besides onboarding, well-presented how-to guides dramatically reduce frustrations for common errors. Our readers can identify errors and navigate our guides to fix them in stressful environments.
 
 More details available at [diataxis.fr/how-to-guides](https://diataxis.fr/how-to-guides/).
 
