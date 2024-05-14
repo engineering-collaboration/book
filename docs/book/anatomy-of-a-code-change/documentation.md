@@ -88,9 +88,7 @@ More details available at [diataxis.fr/how-to-guides](https://diataxis.fr/how-to
 
 The former types of documentation focus on the optimal experience for our user. We omit information for readability, and guide our reader through the immediately applicable features of our product. Technical reference, however, is fact. The information provided describes measurable and observable behavior. Software reference documentation outlines the anatomy and usage of APIs, classes, and functions. Besides the source code, references are considered as the definitive source of truth.
 
-High-quality reference material distinguishes itself with consistency, standards, and searchability. When consulting our references, our user knows exactly where to look and what format to expect. We do not deviate in layout or information within product references. Modern reference documentation showcases examples and may even offer interactive elements for better understanding.
-
-A technical reference with detailed insights referencing error codes and failures supports our reader more.
+High-quality reference material distinguishes itself with consistency, standards, and searchability. When consulting our references, our user knows exactly where to look and what format to expect. We do not deviate in layout or information within product references. A modern searchable technical reference with detailed descriptions of behavior, return values, edge cases, and interactive examples greases the wheels for our users' adoption.
 
 More details available at [diataxis.fr/reference](https://diataxis.fr/reference/).
 
@@ -100,7 +98,7 @@ Another product-driven type of documentation is the explanation. Where technical
 
 We discussed [decision docs and design docs](./planning-implementations.md) in a previous chapter, both are great examples for explanation documentation. Within these documents we consider implementation strategies, potential alternatives, and technical concessions we had to make. Explanations put other types of documentation into context.
 
-Across a projects lifetime we document for different readers. Copywriting and marketing material informing our potential costumer about the strengths of our product. FAQ
+Publicly, well-written explanations and copywriting material inform our potential costumers about the advantages of our software. Typical examples cover sincere product descriptions, frequently asked questions (FAQ) and factual competitor comparisons.
 
 More details available at [diataxis.fr/explanation](https://diataxis.fr/explanation/).
 
