@@ -1,3 +1,8 @@
+---
+title: Documentation
+description: Proven strategies to reduce the burden of writing documentation while increasing quality.
+---
+
 # Documentation
 
 Documentation is our trade's collective bane. Similar to testing, documentation historically ranked as an afterthought of the software development cycle. Dissimilar to testing, incorrect documentation does not break our build. Errors and oversights in documentation frustrate our users when it is needed, not before.
