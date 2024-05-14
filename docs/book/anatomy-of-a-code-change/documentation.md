@@ -1,6 +1,6 @@
 # Documentation
 
-Documentation is our trade's collective bane. Similar to testing, documentation historically ranked as an afterthought of the software development cycle. Dissimilar to testing, incorrect documentation does not break our build. Errors and oversights in documentation frustrate our users only when it is needed, not before.
+Documentation is our trade's collective bane. Similar to testing, documentation historically ranked as an afterthought of the software development cycle. Dissimilar to testing, incorrect documentation does not break our build. Errors and oversights in documentation frustrate our users when it is needed, not before.
 
 This chapter shares proven strategies to embed the process of documenting changes into our product cycle. Following these standards reduces the burden of writing documentation while increasing quality.
 
@@ -10,11 +10,11 @@ The act of learning programming (even when taught) is an inherently isolated tas
 
 However, when starting our journey into computer science, our peers and mentors seldom focus on documentation. We hear ominous warnings of undocumented code becoming unrecognizable to the author when revisiting a problem six months later. A warning slightly tempered by the fact that at the beginning of our journey, our code will not survive six months.
 
-Thus, the responsibility of teaching documentation falls completely to engineering companies. Within this avenue, we fill empty cups.
+Thus, the responsibility of teaching documentation falls entirely to engineering companies. Within this avenue, we fill empty cups.
 
 ## Shifting left on documentation
 
-Drifting and missing documentation inflict long-term damage to our organization. Through the mid-to-late 2010s, modern delivery frequencies and market competitiveness birthed prophylactic measures for documental detriments.
+Drifting and missing documentation inflict long-term damage to our organization. Through the mid-to-late 2010s, modern delivery frequencies and market competitiveness birthed prophylactic measures for documentary detriments.
 
 Our most effective prevention is to plan for documentation in our work by creating tickets and reserving the time necessary for writing it. Actively shifting left on documentation mandates that we build automation tooling for its continuous integration and delivery.
 
@@ -56,17 +56,17 @@ An industry-wide motivation to consolidate open standards and the rapid inclusio
 
 During his time at Canonical, [*Daniele Procida*](https://vurt.eu/) polished his work on a technical documentation framework, [*Diátaxis*](https://diataxis.fr/). This systematic approach to technical documentation separates it into four styles: tutorials, how-to guides, explanations, and technical references.
 
-The following image is taken straight from the Diataxis website.
+The following image is taken straight from the Diátaxis website.
 
 [![](https://diataxis.fr/_images/diataxis.png)](https://diataxis.fr/)
 
 ### Tutorials
 
-When we find ourselves interested in a new subject, we get started by entering the topic plus the word "tutorial" into our favorite search engine. The result of our query introduces us to guided sessions and workshops. As we have no subject expertise as of yet, we gain contact, comfort, and eventually confidence in the new practice by mimicking the presented material.
+When we find ourselves interested in a new subject, we get started by entering the topic plus the word "tutorial" into our favorite search engine. The result of our query introduces us to guided sessions and workshops. As we have no subject expertise as of yet, we gain contact, comfort, and confidence in the new practice by mimicking the presented material.
 
 When creating a tutorial, we stay aware of the imbalance of expertise. Our lesson plan consists of a clear starting point and a practical goal our student can run when completed. We introduce them to the nomenclature of our documentation's subject. When progressing through the lesson, we provide frequent results to landmark the journey. A well-structured tutorial delivers transparent progress and reliable results.
 
-Although didactically presented by a teacher, tutorials are not lectures. We stay away from explanations that are not directly applicable to the task at hand. An overload of information convolutes our students' path to an actionable result. As teachers, we are not able to determine what our students are going to learn, only to facilitate an environment of learning. Our student may pursue further knowledge later at their discretion and available cognitive load.
+Although didactically presented by a teacher, tutorials are not lectures. We stay away from explanations that are not directly applicable to the task at hand. An overload of information convolutes our students' path to an actionable result. As teachers, we are not able to determine what our students are going to learn, <!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> to facilitate an environment of learning. Our student may pursue further knowledge later at their discretion and available cognitive load.
 
 Our user explores our product with the help of tutorials and example procedures. Internally, we create tutorials for demo projects to evangelize new technology or tools we created.
 
@@ -86,9 +86,9 @@ More details available at [diataxis.fr/how-to-guides](https://diataxis.fr/how-to
 
 ### Technical References
 
-The former types of documentation focus on the optimal experience for our user. We omit information for readability and guide our reader through the immediately applicable features of our product. Technical reference, however, is fact. The information provided describes measurable and observable behavior. Software reference documentation outlines the anatomy and usage of APIs, classes, and functions. Besides the source code, references are considered the definitive source of truth.
+The former types of documentation focus on the optimal experience for our user. We omit information for readability and guide our reader through the <!-- vale write-good.Weasel = NO -->immediately<!-- vale write-good.Weasel = YES --> applicable features of our product. Technical reference, however, is fact. The information provided describes measurable and observable behavior. Software reference documentation outlines the anatomy and usage of APIs, classes, and functions. Besides the source code, references are considered the definitive source of truth.
 
-High-quality reference material distinguishes itself with consistency, standards, and searchability. When consulting our references, our user knows exactly where to look and what format to expect. We do not deviate in layout or information within product references. A modern searchable technical reference with detailed descriptions of behavior, return values, edge cases, and interactive examples greases the wheels for our users' adoption.
+High-quality reference material distinguishes itself with consistency, standards, and searchability. When consulting our references, our user knows where to look and what format to expect. We do not deviate in layout or information within product references. A modern searchable technical reference with detailed descriptions of behavior, return values, edge cases, and interactive examples greases the wheels for our users' adoption.
 
 More details available at [diataxis.fr/reference](https://diataxis.fr/reference/).
 
@@ -110,7 +110,7 @@ Our readers' background drives the language we use. Their technical expertise de
 
 Beyond disciplines, demographics and culture influence the language and tone of what we write. Humor and interpersonal formality are subjective and region-influenced. Documentation within the same region might differ between organizational cultures. We consider cultural elements when writing and when reading documentation.
 
-After considering the Diataxis-axis and the language, we consider where to place our documentation. We place quickstarts for software into the README within the source code repository of our product. Further information on external platforms or wiki pages. Information needed for the usage of our software cannot be placed in environments that require other credentials.
+After considering the Diátaxis-axis and the language, we consider where to place our documentation. We place quickstarts for software into the README within the source code repository of our product. Further information on external platforms or wiki pages. Information needed for the usage of our software cannot be placed in environments that require other credentials.
 
 ## Documentation media
 
@@ -126,7 +126,7 @@ When selecting the appropriate media for our documentation, we consider the foll
 
 ### Text
 
-Written text is the most widespread form of documentation. It is easily consumable across devices and has a low footprint in terms of storage and bandwidth. Due to the nature of how we encode text digitally, information is easily searchable. Minor updates to our product require only minor edits to our documentation. Modern tooling makes it trivial to compile written documentation from various sources, e.g., meetings, videos, schemas, dictations. Accessibility tooling converts words into audible sounds or tactile patterns.
+Written text is the most widespread form of documentation. It is adaptable across devices and has a low footprint in terms of storage and bandwidth. Due to the nature of how we encode text digitally, information is natively searchable. Minor updates to our product require minor edits to our documentation. Modern tooling makes it trivial to compile written documentation from various sources, e.g., meetings, videos, schemas, dictations. Accessibility tooling converts words into audible sounds or tactile patterns.
 
 High-quality written documentation requires a lot of effort to produce. Any written work demands multiple rewrites to iron out ambiguities and comprehensive guides with logical steps. Text-based documentation is ultimately limited by the writing abilities of the author combined with the resources allocated to work on it.
 
@@ -134,7 +134,7 @@ Modern tooling augments platform documentation with concise examples of client c
 
 ### Images
 
-Providing visual context makes documentation immediately more digestible. A user understands if the tool works as intended or if they are encountering unexpected errors.
+Providing visual context makes documentation more digestible. A user understands if the tool works as intended or if they are encountering unexpected errors.
 
 Screenshots of tools and processes require less effort than writing documentation. For reasons of searchability and accessibility, we tag images with keywords and alt-text for descriptions.
 
@@ -148,7 +148,7 @@ Videos require additional resources to be stored, streamed, and viewed. We expec
 
 ### Embedded Documentation
 
-This form of documentation targets other developers reading our source code. It is the most frequently read by our developers and most crucial to be up-to-date. Inline comments address context and thoughts not easily readable in the code. Class and function comments provide insight into their usage.
+This form of documentation targets other developers reading our source code. It is the most frequently read by our developers and most crucial to be up-to-date. Inline comments address context for opaque code fragments. Class and function comments provide insight into their usage.
 
 !!! note
     We're not entering the religious space of naming conventions. Suffice it to say **consistent** naming and formatting reduce cognitive load when reading source code. We follow the languages' standard practice. We avoid any mention of `foo` and `bar`. 
@@ -158,4 +158,7 @@ This form of documentation targets other developers reading our source code. It 
     - In your opinion what does `orderDesc` mean in a food delivery app?
     - In your opinion what does `orderDesc` mean in a spreadsheet application?
 
+<!-- vale alex.Ablist = NO -->
+<!-- special characters -->
 Naming conventions have derailed into a zealous battlefield of uppercases, lowercases, and special characters. Our organization focuses on enforcing *terming conventions*. Consistent definition and use of infrastructure terms (server, backend, service), asynchronicity terms (concurrency, thread, process), and release terms (commit, version, revision). Using consistent terms across the codebase assists in establishing context for the code block.
+<!-- vale alex.Ablist = YES -->
