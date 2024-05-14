@@ -110,21 +110,7 @@ Our reader's background drives the language we use. Their technical expertise de
 
 Beyond disciplines, demographics and culture influence the language and tone of what we write. Humor and interpersonal formality is subjective and region-influenced. Documentation within the same region might differ between organizational culture. We consider cultural elements when writing and when reading documentation.
 
-"I am not too interested in the internals, I just want to spin it up and try it out."
-
-If over the last month five people asked you. How-to in README
-
-"Where do I find the implementation of that particular behaviour?"
-
-you might consider adding a FAQ to the docs. Reference
-
-Documentation of processes.
-
-semantic connections to error messages
-
-wiki vs repo vs third platform with hard refs
-
-authentication needed
+After considering the Diataxis-axis and the language we consider where to place out documentation. We place quickstarts for software into the README within the source code repository of our product. Further information on external platforms or wiki pages. Information needed for the usage of our software cannot be placed in environments that require other credentials.
 
 ## Documentation media
 
@@ -136,36 +122,40 @@ When selecting the appropriate media for our documentation we consider the follo
 - How much effort is it to maintain the docs?
 - How searchable is the format?
 
+(WIP)
+
 ### Text
 
-Written text is the most widespread form of documentation. It is easily consumable across devices and has a low footprint in terms of storage and bandwidth. Due to the nature of how we encode text digitally, information is easily searchable. We can start reading from the middle. Minor updates to our product require only minor edits to our documentation. Modern tooling makes it trivial to compile written documentation from various sources, e.g. meetings, videos, schemas, dictations. Accessability tooling converts words into audible sounds or tactile patterns.
+Written text is the most widespread form of documentation. It is easily consumable across devices and has a low footprint in terms of storage and bandwidth. Due to the nature of how we encode text digitally, information is easily searchable. Minor updates to our product require only minor edits to our documentation. Modern tooling makes it trivial to compile written documentation from various sources, e.g. meetings, videos, schemas, dictations. Accessability tooling converts words into audible sounds or tactile patterns.
 
-All engineers testify to the required effort to produce high-quality written documentation. Any written work requires multiple rewrites to iron out ambiguities and comprehensive guides with logical steps. Any documentation is ultimately limited by the writing abilities of the author combined with the resources allocated to work on it.
+High-quality written documentation requires a lot of effort to produce. Any written work demands multiple rewrites to iron out ambiguities and comprehensive guides with logical steps. Text-based documentation is ultimately limited by the writing abilities of the author combined with the resources allocated to work on it.
 
-Modern tools enable us to render decent text from dictations. Modern tooling augment platform documentation with concise examples of client calls in various programming languages and the ability to call API endpoints in a sandbox environment without any setup.
+Modern tooling augment platform documentation with concise examples of client calls in various programming languages and the ability to call API endpoints in a sandbox environment without any setup.
 
 ### Images
 
-Providing additional context with visual aids makes documentation immediately more digestable than explaining with words. A user is able to understand if the tool works as intended or if they are encountering unexpected errors.
+Providing visual context makes documentation immediately more digestable. A user is able to understand if the tool works as intended or if they are encountering unexpected errors.
 
 Screenshots of tools and processes require less effort than writing documentation. For reasons of searchability and accessability we tag images with keywords and alt-text for descriptions.
 
 ### Video
 
-If a picture is worth a thousand words, a video is worth about thirty thousand per second. Quite the literary achievement. Besides a support session, a video is the most succour we can offer our user. Our viewer is prevue to the entire context and continously validate the state to the expected one of the video.
+If a picture is worth a thousand words, a video is worth about thirty thousand per second. Quite the literary achievement. Besides a support session, a video is the most succour we can offer our user. Our viewer is prevue to the entire context and continuously validate the state to the expected one of the video.
 
 Creating a screen recording of a feature requires less effort of our engineers than a succinctly written documentation of equal value. The major downside of videos is that minor changes require a complete re-recording, as we cannot modify small portions as we could with text documents.
 
-Video require additional resources to be stored, streamed, and viewed. We expect our user to have headphones or be in a quiet environment. Video documentations benefit from semantic tagging the content across the timeline. Video transcripts enhance searchability and accessability.
+Videos require additional resources to be stored, streamed, and viewed. We expect our user to have headphones or be in a quiet environment. Video documentation benefits from semantic tagging of the content across the timeline. Video transcripts enhance searchability and accessability.
 
 ### Embedded Documentation
 
-This form of documentation targets other developers reading our source code. It is the most frequently read and most crucial to be up-to-date. Inline comments address context and thoughts not easily readable in the code. Class and function comments provide insight of its usage.
+This form of documentation targets other developers reading our source code. It is the most frequently read by our developers and most crucial to be up-to-date. Inline comments address context and thoughts not easily readable in the code. Class and function comments provide insight of its usage.
 
-Consistent naming and formatting reduces cognitive load when reading source code. A name is not a name in itself, but rather the context it is used within.
+!!! note
+    We're not entering the religious space of naming conventions. Suffice to say **consistent** naming and formatting reduces cognitive load when reading source code. We follow the languages' standard practice. We avoid any mention of `foo` and `bar`. 
+    
+    A name is not a name in itself, but rather the context it is used within.
 
-In your opinion what does `orderDesc` mean in a food delivery app?
-In your opinion what does `orderDesc` mean in a spread sheet application?
+    - In your opinion what does `orderDesc` mean in a food delivery app?
+    - In your opinion what does `orderDesc` mean in a spread sheet application?
 
-More important than 
-This is what you want to be focused on. Enforce a definition and naming of broad terms. Server vs backend vs service. Using consistent terms across the code base assists on establishing context for the code block.
+Naming conventions have derailed into a zealous battlefield of uppercases, lowercases, and special characters. Our organization focuses on enforcing *terming conventions*. Consistent definition and use of infrastructure terms (server, backend, service), asynchronicity terms (concurrency, thread, process), and release terms (commit, version, revision). Using consistent terms across the code base assists on establishing context for the code block.
