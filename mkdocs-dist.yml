@@ -123,6 +123,7 @@ nav:
       - Release Mechanisms: './book/anatomy-of-a-code-change/release-mechanisms.md'
       - Artifact Management: './book/anatomy-of-a-code-change/artifact-management.md'
       - Release Strategies: './book/anatomy-of-a-code-change/release-strategies.md'
+      - Documentation: './book/anatomy-of-a-code-change/documentation.md'
 
   - Resources: 'resources.md'
   - Changelog: 'changelog.md'

@@ -34,9 +34,9 @@ That being said, a recent rise of high-quality open-source software distributed 
 
 ### Security
 
-Consuming unvetted upstream dependencies provides an exploit pathway for supply chain attacks. Third-party code and binaries may introduce vulnerabilities into our software due to human error, heterogeneous systems, or malicious intentions. This issue has developed such an exposure that many development tools offer solutions for detecting vulnerabilities out of the box. At a minimum, we use those tools.
+Consuming unvetted upstream dependencies provides an exploit pathway for supply chain attacks. Third-party code and binaries may introduce vulnerabilities into our software due to human error, heterogeneous systems, or malicious intentions. This issue has developed such an exposure that modern development tools offer solutions for detecting vulnerabilities out of the box. At a minimum, we use those tools.
 
-Over the last few years, an effort towards a standardized format has been made. Mirroring traditional supply chain management, the [software bill of materials (SBOM)](https://www.ntia.gov/page/software-bill-materials) has emerged as a key building block in software security and software supply chain risk management. When distributing our software, we list the various components and dependencies within our product and system.
+Over the last half decade, an effort towards a standardized format has been made. Mirroring traditional supply chain management, the [software bill of materials (SBOM)](https://www.ntia.gov/page/software-bill-materials) has emerged as a key building block in software security and software supply chain risk management. When distributing our software, we list the various components and dependencies within our product and system.
 
 ### Availability
 

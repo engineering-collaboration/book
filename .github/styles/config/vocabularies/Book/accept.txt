@@ -7,6 +7,9 @@ Hyrum
 Jez
 Forsgren
 Cockburn
+Daniele
+Procida
+Diátaxis
 API
 CTO
 SDK
@@ -55,3 +58,8 @@ slapdashery
 unidirectionally
 weekly
 unvetted
+findability
+onboarding
+uppercases
+lowercases
+asynchronicity

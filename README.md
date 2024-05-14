@@ -45,3 +45,17 @@ The [contribution guidelines](CONTRIBUTING.md) document strategies regarding pro
 - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 - [Flowbite](https://flowbite.com/)
 - [vale.sh](https://vale.sh/)
+
+## Helpful commands
+
+```bash
+# render and serve book
+mkdocs serve
+
+# lint using vale.sh
+bash ci/vale.bash
+
+# word count
+# execute in ./docs/book
+find . -type f -exec cat {} + | wc -w
+```
