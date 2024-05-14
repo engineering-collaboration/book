@@ -156,8 +156,8 @@ Videos require additional resources to be stored, streamed, and viewed. We expec
 This form of documentation targets other developers reading our source code. It is the most frequently read by our developers and most crucial to be up-to-date. Inline comments address context for opaque code fragments. Class and function comments provide insight into their usage.
 
 !!! note
-    We're not entering the religious space of naming conventions. Suffice it to say **consistent** naming and formatting reduce cognitive load when reading source code. We follow the languages' standard practice. We avoid any mention of `foo` and `bar`. 
-    
+    We're not entering the religious space of naming conventions. Suffice it to say **consistent** naming and formatting reduce cognitive load when reading source code. We follow the languages' standard practice. We avoid any mention of `foo` and `bar`.
+
     A name is not a name in itself but rather the context it is used within.
 
     - In your opinion what does `orderDesc` mean in a food delivery app?
