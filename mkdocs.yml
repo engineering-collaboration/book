@@ -121,7 +121,7 @@ nav:
       - Release Strategies: './book/anatomy-of-a-code-change/release-strategies.md'
 
       - Documentation: './book/anatomy-of-a-code-change/documentation.md'
-      - Repository Strategies: './book/anatomy-of-a-code-change/repo.md'
+      - Repository Strategies: './book/anatomy-of-a-code-change/repository-strategies.md'
       - Infrastructure as Code: './book/anatomy-of-a-code-change/iac.md'
       - Monitoring and Observability: './book/anatomy-of-a-code-change/monitoring.md'
 
