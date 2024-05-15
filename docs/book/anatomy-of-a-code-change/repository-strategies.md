@@ -34,31 +34,14 @@ mixing source code, CI, CD, artifact storage, docs platform, project tracking
 
 + team ownership and rules
 
-## The basics of a repository
-
-Regardless of your repository design strategy, your typical repository should cover 
-
-- Code
-- Versioning
-- Wiki and Docs
-- Codeowners
-- Communication and support channels
-- Artifacts
-
-
 ## Standardize onboarding
 
-Certain domains have established good practices when it comes to Documentation.
+Regardless of our repository design strategy, a common project consists of source code, documentation, and instructions for CI/CD processes. Throughout our organization, teams have the freedom to work in a way most suitable to them. The variation across teams complicates standardized onboarding for project collaborators across teams. Hence, a standardized process give way to a shared entrypoint. A README file in the root of our project informs entrant engineers about working with our source code and covers:
 
-Instead of standardizing documentation practices and platforms we instead standardize a README which provides directions and locations of where to find the desired information.
+Quickstart instructions to get project running in the least amount of steps necessary. From installing dependencies to running setup scripts and running and example to verify our software is functioning properly. Beyond running our project, contributors need to test, build, and run the project locally.
 
+The location of documentation beyond the README. Further information and references might be available within a docs directory of the project, an appended wiki, or a dedicated documentation page available through the browser.
 
+Engineers self-discover the answer to nine out of ten questions by reading through the source code and the available documentation. To address the full Decalogue of woes, our README describes how to contact available support channels. In lieu, we consult the code owners file. A list of responsible personnel, authorized to integrate changes into the repository's trunk.
 
-Ensure consistent tooling throughout teams (at a minimum) and schemas throughout organizations.
-
-- Code
-- Versioning
-- Wiki and Docs
-- Codeowners
-- Communication and support channels
-- Artifacts
+- Contribution guidelines PR, test, reviews etc CI/CD including the artifact location.
