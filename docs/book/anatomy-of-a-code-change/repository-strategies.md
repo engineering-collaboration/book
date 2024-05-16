@@ -18,30 +18,42 @@ mixing source code, CI, CD, artifact storage, docs platform, project tracking
 
 ## Monorepo
 
-+ shared utils code
-+ everybody has access automatically
-+ no silos
-+ large scale changes and refactoring
-+ standards and static analysis
-+ visibility
-+ release of entire system
+shared utils code
+everybody has access automatically
+no silos
+large scale changes and refactoring
+standards and static analysis
+visibility
+release of entire system
 
-- requires sparse checkout
-- lots of traffic
-- difficult to setup ci/cd
+requires sparse checkout
+lots of traffic
+difficult to setup ci/cd
 
 ## Multiple repos
 
 + team ownership and rules
 
-## Standardize onboarding
+## Repository README
 
-Regardless of our repository design strategy, a common project consists of source code, documentation, and instructions for CI/CD processes. Throughout our organization, teams have the freedom to work in a way most suitable to them. The variation across teams complicates standardized onboarding for project collaborators across teams. Hence, a standardized process give way to a shared entrypoint. A README file in the root of our project informs entrant engineers about working with our source code and covers:
+The freedom of choosing a way of work across teams complicates standardizing the onboarding process for new project collaborators. Hence, standardized processes give way to a shared entrypoint. A README file in the root of our project informs entrant engineers about how to work with the project.
 
-Quickstart instructions to get project running in the least amount of steps necessary. From installing dependencies to running setup scripts and running and example to verify our software is functioning properly. Beyond running our project, contributors need to test, build, and run the project locally.
+### Quickstart
 
-The location of documentation beyond the README. Further information and references might be available within a docs directory of the project, an appended wiki, or a dedicated documentation page available through the browser.
+Quickstart instructions explain how to get the project up and running in the least amount of steps necessary. From installing dependencies to executing setup scripts, and completing an example to verify the software is functioning properly. Beyond operating our project, contributors need to test, build, and run the project locally.
+
+### Further documentation
+
+A README file does not contain the entire documentation of our software. Any information beyond the setup process might be available within a docs directory of the project, an appended wiki, or a dedicated documentation page available through the browser. Our README lists the location of available tutorials, guides, references, and explanations.
+
+### Support channels
 
 Engineers self-discover the answer to nine out of ten questions by reading through the source code and the available documentation. To address the full Decalogue of woes, our README describes how to contact available support channels. In lieu, we consult the code owners file. A list of responsible personnel, authorized to integrate changes into the repository's trunk.
 
-- Contribution guidelines PR, test, reviews etc CI/CD including the artifact location.
+### Contribution guidelines
+
+To merge changes, future contributors need to be aware of our integration processes. Contributions guidelines outline the steps of filing bug reports and feature requests, working on the code base, running automated CI tasks, and requesting code reviews. Additional guidelines might also cover the language used in Pull requests and the practices of commenting and testing code for this project. To preempt questions or duplicate work, we share hyperlinks to the immediate roadmap and long-term backlog of our product.
+
+### Distribution information
+
+Consumers of our distribution require information about the product's distribution. The location of distribution artifacts, such as executables, libraries, packages, and container images, combined with the versioning scheme ensure our users install the intended release.
