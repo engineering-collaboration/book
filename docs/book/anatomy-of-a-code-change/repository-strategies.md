@@ -4,19 +4,17 @@ Repositories hold our source code, documentation, infrastructure definitions, CI
 
 ## Monorepository vs multiple repositories
 
-Our organization's repository strategies mirrors the team constellation and module composition of our product.
+When working on independently deployable services or applications we organize the projects as separate repositories (multirepo) or within a single repository (monorepo). A distinguished company using the monorepo approach is Google. The company evangelized managing its entire source across all projects within a single code repository. All engineers work within that monorepo.
 
-Our products are independently deployable and depend on artifacts of other products. We consume libraries and binaries of other repository. The use of submodules indicates hard dependencies that might benefit from consolidating code into a single repository.
-
-Google evangelized the strategy of a monorepo. Meaning its entire source across all projects reside within a single code repository. All engineers work within that monorepo. It works for Google.
-
-Large overlap of shared code is easier to manage in a single repository. Large-scale changes and refactors within a single repository represent a working state. Refactors across repositories requires external knowledge about compatible snapshots.
+Independent products within an organization depend on shared code in form of common problems. Especially within large-scale organizations, such as Google. A major advantage of the monorepo strategy is that the overlap of shared code is easier to manage. Large-scale changes and refactors within a single repository represent a working state. Refactors across multiple repositories requires external knowledge about compatible snapshots.
 
 We organically tear down silos, but deal with increased noise of collaborators. At a given size, we implement the concept of a merge queue, or throw linear history out of the window. It becomes easier to enforce company wide standards and static analysis. Moving engineers between teams becomes less of a bother.
 
-In the end, we go with the approach that requires the least amount of proprietary effort.
-
 The CI/CD workflows become verbose and we ensure hermetic environments for each run. However, a consolidated CD system means we are able to deploy the entire system. Provided our CD runs are embedded within our repository. Larger projects rely on external CD tools.
+
+Our products are independently deployable and depend on artifacts of other products. We consume libraries and binaries of other repository. The use of submodules indicates hard dependencies that might benefit from consolidating code into a single repository.
+
+In the end, we go with the approach that requires the least amount of proprietary effort. Our organization's repository strategies mirrors the team constellation and module composition of our product.
 
 ## Monorepo
 
