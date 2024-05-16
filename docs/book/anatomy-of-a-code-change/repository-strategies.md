@@ -1,4 +1,8 @@
-# Repo
+# Repository Strategies
+
+Repositories hold our source code, documentation, infrastructure definitions, CI scripts, and build instructions. Most of our staff works with our repositories on a day-to-day basis and use them as the main tool for collaborating with colleagues.
+
+## Monorepository vs multiple repositories
 
 Our organization's repository strategies mirrors the team constellation and module composition of our product.
 
@@ -14,8 +18,6 @@ In the end, we go with the approach that requires the least amount of proprietar
 
 The CI/CD workflows become verbose and we ensure hermetic environments for each run. However, a consolidated CD system means we are able to deploy the entire system. Provided our CD runs are embedded within our repository. Larger projects rely on external CD tools.
 
-mixing source code, CI, CD, artifact storage, docs platform, project tracking
-
 ## Monorepo
 
 shared utils code
@@ -29,14 +31,11 @@ release of entire system
 requires sparse checkout
 lots of traffic
 difficult to setup ci/cd
-
-## Multiple repos
-
-+ team ownership and rules
+specific team ownership and rules
 
 ## Repository README
 
-The freedom of choosing a way of work across teams complicates standardizing the onboarding process for new project collaborators. Hence, standardized processes give way to a shared entrypoint. A README file in the root of our project informs entrant engineers about how to work with the project.
+The freedom of choosing a way of work across teams complicates standardizing the onboarding process for new project collaborators. Hence, standardized processes give way to a shared entrypoint. A README file in the root of our project informs entrant engineers about how to work with the project. A well-written README indicates a high-quality product.
 
 ### Quickstart
 
