@@ -6,9 +6,9 @@ Repositories hold our source code, documentation, infrastructure definitions, CI
 
 When working on independently deployable services or applications we organize the projects as separate repositories (multirepo) or within a single repository (monorepo). A distinguished company using the monorepo approach is Google. The company evangelized managing its entire source across all projects within a single code repository. All engineers work within that monorepo.
 
-Independent products within an organization depend on shared code in form of common problems. Especially within large-scale organizations, such as Google. A major advantage of the monorepo strategy is that the overlap of shared code is easier to manage. Large-scale changes and refactors within a single repository represent a working state. Refactors across multiple repositories requires external knowledge about compatible snapshots.
+Independent products within an organization depend on shared code solving common problems. A major advantage of the monorepo strategy is that the overlap of shared code is easier to manage. Large-scale changes and refactors within a single repository represent a working state. Refactors across multiple repositories requires external knowledge about compatible snapshots.
 
-We organically tear down silos, but deal with increased noise of collaborators. At a given size, we implement the concept of a merge queue, or throw linear history out of the window. It becomes easier to enforce company wide standards and static analysis. Moving engineers between teams becomes less of a bother.
+Monorepos organically tear down communication silos across teams, but we deal with increased noise of collaborators on a daily basis. At a given size, we necessarily implement the concept of a merge queue, or throw linear history out of the window. Merge queues rebase and integrate the changes asynchronously and one at a time. It becomes easier to enforce company wide standards and static analysis. As a result, moving engineers between teams becomes less of a bother.
 
 The CI/CD workflows become verbose and we ensure hermetic environments for each run. However, a consolidated CD system means we are able to deploy the entire system. Provided our CD runs are embedded within our repository. Larger projects rely on external CD tools.
 
