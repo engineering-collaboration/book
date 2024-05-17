@@ -63,3 +63,6 @@ onboarding
 uppercases
 lowercases
 asynchronicity
+[Mm]onorepository
+[Mm]onorepo
+[Mm]ultirepo
