@@ -6,34 +6,25 @@ Repositories hold our source code, documentation, infrastructure definitions, CI
 
 When working on independently deployable services or applications we organize the projects as separate repositories (multirepo) or within a single repository (monorepo). A distinguished company using the monorepo approach is Google. The company evangelized managing its entire source across all projects within a single code repository. All engineers work within that monorepo.
 
+### Code sharing
+
 Independent products within an organization depend on shared code solving common problems. A major advantage of the monorepo strategy is that the overlap of shared code is easier to manage. Large-scale changes and refactors within a single repository represent a working state. Refactors across multiple repositories requires external knowledge about compatible snapshots.
+
+Modern software products depend on packages, libraries, and binaries of third-party providers. Consuming artifacts of other products does not signal the need of a shared repository. However, a substantial use of git submodules indicates hard dependencies on source code, that might benefit from consolidating the projects into a single repository.
+
+Our engineers have read access to the entire source code across the organization and write privileges to their respective work. However, at a given scale we provide tooling for efficient transfer and storage of data. We cannot expect an intern with a narrow range of responsibilities to download and save a decade of code changes across all products.
+
+### Collaboration
 
 Monorepos organically tear down communication silos across teams, but we deal with increased noise of collaborators on a daily basis. At a given size, we necessarily implement the concept of a merge queue, or throw linear history out of the window. Merge queues rebase and integrate the changes asynchronously and one at a time. It becomes easier to enforce company wide standards and static analysis. As a result, moving engineers between teams becomes less of a bother.
 
-The CI/CD workflows become verbose and we ensure hermetic environments for each run. However, a consolidated CD system means we are able to deploy the entire system. Provided our CD runs are embedded within our repository. Larger projects rely on external CD tools.
+In monorepos we encounter additional overhead with creating and handling CI workflows. We require additional dedicated personnel to ensure efficient automation runs in hermetic environments. However, a consolidated CD system means every team has the tools and know-how to deploy the entire system.
 
-Our products are independently deployable and depend on artifacts of other products. We consume libraries and binaries of other repository. The use of submodules indicates hard dependencies that might benefit from consolidating code into a single repository.
+In the end, we go with the approach that requires the least amount of proprietary effort. Our organization's repository strategies mirrors the team constellation and module composition of our product. A growing module within a repository might require a spin-out. An increase of shared code across services leads to consolidation.
 
-In the end, we go with the approach that requires the least amount of proprietary effort. Our organization's repository strategies mirrors the team constellation and module composition of our product.
+## Repository onboarding
 
-## Monorepo
-
-shared utils code
-everybody has access automatically
-no silos
-large scale changes and refactoring
-standards and static analysis
-visibility
-release of entire system
-
-requires sparse checkout
-lots of traffic
-difficult to setup ci/cd
-specific team ownership and rules
-
-## Repository README
-
-The freedom of choosing a way of work across teams complicates standardizing the onboarding process for new project collaborators. Hence, standardized processes give way to a shared entrypoint. A README file in the root of our project informs entrant engineers about how to work with the project. A well-written README indicates a high-quality product.
+The freedom of choosing a way of work across teams complicates standardizing the onboarding process for new project collaborators. Hence, standardized processes give way to a shared entrypoint. A `README` file in the root of our project informs entrant engineers about how to work with the project. A well-written `README` indicates a high-quality product.
 
 ### Quickstart
 
@@ -41,11 +32,11 @@ Quickstart instructions explain how to get the project up and running in the lea
 
 ### Further documentation
 
-A README file does not contain the entire documentation of our software. Any information beyond the setup process might be available within a docs directory of the project, an appended wiki, or a dedicated documentation page available through the browser. Our README lists the location of available tutorials, guides, references, and explanations.
+A `README` file does not contain the entire documentation of our software. Any information beyond the setup process might be available within a docs directory of the project, an appended wiki, or a dedicated documentation page available through the browser. Our `README` lists the location of available tutorials, guides, references, and explanations.
 
 ### Support channels
 
-Engineers self-discover the answer to nine out of ten questions by reading through the source code and the available documentation. To address the full Decalogue of woes, our README describes how to contact available support channels. In lieu, we consult the code owners file. A list of responsible personnel, authorized to integrate changes into the repository's trunk.
+Engineers self-discover the answer to nine out of ten questions by reading through the source code and the available documentation. To address the full Decalogue of woes, our `README` describes how to contact available support channels. In lieu, we consult the code owners file. A list of responsible personnel, authorized to integrate changes into the repository's trunk.
 
 ### Contribution guidelines
 
