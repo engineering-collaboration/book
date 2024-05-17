@@ -1,3 +1,8 @@
+---
+title: Repository Strategies
+description: An introduction to monorepositories, multiple repositories, and onboarding contributors.
+---
+
 # Repository Strategies
 
 Repositories hold our source code, documentation, infrastructure definitions, CI scripts, and build instructions. Most of our staff work with our repositories on a day-to-day basis and use them as the main tool for collaborating with colleagues.
