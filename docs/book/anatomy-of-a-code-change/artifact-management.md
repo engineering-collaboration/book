@@ -54,6 +54,16 @@ Owning our software dependencies is the first step of assuring consistent artifa
 
 We rely on the homogeneity and isolation of our build procedures. Meaning, any previous action does not influence our current build process. Using containerization technology, we are able to create hermetic build environments offering the required tools. Once we are able to provide self-hosted hermetic environments, we tackle the issue of build time performance and resource optimization. For example, monolithic software designs seldom require a full rebuild and benefit from shared compilation caches.
 
+## Infrastructure as Code (IaC)
+
+Our software artifacts run on hardware. A truism worth noting since the latter influences the former. When dedicated personnel manually sets up hardware, a combination of CLI commands, scripts, and tools creates the final environment. The steps and their order only known to the person providing the hardware - even they will forget it.
+
+IaC eliminates the above case by deterministically defining the hardware environment. At setup and during runtime. Configuration drift can be due to manual changes, software updates or errors, or entropy. Regularly check the desired configuration against its actual configuration and self-correct inconsistencies. Recreate server from scratch from the IaC recipe. desired state management
+
+The "code" part of IaC is not limited to having and checking hardware definitions. But expanding our existing toolset to cover hardware needs. We version the IaC configs. Hard reference to the state of the source code. We can spin up the project and be certain of capabilities and operability. Audits. All versions can be restored to any time we would need it from the past
+
+Use code integration process for hardware definition. We create feature branches, run tests, static analysis, and review changes.
+
 ## Semantic Versioning
 
 <!-- vale Vale.Avoid = NO -->

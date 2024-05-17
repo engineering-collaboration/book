@@ -28,7 +28,6 @@ The current progress of this section:
 - [x] Release strategies
 - [x] Documentation
 - [x] Repository strategies
-- [ ] Infrastructure as code
 - [ ] Monitoring and observability
 
 ## Version Control
