@@ -56,6 +56,5 @@ mkdocs serve
 bash ci/vale.bash
 
 # word count
-# execute in ./docs/book
-find . -type f -exec cat {} + | wc -w
+find ./docs/book/ -type f -exec cat {} + | wc -w
 ```
