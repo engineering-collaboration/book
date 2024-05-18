@@ -56,13 +56,13 @@ We rely on the homogeneity and isolation of our build procedures. Meaning, any p
 
 ## Infrastructure as Code (IaC)
 
-Our software artifacts run on hardware. A truism that gains attention when one outgrows the other. Dedicated personnel manually sets up hardware by executing a combination of CLI commands, scripts, and tools. The steps and their order only known to the person providing the hardware. The final environment is called a *snowflake server*, unique in its appearance.
+Our software artifacts run on hardware. A truism that gains attention when one outgrows the other. Dedicated personnel manually set up hardware by executing a combination of CLI commands, scripts, and tools. The steps and their order only known to the person providing the hardware. The final environment is called a *snowflake server*, unique in its appearance.
 
-Automated environments based on IaC definitions provide deterministic hardware conditions; at setup and over time. Changes to the runtime environment due to software updates, errors, or entropy cause *configuration drift*. Desired state management of IaC regularly checks the desired configuration against its actual configuration and self-corrects inconsistencies. Automated self-healing properties and disaster recovery make it easy to kill and restart servers, rather than running in non-dterministic states. security concern.
+Automated environments based on IaC definitions provide deterministic hardware conditions at setup and over time. Changes to the runtime environment due to software updates, errors, or entropy cause *configuration drift*. Desired state management of IaC regularly checks the desired configuration against its actual configuration and self-corrects inconsistencies. Automated self-healing properties and disaster recovery enable us to kill and restart sanitized servers. We avoid running non-deterministic states that introduce security concerns.
 
 Infrastructure *as code* is not limited to definition files stored in text-based formats. We expand the processes of source code development to our infrastructure provisions. Using source control, we version our IaC configurations - preferably within the same repository as the hosted software. The integration steps used for source code now cover hardware definitions; we create feature branches, run automated tests and static analysis, and review changes before deployment.
 
-Versioning hardware configurations alongside source code introduces a hard reference between the two. Reverting to any state of our project we have certainty of compatibility and operability between software and hardware. Definitively reconstructing the state of our system is a necessity for audits in certain industries.
+Versioning hardware configurations alongside source code introduces a hard reference between the two. By reverting to any state of our project, we have certainty of compatibility and operability between software and hardware. Definitively reconstructing the state of our system is a necessity for audits in certain industries.
 
 ## Semantic Versioning
 
