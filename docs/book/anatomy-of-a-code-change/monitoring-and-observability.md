@@ -24,16 +24,15 @@ What gets measured gets managed.
 
 ### Logs
 
-Human readable textual information. Machine metadata, supplied by Otel schema and loggers. Parsable format.
+When logging information, we serialize human readable textual information to offer insight on the happenings of our software. Logging data models offer metadata and context for the readable message output. *OpenTelemetry* supplies a standardized schema for a broad spectrum of shared fields. For product specific features we extend the schema with our necessary fields.
 
-log levels
-log retention
-sensitive data
-logging performance and sampling
-error logs
-info logs
-log aggregation between services
-request id and hop counter additional to time
+For interoperability, we print our logs in a standardized parsable format, typically json. For distributed services reading the logs directly from the providing source proves impossible. Log aggregation. request id and hop counter additional to time
+
+Log levels. Never print DEBUG levels in production. Performance and security. Never print sensitive information, regardless of log level.
+
+Configuring our log output by minimum severity level improves performance. Additionally, we introduce a sampling time, to avoid printing redundant information. Lower storage, less performance overhead. We report the number of repetitions.
+
+Storage and log retention.
 
 ### Metrics
 
