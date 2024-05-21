@@ -4,7 +4,7 @@ Our organization's competitiveness depends on our ability to react quickly to ma
 
 ## Monitoring
 
-The most crucial facts about our software describe its health. A system that is unusable - or worse, down - reduces revenue and user trust. We monitor our system by collecting data across sources. The most basic being the availability. Online services provide zPages to query HTTP endpoints that provides live data of the state of our system.
+The most crucial facts about our software describe its health. A system that is unusable - or worse, down - reduces revenue and user trust. We monitor our system by collecting data across sources. The most basic being the availability. Online services provide HTTP endpoints to query live data of the state of our system. These endpoints have been standardized to *zPages*. The prevalence of zPages and the low fidelity information of monitoring assists us to effectively monitor third party products within our systems.
 
 Our brand value decreases exponentially over the time our product is unresponsive. Crucial detriments to core systems require our immediate attention. When adverse metrics reach a pre-determined threshold our system sends out alerts to our staff. The on-call personnel prioritizes getting the production system back up-and-running. Fixing the error is less important than getting the production system back up-and-running.
 
@@ -16,16 +16,20 @@ Start with the minumum monitoring solution that has the greatest impact on costu
 
 Monitoring informs about the current state and actively warns us about occurring problems. Observability describes our ability to investigate system behavior. The complexity of observability increases with distributed architectures.
 
-## Telemetry
+The data source, aggregation, and content. Telemetry data provides context for our observability.
 
-Telemetry data provides context for our observability. 
+Opposed to monitoring third party systems, observing these proves to be difficult. When observing systems we request data and knowledge of internal processes, which, if not provided by the original authors, are hard to come by. Our industry consolidated data and endpoints to a standard called *OpenTelemetry*, a merger of *OpenTracing* and *OpenCensus*. The standard allows us to read and evaluate telemetry data across our proprietary tech and cross-vendor services. The three pillars of telemetry data consist of logs, metrics, and traces.
 
-opentelemetry
-
-What gets measured gets managed
+What gets measured gets managed.
 
 ### Logs
 
+Human readable textual information. Machine metadata, supplied by Otel schema and loggers. Parsable format.
+
+log levels
+log retention
+sensitive data
+logging performance and sampling
 error logs
 info logs
 log aggregation between services
