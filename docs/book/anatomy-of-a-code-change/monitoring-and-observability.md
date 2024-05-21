@@ -30,9 +30,18 @@ For interoperability, we print our logs in a standardized parsable format, typic
 
 Log levels. Never print DEBUG levels in production. Performance and security. Never print sensitive information, regardless of log level.
 
+Level | Meaning
+----- | -------
+TRACE | A fine-grained debugging event. Typically disabled in default configurations.
+DEBUG | A debugging event.
+INFO  | An informational event. Indicates that an event happened.
+WARN  | A warning event. Not an error but is likely more important than an informational event.
+ERROR | An error event. Something went wrong.
+FATAL | A fatal error such as application or system crash.
+
 Configuring our log output by minimum severity level improves performance. Additionally, we introduce a sampling time, to avoid printing redundant information. Lower storage, less performance overhead. We report the number of repetitions.
 
-Storage and log retention.
+The amount of storage needed for application logs escalates rapidly. The effort of sampling logs and eliminating duplicate entries becomes worthwhile in short time. We log retention length for different entries to store the smallest number needed. Legal compliance forces us to retain certain logs for either a minimum or maximum amount of time.
 
 ### Metrics
 
