@@ -16,19 +16,21 @@ Start with the minumum monitoring solution that has the greatest impact on costu
 
 Monitoring informs about the current state and actively warns us about occurring problems. Observability describes our ability to investigate system behavior. The complexity of observability increases with distributed architectures.
 
-The data source, aggregation, and content. Telemetry data provides context for our observability.
+The data source, aggregation, and content. Telemetry data provides context for our observability. We need to know what events happen 
 
 Opposed to monitoring third party systems, observing these proves to be difficult. When observing systems we request data and knowledge of internal processes, which, if not provided by the original authors, are hard to come by. Our industry consolidated data and endpoints to a standard called *OpenTelemetry*, a merger of *OpenTracing* and *OpenCensus*. The standard allows us to read and evaluate telemetry data across our proprietary tech and cross-vendor services. The three pillars of telemetry data consist of logs, metrics, and traces.
 
-What gets measured gets managed.
+What gets measured gets managed. vs big data
 
 ### Logs
 
-When logging information, we serialize human readable textual information to offer insight on the happenings of our software. Logging data models offer metadata and context for the readable message output. *OpenTelemetry* supplies a standardized schema for a broad spectrum of shared fields. For product specific features we extend the schema with our necessary fields.
+Logs are a collection of information serialized as human readable text, that provide insight into the happenings of our software.
+
+Logging data models offer metadata and context for the readable message output. *OpenTelemetry* supplies a standardized schema for a broad spectrum of shared fields. For product specific features we extend the schema with our necessary fields.
 
 For interoperability, we print our logs in a standardized parsable format, typically json. For distributed services reading the logs directly from the providing source proves impossible. Log aggregation. request id and hop counter additional to time
 
-Log levels. Never print DEBUG levels in production. Performance and security. Never print sensitive information, regardless of log level.
+Severity levels of log entries indicate the gravity of the stored information. The *OpenTelemetry* data model defines the following events, ordered in ascending severity.
 
 Level | Meaning
 ----- | -------
@@ -39,7 +41,11 @@ WARN  | A warning event. Not an error but is likely more important than an infor
 ERROR | An error event. Something went wrong.
 FATAL | A fatal error such as application or system crash.
 
-Configuring our log output by minimum severity level improves performance. Additionally, we introduce a sampling time, to avoid printing redundant information. Lower storage, less performance overhead. We report the number of repetitions.
+Besides giving context, log levels allow us to disallow messages below a certain threshold. Filtering logging output reduces the verbosity of our application and thus increases our runtime performance. Logging - while helpful for observability and debugging - brings a significant performance overhead with it.
+
+When building and deploying for *Release*, we disable *DEBUG* logs per default. The necessity of printing application state and data for helpful debugging sessions is at odds with the discipline of security and confidentiality for production logs. Regardless of log level, we never print sensitive information.
+
+To further decrease performance needs of logging, we introduce log sampling. Our logging implementation collects repeated information over our sampling time. Lower storage, less performance overhead. We report the number of repetitions.
 
 The amount of storage needed for application logs escalates rapidly. The effort of sampling logs and eliminating duplicate entries becomes worthwhile in short time. We log retention length for different entries to store the smallest number needed. Legal compliance forces us to retain certain logs for either a minimum or maximum amount of time.
 
