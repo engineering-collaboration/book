@@ -20,7 +20,7 @@ The data source, aggregation, and content. Telemetry data provides context for o
 
 Opposed to monitoring third party systems, observing these proves to be difficult. When observing systems we request data and knowledge of internal processes, which, if not provided by the original authors, are hard to come by. Our industry consolidated data and endpoints to a standard called *OpenTelemetry*, a merger of *OpenTracing* and *OpenCensus*. The standard allows us to read and evaluate telemetry data across our proprietary tech and cross-vendor services. The three pillars of telemetry data consist of logs, metrics, and traces.
 
-What gets measured gets managed. vs big data
+What gets measured gets managed.
 
 ### Logs
 
@@ -51,9 +51,17 @@ The amount of storage needed for application logs escalates rapidly. The effort 
 
 ### Metrics
 
-data driven product decisions
-measuring traffic
-usage based pricings
+Logs offer insight into our system behavior, metrics inform us of user behavior. A basic example for necessary metrics is our user retention rate. Metrics inform us when and through what channel we acquired a user, our current number of users, and date and reason they decided to abandon out product. On the basis of the above numbers we make educated guesses on how to improve our customer journey, from discovery over onboarding to retaining our user.
+
+Using product oriented metrics, we investigate specific questions about our user's interaction with our product. Measuring the time a user spends on a view, the features used, and the means of navigating through our application, we have tangible information to plan future releases. A data-driven decision process work as guardrails for empirical user feedback sessions. During a gradual release process we A/B test our deployment using the metrics of the updated release versus the previous one.
+
+Metrics help us predict reoccuring or seasonal traffic spikes. We prepare additional scaling for high-traffic times.
+
+Within data gathering and evaluation two workflow concepts have established themselves, *extract-transform-load* (ETL) workflows to *extract-load-transform* (ELT). The former cleans and organizes data before storing them in a database, the latter stores raw data and organizes it based on the analytics query. ELT reduces the initial performance need, as we store data without any mandatory structuring process. The overhead happens when evaluating our stored data.
+
+With data pipelines migrating from ETL workflows to ELT, our metrics gathering moves towards a big-data approach. Instead of designing specific questions and implementing and evaluating the requested metrics, we measure and submit all events to a data lake. Product owners collaborate with data analysts to answer product questions using already existing data. We believe the immediacy and flexibility of insights into user behavior offsets the additional overhead and costs of providing additional infrastructure and domain experts.
+
+Metrics influence our pricing policy and business plan. In usage-based pricing models we directly forward the costs to our user, subscription based models with maximum usage indicates the pricing tier. Popular subscription-based storage providers offer a terabyte of data for 10 USD per month, an infeasible pricing if our users actually made use of it. By gathering and calculating actual storage and egress usage of average users, we can calculate the optimal pricing of what users are willing to pay versus our risk assessment of losing money for every user.
 
 ### Traces
 
