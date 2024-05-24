@@ -8,13 +8,15 @@ Via monitoring and observability we gather information about our software in pro
 
 ## Monitoring
 
-The most crucial facts about our software describe its health. A system that is unusable - or worse, down - reduces revenue and user trust. We monitor our system by collecting data across sources. The most basic being the availability. Online services provide HTTP endpoints to query live data of the state of our system. These endpoints have been standardized to *zPages*. The prevalence of zPages and the low fidelity information of monitoring assists us to effectively monitor third party products within our systems.
+Users, having lost trust in our offering once, are costly to reengage with our product. Our brand value decreases exponentially over the time our product is unresponsive. Hence, an unusable or unresponsive system reduces immediate and future revenue. To minimize downtime, we monitor our system health by collecting data across its sources. Crucial detriments to core systems require our immediate attention. 
 
-Our brand value decreases exponentially over the time our product is unresponsive. Crucial detriments to core systems require our immediate attention. When adverse metrics reach a pre-determined threshold our system sends out alerts to our staff. The on-call personnel prioritizes getting the production system back up-and-running. Fixing the error is less important than getting the production system back up-and-running.
+Monitoring endpoints of online services converged into so-called *zPages*, popular ones being *Healthz*, *RPCz*, *Statsz*, *Tracez*. Querying live data enables us to collect information about the health of our software. The prevalence of zPages across the industry assists us to effectively monitor third party products within our systems.
 
-As with tests, false positives or false negatives will depreciate the trust in the system. Other than tests, were alerts of failed tests happen at expected times during development in low-stakes environments, alerts indicate problems in production and can happen any time. If we're woken up at 3am for a severe alert that turns out to be a false positive, we'll be pretty upset. Alert fatigque, desensitation
+Using these endpoints we gather runtime aspects, such as response time, cpu usage, and memory allocation. When these metrics reach a pre-determined adverse threshold, our system sends out alerts to our on-call personnel. In these kind of emergencies the sole priority is to get the production system back up-and-running. We have time to discovering and fix the error in relative piece after our organization stops hemorrhaging revenue.
 
-Start with the minumum monitoring solution that has the greatest impact on costumers before moving to complex site reliability projects.
+False positives or false negatives depreciate the trust in our monitoring system, especially since alerts in production may happen at any time. If we're woken up at 3am for a severe alert that turns out to be a false positive, we'll be pretty upset. A high volume of low-impact alerts lead to fatigue and desensitization. Desensitized on-call engineers are more likely to miss-prioritize high-impact alerts.
+
+We continuously adjust our alert system to balance immediacy and volume. We start with the minimum monitoring solution that has the greatest impact on costumers before moving to complex site reliability projects.
 
 ## Observability
 
