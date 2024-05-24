@@ -1,6 +1,10 @@
 # Monitoring and Observability
 
-Our organization's competitiveness depends on our ability to react quickly to market demands. To that point, we have covered practices for testing changes, validating preview builds, and delivering updates responsibly. To understand the current market demands and plan future changes to our software, we need a way to gather information of our services in production.
+Market competitiveness relies on two foundational aspects, understanding market demands, and being able to react on those with little delay. The majority of this book deals with the second topic. We covered the need for autonomous delivery practices for teams and applicable strategies of testing changes, validating preview builds, and delivering updates quickly yet responsibly.
+
+The topic of understanding - or downright predicting - the current market demands combines empirical market research, heuristic feedback loops, and data-driven product decisions. Only starting from a solid base of a secure, stable, and responsive application, may we start the prophetic process of building towards organizational growth.
+
+Via monitoring and observability we gather information about our software in production. Implementing strategic monitoring and observability allows us to react to errors, analyze system performance, enhance our customer's journeys and evaluate feature acceptance. Armed with this information, we make meaningful decisions for our future development.
 
 ## Monitoring
 
@@ -28,7 +32,17 @@ Logs are a collection of information serialized as human readable text, that pro
 
 Logging data models offer metadata and context for the readable message output. *OpenTelemetry* supplies a standardized schema for a broad spectrum of shared fields. For product specific features we extend the schema with our necessary fields.
 
-For interoperability, we print our logs in a standardized parsable format, typically json. For distributed services reading the logs directly from the providing source proves impossible. Log aggregation. request id and hop counter additional to time
+For interoperability, we print our logs in a standardized parsable format, typically json. For distributed services reading the logs directly from the providing source proves impossible. Log aggregation. request id and hop counter additional to time or hard reference to trace.
+
+Log Correlation. Logs can be correlated with the rest of observability data in a few dimensions.
+
+By the time of execution. Logs, traces and metrics can record the moment of time or the range of time the execution took place. This is the most basic form of correlation.
+
+By the execution context, RequestId. This allows to directly correlate logs and traces that correspond to the same execution context. It also allows to correlate logs from different components of a distributed system that participated in the particular request execution.
+
+By the origin of the telemetry, also known as the Resource context. OpenTelemetry traces and metrics contain information about the Resource they come from. We extend this practice to logs by including the Resource in LogRecords.
+
+These 3 correlations can be the foundation of powerful navigational, filtering, querying and analytical capabilities. OpenTelemetry aims to record and collects logs in a manner that enables such correlations.
 
 Severity levels of log entries indicate the gravity of the stored information. The *OpenTelemetry* data model defines the following events, ordered in ascending severity.
 
@@ -66,3 +80,29 @@ Metrics influence our pricing policy and business plan. In usage-based pricing m
 ### Traces
 
 measuring performance spans etc
+
+End-to-End Visibility: Traces capture the complete path of a request as it travels through different microservices or components, providing a holistic view of its journey.
+
+Span: A trace is composed of multiple spans. A span represents a single operation or unit of work within a trace. Each span contains information such as start time, end time, operation name, and metadata (tags).
+
+Context Propagation: To ensure that traces can be followed across various components, context information (such as trace IDs and span IDs) must be propagated along with the request. This is typically handled by instrumentation libraries that inject and extract tracing headers in communication protocols (HTTP, gRPC, etc.).
+
+Using a tree of spans, we record subprocesses of the entire event. Being able to retrace steps in distributed architecture makes the debugging visible. Being able to understand the resources usage of subspans and tasks helps us improve performance.
+
+Logs capture discrete states of our system. Metrics capture discrete actions within our product. Traces details the process flow within our system. Distributed architecture benefits massively from implementing traces.
+
+These systems provide insights into the performance and behavior of distributed applications.
+
+Debugging and Performance Monitoring: Traces are invaluable for debugging issues in distributed systems. They help identify performance bottlenecks, unexpected latencies, and points of failure by showing where time is being spent within the system.
+
+Extending the log execution context with a trace context we may granularly aggregate logs. It is a standard practice to record the execution context (trace and span ids as well as user-defined context) in the spans. OpenTelemetry extends this practice to logs where possible by including TraceId and SpanId in the LogRecords.
+
+Traces are often used in conjunction with logs and metrics to provide a comprehensive observability solution. While logs provide detailed event data and metrics offer aggregated performance statistics, traces connect these pieces of information to specific requests or transactions.
+
+## Performance
+
+ELK k8s
+logs
+tracing
+exporter
+CPU need
