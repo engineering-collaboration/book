@@ -20,17 +20,15 @@ We continuously adjust our alert system to balance immediacy and volume. We star
 
 ## Observability
 
-Monitoring informs about the current state and actively warns us about occurring problems. Observability describes our ability to investigate system behavior. The complexity of observability increases with distributed architectures.
+Our monitoring tools actively inform us about occurring problems in our software. Our observability tools enable to investigate our software's behavior during those problems. The foundation of observability is telemetry data and the relation between data sources. The complexities of observability have become a priority conversation within distributed architectures. The complexities of information aggregation across distributed sources have spawned a multitude of tools. 
 
-The data source, aggregation, and content. Telemetry data provides context for our observability. We need to know what events happen 
-
-Opposed to monitoring third party systems, observing these proves to be difficult. When observing systems we request data and knowledge of internal processes, which, if not provided by the original authors, are hard to come by. Our industry consolidated data and endpoints to a standard called *OpenTelemetry*, a merger of *OpenTracing* and *OpenCensus*. The standard allows us to read and evaluate telemetry data across our proprietary tech and cross-vendor services. The three pillars of telemetry data consist of logs, metrics, and traces.
+Opposed to monitoring third party systems, observing these proves to be difficult. When observing systems we request data and knowledge of internal processes, which, if not provided by the original authors, are hard to come by. Our industry consolidated to a data standard called *OpenTelemetry*. The standard allows us to read and evaluate telemetry data across our proprietary tech and cross-vendor services. The three pillars of telemetry data consist of logs, metrics, and traces.
 
 What gets measured gets managed.
 
 ### Logs
 
-Logs are a collection of information serialized as human readable text, that provide insight into the happenings of our software.
+Logs are a collection of information serialized as human readable text providing insight into the happenings of our software.
 
 Logging data models offer metadata and context for the readable message output. *OpenTelemetry* supplies a standardized schema for a broad spectrum of shared fields. For product specific features we extend the schema with our necessary fields.
 
