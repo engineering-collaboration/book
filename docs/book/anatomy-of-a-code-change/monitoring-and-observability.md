@@ -20,15 +20,17 @@ We continuously adjust our alert system to balance immediacy and volume.
 
 ## Observability
 
+!!! quote
+    *"What gets measured gets managed."*  
+    - Peter Drucker
+
 Our monitoring tools actively inform us about occurring problems in our software. Our observability tools enable to investigate our software's behavior during those problems. The foundation of observability is telemetry data and the relation between data sources. The complexities of observability have become a priority conversation within distributed architectures. The complexities of information aggregation across distributed sources have spawned a multitude of tools. 
 
 Opposed to monitoring third party systems, observing these proves to be difficult. When observing systems we request data and knowledge of internal processes, which, if not provided by the original authors, are hard to come by. Our industry consolidated to a data standard called *OpenTelemetry*. The standard allows us to read and evaluate telemetry data across our proprietary tech and cross-vendor services. The three pillars of telemetry data consist of logs, metrics, and traces.
 
-What gets measured gets managed.
-
 ### Logs
 
-Logs are a collection of information serialized as human readable text providing insight into the happenings of our software. Our developers print output when events happen or certain code procedures are called. Logs are typically either written to a file, or collected from `stdout` and `stderr`. Across distributed products we face challenges when aggregating logging information. We need tools to centralize logs across all machines or instances. Logs serialized only to our customers machine proves useless to us when investigating errors. 
+Logs are a collection of information serialized as human readable text providing insight into the happenings of our software. Our developers print output when events happen or certain code procedures are called. Logs are typically either written to a file, or collected from `stdout` and `stderr`. Across distributed products we face challenges when aggregating logging information. We need tools to centralize logs across all machines or instances. Logs serialized only to our customers machine proves useless to us when investigating errors.
 
 We design logging schemas (or data models) to correlate metadata and context to our message output. An open source schema, called *OpenTelemetry*, has found favour across a broad spectrum of technical fields. For interoperability, OpenTelemetry logs in a standardized parsable format, typically json. A common meta field is the severity level of log entries, which indicates the gravity of the stored information. The *OpenTelemetry* data model defines the following events, ordered in ascending severity.
 
@@ -59,15 +61,9 @@ Popular subscription-based storage providers offer a terabyte of data for USD 9.
 
 ### Traces
 
-measuring performance spans etc
+So far we are observing discrete events, rather than a holistic process with end-to-end visibility. Tracking a complete event through various services within distributed systems is a non-trivial task. A distributed environment consisting of synchronous requests and event driven message buses obfuscates interdependent procedures.
 
-End-to-End Visibility: Traces capture the complete path of a request as it travels through different microservices or components, providing a holistic view of its journey.
-
-Span: A trace is composed of multiple spans. A span represents a single operation or unit of work within a trace. Each span contains information such as start time, end time, operation name, and metadata (tags).
-
-Context Propagation: To ensure that traces can be followed across various components, context information (such as trace IDs and span IDs) must be propagated along with the request. This is typically handled by instrumentation libraries that inject and extract tracing headers in communication protocols (HTTP, gRPC, etc.).
-
-Using a tree of spans, we record subprocesses of the entire event. Being able to retrace steps in distributed architecture makes the debugging visible. Being able to understand the resources usage of subspans and tasks helps us improve performance.
+An end-to-end trace is composed of a tree of spans. A span measures a manually defined unit of work and records the start time, end time, operation name, and metadata. Hence, we are able to break down the entire request into subprocesses to debug and identify bottle necks. Being able to understand the resources usage of subspans and tasks helps us improve performance.
 
 Logs capture discrete states of our system. Metrics capture discrete actions within our product. Traces details the process flow within our system. Distributed architecture benefits massively from implementing traces.
 
@@ -77,7 +73,7 @@ Debugging and Performance Monitoring: Traces are invaluable for debugging issues
 
 Traces are often used in conjunction with logs and metrics to provide a comprehensive observability solution. While logs provide detailed event data and metrics offer aggregated performance statistics, traces connect these pieces of information to specific requests or transactions.
 
-### Telemetry Correlation
+## Telemetry Correlation
 
 Having consolidated all our globally occurring logs into a single database, we need to be able to correlate the outputs to each other.
 
@@ -87,11 +83,13 @@ By the time of execution. Time ranges provide context when grouping and analyzin
 
 By the execution context, RequestId. This allows to directly correlate logs and traces that correspond to the same execution context. It also allows to correlate logs from different components of a distributed system that participated in the particular request execution. request id and hop counter additional to time or hard reference to trace. Extending the log execution context with a trace context we may granularly aggregate logs. It is a standard practice to record the execution context (trace and span ids as well as user-defined context) in the spans. OpenTelemetry extends this practice to logs where possible by including TraceId and SpanId in the LogRecords.
 
+To consolidate our spans to a shared trace, we propagate our execution context.
+
 By the origin of the telemetry, also known as the Resource context. OpenTelemetry traces and metrics contain information about the Resource they come from. We extend this practice to logs by including the Resource in LogRecords.
 
 These 3 correlations can be the foundation of powerful navigational, filtering, querying and analytical capabilities. OpenTelemetry aims to record and collects logs in a manner that enables such correlations.
 
-## Cost of Monitoring and Observability
+## Costs of Monitoring and Observability
 
 Monitoring and observability is expensive. We value the cost of infrastructure and personnel as an investment in future growth and market competitiveness. We start with the minimum monitoring solution that has the greatest impact on costumers as the additional infrastructure needed quickly out-costs our actual product. Providing full site reliability features to our product .
 
