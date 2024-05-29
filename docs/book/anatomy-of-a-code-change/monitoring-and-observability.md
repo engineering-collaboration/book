@@ -28,23 +28,9 @@ What gets measured gets managed.
 
 ### Logs
 
-Logs are a collection of information serialized as human readable text providing insight into the happenings of our software.
+Logs are a collection of information serialized as human readable text providing insight into the happenings of our software. Our developers print output when events happen or certain code procedures are called. Logs are typically either written to a file, or collected from `stdout` and `stderr`. Across distributed products we face challenges when aggregating logging information. We need tools to centralize logs across all machines or instances. Logs serialized only to our customers machine proves useless to us when investigating errors. 
 
-Logging data models offer metadata and context for the readable message output. *OpenTelemetry* supplies a standardized schema for a broad spectrum of shared fields. For product specific features we extend the schema with our necessary fields.
-
-For interoperability, we print our logs in a standardized parsable format, typically json. For distributed services reading the logs directly from the providing source proves impossible. Log aggregation. request id and hop counter additional to time or hard reference to trace.
-
-Log Correlation. Logs can be correlated with the rest of observability data in a few dimensions.
-
-By the time of execution. Logs, traces and metrics can record the moment of time or the range of time the execution took place. This is the most basic form of correlation.
-
-By the execution context, RequestId. This allows to directly correlate logs and traces that correspond to the same execution context. It also allows to correlate logs from different components of a distributed system that participated in the particular request execution.
-
-By the origin of the telemetry, also known as the Resource context. OpenTelemetry traces and metrics contain information about the Resource they come from. We extend this practice to logs by including the Resource in LogRecords.
-
-These 3 correlations can be the foundation of powerful navigational, filtering, querying and analytical capabilities. OpenTelemetry aims to record and collects logs in a manner that enables such correlations.
-
-Severity levels of log entries indicate the gravity of the stored information. The *OpenTelemetry* data model defines the following events, ordered in ascending severity.
+We design logging schemas (or data models) to correlate metadata and context to our message output. An open source schema, called *OpenTelemetry*, has found favour across a broad spectrum of technical fields. For interoperability, OpenTelemetry logs in a standardized parsable format, typically json. A common meta field is the severity level of log entries, which indicates the gravity of the stored information. The *OpenTelemetry* data model defines the following events, ordered in ascending severity.
 
 Level | Meaning
 ----- | -------
@@ -55,13 +41,11 @@ WARN  | A warning event. Not an error but is likely more important than an infor
 ERROR | An error event. Something went wrong.
 FATAL | A fatal error such as application or system crash.
 
-Besides giving context, log levels allow us to disallow messages below a certain threshold. Filtering logging output reduces the verbosity of our application and thus increases our runtime performance. Logging - while helpful for observability and debugging - brings a significant performance overhead with it.
+Besides giving context, log levels allow us to disable messages below a certain threshold. Filtering logging output reduces the verbosity of our application and thus increases our runtime performance. Logging - while helpful for observability and debugging - brings a significant performance overhead with it.
 
 When building and deploying for *Release*, we disable *DEBUG* logs per default. The necessity of printing application state and data for helpful debugging sessions is at odds with the discipline of security and confidentiality for production logs. Regardless of log level, we never print sensitive information.
 
-To further decrease performance needs of logging, we introduce log sampling. Our logging implementation collects repeated information over our sampling time. Lower storage, less performance overhead. We report the number of repetitions.
-
-The amount of storage needed for application logs escalates rapidly. The effort of sampling logs and eliminating duplicate entries becomes worthwhile in short time. We log retention length for different entries to store the smallest number needed. Legal compliance forces us to retain certain logs for either a minimum or maximum amount of time.
+To further decrease the performance needs of logging, we introduce log sampling. Our logging implementation collects repeated information over our sampling time leading to lower storage requirements and less performance overhead. The amount of storage needed for application logs escalates rapidly. The effort of sampling logs and eliminating duplicate entries becomes worthwhile in short time. We log retention length for different entries to store the smallest number needed. Legal compliance forces us to retain certain logs for either a minimum or maximum amount of time.
 
 ### Metrics
 
@@ -95,9 +79,21 @@ These systems provide insights into the performance and behavior of distributed 
 
 Debugging and Performance Monitoring: Traces are invaluable for debugging issues in distributed systems. They help identify performance bottlenecks, unexpected latencies, and points of failure by showing where time is being spent within the system.
 
-Extending the log execution context with a trace context we may granularly aggregate logs. It is a standard practice to record the execution context (trace and span ids as well as user-defined context) in the spans. OpenTelemetry extends this practice to logs where possible by including TraceId and SpanId in the LogRecords.
-
 Traces are often used in conjunction with logs and metrics to provide a comprehensive observability solution. While logs provide detailed event data and metrics offer aggregated performance statistics, traces connect these pieces of information to specific requests or transactions.
+
+### Telemetry Correlation
+
+Having consolidated all our globally occurring logs into a single database, we need to be able to correlate the outputs to each other.
+
+We correlate telemetry data across three factors.
+
+By the time of execution. Time ranges provide context when grouping and analyzing logs and errors. However, timestamps are an unreliable indicator of execution order. Two events occurring after one another on different machines may record inverse timestamps due to configuration drift and noise of the different environments.
+
+By the execution context, RequestId. This allows to directly correlate logs and traces that correspond to the same execution context. It also allows to correlate logs from different components of a distributed system that participated in the particular request execution. request id and hop counter additional to time or hard reference to trace. Extending the log execution context with a trace context we may granularly aggregate logs. It is a standard practice to record the execution context (trace and span ids as well as user-defined context) in the spans. OpenTelemetry extends this practice to logs where possible by including TraceId and SpanId in the LogRecords.
+
+By the origin of the telemetry, also known as the Resource context. OpenTelemetry traces and metrics contain information about the Resource they come from. We extend this practice to logs by including the Resource in LogRecords.
+
+These 3 correlations can be the foundation of powerful navigational, filtering, querying and analytical capabilities. OpenTelemetry aims to record and collects logs in a manner that enables such correlations.
 
 ## Performance
 
