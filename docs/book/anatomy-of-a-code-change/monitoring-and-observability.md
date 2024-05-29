@@ -16,7 +16,7 @@ Using these endpoints we gather runtime aspects, such as response time, cpu usag
 
 False positives or false negatives depreciate the trust in our monitoring system, especially since alerts in production may happen at any time. If we're woken up at 3am for a severe alert that turns out to be a false positive, we'll be pretty upset. A high volume of low-impact alerts lead to fatigue and desensitization. Desensitized on-call engineers are more likely to miss-prioritize high-impact alerts.
 
-We continuously adjust our alert system to balance immediacy and volume. We start with the minimum monitoring solution that has the greatest impact on costumers before moving to complex site reliability projects.
+We continuously adjust our alert system to balance immediacy and volume.
 
 ## Observability
 
@@ -49,15 +49,13 @@ To further decrease the performance needs of logging, we introduce log sampling.
 
 ### Metrics
 
-Logs offer insight into our system behavior, metrics inform us of user behavior. A basic example for necessary metrics is our user retention rate. Metrics inform us when and through what channel we acquired a user, our current number of users, and date and reason they decided to abandon out product. On the basis of the above numbers we make educated guesses on how to improve our customer journey, from discovery over onboarding to retaining our user.
+Using metrics, we investigate specific questions about our user's interaction with our product. In order to make business decisions we gather insight on our customers interactions with our offering. Metrics provide tangible information to plan future releases.
 
-Using product oriented metrics, we investigate specific questions about our user's interaction with our product. Measuring the time a user spends on a view, the features used, and the means of navigating through our application, we have tangible information to plan future releases. A data-driven decision process work as guardrails for empirical user feedback sessions. During a gradual release process we A/B test our deployment using the metrics of the updated release versus the previous one.
+During a gradual release process we A/B test our deployment using the metrics of the updated release versus the previous one. We measure feature acceptance, the time a user spends on a view, the features used most, and the means of navigating through our application. A data-driven decision process enables us to make high-traffic features more accessible and therefore cheaper. Empirical user feedback sessions and A/B tests help us measure feature acceptance. Metrics help us predict reoccuring or seasonal traffic spikes. We prepare additional scaling for high-traffic times.
 
-Metrics help us predict reoccuring or seasonal traffic spikes. We prepare additional scaling for high-traffic times.
+We calculate our user acquisition cost by recording clicks and investments across our marketing strategy that lead to sign-ups. 
 
-Within data gathering and evaluation two workflow concepts have established themselves, *extract-transform-load* (ETL) workflows to *extract-load-transform* (ELT). The former cleans and organizes data before storing them in a database, the latter stores raw data and organizes it based on the analytics query. ELT reduces the initial performance need, as we store data without any mandatory structuring process. The overhead happens when evaluating our stored data.
-
-With data pipelines migrating from ETL workflows to ELT, our metrics gathering moves towards a big-data approach. Instead of designing specific questions and implementing and evaluating the requested metrics, we measure and submit all events to a data lake. Product owners collaborate with data analysts to answer product questions using already existing data. We believe the immediacy and flexibility of insights into user behavior offsets the additional overhead and costs of providing additional infrastructure and domain experts.
+A basic example for necessary metrics is our user retention rate. Metrics inform us when and through what channel we acquired a user, our current number of users, and date and reason they decided to abandon out product. On the basis of the above numbers we make educated guesses on how to improve our customer journey, from discovery over onboarding to retaining our user.
 
 Metrics influence our pricing policy and business plan. In usage-based pricing models we directly forward the costs to our user, subscription based models with maximum usage indicates the pricing tier. Popular subscription-based storage providers offer a terabyte of data for 10 USD per month, an infeasible pricing if our users actually made use of it. By gathering and calculating actual storage and egress usage of average users, we can calculate the optimal pricing of what users are willing to pay versus our risk assessment of losing money for every user.
 
@@ -95,7 +93,20 @@ By the origin of the telemetry, also known as the Resource context. OpenTelemetr
 
 These 3 correlations can be the foundation of powerful navigational, filtering, querying and analytical capabilities. OpenTelemetry aims to record and collects logs in a manner that enables such correlations.
 
-## Performance
+## Cost of Monitoring and Observability
+
+Monitoring and observability is expensive. We value the cost of infrastructure and personnel as an investment in future growth and market competitiveness. We start with the minimum monitoring solution that has the greatest impact on costumers as the additional infrastructure needed quickly out-costs our actual product. Providing full site reliability features to our product .
+
+Besides hosting a dedicated database for metrics, the additional traffic of metrics. The CPU load of logging, tracing, io operations, and the exporters require horizontal or vertical scaling to fulfill the same amount of traffic.
+
+Using popular cloud provided platforms for observability adds monthly costs.
+
+Data lakes come with the most overhead, but most transparency. As startups, streamlined and narrow solutions help keep our costs down.
+
+Within data gathering and evaluation two workflow concepts have established themselves, *extract-transform-load* (ETL) workflows to *extract-load-transform* (ELT). The former cleans and organizes data before storing them in a database, the latter stores raw data and organizes it based on the analytics query. ELT reduces the initial performance need, as we store data without any mandatory structuring process. The overhead happens when evaluating our stored data.
+
+With data pipelines migrating from ETL workflows to ELT, our metrics gathering moves towards a big-data approach. Instead of designing specific questions and implementing and evaluating the requested metrics, we measure and submit all events to a data lake. Product owners collaborate with data analysts to answer product questions using already existing data. We believe the immediacy and flexibility of insights into user behavior offsets the additional overhead and costs of providing additional infrastructure and domain experts.
+
 
 ELK k8s
 logs
