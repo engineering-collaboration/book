@@ -63,15 +63,11 @@ Popular subscription-based storage providers offer a terabyte of data for USD 9.
 
 So far we are observing discrete events, rather than a holistic process with end-to-end visibility. Tracking a complete event through various services within distributed systems is a non-trivial task. A distributed environment consisting of synchronous requests and event driven message buses obfuscates interdependent procedures.
 
-An end-to-end trace is composed of a tree of spans. A span measures a manually defined unit of work and records the start time, end time, operation name, and metadata. Hence, we are able to break down the entire request into subprocesses to debug and identify bottle necks. Being able to understand the resources usage of subspans and tasks helps us improve performance.
+An end-to-end trace is composed of spans. A span measures a manually defined unit of work and records the start time, end time, operation name, and passed metadata. Hence, we are able to break down the entire request into subprocesses to debug and identify bottle necks. Being able to understand the resources usage of child spans and tasks helps us improve performance.
 
-Logs capture discrete states of our system. Metrics capture discrete actions within our product. Traces details the process flow within our system. Distributed architecture benefits massively from implementing traces.
+Debugging the tree of spans helps identify performance bottlenecks, unexpected latencies, and points of failure by showing time spent and resource allocation for the recorded processes. Traces are often used in conjunction with logs and metrics to provide a comprehensive observability solution. While logs provide detailed event data and metrics offer aggregated performance statistics, traces connect these pieces of information to specific requests or transactions.
 
-These systems provide insights into the performance and behavior of distributed applications.
-
-Debugging and Performance Monitoring: Traces are invaluable for debugging issues in distributed systems. They help identify performance bottlenecks, unexpected latencies, and points of failure by showing where time is being spent within the system.
-
-Traces are often used in conjunction with logs and metrics to provide a comprehensive observability solution. While logs provide detailed event data and metrics offer aggregated performance statistics, traces connect these pieces of information to specific requests or transactions.
+In client applications or monoliths, traces are mapped to performance benchmarking and debugging. A detailed event or frame breakdown informs the engineer how many milliseconds are spent on what code execution.
 
 ## Telemetry Correlation
 
