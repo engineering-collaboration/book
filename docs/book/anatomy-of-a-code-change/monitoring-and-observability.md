@@ -49,13 +49,11 @@ To further decrease the performance needs of logging, we introduce log sampling.
 
 ### Metrics
 
-Using metrics, we investigate specific questions about our user's interaction with our product. In order to make business decisions we gather insight on our customers interactions with our offering. Metrics provide tangible information to plan future releases.
+Using metrics, we investigate specific questions about our user's interaction with our product. In order to make business decisions we gather insight on our customers interactions with our offering. Metrics provide tangible information to validate releases. During the rollout release procedure we empirically verify feature acceptance by comparing relevant metrics before and after our deployment. Empirical user feedback sessions and A/B tests help us measure feature acceptance.
 
-During a gradual release process we A/B test our deployment using the metrics of the updated release versus the previous one. We measure feature acceptance, the time a user spends on a view, the features used most, and the means of navigating through our application. A data-driven decision process enables us to make high-traffic features more accessible and therefore cheaper. Empirical user feedback sessions and A/B tests help us measure feature acceptance. Metrics help us predict reoccuring or seasonal traffic spikes. We prepare additional scaling for high-traffic times.
+We record and evaluate behavioral patterns of our users to plan future changes. Insights to which features are used most and how our users navigate to them helps us make our application more accessible and cheaper to run. By recording traffic, we prepare additional resources for seasonal traffic spikes, and scale down (and save money) during low-traffic times.
 
-We calculate our user acquisition cost by recording clicks and investments across our marketing strategy that lead to sign-ups. 
-
-A basic example for necessary metrics is our user retention rate. Metrics inform us when and through what channel we acquired a user, our current number of users, and date and reason they decided to abandon out product. On the basis of the above numbers we make educated guesses on how to improve our customer journey, from discovery over onboarding to retaining our user.
+Measuring and calculating user acquisition costs and customer retention rates allows us to make informed business decisions. Tracking marketing conversions and sign-ups helps us to make educated guesses on how to improve our customer journey and maximise sales, and keep customers.
 
 Metrics influence our pricing policy and business plan. In usage-based pricing models we directly forward the costs to our user, subscription based models with maximum usage indicates the pricing tier. Popular subscription-based storage providers offer a terabyte of data for 10 USD per month, an infeasible pricing if our users actually made use of it. By gathering and calculating actual storage and egress usage of average users, we can calculate the optimal pricing of what users are willing to pay versus our risk assessment of losing money for every user.
 
