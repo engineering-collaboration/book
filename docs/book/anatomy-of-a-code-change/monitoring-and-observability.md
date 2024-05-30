@@ -71,19 +71,15 @@ In client applications or monoliths, traces are mapped to performance benchmarki
 
 ## Telemetry Correlation
 
-Having consolidated all our globally occurring logs into a single database, we need to be able to correlate the outputs to each other.
+We touched upon the non-triviality of aggregating logs and telemetry data. But even after consolidating all our globally occurring logs into a single source, we face the difficulty of correlating the outputs with each other. Traditionally, we correlate telemetry data across three factors.
 
-We correlate telemetry data across three factors.
+The **time of execution** provides context when grouping and analyzing logs and errors. However, timestamps are an unreliable indicator of execution order. Two events occurring after one another on different machines may record inverse timestamps due to configuration drift and noise of the different environments.
 
-By the time of execution. Time ranges provide context when grouping and analyzing logs and errors. However, timestamps are an unreliable indicator of execution order. Two events occurring after one another on different machines may record inverse timestamps due to configuration drift and noise of the different environments.
+We correlate observability data by an **execution context**. This allows us to correlate telemetry from different components of a distributed system that participated in the particular request execution. To achieve this we generate unique request identifiers for traffic passing our API gateway (most tools provide this out of the box). To establish execution order, we append a hop counter in the meta data that increments every time the context is passed on.
 
-By the execution context, RequestId. This allows to directly correlate logs and traces that correspond to the same execution context. It also allows to correlate logs from different components of a distributed system that participated in the particular request execution. request id and hop counter additional to time or hard reference to trace. Extending the log execution context with a trace context we may granularly aggregate logs. It is a standard practice to record the execution context (trace and span ids as well as user-defined context) in the spans. OpenTelemetry extends this practice to logs where possible by including TraceId and SpanId in the LogRecords.
+If our system utilitzes tracing tools, we extend the execution context with a trace context to granularly aggregate logs. We replace our hop counter with the trace id and span id. To consolidate our spans to a shared trace, we propagate our execution context. 
 
-To consolidate our spans to a shared trace, we propagate our execution context.
-
-By the origin of the telemetry, also known as the Resource context. OpenTelemetry traces and metrics contain information about the Resource they come from. We extend this practice to logs by including the Resource in LogRecords.
-
-These 3 correlations can be the foundation of powerful navigational, filtering, querying and analytical capabilities. OpenTelemetry aims to record and collects logs in a manner that enables such correlations.
+The origin of the telemetry is also known as the **resource context**. OpenTelemetry traces and metrics contain information about the resource they come from. These 3 correlations can be the foundation of powerful navigational, filtering, querying and analytical capabilities.
 
 ## Costs of Monitoring and Observability
 
