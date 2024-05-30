@@ -81,23 +81,15 @@ If our system utilitzes tracing tools, we extend the execution context with a tr
 
 The origin of the telemetry is also known as the **resource context**. OpenTelemetry traces and metrics contain information about the resource they come from. These 3 correlations can be the foundation of powerful navigational, filtering, querying and analytical capabilities.
 
-## Costs of Monitoring and Observability
-
-Monitoring and observability is expensive. We value the cost of infrastructure and personnel as an investment in future growth and market competitiveness. We start with the minimum monitoring solution that has the greatest impact on costumers as the additional infrastructure needed quickly out-costs our actual product. Providing full site reliability features to our product .
-
-Besides hosting a dedicated database for metrics, the additional traffic of metrics. The CPU load of logging, tracing, io operations, and the exporters require horizontal or vertical scaling to fulfill the same amount of traffic.
-
-Using popular cloud provided platforms for observability adds monthly costs.
-
-Data lakes come with the most overhead, but most transparency. As startups, streamlined and narrow solutions help keep our costs down.
+### ETL and ELT
 
 Within data gathering and evaluation two workflow concepts have established themselves, *extract-transform-load* (ETL) workflows to *extract-load-transform* (ELT). The former cleans and organizes data before storing them in a database, the latter stores raw data and organizes it based on the analytics query. ELT reduces the initial performance need, as we store data without any mandatory structuring process. The overhead happens when evaluating our stored data.
 
 With data pipelines migrating from ETL workflows to ELT, our metrics gathering moves towards a big-data approach. Instead of designing specific questions and implementing and evaluating the requested metrics, we measure and submit all events to a data lake. Product owners collaborate with data analysts to answer product questions using already existing data. We believe the immediacy and flexibility of insights into user behavior offsets the additional overhead and costs of providing additional infrastructure and domain experts.
 
 
-ELK k8s
-logs
-tracing
-exporter
-CPU need
+## Costs of Monitoring and Observability
+
+Monitoring and observability is expensive. Hosting a dedicated database for metrics, the additional traffic of metrics. The CPU load of logging, tracing, io operations, and the exporters require horizontal or vertical scaling to fulfill the same amount of traffic. Legal compliance to data governance across locations. Using popular cloud provided platforms for observability adds monthly costs.
+
+As any business decision, we calculate our costs and benefits to decide the scale of our observability. We value the cost of infrastructure and personnel as an investment in future growth and market competitiveness. We start with the minimum monitoring solution that has the greatest impact on costumers as the additional infrastructure needed quickly out-costs our actual product. Providing full site reliability features to our product. Data lakes come with the most overhead, but most transparency. As startups, streamlined and narrow solutions help keep our costs down.
