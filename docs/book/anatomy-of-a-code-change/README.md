@@ -28,7 +28,7 @@ The current progress of this section:
 - [x] Release strategies
 - [x] Documentation
 - [x] Repository strategies
-- [ ] Monitoring and observability
+- [x] Monitoring and observability
 
 ## Version Control
 
