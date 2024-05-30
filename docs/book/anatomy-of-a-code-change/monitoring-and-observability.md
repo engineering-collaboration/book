@@ -1,3 +1,8 @@
+---
+title: Monitoring and Observability
+description: Market competitiveness relies on understanding market demands and being able to react to those demands with little delay.
+---
+
 # Monitoring and Observability
 
 Market competitiveness relies on two foundational aspects: understanding market demands and being able to react to those demands with little delay. The majority of this book deals with the second topic. We covered the need for autonomous delivery practices for teams and applicable strategies for testing changes, validating preview builds, and delivering updates quickly yet responsibly.
