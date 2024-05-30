@@ -9,6 +9,7 @@ Forsgren
 Cockburn
 Daniele
 Procida
+Drucker
 Diátaxis
 API
 CTO
@@ -62,7 +63,13 @@ findability
 onboarding
 uppercases
 lowercases
+parsable
 asynchronicity
 [Mm]onorepository
 [Mm]onorepo
 [Mm]ultirepo
+zPages
+Healthz
+RPCz
+Statsz
+Tracez

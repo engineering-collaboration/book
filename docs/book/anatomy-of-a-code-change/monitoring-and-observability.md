@@ -2,7 +2,7 @@
 
 Market competitiveness relies on two foundational aspects, understanding market demands, and being able to react on those with little delay. The majority of this book deals with the second topic. We covered the need for autonomous delivery practices for teams and applicable strategies of testing changes, validating preview builds, and delivering updates quickly yet responsibly.
 
-The topic of understanding - or downright predicting - the current market demands combines empirical market research, heuristic feedback loops, and data-driven product decisions. Only starting from a solid base of a secure, stable, and responsive application, may we start the prophetic process of building towards organizational growth.
+The topic of understanding - or downright predicting - the current market demands combines empirical market research, heuristic feedback loops, and data-driven product decisions. Purely starting from a solid base of a secure, stable, and responsive application, may we start the prophetic process of building towards organizational growth.
 
 Via monitoring and observability we gather information about our software in production. Implementing strategic monitoring and observability allows us to react to errors, analyze system performance, enhance our customer's journeys and evaluate feature acceptance. Armed with this information, we make meaningful decisions for our future development.
 
@@ -12,9 +12,9 @@ Users, having lost trust in our offering once, are costly to reengage with our p
 
 Monitoring endpoints of online services converged into so-called *zPages*, popular ones being *Healthz*, *RPCz*, *Statsz*, *Tracez*. Querying live data enables us to collect information about the health of our software. The prevalence of zPages across the industry assists us to effectively monitor third party products within our systems.
 
-Using these endpoints we gather runtime aspects, such as response time, cpu usage, and memory allocation. When these metrics reach a pre-determined adverse threshold, our system sends out alerts to our on-call personnel. In these kind of emergencies the sole priority is to get the production system back up-and-running. We have time to discovering and fix the error in relative piece after our organization stops hemorrhaging revenue.
+Using these endpoints we gather runtime aspects, such as response time, CPU usage, and memory allocation. When these metrics reach a pre-determined adverse threshold, our system sends out alerts to our on-call personnel. In these kind of emergencies the sole priority is to get the production system back up-and-running. We have time to discovering and fix the error in relative piece after our organization stops hemorrhaging revenue.
 
-False positives or false negatives depreciate the trust in our monitoring system, especially since alerts in production may happen at any time. If we're woken up at 3am for a severe alert that turns out to be a false positive, we'll be pretty upset. A high volume of low-impact alerts lead to fatigue and desensitization. Desensitized on-call engineers are more likely to miss-prioritize high-impact alerts.
+False positives or false negatives depreciate the trust in our monitoring system posthaste as alerts in production may happen at any time. If we're woken up at 3 a.m. for a severe alert that turns out to be a false positive, we'll be pretty upset. A high volume of low-impact alerts lead to fatigue and desensitization. Desensitized on-call engineers are more <!-- vale write-good.Weasel = NO -->likely<!-- vale write-good.Weasel = YES --> to miss-prioritize high-impact alerts.
 
 We continuously adjust our alert system to balance immediacy and volume.
 
@@ -30,16 +30,16 @@ Opposed to monitoring third party systems, observing these proves to be difficul
 
 ### Logs
 
-Logs are a collection of information serialized as human readable text providing insight into the happenings of our software. Our developers print output when events happen or certain code procedures are called. Logs are typically either written to a file, or collected from `stdout` and `stderr`. Across distributed products we face challenges when aggregating logging information. We need tools to centralize logs across all machines or instances. Logs serialized only to our customers machine proves useless to us when investigating errors.
+Logs are a collection of information serialized as human readable text providing insight into the happenings of our software. Our developers print output when events happen or certain code procedures are called. Logs are typically either written to a file, or collected from `stdout` and `stderr`. Across distributed products we face challenges when aggregating logging information. We need tools to centralize logs across all machines or instances. Logs serialized solely to our customers machine proves useless to us when investigating errors.
 
 We design logging schemas (or data models) to correlate metadata and context to our message output. An open source schema, called *OpenTelemetry*, has found favour across a broad spectrum of technical fields. For interoperability, OpenTelemetry logs in a standardized parsable format, typically json. A common meta field is the severity level of log entries, which indicates the gravity of the stored information. The *OpenTelemetry* data model defines the following events, ordered in ascending severity.
 
 Level | Meaning
 ----- | -------
-TRACE | A fine-grained debugging event. Typically disabled in default configurations.
+TRACE | A fine-grained debugging event. Typically <!-- vale alex.Ablist = NO -->disabled<!-- vale alex.Ablist = YES --> in default configurations.
 DEBUG | A debugging event.
 INFO  | An informational event. Indicates that an event happened.
-WARN  | A warning event. Not an error but is likely more important than an informational event.
+WARN  | A warning event. Not an error but more important than an informational event.
 ERROR | An error event. Something went wrong.
 FATAL | A fatal error such as application or system crash.
 
@@ -61,13 +61,13 @@ Popular subscription-based storage providers offer a terabyte of data for USD 9.
 
 ### Traces
 
-So far we are observing discrete events, rather than a holistic process with end-to-end visibility. Tracking a complete event through various services within distributed systems is a non-trivial task. A distributed environment consisting of synchronous requests and event driven message buses obfuscates interdependent procedures.
+Using logs and metrics, we are observing discrete events, rather than a holistic process with end-to-end visibility. Tracking a complete event through various services within distributed systems is a non-trivial task. A distributed environment consisting of synchronous requests and event driven message buses obfuscates interdependent procedures.
 
 An end-to-end trace is composed of spans. A span measures a manually defined unit of work and records the start time, end time, operation name, and passed metadata. Hence, we are able to break down the entire request into subprocesses to debug and identify bottle necks. Being able to understand the resources usage of child spans and tasks helps us improve performance.
 
 Debugging the tree of spans helps identify performance bottlenecks, unexpected latencies, and points of failure by showing time spent and resource allocation for the recorded processes. Traces are often used in conjunction with logs and metrics to provide a comprehensive observability solution. While logs provide detailed event data and metrics offer aggregated performance statistics, traces connect these pieces of information to specific requests or transactions.
 
-In client applications or monoliths, traces are mapped to performance benchmarking and debugging. A detailed event or frame breakdown informs the engineer how many milliseconds are spent on what code execution.
+In client applications or monoliths, traces are mapped to performance benchmarking and debugging. A detailed event or frame breakdown informs the engineer about the amount of milliseconds spent on a particular code execution.
 
 ## Telemetry Correlation
 
@@ -79,7 +79,7 @@ We correlate observability data by an **execution context**. This allows us to c
 
 If our system utilizes tracing tools, we extend the execution context with a trace context to granularly aggregate logs. We replace our hop counter with the trace id and span id. To consolidate our spans to a shared trace, we propagate our execution context. 
 
-The origin of the telemetry is also known as the **resource context**. We store information about the source of our data, the machine it is running on, the name and version of our software, the internal ip address, telemetry exporter library, the client ip address. Using these three correlations we are able to filter, query and analyze across a broad set of requirements.
+The origin of the telemetry is also known as the **resource context**. We store information about the source of our data, the machine it is running on, the name and version of our software, the internal IP address, telemetry exporter library, the client IP address. Using these three correlations we are able to filter, query and analyze across a broad set of requirements.
 
 ### Beyond structured data
 
@@ -89,6 +89,6 @@ With data pipelines migrating from ETL workflows to ELT, our metrics gathering m
 
 ## Costs of Monitoring and Observability
 
-Monitoring and observability is expensive across all dimensions, resources, burn rate, and personnel. We store additional data, handle additional traffic, and maintain more systems. The increased CPU load necessary to structure data, perform io operations, and aggregate information demands horizontal or vertical scaling to fulfill the same amount of traffic. We need to understand and comply to data governance across political regions.
+Monitoring and observability is expensive across all dimensions, resources, burn rate, and personnel. We store additional data, handle additional traffic, and maintain more systems. The increased CPU load necessary to structure data, perform IO operations, and aggregate information demands horizontal or vertical scaling to fulfill the same amount of traffic. We need to understand and comply to data governance across political regions.
 
 We start with the minimum monitoring solution that has the greatest impact on costumers and scale our observability with our product. Implementing an ELK stack in an early stage startup realistically doubles the cost of infrastructure. Not having effective site reliability is an expensive risk for established platforms. Global enterprises can wield data lakes and data analytics with competence and power. As with any business decision, we calculate our costs and benefits to decide the scale of our observability to investment in future growth and market competitiveness.
