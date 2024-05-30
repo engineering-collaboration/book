@@ -77,9 +77,9 @@ The **time of execution** provides context when grouping and analyzing logs and 
 
 We correlate observability data by an **execution context**. This allows us to correlate telemetry from different components of a distributed system that participated in the particular request execution. To achieve this we generate unique request identifiers for traffic passing our API gateway (most tools provide this out of the box). To establish execution order, we append a hop counter in the meta data that increments every time the context is passed on.
 
-If our system utilitzes tracing tools, we extend the execution context with a trace context to granularly aggregate logs. We replace our hop counter with the trace id and span id. To consolidate our spans to a shared trace, we propagate our execution context. 
+If our system utilizes tracing tools, we extend the execution context with a trace context to granularly aggregate logs. We replace our hop counter with the trace id and span id. To consolidate our spans to a shared trace, we propagate our execution context. 
 
-The origin of the telemetry is also known as the **resource context**. OpenTelemetry traces and metrics contain information about the resource they come from. These 3 correlations can be the foundation of powerful navigational, filtering, querying and analytical capabilities.
+The origin of the telemetry is also known as the **resource context**. We store information about the source of our data, the machine it is running on, the name and version of our software, the internal ip address, telemetry exporter library, the client ip address. Using these three correlations we are able to filter, query and analyze across a broad set of requirements.
 
 ### Beyond structured data
 
