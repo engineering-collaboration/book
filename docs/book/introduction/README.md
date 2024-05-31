@@ -52,20 +52,16 @@ We are hard at work on *The anatomy of a code change* and are releasing new chap
 - [x] Introduction
     - [x] Notes and structure
     - [x] First draft
-    - [x] Polish
-    - [ ] Edit for v1.0.0
+    - [ ] Edit for v1.0.0 (in progress)
 - [x] [The anatomy of a software company](../anatomy-of-a-software-company/README.md)
     - [x] Notes and structure
     - [x] First draft
-    - [x] Polish
-    - [ ] Edit for v1.0.0
+    - [ ] Edit for v1.0.0 (in progress)
 - [ ] [The anatomy of managing a team](../anatomy-of-managing-a-team/README.md)
     - [ ] Notes and structure
     - [ ] First draft
-    - [ ] Polish
     - [ ] Edit for v1.0.0
 - [ ] [The anatomy of a code change](../anatomy-of-a-code-change/README.md)
     - [x] Notes and structure
-    - [ ] First draft (in progress)
-    - [ ] Polish
-    - [ ] Edit for v1.0.0
+    - [x] First draft
+    - [ ] Edit for v1.0.0 (in progress)

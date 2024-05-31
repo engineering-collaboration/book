@@ -5,9 +5,6 @@ description: The anatomy of a code change covers the day-to-day processes for st
 
 # The anatomy of a code change
 
-!!! note
-    Part 3 of the book is being polished. *The anatomy of a code change* will be released on a chapter basis. Consult the task list below for an overview of the chapters in this part.
-
 Part three of this book covers the day-to-day processes for streamlining technical product development. It focuses on a solid foundation of CI/CD which can be extended by our organization. Utilizing automation we can <!-- vale write-good.Weasel = NO -->significantly<!-- vale write-good.Weasel = YES --> reduce cognitive load and ensure consistent deliveries of our product.
 
 The practices covered in this part may be extended beyond our engineering departments. Our mantra is to do less, but inversely do the hard work to make things <!-- vale alex.Condescending = NO -->simple<!-- vale alex.Condescending = YES -->.

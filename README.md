@@ -9,14 +9,18 @@ The book *OpenCollaboration* presents a vertical slice of strategies that have p
 
 ## Roadmap
 
-*OpenCollaboration* is under heavy development and undergoes continuous editing and restructuring. The main development currently focuses on polishing Part III. The additional roadmap for the v1 release currently looks as follows.
+*OpenCollaboration* is under heavy development and undergoes continuous editing and restructuring. The main development currently focuses on rewriting the published chapters for coherent tone and interdependency. The additional roadmap for the v1 release currently looks as follows.
 
-- [x] Introduction
-- [x] Part I
-- [ ] Part II
-- [ ] Part III (in progress)
-- [ ] Home page
-- [ ] Define and automate contributor
+- [x] Write *Introduction*
+- [x] Write *Part I*
+- [x] Write *Part III*
+- [ ] Rewrite published chapters
+- [ ] Improve website
+  - [ ] Design landing page
+  - [ ] Improve dynamic social cards
+  - [ ] Include analytics
+- [ ] Write *Part II*
+- [ ] Rewrite published chapters
 
 ## Running locally
 
