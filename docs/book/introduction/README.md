@@ -13,9 +13,9 @@ Software companies must adapt to rapid technological, economic, and political ch
 
 *OpenCollaboration* is structured into three sections, addressing processes at different levels of our organization.
 
-- *The anatomy of a software company* covers how to optimally establish our teams and improve organic collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product, expand the number of teams within our organization, and advance the professional expertise of our employees. The topics discussed in this section address problems encountered by technology officers and software architects.
-- *The anatomy of managing a team* frames supporting principles for leading a team. This section covers day-to-day encounters of technical and team leads.
-- *The anatomy of a code change* analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
+- *The Anatomy of a Software Company* covers how to optimally establish our teams and improve organic collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product, expand the number of teams within our organization, and advance the professional expertise of our employees. The topics discussed in this section address problems encountered by technology officers and software architects.
+- *The Anatomy of Managing a Team* frames supporting principles for leading a team. This section covers day-to-day encounters of technical and team leads.
+- *The Anatomy of a Code Change* analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
 
 While the structure of this book follows the typical reciprocal career progression of an engineer, we encourage all readers to glance at every section. Certain sociotechnical dependencies become more visible when digesting the entire book.
 
@@ -27,7 +27,7 @@ A couple of decades ago, the core business of an organization was run through sa
 
 This book covers a lot of ground, and not all of it is confined within an engineering frustum. When reading this book, we consider how the practices described within can be used in tandem with departments outside of engineering. We might improve the efficiency of our communication channels within our iteration process.
 
-This book does not include source code, does not advocate for any particular tech stack, and does not assume the use of any tool or platform (~*~ *The anatomy of a code change* requires experience with version control).
+This book does not include source code, does not advocate for any particular tech stack, and does not assume the use of any tool or platform (~*~ *The Anatomy of a Code Change* requires experience with version control).
 
 ### This is not a Step-by-step Guide
 
@@ -47,21 +47,21 @@ Lastly, while we do our best to keep the language as inclusive as possible, ther
 
 ## Current Progress
 
-We are hard at work on *The anatomy of a code change* and are releasing new chapters periodically. A breakdown of our progress with a detailed list of chapters is available on the individual section pages.
+We are hard at work on *The Anatomy of a Code Change* and are releasing new chapters periodically. A breakdown of our progress with a detailed list of chapters is available on the individual section pages.
 
 - [x] Introduction
     - [x] Notes and structure
     - [x] First draft
     - [ ] Edit for v1.0.0 (in progress)
-- [x] [The anatomy of a software company](../anatomy-of-a-software-company/README.md)
+- [x] [The Anatomy of a Software Company](../anatomy-of-a-software-company/README.md)
     - [x] Notes and structure
     - [x] First draft
     - [ ] Edit for v1.0.0 (in progress)
-- [ ] [The anatomy of managing a team](../anatomy-of-managing-a-team/README.md)
+- [ ] [The Anatomy of Managing a Team](../anatomy-of-managing-a-team/README.md)
     - [ ] Notes and structure
     - [ ] First draft
     - [ ] Edit for v1.0.0
-- [ ] [The anatomy of a code change](../anatomy-of-a-code-change/README.md)
+- [ ] [The Anatomy of a Code Change](../anatomy-of-a-code-change/README.md)
     - [x] Notes and structure
     - [x] First draft
     - [ ] Edit for v1.0.0 (in progress)

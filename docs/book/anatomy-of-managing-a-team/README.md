@@ -1,4 +1,4 @@
-# The anatomy of managing a team
+# The Anatomy of Managing a Team
 
 !!! note
     Part 2 of the book is in heavy development and will be the final part to be released. Consult the task list below for an overview of the chapters in this part.

@@ -1,9 +1,9 @@
 ---
-title: The anatomy of a software company
+title: The Anatomy of a Software Company
 description: This part covers tools and strategies at an organizational level to encourage dynamic and autonomous teams. Flexible teams will enable our organization to adapt to market changes more rapidly.
 ---
 
-# The anatomy of a software company
+# The Anatomy of a Software Company
 
 This part covers tools and strategies at an organizational level to encourage dynamic and autonomous teams. Flexible teams will enable our organization to adapt to market changes more rapidly.
 
