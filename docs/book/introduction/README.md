@@ -29,7 +29,7 @@ This book covers a lot of ground, and not all of it is confined within an engine
 
 This book does not include source code, does not advocate for any particular tech stack, and does not assume the use of any tool or platform (~*~ *The Anatomy of a Code Change* requires experience with version control).
 
-### This is not a Step-by-step Guide
+### This is not a Step-by-Step Guide
 
 At best, this book may be used as a reference or as a starting point for evolving our organization. We do not try to change an entire organization overnight.
 
