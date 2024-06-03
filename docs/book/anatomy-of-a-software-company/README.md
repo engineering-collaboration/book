@@ -11,11 +11,11 @@ The content within this book is what we have found most useful across a broad ra
 
 The current progress of this section:
 
-- [x] An enabling organization
-- [x] Autonomous team structure
-- [x] Internal supporting teams
-- [x] Communication channels
-- [x] Team interactions
+- [x] An Enabling Organization
+- [x] Autonomous Team Structure
+- [x] Internal Supporting Teams
+- [x] Communication Channels
+- [x] Team Interactions
 - [x] Standardization
 - [x] Innersourcing
-- [x] Team education and training
+- [x] Team Education and Training

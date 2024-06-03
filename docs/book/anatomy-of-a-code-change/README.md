@@ -12,20 +12,20 @@ The practices covered in this part may be extended beyond our engineering depart
 The current progress of this section:
 
 - [x] CI/CD
-- [x] Trunk based development
-- [x] Planning implementations
+- [x] Trunk Based Development
+- [x] Planning Implementations
 - [x] Commits
-- [x] Pull requests
-- [x] Static analysis
-- [x] Code reviews
+- [x] Pull Requests
+- [x] Static Analysis
+- [x] Code Reviews
 - [x] Merging
 - [x] Testing
-- [x] Release mechanisms
-- [x] Artifact management
-- [x] Release strategies
+- [x] Release Mechanisms
+- [x] Artifact Management
+- [x] Release Strategies
 - [x] Documentation
-- [x] Repository strategies
-- [x] Monitoring and observability
+- [x] Repository Strategies
+- [x] Monitoring and Observability
 
 ## Version Control
 
