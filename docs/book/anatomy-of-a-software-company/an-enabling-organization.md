@@ -1,9 +1,9 @@
 ---
-title: An enabling organization
+title: An Enabling Organization
 description: Facilitating collaboration structures promotes a collaborative culture and thinking. Facilitating communication channels fosters clean and efficient communication between people.
 ---
 
-# An enabling organization
+# An Enabling Organization
 
 We cannot change people's behavior by changing their minds; we change their minds by changing people's behavior. Preaching "best" practices and academic anecdotes will not change the culture present in our organization. Our culture is controlled by the professional and social frameworks we establish within our organization. The values and beliefs, explicitly and implicitly framed by our organization's hierarchy and interactions, drive our cultural movement.
 

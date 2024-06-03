@@ -15,7 +15,7 @@ Standardization is a double-edged sword. Although it improves communication acro
 - If there is an open-source solution, we use the open-source solution.
 <!-- vale write-good.Weasel = YES -->
 
-## Standardizing schemas instead of tools
+## Standardizing Schemas instead of Tools
 
 As we hire across various domains, our teams trend towards using tools popular in their specialties. Imposing arbitrary restrictions dampens the productivity of our teams. Instead of standardizing platforms or tools, we standardize our schemas and data description languages.
 
