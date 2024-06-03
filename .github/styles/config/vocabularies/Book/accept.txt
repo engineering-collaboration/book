@@ -60,7 +60,7 @@ unidirectionally
 weekly
 unvetted
 findability
-onboarding
+[Oo]nboarding
 uppercases
 lowercases
 parsable
