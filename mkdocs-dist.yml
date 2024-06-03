@@ -86,10 +86,10 @@ nav:
       - DevOps, Agile, Lean: './book/introduction/devops-agile-lean.md'
       - Blameless Culture: './book/introduction/blameless-culture.md'
 
-    - The anatomy of a software company:
+    - The Anatomy of a Software Company:
       - './book/anatomy-of-a-software-company/README.md'
       - An Enabling Organization: './book/anatomy-of-a-software-company/an-enabling-organization.md'
-      - Autonomous team structure: './book/anatomy-of-a-software-company/autonomous-team-structure.md'
+      - Autonomous Team Structure: './book/anatomy-of-a-software-company/autonomous-team-structure.md'
       - Internal Supporting Teams: './book/anatomy-of-a-software-company/internal-supporting-teams.md'
       - Team Interactions: './book/anatomy-of-a-software-company/team-interactions.md'
       - Communication Channels: './book/anatomy-of-a-software-company/communication-channels.md'
@@ -97,10 +97,10 @@ nav:
       - Innersourcing: './book/anatomy-of-a-software-company/innersourcing.md'
       - Team Education and Training: './book/anatomy-of-a-software-company/team-education-and-training.md'
 
-    - The anatomy of managing a team:
+    - The Anatomy of Managing a Team:
       - './book/anatomy-of-managing-a-team/README.md'
 
-    - The anatomy of a code change:
+    - The Anatomy of a Code Change:
       - './book/anatomy-of-a-code-change/README.md'
       - CI/CD: './book/anatomy-of-a-code-change/cicd.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'
