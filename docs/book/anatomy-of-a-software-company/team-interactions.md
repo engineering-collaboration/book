@@ -1,9 +1,9 @@
 ---
-title: Team interactions
+title: Team Interactions
 description: Large-scale organizations rely on a multitude of autonomous teams solving their respective domain problems in an efficient manner.
 ---
 
-# Team interactions
+# Team Interactions
 
 Conway's law is not solely defined by the architecture of our teams; it also covers how these subsystems communicate with each other. We use people who are skilled in technical API design to help build boundaries between teams within an organization.
 
@@ -13,7 +13,7 @@ Large-scale organizations rely on a multitude of autonomous teams solving their 
 To highlight the difference of the two approaches, we are borrowing a quote from *Mark Burgess*'s book *Thinking in Promises* - "Don't tell me what you are doing, tell me what you are trying to achieve!".
 <!-- vale Vale.Avoid = YES -->
 
-## Interaction forms by Team Topologies
+## Interaction Forms by Team Topologies
 
 !!! abstract "This section is heavily based on the book *Team Topologies*."
 
@@ -55,7 +55,7 @@ Typical facilitating scenarios include:
 - Adoption of new tools, where skeleton systems are set up by the facilitating team and handed over to the vertical team at the end of the phase.
 - Political duties or user insights from vertical teams adopting new feature rollouts from X-as-a-Service interactions.
 
-## Putting it all together
+## Putting it all Together
 
 Combining the practices of [autonomous vertical teams](./autonomous-team-structure.md), [internal supporting teams](internal-supporting-teams.md), and the team interactions discussed within this chapter, we start visualizing our team structure. When designing team boundaries and interaction modes, we commit to the *Inverse Conway Maneuver* and map our communication channels to our software architecture. The following picture showcases an academic slice of a larger company.
 
@@ -71,7 +71,7 @@ Our vertical platform teams working on the product search component and the metr
 
 Our CI/CD research team spent the last months evaluating tools and strategies for advanced testing practices. Facilitating our metrics team, our research team is presenting and validating its findings in a low-risk internal environment. As soon as the metrics team reaches self-reliance with the new practices, the CI/CD R&D team moves to facilitate the next vertical team.
 
-## Workspace design
+## Workspace Design
 
 We have influence on the communication behavior of our teams. As with the *Inverse Conway Maneuver*, we ask ourselves who we want to communicate with whom, how frequently, and design our workspaces around this mandate. This approach works for both physical and virtual workspaces.
 
@@ -93,7 +93,7 @@ Our policies and processes enable helpful workplace characteristics by setting c
 
 By setting up organic traits and processes, we encourage interaction modes to become team habits.
 
-## On-site, remote, and hybrid 
+## On-site, Remote, and Hybrid 
 
 Since a global pandemic and government-dictated self-isolation accelerated work-from-home policies, remote work has become a debated topic. With software, we have the unique ability to hire (almost) any division of our workforce from any timezone. Hiring across state and country borders introduces additional HR responsibilities of income tax, potential organizational tax, etc.
 

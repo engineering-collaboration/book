@@ -11,7 +11,7 @@ Frequent commits make our lives easier as we have multiple saved states to track
 
 Development commits are viewed less often than merge commits. As we aspire to keep the scope of our changes as small as needed, our development commits will seldom be visible in our main branch. We heavily encourage work-in-progress commits and pushes. Commits can be cleaned up (as discussed in [Merging]()), but progress lost is lost forever.
 
-## Commit isolation
+## Commit Isolation
 
 When we do find ourselves having introduced unexpected changes to a production service with a large-scoped change and development commits, clean commits support future engineers in fixing problems more efficiently and reduce frustration in stressful situations.
 
@@ -19,11 +19,11 @@ Keeping commits inherently consistent streamlines work and improves comparing ch
 
 As we isolate computational changes, we also avoid wedging in housekeeping alterations. Refactors, variable or method naming updates, and whitespace fixes are committed separately from behavior updates to improve the readability of critical diffs.
 
-## Commit messages
+## Commit Messages
 
 The urge to type "Did random things" and be done with it is natural. Keeping messages short, concise, and descriptive requires significant cognitive load. Yet, the use of well-formed commit messages improves the readability and traceability of our changes. Following good practices for structuring our commit messages eases our cognitive burden.
 
-### Subject line
+### Subject Line
 
 - We limit the subject line to 50 characters
 - We capitalize the subject line
@@ -42,7 +42,7 @@ Within the subject line, we disregard implementation strategies, since our fello
 *Update authentication flow to be streamlined* --> *Streamline authentication flow*  
 *Add authentication for the user with OpenID* --> *Authenticate user via OpenID*  
 
-### Description paragraph
+### Description Paragraph
 
 With the dominance of the leading git platforms and trunk-based development, description paragraphs have become atypical. Detailed reasoning for changes has moved to [Pull Requests](). Nevertheless, Git commit messages can contain multi-line description paragraphs, which are considered well-formed when:
 

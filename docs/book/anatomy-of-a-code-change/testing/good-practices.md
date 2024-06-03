@@ -1,19 +1,19 @@
 ---
-title: Good practices
+title: Good Practices
 description: Before delving deeper into distinct testing scopes and strategies, we examine generally applicable good practices when it comes to writing tests.
 ---
 
-# Good practices
+# Good Practices
 
 Before delving deeper into distinct testing scopes and strategies, we examine generally applicable good practices when it comes to writing tests.
 
-## Test against public-facing APIs
+## Test against Public-Facing APIs
 
 When writing tests, we assume as little as possible of the implementation. We compose tests for public-facing interfaces, not private ones. Private implementations change more frequently over time as additional feature requests come in and code is refactored, moved to libraries, or removed entirely.
 
 When refactoring code, we run tests to ensure we haven't changed behavior for implementations that call the public-facing methods and APIs. Testing against private implementations increases the workload, as we actively just changed the private implementation and are now required to update the tests. It is a hurdle comprised of more effort than benefit.
 
-## Test behavior, not processes
+## Test Behavior, not Processes
 
 Good tests assume as little as possible of the internal workings of the implementation and test against expected *behavior*, not an expected chain of *processes*. An example highlighting the difference:
 
@@ -72,7 +72,7 @@ func Test_SerializeStringSuccess(t *testing.T) {
 If the above implementation fails, we can now reasonably assume that changes done to `my_utils.WriteString` or `my_utils.ReadString` are no longer compatible, which is the behavior we are actually interested in during the development cycle. The second implementation is less likely to be flaky and scales with the product. It also models our customers' behavior, validating that the software meets our users' expectations.
 <!-- vale write-good.Weasel = YES -->
 
-### Hyrum's law
+### Hyrum's Law
 
 <!-- vale Vale.Avoid = NO -->
 !!! quote
@@ -84,13 +84,13 @@ Hyrum's law states that every public-facing behavior of our implementation will 
 
 We cannot foresee or control how third-party systems depend upon our implementation, and we question the feasibility of testing all public-facing characteristics of our implementation. We are aware that changes might be incompatible with current dependencies, and it is up to us to weigh the responsibility we delegate to our consumers.
 
-## When tests break
+## When Tests Break
 
 Accidental breaking changes aside, changes to products will inevitably cease to pass established tests. We may have encountered a brittle test that is not scaling with our product changes. Depending on the severity of the fragility, we resolve the issue synchronously or asynchronously. Prominent brittleness may be removed by slightly altering the test and sending the initial author a direct message to corroborate our changes. Opaque tests may require a meeting to determine a resolution.
 
 Failing tests for working code are an indicator of backward incompatibility. If these consequences have already been discussed, we ensure they are present within the [Design Document](../planning-implementations.md) and verified by all stakeholders. In case we find our design doc lacking, it is imperative to communicate the situation to our team lead until a strategy is agreed upon by all involved departments. While this sounds histrionic, most cases resolve themselves astutely with a brief email chain.
 
-## Naming of tests
+## Naming of Tests
 
 Method-oriented tests are named after the method being tested. Names of behavior-driven tests offer the chance to convey useful information, as the name is the first token visible to us on failing tests.
 
@@ -98,6 +98,6 @@ A good name describes the actions being taken on a system and the expected outco
 
 Concise naming combined with clear failure messages enable us to fix our implementation transgressions with poise and grace. Test method naming and error messages follow the acronym DAMP (descriptive and meaningful phrases) rather than DRY (don't repeat yourself).
 
-## Don't put logic in tests
+## Don't put Logic in Tests
 
 Complexity is introduced in the form of logic, such as operators, loops, and conditionals. When a piece of code contains logic, we require <!-- vale alex.Ablist = NO -->mental<!-- vale alex.Ablist = YES --> computation to determine its result instead of just reading it off the screen. In test code, we stick to straight-line code over clever logic. Duplication is preferred when it makes the test more descriptive and meaningful.

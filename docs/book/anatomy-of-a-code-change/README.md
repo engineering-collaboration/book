@@ -1,9 +1,9 @@
 ---
-title: The anatomy of a code change
-description: The anatomy of a code change covers the day-to-day processes for streamlining technical product development. It focuses on a solid foundation of CI/CD which can be extended by our organization. Utilizing automation we can reduce cognitive load and ensure consistent deliveries of our product.
+title: The Anatomy of a Code Change
+description: The Anatomy of a Code Change covers the day-to-day processes for streamlining technical product development. It focuses on a solid foundation of CI/CD which can be extended by our organization. Utilizing automation we can reduce cognitive load and ensure consistent deliveries of our product.
 ---
 
-# The anatomy of a code change
+# The Anatomy of a Code Change
 
 Part three of this book covers the day-to-day processes for streamlining technical product development. It focuses on a solid foundation of CI/CD which can be extended by our organization. Utilizing automation we can <!-- vale write-good.Weasel = NO -->significantly<!-- vale write-good.Weasel = YES --> reduce cognitive load and ensure consistent deliveries of our product.
 
@@ -12,20 +12,20 @@ The practices covered in this part may be extended beyond our engineering depart
 The current progress of this section:
 
 - [x] CI/CD
-- [x] Trunk based development
-- [x] Planning implementations
+- [x] Trunk Based Development
+- [x] Planning Implementations
 - [x] Commits
-- [x] Pull requests
-- [x] Static analysis
-- [x] Code reviews
+- [x] Pull Requests
+- [x] Static Analysis
+- [x] Code Reviews
 - [x] Merging
 - [x] Testing
-- [x] Release mechanisms
-- [x] Artifact management
-- [x] Release strategies
+- [x] Release Mechanisms
+- [x] Artifact Management
+- [x] Release Strategies
 - [x] Documentation
-- [x] Repository strategies
-- [x] Monitoring and observability
+- [x] Repository Strategies
+- [x] Monitoring and Observability
 
 ## Version Control
 

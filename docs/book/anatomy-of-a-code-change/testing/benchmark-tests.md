@@ -1,13 +1,13 @@
 ---
-title: Benchmark tests
+title: Benchmark Tests
 description: In order to avoid any kind of performance regression, we run our changes through relevant benchmark tests. As the word benchmark indicates, these tests check for discrete metrics for a certain facet of our software.
 ---
 
-# Benchmark tests
+# Benchmark Tests
 
 When releasing new versions of our software, our acceptance criteria exceed operational functionality and stability. In order to avoid any kind of performance regression, we run our changes through relevant benchmark tests. As the word *benchmark* indicates, these tests check for discrete metrics for a certain facet of our software. The evaluated benchmarks of our software indicate whether our organization meets the acceptance criteria of stakeholders and compare our performance to competitors on the market.
 
-## Performance tests
+## Performance Tests
 
 Testing against performance identifies efficiency bottlenecks within our software and, if done over time, helps us avoid introducing performance regressions with our changes. We define performance as any metric occurring during runtime that we care about and decide to document.
 
@@ -15,7 +15,7 @@ For example, we identify issues related to memory leaks and resource management 
 
 We may measure performance-increasing strategies of cache effectiveness, edge content delivery, lazy loading, deferred executions, or whatever else we identify as crucial for our use cases.
 
-## Robustness tests
+## Robustness Tests
 
 While *performance tests* evaluate our proficiency when everything goes well, *robustness tests* assess our capacity for dealing with increased load and failures.
 
@@ -23,7 +23,7 @@ We evaluate our system's ability to adapt to traffic spikes and increased resour
 
 After the worst has happened and our software crashed either due to a lack of scalability or malicious third-party attacks, we test our disaster recovery measures. Shorter durations to fully recover from downtime minimize potential costs and revenue losses to our organization.
 
-## Accessibility tests
+## Accessibility Tests
 
 We maximize the number of potential users by making certain our software is usable by a broad spectrum of people. Traditionally, accessibility was related to physical traits, such as vision, mobility and motor skills, hearing, speech, or cognitive disabilities. Depending on our product, we utilize a mix of static and runtime tests to verify perceptibility and input options for various senses to interact with our software. We test for contrasting color palettes, labeling, navigation, text-to-speech, font size and content zooming, and inspect our UIs and APIs against our design system to ensure internal consistency within the software.
 

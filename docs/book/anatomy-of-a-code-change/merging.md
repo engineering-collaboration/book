@@ -12,7 +12,7 @@ Depending on the discipline, the concept of repository streams, and branch isola
 
 *Git* includes various strategies for converging changes to a single destination branch. Ungoverned, our project might grow in unnecessary complexity, include opaque processes, or lose information relevant for future fixes. This chapter details merging policies for successful long-term integrations in trunk-based development.
 
-## Linear history
+## Linear History
 
 Regardless of our approach, when merging changes into software, we ensure a linear history of our project. The parent commit of our development branch is the latest commit on main. A linear history sequentially chronicles the evolution of our software and streamlines future reactionary development.
 
@@ -31,7 +31,7 @@ In order to rectify our entanglement, we rebase our work on the latest commit on
 !!! note
     When rebasing a branch, we create new commits on our local machine that no longer mirror the state of our remote repository. We either force-push (with-lease) our changes, overriding the state of the remote repository, or create a new branch from the head of our development branch and rebase and push that one, abandoning our development branch. We do so with the respect and caution required when rewriting project history in a collaborative environment.
 
-## Squash and merge
+## Squash and Merge
 
 Squashing an arbitrary number of consecutive commits combines and replaces those changes into a single commit. By consolidating work-in-progress commits or bilaterally annulling commits, we reduce noise in our project history.
 
@@ -41,7 +41,7 @@ For short-lived development branches focusing on fixing or adding a single respo
 
 With a hypothetical average of ten commits per development branch, by squashing, we reduce the growth of commits over time from 10,000 commits to 1,000 commits.
 
-## Merge commit
+## Merge Commit
 
 On occasion, the complexity of achieving a task or the volume of changes across multiple files requires chronological cataloging for transparency. Merge commits allow us to preserve the development commits we created within the repository without clobbering the main branch.
 
@@ -51,13 +51,13 @@ The particular branching view of a merge commit allows us to either ignore the d
 
 [This *GitHub* blog article](https://github.blog/2022-06-30-write-better-commits-build-better-projects/) details practices for advanced users of *Git* about structuring a story of our commits when merging our work via a merge commit. The well-written paper outlines how thematically organized commits increase the readability of changes by spanning the dramatic arc of our development process; from partial implementations to tests, refactors, polish, and documentation.
 
-## Cherry-picking
+## Cherry-Picking
 
 The act of cherry-picking commits cannot, in good conscience, be described as a merge. It is, however, an additional way of transferring select commits between branches. The command `git cherry-pick` allows us to append an existing commit to our current `HEAD`.
 
 Optionally, cherry-picking applies the contents of a commit to our current workspace, rather than appending a commit itself. This permits us to edit the content or revert unwanted modifications bundled within the cherry-picked change before creating a new commit in our development branch.
 
-## Resolving conflicts
+## Resolving Conflicts
 
 *Git* merges compatible changes automatically. Resolving conflicts, however, requires manual intervention. We compare the clashing lines of changes and rectify the discord by editing the changes to accept a change from either source or manually edit a functioning resolution containing workings of both origins.
 

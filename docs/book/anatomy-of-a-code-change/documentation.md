@@ -9,7 +9,7 @@ Documentation is our trade's collective bane. Similar to testing, documentation 
 
 This chapter shares proven strategies to embed the process of documenting changes into our product cycle. Following these standards reduces the burden of writing documentation while increasing quality.
 
-## Teaching documentation
+## Teaching Documentation
 
 The act of learning programming (even when taught) is an inherently isolated task. We write, submit, and receive reviews of our code. We learn about algorithms and data structures. We invert binary trees and study time complexities of hash table implementations. These are necessary lessons and build the foundation of our future career.
 
@@ -17,13 +17,13 @@ However, when starting our journey into computer science, our peers and mentors 
 
 Thus, the responsibility of teaching documentation falls entirely to engineering companies. Within this avenue, we fill empty cups.
 
-## Shifting left on documentation
+## Shifting Left on Documentation
 
 Drifting and missing documentation inflict long-term damage to our organization. Through the mid-to-late 2010s, modern delivery frequencies and market competitiveness birthed prophylactic measures for documentary detriments.
 
 Our most effective prevention is to plan for documentation in our work by creating tickets and reserving the time necessary for writing it. Actively shifting left on documentation mandates that we build automation tooling for its continuous integration and delivery.
 
-### Documentation as code
+### Documentation as Code
 
 Organically, source code changes faster than its documentation. We call this documentation drift. Useful documentation evolves at the same pace as the source code it references. To ensure complementary development, we administer documentation within the same version control system as our code.
 
@@ -42,7 +42,7 @@ Extending our continuous delivery practices, we build and distribute documentati
 
 To reduce the workload of high-quality documentation, our engineers write documentation in editing formats, such as Markdown, LaTeX, or AsciiDoc. During the build process, we generate the needed presentation formats, e.g., upload HTML pages to our documentation webpage, email PDF documents to our sales team.
 
-### Documentation-driven development
+### Documentation-Driven Development
 
 Documentation drift arises due to the increased velocity of source code compared to documentation. The term *documentation-driven development* (DDD) evangelizes penning down production-quality documentation before implementing a solution. The purest form of DDD happens organically when [planning work using design documents](./planning-implementations.md).
 
@@ -57,7 +57,7 @@ Arguably, a temporal reshuffling of our task list does not *drive* development. 
 
 An industry-wide motivation to consolidate open standards and the rapid inclusion of LLM tools in developer workflows promote future DDD practices and adoption. Let's see where this is going.
 
-## Diátaxis framework
+## Diátaxis Framework
 
 During his time at Canonical, [*Daniele Procida*](https://vurt.eu/) polished his work on a technical documentation framework, [*Diátaxis*](https://diataxis.fr/). This systematic approach to technical documentation separates it into four styles: tutorials, how-to guides, explanations, and technical references.
 
@@ -77,7 +77,7 @@ Our user explores our product with the help of tutorials and example procedures.
 
 More details available at [diataxis.fr/tutorials](https://diataxis.fr/tutorials/).
 
-### How-to Guides
+### How-To Guides
 
 Exploring a subject matter using tutorials is a serendipity-driven affair. How-to guides are the opposite. Our users have a goal in mind and are looking for the instructions on how to achieve it. The task is set by the user, not by the teacher. We provide a logical sequence of actions documenting the minimal necessary steps for the task.
 
@@ -107,7 +107,7 @@ Publicly, well-written explanations and copywriting material inform our potentia
 
 More details available at [diataxis.fr/explanation](https://diataxis.fr/explanation/).
 
-## Who is our reader?
+## Who is our Reader?
 
 As with everything in this book, we improve our documentation iteratively. We continuously consider our readers' needs and extend, adapt, move, or delete our workings accordingly.
 
@@ -117,7 +117,7 @@ Beyond disciplines, demographics and culture influence the language and tone of 
 
 After considering the Diátaxis-axis and the language, we consider where to place our documentation. We place quickstarts for software into the README within the source code repository of our product. Further information on external platforms or wiki pages. Information needed for the usage of our software cannot be placed in environments that require other credentials.
 
-## Documentation media
+## Documentation Media
 
 When selecting the appropriate media for our documentation, we consider the following points:
 

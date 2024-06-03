@@ -1,9 +1,9 @@
 ---
-title: The anatomy of a software company
+title: The Anatomy of a Software Company
 description: This part covers tools and strategies at an organizational level to encourage dynamic and autonomous teams. Flexible teams will enable our organization to adapt to market changes more rapidly.
 ---
 
-# The anatomy of a software company
+# The Anatomy of a Software Company
 
 This part covers tools and strategies at an organizational level to encourage dynamic and autonomous teams. Flexible teams will enable our organization to adapt to market changes more rapidly.
 
@@ -11,11 +11,11 @@ The content within this book is what we have found most useful across a broad ra
 
 The current progress of this section:
 
-- [x] An enabling organization
-- [x] Autonomous team structure
-- [x] Internal supporting teams
-- [x] Communication channels
-- [x] Team interactions
+- [x] An Enabling Organization
+- [x] Autonomous Team Structure
+- [x] Internal Supporting Teams
+- [x] Communication Channels
+- [x] Team Interactions
 - [x] Standardization
 - [x] Innersourcing
-- [x] Team education and training
+- [x] Team Education and Training

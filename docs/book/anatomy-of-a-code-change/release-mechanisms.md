@@ -9,7 +9,7 @@ We identified requirements, planned and implemented our changes, integrated our 
 
 Building our product with the practices detailed in this book, we can release our software hassle-free at any time. The decision of when to release depends on business and product factors, not technological limits. Internal services not uncommonly deploy multiple releases per day. As autonomous vertical teams, we create and deploy releases of our software without dependencies and handoffs to other teams.
 
-## Release candidate
+## Release Candidate
 
 When we have decided on releasing the current state of our software, we flag it as a release candidate. In an ideal world, the release candidate is promoted to the published release without any further changes. In reality, further modifications are necessary, either to fix unwanted behavior or to distill additional information for distribution.
 
@@ -17,7 +17,7 @@ We subject our release candidate to the pre-release testing suite we established
 
 The release procedure packages and signs our binary build, writes the changelog, compiles the up-to-date documentation, and uploads all created artifacts to our distribution platform.
 
-## Releasing via tags
+## Releasing via Tags
 
 Within trunk-based development (TBD), release candidates are most commonly referenced via tags to the commit on our main branch. A Git tag following a standardized pattern (e.g., `rc*.*.*`) kicks off our testing suite for our release version (e.g., `rc1.23.4`). Verified candidates mark the same commit for release with a release tag `v1.23.4`.
 
@@ -27,7 +27,7 @@ Release procedures typically generate meta-information related to our release. D
 
 Naturally, the tag patterns used in this chapter are subject to change as they follow the needs of our organization's release strategy.
 
-## Releasing via branches
+## Releasing via Branches
 
 Projects with a high number of contributors or a lengthy release process benefit from moving from releasing via tags to releasing via branches. However, when talking of release branches, we do not propose a single long-living release branch to merge into. After clearing our test suite, every candidate spawns an individual branch to reference the commit on main we plan to distribute.
 
@@ -49,11 +49,11 @@ Other times, production is on fire and serenity nowhere to be found. In the spir
 
 Our immediate task demands to have production running again. If production consumes our software as a dependency, initial success might be found in altering the dependent version; either roll-back to a functioning state or, if consuming an outdated version and the error has been fixed since then, bumping the offending dependency. When rolling back and rolling back over is not an option, it is time to rub the sleep out of our eyes and get to work.
 
-### Fixing a current release
+### Fixing a Current Release
 
 An oversight or ambiguous requirement caught up with us in the end. We follow the same procedure as any bug fix, spawn a development branch from latest main, eliminate the error, add a test to avoid a reappearance, create a PR, pass the test suite, **SKIP** a possible pre-merge code review, integrate our changes, and hit the release button.
 
-### Fixing an outdated release
+### Fixing an Outdated Release
 
 Our customer depends on a year-old version and makes heavy use of deprecated functionality. The risk of updating to a newer release is deemed as significant and uncomfortable. The reasoning of ignored deprecation warnings until launch day at 3 a.m. is unclear, and we discreetly write down the need for a future post-mortem.
 
@@ -61,6 +61,6 @@ We locate the commit dating back to the release on our main branch and, if we're
 
 We might find that over the course of our latest releases, we, in fact, have not tackled our vexatious issue. In which case, we get to work as we would with any change and create a development branch from the latest commit on main. Even if the current request relates to an outdated release, we patch the issue on our main branch first. By cherry-picking the resolution to the outdated release branch after, we avoid the problem reappearing as a future regression.
 
-### Overriding protections
+### Overriding Protections
 
 During crises, we are responsible to support and enable our colleagues and clients and require the full trust and privileges within our team to solve the problems at hand. Should immediate action be in opposition to everyday processes, we are authorized and able to override these with no slumbering peers picking up the phone.

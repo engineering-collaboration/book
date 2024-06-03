@@ -1,9 +1,9 @@
 ---
-title: Artifact management
+title: Artifact Management
 description: How we manage a cornucopia of interdependent artifacts before, during, and after our build process.
 ---
 
-# Artifact management
+# Artifact Management
 
 Building a release produces a cornucopia of interdependent artifacts for us to manage. Depending on our product, a single release may build:
 
@@ -48,7 +48,7 @@ Sometimes we discover a bug in an open-source project or find room for improveme
 
 We balance the rate of adoption of version updates to our dependencies. Accepting the latest release of each package increases our risk of introducing incompatible changes, while delaying adoption exposes us to security vulnerabilities and rising technical debt. Too much time between version bumps complicates the process of consolidating the new dependency version with our software and makes upstream fixes difficult.
 
-## Build and Test dependencies
+## Build and Test Dependencies
 
 Owning our software dependencies is the first step of assuring consistent artifact quality and velocity. The next one is owning our build environment. When creating our binaries, we rely on certain tools and environments to be available. If our process runs install scripts and `apt-get` is down, we will not be able to create a release.
 
@@ -87,7 +87,7 @@ Semantic versioning is a best effort solution to dependency management. The prac
 
 Nevertheless, it's one of the better systems we have, and we would be foolhardy not to follow it.
 
-## Change lists
+## Change Lists
 
 As we shift the responsibility of dependency management from technological analysis to sociotechnical responsibility, we communicate changes in a human-readable way. Thus, every release is accompanied by a change list (or changelog), a text file describing the work done for the release, typically containing bullet points of new features and fixed bugs.
 

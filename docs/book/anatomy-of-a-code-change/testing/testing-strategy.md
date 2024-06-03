@@ -1,9 +1,9 @@
 ---
-title: Testing strategy
+title: Testing Strategy
 description: Depending on our product, technology, and client demographic, we evolve the testing procedure into a strategy modeled to our needs.
 ---
 
-# Testing strategy
+# Testing Strategy
 
 Throughout this chapter, we discussed types of testing across the development cycle. From working on changes to releasing to production, we balance the execution of tests between utility and execution complexity, cost, and time. We have arrived at a solid foundation for a testing strategy for our organization.
 

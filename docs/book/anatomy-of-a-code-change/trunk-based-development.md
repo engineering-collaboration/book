@@ -1,6 +1,6 @@
 ---
-title: Trunk based development
-description: Trunk based development (TBD) is a source-control branching model where we frequently integrate code into a single main branch. By employing TBD techniques we resist any pressure to create other long-lived development branches.
+title: Trunk-Based Development
+description: Trunk-based development (TBD) is a source-control branching model where we frequently integrate code into a single main branch. By employing TBD techniques we resist any pressure to create other long-lived development branches.
 ---
 
 # Trunk-Based Development
@@ -26,28 +26,28 @@ TBD differentiates between three types of branches.
 2. Short-lived **development branches** for working on changes.
 3. Depending on our release strategy, optional long-lived **release branches** dedicated per release to package a version of the product.
 
-### Development branches
+### Development Branches
 
 For every change to our code base, we spawn a new development branch to encapsulate our work. **All** development branches source out of the latest commit of the main branch. During development, we commit often to the development branch and push changes to the remote repository to avoid any loss of work due to hardware errors.
 
 Once completed, we merge the changes back into main and delete the development branch after successful integration. The larger the team is, the higher the integration frequency should be.
 
-### Release branches (optional)
+### Release Branches (optional)
 
 Release branches within the context of TBD do not refer to a single parallel branch that releases are merged into. A release branch is a reference to a commit within the main branch. We discuss release branches in detail in [Release Mechanisms]().
 
 While development branches merge back into main, a release branch is never merged and is expected to be <!-- vale write-good.Weasel = NO -->eventually<!-- vale write-good.Weasel = YES --> abandoned and marked as stale.
 
-## Feature flags
+## Feature Flags
 
 Feature flags are a software development technique that allows us to enable or disable specific parts of our application. They toggle software behavior on or off for all users, groups of users, or individual users. This allows our teams to test and refine new features without interference.
 
-### Guard work in progress
+### Guard Work in Progress
 
 Large features expand our ideal development branch lifetime of a couple of days. We break these tasks down into subtasks and integrate our partially done feature work into our main branch periodically. This practice minimizes the risks and review effort of single massive merge requests. Using feature flags, we guard the execution of a set of instructions and prohibit any propagation to exposed UIs or APIs.
 
 <!-- vale Vale.Terms = NO -->
-### Rollout via feature flags
+### Rollout via Feature Flags
 <!-- vale Vale.Terms = YES -->
 
 Feature flags enable us to devise strategies of releasing software features in a controlled and scalable manner by toggling the visibility and functionality of a feature without having to deploy new code to our application.

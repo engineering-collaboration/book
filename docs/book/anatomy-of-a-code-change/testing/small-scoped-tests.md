@@ -1,15 +1,15 @@
 ---
-title: Small-scoped tests
+title: Small-Scoped Tests
 description: SSTs are the most widespread kind of tests within our code given their brevity and low resource impact. Applications commonly contain thousands of SSTs executed within seconds.
 ---
 
-# Small-scoped tests
+# Small-Scoped Tests
 
 The nondescript name *unit test* causes confusion as to what is and what is not included in a unit. The lack of expressive naming has led to a plethora of interpretations and strategies. The book *Software Engineering at Google* introduces the term *small-scoped tests* (SST), which we decided to appropriate.
 
 SSTs build the foundation of [Mike Cohn's testing pyramid](../#the-testing-pyramid), enabling rapid and successful continuous integration. SSTs are the most widespread kind of tests within our code given their brevity and low resource impact. Applications commonly contain thousands of SSTs executed within seconds. A complete suite of passing SSTs increases the confidence of introducing non-breaking changes to our code base.
 
-## Defining small-scoped
+## Defining Small-Scoped
 
 SSTs consist of the smallest possible testable entity in our code to confirm the expected process of a single public behavior executed in memory. SSTs do not rely on environmental factors, including file operations, network operations, and implementations specific to operating systems.
 

@@ -86,7 +86,7 @@ If our system utilizes tracing tools, we extend the execution context with a tra
 
 The origin of the telemetry is also known as the **resource context**. We store information about the source of our data, the machine it is running on, the name and version of our software, the internal IP address, the telemetry exporter library, and the client IP address. Using these three correlations, we are able to filter, query, and analyze across a broad set of requirements.
 
-### Beyond structured data
+### Beyond Structured Data
 
 Within data gathering and evaluation, two workflow concepts have established themselves: *extract-transform-load* (ETL) and *extract-load-transform* (ELT). The former cleans and organizes data before storing it in a database; the latter stores raw data and organizes it based on a later analytics query. ELT reduces the initial performance need, as we store data without any mandatory structuring process. The overhead happens when evaluating our stored data.
 

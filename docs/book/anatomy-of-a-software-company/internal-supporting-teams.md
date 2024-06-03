@@ -1,9 +1,9 @@
 ---
-title: Internal supporting teams
+title: Internal Supporting Teams
 description: It is common to have complex or shared problems that may be solved more efficiently by supporting teams within an organization. Besides working directly on public product features, stream-aligned teams may deliver internal practices.
 ---
 
-# Internal supporting teams
+# Internal Supporting Teams
 
 !!! abstract "This section is heavily based on the book *Team Topologies*."
 
@@ -13,7 +13,7 @@ Supporting teams reduce the burden on other vertical teams. For example, cloud t
 
 If we find that task switching puts an increasing amount of cognitive load on our vertical team, we spin one of the tasks into a new separate vertical team. We should do the same if we find a certain aspect of our development is taking away resources from our vertical team's actual task of providing marketable features.
 
-## Types of supporting teams
+## Types of Supporting Teams
 
 In the 2012 paper, *A Taxonomy of Dependencies in Agile Software Development*, Diane Strode and Sid Huff propose three different categories of dependencies: knowledge, task, and resource dependencies. In the book *Team Topologies*, supporting teams are differentiated into three different flavors:
 
@@ -25,7 +25,7 @@ A supporting team is a nested team consisting of vertical teams and potentially 
 
 Throughout these processes, remember Conway's Law. Changes to our departments will ultimately find their way into the architecture of our software. Software architecture is a continuous process. In modern times, no commercial software is as trivial as to be designed in whole and not influenced by changes.
 
-### Enabling team
+### Enabling Team
 
 The purpose of enabling teams is to understand potential areas of improvements of vertical teams. Enabling teams stay up-to-date with new approaches, tooling, and practices to bridge internal knowledge gaps. Enabling teams typically appear in the form of coaches, consultants, and research and development.
 
@@ -39,7 +39,7 @@ When a vertical team comes across a task that requires specialized knowledge, it
 
 The driving factor of establishing a complicated-subsystem is to reduce the cognitive load of a vertical team, not necessarily to share the component across multiple vertical teams. High communication with stream-aligned team during early exploration and development. Reduced interaction with stream-aligned team during later stages.
 
-### Platform teams
+### Platform Teams
 
 !!! quote
     *A digital platform is a foundation of self-service APIs, tools, services, knowledge, and support, which are arranged as a compelling internal product. Autonomous delivery teams can make use of the platform to deliver product features at a higher pace, with reduced coordination.*  
@@ -53,7 +53,7 @@ For example, our organization has been utilizing object storage from a popular c
 
 However, platforms can be as small as providing a thin wrapper or merely extended documentation and implementation examples of a publicly available product.
 
-## Team topology over time
+## Team Topology over Time
 
 As with most topics covered in this book, teams are not static. It is not sufficient to choose a team boundary a single time and expect no further changes. With the adoption of additional technology, market practices, competitors, and internal knowledge, our team constellations and interaction modes will evolve.
 
@@ -61,7 +61,7 @@ If we can track our team interactions, we can make decisions regarding team resp
 
 A relevant topic for this book is a different example. Learning and setting up CI/CD principles requires high cognitive load that can be tasked to an enabling team. The enabling team will set up a minimal pipeline for vertical teams, and after a hand-off and education period, the vertical team is responsible for adjusting the pipeline to their needs.
 
-## Provide supporting teams at cost
+## Providing Supporting Teams at Cost
 
 Successful companies follow a general rule that actionable feedback originates from paying customers solely. These are the people willing to spend money on the problem we are solving; these are the people we primarily listen to.
 

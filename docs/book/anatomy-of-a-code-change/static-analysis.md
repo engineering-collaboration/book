@@ -1,13 +1,13 @@
 ---
-title: Static analysis
+title: Static Analysis
 description: Static analysis scans the syntax of our code without actually executing it. It verifies that we follow agreed-upon conventions in our solution to maintain consistent readability, avoid bugs, and prevent security vulnerabilities before running our code.
 ---
 
-# Static analysis
+# Static Analysis
 
 Static analysis scans the syntax of our code without actually executing it. It verifies that we follow agreed-upon conventions in our solution to maintain consistent readability, avoid bugs, and prevent security vulnerabilities before running our code. Static analysis is run at every step of our code change: pre-merge, post-merge, and pre-release.
 
-## Code readability
+## Code Readability
 
 The most fundamental form of static analysis uses pattern matching to ensure our compliance with internally agreed-upon code formatting. We follow our organization's conventions regarding the type of whitespace, indentation, maximum line length, naming of objects, etc. We execute code linters specific to the programming language and extend these to cover the needs of our team.
 
@@ -15,7 +15,7 @@ Maintaining a consistent code base reduces friction when integrating our work wi
 
 Aside from programmatic syntax, we utilize static analysis practices for documentation. Pattern matching enforces practices that enrich embedded documentation by flagging improperly formatted comments across functions and objects. External documentation follows style guides that we enforce by configuring our static analysis tools.
 
-## Software conditions
+## Software Conditions
 
 Data flow analysis informs us about unused variables, uninitialized variables, and null pointer dereferences before we execute our code to discover crashes. Race conditions in multithreading environments are infamously difficult to spot and fix when the problem arises in production and can be prevented to a degree with sophisticated static analysis.
 
@@ -23,7 +23,7 @@ Call graph analysis flags potential performance bottlenecks and visualizes depen
 
 Resource leak detection in static analysis flags missing closures of objects, allocated memory, or network connections. These aspects severely affect the runtime stability of our system and subject us to high-security risks. Hostile actors piggyback on open database connections or memory layouts to read exposed data or inject unintended behavior.
 
-## Using static analysis
+## Using Static Analysis
 
 We define goals for static analysis and monitor the progress over time. Propitiously, the output of this process lends itself to distinctly measurable metrics. We track the number and nature of issues detected, as well as the time it takes to address them. When migrating away from certain libraries, we deprecate the use of these to guard against new dependencies popping up across the organization.
 

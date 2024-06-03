@@ -23,7 +23,7 @@ Communication covers all exchanges of information necessary to complete our task
 
 This broad collection of communication tools allows us to enable channels of various types of information exchange, from low-noise high-concentration work to collaborative work and cross-disciplinary brainstorming.
 
-## Communication medium aspects
+## Communication Medium Aspects
 
 Communication channels present individual strengths and weaknesses, which are typically complementary. We distinguish between the following aspects of the communication media to highlight the appropriate tool selection for our communication purposes.
 
@@ -48,7 +48,7 @@ Code reviews, status updates, bug reports, and documentation offer the highest a
 
 Let's keep in mind that we are never restricted to a single form of communication. Generally, it is better to overcommunicate than undercommunicate when it comes to media and channels. This avoids misunderstandings, accidental loss of information, or the impression that information is being withheld <!-- vale write-good.Weasel = NO -->deliberately<!-- vale write-good.Weasel = YES -->.
 
-## Social aspect of communication
+## Social Aspect of Communication
 
 Human communication problems can be mistaken for technical problems. Communication problems with the IT department may result in building a new ticketing system, instead of establishing low-effort communication channels. Technology alone does not strengthen personal connections.
 

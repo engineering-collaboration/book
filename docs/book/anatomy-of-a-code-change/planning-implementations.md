@@ -1,9 +1,9 @@
 ---
-title: Planning implementations
+title: Planning Implementations
 description: Making decisions is a speculative process. Even those deduced from considerable experience and data points are still predicting the future. If the decisions are documented, people are more willing to accept a conscious decision and its drawbacks.
 ---
 
-# Planning implementations
+# Planning Implementations
 
 After product features have been milled into sprint tasks and assigned to respective teams and engineers, we begin planning our implementation.
 
@@ -13,7 +13,7 @@ For the majority of changes, before diving straight into producing code we write
 
 To prevent turning this process into unnecessary red tape, we involve the minimum number of people necessary and strictly discuss the minimum requirements for the task. The individuals involved can be limited to the engineer implementing the task, an engineer from the customer team, and optionally a tech lead. These conversations typically happen organically, either verbally or in team chats. We make it a habit to copy the information to a publicly available platform.
 
-### Documenting decisions
+### Documenting Decisions
 
 Making decisions is a speculative process. Even those deduced from considerable experience and data points are still predicting the future. Recording the process of our conclusions and the outcomes improves the precision of our fortune-telling over time, as we can identify successful and unsuccessful patterns.
 
@@ -33,7 +33,7 @@ Every decision has advantages and disadvantages that are unambiguously weighed a
     - Advantages
     - Drawbacks
 
-## Existing solutions
+## Existing Solutions
 
 Problems are always more challenging than initially assumed, and we try to avoid rewriting code ourselves if a solution is available. Depending on our organization's open-source policy, we have a plethora of libraries and solutions available with permissive licensing.
 
@@ -41,7 +41,7 @@ We make use of our [innersource](../anatomy-of-a-software-company/innersourcing.
 
 Having covered our basis of existing implementations, we get to work. As the implementing engineer, we have full trust in implementation decisions as long as the output matches the agreed-upon design doc. If the documented requirements turn out to be costly during development, we revisit the design doc with the stakeholders.
 
-## Splitting integrations
+## Splitting Integrations
 
 To avoid long-living development branches, we integrate our work frequently into main. If necessary, we split our feature development into sensible coherent packages that can be integrated using feature flags and reviewed and tested separately.
 
