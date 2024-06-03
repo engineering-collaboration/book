@@ -15,17 +15,17 @@ The above cycle completes a CI/CD automation system. For a continuous improvemen
 
 Not all industries and software organizations follow the above distinction. Depending on deliverable scope, intended target audience, or distributed artifacts, the steps above may be skipped, merged, altered, or extended. Using the above nomenclature as a baseline, we build a release pipeline modeled after our needs. The lack of cross-industry distinction complicates an evident structure for the chapter. Instead, we share proven strategies for us to pick and choose for our product's validation and distribution.
 
-## Validating preview builds
+## Validating Preview Builds
 
 We validate our builds meticulously with automated and manual testing. Yet, the static nature of our test environments limits our aptitude to reflect our customers' realities. In order to deliver effectively, we gradually expose our changes to an increasing number of users. Reviewing preview builds in confined environments minimizes the impact of faulty builds.
 
-### Alpha versions
+### Alpha Versions
 
 We confirm the requirements of our changes with our customers and, during development, share exploratory product builds to verify the chosen direction of progress. We refer to these builds as *Alpha versions*. Alpha distributions consist of the earliest self-service implementations of new changes and do not require complex setup procedures.
 
 However, the inherent lack of concise documentation for work-in-progress features requires extra hand-holding. The volume of support and the immediacy of feedback limit the number of participants. Alpha phases are a private affair with frequent communication.
 
-### Beta versions
+### Beta Versions
 
 After our initial implementation, we share *Beta versions* with a wider user base of early adopters. With increasing confidence in our changes, we increase the availability of our work-in-progress releases.
 
@@ -35,7 +35,7 @@ We elevate successful private beta versions to public ones and make them availab
 
 Besides technological acceptance, our marketing team utilizes public betas for hyping releases and engaging the community. Preferably, we distribute preview versions with adapted licensing and limited warranty. We consider the public beta phase as the last step before releasing a new set of changes to our product line.
 
-### Tech streams
+### Tech Streams
 
 Certain organizations and products have moved away from landmark Alpha and Beta preview versions, instead opting for a persistent *tech stream*, stimulated by trunk-based development. Organizations use the term to indicate continuous public deliveries of experimental builds - titled by the release frequency - as daily builds, nightly builds, weekly builds, or biweekly builds. "Biweekly" referring to every two weeks (it sounds better than "every-two-week" builds).
 
@@ -43,13 +43,13 @@ In order to decide whether we release via landmark versions, tech streams, or a 
 
 Preview builds allow our users to verify the changes and various combinations of hardware, operating systems, drivers, locales, and interoperability between software products. Hence, they provide our customers with a buffer and the ability to provide feedback and bug reports.
 
-## Validating deployments and deliveries
+## Validating Deployments and Deliveries
 
 As Netflix no longer delivers packaged DVDs to our mailbox, we have moved beyond the era of "down for maintenance". We are able to ship updates without interrupting our service, localize releases, and react to unexpected errors of new releases. Within this chapter, we discuss prominent techniques for verifying deployment builds and replacing our live software in a controlled manner.
 
 However, all these strategies rely on the successful distribution of the generated artifacts. We get the binaries to the required location before starting any transitions. We ensure the built artifacts are complete, transferred from our build machine to the correct region of our distributed storage, and our production systems are authorized and able to download the updated version.
 
-### Blue-green deployment
+### Blue-Green Deployment
 
 We establish two identical environments for our software, one called blue and one called green. At any given time, one of the two deployments provides live traffic, while the other serves as a staging environment for our changes. The two infrastructures are virtually (and sometimes physically) separated. We tunnel traffic to both systems to verify the functionality of our changes.
 
@@ -57,7 +57,7 @@ Live traffic always runs through the live deployment and is duplicated to the st
 
 Both environments are running constantly, and all services and dependencies are deployed when activating the live system. We avoid warm-up phases during system updates. The entire system is deployed as a single unit. With blue-green deployments, we face challenges to verify changes that include modifications to database schemas. Plus, when switching our live deployment, we resolve long-running tasks or transition them to the new deployment.
 
-### Parallel deployment
+### Parallel Deployment
 
 Contrary to blue-green deployment, parallel deployments do not run in segregated environments. As the name suggests, we deploy our changes directly into production alongside the current live version. We route traffic to both versions to verify our changes.
 
@@ -84,7 +84,7 @@ When releasing with a canary methodology, we prioritize a low-impact demographic
 After defining the traits, we deploy our changes to the low-impact area. Should our deployment work as expected, we gradually expand the perimeters of our release. If we observe faulty behavior, we revert our deployment, fix the errors, and repeat the process. Eventually, we replace our global deployments with the changes, our highest impact region last.
 <!-- vale write-good.Weasel = YES -->
 
-### Rolling updates
+### Rolling Updates
 
 Canary releases introduce new changes vertically across demographics. Rolling updates divert a percentage of traffic to our new deployment horizontally to verify our functionality. While conceptually similar to parallel deployments, we do not duplicate traffic. Both versions are running in production and handle user traffic individually.
 
@@ -94,7 +94,7 @@ Rolling updates work well for self-contained changes in containerized environmen
 
 When faced with the challenge of deploying large scale changes, we prefer canary releases with deterministic infrastructure over mixing multiple versions into our system.
 
-### Feature toggles
+### Feature Toggles
 
 With the discussed strategies, we activate new changes as soon as the binary artifacts are available. Updates to behavior (and rollbacks) replace the live artifacts. An alternative is rolling out updates using feature toggles. We ship our binaries with the changes initially deactivated.
 
@@ -102,7 +102,7 @@ Our changes are physically present at the destination albeit without executing t
 
 If we deliver features to clients' machines via feature toggles, we face the risk of users discovering or reverse-engineering our changes before our organization is ready to activate them.
 
-## Release processes
+## Release Processes
 
 Routines and automation reduce anxiety during our release procedure. As with all topics in this book, we aim to continuously improve our release practices; and practice makes perfect. Relying on manual interventions during the heat of the moment ultimately backfires. Hence, we verify and improve our automation tooling after every incident and rehearse our responses periodically.
 

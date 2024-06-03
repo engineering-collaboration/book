@@ -1,9 +1,9 @@
 ---
-title: Large-scoped tests
+title: Large-Scoped Tests
 description: Large-scoped tests test the flow of commands from user input across different APIs, serialization strategies, and verify that the returned behavior is as expected.
 ---
 
-# Large-scoped tests
+# Large-Scoped Tests
 
 Large-scoped tests (LST) test the flow of commands from user input across different APIs, serialization strategies, and verify that the returned behavior is as expected.
 
@@ -11,13 +11,13 @@ Within the cosmology of automated testing, LSTs represent the most expensive, co
 
 LSTs are so subjective to the organizations and products they are run in; no solution applies across companies. The technology stack and approach of game companies have little in common with the approach of cloud providers, which, in turn, differs tremendously from mobile applications or embedded systems. The complex nature of LST makes disregarding them altogether a **valid option**.
 
-## Independent testability
+## Independent Testability
 
 Due to the complexity and effort of creating environments for LSTs, an instinctive initial approach is to run a second deployment, identical to the live production, dedicated to staging and verifying our changes. This approach may well be a good solution for us, but it is an expensive endeavor and does not scale well.
 
 An increasing number of teams staging changes to the same environment inflates the brittleness of said environment. Forcing a massive end-to-end test environment introduces problematic correlations and false positives or negatives. If we do offer LST staging areas, we must ensure every team can spin up a fenced-off instance to singularly test changes specified by that team.
 
-## Contract testing
+## Contract Testing
 
 Similar to test doubles introduced in MSTs, contract testing presents an alternative to testing against implementations in an LST environment. Whereas test doubles require technology domain experience, contract testing is built upon cross-team communication effort. Establishing consumer-driven contracts formalizes the clear lines of communication between vertical teams enforced by the team interactions discussed in [Team Interactions](../../anatomy-of-a-software-company/team-interactions.md).
 

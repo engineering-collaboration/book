@@ -71,7 +71,7 @@ Engineers integrating into the main and verifying their changes work as intended
 
 Different departments and developers have different criteria on how to define successful implementation or collaboration. A CI/CD-focused enabling team may initially help provide a setup with foundational services, but each vertical team owns and subsequently implements respective end-to-end workflows. Vertical teams design and enforce criteria for the success of the team, as people routinely bypassing rules or processes renders these mute.
 
-## Employee satisfaction
+## Employee Satisfaction
 
 According to the study done by Accelerate, teams that did well with CI/CD experience higher employee satisfaction. Trust in our testing and deployment pipeline increases confidence in the work done. This trust reduces stress during work hours and also increases the quality of downtime with family and friends.
 

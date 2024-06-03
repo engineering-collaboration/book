@@ -1,9 +1,9 @@
 ---
-title: Manual tests
+title: Manual Tests
 description: The feasibility of automated tests has its limits. Human usability aspects are best evaluated with human judgment.
 ---
 
-# Manual tests
+# Manual Tests
 
 The feasibility of automated tests has its limits. Human usability aspects are best evaluated with human judgment.
 
@@ -19,7 +19,7 @@ We statically verify that our system follows the guidelines defined within our d
 
 During security tests and <!-- vale alex.ProfanityMaybe = NO -->penetration<!-- vale alex.ProfanityMaybe = YES --> tests, allies uncover and exploit vulnerabilities in our system before malicious entities take advantage of them. Domain experts stress the boundaries in systems, trying to effectively break our software. Broken states in our systems lead to flaws in our product, such as multiple shipments of a single order.
 
-## Nightly, alpha, and beta programs
+## Nightly, Alpha, and Beta Programs
 
 Thus far, we have discussed manual tests done internally or by third-party providers. A common strategy to demonstrate build stability and user acceptance is to offer early releases to a restricted control group consisting of power users. Sorted by recency, these programs are termed:
 
@@ -32,7 +32,7 @@ The major benefit of early access programs is the user diversity. Our software i
 
 These (semi-)public manual testing strategies require dedicated personnel with product experience qualified in communications. This is much less a technological role than it is a mediatory role. Often, our software builds the base of the livelihood of our users. Perceived detrimental changes fuel anxiety and emotional responses.
 
-## Executing manual tests
+## Executing Manual Tests
 
 Strategies in user experience and accessibility steadily move from manual testing to automated testing. As security testing shifted left more and more, our terms evolved; for example, DevOps is now referred to as DevSecOps. Regardless of labels, we intend to shift all feasible product aspects left and introduce them to earlier testing stages.
 
