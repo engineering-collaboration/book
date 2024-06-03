@@ -11,23 +11,23 @@ Compared to other industries, software products have low upfront costs and requi
 
 If these traits are limited, our business loses its ability to pivot with market changes, and we are at the mercy of our competitors. While it is not always necessary to act, the decision to do so should be driven by business factors, not technological limits.
 
-## Key capabilities by *Accelerate*
+## Key Capabilities by *Accelerate*
 
 The book *Accelerate* by Nicole Forsgren, Jez Humble, and Gene Kim presents the findings of the largest study done in the field of software products and continuous delivery. It was done in 2017 and focused on four key capabilities for software product releases.
 
-### Code deployment
+### Code Deployment
 
 Code deployment measures the frequency of how often we release new versions of our application to the consumer.
 
-### Commit to deploy
+### Commit to Deploy
 
 Commit to deploy describes the lead time from the last software change making it into a new release for code deployment.
 
-### Recover from downtime
+### Recover from Downtime
 
 Recover from downtime is the process of identifying a show-stopping problem in a software application to re-establishing a functioning system. It also includes recovering from external attacks like malevolent system infiltrations or denial of service attacks.
 
-### Change fail rate
+### Change Fail Rate
 
 Change fail rate appraises how often the distributed software executable does not match the desired expectations. New code deployments should minimize required unexpected fixes.
 
