@@ -61,4 +61,7 @@ bash ci/vale.bash
 
 # word count
 find ./docs/book/ -type f -exec cat {} + | wc -w
+
+# tailwind
+npx tailwindcss -i ./input.css -o ./src/overrides/style.html
 ```
