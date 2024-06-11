@@ -192,6 +192,10 @@
   margin-bottom: 0.75rem
 }
 
+.mb-32 {
+  margin-bottom: 8rem
+}
+
 .mb-4 {
   margin-bottom: 1rem
 }
@@ -280,6 +284,10 @@
   margin-top: 0.5rem
 }
 
+.mt-24 {
+  margin-top: 6rem
+}
+
 .mt-4 {
   margin-top: 1rem
 }
@@ -332,12 +340,28 @@
   display: none
 }
 
+.h-0 {
+  height: 0px
+}
+
+.h-0\.5 {
+  height: 0.125rem
+}
+
+.h-1 {
+  height: 0.25rem
+}
+
 .h-10 {
   height: 2.5rem
 }
 
 .h-12 {
   height: 3rem
+}
+
+.h-16 {
+  height: 4rem
 }
 
 .h-2 {
@@ -476,6 +500,14 @@
   max-width: 56rem
 }
 
+.max-w-64 {
+  max-width: 16rem
+}
+
+.max-w-96 {
+  max-width: 24rem
+}
+
 .max-w-full {
   max-width: 100%
 }
@@ -542,11 +574,6 @@
 
 .-translate-x-1 {
   --tw-translate-x: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
@@ -847,6 +874,11 @@
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity))
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity))
 }
 
 .bg-gray-50 {
@@ -1418,6 +1450,20 @@
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1)
 }
 
+@media (min-width: 640px) {
+  .sm\:invisible.tooltip > .tooltip-arrow:before {
+    visibility: hidden
+  }
+
+  .sm\:invisible[role="tooltip"] > [data-popper-arrow]:before {
+    visibility: hidden
+  }
+
+  .sm\:invisible[role="tooltip"] > [data-popper-arrow]:after {
+    visibility: hidden
+  }
+}
+
 .hover\:bg-book-tiffany-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(112 215 208 / var(--tw-bg-opacity))
@@ -1438,17 +1484,15 @@
   --tw-ring-color: rgb(112 215 208 / var(--tw-ring-opacity))
 }
 
+@media (min-width: 640px) {
+  .sm\:invisible {
+    visibility: hidden
+  }
+}
+
 @media (min-width: 768px) {
   .md\:col-span-4 {
     grid-column: span 4 / span 4
-  }
-
-  .md\:col-span-5 {
-    grid-column: span 5 / span 5
-  }
-
-  .md\:col-span-7 {
-    grid-column: span 7 / span 7
   }
 
   .md\:col-span-8 {
@@ -1459,8 +1503,8 @@
     margin-bottom: 0px
   }
 
-  .md\:mb-24 {
-    margin-bottom: 6rem
+  .md\:mb-32 {
+    margin-bottom: 8rem
   }
 
   .md\:grid {
@@ -1478,6 +1522,11 @@
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem
   }
 
   .md\:text-5xl {
