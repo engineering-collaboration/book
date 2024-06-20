@@ -58,6 +58,9 @@ jobs:
     - name: 🤖 Build site
       run: mkdocs build -f mkdocs-dist.yml
 
+    - name: 🤖 Replace social cards
+      run: bash ci/social.bash
+
     - name: 🤖 Bundle site for release artifact
       run: mkdir artifacts && zip -r artifacts/site.zip site
 
