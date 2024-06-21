@@ -1,3 +1,8 @@
+---
+title: Resources
+description: If you enjoyed our writings, we highly recommend the following books, papers, videos, and blogs.
+---
+
 # Resources
 
 ## Literature

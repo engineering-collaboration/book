@@ -1,0 +1,19 @@
+#!/bin/bash
+
+###
+### Replace open graph social cards
+
+pattern='<meta  property="og:image" .* >'
+replacement='<meta  property="og:image"  content="https://opencollaboration.io/assets/social.png" >'
+
+# replace generated social cards with static image recursively in all files
+grep -rl '<meta  property="og:image"' site | xargs sed -i '' "s|${pattern}|${replacement}|g"
+
+###
+### Replace twitter social cards
+
+pattern='<meta  name="twitter:image" .* >'
+replacement='<meta  name="twitter:image"  content="https://opencollaboration.io/assets/social.png" >'
+
+# replace generated social cards with static image recursively in all files
+grep -rl '<meta  name="twitter:image"' site | xargs sed -i '' "s|${pattern}|${replacement}|g"
