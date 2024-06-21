@@ -1,3 +1,8 @@
+---
+title: Changelog
+description: We are actively delivering improvements. See what has changed in recent releases.
+---
+
 # Changelog
 
 ## [v0.14.2](https://github.com/opencollabbook/book/tree/v0.14.2) (2024-06-18)
