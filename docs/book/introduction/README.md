@@ -11,13 +11,15 @@ Within *OpenCollaboration*, we discuss intramural strategies that have proven us
 
 ## Structure
 
-*OpenCollaboration* is structured into three sections, addressing processes at different levels of our organization.
+*OpenCollaboration* is structured into three sections, addressing engineering processes at different levels of our organization.
 
-- *The Anatomy of a Software Company* covers how to optimally establish our teams and improve organic collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product, expand the number of teams within our organization, and advance the professional expertise of our employees. The topics discussed in this section address problems encountered by technology officers and software architects.
-- *The Anatomy of Managing a Team* frames supporting principles for leading a team. This section covers day-to-day encounters of technical and team leads.
-- *The Anatomy of a Code Change* analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
+- [*The Anatomy of a Software Company*](../anatomy-of-a-software-company/README.md) covers organic cross-team collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product and expand the number of teams within our organization. The topics discussed in this section address problems encountered by technology officers and software architects.
+- [*The Anatomy of Managing a Team*](../anatomy-of-managing-a-team/README.md) frames supporting principles for supporting individual contributors and promoting a productive team. We cover the merits of leading by influence and the necessities of leading by authority. This section discusses the professional challenges of technical and team leads.
+- [*The Anatomy of a Code Change*](../anatomy-of-a-code-change/) analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
 
-While the structure of this book follows the typical reciprocal career progression of an engineer, we encourage all readers to glance at every section. Certain sociotechnical dependencies become more visible when digesting the entire book.
+The order of the book's sections has caused us much deliberation. The current structure follows a reciprocal typical career progression of an engineer, which seems counterintuitive from careers point of view. It also indirectly communicates a top-down approach to problem solving. We have found bottom-up to be more immediately effective.
+
+Ultimately the order stands for 2 reasons. It provides a gradual view into increasing details. From a broad company wide strategy to lines of code, communicating the ultimate value of every contribution, market competitiveness (instead of shiny coding practices). Secondly, organizational change realistically can only happen with the backing of leadership. Certain sociotechnical dependencies become more visible when digesting the entire book.
 
 ## What this Book is NOT
 
