@@ -1,13 +1,13 @@
 ---
 title: Introduction
-description: OpenCollaboration presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+description: OpenCollaboration provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
 ---
 
 # Introduction
 
-Software companies must adapt to rapid technological, economic, and political changes to viably compete in any market. This fact introduces the paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
+Successful software companies adapt to rapid technological, economic, and political changes to viably compete in any market. This fact introduces the paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 
-*OpenCollaboration* presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+Within *OpenCollaboration*, we discuss intramural strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
 
 ## Structure
 
