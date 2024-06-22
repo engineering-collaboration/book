@@ -16,8 +16,8 @@ The book *OpenCollaboration* presents a vertical slice of strategies that have p
 - [x] Write *Part III*
 - [ ] Rewrite published chapters
 - [ ] Improve website
-  - [ ] Design landing page
-  - [ ] Improve dynamic social cards
+  - [x] Design landing page
+  - [x] Design social cards
   - [ ] Include analytics
 - [ ] Write *Part II*
 - [ ] Rewrite published chapters
