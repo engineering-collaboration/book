@@ -17,17 +17,17 @@ Within *OpenCollaboration*, we discuss intramural strategies that have proven us
 - [*The Anatomy of Managing a Team*](../anatomy-of-managing-a-team/README.md) frames supporting principles for supporting individual contributors and promoting a productive team. We cover the merits of leading by influence and the necessities of leading by authority. This section discusses the professional challenges of technical and team leads.
 - [*The Anatomy of a Code Change*](../anatomy-of-a-code-change/) analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
 
-Briefly switching to the first-person singular pronouns, the order of the book's sections has vexed me since the inception of this project. The current structure follows a reciprocal typical career progression of an engineer, which seems chronologically counterintuitive. Additionally, the section's presentation subliminally endorses a top-down approach to organizational administration, a strategy actively argued against within this book. Ultimately the order persists for three reasons.
+Briefly switching to the first-person singular pronoun, the order of the book's sections has vexed me since the inception of this project. The current structure follows a reciprocal typical career progression of an engineer, which seems chronologically counterintuitive. Additionally, the section's presentation subliminally endorses a top-down approach to organizational progress, a strategy actively argued against within this book. Ultimately the order persists for three reasons.
 
-By initially focusing on company wide strategy, we anchor our individual contributions in the context of our the ultimate objective: market competitivenes. Our contributions reduce cost or time, and increase market share or revenue.
+By initially focusing on company wide strategy, we anchor our individual contributions in the context of our the ultimate objective: market competitivenes. Our contributions reduce cost or time, and increase market share or revenue. Developer experience, satisfaction, leading to retention.
 
-Secondly, our team's sociotechnical dependencies and deliverables are subject to our product and our organizational structures. Working effectively within our team has less impact when our deliverables are unwanted. We build communication channels.
+Secondly, our team's sociotechnical dependencies and deliverables are subject to our product and our organizational structures. Working effectively within our team has less impact when our deliverables are unwanted. We build communication channels. It needs to be clear who our customers are.
 
-Lastly, company-wide change can only happen with the backing of leadership. The initial hurdle of every change instigation, motivate our boss for our change. We need to understand our market and company demands to motivate change in our organization. We build software after a vision. Software architecture follows personell and market vision.
+Lastly, while progress does not begin at the top, it most certainly needs to be backed by it. company-wide change can only happen with the backing of leadership. The initial hurdle of every change instigation, motivate our boss for our change. We need to understand our market and company demands to motivate change in our organization. We build software after a vision. Software architecture follows personell and market vision.
 
 ## What this Book is NOT
 
-
+Over the three sections we cover a lot of gorund. We do not however consider us any of the following.
 
 ### This is not an Engineering Book
 
