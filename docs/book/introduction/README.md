@@ -21,9 +21,9 @@ Briefly switching to the first-person singular pronouns, the order of the book's
 
 By initially focusing on company wide strategy, we anchor our individual contributions in the context of our the ultimate objective: market competitivenes. Our contributions reduce cost or time, and increase market share or revenue.
 
-Secondly, our team's sociotechnical dependencies and deliverables are subject to our product and our organizational structures. Working effectively within our team has less impact when our deliverables are unwanted.
+Secondly, our team's sociotechnical dependencies and deliverables are subject to our product and our organizational structures. Working effectively within our team has less impact when our deliverables are unwanted. We build communication channels.
 
-Lastly, company-wide change can only happen with the backing of leadership. The initial hurdle of every change instigation, motivate our boss for our change.
+Lastly, company-wide change can only happen with the backing of leadership. The initial hurdle of every change instigation, motivate our boss for our change. We need to understand our market and company demands to motivate change in our organization. We build software after a vision. Software architecture follows personell and market vision.
 
 ## What this Book is NOT
 
