@@ -19,13 +19,15 @@ Within *OpenCollaboration*, we discuss intramural strategies that have proven us
 
 Briefly switching to the first-person singular pronouns, the order of the book's sections has vexed me since the inception of this project. The current structure follows a reciprocal typical career progression of an engineer, which seems chronologically counterintuitive. Additionally, the section's presentation subliminally endorses a top-down approach to organizational administration, a strategy actively argued against within this book. Ultimately the order persists for three reasons.
 
-Firstly, moving from company wide strategy to lines of code anchors the context in organizational efficiency, rather than individual contributions. A context that communicates the ultimate objective of every product contribution: market competitiveness.
+By initially focusing on company wide strategy, we anchor our individual contributions in the context of our the ultimate objective: market competitivenes. Our contributions reduce cost or time, and increase market share or revenue.
 
-Secondly, our team's sociotechnical dependencies and deliverables are subject not only to our product, but also to organizational structures.
+Secondly, our team's sociotechnical dependencies and deliverables are subject to our product and our organizational structures. Working effectively within our team has less impact when our deliverables are unwanted.
 
 Lastly, company-wide change can only happen with the backing of leadership. The initial hurdle of every change instigation, motivate our boss for our change.
 
 ## What this Book is NOT
+
+
 
 ### This is not an Engineering Book
 
