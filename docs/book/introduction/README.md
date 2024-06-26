@@ -23,7 +23,7 @@ Plus, the sections' presentation subliminally endorses a top-down approach to or
 
 By initially focusing on company-wide strategies, we anchor the context of our individual contributions in our the ultimate objective: market competitivenes. We understand how our contributions improve discrete metrics (i.e. development cost or time, market share, or revenue) or holistic metrics (i.e. employee experience, satisfaction, or retention).
 
-Secondly, our team's sociotechnical dependencies and deliverables are subject to our product and our organizational structures. Working effectively within our team has less impact when our deliverables are unwanted. We build communication channels. It needs to be clear who our customers are.
+Secondly, a topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and our organizational structures. Collaborating effectively within our team has less impact when our output is redundant. We build inter-team interactions and communication channels to explain who our customers are and to appreciate their needs.
 
 Lastly, while progress does not begin at the top, it most certainly needs to be backed by it. company-wide change can only happen with the backing of leadership. The initial hurdle of every change instigation, motivate our boss for our change. We need to understand our market and company demands to motivate change in our organization. We build software after a vision. Software architecture follows personell and market vision.
 
