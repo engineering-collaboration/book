@@ -25,11 +25,11 @@ By initially focusing on company-wide strategies, we anchor the context of our i
 
 Secondly, a topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and our organizational structures. Collaborating effectively within our team has less impact when our output is redundant. We build inter-team interactions and communication channels to explain who our customers are and to appreciate their needs.
 
-Lastly, while progress does not begin at the top, it most certainly needs to be backed by it. company-wide change can only happen with the backing of leadership. The initial hurdle of every change instigation, motivate our boss for our change. We need to understand our market and company demands to motivate change in our organization. We build software after a vision. Software architecture follows personell and market vision.
+Lastly, while progress does not have to be initiated by leadership, it certainly needs to be backed by it. Every change eventually faces push-back that can only be overcome by authority. To motivate leadership towards necessary reforms, we need to understand our company's market demands. Associating the benefits of development practices to our competitiveness provides a mutually-understood and explicit vision of our organization's potential.
 
 ## What this Book is NOT
 
-Over the three sections we cover a lot of gorund. We do not however consider us any of the following.
+Across three sections we discuss efficient software delivery practices for organizations of various sizes. Contrastively, we do not consider this book to be any of the following:
 
 ### This is not an Engineering Book
 
