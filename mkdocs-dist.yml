@@ -84,7 +84,6 @@ nav:
       - './book/introduction/README.md'
       - Motivation: './book/introduction/motivation.md'
       - DevOps, Agile, Lean: './book/introduction/devops-agile-lean.md'
-      - Blameless Culture: './book/introduction/blameless-culture.md'
 
     - The Anatomy of a Software Company:
       - './book/anatomy-of-a-software-company/README.md'
