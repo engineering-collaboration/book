@@ -56,7 +56,7 @@ We rely on the homogeneity and isolation of our build procedures. Meaning, any p
 
 ## Infrastructure as Code (IaC)
 
-Our software artifacts run on hardware. A truism that gains attention when one outgrows the other. Dedicated personnel manually set up hardware by executing a combination of CLI commands, scripts, and tools. The steps and their order <!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> known to the person providing the hardware. The final environment is called a *snowflake server*, unique in its appearance.
+Our software artifacts run on hardware. A truism that gains attention when one outgrows the other. Dedicated personnel manually set up hardware by executing a combination of CLI commands, scripts, and tools. The steps and their order only known to the person providing the hardware. The final environment is called a *snowflake server*, unique in its appearance.
 
 Automated environments based on IaC definitions provide deterministic hardware conditions at setup and over time. Changes to the runtime environment due to software updates, errors, or entropy cause *configuration drift*. Desired state management of IaC checks the desired configuration against its actual configuration and self-corrects inconsistencies. Automated self-healing properties and disaster recovery enable us to kill and restart sanitized servers. We avoid running non-deterministic states that introduce security concerns.
 

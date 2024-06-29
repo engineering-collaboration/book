@@ -61,7 +61,7 @@ Both environments are running constantly, and all services and dependencies are 
 
 Contrary to blue-green deployment, parallel deployments do not run in segregated environments. As the name suggests, we deploy our changes directly into production alongside the current live version. We route traffic to both versions to verify our changes.
 
-Parallel deployments facilitate reliable A/B tests, as we are running our services on identical traffic. We limit our services to read-<!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> access to production data or provide separate database nodes for every parallel execution we are running.
+Parallel deployments facilitate reliable A/B tests, as we are running our services on identical traffic. We limit our services to read-only access to production data or provide separate database nodes for every parallel execution we are running.
 
 The strategy provides actionable insights for changes to code or systemic strategies. We measure performance and scaling benefits of differing infrastructure, caching strategies, database types and architecture, and system design.
 
