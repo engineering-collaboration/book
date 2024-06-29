@@ -5,27 +5,25 @@ description: We prioritize delivering working software as swiftly as possible, a
 
 # DevOps, Agile, Lean
 
-Arguably, these terms have become quite fashionable. Most notably, "Agile" has been a trending term for a while with various flavors popping up over the years and multiple consultancies and tooling providers offering "best practice" solutions.
+Arguably, these terms have become quite fashionable. Various flavors of "agile" have been a trending over the years with multiple consultancies and tooling providers offering "best practice" solutions. In order to avoid any tribalism, bias, or emotional connotation, concluding this chapter we will avoid these terms as best feasible and use the titular term "collaboration".
 
-In order to avoid any tribalism, bias, or emotional connotation, this book will avoid these terms as best feasible and use the titular term "collaboration" concluding this chapter.
-
-Somewhat cynically, we want to highlight that we do not "win" by implementing Agile or DevOps. Our customer base does not magically double because we introduce daily standup meetings. The sole motivator for change within organizational structures must be to strengthen market competitiveness.
+We do not "win" by implementing trending forms of Agile or DevOps. Our customer base does not magically double because we introduce daily standup meetings. The sole motivator for change within organizational structures must be to strengthen market competitiveness.
 
 ## The Three Values of Collaboration in Software
 
-Disregarding various flavors of DevOps, DevSecOps, Agile, Lean, et al, these principles are founded on identical core philosophies. These philosophies can be consolidated into the following three categories and build the basis of this book.
+Disregarding various mutations of DevOps, DevSecOps, Agile, Lean, et al, these principles are founded on identical core philosophies. These philosophies build the basis of this book and can be consolidated into the following three categories.
 
 ### Iterative and Incremental Development
 
-We prioritize delivering working software as swiftly as possible and then continuously improving it through a series of iterative cycles. Using this approach, we create organic feedback loops between development and customers. This makes our company more adaptable to business needs, organizational needs, market needs, technological needs, personnel needs, and political needs.
+We prioritize delivering working software as swiftly as possible and continuously improve it through a series of iterative cycles. Using this approach, we create organic feedback loops between development and customers. This makes our company more adaptable to business needs, organizational needs, market needs, technological needs, personnel needs, and political needs.
 
 Ideally, each change integrated into our product keeps our product in a deliverable state, shifting the dynamic of our software from a "product for users" towards a "conversation with users". This drastically reduces work of questionable business value, including partially done work, unneeded features, and lengthy contract negotiations with clients ahead of time.
 
 ### Autonomous Teams
 
-All of our teams are able to produce and release working software by themselves. They are self-organizing and take responsibility for developing and releasing different aspects of our software. Teams are able to design, implement, and release changes to software products without the need for hand-offs, approvals, or dependencies on another team. 
+All of our teams produce and release working software by themselves. Teams self-organize and take responsibility for developing and releasing different aspects of our software. They design, implement, and release changes to software products without the need for hand-offs or approvals.
 
-Every organization is founded on the fact that its employees do more than their assigned tasks. A body as complex as an organization cannot be planned into every minute detail. Autonomy of work, autonomy of communication is mandatory. If people are micro-managed or forced into overbearing bureaucratic processes, our organization's deliveries come to a halt.
+Every organization's employees do more than their assigned tasks. A body as complex as an organization cannot be planned into every minute detail. Autonomy of work and autonomy of communication is mandatory. If people are micro-managed or forced into overbearing bureaucratic processes, our organization's deliveries come to a halt.
 
 ### Continuous Improvement
 
@@ -43,11 +41,11 @@ The social and the technical are two interdependent parts of the same system. Te
 
 ## Blameless Culture
 
-When humans are blamed and punished for errors, we nourish a self-centered community that opposes transparent communication, leading to covering up mistakes and pushing them down the line. When discovered in time, these mistakes are costly to fix.
+When we blame and punish our employees for errors, we nourish a self-centered community that opposes transparent communication. This leads to people covering up mistakes and pushing them down the line. When discovered in time, these mistakes are costly to fix.
 
 Instead, we treat human error as a symptom of the system and ask ourselves how we got here in the first place and how we can avoid it in the future. When we tackle issues cooperatively, we reframe them as learning opportunities.
 
-If coworkers feel free to share their mistakes, it leads to increased transparency and trust within the team. At a minimum, it will instruct coworkers on how to avoid costly errors without having to directly experience them. When we offer a safe environment to fail fast and fail often, we grow the accumulative body of knowledge within an organization.
+If coworkers feel free to share their mistakes, they increase transparency and trust within the team. At a minimum, it instructs coworkers on how to avoid costly errors without having to directly experience them. When we offer a safe environment to fail fast and fail often, we grow the accumulative body of knowledge within an organization.
 
 ### Building a Culture
 
