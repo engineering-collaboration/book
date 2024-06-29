@@ -56,6 +56,6 @@ This allows our teams to experiment with new features, gradually roll out change
 
 ## Protected Branches
 
-Protected branches prevent unapproved integrations by authorizing <!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> specified users or roles, termed *code owners*, to apply changes. Limiting the authorized people fends off accidental or unintended commits until these have been reviewed and accepted before alterations are made to critical parts of a project.
+Protected branches prevent unapproved integrations by authorizing only specified users or roles, termed *code owners*, to apply changes. Limiting the authorized people fends off accidental or unintended commits until these have been reviewed and accepted before alterations are made to critical parts of a project.
 
 Deciding if and which branches are protected is our team's decision. Protecting branches is a tool for avoiding *accidental* breaking changes or deployments NOT for building hard dependencies to key personnel into our development pipeline. Within teams, we offer the option to override the branch protection. Blocking the deployment of an urgent hotfix because of a code owner's vacation is suboptimal.

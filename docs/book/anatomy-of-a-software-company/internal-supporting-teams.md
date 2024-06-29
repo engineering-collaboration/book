@@ -65,6 +65,6 @@ A relevant topic for this book is a different example. Learning and setting up C
 
 Successful companies follow a general rule that actionable feedback originates from paying customers solely. These are the people willing to spend money on the problem we are solving; these are the people we primarily listen to.
 
-We set up the same strategy with our internal deliveries and offer products of supporting teams to vertical teams at cost. If vertical teams and their leads have to budget their dependencies on enabling teams, platform teams, or complicated subsystem teams, we can reason that <!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> necessary technology survives within our organization.
+We set up the same strategy with our internal deliveries and offer products of supporting teams to vertical teams at cost. If vertical teams and their leads have to budget their dependencies on enabling teams, platform teams, or complicated subsystem teams, we can reason that only necessary technology survives within our organization.
 
 Internal payments support baseline metrics of usage and help avoid building bloated platforms with <!-- vale alex.ProfanityMaybe = NO -->sexy<!-- vale alex.ProfanityMaybe = YES --> but unnecessary features. Platform teams should strive for the thinnest viable platform able to support our vertical teams to generate product revenue.

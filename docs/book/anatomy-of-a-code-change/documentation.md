@@ -71,7 +71,7 @@ When we find ourselves interested in a new subject, we get started by entering t
 
 When creating a tutorial, we stay aware of the imbalance of expertise. Our lesson plan consists of a clear starting point and a practical goal our student can run when completed. We introduce them to the nomenclature of our documentation's subject. When progressing through the lesson, we provide frequent results to landmark the journey. A well-structured tutorial delivers transparent progress and reliable results.
 
-Although didactically presented by a teacher, tutorials are not lectures. We stay away from explanations that are not directly applicable to the task at hand. An overload of information convolutes our students' path to an actionable result. As teachers, we are not able to determine what our students are going to learn, <!-- vale write-good.Weasel = NO -->only<!-- vale write-good.Weasel = YES --> to facilitate an environment of learning. Our student may pursue further knowledge later at their discretion and available cognitive load.
+Although didactically presented by a teacher, tutorials are not lectures. We stay away from explanations that are not directly applicable to the task at hand. An overload of information convolutes our students' path to an actionable result. As teachers, we are not able to determine what our students are going to learn, only to facilitate an environment of learning. Our student may pursue further knowledge later at their discretion and available cognitive load.
 
 Our user explores our product with the help of tutorials and example procedures. Internally, we create tutorials for demo projects to evangelize new technology or tools we created.
 
