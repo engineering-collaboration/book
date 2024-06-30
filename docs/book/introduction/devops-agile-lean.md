@@ -1,9 +1,9 @@
 ---
-title: DevOps, Agile, Lean
-description: We prioritize delivering working software as swiftly as possible, and then continuously improving it through a series of iterative cycles. Using this approach, we create organic feedback loops between development and customers. 
+title: DevOps, Agile, and Lean
+description: Various flavors of agile project management have been trending over the years, yet all build upon iterative and incremental development, autonomous teams, and continuous improvement.
 ---
 
-# DevOps, Agile, Lean
+# DevOps, Agile, and Lean
 
 Arguably, these terms have become quite fashionable. Various flavors of agile project management have been a trending over the years with multiple consultancies and tooling providers offering "best practice" solutions. In order to avoid any tribalism, bias, or emotional connotation, concluding this chapter we will avoid these terms as best feasible and use the titular term *collaboration*.
 
