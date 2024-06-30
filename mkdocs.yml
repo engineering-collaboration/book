@@ -77,7 +77,7 @@ nav:
     - Introduction:
       - './book/introduction/README.md'
       - Motivation: './book/introduction/motivation.md'
-      - DevOps, Agile, Lean: './book/introduction/devops-agile-lean.md'
+      - DevOps, Agile, and Lean: './book/introduction/devops-agile-lean.md'
 
     - The Anatomy of a Software Company:
       - './book/anatomy-of-a-software-company/README.md'
