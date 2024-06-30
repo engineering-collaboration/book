@@ -5,7 +5,7 @@ description: We prioritize delivering working software as swiftly as possible, a
 
 # DevOps, Agile, Lean
 
-Arguably, these terms have become quite fashionable. Various flavors of "agile" have been a trending over the years with multiple consultancies and tooling providers offering "best practice" solutions. In order to avoid any tribalism, bias, or emotional connotation, concluding this chapter we will avoid these terms as best feasible and use the titular term "collaboration".
+Arguably, these terms have become quite fashionable. Various flavors of agile project management have been a trending over the years with multiple consultancies and tooling providers offering "best practice" solutions. In order to avoid any tribalism, bias, or emotional connotation, concluding this chapter we will avoid these terms as best feasible and use the titular term *collaboration*.
 
 We do not "win" by implementing trending forms of Agile or DevOps. Our customer base does not magically double because we introduce daily standup meetings. The sole motivator for change within organizational structures must be to strengthen market competitiveness.
 
@@ -31,6 +31,16 @@ We never reach peak performance. Organizations, technology, and the market chang
 
 We encourage our teams and individuals to continuously improve our processes and practices. We instill a blameless culture of continual experimentation where failure is considered part of learning and innovation.
 
+## Blameless Culture
+
+When we blame and punish our employees for errors, we nourish a self-centered community that opposes transparent communication. This leads to people covering up mistakes and pushing them down the line. When discovered in time, these mistakes are costly to fix.
+
+Instead, we treat human error as a symptom of the system and ask ourselves how we got here in the first place and how we can avoid it in the future. When we tackle issues cooperatively, we reframe them as learning opportunities. We cannot change people's behavior by changing their minds; we change their minds by changing people's behavior.
+
+If coworkers feel free to share their mistakes, they increase transparency and trust within the team. At a minimum, it instructs coworkers on how to avoid costly errors without having to directly experience them. When we offer a safe environment to fail fast and fail often, we grow the accumulative body of knowledge within an organization.
+
+A culture does not define what we do; what we do defines our culture. Hence, a culture is the result of the sociotechnical changes we apply within our organization. The processes and strategies in this book support our organization to embrace a blameless culture. However, we should actively measure and encourage our progress internally if we want to succeed in establishing a competitive organization.
+
 ## Sociotechnical Interdependence
 
 If we automate bad practices, we increase the quantity of bad practices, not the quality. Conversely, implementing agile project management without the necessary technical processes leads to confusion, frustration, and eventual lingering resentment. 
@@ -38,17 +48,3 @@ If we automate bad practices, we increase the quantity of bad practices, not the
 <!-- vale alex.Condescending = NO -->
 The social and the technical are two interdependent parts of the same system. Technology and automation can pave the way to make it easy to do the right thing.
 <!-- vale alex.Condescending = YES -->
-
-## Blameless Culture
-
-When we blame and punish our employees for errors, we nourish a self-centered community that opposes transparent communication. This leads to people covering up mistakes and pushing them down the line. When discovered in time, these mistakes are costly to fix.
-
-Instead, we treat human error as a symptom of the system and ask ourselves how we got here in the first place and how we can avoid it in the future. When we tackle issues cooperatively, we reframe them as learning opportunities.
-
-If coworkers feel free to share their mistakes, they increase transparency and trust within the team. At a minimum, it instructs coworkers on how to avoid costly errors without having to directly experience them. When we offer a safe environment to fail fast and fail often, we grow the accumulative body of knowledge within an organization.
-
-### Building a Culture
-
-A culture does not define what we do; what we do defines our culture. We cannot change people's behavior by changing their minds; we change their minds by changing people's behavior. Hence, a culture is the result of the sociotechnical changes we apply within our organization.
-
-The processes and strategies in this book will support our organization to embrace a blameless culture. However, we should actively measure and encourage our progress internally if we want to succeed in establishing a competitive organization.
