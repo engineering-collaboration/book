@@ -15,10 +15,10 @@ If these traits are limited, our business loses its ability to pivot with market
 
 The book *Accelerate* by Nicole Forsgren, Jez Humble, and Gene Kim presents the findings of the largest study done in the field of software products and continuous delivery. It was done in 2017 and focused on four key capabilities for software product releases.
 
-- **Code Deployment** measures the frequency of how often we release new versions of our application to the consumer.
-- **Commit to Deploy** describes the lead time from the last software change making it into a new release for code deployment.
-- **Recover from Downtime** is the process of identifying a show-stopping problem in a software application to re-establishing a functioning system. It also includes recovering from external attacks like malevolent system infiltrations or denial of service attacks.
-- **Change fail rate** appraises how often the distributed software executable does not match the desired expectations. New code deployments should minimize required unexpected fixes.
+- *Code deployment* measures the frequency of how often we release new versions of our application to the consumer.
+- *Commit to deploy* describes the lead time from the last software change making it into a new release for code deployment.
+- *Recover from downtime* is the process of identifying a show-stopping problem in a software application to re-establishing a functioning system. It also includes recovering from external attacks like malevolent system infiltrations or denial of service attacks.
+- *Change fail rate* appraises how often the distributed software executable does not match the desired expectations. New code deployments should minimize required unexpected fixes.
 
 The study compared these key capabilities of software distribution between high and low-performing organizations and found that high performers had:
 
