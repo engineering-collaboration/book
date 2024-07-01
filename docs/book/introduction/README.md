@@ -11,24 +11,6 @@ If we impair these traits with obtrusive organizational or technical processes, 
 
 Within *OpenCollaboration*, we discuss intramural strategies that have proven useful for a broad spectrum of organizations. We consider how we build autonomous, flexible, and collaborative teams and solve the apparent paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 
-## Metrics
-
-The book *Accelerate* by Nicole Forsgren, Jez Humble, and Gene Kim presents the findings of the largest study done in the field of software products and continuous delivery. Conducted in 2017, it focuses on four key capabilities for software product releases:
-
-- *Code deployment* measures the frequency of new releases of our application to our consumer.
-- *Commit to deploy* describes the lead time from the last software change to staging a new code deployment.
-- *Recover from downtime* defines the duration to re-establish a functioning software system after a failure. It also includes recovering from malevolent system infiltrations or denial of service attacks.
-- *Change fail rate* measures how often the distributed software executable does not match the desired expectations. New code deployments should require a minimum of unexpected fixes.
-
-The study compared these key capabilities of software distribution between high and low-performing organizations and found that (at the time) high performers had:
-
-- **46x** more frequent code deployments
-- **440x** faster lead time from commit to deploy
-- **170x** faster mean time to recover from downtime
-- **1/5** of fails on changes
-
-Building these paradigms into the core of software development enables high performers to double the probability of reaching their business goals compared to low performers across industries and departments. Improving our software delivery effectiveness enhances our ability to incorporate customer feedback more effectively.
-
 ## Structure
 
 *OpenCollaboration* is structured into three sections, addressing engineering processes at different levels within our organization.
