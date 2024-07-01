@@ -1,21 +1,21 @@
 ---
 title: Introduction
-description: OpenCollaboration provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+description: OpenCollaboration discusses intramural strategies that have proven useful for a broad spectrum of organizations. We consider how to build autonomous, flexible, and collaborative teams and solve the apparent paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 ---
 
 # Introduction
 
-Successful software companies adapt to rapid technological, economic, and political changes to viably compete in any market. This fact introduces the paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
+Compared to other industries, software products benefit from low upfront costs and low distribution efforts, enabling us to create cheap prototypes and deliver them to users globally with little overhead. Successful software companies adapt to rapid technological, economic, and political changes to viably compete in any market.
 
-Within *OpenCollaboration*, we discuss intramural strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+If we impair these traits with obtrusive organizational or technical processes, our business loses its ability to pivot with market changes. While it is not always necessary to act, the decision to do so should be driven by business factors, not technological limitations.
 
-Compared to other industries, software products have low upfront costs and require low distribution efforts. These aspects enable us to create cheap prototypes of products and provide them to users globally with little overhead.
+Within *OpenCollaboration*, we discuss intramural strategies that have proven useful for a broad spectrum of organizations. We consider how we build autonomous, flexible, and collaborative teams and solve the apparent paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 
-If these traits are limited, our business loses its ability to pivot with market changes, and we are at the mercy of our competitors. While it is not always necessary to act, the decision to do so should be driven by business factors, not technological limits.
+## Metrics
 
-The book *Accelerate* by Nicole Forsgren, Jez Humble, and Gene Kim presents the findings of the largest study done in the field of software products and continuous delivery. It was done in 2017 and focused on four key capabilities for software product releases.
+The book *Accelerate* by Nicole Forsgren, Jez Humble, and Gene Kim presents the findings of the largest study done in the field of software products and continuous delivery. Conducted in 2017, it focuses on four key capabilities for software product releases:
 
-- *Code deployment* measures the frequency of how often we release new versions of our application to the consumer.
+- *Code deployment* measures the frequency of how often we release new versions of our application to our consumer.
 - *Commit to deploy* describes the lead time from the last software change making it into a new release for code deployment.
 - *Recover from downtime* is the process of identifying a show-stopping problem in a software application to re-establishing a functioning system. It also includes recovering from external attacks like malevolent system infiltrations or denial of service attacks.
 - *Change fail rate* appraises how often the distributed software executable does not match the desired expectations. New code deployments should minimize required unexpected fixes.
@@ -27,7 +27,7 @@ The study compared these key capabilities of software distribution between high 
 - **170x** faster mean time to recover from downtime
 - **1/5** of fails on changes
 
-Building these paradigms into the core of software development enabled high performers to double the probability of reaching their business goals compared to low performers across industries and departments. Improving our software delivery effectiveness will improve our ability to incorporate customer feedback more effectively.
+Building these paradigms into the core of software development enabled high performers to double the probability of reaching their business goals compared to low performers across industries and departments. Improving our software delivery effectiveness enhances our ability to incorporate customer feedback more effectively.
 
 ## Structure
 
@@ -43,9 +43,9 @@ Plus, the sections' presentation subliminally endorses a top-down approach to or
 
 By initially focusing on company-wide strategies, we anchor the context of our individual contributions in the ultimate objective: market competitiveness. We understand how our contributions improve discrete metrics (i.e., development cost or time, market share, or revenue) or holistic metrics (i.e., employee experience, satisfaction, or retention).
 
-Secondly, a topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. We build inter-team interactions and communication channels to explain who our customers are and to appreciate their needs.
+Second, a topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. We build inter-team interactions and communication channels to explain who our customers are and to appreciate their needs.
 
-Lastly, while progress does not have to be initiated by leadership, it certainly needs to be backed by it. In time, every change faces push-back that can only be overcome by authority. To motivate leadership towards necessary reforms, we need to understand our company's market demands. Associating the benefits of development practices with our competitiveness provides a mutually-understood and explicit vision of our organization's potential.
+Lastly, while progress does not have to be initiated by leadership, it certainly needs to be backed by it. In time, every change faces push-back that can only be overcome by authority. To motivate leadership towards necessary reforms, we need to understand our company's market demands. Associating the benefits of development practices with our competitiveness provides a mutually understood and explicit vision of our organization's potential.
 
 ## What this Book is NOT
 
@@ -73,7 +73,7 @@ We avoid the term "best practices" in this book. "Best" is subjective to industr
 
 The concepts discussed in this book should be applied by implementing small changes for a limited number of teams. We reduce the cost and risk of verifying the positive effect we intend to implement in our organization by testing the changes within an isolated team.
 
-Lastly, while we do our best to keep the language as inclusive as possible, there is a non-zero chance that certain words or phrases will not be received in the way they were meant to be. Language is difficult. The written word is difficult. Please read this book with the positive intent that it was penned in.
+Lastly, while we do our best to keep the language as inclusive as possible, there is a non-zero chance that certain words or phrases will not be received in the way they were meant to be. Language is difficult. The written word is difficult. Please read this book with the positive intent in which it was penned.
 
 ## Current Progress
 
