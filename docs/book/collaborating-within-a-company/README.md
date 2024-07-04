@@ -1,9 +1,9 @@
 ---
-title: The Anatomy of a Software Company
+title: Collaborating within a Company
 description: This part covers tools and strategies at an organizational level to encourage dynamic and autonomous teams. Flexible teams will enable our organization to adapt to market changes more rapidly.
 ---
 
-# The Anatomy of a Software Company
+# Collaborating within a Company
 
 This part covers tools and strategies at an organizational level to encourage dynamic and autonomous teams. Flexible teams will enable our organization to adapt to market changes more rapidly.
 

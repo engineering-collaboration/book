@@ -16,6 +16,9 @@ site
 *.mobi
 *.pdf
 
+# Python
+.venv
+
 # mac
 .DS_Store
 

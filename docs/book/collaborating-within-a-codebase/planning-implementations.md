@@ -37,7 +37,7 @@ Every decision has advantages and disadvantages that are unambiguously weighed a
 
 Problems are always more challenging than initially assumed, and we try to avoid rewriting code ourselves if a solution is available. Depending on our organization's open-source policy, we have a plethora of libraries and solutions available with permissive licensing.
 
-We make use of our [innersource](../anatomy-of-a-software-company/innersourcing.md) channels and internal tech community to search for code, documentation, or engineers who have encountered a similar problem and verify if their labour is applicable to our use case. Minor modifications to existing code repositories are preferable over constructing personal solutions. All code we introduce into our organization increases potential maintenance work and bugs.
+We make use of our [innersource](../collaborating-within-a-company/innersourcing.md) channels and internal tech community to search for code, documentation, or engineers who have encountered a similar problem and verify if their labour is applicable to our use case. Minor modifications to existing code repositories are preferable over constructing personal solutions. All code we introduce into our organization increases potential maintenance work and bugs.
 
 Having covered our basis of existing implementations, we get to work. As the implementing engineer, we have full trust in implementation decisions as long as the output matches the agreed-upon design doc. If the documented requirements turn out to be costly during development, we revisit the design doc with the stakeholders.
 

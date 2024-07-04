@@ -19,6 +19,6 @@ The other fundamental constraint on small tests is that they do not sleep, perfo
 
 Every serious programming language comes equipped with tooling for writing and executing small-scoped tests. The internet is bursting with blogs, tutorials, and guides for setting up SSTs for any language in any IDE. Beyond the strategies shared in [Good Practices](./good-practices.md), we avail full creative freedom for concrete implementations.
 
-[![Small-Scoped Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/sst-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/sst-execution.png)
+[![Small-Scoped Test Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/sst-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/sst-execution.png)
 
 We do, however, share the recommendation that SST's small footprint warrants frequent execution. Hence, we run these kinds of tests during most steps of the development cycle: during development on our local machines, on pre-merge checks, post-merge validations, and as pre-release requirements.

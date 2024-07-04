@@ -61,7 +61,7 @@ Post-merge reviews ensure steady development velocity, while still involving the
 
 ### Eventual Review
 
-Team internal post-sprint presentations and code reviews. This process is additional to post-sprint presentations as outlined in [Planning work (WIP)]() in *The Anatomy of Managing a Team*. Team members present their diffs since the last review in order and synchronously go over them, and, if necessary, request additional changes. The difference to post-merge reviews is that eventual reviews are a scheduled event in which the entire team participates.
+Team internal post-sprint presentations and code reviews. This process is additional to post-sprint presentations as outlined in [Planning work (WIP)]() in *Collaborating within a Team*. Team members present their diffs since the last review in order and synchronously go over them, and, if necessary, request additional changes. The difference to post-merge reviews is that eventual reviews are a scheduled event in which the entire team participates.
 
 To minimize the impact on time, this exercise can be done in parallel in small groups. We shuffle the members for small groups in order to spread the knowledge across our team. This type of code review covers multiple changes over a period of time, and we may block an appropriate amount of hours to review the changes synchronously.
 
@@ -71,7 +71,7 @@ The eventual code review presents the code within the full context it is being e
 
 We mold our strategy to the needs of our product lifecycle, team composition, team distribution, and industry, and review code at the relevant stages of our integration process. While there's an argument to be made that pair-programming teams present their work to the team down the line, we do not stack code reviews for a set of changes. Code review strategies are not accumulative.
 
-[![Types of Code Review](../../../assets/images/book/anatomy-of-a-code-change/types-of-code-review.webp)](../../../assets/images/book/anatomy-of-a-code-change/types-of-code-review.png)
+[![Types of Code Review](../../../assets/images/book/collaborating-within-a-codebase/types-of-code-review.webp)](../../../assets/images/book/collaborating-within-a-codebase/types-of-code-review.png)
 
 Pair programming tackles complex tasks efficiently; high-security teams benefit from pre-merge reviews; post-merge reviews support high-velocity teams and teams distributed across time zones; periodical planned eventual reviews work great for established products and teams comprised of senior engineers.
 

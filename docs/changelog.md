@@ -207,7 +207,7 @@
 
 **Merged pull requests:**
 
-- 📝 Proofread The Anatomy of a Software Company [\#29](https://github.com/opencollabbook/book/pull/29) [[proofread](https://github.com/opencollabbook/book/labels/proofread)] ([daniellanner](https://github.com/daniellanner))
+- 📝 Proofread Collaborating within a Company [\#29](https://github.com/opencollabbook/book/pull/29) [[proofread](https://github.com/opencollabbook/book/labels/proofread)] ([daniellanner](https://github.com/daniellanner))
 - 🤖 Prepend latest changelog [\#28](https://github.com/opencollabbook/book/pull/28) [[meta](https://github.com/opencollabbook/book/labels/meta)] ([github-actions[bot]](https://github.com/apps/github-actions))
 
 

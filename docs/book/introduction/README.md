@@ -15,9 +15,9 @@ Within *OpenCollaboration*, we discuss intramural strategies that have proven us
 
 *OpenCollaboration* is structured into three sections, addressing engineering processes at different levels within our organization.
 
-- [*The Anatomy of a Software Company*](../anatomy-of-a-software-company/README.md) covers organic cross-team collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product and expand the number of teams within our organization. The topics discussed in this section address problems encountered by technology officers and software architects.
-- [*The Anatomy of Managing a Team*](../anatomy-of-managing-a-team/README.md) frames principles for supporting individual contributors and promoting a productive team. We cover the merits of leading by influence and the necessities of leading by authority. This section discusses the professional challenges of technical and team leads.
-- [*The Anatomy of a Code Change*](../anatomy-of-a-code-change/README.md) analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
+- [*Collaborating within a Company*](../collaborating-within-a-company/README.md) covers organic cross-team collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product and expand the number of teams within our organization. The topics discussed in this section address problems encountered by technology officers and software architects.
+- [*Collaborating within a Team*](../collaborating-within-a-team/README.md) frames principles for supporting individual contributors and promoting a productive team. We cover the merits of leading by influence and the necessities of leading by authority. This section discusses the professional challenges of technical and team leads.
+- [*Collaborating within a Codebase*](../collaborating-within-a-codebase/README.md) analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
 
 Briefly switching to the first-person singular pronoun, the order of the book's sections has vexed me since the inception of this project. The current structure follows a reciprocal typical career progression of an engineer, which seems chronologically counterintuitive.
 
@@ -39,7 +39,7 @@ A couple of decades ago, the core business of an organization was run through sa
 
 This book covers a lot of ground, not all of which is confined within an engineering frustum. When reading this book, we consider how the practices described within can be used in tandem with departments outside of engineering. We might improve the efficiency of our communication channels within our iteration process.
 
-This book does not include source code, does not advocate for any particular tech stack, and does not assume the use of any tool or platform (apart from *The Anatomy of a Code Change*, which requires experience with version control).
+This book does not include source code, does not advocate for any particular tech stack, and does not assume the use of any tool or platform (apart from *Collaborating within a Codebase*, which requires experience with version control).
 
 ### This is not a Step-by-Step Guide
 
@@ -59,21 +59,21 @@ Lastly, while we do our best to keep the language as inclusive as possible, ther
 
 ## Current Progress
 
-We are hard at work on *The Anatomy of a Code Change* and are releasing new chapters periodically. A breakdown of our progress with a detailed list of chapters is available on the individual section pages.
+We are hard at work on *Collaborating within a Codebase* and are releasing new chapters periodically. A breakdown of our progress with a detailed list of chapters is available on the individual section pages.
 
 - [x] Introduction
     - [x] Notes and structure
     - [x] First draft
     - [ ] Edit for v1.0.0 (in progress)
-- [x] [The Anatomy of a Software Company](../anatomy-of-a-software-company/README.md)
+- [x] [Collaborating within a Company](../collaborating-within-a-company/README.md)
     - [x] Notes and structure
     - [x] First draft
     - [ ] Edit for v1.0.0 (in progress)
-- [ ] [The Anatomy of Managing a Team](../anatomy-of-managing-a-team/README.md)
+- [ ] [Collaborating within a Team](../collaborating-within-a-team/README.md)
     - [ ] Notes and structure
     - [ ] First draft
     - [ ] Edit for v1.0.0
-- [ ] [The Anatomy of a Code Change](../anatomy-of-a-code-change/README.md)
+- [ ] [Collaborating within a Codebase](../collaborating-within-a-codebase/README.md)
     - [x] Notes and structure
     - [x] First draft
     - [ ] Edit for v1.0.0 (in progress)

@@ -16,7 +16,7 @@ Depending on the discipline, the concept of repository streams, and branch isola
 
 Regardless of our approach, when merging changes into software, we ensure a linear history of our project. The parent commit of our development branch is the latest commit on main. A linear history sequentially chronicles the evolution of our software and streamlines future reactionary development.
 
-[![Linear History](../../../assets/images/book/anatomy-of-a-code-change/linear-history.webp)](../../../assets/images/book/anatomy-of-a-code-change/linear-history.png)
+[![Linear History](../../../assets/images/book/collaborating-within-a-codebase/linear-history.webp)](../../../assets/images/book/collaborating-within-a-codebase/linear-history.png)
 
 Sometimes, we introduce unexpected breaking changes. A non-linear history complicates identifying and reverting an offending commit. If left unattended, a non-linear history breaches the point of illegibility and emerges as being utterly useless. Future bug fixes and tracking changes over a period of time devolve into frustratingly hair-pulling endeavors.
 
@@ -26,7 +26,7 @@ We sprouted our development branch off the latest commit of the main when sowing
 
 In order to rectify our entanglement, we rebase our work on the latest commit on main, fix occurring conflicts, and integrate our changes after passing our automated test suite. A rebase precedes any merge into our main branch.
 
-[![Rebase](../../../assets/images/book/anatomy-of-a-code-change/rebase.webp)](../../../assets/images/book/anatomy-of-a-code-change/rebase.png)
+[![Rebase](../../../assets/images/book/collaborating-within-a-codebase/rebase.webp)](../../../assets/images/book/collaborating-within-a-codebase/rebase.png)
 
 !!! note
     When rebasing a branch, we create new commits on our local machine that no longer mirror the state of our remote repository. We either force-push (with-lease) our changes, overriding the state of the remote repository, or create a new branch from the head of our development branch and rebase and push that one, abandoning our development branch. We do so with the respect and caution required when rewriting project history in a collaborative environment.
@@ -47,7 +47,7 @@ On occasion, the complexity of achieving a task or the volume of changes across 
 
 The particular branching view of a merge commit allows us to either ignore the development commits when analyzing the main branch via `git log` or `git bisect`, or step into them if we are interested in the history of the changes.
 
-[![Merge Commit](../../../assets/images/book/anatomy-of-a-code-change/merge-commit.webp)](../../../assets/images/book/anatomy-of-a-code-change/merge-commit.png)
+[![Merge Commit](../../../assets/images/book/collaborating-within-a-codebase/merge-commit.webp)](../../../assets/images/book/collaborating-within-a-codebase/merge-commit.png)
 
 [This *GitHub* blog article](https://github.blog/2022-06-30-write-better-commits-build-better-projects/) details practices for advanced users of *Git* about structuring a story of our commits when merging our work via a merge commit. The well-written paper outlines how thematically organized commits increase the readability of changes by spanning the dramatic arc of our development process; from partial implementations to tests, refactors, polish, and documentation.
 

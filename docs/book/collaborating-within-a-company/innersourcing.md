@@ -17,6 +17,6 @@ High discoverability of projects and code on a broad scale avoids wasted time an
 
 ## Changes to Inner Source Code
 
-Changes to inner source code are done using the same processes as we follow within our team's projects. This process is detailed in [Part III - The Anatomy of a Code Change](http://127.0.0.1:8000/book/anatomy-of-a-code-change/). Using the same process across our organization with no additional red tape reduces overhead in communication and ramp-up time.
+Changes to inner source code are done using the same processes as we follow within our team's projects. This process is detailed in [Part III - Collaborating within a Codebase](http://127.0.0.1:8000/book/collaborating-within-a-codebase/). Using the same process across our organization with no additional red tape reduces overhead in communication and ramp-up time.
 
 When changes to the source code itself are deemed dramatic, teams have the option to build a downstream/upstream project consuming the inner source code and providing this wrapper once again as an innersource solution to the team and the rest of our organization.

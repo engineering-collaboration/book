@@ -7,7 +7,7 @@ description: Testing does not end once our software is deployed. Since our produ
 
 The vast majority of tests focus on pre-production validation, specifically using tests to ensure that the software is of sufficient quality before deploying it into production. Test outcomes influence the decision on whether our software should be deployed.
 
-[![Testing In Production Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-in-prod-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-in-prod-execution.png)
+[![Testing In Production Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/testing-in-prod-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/testing-in-prod-execution.png)
 
 Alas, testing does not end once our software is in production. It would be embarrassing for our company if we were the last to know whether our live software is running or not. We do not rely on bug reports from our user base to be made aware of active problems. Since our production deployment varies from our test environment, we either test in production or live a lie.
 

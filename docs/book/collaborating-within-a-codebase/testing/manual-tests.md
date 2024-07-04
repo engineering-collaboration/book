@@ -36,6 +36,6 @@ These (semi-)public manual testing strategies require dedicated personnel with p
 
 Strategies in user experience and accessibility steadily move from manual testing to automated testing. As security testing shifted left more and more, our terms evolved; for example, DevOps is now referred to as DevSecOps. Regardless of labels, we intend to shift all feasible product aspects left and introduce them to earlier testing stages.
 
-[![Manual Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/manual-testing-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/manual-testing-execution.png)
+[![Manual Test Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/manual-testing-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/manual-testing-execution.png)
 
 Security Engineers and QA Engineers work in close cooperation with product owners, feature engineers, site reliability engineers, and the user base to evolve feature life-cycles and testing strategies.

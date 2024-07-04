@@ -19,7 +19,7 @@ An increasing number of teams staging changes to the same environment inflates t
 
 ## Contract Testing
 
-Similar to test doubles introduced in MSTs, contract testing presents an alternative to testing against implementations in an LST environment. Whereas test doubles require technology domain experience, contract testing is built upon cross-team communication effort. Establishing consumer-driven contracts formalizes the clear lines of communication between vertical teams enforced by the team interactions discussed in [Team Interactions](../../anatomy-of-a-software-company/team-interactions.md).
+Similar to test doubles introduced in MSTs, contract testing presents an alternative to testing against implementations in an LST environment. Whereas test doubles require technology domain experience, contract testing is built upon cross-team communication effort. Establishing consumer-driven contracts formalizes the clear lines of communication between vertical teams enforced by the team interactions discussed in [Team Interactions](../../collaborating-within-a-company/team-interactions.md).
 
 Contract tests validate established agreements between teams as instituted in the consumer-driven contracts. Contracts are drawn up between team members of the consumer service and the provider service, both of whom participate in writing the contract tests. All consumer contract tests are run against our pending implementation in the provider services to certify our changes do not break dependent behavior.
 
@@ -29,4 +29,4 @@ Contract testing extends static strategies such as API testing and schema testin
 
 The sheer herculean effort of running LSTs excludes them from being run as part of the merging process. At a minimum, though, we run LSTs as part of the pre-release process. We may execute LST on our main branch periodically during the week, preferably at nighttime to minimize interference with resources during active development. While LSTs can be run over the weekend, coming to the office on a Monday morning to failed test alerts of non-production technology is a stressful way to start the week.
 
-[![Large-Scoped Test Execution](../../../assets/images/book/anatomy-of-a-code-change/testing/lst-execution.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/lst-execution.png)
+[![Large-Scoped Test Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/lst-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/lst-execution.png)
