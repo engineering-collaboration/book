@@ -71,7 +71,7 @@ The eventual code review presents the code within the full context it is being e
 
 We mold our strategy to the needs of our product lifecycle, team composition, team distribution, and industry, and review code at the relevant stages of our integration process. While there's an argument to be made that pair-programming teams present their work to the team down the line, we do not stack code reviews for a set of changes. Code review strategies are not accumulative.
 
-[![Types of Code Review](../../../assets/images/book/anatomy-of-a-code-change/types-of-code-review.webp)](../../../assets/images/book/anatomy-of-a-code-change/types-of-code-review.png)
+[![Types of Code Review](../../../assets/images/book/collaborating-within-a-codebase/types-of-code-review.webp)](../../../assets/images/book/collaborating-within-a-codebase/types-of-code-review.png)
 
 Pair programming tackles complex tasks efficiently; high-security teams benefit from pre-merge reviews; post-merge reviews support high-velocity teams and teams distributed across time zones; periodical planned eventual reviews work great for established products and teams comprised of senior engineers.
 

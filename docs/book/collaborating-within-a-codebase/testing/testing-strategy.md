@@ -7,7 +7,7 @@ description: Depending on our product, technology, and client demographic, we ev
 
 Throughout this chapter, we discussed types of testing across the development cycle. From working on changes to releasing to production, we balance the execution of tests between utility and execution complexity, cost, and time. We have arrived at a solid foundation for a testing strategy for our organization.
 
-[![Testing Strategy](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-strategy.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-strategy.png)
+[![Testing Strategy](../../../assets/images/book/collaborating-within-a-codebase/testing/testing-strategy.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/testing-strategy.png)
 
 This base presents a well-founded starting ground to work from. Depending on our product, technology, and client demographic, we evolve the testing procedure into a strategy modeled to our needs. The balance between the cost of LSTs, benchmark tests, and manual tests compared to the frequency of faulty integrations ultimately defines the execution order, dependency, and concurrency fitted to our needs.
 

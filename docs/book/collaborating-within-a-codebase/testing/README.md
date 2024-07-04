@@ -19,7 +19,7 @@ TDD encourages us to consider and transcribe a strategy to tackle problems in sm
 
 In the 2009 book "Succeeding with agile" Mike Cohn provides the metaphorical representation of the testing pyramid. The three-layered structure indicates guidelines for the amount of automated testing for each scope. The scope of the tests relates to the execution time and complexity of the test environment. The nature of these tests is outlined in detail in their individual chapters.
 
-[![Testing Pyramid](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-pyramid.webp)](../../../assets/images/book/anatomy-of-a-code-change/testing/testing-pyramid.png)
+[![Testing Pyramid](../../../assets/images/book/collaborating-within-a-codebase/testing/testing-pyramid.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/testing-pyramid.png)
 
 The base of the pyramid relies on numerous small-scoped unit tests that are run most frequently. Unit tests ([Small-Scoped Tests](./small-scoped-tests.md)) ensure correct behavior within a system.
 

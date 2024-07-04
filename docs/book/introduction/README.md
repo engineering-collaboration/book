@@ -15,9 +15,9 @@ Within *OpenCollaboration*, we discuss intramural strategies that have proven us
 
 *OpenCollaboration* is structured into three sections, addressing engineering processes at different levels within our organization.
 
-- [*Collaborating within a Company*](../anatomy-of-a-software-company/README.md) covers organic cross-team collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product and expand the number of teams within our organization. The topics discussed in this section address problems encountered by technology officers and software architects.
-- [*Collaborating within a Team*](../anatomy-of-managing-a-team/README.md) frames principles for supporting individual contributors and promoting a productive team. We cover the merits of leading by influence and the necessities of leading by authority. This section discusses the professional challenges of technical and team leads.
-- [*Collaborating within a Codebase*](../anatomy-of-a-code-change/README.md) analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
+- [*Collaborating within a Company*](../collaborating-within-a-company/README.md) covers organic cross-team collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product and expand the number of teams within our organization. The topics discussed in this section address problems encountered by technology officers and software architects.
+- [*Collaborating within a Team*](../collaborating-within-a-team/README.md) frames principles for supporting individual contributors and promoting a productive team. We cover the merits of leading by influence and the necessities of leading by authority. This section discusses the professional challenges of technical and team leads.
+- [*Collaborating within a Codebase*](../collaborating-within-a-codebase/README.md) analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
 
 Briefly switching to the first-person singular pronoun, the order of the book's sections has vexed me since the inception of this project. The current structure follows a reciprocal typical career progression of an engineer, which seems chronologically counterintuitive.
 
@@ -65,15 +65,15 @@ We are hard at work on *Collaborating within a Codebase* and are releasing new c
     - [x] Notes and structure
     - [x] First draft
     - [ ] Edit for v1.0.0 (in progress)
-- [x] [Collaborating within a Company](../anatomy-of-a-software-company/README.md)
+- [x] [Collaborating within a Company](../collaborating-within-a-company/README.md)
     - [x] Notes and structure
     - [x] First draft
     - [ ] Edit for v1.0.0 (in progress)
-- [ ] [Collaborating within a Team](../anatomy-of-managing-a-team/README.md)
+- [ ] [Collaborating within a Team](../collaborating-within-a-team/README.md)
     - [ ] Notes and structure
     - [ ] First draft
     - [ ] Edit for v1.0.0
-- [ ] [Collaborating within a Codebase](../anatomy-of-a-code-change/README.md)
+- [ ] [Collaborating within a Codebase](../collaborating-within-a-codebase/README.md)
     - [x] Notes and structure
     - [x] First draft
     - [ ] Edit for v1.0.0 (in progress)

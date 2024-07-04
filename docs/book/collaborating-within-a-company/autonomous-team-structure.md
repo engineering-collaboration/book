@@ -19,7 +19,7 @@ A common pattern we want to avoid in our organization is designing teams by disc
 
 When teams are partitioned via disciplines, every customer-facing feature has multiple inter-team handoffs and inter-team communication to perform. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
 
-[![Horizontal Teams](../../assets/images/book/anatomy-of-a-software-company/horizontal-teams.webp)](../../assets/images/book/anatomy-of-a-software-company/horizontal-teams.png)
+[![Horizontal Teams](../../assets/images/book/collaborating-within-a-company/horizontal-teams.webp)](../../assets/images/book/collaborating-within-a-company/horizontal-teams.png)
 
 Structuring teams via technical boundaries directs organic inertia towards misguided goals. Instead of focusing on the best customer experience, our backend team will focus on building the best backend the team can envision, regardless of organizational needs.
 
@@ -27,7 +27,7 @@ Structuring teams via technical boundaries directs organic inertia towards misgu
 
 Rapid delivery cycles are achieved by designing teams as autonomous vertical structures. A vertical team is aligned to a single product or service, feature, user journey, or user persona. This team is empowered to build and deliver customer value as quickly and independently as possible. The team does not require hand-offs to other teams to perform parts of the task.
 
-[![Vertical Teams](../../assets/images/book/anatomy-of-a-software-company/vertical-teams.webp)](../../assets/images/book/anatomy-of-a-software-company/vertical-teams.png)
+[![Vertical Teams](../../assets/images/book/collaborating-within-a-company/vertical-teams.webp)](../../assets/images/book/collaborating-within-a-company/vertical-teams.png)
 
 Vertical members include all disciplines across the necessary tech stack. Typically, a vertical team has members versed in the following areas:
 
