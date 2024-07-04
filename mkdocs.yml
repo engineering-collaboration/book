@@ -78,7 +78,7 @@ nav:
       - './book/introduction/README.md'
       - DevOps, Agile, and Lean: './book/introduction/devops-agile-lean.md'
 
-    - The Anatomy of a Software Company:
+    - Collaborating within a Company:
       - './book/anatomy-of-a-software-company/README.md'
       - An Enabling Organization: './book/anatomy-of-a-software-company/an-enabling-organization.md'
       - Autonomous Team Structure: './book/anatomy-of-a-software-company/autonomous-team-structure.md'
@@ -89,10 +89,10 @@ nav:
       - Innersourcing: './book/anatomy-of-a-software-company/innersourcing.md'
       - Team Education and Training: './book/anatomy-of-a-software-company/team-education-and-training.md'
 
-    - The Anatomy of Managing a Team:
+    - Collaborating within a Team:
       - './book/anatomy-of-managing-a-team/README.md'
 
-    - The Anatomy of a Code Change:
+    - Collaborating within a Codebase:
       - './book/anatomy-of-a-code-change/README.md'
       - CI/CD: './book/anatomy-of-a-code-change/cicd.md'
       - Trunk Based Development: './book/anatomy-of-a-code-change/trunk-based-development.md'

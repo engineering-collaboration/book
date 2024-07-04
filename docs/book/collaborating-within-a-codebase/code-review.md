@@ -61,7 +61,7 @@ Post-merge reviews ensure steady development velocity, while still involving the
 
 ### Eventual Review
 
-Team internal post-sprint presentations and code reviews. This process is additional to post-sprint presentations as outlined in [Planning work (WIP)]() in *The Anatomy of Managing a Team*. Team members present their diffs since the last review in order and synchronously go over them, and, if necessary, request additional changes. The difference to post-merge reviews is that eventual reviews are a scheduled event in which the entire team participates.
+Team internal post-sprint presentations and code reviews. This process is additional to post-sprint presentations as outlined in [Planning work (WIP)]() in *Collaborating within a Team*. Team members present their diffs since the last review in order and synchronously go over them, and, if necessary, request additional changes. The difference to post-merge reviews is that eventual reviews are a scheduled event in which the entire team participates.
 
 To minimize the impact on time, this exercise can be done in parallel in small groups. We shuffle the members for small groups in order to spread the knowledge across our team. This type of code review covers multiple changes over a period of time, and we may block an appropriate amount of hours to review the changes synchronously.
 

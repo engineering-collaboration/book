@@ -1,9 +1,9 @@
 ---
-title: The Anatomy of a Code Change
-description: The Anatomy of a Code Change covers the day-to-day processes for streamlining technical product development. It focuses on a solid foundation of CI/CD which can be extended by our organization. Utilizing automation we can reduce cognitive load and ensure consistent deliveries of our product.
+title: Collaborating within a Codebase
+description: Collaborating within a Codebase covers the day-to-day processes for streamlining technical product development. It focuses on a solid foundation of CI/CD which can be extended by our organization. Utilizing automation we can reduce cognitive load and ensure consistent deliveries of our product.
 ---
 
-# The Anatomy of a Code Change
+# Collaborating within a Codebase
 
 Part three of this book covers the day-to-day processes for streamlining technical product development. It focuses on a solid foundation of CI/CD which can be extended by our organization. Utilizing automation we can <!-- vale write-good.Weasel = NO -->significantly<!-- vale write-good.Weasel = YES --> reduce cognitive load and ensure consistent deliveries of our product.
 
