@@ -9,8 +9,8 @@ The current progress of this section:
 
 - [ ] Culture, Diversity, and Language
 - [ ] Individual Needs of Team Members
-- [ ] Building Professional Trust within a Team
-- [ ] Building Social Trust within a Team
+- [ ] Building Professional and Social Trust within a Team
+- [ ] Leading by Influence vs Leading by Authority
 - [ ] As a Lead - Leading by Serving
 - [ ] As a Lead - Mediating Conflict
 - [ ] As a Lead - Communicating Career Progression
