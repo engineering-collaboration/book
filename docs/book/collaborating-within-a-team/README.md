@@ -11,9 +11,9 @@ The current progress of this section:
 - [ ] Individual Needs of Team Members
 - [ ] Building Professional Trust within a Team
 - [ ] Building Social Trust within a Team
-- [ ] As Leaders - Leading by Serving
-- [ ] As Leaders - Mediating Conflict
-- [ ] As Leaders - Communicating Career Progression
-- [ ] As Leaders - Planning Work
-- [ ] As Leaders - Measuring Productivity
-- [ ] As Leaders - Dealing with other Teams
+- [ ] As a Lead - Leading by Serving
+- [ ] As a Lead - Mediating Conflict
+- [ ] As a Lead - Communicating Career Progression
+- [ ] As a Lead - Planning Work
+- [ ] As a Lead - Measuring Productivity
+- [ ] As a Lead - Dealing with other Teams
