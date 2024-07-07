@@ -20,3 +20,5 @@ No serious sports team would consider not hiring coaches, and neither should we.
 - Rotating engineers between teams.
 
 When building a vertical team, we should consider the degree of professional diversity the team allows and how effective our team members are at teaching and mentoring. For long-term tasks and teams, it is highly encouraged to partner junior engineers with didactically competent leads. Chances are the job market composes more senior engineers' job postings than there are senior engineers available, so we want to grow our own.
+
+Facilitating transparent requirements for career progression within our organization supports the organic professional development of our employees.
