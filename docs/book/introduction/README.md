@@ -33,7 +33,9 @@ Lastly, while progress does not have to be initiated by leadership, it certainly
 
 Across three sections, we discuss efficient software delivery practices for organizations of various sizes. Conversely, we do not consider this book to be any of the following:
 
-### This is not an Engineering Book
+### This is not a Coding Book
+
+<!-- TODO: (Daniel) Remove this paragraph and add section about how this is not a devops pipeline coding tutorial -->
 
 A couple of decades ago, the core business of an organization was run through sales, marketing, and HR departments. IT was considered a necessary cost factor that was at best overlooked, at worst the first target of budget cuts. Today, the situation appears to be reversed.
 
