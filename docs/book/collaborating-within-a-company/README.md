@@ -5,13 +5,15 @@ description: This part covers tools and strategies at an organizational level to
 
 # Collaborating within a Company
 
-Decisions made in the upper echelons of our organization trade immediacy for greater overall outcome and consequence. Yet immediate decisions and action strengthens our market competitiveness. We analyze which decisions to delegate. Product and implementation strategies need to be delegated. We focus on organizational problems and high-level architecture.
+<!-- Why do we need autonomy? -->
 
-In order to delegate immediacy, we build an enviornment that empowers our teams to immediacy. Product problems should be solved before reaching top-level personell. We lay the foundation of our software with our organization's topology.
+Technology officers and software architects make decisions about long-term success, sustainability, and growth for our organization and products. The ability to decide and execute lasting visions comes at the cost of immediacy but immediate decisions and iterations strengthen our market competitiveness to reach our long-term goals. Hence, we delegate immediacy and build an environment that empowers our teams to act autonomously.
+
+<!-- How do we sustain autonomy? Tease the contents of the section -->
+
+Implementing autonomy requires a guiding hand. This chapter focuses on strategies to ensure we foster collaboration and reduce distractions, we manage the information to noise ratio in communication and ensure our teams have all the tools to make decisions without propagating them up the hierarchy. We lay the foundation of our software with our organization's topology and culture.
 
 ## Inverse Conway Maneuvre
-
-The shape of our product becomes apparent by observing our teams' structures - before a single line of code is written. Visualizing our company's communication channels determines our software project's success rate and development time.
 
 !!! quote
     *"Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."*  
@@ -26,18 +28,40 @@ The shape of our product becomes apparent by observing our teams' structures - b
     *"Someone who claims to be an [Software] architect needs both technical and social skills. They also need a remit that is broader than pure technology - they need to have a say in business strategies, organizational structures, and personnel issues."*  
     - Allan Kelly
 
-The above quotes refer to Conway's Law. It observes the universal behavior that our software architecture ultimately copies our organization's team layout. Utilizing Conway's Law as a tool, the *Inverse Conway Maneuver* states that we design our organization around our desired software architecture and continuous delivery flow, not the other way around.
+<!-- What is Conway's Law? -->
 
-Moving people and teams in a way to design communication channels more efficiently will ultimately and organically lead to less friction in software delivery.
+The above quotes refer to Conway's Law. It observes the universal behavior that our software architecture ultimately copies our organization's team layout. Before a single line of code is written, we may deduce shape of our product by observing our teams' topology.
+
+<!-- What is the Inverse Conway Maneuvre? -->
+
+Utilizing Conway's Law as a tool, the *Inverse Conway Maneuver* states that we design our organization around our desired software architecture and continuous delivery flow, not the other way around. Moving people and teams in a way to design communication channels more efficiently will ultimately and organically lead to less friction in software delivery.
 
 ## Growth mindset
 
+<!-- Why do we need a growth mindset? -->
+
+- be able to adapt to change
+- ensure we have a curious and innovation driven env
+- not scared to ask stupid questions
+- able to admit to mistakes and learn from them
+
 Much like we cannot force departments to follow a software architecture that does not match their team structure, we cannot change our team's behavior by changing their beliefs; we change their beliefs by changing people's behavior.
 
-Theoretical "best" practices and academic anecdotes do not change the practices present in our organization. We build sociotechnical frameworks to establish a growth mindset. We build channels to encourage organic collaboration while limiting noise.
+A growth mindset 
 
-Part I discusses strategies for cultivating a growth mindset and sustainably increasing the complexity of our product.
+<!-- How do we achieve good practices? -->
 
-This part covers tools and strategies at an organizational level to encourage dynamic and autonomous teams. Flexible teams will enable our organization to adapt to market changes more rapidly.
+- dedicate time for learning
+- dedicate time for R&D
 
-The content within this book is what we have found most useful across a broad range of organizations. We consider these as rough guidelines, and we may certainly want to adapt, change, or disregard certain aspects for our organization. We do not delude ourselves as expecting a one-size-fits-all solution to this expansive topic.
+Theoretical "best" practices and academic anecdotes do not change the practices present in our organization. We build sociotechnical frameworks to establish a growth mindset.
+
+people accept change or might even drive change.
+horizontal knowledge, employee satisfaction.
+blameless culture.
+faster internal acceptance.
+solutions beyond technology.
+
+<!-- Give an overview of the chapters -->
+
+The chapters in *Part I - Collaborating within a Company* cover topics to build autonomous teams and planning collaboration strategies between these teams. We analyze the use cases of different communication channels and cover strategies for upskilling our teams.
