@@ -40,10 +40,19 @@ Utilizing Conway's Law as a tool, the *Inverse Conway Maneuver* states that we d
 
 <!-- Why do we need a growth mindset? -->
 
-- be able to adapt to change
-- ensure we have a curious and innovation driven env
-- not scared to ask stupid questions
-- able to admit to mistakes and learn from them
+Our teams and our organization accept that the current status is not our peak performance. yet a team anchored in critical yet open-minded acceptance to change acts faster and accepts new challenges
+
+We do not accept *because we have always done it this way* as an argument.
+We are careful not to seek change for changes sake.
+
+
+From metathesiophobia to driving change within our organisation.
+Looking beyond "that's how we have always done it" 
+Cross collaboration and curiosity leads to solutions that adapt better to requirements and might cost less.
+
+faster internal acceptance.
+people accept change or might even drive change.
+horizontal knowledge, employee satisfaction.
 
 Much like we cannot force departments to follow a software architecture that does not match their team structure, we cannot change our team's behavior by changing their beliefs; we change their beliefs by changing people's behavior.
 
@@ -51,16 +60,13 @@ A growth mindset
 
 <!-- How do we achieve good practices? -->
 
-- dedicate time for learning
-- dedicate time for R&D
-
 Theoretical "best" practices and academic anecdotes do not change the practices present in our organization. We build sociotechnical frameworks to establish a growth mindset.
 
-people accept change or might even drive change.
-horizontal knowledge, employee satisfaction.
+- dedicate time for learning
+- dedicate time for R&D
 blameless culture.
-faster internal acceptance.
-solutions beyond technology.
+- not scared to ask stupid questions
+- able to admit to mistakes and learn from them
 
 <!-- Give an overview of the chapters -->
 
