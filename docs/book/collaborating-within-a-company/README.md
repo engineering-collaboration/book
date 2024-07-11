@@ -40,14 +40,15 @@ Utilizing Conway's Law as a tool, the *Inverse Conway Maneuver* states that we d
 
 <!-- Why do we need a growth mindset? -->
 
-Our teams and our organization accept that the current status is not our peak performance. yet a team anchored in critical yet open-minded acceptance to change acts faster and accepts new challenges
+We accept that our development cycles offer a continuous learning process for our product and us personally. When we embrace change with objective acceptance we accelerate our ability to adapt and improve our work across our organization. An environment that celebrates innovation breeds innovation and our teams start driving change within our organization, not merely reacting to it. However, we do not seek change for change's sake.
+
+
+In a blameless culture we
 
 We do not accept *because we have always done it this way* as an argument.
-We are careful not to seek change for changes sake.
 
 
-From metathesiophobia to driving change within our organisation.
-Looking beyond "that's how we have always done it" 
+
 Cross collaboration and curiosity leads to solutions that adapt better to requirements and might cost less.
 
 faster internal acceptance.
