@@ -1,9 +1,9 @@
 ---
-title: Introduction
+title: About this Book
 description: OpenCollaboration discusses intramural strategies that have proven useful for a broad spectrum of organizations. We consider how to build autonomous, flexible, and collaborative teams and solve the apparent paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 ---
 
-# Introduction
+# About this Book
 
 Compared to other industries, software products benefit from low upfront costs and low distribution efforts, enabling us to create cheap prototypes and deliver them to users globally with little overhead. Successful software companies adapt to rapid technological, economic, and political changes to viably compete in any market.
 
