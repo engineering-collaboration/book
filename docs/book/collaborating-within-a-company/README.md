@@ -44,10 +44,6 @@ We appreciate that our development cycles offer a continuous learning process fo
 
 Similarly, we do not accept *because we have always done it this way* as an argument. Exploring solutions and new avenues of collaboration potentially solves problems more effectively and at a lower cost. Sustained collective learning and development spreads knowledge horizontally, reducing the negative repercussions when team members take time off or leave entirely. Professional growth combined with transparent career progression increases employee satsifaction and retention, lowering the risk of adverse turnover rates.
 
-<!-- How do we achieve good practices? -->
-
-Theoretical "best" practices and academic anecdotes do not change the practices present in our organization. We build sociotechnical frameworks to establish a growth mindset. We ensure two traits for continuous development. Dedicated time for learning, reserved time slots for internal trainings, R%D, hackathons, and conferences. We create a blameless environment for people to admit mistakes and encourage curiousity and comfort with unfamiliarity with a subject.
-
 <!-- Give an overview of the chapters -->
 
 The chapters in *Part I - Collaborating within a Company* cover topics to build autonomous teams and planning collaboration strategies between these teams. We analyze the use cases of different communication channels and cover strategies for upskilling our teams.
