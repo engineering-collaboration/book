@@ -40,34 +40,13 @@ Utilizing Conway's Law as a tool, the *Inverse Conway Maneuver* states that we d
 
 <!-- Why do we need a growth mindset? -->
 
-We accept that our development cycles offer a continuous learning process for our product and us personally. When we embrace change with objective acceptance we accelerate our ability to adapt and improve our work across our organization. An environment that celebrates innovation breeds innovation and our teams start driving change within our organization, not merely reacting to it. However, we do not seek change for change's sake.
+We appreciate that our development cycles offer a continuous learning process for our product and us personally. When we embrace change with objective acceptance we accelerate our ability to adapt and improve our work across our organization. An environment that celebrates innovation, breeds innovation; our teams quit merely reacting to change, they drive it. At which point we become vigilant not to seek change for change's sake.
 
-
-In a blameless culture we
-
-We do not accept *because we have always done it this way* as an argument.
-
-
-
-Cross collaboration and curiosity leads to solutions that adapt better to requirements and might cost less.
-
-faster internal acceptance.
-people accept change or might even drive change.
-horizontal knowledge, employee satisfaction.
-
-Much like we cannot force departments to follow a software architecture that does not match their team structure, we cannot change our team's behavior by changing their beliefs; we change their beliefs by changing people's behavior.
-
-A growth mindset 
+Similarly, we do not accept *because we have always done it this way* as an argument. Exploring solutions and new avenues of collaboration potentially solves problems more effectively and at a lower cost. Sustained collective learning and development spreads knowledge horizontally, reducing the negative repercussions when team members take time off or leave entirely. Professional growth combined with transparent career progression increases employee satsifaction and retention, lowering the risk of adverse turnover rates.
 
 <!-- How do we achieve good practices? -->
 
-Theoretical "best" practices and academic anecdotes do not change the practices present in our organization. We build sociotechnical frameworks to establish a growth mindset.
-
-- dedicate time for learning
-- dedicate time for R&D
-blameless culture.
-- not scared to ask stupid questions
-- able to admit to mistakes and learn from them
+Theoretical "best" practices and academic anecdotes do not change the practices present in our organization. We build sociotechnical frameworks to establish a growth mindset. We ensure two traits for continuous development. Dedicated time for learning, reserved time slots for internal trainings, R%D, hackathons, and conferences. We create a blameless environment for people to admit mistakes and encourage curiousity and comfort with unfamiliarity with a subject.
 
 <!-- Give an overview of the chapters -->
 
