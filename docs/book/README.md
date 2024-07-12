@@ -13,20 +13,14 @@ Within *OpenCollaboration*, we discuss intramural strategies that have proven us
 
 ## Structure
 
-*OpenCollaboration* is structured into three sections, addressing engineering processes at different levels within our organization.
+*OpenCollaboration* is structured into three sections, addressing engineering processes at two levels within our organization.
 
 - [*Collaborating within a Company*](../collaborating-within-a-company/README.md) covers organic cross-team collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product and expand the number of teams within our organization. The topics discussed in this section address problems encountered by technology officers and software architects.
 - [*Collaborating within a Codebase*](../collaborating-within-a-codebase/README.md) analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
 
-Briefly switching to the first-person singular pronoun, the order of the book's sections has vexed me since the inception of this project. The current structure follows a reciprocal typical career progression of an engineer, which seems chronologically counterintuitive.
-
-Plus, the sections' presentation subliminally endorses a top-down approach to organizational progress, a strategy actively argued against within this book. Ultimately, the order persists for three reasons:
-
 By initially focusing on company-wide strategies, we anchor the context of our individual contributions in the ultimate objective: market competitiveness. We understand how our contributions improve discrete metrics (i.e., development cost or time, market share, or revenue) or holistic metrics (i.e., employee experience, satisfaction, or retention).
 
-Second, a topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. We build inter-team interactions and communication channels to explain who our customers are and to appreciate their needs.
-
-Lastly, while progress does not have to be initiated by leadership, it certainly needs to be backed by it. In time, every change faces push-back that can only be overcome by authority. To motivate leadership towards necessary reforms, we need to understand our company's market demands. Associating the benefits of development practices with our competitiveness provides a mutually understood and explicit vision of our organization's potential.
+While progress does not have to be initiated by leadership, it certainly needs to be backed by it. In time, every change faces push-back that can only be overcome by authority. Associating the benefits of development practices with our competitiveness provides a mutually understood and explicit vision of our organization's potential.
 
 ## What this Book is NOT
 

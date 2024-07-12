@@ -7,6 +7,12 @@ description: It is common to have complex or shared problems that may be solved 
 
 !!! abstract "This section is heavily based on the book *Team Topologies*."
 
+<!--
+TODO: (Daniel) embed here, moved from introduction
+
+A topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. We build inter-team interactions and communication channels to explain who our customers are and to appreciate their needs.
+-->
+
 All teams within our organization should strive to be vertical teams, and most of our vertical teams work on features of the software product we publicly sell. However, it is common to have complex or shared problems that may be solved more efficiently by supporting teams within an organization. Besides working directly on public product features, stream-aligned teams may deliver internal practices.
 
 Supporting teams reduce the burden on other vertical teams. For example, cloud teams ensure necessary policies, controls, and audits for hosting applications on provided infrastructure. Product teams need autonomy to provision their environments and resources in the cloud, creating new images and templates where necessary.
