@@ -13,7 +13,7 @@ Technology officers and software architects make decisions about long-term succe
 
 Implementing autonomy requires a guiding hand. This chapter focuses on strategies to ensure we foster collaboration and reduce distractions, we manage the information to noise ratio in communication and ensure our teams have all the tools to make decisions without propagating them up the hierarchy. We lay the foundation of our software with our organization's topology and culture.
 
-## Inverse Conway Maneuvre
+## Inverse Conway Maneuver
 
 !!! quote
     *"Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."*  
@@ -32,7 +32,7 @@ Implementing autonomy requires a guiding hand. This chapter focuses on strategie
 
 The above quotes refer to Conway's Law. It observes the universal behavior that our software architecture ultimately copies our organization's team layout. Before a single line of code is written, we may deduce shape of our product by observing our teams' topology.
 
-<!-- What is the Inverse Conway Maneuvre? -->
+<!-- What is the Inverse Conway Maneuver? -->
 
 Utilizing Conway's Law as a tool, the *Inverse Conway Maneuver* states that we design our organization around our desired software architecture and continuous delivery flow, not the other way around. Moving people and teams in a way to design communication channels more efficiently will ultimately and organically lead to less friction in software delivery.
 
@@ -42,7 +42,7 @@ Utilizing Conway's Law as a tool, the *Inverse Conway Maneuver* states that we d
 
 We appreciate that our development cycles offer a continuous learning process for our product and us personally. When we embrace change with objective acceptance we accelerate our ability to adapt and improve our work across our organization. An environment that celebrates innovation, breeds innovation; our teams quit merely reacting to change, they drive it. At which point we become vigilant not to seek change for change's sake.
 
-Similarly, we do not accept *because we have always done it this way* as an argument. Exploring solutions and new avenues of collaboration potentially solves problems more effectively and at a lower cost. Sustained collective learning and development spreads knowledge horizontally, reducing the negative repercussions when team members take time off or leave entirely. Professional growth combined with transparent career progression increases employee satsifaction and retention, lowering the risk of adverse turnover rates.
+Similarly, we do not accept *because we have always done it this way* as an argument. Exploring solutions and new avenues of collaboration potentially solves problems more effectively and at a lower cost. Sustained collective learning and development spreads knowledge horizontally, reducing the negative repercussions when team members take time off or leave entirely. Professional growth combined with transparent career progression increases employee satisfaction and retention, lowering the risk of adverse turnover rates.
 
 <!-- Give an overview of the chapters -->
 
