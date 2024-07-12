@@ -49,3 +49,7 @@ Continous integration strategies of milestones and sprints
 
 Engineer - Details, libraries, implementation
 Implementation details, algorithms, open source libraries vs building
+
+## Measuring productivity
+
+We want our employees to be focused on delivering quality work for our product. Not on focusing to optimize their productivity for internal metrics.

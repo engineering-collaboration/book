@@ -80,13 +80,11 @@ nav:
   - Home:
     - 'index.md'
   - Book:
-    - Introduction:
-      - './book/introduction/README.md'
-      - DevOps, Agile, and Lean: './book/introduction/devops-agile-lean.md'
+    - About this book: './book/README.md'
+    - DevOps, Agile, and Lean: './book/devops-agile-lean.md'
 
     - Collaborating within a Company:
       - './book/collaborating-within-a-company/README.md'
-      - An Enabling Organization: './book/collaborating-within-a-company/an-enabling-organization.md'
       - Autonomous Team Structure: './book/collaborating-within-a-company/autonomous-team-structure.md'
       - Internal Supporting Teams: './book/collaborating-within-a-company/internal-supporting-teams.md'
       - Team Interactions: './book/collaborating-within-a-company/team-interactions.md'
@@ -94,9 +92,6 @@ nav:
       - Standardization: './book/collaborating-within-a-company/standardization.md'
       - Innersourcing: './book/collaborating-within-a-company/innersourcing.md'
       - Team Education and Training: './book/collaborating-within-a-company/team-education-and-training.md'
-
-    - Collaborating within a Team:
-      - './book/collaborating-within-a-team/README.md'
 
     - Collaborating within a Codebase:
       - './book/collaborating-within-a-codebase/README.md'

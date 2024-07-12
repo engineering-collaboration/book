@@ -1,9 +1,9 @@
 ---
-title: Introduction
+title: About this Book
 description: OpenCollaboration discusses intramural strategies that have proven useful for a broad spectrum of organizations. We consider how to build autonomous, flexible, and collaborative teams and solve the apparent paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 ---
 
-# Introduction
+# About this Book
 
 Compared to other industries, software products benefit from low upfront costs and low distribution efforts, enabling us to create cheap prototypes and deliver them to users globally with little overhead. Successful software companies adapt to rapid technological, economic, and political changes to viably compete in any market.
 
@@ -13,27 +13,22 @@ Within *OpenCollaboration*, we discuss intramural strategies that have proven us
 
 ## Structure
 
-*OpenCollaboration* is structured into three sections, addressing engineering processes at different levels within our organization.
+*OpenCollaboration* is structured into three sections, addressing engineering processes at two levels within our organization.
 
 - [*Collaborating within a Company*](../collaborating-within-a-company/README.md) covers organic cross-team collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product and expand the number of teams within our organization. The topics discussed in this section address problems encountered by technology officers and software architects.
-- [*Collaborating within a Team*](../collaborating-within-a-team/README.md) frames principles for supporting individual contributors and promoting a productive team. We cover the merits of leading by influence and the necessities of leading by authority. This section discusses the professional challenges of technical and team leads.
 - [*Collaborating within a Codebase*](../collaborating-within-a-codebase/README.md) analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.
-
-Briefly switching to the first-person singular pronoun, the order of the book's sections has vexed me since the inception of this project. The current structure follows a reciprocal typical career progression of an engineer, which seems chronologically counterintuitive.
-
-Plus, the sections' presentation subliminally endorses a top-down approach to organizational progress, a strategy actively argued against within this book. Ultimately, the order persists for three reasons:
 
 By initially focusing on company-wide strategies, we anchor the context of our individual contributions in the ultimate objective: market competitiveness. We understand how our contributions improve discrete metrics (i.e., development cost or time, market share, or revenue) or holistic metrics (i.e., employee experience, satisfaction, or retention).
 
-Second, a topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. We build inter-team interactions and communication channels to explain who our customers are and to appreciate their needs.
-
-Lastly, while progress does not have to be initiated by leadership, it certainly needs to be backed by it. In time, every change faces push-back that can only be overcome by authority. To motivate leadership towards necessary reforms, we need to understand our company's market demands. Associating the benefits of development practices with our competitiveness provides a mutually understood and explicit vision of our organization's potential.
+While progress does not have to be initiated by leadership, it certainly needs to be backed by it. In time, every change faces push-back that can only be overcome by authority. Associating the benefits of development practices with our competitiveness provides a mutually understood and explicit vision of our organization's potential.
 
 ## What this Book is NOT
 
 Across three sections, we discuss efficient software delivery practices for organizations of various sizes. Conversely, we do not consider this book to be any of the following:
 
-### This is not an Engineering Book
+### This is not a Coding Book
+
+<!-- TODO: (Daniel) Remove this paragraph and add section about how this is not a devops pipeline coding tutorial -->
 
 A couple of decades ago, the core business of an organization was run through sales, marketing, and HR departments. IT was considered a necessary cost factor that was at best overlooked, at worst the first target of budget cuts. Today, the situation appears to be reversed.
 
@@ -69,10 +64,6 @@ We are hard at work on *Collaborating within a Codebase* and are releasing new c
     - [x] Notes and structure
     - [x] First draft
     - [ ] Edit for v1.0.0 (in progress)
-- [ ] [Collaborating within a Team](../collaborating-within-a-team/README.md)
-    - [ ] Notes and structure
-    - [ ] First draft
-    - [ ] Edit for v1.0.0
 - [ ] [Collaborating within a Codebase](../collaborating-within-a-codebase/README.md)
     - [x] Notes and structure
     - [x] First draft

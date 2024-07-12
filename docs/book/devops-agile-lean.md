@@ -39,7 +39,9 @@ Instead, we treat human error as a symptom of the system and ask ourselves how w
 
 If coworkers feel free to share their mistakes, they increase transparency and trust within the team. At a minimum, it instructs coworkers on how to avoid costly errors without having to directly experience them. When we offer a safe environment to fail fast and fail often, we grow the cumulative body of knowledge within an organization.
 
-A culture does not define what we do; what we do defines our culture. Hence, a culture is the result of the sociotechnical changes we apply within our organization. The processes and strategies in this book support our organization to embrace a blameless culture. However, we should actively measure and encourage our progress internally if we want to succeed in establishing a competitive organization.
+A culture does not define what we do; what we do defines our culture. Hence, a culture is the result of the sociotechnical changes we apply within our organization. The processes and strategies in this book support our organization to embrace a blameless culture.
+
+However, we should actively measure and encourage our progress internally if we want to succeed in establishing a competitive organization. The values and beliefs, explicitly and implicitly framed by our organization's hierarchy and interactions, drive our cultural movement.
 
 ## Sociotechnical Interdependence
 

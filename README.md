@@ -13,13 +13,11 @@ The book *OpenCollaboration* presents a vertical slice of strategies that have p
 
 - [x] Write *Introduction*
 - [x] Write *Part I*
-- [x] Write *Part III*
-- [ ] Rewrite published chapters
+- [x] Write *Part II*
 - [ ] Improve website
   - [x] Design landing page
   - [x] Design social cards
   - [ ] Include analytics
-- [ ] Write *Part II*
 - [ ] Rewrite published chapters
 
 ## Running locally
