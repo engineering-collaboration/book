@@ -50,6 +50,11 @@ Let's keep in mind that we are never restricted to a single form of communicatio
 
 ## Social Aspect of Communication
 
+<!-- 
+TODO: (Daniel) embed in this chapter, moved from prev part II
+Culture, Diversity, and Language, Individual Needs of Team Members
+-->
+
 Human communication problems can be mistaken for technical problems. Communication problems with the IT department may result in building a new ticketing system, instead of establishing low-effort communication channels. Technology alone does not strengthen personal connections.
 
 Nurturing direct communication and social relationships is a catalyst for increased productivity. Building baseline trust over time reduces communication barriers and shortens the time needed to get work done. The most driving facilitator of strengthening bonds is in-person meetings. For geographically distributed teams, try to meet at least once a year, ideally 4 times per year.

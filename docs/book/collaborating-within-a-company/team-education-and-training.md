@@ -13,6 +13,11 @@ Both technical and personal growth are achieved by facing challenges we have not
 TODO: (Daniel) embed here, moved from section introduction
 
 Theoretical "best" practices and academic anecdotes do not change the practices present in our organization. We build sociotechnical frameworks to establish a growth mindset. We ensure two traits for continuous development. Dedicated time for learning, reserved time slots for internal trainings, R%D, hackathons, and conferences. We create a blameless environment for people to admit mistakes and encourage curiousity and comfort with unfamiliarity with a subject.
+
+- [ ] Career paths
+- [ ] Promotion criteria
+- [ ] Pay scales
+
 -->
 
 ## Education Vectors
