@@ -7,11 +7,11 @@ description: When teams are partitioned via disciplines, every customer-facing f
 
 During early web development teams were organized by disciplines. The front-end department developed the visual interaction for websites, the back-end department worked on the system logic of received input from the user, and the database department serialized data across user sessions.
 
-Teams partitioned via disciplines face multiple handoffs and inter-team communication to deliver a customer facing feature. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
-
 [![Horizontal Teams](../../assets/images/book/collaborating-within-a-company/horizontal-teams.webp)](../../assets/images/book/collaborating-within-a-company/horizontal-teams.png)
 
-The organic inertia within homodisciplinary teams directs our team members towards misguided goals. A team consisting entirely of backend engineers will focus on building the best backend the team can envision. While this may be a very self-fulfilling task for our engineers, our organizational needs requires our employees to focus on the best customer experience.
+Teams partitioned via disciplines face multiple handoffs and inter-team communication to deliver a customer facing feature. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
+
+The organic inertia within monodisciplinary teams directs our team members towards misguided goals. A team consisting entirely of backend engineers will focus on building the best backend the team can envision. While this may be a very self-fulfilling task for our engineers, our organizational needs requires our employees to focus on the best customer experience.
 
 ## Vertical Teams
 
@@ -23,14 +23,11 @@ Vertical members include all disciplines across the necessary tech stack. Typica
 
 The foundation of a vertical team's success lies in the ability to deliver changes to production without dependencies on other teams. It owns its tech stack and its continuous delivery pipeline and addresses newly discovered limitations and flaws in the software system autonomously. This ensures a reliable feedback loop with its customers and the ability to select the technology most appropriate for the specific problem, e.g., using a document database vs a graph database.
 
-<!-- vale Vale.Avoid = NO -->
+In 1955 *Elting Morison* published the study *"Mining Coal: How Long Can We Continue?"* exploring efficiencies for team structures in coal mines. The key findings emphasize the importance of team autonomy and self-management in improving productivity. In the study, smaller teams tend to operate more efficiently because each member has a clearer understanding of their responsibilities and can coordinate their efforts more effectively.
 
-!!! note
-    If you've read *Team topologies* this concept is going to sound familiar. Whenever this book mentions **vertical team**, we are referring to a **stream-aligned team** as defined in *Team topologies*.
+Before *James P. Womack*'s *"The Machine That Changed the World"* popularized the concept of lean manufacturing, *Womack* was a project manager at Ford. When his team visited the Toyota operations in Japan and surprised to see how autonomously the teams at Toyota operated on the production floor, a stark contrast to the centralized decision-making and hierarchical structure they were used to at Ford.
 
-    If you are familiar with the Spotify model, a **vertical team** is what the Spotify model calls **Squads** in structure only. A vertical team does not follow the reporting schema or necessarily the chapter structure of the Spotify model.
-
-<!-- vale Vale.Avoid = YES -->
+Vertical teams were re-discovered in software development in the early 2010s. The book *Team topologies* - a major influence for *Engineering Collaboration* - refers to vertical teams as *stream-aligned teams* and emphasizes the importance of autonomous delivery. Spotify published a their ongoing organizational effort with *The Spotify model*, including a multi-disciplinary team composition called *Squads*. However, vertical teams as described in *Engineering Collaboration* do not necessarily follow the same reporting schema or chapter structure of the Spotify model.
 
 ## Team Size
 
