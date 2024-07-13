@@ -5,23 +5,13 @@ description: When teams are partitioned via disciplines, every customer-facing f
 
 # Autonomous Team Structure
 
-Before delving into the structure of teams, let's have a brief excursion into anthropology. What is the suggested cognitive limit to the number of people with whom one can maintain stable social relationships?
+During early web development teams were organized by disciplines. The front-end department developed the visual interaction for websites, the back-end department worked on the system logic of received input from the user, and the database department serialized data across user sessions.
 
-## Team Size
-
-A number was first proposed in the 1990s by British anthropologist Robin Dunbar. Based on the behavior of primates, Dunbar proposed that humans can comfortably maintain 150 active contacts. Delving deeper, we are capable of 50 meaningful relationships, 15 people with whom we share a strong relationship, and 5 people whom we deeply trust.
-
-Naturally, these numbers are not absolute. Using these numbers as a reference point, the overall industry recommendation is to have a team sized between 3 people as a minimum and 9 people as a maximum. Amazon famously put it as "A team should be fed with 2 pizzas" - which may work in the US, but I guarantee that we will starve our European employees.
-
-## The Problem with Horizontal Teams
-
-A common pattern we want to avoid in our organization is designing teams by disciplines. Examples of this can be found in organizations during early web development. The teams were structured as a front-end department, working on the visual representation and interaction of websites, a back-end department working on the system logic of received input from the user, and the database department, working on serializing and querying data across user sessions.
-
-When teams are partitioned via disciplines, every customer-facing feature has multiple inter-team handoffs and inter-team communication to perform. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
+Teams partitioned via disciplines face multiple inter-team handoffs and inter-team communication to deliver a customer facing feature. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
 
 [![Horizontal Teams](../../assets/images/book/collaborating-within-a-company/horizontal-teams.webp)](../../assets/images/book/collaborating-within-a-company/horizontal-teams.png)
 
-Structuring teams via technical boundaries directs organic inertia towards misguided goals. Instead of focusing on the best customer experience, our backend team will focus on building the best backend the team can envision, regardless of organizational needs.
+The organic inertia within homodisciplinary teams directs our team members towards misguided goals. A team consisting entirely of backend engineers will focus on building the best backend the team can envision. While this may be a very self-fulfilling task for our engineers, our organizational needs requires our employees to focus on the best customer experience.
 
 ## Vertical Teams
 
@@ -58,7 +48,11 @@ A vertical team works on any sort of deliverable or outcome within an organizati
 
 <!-- vale Vale.Avoid = YES -->
 
-## Cognitive Load
+## Team Size
+
+A number was first proposed in the 1990s by British anthropologist Robin Dunbar. Based on the behavior of primates, Dunbar proposed that humans can comfortably maintain 150 active contacts. Delving deeper, we are capable of 50 meaningful relationships, 15 people with whom we share a strong relationship, and 5 people whom we deeply trust.
+
+Naturally, these numbers are not absolute. Using these numbers as a reference point, the overall industry recommendation is to have a team sized between 3 people as a minimum and 9 people as a maximum. Amazon famously put it as "A team should be fed with 2 pizzas" - which may work in the US, but I guarantee that we will starve our European employees.
 
 Just as we design teams after our software architecture, we want to ensure our software architecture considers the maximum cognitive load of a team. If during our software design process we realize a certain module exceeds the capacity of what can realistically be achieved with a team size following Dunbar's number, we should consider splitting it into submodules for dedicated teams.
 
