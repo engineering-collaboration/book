@@ -7,7 +7,7 @@ description: When teams are partitioned via disciplines, every customer-facing f
 
 During early web development teams were organized by disciplines. The front-end department developed the visual interaction for websites, the back-end department worked on the system logic of received input from the user, and the database department serialized data across user sessions.
 
-Teams partitioned via disciplines face multiple inter-team handoffs and inter-team communication to deliver a customer facing feature. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
+Teams partitioned via disciplines face multiple handoffs and inter-team communication to deliver a customer facing feature. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
 
 [![Horizontal Teams](../../assets/images/book/collaborating-within-a-company/horizontal-teams.webp)](../../assets/images/book/collaborating-within-a-company/horizontal-teams.png)
 
@@ -15,29 +15,13 @@ The organic inertia within homodisciplinary teams directs our team members towar
 
 ## Vertical Teams
 
-Rapid delivery cycles are achieved by designing teams as autonomous vertical structures. A vertical team is aligned to a single product or service, feature, user journey, or user persona. This team is empowered to build and deliver customer value as quickly and independently as possible. The team does not require hand-offs to other teams to perform parts of the task.
+Designing teams as cross-disciplinary vertical structures allows us to align multiple competences with a shared purpose. A vertical team focuses on a single service, feature, or user persona and is empowered to build and deliver customer value as quickly and independently as possible. The team does not require hand-offs to other teams to perform parts of the task and achieves rapid iteration cycles by working autonomously.
 
 [![Vertical Teams](../../assets/images/book/collaborating-within-a-company/vertical-teams.webp)](../../assets/images/book/collaborating-within-a-company/vertical-teams.png)
 
-Vertical members include all disciplines across the necessary tech stack. Typically, a vertical team has members versed in the following areas:
+Vertical members include all disciplines across the necessary tech stack. Typically, a vertical team has members versed in the areas of project management, security, infrastructure, development, metrics and monitoring, and UX. These do not represent a one-to-one mapping of skills to members. A member may cover multiple disciplines, and more or fewer disciplines may be needed per team.
 
-- Security
-- Viability analysis
-- Design and architecture
-- Development and code
-- Infra and operations
-- Metrics and monitoring
-- Product owner
-- Testing and QA
-- UX
-
-Note that this is not a one-to-one mapping of skills to members. A member may cover multiple disciplines, and more or fewer disciplines may be needed per team.
-
-The foundation of a vertical team's success is the ability to deliver to production without waiting for other teams. If our team owns its vertical tech stack and its continuous delivery pipeline, it can rapidly address newly discovered limitations and flaws in the software system. This ensures all technical aspects are integrated into a feedback loop with our customers.
-
-The independent nature of vertical teams supports teams to use the technology most appropriate for their specific customer problem, e.g., using a document database vs a graph database.
-
-A vertical team works on any sort of deliverable or outcome within an organization. A vertical team either works directly on a feature of our product or works towards internal goals.
+The foundation of a vertical team's success lies in the ability to deliver changes to production without dependencies on other teams. It owns its tech stack and its continuous delivery pipeline and addresses newly discovered limitations and flaws in the software system autonomously. This ensures a reliable feedback loop with its customers and the ability to select the technology most appropriate for the specific problem, e.g., using a document database vs a graph database.
 
 <!-- vale Vale.Avoid = NO -->
 
