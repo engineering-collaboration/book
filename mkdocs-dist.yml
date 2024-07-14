@@ -80,7 +80,7 @@ nav:
   - Home:
     - 'index.md'
   - Book:
-    - About this book: './book/README.md'
+    - './book/README.md'
     - DevOps, Agile, and Lean: './book/devops-agile-lean.md'
 
     - Collaborating within a Company:
