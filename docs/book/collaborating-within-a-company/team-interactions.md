@@ -13,6 +13,18 @@ Large-scale organizations rely on a multitude of autonomous teams solving their 
 To highlight the difference of the two approaches, we are borrowing a quote from *Mark Burgess*'s book *Thinking in Promises* - "Don't tell me what you are doing, tell me what you are trying to achieve!".
 <!-- vale Vale.Avoid = YES -->
 
+<!-- 
+TODO: (Daniel) Embed here, moved from autonomous teams section
+
+## Organizational Charts
+
+Organizational charts visualize the level of responsibility "who is in charge of what and whom". For day-to-day practices, the org chart shows the strategically placed chain of command for each business division. The higher up the org chart we go, the more long-term decisions we encounter.
+
+Org charts are not a device to visualize communication channels and team structures within organizations. Any practical planning of team responsibilities or day-to-day tasks based on org charts is an inherently flawed process as teams and products within software companies strive to adapt to market conditions.
+
+A healthy business is not built upon software alone, and an org chart has little relationship with our engineers, and inserting any names of our workforce into our chart is pointless. Reasonable org chart updates include changes to geographic compliance responsibilities, drastic updates to our organization's cap table.
+-->
+
 ## Interaction Forms by Team Topologies
 
 !!! abstract "This section is heavily based on the book *Team Topologies*."
