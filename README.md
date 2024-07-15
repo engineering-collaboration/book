@@ -1,15 +1,15 @@
 <p align="center">
-  <a href="https://www.opencollaboration.io/">
-    <img src="https://www.opencollaboration.io/assets/logo.png" width="64" alt="OpenCollaboration">
+  <a href="https://www.engineering-collaboration.io/">
+    <img src="https://www.engineering-collaboration.io/assets/logo.png" width="64" alt="Engineering Collaboration">
   </a>
 </p>
 <br>
 
-The book *OpenCollaboration* presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
+The book *Engineering Collaboration* presents a vertical slice of strategies that have proven useful for a broad spectrum of organizations. This brief literary excursion provides the foundation for building an autonomous, flexible, and collaborative environment at the core of our company.
 
 ## Roadmap
 
-*OpenCollaboration* is under heavy development and undergoes continuous editing and restructuring. The main development currently focuses on rewriting the published chapters for coherent tone and interdependency. The additional roadmap for the v1 release currently looks as follows.
+*Engineering Collaboration* is under heavy development and undergoes continuous editing and restructuring. The main development currently focuses on rewriting the published chapters for coherent tone and interdependency. The additional roadmap for the v1 release currently looks as follows.
 
 - [x] Write *Introduction*
 - [x] Write *Part I*
@@ -22,7 +22,7 @@ The book *OpenCollaboration* presents a vertical slice of strategies that have p
 
 ## Running locally
 
-*OpenCollaboration* is written in Markdown and built to HTML via [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). In order to start working locally, follow the instructions to [install Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/).
+*Engineering Collaboration* is written in Markdown and built to HTML via [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). In order to start working locally, follow the instructions to [install Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/).
 
 Once installed, we create and render a book using `mkdocs serve`. This command automatically detects and hot reloads changes to the Markdown source.
 
@@ -32,7 +32,7 @@ The [contribution guidelines](CONTRIBUTING.md) document strategies regarding pro
 
 ## Versioning
 
-*OpenCollaboration* follows the [semantic versioning](http://semver.org/) scheme.
+*Engineering Collaboration* follows the [semantic versioning](http://semver.org/) scheme.
 
 - Patches include fixes to orthography, grammar, and punctuation.
 - Minor version bumps cover larger edits and new chapters.
@@ -40,7 +40,7 @@ The [contribution guidelines](CONTRIBUTING.md) document strategies regarding pro
 
 ## Licensing
 
-*OpenCollaboration* is licensed under the **CC-BY-4.0** license, please review the [LICENSE file](LICENSE) for further details.
+*Engineering Collaboration* is licensed under the **CC-BY-4.0** license, please review the [LICENSE file](LICENSE) for further details.
 
 ## Built with ❤️ and
 
