@@ -1,71 +1,44 @@
 ---
 title: Autonomous Team Structure
-description: When teams are partitioned via disciplines, every customer-facing feature has multiple inter-team handoffs and inter-team communication to perform. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
+description: Designing teams as cross-disciplinary structures allows us to align multiple competences with a shared purpose. This self-sufficient team achieves rapid iteration cycles by working autonomously.
 ---
 
 # Autonomous Team Structure
 
-Before delving into the structure of teams, let's have a brief excursion into anthropology. What is the suggested cognitive limit to the number of people with whom one can maintain stable social relationships?
-
-## Team Size
-
-A number was first proposed in the 1990s by British anthropologist Robin Dunbar. Based on the behavior of primates, Dunbar proposed that humans can comfortably maintain 150 active contacts. Delving deeper, we are capable of 50 meaningful relationships, 15 people with whom we share a strong relationship, and 5 people whom we deeply trust.
-
-Naturally, these numbers are not absolute. Using these numbers as a reference point, the overall industry recommendation is to have a team sized between 3 people as a minimum and 9 people as a maximum. Amazon famously put it as "A team should be fed with 2 pizzas" - which may work in the US, but I guarantee that we will starve our European employees.
-
-## The Problem with Horizontal Teams
-
-A common pattern we want to avoid in our organization is designing teams by disciplines. Examples of this can be found in organizations during early web development. The teams were structured as a front-end department, working on the visual representation and interaction of websites, a back-end department working on the system logic of received input from the user, and the database department, working on serializing and querying data across user sessions.
-
-When teams are partitioned via disciplines, every customer-facing feature has multiple inter-team handoffs and inter-team communication to perform. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
+During early web development, teams were organized by disciplines. The front-end department developed the visual interaction for websites, the back-end department worked on the system logic of received input from the user, and the database department serialized data across user sessions.
 
 [![Horizontal Teams](../../assets/images/book/collaborating-within-a-company/horizontal-teams.webp)](../../assets/images/book/collaborating-within-a-company/horizontal-teams.png)
 
-Structuring teams via technical boundaries directs organic inertia towards misguided goals. Instead of focusing on the best customer experience, our backend team will focus on building the best backend the team can envision, regardless of organizational needs.
+Teams partitioned via disciplines face multiple handoffs and inter-team communication to deliver a customer-facing feature. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
+
+The organic inertia within monodisciplinary teams directs our team members toward misguided goals. A team consisting entirely of backend engineers will focus on building the best backend the team can envision. While this may be an attractive and self-fulfilling task for our engineers, our organizational needs require our employees to focus on the best customer experience.
 
 ## Vertical Teams
 
-Rapid delivery cycles are achieved by designing teams as autonomous vertical structures. A vertical team is aligned to a single product or service, feature, user journey, or user persona. This team is empowered to build and deliver customer value as quickly and independently as possible. The team does not require hand-offs to other teams to perform parts of the task.
+Designing teams as cross-disciplinary vertical structures allows us to align multiple competences with a shared purpose. A vertical team focuses on a single service, feature, or user persona and is empowered to build and deliver customer value as quickly and independently as possible. The team does not require hand-offs to other teams to perform parts of the task and achieves rapid iteration cycles by working autonomously.
 
 [![Vertical Teams](../../assets/images/book/collaborating-within-a-company/vertical-teams.webp)](../../assets/images/book/collaborating-within-a-company/vertical-teams.png)
 
-Vertical members include all disciplines across the necessary tech stack. Typically, a vertical team has members versed in the following areas:
+Vertical teams include all disciplines across the necessary tech stack. Typically, a vertical team has members versed in the areas of project management, security, infrastructure, development, metrics and monitoring, and UX. These do not represent a one-to-one mapping of skills to members. A member may cover multiple disciplines, and more or fewer disciplines may be needed per team.
 
-- Security
-- Viability analysis
-- Design and architecture
-- Development and code
-- Infra and operations
-- Metrics and monitoring
-- Product owner
-- Testing and QA
-- UX
+The foundation of a vertical team's success lies in the ability to deliver changes to production without dependencies on other teams. It owns its tech stack and its continuous delivery pipeline and addresses newly discovered limitations and flaws in the software system autonomously. This ensures a reliable feedback loop with its customers and the ability to select the technology most appropriate for the specific problem, e.g., using a document database or a graph database.
 
-Note that this is not a one-to-one mapping of skills to members. A member may cover multiple disciplines, and more or fewer disciplines may be needed per team.
+In 1955, *Elting Morison* published the study *"Mining Coal: How Long Can We Continue?"* exploring efficiencies for team structures in coal mines. The key findings emphasize the importance of team autonomy and self-management in improving productivity. In the study, smaller teams tend to operate more efficiently because each member has a clearer understanding of their responsibilities and can coordinate their efforts more effectively.
 
-The foundation of a vertical team's success is the ability to deliver to production without waiting for other teams. If our team owns its vertical tech stack and its continuous delivery pipeline, it can rapidly address newly discovered limitations and flaws in the software system. This ensures all technical aspects are integrated into a feedback loop with our customers.
+Before *James P. Womack*'s *"The Machine That Changed the World"* popularized the concept of lean manufacturing, *Womack* was a project manager at Ford. When his team visited the Toyota operations in Japan and were surprised to see how autonomously the teams at Toyota operated on the production floor; a stark contrast to the centralized decision-making and hierarchical structure they were used to at Ford.
 
-The independent nature of vertical teams supports teams to use the technology most appropriate for their specific customer problem, e.g., using a document database vs a graph database.
+Vertical teams were rediscovered in software development in the early 2010s. The book *Team topologies*, a major influence for *Engineering Collaboration*, refers to vertical teams as *stream-aligned teams* and emphasizes the importance of autonomous delivery. Spotify published their ongoing organizational effort with *The Spotify model*, including a multidisciplinary team composition called *Squads*. However, vertical teams as described in *Engineering Collaboration* do not necessarily follow the same reporting schema or chapter structure of the Spotify model.
 
-A vertical team works on any sort of deliverable or outcome within an organization. A vertical team either works directly on a feature of our product or works towards internal goals.
+## Team Size
 
-<!-- vale Vale.Avoid = NO -->
+Based on the behavior of primates, British anthropologist Robin Dunbar proposed that humans can comfortably maintain 150 active social contacts. This number represents our social outer circle and decreases as we approach our inner circle. According to the theory, we are capable of 50 meaningful relationships, 15 people with whom we share a strong relationship, and 5 people whom we deeply trust. Naturally, these numbers are subjective.
 
-!!! note
-    If you've read *Team topologies* this concept is going to sound familiar. Whenever this book mentions **vertical team**, we are referring to a **stream-aligned team** as defined in *Team topologies*.
+Based on Dunbar's theory, a team should consist of three to nine people. Teams smaller than three struggle with diverse responsibilities, while teams larger than that struggle with communication overhead and accumulated noise. *Amazon* famously put it as *"A team should be fed with two pizzas."* - a unit of measurement that may work in the United States, but will starve any team larger than three based in Europe.
 
-    If you are familiar with the Spotify model, a **vertical team** is what the Spotify model calls **Squads** in structure only. A vertical team does not follow the reporting schema or necessarily the chapter structure of the Spotify model.
+A second factor affecting team size is the cognitive load of our team. We handle increased workload of the same nature by scaling up our team to the maximum of Dunbar's number. If the workload increases beyond the maximum scope, we identify a separation of concerns within our software and split the team along this architecture. Teams adapt quickly to an increased volume of similar work; a more interesting problem is an increase in complexity.
 
-<!-- vale Vale.Avoid = YES -->
+When working on problems, we have a limited capacity of information we can hold in our mind. Most engineering work consists of solving problems within a specific context. This context becomes increasingly more complex with additional abstractions, user personas, and architecture demands. The larger and the more complex the systems of teams get, the more cognitive load is required to effectively deliver results.
 
-## Cognitive Load
+Besides the complexity of systems, context switches reserve a large amount of cognitive load. When we work on a problem, we enter a focused state often referred to as *the zone* or a *state of flow*. Within this state of heightened productivity, we lose ourselves to the task at hand and toil at peak performance. We reach *the zone* after fifteen to thirty minutes of uninterrupted focus. Every context switch removes us from this state.
 
-Just as we design teams after our software architecture, we want to ensure our software architecture considers the maximum cognitive load of a team. If during our software design process we realize a certain module exceeds the capacity of what can realistically be achieved with a team size following Dunbar's number, we should consider splitting it into submodules for dedicated teams.
-
-## Organizational Charts
-
-An Organizational chart (org chart) is a helpful organigram for visualizing the level of responsibility and compliance, essentially illustrating "who is in charge of what and whom." Typically the CEO or board are the ultimate decision-makers for problems that make their way to the top of the chart. For day-to-day practices, the org chart shows the strategically placed chain of command for each business division. The higher up the org chart we go, the more long-term decisions we encounter.
-
-Org charts are NOT a device to visualize communication channels and team structures within organizations. Any practical planning of team responsibilities or day-to-day tasks based on org charts is an inherently flawed process as teams and products within software companies strive to adapt to market conditions; that is what we're trying to achieve with this book anyway.
-
-A healthy business is not built upon software alone, and an org chart has little relationship with our engineers, and inserting any names of our workforce into our chart is pointless. Reasonable org chart updates include changes to geographic compliance responsibilities, drastic updates to our organization's cap table.
+Because cognitive overload and context switches have such a detrimental effect on our productivity, it makes sense to split the team with dedicated responsibilities before we reach the upper limit of Dunbar's number.
