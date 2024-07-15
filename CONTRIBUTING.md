@@ -1,6 +1,6 @@
 # Contributing
 
-A big welcome and thank you for considering contributing to **OpenCollaboration** ❤️
+A big welcome and thank you for considering contributing to **Engineering Collaboration** ❤️
 
 Reading and following these guidelines will help us make the contribution process easy and effective for everyone involved. It also communicates that we agree to respect the time of the contributors managing and developing this open-source project.
 

@@ -1,6 +1,6 @@
 ---
 title: About this Book
-description: OpenCollaboration discusses intramural strategies that have proven useful for a broad spectrum of organizations. We consider how to build autonomous, flexible, and collaborative teams and solve the apparent paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
+description: Engineering Collaboration discusses intramural strategies that have proven useful for a broad spectrum of organizations. We consider how to build autonomous, flexible, and collaborative teams and solve the apparent paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 ---
 
 # About this Book
@@ -9,11 +9,11 @@ Compared to other industries, software products benefit from low upfront costs a
 
 If we impair these traits with obtrusive organizational or technical processes, our business loses its ability to pivot with market changes. While it is not always necessary to act, the decision to do so should be driven by business factors, not technological limitations.
 
-Within *OpenCollaboration*, we discuss intramural strategies that have proven useful for a broad spectrum of organizations. We consider how we build autonomous, flexible, and collaborative teams and solve the apparent paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
+Within *Engineering Collaboration*, we discuss intramural strategies that have proven useful for a broad spectrum of organizations. We consider how we build autonomous, flexible, and collaborative teams and solve the apparent paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 
 ## Structure
 
-*OpenCollaboration* is structured into three sections, addressing engineering processes at two levels within our organization.
+*Engineering Collaboration* is structured into three sections, addressing engineering processes at two levels within our organization.
 
 - [*Collaborating within a Company*](../collaborating-within-a-company/README.md) covers organic cross-team collaboration while limiting noise. We discuss established strategies for nurturing a growth mindset to sustainably increase the complexity of our product and expand the number of teams within our organization. The topics discussed in this section address problems encountered by technology officers and software architects.
 - [*Collaborating within a Codebase*](../collaborating-within-a-codebase/README.md) analyzes good practices for the day-to-day work of engineers to achieve software products with high adaptability and stability. This section presents workflows and automation concepts to increase the frequency of our software deliveries. These solutions are the foundation of sustainable growth and are applied by engineers across all levels.

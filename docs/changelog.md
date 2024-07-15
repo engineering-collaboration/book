@@ -250,7 +250,7 @@
 
 **Merged pull requests:**
 
-- 🌍 Rename book title to OpenCollaboration [\#19](https://github.com/engineering-collaboration/book/pull/19) [[meta](https://github.com/engineering-collaboration/book/labels/meta)] ([daniellanner](https://github.com/daniellanner))
+- 🌍 Rename book title to Engineering Collaboration [\#19](https://github.com/engineering-collaboration/book/pull/19) [[meta](https://github.com/engineering-collaboration/book/labels/meta)] ([daniellanner](https://github.com/daniellanner))
 - 🌍 Update landing page [\#18](https://github.com/engineering-collaboration/book/pull/18) [[meta](https://github.com/engineering-collaboration/book/labels/meta)] ([daniellanner](https://github.com/daniellanner))
 - 🤖 Fix git lfs issue in release pipeline [\#17](https://github.com/engineering-collaboration/book/pull/17) [[automation](https://github.com/engineering-collaboration/book/labels/automation)] ([daniellanner](https://github.com/daniellanner))
 

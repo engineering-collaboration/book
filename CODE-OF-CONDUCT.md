@@ -1,4 +1,4 @@
-# OpenCollaboration - Code of Conduct
+# Engineering Collaboration - Code of Conduct
 
 ## Our Pledge
 
