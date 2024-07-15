@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.opencollaboration.io/">
-    <img src="https://www.opencollaboration.io/assets/logo.png" width="64" alt="OpenCollaboration">
+  <a href="https://www.engineering-collaboration.io/">
+    <img src="https://www.engineering-collaboration.io/assets/logo.png" width="64" alt="OpenCollaboration">
   </a>
 </p>
 <br>

@@ -4,7 +4,7 @@
 ### Replace open graph social cards
 
 pattern='<meta  property="og:image" .* >'
-replacement='<meta  property="og:image"  content="https://opencollaboration.io/assets/social.png" >'
+replacement='<meta  property="og:image"  content="https://engineering-collaboration.io/assets/social.png" >'
 
 # replace generated social cards with static image recursively in all files
 # check for platform for proper invocation of sed
@@ -20,7 +20,7 @@ fi
 ### Replace twitter social cards
 
 pattern='<meta  name="twitter:image" .* >'
-replacement='<meta  name="twitter:image"  content="https://opencollaboration.io/assets/social.png" >'
+replacement='<meta  name="twitter:image"  content="https://engineering-collaboration.io/assets/social.png" >'
 
 # replace generated social cards with static image recursively in all files
 # check for platform for proper invocation of sed
