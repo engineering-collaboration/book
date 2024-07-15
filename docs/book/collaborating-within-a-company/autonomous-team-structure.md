@@ -1,6 +1,6 @@
 ---
 title: Autonomous Team Structure
-description: When teams are partitioned via disciplines, every customer-facing feature has multiple inter-team handoffs and inter-team communication to perform. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
+description: Designing teams as cross-disciplinary structures allows us to align multiple competences with a shared purpose. This self-sufficient team achieves rapid iteration cycles by working autonomously.
 ---
 
 # Autonomous Team Structure
