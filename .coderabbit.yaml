@@ -9,6 +9,7 @@ reviews:
     auto_review:
         labels:
           - draft
+          - edit
 
 chat:
     auto_reply: false
