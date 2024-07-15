@@ -36,7 +36,7 @@ The foundational aspects of useful documentation cover findability and bidirecti
 We work on documentation using the same strategies and tools we use for working on product features. Feature branches and pull requests for documentation offer a familiar environment for reviews and edits before integration. Documentation style guides necessitate the form and structure of documentations. Which words to use, which words to avoid, code style of examples. Static analysis and automated tests verify our documentation's compliance with our style guide.
 
 !!! note
-    Every pull request introducing a new chapter into this book runs [static analysis using `vale.sh`](https://github.com/opencollabbook/book/actions/workflows/pr.yaml) and an AI editor to review and highlight grammatical inconsistencies.
+    Every pull request introducing a new chapter into this book runs [static analysis using `vale.sh`](https://github.com/engineering-collaboration/book/actions/workflows/pr.yaml) and an AI editor to review and highlight grammatical inconsistencies.
 
 Extending our continuous delivery practices, we build and distribute documentation to our readers across all domains. Internally, our project managers appreciate automated progress updates within their project management tool with the PR description. Fellow engineers consume a reference documentation extracted from semantic components and comments of our source code.
 

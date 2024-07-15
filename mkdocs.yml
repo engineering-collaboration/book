@@ -9,8 +9,8 @@ site_description: >-
 
 copyright: Written by <a href="https://daniellanner.io" target="_blank">Daniel Lanner</a>
 
-repo_url: https://github.com/opencollabbook/book
-repo_name: opencollabbook/book
+repo_url: https://github.com/engineering-collaboration/book
+repo_name: engineering-collaboration/book
 edit_uri: edit/main/docs/
 
 theme:
