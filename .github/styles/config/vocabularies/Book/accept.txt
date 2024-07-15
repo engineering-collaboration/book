@@ -10,7 +10,10 @@ Cockburn
 Daniele
 Procida
 Drucker
+Womack
+Elting
 Diátaxis
+Spotify
 API
 CTO
 SDK
@@ -68,6 +71,7 @@ asynchronicity
 [Mm]onorepository
 [Mm]onorepo
 [Mm]ultirepo
+monodisciplinary
 zPages
 Healthz
 RPCz

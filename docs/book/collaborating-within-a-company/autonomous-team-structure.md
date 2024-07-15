@@ -11,7 +11,7 @@ During early web development teams were organized by disciplines. The front-end 
 
 Teams partitioned via disciplines face multiple handoffs and inter-team communication to deliver a customer facing feature. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
 
-The organic inertia within monodisciplinary teams directs our team members towards misguided goals. A team consisting entirely of backend engineers will focus on building the best backend the team can envision. While this may be a very self-fulfilling task for our engineers, our organizational needs requires our employees to focus on the best customer experience.
+The organic inertia within monodisciplinary teams directs our team members towards misguided goals. A team consisting entirely of backend engineers will focus on building the best backend the team can envision. While this may be an attractive and self-fulfilling task for our engineers, our organizational needs requires our employees to focus on the best customer experience.
 
 ## Vertical Teams
 
@@ -31,7 +31,7 @@ Vertical teams were re-discovered in software development in the early 2010s. Th
 
 ## Team Size
 
-Based on the behavior of primates, British anthropologist Robin Dunbar proposed that humans can comfortably maintain 150 active social contacts. This number roughly represents our social outer circle and decreases as we approach our inner circle. According to the theory, we are capable of 50 meaningful relationships, 15 people with whom we share a strong relationship, and 5 people whom we deeply trust. Naturally, these numbers are subjective.
+Based on the behavior of primates, British anthropologist Robin Dunbar proposed that humans can comfortably maintain 150 active social contacts. This number represents our social outer circle and decreases as we approach our inner circle. According to the theory, we are capable of 50 meaningful relationships, 15 people with whom we share a strong relationship, and 5 people whom we deeply trust. Naturally, these numbers are subjective.
 
 Based on Dunbar's theory, a team should consist of three to nine people. Teams smaller than three struggle with diverse responsibilities, teams larger than that struggle with communication overhead and accumulated noise. *Amazon* famously put it as *"A team should be fed with two pizzas."*. A unit of measurement that may work in the United States, but will starve any team larger than three based in Europe.
 
@@ -39,6 +39,6 @@ A second factor affecting team size is the cognitive load of our team. We handle
 
 When working on problems we have a limited capacity of information we can hold in our mind. Most engineering work consists of solving problems within a specific context. This context becomes increasingly more complex with additional abstractions, user personas, and architecture demands. The larger and the more complex the systems of teams get, the more cognitive load is required to effectively deliver results.
 
-Besides complexity of systems, context switches reserve a large amount of cognitive load. When we work on a problem we enter a focused state often referred to as *the zone* or a *state of flow*. Within this state of heightened productivity we lose ourselves completely to the task at hand and toil at peak performance. We reach *the zone* after fifteen to thirty minutes of uninterrupted focus. Every context switch removes us from this state.
+Besides complexity of systems, context switches reserve a large amount of cognitive load. When we work on a problem we enter a focused state often referred to as *the zone* or a *state of flow*. Within this state of heightened productivity we lose ourselves to the task at hand and toil at peak performance. We reach *the zone* after fifteen to thirty minutes of uninterrupted focus. Every context switch removes us from this state.
 
 Because cognitive overload and context switches have such detrimental effect on our productivity, it makes sense to split the team with dedicated responsibilities before we reach the upper limit of Dunbar's number.
