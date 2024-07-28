@@ -230,21 +230,28 @@
         </div>
         <div class="mr-auto md:col-span-8">
           <h2 class="text-book-night text-lg font-extrabold mb-2 mt-0">
-            Writing in public
+            Free and Open Source
           </h2>
           <p class="text-sm font-normal text-gray-500 mb-2">
-            I am writing and refining <i>Engineering Collaboration</i> in public and released it as a preview.
-            Practicing what I preach, I am delivering chapters and edits continously.
+            Inquisitive minds can find excellent resources online for learning programming languages and building products by themselves.
+            Alas, obtaining high-quality material about working together better is a more difficult task.
           </p>
-          <p class="text-sm font-normal text-gray-500 mb-4 md:mb-6">
-            The book is published with permissive licensing to welcome expert community involvement in form of edits and chapters.
-            <a href="https://daniellanner.io/" target="_blank" class="text-book-night hover:text-book-robin-egg-blue">
-              Get in touch
-            </a> or 
+          <p class="text-sm font-normal text-gray-500 mb-2">
+            <!-- Why is it free -->
+             Engineering Collaboration empowers software teams across the globe and is available free of charge.
+             With some luck software teams across the globe will reap some benefit from this book and accelerate their
+             development practices. 
+          </p>
+          <p class="text-sm font-normal text-gray-500  mb-4 md:mb-6">
+            <!-- Why is it open source? -->
+            Should you, as a reader, uncover any mistakes in spelling, grammar, or punctuation, this book is open source.
+            Become a contributor to this book, or
             <a href="https://github.com/engineering-collaboration/book/issues" target="_blank" class="text-book-night hover:text-book-robin-egg-blue">
-              open an issue on GitHub
+              open an issue
             </a>
-            to discuss contributions or request additional chapters.
+            on GitHub.
+
+            The former is especially true if you find yourself disagreeing with me on any chapter. I am happy to be proven wrong.
           </p>
           <a href="https://github.com/engineering-collaboration/book" target="_blank"
           class="text-xs font-bold text-book-night hover:text-book-robin-egg-blue inline-flex items-center">
@@ -288,7 +295,7 @@
 
 
         <a href="https://github.com/sponsors/engineering-collaboration?o=esb" target="_blank" type="button" 
-          class="w-48 sm:w-auto justify-center text-book-white bg-[#181717] hover:bg-[#181717]/90 focus:ring-4 focus:outline-none focus:ring-[#181717]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#181717]/50 me-2 mb-2">
+          class="w-48 sm:w-auto justify-center text-book-white bg-[#181717] hover:bg-[#181717]/90 focus:ring-4 focus:outline-none focus:ring-[#181717]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2">
           <svg class="w-4 h-4 me-2 -ms-1"
               aria-hidden="true"
               focusable="false"
@@ -304,7 +311,7 @@
         </a>
 
         <a href="https://www.buymeacoffee.com/daniellanner" target="_blank" type="button" 
-              class="w-48 sm:w-auto justify-center text-book-night bg-[#FFDD00] hover:bg-[#FFDD00]/90 focus:ring-4 focus:outline-none focus:ring-[#FFDD00]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#FFDD00]/50 me-2 mb-2">
+              class="w-48 sm:w-auto justify-center text-book-night bg-[#FFDD00] hover:bg-[#FFDD00]/90 focus:ring-4 focus:outline-none focus:ring-[#FFDD00]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2">
                 <svg class="w-4 h-4 me-2 -ms-1"
                   aria-hidden="true"
                   focusable="false"
@@ -320,6 +327,41 @@
         </a>
 
       </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="py-8 px-4 mx-auto max-w-screen-sm lg:py-16 lg:px-6">
+        <div class="mx-auto text-left">
+          <p class="mb-2 mt-0 text-lg md:text-2xl font-extrabold">
+              Sign up for our newsletter
+          </p>
+          <p class="mb-6 text-gray-500 text-sm mx-auto">
+              Enter your email to stay up to date with the progress and announcements of <i>Engineering Collaboration</i>.
+            </p>
+            <form action="#">
+                <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                    <div class="relative w-full">
+                        <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900">Email address</label>
+                        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        </div>
+                        <input class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500" placeholder="Enter your email" type="email" id="email" required="">
+                    </div>
+                    <div>
+                        <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-book-robin-egg-blue border-book-robin-egg-blue sm:rounded-none sm:rounded-r-lg hover:bg-book-tiffany-blue focus:ring-4 focus:bg-book-tiffany-blue">
+                          Subscribe
+                        </button>
+                    </div>
+                </div>
+                <div class="mx-auto max-w-screen-sm text-xs text-left text-gray-500 newsletter-form-footer">
+                  We care about the protection of your data.
+                  <a href="#" class="font-medium text-primary-600 hover:underline">
+                    Read our Privacy Policy
+                  </a>.
+                </div>
+            </form>
+        </div>
+    </div>
   </section>
 
   </div>
