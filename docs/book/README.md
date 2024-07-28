@@ -11,6 +11,17 @@ If we impair these traits with obtrusive organizational or technical processes, 
 
 Within *Engineering Collaboration*, we discuss intramural strategies that have proven useful for a broad spectrum of organizations. We consider how we build autonomous, flexible, and collaborative teams and solve the apparent paradox of providing a stable and low-latency experience while continuously responding to user feedback and regulatory compliance.
 
+<!--
+
+TODO: (Daniel) embed the following here:
+
+This book is inherently coherent work as an entry point for collaboration in software engineering.
+This book by no means aims to cover details, in fact you will find our recommendation of reading and watching
+material on the resources page. But this book showcases the connections between the expert chapters.
+
+-->
+
+
 ## Structure
 
 *Engineering Collaboration* is structured into three sections, addressing engineering processes at two levels within our organization.
@@ -49,6 +60,12 @@ That being said, we find the concepts written in this book to be helpful for a b
 We avoid the term "best practices" in this book. "Best" is subjective to industries, personalities, geographic location, diversity of staff, size of organization, and numerous other factors; using the superlative is pure hubris. The strategies in this book are shared without righteous zeal.
 
 The concepts discussed in this book should be applied by implementing small changes for a limited number of teams. We reduce the cost and risk of verifying the positive effect we intend to implement in our organization by testing the changes within an isolated team.
+
+<!-- 
+TODO: (Daniel) embed here
+
+I have strong opinions on the topics backed by experience, but I tend to hold my convictions weakly.
+-->
 
 Lastly, while we do our best to keep the language as inclusive as possible, there is a non-zero chance that certain words or phrases will not be received in the way they were meant to be. Language is difficult. The written word is difficult. Please read this book with the positive intent in which it was penned.
 
