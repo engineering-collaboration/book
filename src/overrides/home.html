@@ -1,5 +1,35 @@
 {% extends "main.html" %}
 
+{% block extrahead %}
+<script type="application/ld+json">
+[
+  {
+    "@context" : "https://schema.org",
+    "@type" : "WebSite",
+    "name" : "Engineering Collaboration",
+    "url" : "https://engineering-collaboration.io/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "DataFeed",
+    "dataFeedElement": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "@id": "https://engineering-collaboration.io/",
+        "url": "https://engineering-collaboration.io/",
+        "name": "Engineering Collaboration",
+        "author": {
+          "@type": "Person",
+          "name": "Daniel Lanner"
+        }
+      }
+    ]
+  }
+]
+</script>
+{% endblock %}
+
 <!-- Render hero under tabs -->
 {% block tabs %}
   {{ super() }}
@@ -270,7 +300,7 @@
     <section class="bg-book-robin-egg-blue text-book-white">
       <div class="pt-12 sm:pt-24 pb-12 px-4 mx-auto max-w-screen-sm text-center">
         <p class="text-left mb-2 mt-0 text-lg md:text-2xl font-extrabold">
-            Support the author 🤘
+          Support the author 🤘
         </p>
         <p class="text-left mb-6 text-sm mx-auto">
           I wrote this book with the purpose of sharing the knowledge at no cost for readers across the globe.
@@ -281,16 +311,17 @@
           Why your donation matters
         </h2>
         <p class="text-left text-sm font-normal text-book-white">
-          Your contribution ensures this book remains an accessible knowledge for all.
-          Your donation allows me to dedicate more time to creating educational resources.
+          Your contribution ensures the knowledge within this book remains an accessible for all.
+          They cover the hosting fees and all further 
+          Donations are the prime indicator for me to dedicate more time to creating educational resources.
         </p>
         <p class="text-left text-sm font-normal text-book-white">
           Helps maintain the hosting and distribution of this book.
           If you found this book helpful, I encourage you to click one of the buttons below and leave a tip.
         </p>
         <p class="text-left text-sm font-normal text-book-white mb-12">
-          With your support, we can continue to break down barriers to learning and
-          empower countless individuals worldwide.
+          With your support, we can continue to break down glass ceilings and
+          empower countless teams worldwide.
         </p>
 
 

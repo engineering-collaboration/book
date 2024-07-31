@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+{% if page.meta and page.meta.title %} 
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "{{ page.meta.title }} - {{ config.site_name }}",
+      "image": [
+        "https://www.engineering-collaboration.io/assets/hero.webp",
+       ],
+      "author": {
+          "@type": "Person",
+          "name": "Daniel Lanner"
+        }
+    }
+    </script>
+{% endif %} 
+{% endblock %}
