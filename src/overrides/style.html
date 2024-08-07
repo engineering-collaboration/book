@@ -789,6 +789,16 @@
   transform: none
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite
+}
+
 .cursor-default {
   cursor: default
 }
@@ -1761,6 +1771,16 @@
   color: rgb(30 66 159 / var(--tw-text-opacity))
 }
 
+.text-book-light-red {
+  --tw-text-opacity: 1;
+  color: rgb(255 107 107 / var(--tw-text-opacity))
+}
+
+.text-book-naples-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(255 230 109 / var(--tw-text-opacity))
+}
+
 .text-book-night {
   --tw-text-opacity: 1;
   color: rgb(20 21 26 / var(--tw-text-opacity))
@@ -2055,11 +2075,6 @@
 .hover\:text-book-robin-egg-blue:hover {
   --tw-text-opacity: 1;
   color: rgb(78 205 196 / var(--tw-text-opacity))
-}
-
-.hover\:text-book-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 
 .hover\:text-gray-600:hover {
