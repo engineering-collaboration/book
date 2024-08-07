@@ -61,6 +61,11 @@ jobs:
     - name: 🤖 Replace social cards
       run: bash ci/social.bash
 
+    - name: 🤖 Update generated landing page
+      run: |
+        sed -i "s|Engineering Collaboration - Engineering Collaboration|Engineering Collaboration|g" site/index.html
+        sed -i "s|{!{ci.version}!}|${{ steps.get_version.outputs.VERSION }}|g" site/index.html
+
     - name: 🤖 Bundle site for release artifact
       run: mkdir artifacts && zip -r artifacts/site.zip site
 
