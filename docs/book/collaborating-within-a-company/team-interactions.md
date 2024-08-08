@@ -83,6 +83,16 @@ Our vertical platform teams working on the product search component and the metr
 
 Our CI/CD research team spent the last months evaluating tools and strategies for advanced testing practices. Facilitating our metrics team, our research team is presenting and validating its findings in a low-risk internal environment. As soon as the metrics team reaches self-reliance with the new practices, the CI/CD R&D team moves to facilitate the next vertical team.
 
+<!-- 
+TODO: (Daniel) Communicating via Team interactions
+The default cannot be to directly call members from other teams to request help and support
+Find good channel, e.g. support line, or create a ticket and meeting, otherwise ask other team to book time
+-->
+
+<!--
+TODO: (Daniel) Move the two paragraphs below to the chapter communication channels
+-->
+
 ## Workspace Design
 
 We have influence on the communication behavior of our teams. As with the *Inverse Conway Maneuver*, we ask ourselves who we want to communicate with whom, how frequently, and design our workspaces around this mandate. This approach works for both physical and virtual workspaces.
