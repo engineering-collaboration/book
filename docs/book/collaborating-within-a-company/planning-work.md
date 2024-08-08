@@ -1,4 +1,12 @@
-# Velocity and story points
+# Planning work
+
+The goal of a sprint is not to deliver software packages ready to be shipped. Our software is shippable multiple times a day. We discuss this further in Part II. For the majority of software, a feedback cycle measured in weeks is unacceptable. Notable exceptions are Due to security in defense, compliance in aviation, privacy in healthcare, and maximum fiscal extraction of governmental projects.
+
+Sprints protect our team's time. We contain distraction and agree on priorities.
+
+
+
+## Velocity and story points
 
 Velocity uses arbitrary units (commonly "story points") as a tool to measure workload achievable over a given amount of time.
 
@@ -8,8 +16,11 @@ Story points only work team internally. Story points cannot be directly used as 
 
 Plan for unexpected work
 
+## Estimating storypoints
 
-## Who decides what
+## Backlog
+
+## Who decides what to work on
 
 Decision timelines and implications are driven from the top of the organizational hierarchy and turn more granular the further down the hierarchy we travel. C-level executives in combination with the organization's board tackle problems of the companies (and products) position within the market in the next 1-5 years, when and how to fund the development, how to scale and where to open new locations.
 
@@ -50,6 +61,29 @@ Continous integration strategies of milestones and sprints
 Engineer - Details, libraries, implementation
 Implementation details, algorithms, open source libraries vs building
 
+## Keeping up to date - during sprints
+
+Tasks / Subtasks
+
+## Presenting work - end of sprints
+
+presenting work
+evangelizing work just as important as working on features
+sharing progress
+how long are sprints
+presentations vs screenrecordings
+
+startups need short sprints (1 week) need to pivot, address feedback
+enterprises benefit from 3 week sprints of uninterrupted changes
+don't start sprints on mondays or fridays
+thursday or tuesday are good days.
+
 ## Measuring productivity
 
 We want our employees to be focused on delivering quality work for our product. Not on focusing to optimize their productivity for internal metrics.
+
+## careful
+
+technical debt
+refactoring
+irrelevant bugfixes

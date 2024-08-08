@@ -91,6 +91,7 @@ nav:
       - Communication Channels: './book/collaborating-within-a-company/communication-channels.md'
       - Innersourcing: './book/collaborating-within-a-company/innersourcing.md'
       - Team Education and Training: './book/collaborating-within-a-company/team-education-and-training.md'
+      - Planning Work: './book/collaborating-within-a-company/planning-work.md'
 
     - Collaborating within a Codebase:
       - './book/collaborating-within-a-codebase/README.md'
