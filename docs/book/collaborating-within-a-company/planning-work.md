@@ -1,10 +1,22 @@
 # Planning work
 
-The goal of a sprint is not to deliver software packages ready to be shipped. Our software is shippable multiple times a day. We discuss this further in Part II. For the majority of software, a feedback cycle measured in weeks is unacceptable. Notable exceptions are Due to security in defense, compliance in aviation, privacy in healthcare, and maximum fiscal extraction of governmental projects.
+Decision timelines and implications are driven from the top of the organizational hierarchy and turn more granular the further down the hierarchy we travel. 
 
-Sprints protect our team's time. We contain distraction and agree on priorities.
+The board and our C-level executives weather the storms of macro-economic realities and long-term visions. C-level executives in combination with the organization's board tackle problems of the companies (and products) position within the market in the next 1-5 years, when and how to fund the development, how to scale and where to open new locations.
 
+Depending on our department VP's and product break these down into yearly goals, which get organised as quaterlies.
 
+Thus we created a wishlist. A document detailing the illusion of having any control in the world.
+
+A lot of smart people have written their opinions on the above, which is beyond the scope of this chapter.
+
+We are considering the execution. Once a quaterly roadmap exists and our backlogs have been filled. We are talking about sprints.
+
+## Sprints
+
+Popular manifestors disguised as Scrum and Agile practices lead with the prime existance of sprints to deliver shippable packages every sprint for feedback cycles. This believe has survived the last decades but we want to declare it dead. The goal of a sprint is not to deliver software packages ready to be shipped. Our software is shippable multiple times a day. We discuss this further in Part II. For the majority of software, a feedback cycle measured in weeks is unacceptable. Notable exceptions are Due to security in defense, compliance in aviation, privacy in healthcare, and maximum fiscal extraction of governmental projects.
+
+Sprints protect our team's time. We contain distraction and agree on priorities. A sprint cycle has no relationship to the deliverable of our software. It is a temporal cycle to protect our engineers, communicate within teams, and evangelize changes.
 
 ## Velocity and story points
 
@@ -16,13 +28,11 @@ Story points only work team internally. Story points cannot be directly used as 
 
 Plan for unexpected work
 
-## Estimating storypoints
+Estimating storypoints
 
 ## Backlog
 
 ## Who decides what to work on
-
-Decision timelines and implications are driven from the top of the organizational hierarchy and turn more granular the further down the hierarchy we travel. C-level executives in combination with the organization's board tackle problems of the companies (and products) position within the market in the next 1-5 years, when and how to fund the development, how to scale and where to open new locations.
 
 With the broad vision documented, "VP"'s, "Head of"'s, and "Director"'s plan a road map for the next 6 - 24 months to set our organization up for success.
 
