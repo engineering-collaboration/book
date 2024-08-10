@@ -6,24 +6,12 @@ The fallacy of planning long-term strategies involves guessing customer needs, e
 
 We separate external forces into those we can control and those we cannot, those we can influence and those we have to react to. Our short term, mid term, and long term tasks need to cover our customers and organization's needs and stay flexible enough to pivot in case we need to react to changing circumstances.
 
-Talented people have conquered the witchcraft and augury of these decision timelines and implications. Beyond single statistical outliers. Requires emotional stability in times of uncertainty. Constantly pivoting and reacting means we do not get anywhere. Knowing when to steady a course and when to charter a new course largely industry insights, experience, and luck. None of which are part of this book.
+Talented people have conquered the witchcraft and augury of these decision timelines and implications. Beyond single statistical outliers. Requires emotional stability in times of uncertainty. Constantly pivoting and reacting means we do not get anywhere. Knowing when to steady a course and when to charter a new course largely industry insights, experience, and luck. None of which are part of this chapter.
 
-<!-- The necessity of planning short-term -->
-
-The further down the organization's hierarchy we wander, the more granular and actionable our task planning becomes. This chapter covers planning perspectives from mid to long term, after a product roadmap has been established.
-
-
-An example infrastructure, deployment, authentication, content delivery.
-
-Interdependencies of teams and platform deliverables.
-Protocols, API's and 
-
-Intrateam
-Languages, frameworks, and libraries
-
-Implementation strategies
+The further down the organization's hierarchy we wander, the more granular and actionable our task planning becomes. An example, if our product roadmap presents cloud storage capabilities in Q3 of this year, our CTO and chief architects map our software requirements to teams and establish communication channels. Senior engineers design architecture within their respective domain of infrastructure, deployment, security, and content delivery and lead engineers share their wishes and needs regarding protocols and API's and deliverables across teams. Within the team we come to a consesus of languages, frameworks, and libraries. To the engineer writing and commenting the lines of code.
 
 <!-- From product roadmap to tickets -->
+This chapter covers planning perspectives from mid to long term, after a product roadmap has been established.
 
 Together with team leads the planned features are mapped to achievable milestones with the available resources for the next two quarters. In cooperation with team leads the milestones are mapped to available resources.
 
@@ -36,6 +24,12 @@ Who are tickets for. Tickets are not engineering oriented. Any information relat
 ## Sprints
 
 <!-- What is a sprint -->
+
+To continously improve our work procedure we 
+
+A sprint is a continous cycle of integrating work. Planning, implementation, retrospective.
+When a sprint is booked, we do not pivot mid sprint. Dedicated time to solve the problems at hand.
+We can interrupt sprints for 911 calls and hotfixes, but these need to be urgent and immediate, otherwise we do not get any work done.
 
 <!-- What is a sprint NOT -->
 
@@ -63,7 +57,12 @@ Estimating storypoints
 ## Keeping up to date - during sprints
 
 Tasks / Subtasks
-Dailies
+Dailies are a waste of time
+Identify blockers
+keep it to 60 seconds per person, if longer have a separate meeting
+If needed daily keep it written
+Help identify potential distractions, e.g. hat to help X, Y reached out for support, I am working on Z with U
+Making sure people do not get off task too much or create major sub tasks; we can add these to next sprint
 
 ## Presenting work - end of sprints
 
