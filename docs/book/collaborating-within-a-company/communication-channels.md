@@ -23,6 +23,12 @@ Communication covers all exchanges of information necessary to complete our task
 
 This broad collection of communication tools allows us to enable channels of various types of information exchange, from low-noise high-concentration work to collaborative work and cross-disciplinary brainstorming.
 
+<!-- 
+TODO: (Daniel) Communicating via Team interactions
+The default cannot be to directly call members from other teams to request help and support
+Find good channel, e.g. support line, or create a ticket and meeting, otherwise ask other team to book time
+-->
+
 ## Communication Medium Aspects
 
 Communication channels present individual strengths and weaknesses, which are typically complementary. We distinguish between the following aspects of the communication media to highlight the appropriate tool selection for our communication purposes.

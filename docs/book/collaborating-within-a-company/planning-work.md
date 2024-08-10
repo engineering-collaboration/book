@@ -1,25 +1,55 @@
 # Planning work
 
-Decision timelines and implications are driven from the top of the organizational hierarchy and turn more granular the further down the hierarchy we travel. 
+<!-- The fallacy of planning long-term -->
 
-The board and our C-level executives weather the storms of macro-economic realities and long-term visions. C-level executives in combination with the organization's board tackle problems of the companies (and products) position within the market in the next 1-5 years, when and how to fund the development, how to scale and where to open new locations.
+The fallacy of planning long-term strategies involves guessing customer needs, evaluating customer feedback, analyzing market positioning, considering funding strategies, placating investor needs, assessing talent availability, estimating our hiring effectiveness, scaling marketing and sales demands, and predicting macro-economic realities while praying for low cost of capital.
 
-Depending on our department VP's and product break these down into yearly goals, which get organised as quaterlies.
+We separate external forces into those we can control and those we cannot, those we can influence and those we have to react to. Our short term, mid term, and long term tasks need to cover our customers and organization's needs and stay flexible enough to pivot in case we need to react to changing circumstances.
 
-Thus we created a wishlist. A document detailing the illusion of having any control in the world.
+Talented people have conquered the witchcraft and augury of these decision timelines and implications. Beyond single statistical outliers. Requires emotional stability in times of uncertainty. Constantly pivoting and reacting means we do not get anywhere. Knowing when to steady a course and when to charter a new course largely industry insights, experience, and luck. None of which are part of this book.
 
-A lot of smart people have written their opinions on the above, which is beyond the scope of this chapter.
+<!-- The necessity of planning short-term -->
 
-We are considering the execution. Once a quaterly roadmap exists and our backlogs have been filled. We are talking about sprints.
+The further down the organization's hierarchy we wander, the more granular and actionable our task planning becomes. This chapter covers planning perspectives from mid to long term, after a product roadmap has been established.
+
+
+An example infrastructure, deployment, authentication, content delivery.
+
+Interdependencies of teams and platform deliverables.
+Protocols, API's and 
+
+Intrateam
+Languages, frameworks, and libraries
+
+Implementation strategies
+
+<!-- From product roadmap to tickets -->
+
+Together with team leads the planned features are mapped to achievable milestones with the available resources for the next two quarters. In cooperation with team leads the milestones are mapped to available resources.
+
+Team leads plan sprints and create backlog.
+
+Have senior engineers write tickets.
+
+Who are tickets for. Tickets are not engineering oriented. Any information relating to code, stored away from code is useless. Authorization, platform migration, searchability. We cover this in detail in Part II.
 
 ## Sprints
 
-Popular manifestors disguised as Scrum and Agile practices lead with the prime existance of sprints to deliver shippable packages every sprint for feedback cycles. This believe has survived the last decades but we want to declare it dead. The goal of a sprint is not to deliver software packages ready to be shipped. Our software is shippable multiple times a day. We discuss this further in Part II. For the majority of software, a feedback cycle measured in weeks is unacceptable. Notable exceptions are Due to security in defense, compliance in aviation, privacy in healthcare, and maximum fiscal extraction of governmental projects.
+<!-- What is a sprint -->
+
+<!-- What is a sprint NOT -->
+
+Popular manifestors disguised as Scrum and Agile practices lead with the prime existance of sprints to deliver shippable packages every sprint for feedback cycles. This believe has survived the last decades but we want to declare it dead.
+
+The goal of a sprint is not to deliver software packages ready to be shipped. Our software is shippable multiple times a day. We discuss this further in Part II. For the majority of software, a feedback cycle measured in weeks is unacceptable. Notable exceptions are Due to security in defense, compliance in aviation, privacy in healthcare, and maximum fiscal extraction of governmental projects.
 
 Sprints protect our team's time. We contain distraction and agree on priorities. A sprint cycle has no relationship to the deliverable of our software. It is a temporal cycle to protect our engineers, communicate within teams, and evangelize changes.
 
 ## Velocity and story points
 
+We are aware that the use of terms *backlog*, *sprints*, and *burncharts* cause involuntary reactions of ill-well. Please, take a moment to breathe and rest assured we do not convert our readers to the church of Agile. Zealous practices find little foothold within *Engineering Collaboration*.
+
+Another term tainting the back of our tongue with bile is *Story points*.
 Velocity uses arbitrary units (commonly "story points") as a tool to measure workload achievable over a given amount of time.
 
 After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realsitic plans and expectations.
@@ -30,50 +60,10 @@ Plan for unexpected work
 
 Estimating storypoints
 
-## Backlog
-
-## Who decides what to work on
-
-With the broad vision documented, "VP"'s, "Head of"'s, and "Director"'s plan a road map for the next 6 - 24 months to set our organization up for success.
-
-Together with team leads the planned features are mapped to achievable milestones with the available resources for the next two quarters.
-
-Team leads plan sprints and 
-
-C-level executives and the organization's board documented the organizations vision and market position. VP's design the necessary product and internal milestones to steer the organization in the requested direction. In cooperation with team leads the milestones are mapped to available resources.
-
-With a dedicated road map in hand it is 
-
-1 year to 5 years
-
-Organization vision CEO/Board
-
-funding, location, remote work, scaling
-
-Technology vision CTO/Director of Engineering
-
-Product vision and compliance CPO Head of product
-
-Planning work
-
-6 months - 2 years
-
-Product - Feature
-Values, roadmap, strategie for market
-
-1 month - 6 months
-
-Management - Split and milestones
-Continous integration strategies of milestones and sprints
-
-2 days to 4 weeks
-
-Engineer - Details, libraries, implementation
-Implementation details, algorithms, open source libraries vs building
-
 ## Keeping up to date - during sprints
 
 Tasks / Subtasks
+Dailies
 
 ## Presenting work - end of sprints
 
@@ -87,6 +77,9 @@ startups need short sprints (1 week) need to pivot, address feedback
 enterprises benefit from 3 week sprints of uninterrupted changes
 don't start sprints on mondays or fridays
 thursday or tuesday are good days.
+
+Engineer - Details, libraries, implementation
+Implementation details, algorithms, open source libraries vs building
 
 ## Measuring productivity
 
