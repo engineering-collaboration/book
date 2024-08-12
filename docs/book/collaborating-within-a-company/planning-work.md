@@ -8,24 +8,21 @@ Talented people have unravelled the witchcraft and augury of these decision time
 
 Our short term, mid term, and long term tasks need to cover our customers and organization's needs and stay flexible enough to pivot in case we need to react to changing circumstances. Constantly pivoting and reacting means we do not get anywhere. Knowing when to steady a course and when to charter a new course largely industry insights, experience, and luck. None of which are part of this chapter.
 
-The further down the organization's hierarchy we wander, the more granular and actionable our task planning becomes. An example, if our product roadmap presents cloud storage capabilities in Q3 of this year, our CTO and chief architects map our software requirements to teams and establish communication channels. Senior engineers design architecture within their respective domain of infrastructure, deployment, security, and content delivery and lead engineers share their wishes and needs regarding protocols and API's and deliverables across teams. Within the team we come to a consesus of languages, frameworks, and libraries. To the engineer writing and commenting the lines of code.
+This chapter covers planning work as iterative implementation cycles, commonly referred to as sprints.
 
-<!-- From product roadmap to tickets -->
-This chapter covers planning perspectives from mid to long term, after a product roadmap has been established.
-
-Together with team leads the planned features are mapped to achievable milestones with the available resources for the next two quarters. In cooperation with team leads the milestones are mapped to available resources.
-
-Team leads plan sprints and create backlog.
-
-Have senior engineers write tickets.
-
-Who are tickets for. Tickets are not engineering oriented. Any information relating to code, stored away from code is useless. Authorization, platform migration, searchability. We cover this in detail in Part II.
+<!-- TODO: (Daniel) Planning quaterly goals
+  Points or star method
+  map points to product feature
+  keep mapping anonymous to avoid horizotnally distributing points
+  plan features according to priorities of customers
+ -->
 
 ## Sprints
 
 <!-- What is a sprint -->
 
 To continously improve our work procedure we 
+
 
 A sprint is a continous cycle of integrating work. Planning, implementation, retrospective.
 When a sprint is booked, we do not pivot mid sprint. Dedicated time to solve the problems at hand.
@@ -39,7 +36,13 @@ The goal of a sprint is not to deliver software packages ready to be shipped. Ou
 
 Sprints protect our team's time. We contain distraction and agree on priorities. A sprint cycle has no relationship to the deliverable of our software. It is a temporal cycle to protect our engineers, communicate within teams, and evangelize changes.
 
-## Velocity and story points
+## Velocity
+
+Plan for unexpected work
+
+Estimating storypoints
+
+Before every sprint, team leads map tasks to be completed with the available resources for the next two quarters. Team leads plan sprints and create backlog. 
 
 We are aware that the use of terms *backlog*, *sprints*, and *burncharts* cause involuntary reactions of ill-well. Please, take a moment to breathe and rest assured we do not convert our readers to the church of Agile. Zealous practices find little foothold within *Engineering Collaboration*.
 
@@ -50,10 +53,6 @@ After a certain amount of sprints we can realistically deduce how many story poi
 
 Story points only work team internally. Story points cannot be directly used as a measurement for productivity across teams. The mix of tools, communication channels, personalities, infrastructure deployments, office layouts, etc are likely to be unique to our team. Comparing story points across teams is as useful information as comparing the shoe sizes across teams.
 
-Plan for unexpected work
-
-Estimating storypoints
-
 ## Keeping up to date - during sprints
 
 Tasks / Subtasks
@@ -63,6 +62,8 @@ keep it to 60 seconds per person, if longer have a separate meeting
 If needed daily keep it written
 Help identify potential distractions, e.g. hat to help X, Y reached out for support, I am working on Z with U
 Making sure people do not get off task too much or create major sub tasks; we can add these to next sprint
+
+Who are tickets for. Tickets are not engineering oriented. Any information relating to code, stored away from code is useless. Authorization, platform migration, searchability. We cover this in detail in Part II.
 
 ## Presenting work - end of sprints
 
@@ -84,7 +85,7 @@ Implementation details, algorithms, open source libraries vs building
 
 We want our employees to be focused on delivering quality work for our product. Not on focusing to optimize their productivity for internal metrics.
 
-## careful
+## careful on creating new tickets for
 
 technical debt
 refactoring
