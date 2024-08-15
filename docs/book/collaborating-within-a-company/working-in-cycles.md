@@ -31,26 +31,27 @@ The goal of a sprint is not to deliver software packages ready to be shipped. Ou
 
 Sprints begin with the planning phase in which we estimate and designate tasks with our team members. In our industry, we refer to these tasks as *tickets*. Tickets consist of bug reports, feature requests, and our feature roadmap. Larger organizations with a lot of inter-team communication the team lead creates the tickets. In smaller organizations the team members themselves write these tickets.
 
+Before every sprint, team leads map tasks to be completed with the available resources for the next two quarters. Team leads plan sprints and create backlog. 
+
 The ticket assignment happens during the sprint kickoff meeting. All team members are present for the duration of the meeting. We sequentially go through our team and collectively estimate the effort of the ticket, agree on the priority and the engineer or engineers working on it.
 
 Not uncommonly, people might disagree on the tickets and their priorities. Ultimately, it is up to whoever makes the decision. If it is the team lead, they have the most information. If it is the group, either the domain expertise wins, or the most votes, or the product person. We define this in our guidelines.
 
+### Estimating work
 
+Humans are remarkably bad at estimating work. That and evaluating statistical impact. That particular skill apparently never improved our survival rate as a species. Besides not being able to predict the actual time it takes to execute work, we severely underestimate other noise and distractions in our lives that hinders our progress.
 
-Plan for unexpected work
+In order to achieve a somewhat usable (yet still pretty inaccurate) estimate, we can employ two tools that have gained popularity over the years. The first one is slightly tainted with ill-repute and causes involuntary reactions of ill-well. Another term tainting the back of our tongue with bile is *Story points*.
 
-Estimating storypoints
+Please, take a moment to breathe and rest assured we do not convert our readers to the church of Agile. Zealous practices find little foothold within *Engineering Collaboration*. Story points have been banished to the managerial vocabulary, joining horrendous terms, such as *burn charts*.
 
-Before every sprint, team leads map tasks to be completed with the available resources for the next two quarters. Team leads plan sprints and create backlog. 
-
-We are aware that the use of terms *backlog*, *sprints*, and *burncharts* cause involuntary reactions of ill-well. Please, take a moment to breathe and rest assured we do not convert our readers to the church of Agile. Zealous practices find little foothold within *Engineering Collaboration*.
-
-Another term tainting the back of our tongue with bile is *Story points*.
-Velocity uses arbitrary units (commonly "story points") as a tool to measure workload achievable over a given amount of time.
-
-After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realsitic plans and expectations.
+Story points are an arbitrary unit to measure development velocity. While every developer has an internal mapping of a story point equals roughly half a day to a day, we have already established, that we are horrible at mapping work load to work time. The additional layer of abstraction between unit of time and unit of velocity allows us to discretely measure velocity across sprints. After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realsitic plans and expectations.
 
 Story points only work team internally. Story points cannot be directly used as a measurement for productivity across teams. The mix of tools, communication channels, personalities, infrastructure deployments, office layouts, etc are likely to be unique to our team. Comparing story points across teams is as useful information as comparing the shoe sizes across teams.
+
+The second tool at our disposal is group estimates. "Find and insert study of groups averages accurately being able to estimate M7Ms in a jar and the weight of a cow". When assigning story points, all developers add their estimate to a poll and we select the average or median, whichever is more appropriate.
+
+Finally, as a team lead, we plan for unexpected work. People get distracted, called into additinoal meetings, receive "quick" support requests, have family emergencies, get sick, hurt, and hungover.
 
 ## Execution
 
