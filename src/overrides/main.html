@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
+{{ super() }}
+
+<meta property="og:site_name" content="Engineering Collaboration" />
+<meta property="og:type" content="website" />
 {% if page.meta and page.meta.title %} 
 <script type="application/ld+json">
     {
