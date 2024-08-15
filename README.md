@@ -18,7 +18,8 @@ The book *Engineering Collaboration* presents a vertical slice of strategies tha
   - [x] Design landing page
   - [x] Design social cards
   - [ ] Include analytics
-- [ ] Rewrite published chapters
+- [ ] Rewrite *Part I* (in progress)
+- [ ] Rewrite *Part II*
 
 ## Running locally
 
