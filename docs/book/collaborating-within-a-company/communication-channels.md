@@ -46,6 +46,15 @@ Communication channels present individual strengths and weaknesses, which are ty
 - **Context**  
   Is the medium referencing work? Can we attach information? Do we know who is sharing information and in what their position might be regarding the shared information?
 
+<!-- TODO: (Daniel) Meetings
+Share agenda
+Make sure people are prepared
+only invite who is necessary
+Let people go when no longer needed
+Write notes
+Share results
+ -->
+
 Meetings, both virtual and in-person, are immediate. Information is shared, received, processed, and responded to within seconds. However, meetings do require a high amount of investment due to preparation time and full task switching of all attendees. Meeting minutes, transcripts, and recordings increase longevity and searchability.
 
 Emails, instant messages, and channel posts have decent immediacy and the asynchronous advantage that people are not forced to abandon the tasks they are working on. Written messages suffer from the lack of body language and tone and require slightly more effort to phrase accordingly. Additional context can be established through URLs and attachments. Naturally, forums and email servers are archived and available for decades.
