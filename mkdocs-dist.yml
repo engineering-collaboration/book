@@ -46,6 +46,9 @@ theme:
     - navigation.instant.progress
     - navigation.indexes
     - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - search.share
 
 extra:
   social:
@@ -60,6 +63,7 @@ extra_css:
   - assets/extra.css
 
 plugins:
+  - search
   - social:
       cards_layout_options:
         background_color: "#14151A"
