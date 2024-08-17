@@ -57,26 +57,61 @@ Finally, as a team lead, we plan for unexpected work. People get distracted, cal
 
 The sprint planning completed, we start executing our tasks. Head down and get some work done. Individual contributors work on their task and in doing so uncover and solve additional problems. Assigned tasks get broken down into smaller subtasks and are implemented regularly. Part II covers the entire lifecycle of a code change. Tech leads and managers remove any blockers that come up and ensure their team members have all the information, contacts, and context in order to fulfill their tasks.
 
-Communicating progress
+### Communicating progress
 
-Kanban boards have gained popularity over the last decade. They visualize tasks as cards that can be placed within one of several columns. The columns represent the state the task is currently in. Typical states are "TODO", "In progress", "In review", "Completed", but any team can create an arbitrary set of columns.
+Not supervision, but rather everybody is on the same page. Different context, different amount of information. Avoiding duplicate work or learnings.
+Checkign for blockers. Everybody can reach out on their own at any time anyway, we're all adults.
+Overcommunicate
+actively communicate
+ask for clarification
+
+Who are tickets for. Tickets are not engineering oriented. Any information relating to code, stored away from code is useless. Authorization, platform migration, searchability. We cover this in detail in Part II.
+
+#### Kanban
+
+Kanban boards have gained popularity over the last decade and all modern task management platforms offer a Kanban view. They visualize tasks as cards that can be placed within one of several columns. The columns represent the state the task is currently in. Typical states are "TODO", "In progress", "In review", "Completed", but any team can create an arbitrary set of columns.
 
 ![Representation of a kanban board, with four columns showing stages of a workflow, with various cards scattered across the board.](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Abstract_Kanban_Board.svg/2880px-Abstract_Kanban_Board.svg.png)
 
-Kanban
-Journal
-Dailies
+The visual simplicity of Kanban boards communicates the progress of a team member's workload at a glance. They are easy to update and maintain, as we just drag and drop cards between columns without the need of devoting cognitive load to communication. Kanban boards act as early warnings for problems in development processes if too many cards are "stuck" in a certain column. Too many cards in the "In progress" section indicate a wide spread of responsibilities that trigger expensive context switching. Bottle necks in the "In Review" column inform us to review our review process as it may no longer not match our teams current needs. 
+
+#### Journals
+
+A daily account of what we have been working on and struggling with. We can adapt the shape of our Jounrals to the needs of our team. We articulate our progress in emails, messaging threads, group spaces on Google Docs, Confluence, or Notion, or dedicated spaces per person.
+
+Most people take notes privately and may forget to copy over their progress into a journaling system. 
 
 
-Tasks / Subtasks
-Dailies are a waste of time
-Identify blockers
-keep it to 60 seconds per person, if longer have a separate meeting
-If needed daily keep it written
-Help identify potential distractions, e.g. hat to help X, Y reached out for support, I am working on Z with U
-Making sure people do not get off task too much or create major sub tasks; we can add these to next sprint
+#### Dailies
 
-Who are tickets for. Tickets are not engineering oriented. Any information relating to code, stored away from code is useless. Authorization, platform migration, searchability. We cover this in detail in Part II.
+The most common synchronous way of sharing progress with our lead and our team members is via daily stand-up meetings. Once a day the entire team gathers to share their progress by answering three question:
+
+- What did I work on yesterday?
+- What am I working on today?
+- Do I have any blockers?
+
+The titular practice of standing during these meetings indicate the brevity of these get-togethers. Don't even bother sitting down. In practice we aim for a maximum of 60 seconds per person. A team consisting of ten people should last no longer than ten minutes. Naturally, when sharing difficulties we are experiencing with a problem, we turn to our team for help. However, we do not discuss the solution of a problem in the stand-up meeting, but ask for a quick dedicated call after the stand-up.
+
+If the conclusion does not happen naturally, e.g. "I would like to hear how you solved this last time. Let's have a call after the meeting", it is the responsibility of the person leading the meeting to request that we move on.
+
+Prepare for dailies
+
+The shorthand "dailies" has found common use, even if not done on a daily basis. Some teams find more success by avoiding costly context switches on a daily basis by dedicating three days a week, Monday, Wednesday, Friday to synchronous meetings and defer to written status updates on Tuesday and Thursday.
+
+As a team we continously communicate with each other regardless what our calendar dictates. It is responsibility of our leaderhsip to ensure relevant communication channels.
+
+Engineers inform each other, solve together
+
+#### As a lead
+
+As team leads we use these meetings to keep an eye out for the following things:
+
+We ensure none of our team members has any blocking issues and we try to prevent blovcking issues if we anticipate them. We do not have to be reactive.
+We verify the progress achieved with the remaining sprint duration and keep track what we can and cannot realistically achieve. We do not want our team to be the source of suprises when reporting our status to our department head.
+We keep an eye out for distractions and additional workload. While we cannot and should not control the complete flow of information and support, we cannot have direct support requests from other teams go directly to our engineers and eat up half their development time.
+Our sprint plan is a best effort and likely changes across the sprint. Together with our engineers we reshape our sprint or backlog if a certain task becomes more effort than anticipated. We can offer additional context on what exactly is needed for an MVP and what features we can add to the backlog.
+A lot of engineers take pride in the quality of their work, which is not necessarily in the best interest of the product. We sell a product, not lines of code.
+Functioning code with tech debt over unfinished code beautifully refactored.
 
 ## Retrospective
 
@@ -97,6 +132,10 @@ Implementation details, algorithms, open source libraries vs building
 ## Measuring productivity
 
 We want our employees to be focused on delivering quality work for our product. Not on focusing to optimize their productivity for internal metrics.
+
+progress over activity
+
+owning an issue, rather than hitting a deadline
 
 ## careful on creating new tickets for
 
