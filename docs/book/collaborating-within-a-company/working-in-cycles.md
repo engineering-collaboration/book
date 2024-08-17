@@ -55,6 +55,19 @@ Finally, as a team lead, we plan for unexpected work. People get distracted, cal
 
 ## Execution
 
+The sprint planning completed, we start executing our tasks. Head down and get some work done. Individual contributors work on their task and in doing so uncover and solve additional problems. Assigned tasks get broken down into smaller subtasks and are implemented regularly. Part II covers the entire lifecycle of a code change. Tech leads and managers remove any blockers that come up and ensure their team members have all the information, contacts, and context in order to fulfill their tasks.
+
+Communicating progress
+
+Kanban boards have gained popularity over the last decade. They visualize tasks as cards that can be placed within one of several columns. The columns represent the state the task is currently in. Typical states are "TODO", "In progress", "In review", "Completed", but any team can create an arbitrary set of columns.
+
+![Representation of a kanban board, with four columns showing stages of a workflow, with various cards scattered across the board.](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Abstract_Kanban_Board.svg/2880px-Abstract_Kanban_Board.svg.png)
+
+Kanban
+Journal
+Dailies
+
+
 Tasks / Subtasks
 Dailies are a waste of time
 Identify blockers
