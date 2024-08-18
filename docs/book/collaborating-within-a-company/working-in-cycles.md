@@ -37,6 +37,8 @@ The ticket assignment happens during the sprint kickoff meeting. All team member
 
 Not uncommonly, people might disagree on the tickets and their priorities. Ultimately, it is up to whoever makes the decision. If it is the team lead, they have the most information. If it is the group, either the domain expertise wins, or the most votes, or the product person. We define this in our guidelines.
 
+Who are tickets for.
+
 ### Estimating work
 
 Humans are remarkably bad at estimating work. That and evaluating statistical impact. That particular skill apparently never improved our survival rate as a species. Besides not being able to predict the actual time it takes to execute work, we severely underestimate other noise and distractions in our lives that hinders our progress.
@@ -65,7 +67,8 @@ Overcommunicate
 actively communicate
 ask for clarification
 
-Who are tickets for. Tickets are not engineering oriented. Any information relating to code, stored away from code is useless. Authorization, platform migration, searchability. We cover this in detail in Part II.
+Who are tickets for. Tickets are not engineering oriented. Any information relating to code, stored away from code is useless. Authorization, platform migration, searchability. We cover this in detail in Part II. Engineer - Details, libraries, implementation
+Implementation details, algorithms, open source libraries vs building
 
 #### Kanban
 
@@ -77,12 +80,16 @@ The visual simplicity of Kanban boards communicates the progress of a team membe
 
 #### Journals
 
+<!-- TODO: Move below to written daily status updates -->
+
 A daily account of what we have been working on and struggling with. We can adapt the shape of our Jounrals to the needs of our team. We articulate our progress in emails, messaging threads, group spaces on Google Docs, Confluence, or Notion, or dedicated spaces per person.
 
-Most people take notes privately and may forget to copy over their progress into a journaling system. 
+Most people take notes privately and may forget to copy over their progress into a journaling system.
+
+Use a messaging app. People do not open emails or go to specific Confluence pages.
 
 
-#### Dailies
+#### Daily status updates
 
 The most common synchronous way of sharing progress with our lead and our team members is via daily stand-up meetings. Once a day the entire team gathers to share their progress by answering three question:
 
@@ -115,19 +122,21 @@ Functioning code with tech debt over unfinished code beautifully refactored.
 
 ## Retrospective
 
-presenting work
-evangelizing work just as important as working on features
-sharing progress
-how long are sprints
-presentations vs screenrecordings
+At the end of a sprint cycle we dedicate time to review our successes and potential improvements as a team. What went well, what could have gone better, and how can we learn from the experience? We put these findings to (digital) paper and revisit our findings to identify positive changes over time or a lack thereof. Over or under estimating work, mistakes in approaching a aprticular problem, Organizational problems may come in form of bottle necks in communication, integration, or release processes.
 
+Positive experiences can be Getting inspired of other teams or other peoples approach to engineering, trying to replicate or expand these findings across our team and codebase.
+
+Besides improving future work, we use the end of sprint cycles to evangelize our work within our team and beyond. Every team member creates a demo, write-up, screen recording of their work and presents it in five minutes to the rest of the team and ainvited stakeholders. These meetings consists of our team and all additional stake holders of a project. We collect the shared materials and record the meeting and share it within the organization.
+
+Evangelizing the work done within a team demonstrates multiple upsides. It is an exciting way to communicate progress and value throughout our organization. It encourages cross team interest, feedback, and collaboration for shared problems and usecases. It reduces duplicate work. It encourages innersourcing practices where we first look for existing solutions within our company, before building something new. A internal platform with properly evangelized work can cut down two sprint cycles of a different team. That's a lot of time and effort we can use to better our product.
+
+## Cycle duration
+
+how long are sprints
 startups need short sprints (1 week) need to pivot, address feedback
 enterprises benefit from 3 week sprints of uninterrupted changes
 don't start sprints on mondays or fridays
 thursday or tuesday are good days.
-
-Engineer - Details, libraries, implementation
-Implementation details, algorithms, open source libraries vs building
 
 ## Measuring productivity
 
@@ -136,8 +145,6 @@ We want our employees to be focused on delivering quality work for our product. 
 progress over activity
 
 owning an issue, rather than hitting a deadline
-
-## careful on creating new tickets for
 
 technical debt
 refactoring
