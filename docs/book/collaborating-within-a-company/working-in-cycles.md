@@ -101,6 +101,8 @@ The titular practice of standing during these meetings indicate the brevity of t
 
 If the conclusion does not happen naturally, e.g. "I would like to hear how you solved this last time. Let's have a call after the meeting", it is the responsibility of the person leading the meeting to request that we move on.
 
+Have dailies in the mornings, if plannable, if distributed, we don't really have a choice.
+
 Prepare for dailies
 
 The shorthand "dailies" has found common use, even if not done on a daily basis. Some teams find more success by avoiding costly context switches on a daily basis by dedicating three days a week, Monday, Wednesday, Friday to synchronous meetings and defer to written status updates on Tuesday and Thursday.
@@ -132,13 +134,19 @@ Evangelizing the work done within a team demonstrates multiple upsides. It is an
 
 ## Cycle duration
 
-how long are sprints
-startups need short sprints (1 week) need to pivot, address feedback
-enterprises benefit from 3 week sprints of uninterrupted changes
-don't start sprints on mondays or fridays
-thursday or tuesday are good days.
+Our sprint's duration depends on the needs of our organization and our product and ranges from one week to three weeks. Shorter than a week no relevant work gets done, longer than three weeks and we diminish our ability to react.
+
+Sprint length typically grows with our organization's size and maturity. Start-ups need to address feedback from customers and investors quickly, so priorities can shift on a weekly basis. Again, we do not just drop our current tasks because a user reported a bug with low severity. Scale-ups introduce additional work force and overhead so weekly sprint planning and retrospection hinders work rather than fosters growth and may move to sprint cycles of two weeks. Enterprise scale organizations have established with predictable workloads. The main challenge here lies within innersourcing and communication. But we can work on our product without surprises or pivots. We benefit from three weeks of uninterrupted changes.
+
+Sprint cycles do not have to begin on a Monday. Monday and Friday are excellent buffer days to polish work, demos, prepare screen recordings, apply code review feedback, write additional documentation.
 
 ## Measuring productivity
+
+Performance evaluation is an emotional topic which relies heavily on empathy. Over the years various companies implemented varioations of metric based performance evaluations to varying degrees of failure. Our continous ambition of trying to measure individual productivity and performance unveilied a plethora of metrics that do NOT work. These include lines of code written, lines of code deleted, story points completed in a sprint, story points pushed over to next sprint, number of bug reports closed, number of bug reports opened, and the paradoxical list goes on and on.
+
+The inherent problem is that when things go well, there is very little to measure. And any metrics we do account for are diffictult to accopunt to any particular individual. Increased customer churn could well be attributed to a lack of feature, it can also be a problem in pricing, promises by the sales team, marketing in the wrong channels, or our CEO's social media use.
+
+
 
 We want our employees to be focused on delivering quality work for our product. Not on focusing to optimize their productivity for internal metrics.
 
