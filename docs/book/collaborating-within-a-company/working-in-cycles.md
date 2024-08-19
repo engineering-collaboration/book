@@ -144,16 +144,8 @@ Sprint cycles do not have to begin on a Monday. Monday and Friday are excellent 
 
 Performance evaluation is an emotional topic which relies heavily on empathy. Over the years various companies implemented varioations of metric based performance evaluations to varying degrees of failure. Our continous ambition of trying to measure individual productivity and performance unveilied a plethora of metrics that do NOT work. These include lines of code written, lines of code deleted, story points completed in a sprint, story points pushed over to next sprint, number of bug reports closed, number of bug reports opened, and the paradoxical list goes on and on.
 
-The inherent problem is that when things go well, there is very little to measure. And any metrics we do account for are diffictult to accopunt to any particular individual. Increased customer churn could well be attributed to a lack of feature, it can also be a problem in pricing, promises by the sales team, marketing in the wrong channels, or our CEO's social media use.
+The inherent problem is that when things go well, we create less metrics. And any metrics we do account for are diffictult to accopunt to any particular individual. Increased customer churn could well be attributed to a lack of feature, it can also be a problem in pricing, promises by the sales team, marketing in the wrong channels, or our CEO's social media use.
 
+When we start reviewing performance by activity, rather than progress, our team will prioritise busy work with fast turn arounds over difficult problems with long-term improvements. We want our employees to be focused on delivering quality work for our product. Not on focusing to optimize their output for internal metrics. When we reward individual productivity, our team members feel punished for supporting each other, or taking time out of their day for debugging sessions. Some companies famously prided themselves on creating an environment of constant competitiveness, where the lowest performers of a metric where let go. That mindset is the antithesis of this book.
 
-
-We want our employees to be focused on delivering quality work for our product. Not on focusing to optimize their productivity for internal metrics.
-
-progress over activity
-
-owning an issue, rather than hitting a deadline
-
-technical debt
-refactoring
-irrelevant bugfixes
+Productivity increases when our team members take on responsibility for work beyond the immediate tasks. We prefer to own an issue, rather than hitting a deadline. 
