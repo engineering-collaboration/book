@@ -9,19 +9,23 @@
 
 <!-- What is a sprint -->
 
-Any work we do passes through three phases: planning, execution, and retrospective. Within software engineering we commonly refer to this cycle as a *sprint*. Depending on the maturity of our product and organization, a single sprint cycle typically runs for one to four weeks. The younger our project, the shorter the sprint cycles.
+Any significant work passes through three phases: planning, execution, and reflection. We determine what we want to achieve, do the work, and verify whether we completed our objective and if we can improve our approach. Within software engineering we commonly refer to this cycle as a *Sprint*.
 
-By planning and sanctioning our tasks for the next weeks, we can concentrate on executing them with minimal distractions. When a sprint plan is approved, we do not pivot or change tasks mid-sprint. Only immediate and urgent issues, so called *show stoppers*, interrupt our sprint with. Show-stoppers include crashes we can not recover from, they do not include customer feedback, bug reports, or inconveniences.
+<!-- Stick to the plan -->
 
-Anything that can wait a week, can wait two, and we file the new task to be part of the next sprint cycle. Pivoting our attention to unexpected tasks leads to expensive context changes and stalls any progress on our tasks. If other people depend on our changes, we pass additional delays down the chain.
+By coordinating and planning our tasks for the next weeks, we can concentrate on executing them with minimal distractions. After agreeing on a sprint plan, we do not change what we work on mid-sprint, except for immediate and urgent issues. These issues, called *showstoppers*, consist of severe issues and crashes which our software cannot recover from and leaves our customers unable to continue their operations.
 
-Thus our short- to mid-term tasks need to cover our customers and organization's needs but stay flexible enough to pivot in case we need to react to changing circumstances. Alas, we do not become to reactionary, as constantly pivoting means we do not progress to any goal. Knowing when to steady a course and when to charter a new one, largely relies on industry insights, experience, and luck. None of which are part of this chapter.
+Showstoppers do not include customer feedback, bug reports, or user inconveniences; anything with a work-around can wait a cycle. Instead of working on incoming non-severe issues, we include them in our next sprint cycle's planning. Pivoting our attention across unexpected tasks leads to expensive context changes. We run the risk of becoming to reactionary and hinder our progress on our current goal. This becomes especially costly when other people depend on our work, as we effectively stall development across teams.
 
-We complete a sprint cycle with a retrospective session. These sprint conclusions fulfill two points. Firstly, we have the chance to reflect upon our work and share our insights on things that went well, and things that did not. This includes, mistakes we made personally, communication we wish we had done sooner or avoided entirely, tooling that was missing needed functionality, time sinks we may anticipate next time.
+<!-- Reflect on the work done -->
+
+We complete a sprint cycle by reflecting on our work during a retrospective session. These scheduled conclusions to a sprint accomplish two functions. Firstly, we have the chance to share our insights on things that went well, and things that did not, including mistakes we made personally, or company tooling with missing functionality, insights and information we wish we had had sooner, or conversations we could have avoided entirely, unexpected development friction, and time sinks we may anticipate next time.
+
+<!-- 👇 current editing process -->
 
 Secondly, sprint retrospectives allow us to evangelize our work internally. We write memos, create screen recordings and images of our work, provide demos and share these within and across teams. Informing our current work avoids duplicate work within our organization, plus we can consolidate feedback and additional use cases from other teams.
 
-<!-- What is a sprint NOT -->
+<!-- What a sprint is NOT -->
 
 Opposed to the writings in popular manifestos, a sprint cycle has no relationship to the deliverable of our software. Scrum and Agile practices preach sprints as a framework of delivering shippable packages every sprint for feedback cycles.
 
@@ -139,6 +143,10 @@ Our sprint's duration depends on the needs of our organization and our product a
 Sprint length typically grows with our organization's size and maturity. Start-ups need to address feedback from customers and investors quickly, so priorities can shift on a weekly basis. Again, we do not just drop our current tasks because a user reported a bug with low severity. Scale-ups introduce additional work force and overhead so weekly sprint planning and retrospection hinders work rather than fosters growth and may move to sprint cycles of two weeks. Enterprise scale organizations have established with predictable workloads. The main challenge here lies within innersourcing and communication. But we can work on our product without surprises or pivots. We benefit from three weeks of uninterrupted changes.
 
 Sprint cycles do not have to begin on a Monday. Monday and Friday are excellent buffer days to polish work, demos, prepare screen recordings, apply code review feedback, write additional documentation.
+
+
+
+Depending on the maturity of our product and organization, a single sprint cycle typically runs for one to four weeks. The younger our project, the shorter the sprint cycles.
 
 ## Measuring productivity
 
