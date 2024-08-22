@@ -34,3 +34,5 @@ This section of the book assumes we are knowledgeable and comfortable with versi
 Everything should be under version control. No aspect of our organization does not benefit from tracking changes over time, be it source code, infrastructure definitions, documentation, or resource manifests.
 
 The practices covered in this part of the book are achievable with any version control tooling. However, due to the large adoption of Git across the industry the concepts will be explained using Git terminology and visual representations of Git repositories.
+
+<!-- TODO: (Daniel) Automatic workspace configuration -->
