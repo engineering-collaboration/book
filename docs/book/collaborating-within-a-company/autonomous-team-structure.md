@@ -42,3 +42,5 @@ When working on problems, we have a limited capacity of information we can hold 
 Besides the complexity of systems, context switches reserve a large amount of cognitive load. When we work on a problem, we enter a focused state often referred to as *the zone* or a *state of flow*. Within this state of heightened productivity, we lose ourselves to the task at hand and toil at peak performance. We reach *the zone* after fifteen to thirty minutes of uninterrupted focus. Every context switch removes us from this state.
 
 Because cognitive overload and context switches have such a detrimental effect on our productivity, it makes sense to split the team with dedicated responsibilities before we reach the upper limit of Dunbar's number.
+
+<!-- TODO: (Daniel) move supporting teams here -->
