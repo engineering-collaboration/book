@@ -21,33 +21,39 @@ Showstoppers do not include customer feedback, bug reports, or user inconvenienc
 
 We complete a sprint cycle by reflecting on our work during a retrospective session. These scheduled conclusions to a sprint accomplish two functions. Firstly, we have the chance to share our insights on things that went well, and things that did not, including mistakes we made personally, or company tooling with missing functionality, insights and information we wish we had had sooner, or conversations we could have avoided entirely, unexpected development friction, and time sinks we may anticipate next time.
 
-<!-- 👇 current editing process -->
-
-Secondly, sprint retrospectives allow us to evangelize our work internally. We write memos, create screen recordings and images of our work, provide demos and share these within and across teams. Informing our current work avoids duplicate work within our organization, plus we can consolidate feedback and additional use cases from other teams.
+Secondly, sprint retrospectives enable us to evangelize our work internally. We showcase screen recordings and images of our work, provide demos and distribute these within and across our teams. Sharing our progress and future plans with other teams potentially avoids duplicate work done within our organization. Plus, we can consolidate feedback and additional use cases from other teams and identify innersourcing opportunities.
 
 <!-- What a sprint is NOT -->
 
-Opposed to the writings in popular manifestos, a sprint cycle has no relationship to the deliverable of our software. Scrum and Agile practices preach sprints as a framework of delivering shippable packages every sprint for feedback cycles.
-
-The goal of a sprint is not to deliver software packages ready to be shipped. Our software is shippable multiple times a day. We discuss this further in Part II. For the majority of software, a feedback cycle measured in weeks is unacceptable.
+Fashionable Scrum and Agile practices preach sprints as a framework for delivering binaries every sprint for feedback cycles. This is nonsense. As high-performing teams we ship our software when needed (as often as multiple times per day), as a feedback cycle measured in weeks is unacceptable for the majority of software. Part II of this book discusses our approach for continuous delivery in detail, but presently we establish that **a sprint cycle has no relationship with the delivery of our software**.
 
 ## Planning
 
-Sprints begin with the planning phase in which we estimate and designate tasks with our team members. In our industry, we refer to these tasks as *tickets*. Tickets consist of bug reports, feature requests, and our feature roadmap. Larger organizations with a lot of inter-team communication the team lead creates the tickets. In smaller organizations the team members themselves write these tickets.
+Before a sprint cycle, our team leads work with our product stakeholders to prioritize immediate tasks and create a *backlog*, a list of outstanding things to do. Our team leads refine bigger backlog items into granular actionable items, broadly called *tickets*. Tickets cover bug reports, support requests, and feature implementation.
 
-Before every sprint, team leads map tasks to be completed with the available resources for the next two quarters. Team leads plan sprints and create backlog. 
+We start sprints with a kick-off meeting in which we discuss the tasks within the team. Our team leads pre-assign tickets to the team members that most match the tasks domain. During the kick-off meeting, we might decide to redesignate certain tasks to upskill team members, spread knowledge horizontally, or distribute an unusual amount of domain work across the team.
 
-The ticket assignment happens during the sprint kickoff meeting. All team members are present for the duration of the meeting. We sequentially go through our team and collectively estimate the effort of the ticket, agree on the priority and the engineer or engineers working on it.
-
-Not uncommonly, people might disagree on the tickets and their priorities. Ultimately, it is up to whoever makes the decision. If it is the team lead, they have the most information. If it is the group, either the domain expertise wins, or the most votes, or the product person. We define this in our guidelines.
-
-Who are tickets for.
+All team members are present for the duration of the meeting. Every individual contributor describes their task to the team, after which we estimate the workload as a group. Presenting our tickets to the team ensures we collectively have an idea about our team's current responsibilities and progress.
 
 ### Estimating work
 
-Humans are remarkably bad at estimating work. That and evaluating statistical impact. That particular skill apparently never improved our survival rate as a species. Besides not being able to predict the actual time it takes to execute work, we severely underestimate other noise and distractions in our lives that hinders our progress.
+Humans are remarkably bad at estimating work. It's a skill that we simply cannot intuit. Besides not being able to predict the actual time it takes to execute work, we severely underestimate the noise and distractions in our lives that hinders our progress.
 
-In order to achieve a somewhat usable (yet still pretty inaccurate) estimate, we can employ two tools that have gained popularity over the years. The first one is slightly tainted with ill-repute and causes involuntary reactions of ill-well. Another term tainting the back of our tongue with bile is *Story points*.
+In order to achieve a somewhat usable estimate, we first tune our initial assessment. We consider how long a task would take us to complete, then double it, then add half of the original estimate again as buffer. For example, If we believe we can deliver a feature in two days, we double it to four, then add another day as buffer. While this might seem excessive, we will find this to be true more often than not.
+
+<!-- 👇 current editing process -->
+
+To further ensure we are able to deliver on time we can guide estimates by the Fibonacci sequence, a mathematical pattern in which each number is the sum of the two preceding ones. The sequence starts with [ 1, 2, 3, 5, 8, 13, 21 ]. After doubling our estimation and adding a buffer we select the Fibonacci number of the nearest higher value. If we believe we can deliver a feature in seven days, we double and buffer the number to seventeen, then select 21 as our final estimate.
+
+Finally, as a team lead, we plan for unexpected work. People get distracted, called into additinoal meetings, receive "quick" support requests, have family emergencies, get sick, hurt, and hungover.
+
+The Wisdom of the Crowds is a natural phenomen where the average educated guess of a group of people becomes surprisignly accurate to the actual "Find and insert study of groups averages accurately being able to estimate M7Ms in a jar and the weight of a cow". When assigning story points, all developers add their estimate to a poll and we select the average or median, whichever is more appropriate.
+
+Vul	and	Pashler	drew	inspiration	from	the	well-known	phenomenon	known	as the	wisdom-of-crowds	effect:	averaging	the	independent	judgments	of	different people	generally	improves	accuracy.	In	1907,	Francis	Galton,	a	cousin	of Darwin	and	a	famous	polymath,	asked	787	villagers	at	a	country	fair	to	estimate the	weight	of	a	prize	ox.	None	of	the	villagers	guessed	the	actual	weight	of	the ox,	which	was	1,198	pounds,	but	the	mean	of	their	guesses	was	1,200,	just	2 pounds	off,	and	the	median	(1,207)	was	also	very	close.	The	villagers	were	a “wise	crowd”	in	the	sense	that	although	their	individual	estimates	were	quite noisy,	they	were	unbiased.	Galton’s	demonstration	surprised	him:	he	had	little respect	for	the	judgment	of	ordinary	people,	and	despite	himself,	he	urged	that his	results	were	“more	creditable	to	the	trustworthiness	of	a	democratic judgment	than	might	have	been	expected.”
+
+Like	Vul	and	Pashler,	Herzog	and	Hertwig	then	averaged	the	two	estimates thus	produced.	Their	technique,	which	they	named	dialectical	bootstrapping, produced	larger	improvements	in	accuracy	than	did	a	simple	request	for	a	second estimate	immediately	following	the	first.	Because	the	participants	forced themselves	to	consider	the	question	in	a	new	light,	they	sampled	another,	more different	version	of	themselves—two	“members”	of	the	“crowd	within”	who were	further	apart.	As	a	result,	their	average	produced	a	more	accurate	estimate of	the	truth.	The	gain	in	accuracy	with	two	immediately	consecutive “dialectical”	estimates	was	about	half	the	value	of	a	second	opinion.
+
+The first one is slightly tainted with ill-repute and causes involuntary reactions of ill-well. Another term tainting the back of our tongue with bile is *Story points*.
 
 Please, take a moment to breathe and rest assured we do not convert our readers to the church of Agile. Zealous practices find little foothold within *Engineering Collaboration*. Story points have been banished to the managerial vocabulary, joining horrendous terms, such as *burn charts*.
 
@@ -55,15 +61,11 @@ Story points are an arbitrary unit to measure development velocity. While every 
 
 Story points only work team internally. Story points cannot be directly used as a measurement for productivity across teams. The mix of tools, communication channels, personalities, infrastructure deployments, office layouts, etc are likely to be unique to our team. Comparing story points across teams is as useful information as comparing the shoe sizes across teams.
 
-The second tool at our disposal is group estimates. "Find and insert study of groups averages accurately being able to estimate M7Ms in a jar and the weight of a cow". When assigning story points, all developers add their estimate to a poll and we select the average or median, whichever is more appropriate.
-
-Finally, as a team lead, we plan for unexpected work. People get distracted, called into additinoal meetings, receive "quick" support requests, have family emergencies, get sick, hurt, and hungover.
-
 ## Execution
 
 The sprint planning completed, we start executing our tasks. Head down and get some work done. Individual contributors work on their task and in doing so uncover and solve additional problems. Assigned tasks get broken down into smaller subtasks and are implemented regularly. Part II covers the entire lifecycle of a code change. Tech leads and managers remove any blockers that come up and ensure their team members have all the information, contacts, and context in order to fulfill their tasks.
 
-### Communicating progress
+<!-- Communicating progress -->
 
 Not supervision, but rather everybody is on the same page. Different context, different amount of information. Avoiding duplicate work or learnings.
 Checkign for blockers. Everybody can reach out on their own at any time anyway, we're all adults.
@@ -74,7 +76,7 @@ ask for clarification
 Who are tickets for. Tickets are not engineering oriented. Any information relating to code, stored away from code is useless. Authorization, platform migration, searchability. We cover this in detail in Part II. Engineer - Details, libraries, implementation
 Implementation details, algorithms, open source libraries vs building
 
-#### Kanban
+### Kanban
 
 Kanban boards have gained popularity over the last decade and all modern task management platforms offer a Kanban view. They visualize tasks as cards that can be placed within one of several columns. The columns represent the state the task is currently in. Typical states are "TODO", "In progress", "In review", "Completed", but any team can create an arbitrary set of columns.
 
@@ -82,7 +84,7 @@ Kanban boards have gained popularity over the last decade and all modern task ma
 
 The visual simplicity of Kanban boards communicates the progress of a team member's workload at a glance. They are easy to update and maintain, as we just drag and drop cards between columns without the need of devoting cognitive load to communication. Kanban boards act as early warnings for problems in development processes if too many cards are "stuck" in a certain column. Too many cards in the "In progress" section indicate a wide spread of responsibilities that trigger expensive context switching. Bottle necks in the "In Review" column inform us to review our review process as it may no longer not match our teams current needs. 
 
-#### Journals
+### Journals
 
 <!-- TODO: Move below to written daily status updates -->
 
@@ -93,7 +95,7 @@ Most people take notes privately and may forget to copy over their progress into
 Use a messaging app. People do not open emails or go to specific Confluence pages.
 
 
-#### Daily status updates
+### Daily status updates
 
 The most common synchronous way of sharing progress with our lead and our team members is via daily stand-up meetings. Once a day the entire team gathers to share their progress by answering three question:
 
@@ -115,7 +117,7 @@ As a team we continously communicate with each other regardless what our calenda
 
 Engineers inform each other, solve together
 
-#### As a lead
+### As a lead
 
 As team leads we use these meetings to keep an eye out for the following things:
 
