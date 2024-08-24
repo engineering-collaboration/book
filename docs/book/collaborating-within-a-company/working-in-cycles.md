@@ -55,9 +55,11 @@ The Wisdom of the Crowds is a natural phenomena where the average educated guess
 
 <!-- Story points -->
 
-Besides trying to increase the accuracy of our predictions we can introduce a layer of abstraction of how we measure development velocity. A popular yet divise unit of measurement called *Story points*. Story points are an arbitrary unit to measure development velocity. While every developer has an internal mapping of a story point equals roughly half a day to a day, we have already established, that we are horrible at mapping work load to work time. The additional layer of abstraction between unit of time and unit of velocity allows us to discretely measure velocity across sprints. After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realsitic plans and expectations.
+Another option to increase the quality of our estimates is by introducing a layer of abstraction on how we measure progress. A popular, yet divisive, practice is the use of *Story Points*. These represent an arbitrary unit of measurement for development velocity. Instead of calculating our workload in time, e.g. hours or days, we estimate our tasks in *Story Points*. These have no real-life counterpart and it is impossible to determine whether our estimation was wrong.
 
-Story points only work team internally. Story points cannot be directly used as a measurement for productivity across teams. The mix of tools, communication channels, personalities, infrastructure deployments, office layouts, etc are likely to be unique to our team. Comparing story points across teams is as useful information as comparing the shoe sizes across teams.
+While every developer has an internal mapping of what a story point represents to them, we have already established, that we are horrible at mapping work load to work time. The additional layer of abstraction between unit of time and unit of velocity allows us to measure velocity across sprints. After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realsitic plans and expectations, even if we internally misjudge our workload.
+
+Story points only work team internally. Story points cannot be directly used as a measurement for productivity across teams. The mix of tools, communication channels, personalities, infrastructure deployments, office layouts, etc are likely to be unique to our team. Comparing story points across teams is as useful as comparing shoe sizes across teams.
 
 <!-- Fibonacci sequence -->
 
