@@ -39,27 +39,33 @@ All team members are present for the duration of the meeting. Every individual c
 
 Humans are remarkably bad at estimating work. It's a skill that we simply cannot intuit. Besides not being able to predict the actual time it takes to execute work, we severely underestimate the noise and distractions in our lives that hinders our progress.
 
+<!-- Intuitive estimation -->
+
 In order to achieve a somewhat usable estimate, we first tune our initial assessment. We consider how long a task would take us to complete, then double it, then add half of the original estimate again as buffer. For example, If we believe we can deliver a feature in two days, we double it to four, then add another day as buffer. While this might seem excessive, we will find this to be true more often than not.
+
+<!-- Wisdom of the crowds -->
 
 <!-- 👇 current editing process -->
 
-To further ensure we are able to deliver on time we can guide estimates by the Fibonacci sequence, a mathematical pattern in which each number is the sum of the two preceding ones. The sequence starts with [ 1, 2, 3, 5, 8, 13, 21 ]. After doubling our estimation and adding a buffer we select the Fibonacci number of the nearest higher value. If we believe we can deliver a feature in seven days, we double and buffer the number to seventeen, then select 21 as our final estimate.
+In their book *Noise: A Flaw in Human Judgement*, *Daniel Kahneman*, *Olivier Sibony*, and *Cass R. Sunstein* discuss how individual judgement and estimates tend to be so unpredictable they border on the random. Every decision is affected by a person's mood, breakfast intake, weather, spousal discourses, and numerous subtle influences we do not consciously control. When asked to judge the workload for a change mere days after one another, the estimate differs significantly.
 
-Finally, as a team lead, we plan for unexpected work. People get distracted, called into additinoal meetings, receive "quick" support requests, have family emergencies, get sick, hurt, and hungover.
+Classifying human judgement as random allows us to gather data and use statistical sampling to obtain numerical results. The book *Noise* covers the experiment demonstrating the so-called the Wisdom of the Crowds effect: *"In 1907, Francis Galton, [...] asked 787 villagers at a country fair to estimate the weight of a prize ox. None of the villagers guessed the actual weight of the ox, which was 1,198 pounds, but the mean of their guesses was 1,200, just 2 pounds off [...]"*
 
-The Wisdom of the Crowds is a natural phenomen where the average educated guess of a group of people becomes surprisignly accurate to the actual "Find and insert study of groups averages accurately being able to estimate M7Ms in a jar and the weight of a cow". When assigning story points, all developers add their estimate to a poll and we select the average or median, whichever is more appropriate.
+The Wisdom of the Crowds is a natural phenomena where the average educated guess of a group of people becomes surprisingly accurate to the actual result. We can leverage that effect by having all our team members estimate the workload of a ticket and averaging the result. To avoid influencing each other, we give these estimates independently from each other in a poll before revealing the result.
 
-Vul	and	Pashler	drew	inspiration	from	the	well-known	phenomenon	known	as the	wisdom-of-crowds	effect:	averaging	the	independent	judgments	of	different people	generally	improves	accuracy.	In	1907,	Francis	Galton,	a	cousin	of Darwin	and	a	famous	polymath,	asked	787	villagers	at	a	country	fair	to	estimate the	weight	of	a	prize	ox.	None	of	the	villagers	guessed	the	actual	weight	of	the ox,	which	was	1,198	pounds,	but	the	mean	of	their	guesses	was	1,200,	just	2 pounds	off,	and	the	median	(1,207)	was	also	very	close.	The	villagers	were	a “wise	crowd”	in	the	sense	that	although	their	individual	estimates	were	quite noisy,	they	were	unbiased.	Galton’s	demonstration	surprised	him:	he	had	little respect	for	the	judgment	of	ordinary	people,	and	despite	himself,	he	urged	that his	results	were	“more	creditable	to	the	trustworthiness	of	a	democratic judgment	than	might	have	been	expected.”
+<!-- Story points -->
 
-Like	Vul	and	Pashler,	Herzog	and	Hertwig	then	averaged	the	two	estimates thus	produced.	Their	technique,	which	they	named	dialectical	bootstrapping, produced	larger	improvements	in	accuracy	than	did	a	simple	request	for	a	second estimate	immediately	following	the	first.	Because	the	participants	forced themselves	to	consider	the	question	in	a	new	light,	they	sampled	another,	more different	version	of	themselves—two	“members”	of	the	“crowd	within”	who were	further	apart.	As	a	result,	their	average	produced	a	more	accurate	estimate of	the	truth.	The	gain	in	accuracy	with	two	immediately	consecutive “dialectical”	estimates	was	about	half	the	value	of	a	second	opinion.
-
-The first one is slightly tainted with ill-repute and causes involuntary reactions of ill-well. Another term tainting the back of our tongue with bile is *Story points*.
-
-Please, take a moment to breathe and rest assured we do not convert our readers to the church of Agile. Zealous practices find little foothold within *Engineering Collaboration*. Story points have been banished to the managerial vocabulary, joining horrendous terms, such as *burn charts*.
-
-Story points are an arbitrary unit to measure development velocity. While every developer has an internal mapping of a story point equals roughly half a day to a day, we have already established, that we are horrible at mapping work load to work time. The additional layer of abstraction between unit of time and unit of velocity allows us to discretely measure velocity across sprints. After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realsitic plans and expectations.
+Besides trying to increase the accuracy of our predictions we can introduce a layer of abstraction of how we measure development velocity. A popular yet divise unit of measurement called *Story points*. Story points are an arbitrary unit to measure development velocity. While every developer has an internal mapping of a story point equals roughly half a day to a day, we have already established, that we are horrible at mapping work load to work time. The additional layer of abstraction between unit of time and unit of velocity allows us to discretely measure velocity across sprints. After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realsitic plans and expectations.
 
 Story points only work team internally. Story points cannot be directly used as a measurement for productivity across teams. The mix of tools, communication channels, personalities, infrastructure deployments, office layouts, etc are likely to be unique to our team. Comparing story points across teams is as useful information as comparing the shoe sizes across teams.
+
+<!-- Fibonacci sequence -->
+
+Predicting the future with our arbitrary estimations makes us uncomfortable. It feels unscientific. Thus, we employ mathematical guidelines to structure our story point estimations, the Fibonacci sequence. A numerical pattern in which each number is the sum of the two preceding ones, e.g. the sequence starts with [ 1, 2, 3, 5, 8, 13, 21 ]. After doubling our estimation and adding a buffer we select the Fibonacci number of the nearest higher value. If we believe we can deliver a feature in seven story points, we double and buffer the number to seventeen, then select twenty-one as our final estimate.
+
+<!-- Unplanned work -->
+
+Finally, as a team lead, we plan for unexpected work. People get distracted, called into additinoal meetings, receive "quick" support requests, have family emergencies, get sick, hurt, and hungover.
 
 ## Execution
 
