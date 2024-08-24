@@ -7,6 +7,8 @@ description: An introduction to monorepositories, multiple repositories, and onb
 
 Repositories hold our source code, documentation, infrastructure definitions, CI scripts, and build instructions. Most of our staff work with our repositories on a day-to-day basis and use them as the main tool for collaborating with colleagues.
 
+<!-- TODO: (Daniel) Move to Trunk based development -->
+
 ## Monorepository vs Multiple Repositories
 
 When working on independently deployable services or applications, we organize the projects as separate repositories (multirepo) or within a single repository (monorepo). A distinguished company using the monorepo approach is Google. The company evangelized managing its entire source across all projects within a single code repository. All engineers work within that monorepo.
@@ -26,6 +28,8 @@ Monorepos organically tear down communication silos across teams, but we deal wi
 In monorepos, we encounter additional overhead with creating and handling CI workflows. We require additional dedicated personnel to ensure efficient automation runs in hermetic environments. However, a consolidated CD system means every team has the tools and know-how to deploy the entire system.
 
 In the end, we go with the approach that requires the least amount of proprietary effort. Our organization's repository strategies mirror the team constellation and module composition of our product. A growing module within a repository might require a spin-out. An increase in shared code across services leads to consolidation.
+
+<!-- TODO: (Daniel) Move to Innersourcing -->
 
 ## Repository Onboarding
 
