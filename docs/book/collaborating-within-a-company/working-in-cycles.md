@@ -27,6 +27,18 @@ Secondly, sprint retrospectives enable us to evangelize our work internally. We 
 
 Fashionable Scrum and Agile practices preach sprints as a framework for delivering binaries every sprint for feedback cycles. This is nonsense. As high-performing teams we ship our software when needed (as often as multiple times per day), as a feedback cycle measured in weeks is unacceptable for the majority of software. Part II of this book discusses our approach for continuous delivery in detail, but presently we establish that **a sprint cycle has no relationship with the delivery of our software**.
 
+## Cycle duration
+
+The length of our sprint cycles depends on the needs of our organization and product. Typically, a cycle period ranges from one week to three weeks. No relevant work can happen in a time span shorter than a week and any sprint longer than three weeks diminishes our ability to react to market demands.
+
+Our sprint length adapts and grows with our organization's size and maturity. Successful start-ups address feedback from customers and investors quickly, thus feature schedules and bug fixes shift on a weekly basis. While founders may have to adjust their schedule on a daily basis, this seldomly includes work related to code. Planning, executing, and delivering on a weekly basis without pivoting mid-sprint ensures steady progress and dampens the emotional amplitudes of founding a company.
+
+To reduce the overhead of sprint planning and retrospection, we eventually move to two week sprint cycles. When we reducing the time spent in meetings, we increase the time spent solving problems. Two week cycles have become standard across the majority of scale-ups to provide a growing organization consistent insights on the progress of other projects and teams.
+
+Established teams working in mature environments may decide to expand the cycle span to three weeks. When the main challenges in our organization are inter-team politics, processes, and protocols, a longer work cycle helps shield our team from noise. Longer work cycles require discipline, automation, and transparency for continuous integration and delivery practice, a topic we discuss in detail in Part II. Without established practices work gets lost or becomes unwieldy.
+
+While they run on a weekly schedule, sprint cycles do not have to start on the first day of the week. Monday and Friday are excellent buffer days to polish work, demos, prepare screen recordings, apply code review feedback, and write additional documentation. We consider our team demographics when reserving time slots for our kick-off and demo meetings.
+
 ## Planning
 
 Before a sprint cycle, our team leads work with our product stakeholders to prioritize immediate tasks and create a *backlog*, a list of outstanding things to do. Our team leads refine bigger backlog items into granular actionable items, broadly called *tickets*. Tickets cover bug reports, support requests, and feature implementation.
@@ -37,41 +49,31 @@ All team members are present for the duration of the meeting. Every individual c
 
 ### Estimating work
 
-Humans are remarkably bad at estimating work. It's a skill that we simply cannot intuit. Besides not being able to predict the actual time it takes to execute work, we severely underestimate the noise and distractions in our lives that hinders our progress.
+Humans are remarkably bad at estimating work. It's a skill that we simply cannot intuit. Besides not being able to predict the actual time it takes to execute work, we severely underestimate the amount of distractions in our lives that hinders our progress.
 
-<!-- Intuitive estimation -->
+In their book *Noise: A Flaw in Human Judgement*, *Daniel Kahneman*, *Olivier Sibony*, and *Cass R. Sunstein* discuss how individual judgement and estimates tend to be so unpredictable they border on randomness. Every decision is affected by a person's mood; caused by breakfast intake, weather, spousal discourses, and numerous subtle influences we do not consciously control. When asked to judge the workload for an upcoming feature, the a persons estimation differs significantly from one day to another.
 
-In order to achieve a somewhat usable estimate, we first tune our initial assessment. We consider how long a task would take us to complete, then double it, then add half of the original estimate again as buffer. For example, If we believe we can deliver a feature in two days, we double it to four, then add another day as buffer. While this might seem excessive, we will find this to be true more often than not.
+Classifying human judgement as random allows us to gather data and use statistical sampling to obtain numerical results. The book *Noise* covers an experiment demonstrating the so-called the *Wisdom of the Crowds*: *"In 1907, Francis Galton, [...] asked 787 villagers at a country fair to estimate the weight of a prize ox. None of the villagers guessed the actual weight of the ox, which was 1,198 pounds, but the mean of their guesses was 1,200, just 2 pounds off [...]"*
 
-<!-- Wisdom of the crowds -->
-
-<!-- 👇 current editing process -->
-
-In their book *Noise: A Flaw in Human Judgement*, *Daniel Kahneman*, *Olivier Sibony*, and *Cass R. Sunstein* discuss how individual judgement and estimates tend to be so unpredictable they border on the random. Every decision is affected by a person's mood, breakfast intake, weather, spousal discourses, and numerous subtle influences we do not consciously control. When asked to judge the workload for a change mere days after one another, the estimate differs significantly.
-
-Classifying human judgement as random allows us to gather data and use statistical sampling to obtain numerical results. The book *Noise* covers the experiment demonstrating the so-called the Wisdom of the Crowds effect: *"In 1907, Francis Galton, [...] asked 787 villagers at a country fair to estimate the weight of a prize ox. None of the villagers guessed the actual weight of the ox, which was 1,198 pounds, but the mean of their guesses was 1,200, just 2 pounds off [...]"*
-
-The Wisdom of the Crowds is a natural phenomena where the average educated guess of a group of people becomes surprisingly accurate to the actual result. We can leverage that effect by having all our team members estimate the workload of a ticket and averaging the result. To avoid influencing each other, we give these estimates independently from each other in a poll before revealing the result.
+The *Wisdom of the Crowds* is a natural phenomena where the average educated guess of a group of people becomes surprisingly accurate to the actual result. We can leverage that effect by having all our team members estimate the workload of a ticket and averaging the result. To avoid influencing each other, we give these estimates independently from one another in a poll before revealing the result.
 
 <!-- Story points -->
 
-Another option to increase the quality of our estimates is by introducing a layer of abstraction on how we measure progress. A popular, yet divisive, practice is the use of *Story Points*. These represent an arbitrary unit of measurement for development velocity. Instead of calculating our workload in time, e.g. hours or days, we estimate our tasks in *Story Points*. These have no real-life counterpart and it is impossible to determine whether our estimation was wrong.
+We further increase the quality of our estimates by introducing a layer of abstraction on how we measure progress. A popular, yet divisive, practice is the use of *Story Points*. These represent an arbitrary unit of measurement for development velocity. Instead of calculating our workload in time, e.g. hours or days, we estimate our tasks in *Story Points*. These have no real-life counterpart and it is difficult to determine whether our estimation was wrong.
 
-While every developer has an internal mapping of what a story point represents to them, we have already established, that we are horrible at mapping work load to work time. The additional layer of abstraction between unit of time and unit of velocity allows us to measure velocity across sprints. After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realsitic plans and expectations, even if we internally misjudge our workload.
+Every developer has an internal mapping of what a story point represents to them. However, as we have already established, we struggle to accurately predict the workload of an assigned task. The additional layer of abstraction between the unit of time and the unit of velocity allows us to create benchmarks of velocity across sprints. After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realistic plans and expectations, even if our team misjudges the workload internally.
 
-Story points only work team internally. Story points cannot be directly used as a measurement for productivity across teams. The mix of tools, communication channels, personalities, infrastructure deployments, office layouts, etc are likely to be unique to our team. Comparing story points across teams is as useful as comparing shoe sizes across teams.
+Predicting the future with arbitrary guesswork makes us uncomfortable. It feels unscientific. Thus, we employ a mathematical guide to structure our story points. The Fibonacci sequence is a numerical pattern in which each number consists of the sum of the two preceding ones. Our tasks may therefore allocate any one of the following amount of story points: 1, 2, 3, 5, 8, 13, or 21. Limiting our estimations to these options, reduces our cognitive load and increases our confidence in estimating a task. We may now deduce the workload on a spectrum ranging from very small to very large effort.
 
-<!-- Fibonacci sequence -->
+Story points only work team internally. They cannot be directly used as a measurement for productivity across teams. The mix of tools, communication channels, personalities, and infrastructure deployments is likely to be unique to our team. Comparing story points across teams is as useful as comparing shoe sizes across teams.
 
-Predicting the future with our arbitrary estimations makes us uncomfortable. It feels unscientific. Thus, we employ mathematical guidelines to structure our story point estimations, the Fibonacci sequence. A numerical pattern in which each number is the sum of the two preceding ones, e.g. the sequence starts with [ 1, 2, 3, 5, 8, 13, 21 ]. After doubling our estimation and adding a buffer we select the Fibonacci number of the nearest higher value. If we believe we can deliver a feature in seven story points, we double and buffer the number to seventeen, then select twenty-one as our final estimate.
+Finally, as a team lead, we plan for unexpected work. People get distracted, called into additional meetings, have family emergencies, and get sick, hurt, or hungover.
 
-<!-- Unplanned work -->
-
-Finally, as a team lead, we plan for unexpected work. People get distracted, called into additinoal meetings, receive "quick" support requests, have family emergencies, get sick, hurt, and hungover.
+<!-- 👇 Current editing -->
 
 ## Execution
 
-The sprint planning completed, we start executing our tasks. Head down and get some work done. Individual contributors work on their task and in doing so uncover and solve additional problems. Assigned tasks get broken down into smaller subtasks and are implemented regularly. Part II covers the entire lifecycle of a code change. Tech leads and managers remove any blockers that come up and ensure their team members have all the information, contacts, and context in order to fulfill their tasks.
+With the sprint planning completed, we start working on our tasks. Head down and get some work done. Individual contributors work on their task and in doing so uncover and solve additional problems. Assigned tasks get broken down into smaller subtasks and are implemented regularly. Part II covers the entire lifecycle of a code change. Tech leads and managers remove any blockers that come up and ensure their team members have all the information, contacts, and context in order to fulfill their tasks.
 
 <!-- Communicating progress -->
 
@@ -145,18 +147,6 @@ Positive experiences can be Getting inspired of other teams or other peoples app
 Besides improving future work, we use the end of sprint cycles to evangelize our work within our team and beyond. Every team member creates a demo, write-up, screen recording of their work and presents it in five minutes to the rest of the team and ainvited stakeholders. These meetings consists of our team and all additional stake holders of a project. We collect the shared materials and record the meeting and share it within the organization.
 
 Evangelizing the work done within a team demonstrates multiple upsides. It is an exciting way to communicate progress and value throughout our organization. It encourages cross team interest, feedback, and collaboration for shared problems and usecases. It reduces duplicate work. It encourages innersourcing practices where we first look for existing solutions within our company, before building something new. A internal platform with properly evangelized work can cut down two sprint cycles of a different team. That's a lot of time and effort we can use to better our product.
-
-## Cycle duration
-
-Our sprint's duration depends on the needs of our organization and our product and ranges from one week to three weeks. Shorter than a week no relevant work gets done, longer than three weeks and we diminish our ability to react.
-
-Sprint length typically grows with our organization's size and maturity. Start-ups need to address feedback from customers and investors quickly, so priorities can shift on a weekly basis. Again, we do not just drop our current tasks because a user reported a bug with low severity. Scale-ups introduce additional work force and overhead so weekly sprint planning and retrospection hinders work rather than fosters growth and may move to sprint cycles of two weeks. Enterprise scale organizations have established with predictable workloads. The main challenge here lies within innersourcing and communication. But we can work on our product without surprises or pivots. We benefit from three weeks of uninterrupted changes.
-
-Sprint cycles do not have to begin on a Monday. Monday and Friday are excellent buffer days to polish work, demos, prepare screen recordings, apply code review feedback, write additional documentation.
-
-
-
-Depending on the maturity of our product and organization, a single sprint cycle typically runs for one to four weeks. The younger our project, the shorter the sprint cycles.
 
 ## Measuring productivity
 
