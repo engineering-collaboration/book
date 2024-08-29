@@ -73,11 +73,22 @@ Finally, as a team lead, we plan for unexpected work. People get distracted, cal
 
 ## Execution
 
-With the sprint planning completed, we start working on our tasks. Head down and get some work done. Individual contributors work on their task and in doing so uncover and solve additional problems. Assigned tasks get broken down into smaller subtasks and are implemented regularly. Part II covers the entire lifecycle of a code change. Tech leads and managers remove any blockers that come up and ensure their team members have all the information, contacts, and context in order to fulfill their tasks.
+With the planning meeting completed, we have locked in our tasks for the sprint. Part II of this book covers the lifecycle of a code change in-depth and recommends practices for planning and executing tasks. Thus, we postpone the mental and manual labour of software engineering to another chapter and focus on a different responsibility, communicating progress.
+
+In unhealthy environments, reporting our progress to our supervisor feels like awaiting judgement from a despotic career delegation. When employed in such an environment, we optimize our reports for our personal benefit and professional progression. Thus, we prioritize being busy over solving problems and hesitate to setbacks, errors, and mistakes. Unfortunately, mistakes do not fix themselves and become more costly the longer they go unaddressed.
+
+That will not do for our organization. We ensure that our communication does not feel autocratic and improves the result-oriented productivity of our team. Sharing updates on progress or, more crucially, a lack of progress, informs the right people with little effort on our engineer's side.
+
+Different context, different amount of information. Avoiding duplicate work or learnings.
+
+Three kinds of progress updates:
+
+- Organisational updates. Who is blocked by what, what are we currently working on. What can be done.
+- Progress updates. What are we currently working on and how is it going?
+- Technical updates. What decisions did we have to make and which option did we choose. Who needs to consume this.
 
 <!-- Communicating progress -->
 
-Not supervision, but rather everybody is on the same page. Different context, different amount of information. Avoiding duplicate work or learnings.
 Checkign for blockers. Everybody can reach out on their own at any time anyway, we're all adults.
 Overcommunicate
 actively communicate
@@ -132,6 +143,7 @@ Engineers inform each other, solve together
 As team leads we use these meetings to keep an eye out for the following things:
 
 We ensure none of our team members has any blocking issues and we try to prevent blovcking issues if we anticipate them. We do not have to be reactive.
+Tech leads and managers remove any blockers that come up and ensure their team members have all the information, contacts, and context in order to fulfill their tasks.
 We verify the progress achieved with the remaining sprint duration and keep track what we can and cannot realistically achieve. We do not want our team to be the source of suprises when reporting our status to our department head.
 We keep an eye out for distractions and additional workload. While we cannot and should not control the complete flow of information and support, we cannot have direct support requests from other teams go directly to our engineers and eat up half their development time.
 Our sprint plan is a best effort and likely changes across the sprint. Together with our engineers we reshape our sprint or backlog if a certain task becomes more effort than anticipated. We can offer additional context on what exactly is needed for an MVP and what features we can add to the backlog.
