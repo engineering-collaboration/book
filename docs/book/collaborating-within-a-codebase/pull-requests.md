@@ -7,6 +7,12 @@ description: Pull requests pave the way for introducing high-quality changes int
 
 Once we are satisfied with the state of our development branch and believe our changes are ready to be integrated into main, we open a pull request (PR). PRs pave the way for introducing high-quality changes into our main branch and ultimately our product. All serious source control platforms offer automation, tooling, and UIs for creating and reviewing PRs.
 
+<!-- TODO: (Daniel) embed here; from working in cycles
+
+Who are tickets for. Tickets are not engineering oriented. Any information relating to code, stored away from code is useless. Authorization, platform migration, searchability. We cover this in detail in Part II. Engineer - Details, libraries, implementation
+Implementation details, algorithms, open source libraries vs building
+-->
+
 ## Outlining a Pull Request
 
 We establish clear guidelines on how to structure our PRs and design a streamlined process with automated and manual steps for accepting a change. We do not advocate for any specific source control platform or their implementation of PRs. As with all things, differing solutions come with various pros and cons. That being said, PRs tend to consist of the following attributes.
