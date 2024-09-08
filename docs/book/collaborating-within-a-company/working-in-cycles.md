@@ -71,84 +71,75 @@ Finally, as a team lead, we plan for unexpected work. People get distracted, cal
 
 <!-- 👇 Current editing -->
 
-## Execution
+## Communicating progress
 
-With the planning meeting completed, we have locked in our tasks for the sprint. Part II of this book covers the lifecycle of a code change in-depth and recommends practices for planning and executing tasks. Thus, we postpone the mental and manual labour of software engineering to another chapter and focus on a different responsibility, communicating progress.
+With the planning meeting completed, we have locked in our tasks for the sprint. Part II of this book covers the lifecycle of a code change in-depth and recommends practices for planning and executing tasks. Thus, we postpone the mental and manual labour of software engineering to another chapter and focus on a different responsibility, communicating progress. We enable our teams to share updates on progress or, more crucially, a lack of progress, with little effort and no judgement.
 
-In unhealthy environments, reporting our progress to our supervisor feels like awaiting judgement from a despotic career delegation. When employed in such an environment, we optimize our reports for our personal benefit and professional progression. Thus, we prioritize being busy over solving problems and hesitate to setbacks, errors, and mistakes. Unfortunately, mistakes do not fix themselves and become more costly the longer they go unaddressed.
+While chipping away on our work, we typically find ourselves giving three different kinds of status reports: organizational updates, technical updates, and progress updates.
 
-That will not do for our organization. We ensure that our communication does not feel autocratic and improves the result-oriented productivity of our team. Sharing updates on progress or, more crucially, a lack of progress, informs the right people with little effort on our engineer's side.
+**Organizational updates** inform our project leads what projects allocate which resources. Our individual contributors inform us about the gradn scheme of things. Will the task at hand be completed by the expected time, are we delayed, are we blocked by something, did we shelve the task for something more important. These updates require no technical knowledge and do not include any technical jargon. We add comments to our tickets and update deadlines on our platform. Organizational updates are close to the ticket.
 
-Different context, different amount of information. Avoiding duplicate work or learnings.
+**Technical updates**. What decisions did we have to make and which option did we choose. Who needs to consume this. These are part of the planning process and typcailly involve a design document. The final decisions are documented within a Pull Request. We cover technical updates in Part II of the book, specificailly in the chapters [Planning Implementations](../collaborating-within-a-codebase/planning-implementations.md), [Pull Requests](../collaborating-within-a-codebase/pull-requests.md), and [Documentation](../collaborating-within-a-codebase/documentation.md). Technical updates are close to the code.
 
-Three kinds of progress updates:
+This chapter focuses on the third kind of updates, **progress updates**. We inform our team of the work we are currently doing and the problems we are facing.
 
-- Organisational updates. Who is blocked by what, what are we currently working on. What can be done.
-- Progress updates. What are we currently working on and how is it going?
-- Technical updates. What decisions did we have to make and which option did we choose. Who needs to consume this.
+We actively communicate our current work and challenges and share our progress on solving the problems we are facing in a couple of lines. We verify the progress achieved with the remaining sprint duration and keep track what we can and cannot realistically achieve. We do not want our team to be the source of suprises when reporting our status to our department head.
 
-<!-- Communicating progress -->
-
+To offer
 Checkign for blockers. Everybody can reach out on their own at any time anyway, we're all adults.
 Overcommunicate
-actively communicate
 ask for clarification
 
-Who are tickets for. Tickets are not engineering oriented. Any information relating to code, stored away from code is useless. Authorization, platform migration, searchability. We cover this in detail in Part II. Engineer - Details, libraries, implementation
-Implementation details, algorithms, open source libraries vs building
+### Kanban boards
 
-### Kanban
-
-Kanban boards have gained popularity over the last decade and all modern task management platforms offer a Kanban view. They visualize tasks as cards that can be placed within one of several columns. The columns represent the state the task is currently in. Typical states are "TODO", "In progress", "In review", "Completed", but any team can create an arbitrary set of columns.
+These boards have gained popularity over the last decade with all modern task management platforms offering a Kanban view. Kanban boards visualize tasks as cards that can be placed within one of several columns to represent the state the task is currently in. Typical states are "Todo", "In progress", "In review", and "Completed", but any team can create an arbitrary set of columns.
 
 ![Representation of a kanban board, with four columns showing stages of a workflow, with various cards scattered across the board.](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Abstract_Kanban_Board.svg/2880px-Abstract_Kanban_Board.svg.png)
 
-The visual simplicity of Kanban boards communicates the progress of a team member's workload at a glance. They are easy to update and maintain, as we just drag and drop cards between columns without the need of devoting cognitive load to communication. Kanban boards act as early warnings for problems in development processes if too many cards are "stuck" in a certain column. Too many cards in the "In progress" section indicate a wide spread of responsibilities that trigger expensive context switching. Bottle necks in the "In Review" column inform us to review our review process as it may no longer not match our teams current needs. 
+The visual simplicity of Kanban boards communicates the progress of a team member's workload at a glance. They are easy to update and maintain, as we just drag and drop cards between columns without the need of devoting time or cognitive load to communication. When dragging cards between states, we trigger downstream actions to kick off automated processes or to notify stakeholders and provide additional context for organizational updates and progress updates. 
 
-### Journals
+Kanban boards act as early warnings for problems in development processes if too many cards are "stuck" in a certain column. For example, a large pool of cards in the "Todo" section in the latter half of our sprint cycle, suggests we might not be able to achieve our sprint goals. Too many cards in the "In progress" section indicate a wide spread of responsibilities that signals expensive context switching. Bottle necks in the "In Review" alerts us to review our review process, as it may no longer not match our teams current needs.
 
-<!-- TODO: Move below to written daily status updates -->
-
-A daily account of what we have been working on and struggling with. We can adapt the shape of our Jounrals to the needs of our team. We articulate our progress in emails, messaging threads, group spaces on Google Docs, Confluence, or Notion, or dedicated spaces per person.
-
-Most people take notes privately and may forget to copy over their progress into a journaling system.
-
-Use a messaging app. People do not open emails or go to specific Confluence pages.
-
+The strength of Kanban boards lie within their simplicity. Slow loading times or encumbering state changes with additional requirements reduces the acceptance and effectiveness of the practice.
 
 ### Daily status updates
 
-The most common synchronous way of sharing progress with our lead and our team members is via daily stand-up meetings. Once a day the entire team gathers to share their progress by answering three question:
+<!-- Why have dailies -->
+
+Engineers that talk to each other, solve problems faster. Once a day the entire team gathers to share their progress by answering three question:
 
 - What did I work on yesterday?
 - What am I working on today?
 - Do I have any blockers?
 
-The titular practice of standing during these meetings indicate the brevity of these get-togethers. Don't even bother sitting down. In practice we aim for a maximum of 60 seconds per person. A team consisting of ten people should last no longer than ten minutes. Naturally, when sharing difficulties we are experiencing with a problem, we turn to our team for help. However, we do not discuss the solution of a problem in the stand-up meeting, but ask for a quick dedicated call after the stand-up.
+Daily status updates help the individual, the team, and the team lead to reflect on the work being done. These updates are not a mechanism to evaluate performance and we stop any indication that the are viewed as such. The person with the busiest status is not the most productive team member, in fact most times it's the opposite.
 
-If the conclusion does not happen naturally, e.g. "I would like to hear how you solved this last time. Let's have a call after the meeting", it is the responsibility of the person leading the meeting to request that we move on.
+If we find ourselves regularly considering "what we even worked on yesterday", we reflect on our current responsibilities and how these take shape throughout our work day. How many meetings did we attend, and how many did we actually contribute to? How many tasks run in parallel and do our context switches hinder our progress? Daily status updates help us identify frictions in our tasks, which would otherwise go unnoticed for a while.
 
-Have dailies in the mornings, if plannable, if distributed, we don't really have a choice.
+Teams benefit of the shared knowledge and insights from daily status updates. Teams typically share a domain overlap and other team members might have faced the same issues we are currently working. The help of our immediate colleagues is a quick and cheap way to become unstuck, if we should ever feel so.
 
+As team leads, daily status updates inform us whether our team has any blocking issues. With extended experienced, we might even be able to anticipate and prevent blocking issues before they arise. Besides blockers, we keep an eye out for distractions and additional workload. We protect our team from top-down priority shifts or unplanned support tasks from other teams. Allowing other teams to allocate large portions of our team's development time reduces our output. Besides costing our company money, this perceived lack in performance is detrimental to our team member's career progression.
+
+Lastly, sprint plans change. Daily status meetings enable us to detect and communicate delays early and to plan accordingly. 
+
+#### Synchronous vs Asynchronous Updates
+
+<!-- Current practices -->
+
+Daily progress updates have gained prevalence through *Daily Stand-Up Meetings*, an apparent requisite for modern project management. Stand-ups are a form of meetings in which participants remain standing during the meeting. The main goal of this format is to keep the meeting brief and focused.
+
+As discussed in Autonomous Teams, context switches force us to spend fifteen to thirty minutes to fully refocus on our task after an interruption. Thus, the productivity we lose to meetings exceeds the duration of the meeting itself. It is up to us and the team to decide whether the the benefit of synchronous virtual or in-person outweigh the costs, or if we prefer asynchronous written updates.
+
+<!-- Meetings -->
+
+When practicing synchronous dailies, we dedicate a maximum of 60 seconds to each member. A team consisting of ten people should last no longer than ten minutes. The objective of the stand-up is not to solve problems, but to identify who might be able to assist us. If the conclusion does not happen naturally, e.g. "I would like to hear how you solved this last time. Let's have a call after the meeting", it is the responsibility of the person leading the meeting to request that we move on.
 Prepare for dailies
 
-The shorthand "dailies" has found common use, even if not done on a daily basis. Some teams find more success by avoiding costly context switches on a daily basis by dedicating three days a week, Monday, Wednesday, Friday to synchronous meetings and defer to written status updates on Tuesday and Thursday.
+<!-- ASYNC -->
 
-As a team we continously communicate with each other regardless what our calendar dictates. It is responsibility of our leaderhsip to ensure relevant communication channels.
+Asynchronous updates can be shared at the convenience of our team members' schedule and location and thus intrude less on our work day. We prefer our day-to-day communication tool for updates over dedicated spaced on documentation platforms or online documents. Immediate visibility trumps searchability and long-term archiving of daily status updates. It is very unlikely we ever need to check updates from a couple months ago, it is very likely we have to remind engineers to update and check entries in a "remote" location. Our team members should organically stumble over the updates in order to see what the team is working on.
 
-Engineers inform each other, solve together
-
-### As a lead
-
-As team leads we use these meetings to keep an eye out for the following things:
-
-We ensure none of our team members has any blocking issues and we try to prevent blovcking issues if we anticipate them. We do not have to be reactive.
-Tech leads and managers remove any blockers that come up and ensure their team members have all the information, contacts, and context in order to fulfill their tasks.
-We verify the progress achieved with the remaining sprint duration and keep track what we can and cannot realistically achieve. We do not want our team to be the source of suprises when reporting our status to our department head.
-We keep an eye out for distractions and additional workload. While we cannot and should not control the complete flow of information and support, we cannot have direct support requests from other teams go directly to our engineers and eat up half their development time.
-Our sprint plan is a best effort and likely changes across the sprint. Together with our engineers we reshape our sprint or backlog if a certain task becomes more effort than anticipated. We can offer additional context on what exactly is needed for an MVP and what features we can add to the backlog.
-A lot of engineers take pride in the quality of their work, which is not necessarily in the best interest of the product. We sell a product, not lines of code.
-Functioning code with tech debt over unfinished code beautifully refactored.
+We can mix our approaches. Some teams find more success by avoiding costly context switches on a daily basis by dedicating three days a week to synchronous meetings and defer to written status updates for the rest.
 
 ## Retrospective
 
