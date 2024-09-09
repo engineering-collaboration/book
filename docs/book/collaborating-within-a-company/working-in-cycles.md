@@ -143,15 +143,17 @@ We can mix our approaches. Some teams find more success by avoiding costly conte
 
 ## Retrospective
 
-At the end of a sprint cycle we dedicate time to review our successes and potential improvements as a team. What went well, what could have gone better, and how can we learn from the experience? We put these findings to (digital) paper and revisit our findings to identify positive changes over time or a lack thereof. Over or under estimating work, mistakes in approaching a aprticular problem, Organizational problems may come in form of bottle necks in communication, integration, or release processes.
+At the end of each sprint cycle we dedicate time to review our successes and concerns of our execution phase. We identify what went well, what could have gone better, and what we can improve next cycle. Documenting and revisiting these changes allows us to track our organization's progress over a given time, or a lack thereof. If we consider to note similar problems over an extended period of time, we analyze how we make internal decisions to improve our development experience.
 
-Positive experiences can be Getting inspired of other teams or other peoples approach to engineering, trying to replicate or expand these findings across our team and codebase.
+Retrospectives offer an organic opportunity to evangelize our work to teams and stakeholders. Every team member creates a demonstration, write-up, or screen recording of their work and presents it in five minutes during synchronous end-of-cycle meetings. We collect the shared materials, record the meeting and share it publicly across the organization.
 
-Besides improving future work, we use the end of sprint cycles to evangelize our work within our team and beyond. Every team member creates a demo, write-up, screen recording of their work and presents it in five minutes to the rest of the team and ainvited stakeholders. These meetings consists of our team and all additional stake holders of a project. We collect the shared materials and record the meeting and share it within the organization.
+Evangelizing our work is an exciting way to communicate progress and value throughout our organization. It encourages cross team interest, feedback, and future collaboration on shared pain points. By promoting our solutions early and frequently we reduce duplicate work and encourage innersourcing practices.
 
-Evangelizing the work done within a team demonstrates multiple upsides. It is an exciting way to communicate progress and value throughout our organization. It encourages cross team interest, feedback, and collaboration for shared problems and usecases. It reduces duplicate work. It encourages innersourcing practices where we first look for existing solutions within our company, before building something new. A internal platform with properly evangelized work can cut down two sprint cycles of a different team. That's a lot of time and effort we can use to better our product.
+If done consistently, our teams initially search for existing solutions within our company, before building something new. An internal platform with properly evangelized work can remove two sprint cycles for a different team. Vice versa our team can reduce bottle necks in communication, integration, or release processes by getting inspired by other teams approach.
 
-## Measuring productivity
+Public showings offer our engineers a platform to demonstrate their accomplishments and accelerate their career progression. Plus, the sense of responsibility we experience when planning, implementing, delivering, and presenting our work reduces the likelihood of feeling unfulfilled at our current organization. Healthy retrospectives help develop and retain top talent.
+
+### Measuring productivity
 
 Performance evaluation is an emotional topic which relies heavily on empathy. Over the years various companies implemented varioations of metric based performance evaluations to varying degrees of failure. Our continous ambition of trying to measure individual productivity and performance unveilied a plethora of metrics that do NOT work. These include lines of code written, lines of code deleted, story points completed in a sprint, story points pushed over to next sprint, number of bug reports closed, number of bug reports opened, and the paradoxical list goes on and on.
 
