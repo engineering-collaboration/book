@@ -9,15 +9,15 @@
 
 <!-- What is a sprint -->
 
-Any significant work passes through three phases: planning, execution, and reflection. We determine what we want to achieve, do the work, and verify whether we completed our objective and if we can improve our approach. Within software engineering we commonly refer to this cycle as a *Sprint*. By coordinating and planning our tasks for the next weeks, we can concentrate on executing them with minimal distractions.
+Any significant work passes through three phases: planning, execution, and reflection. We determine what we want to achieve, do the work, and verify whether we completed our objective and how to improve our process. Within software engineering we commonly refer to this cycle as a *Sprint*.
 
-A sprint plan offers a stable framework for us to complete our work. Pivoting our attention across unexpected tasks leads to expensive context changes. We run the risk of becoming overly reactionary and hinder our progress on our current goal. This becomes especially costly when other people depend on our work, as we effectively stall development across teams.
+Sprints offer a stable framework for us to complete our work. By coordinating and planning our tasks for the next weeks, we can concentrate on executing them with minimal distractions. Pivoting our attention across unexpected tasks leads to expensive context changes and we run the risk of hindering progress by becoming overly reactionary. This becomes especially costly when other people depend on our work, as we effectively stall development across teams.
 
 Naturally, immediate and urgent issues do warrant attention. If we observe metrics or reports that present potential lethal problems, we put our work aside and ensure our customers can continue using our software. However, non-severe customer feedback should not interfere with our current progress and can be included in our next sprint cycle's planning.
 
 <!-- Reflect on the work done -->
 
-We complete a sprint cycle by reflecting on our work. Scheduled retrospective sessions accomplish two functions. Firstly, we have the chance to share our insights on things that went well, and things that did not, including mistakes we made personally, missing functionality in tools, insights and information we wish we had had sooner, or conversations we could have avoided entirely.
+We complete a sprint cycle with scheduled retrospective sessions, which accomplish two functions: Firstly, we have the chance to share our insights on things that went well, and things that did not, including mistakes we made personally, missing functionality in tools, insights and information we wish we had had sooner, or conversations we could have avoided entirely.
 
 Secondly, sprint retrospectives enable us to evangelize our work internally. We showcase our work and distribute demos across our organization. Sharing our progress with other teams potentially avoids duplicate work and promotes innersourcing opportunities.
 
@@ -29,13 +29,13 @@ Fashionable Scrum and Agile practices preach sprints as a framework for deliveri
 
 The length of our sprint cycles depends on the needs of our organization and product. Typically, a cycle period ranges from one week to three weeks. No relevant work can happen in a time span shorter than a week and any sprint longer than three weeks diminishes our ability to react to market demands.
 
-Our sprint length adapts and grows with our organization's size and maturity. Successful start-ups address feedback from customers and investors quickly, thus feature schedules and bug fixes shift on a weekly basis. While founders may have to adjust their schedule on a daily basis, this seldomly includes work related to code. Planning, executing, and delivering on a weekly basis without pivoting mid-sprint ensures steady progress and dampens the emotional amplitudes of founding a company.
+Our sprint length adapts and grows with our organization's size and maturity. Successful start-ups address feedback from customers and investors quickly, thus code-related tasks shift on a weekly basis. Planning, executing, and delivering weekly with a minimum of actionable distractions ensures steady progress and dampens the emotional amplitudes of founding a company.
 
-To reduce the overhead of sprint planning and retrospection, we eventually move to two week sprint cycles. When we reducing the time spent in meetings, we increase the time spent solving problems. Two week cycles have become standard across the majority of scale-ups to provide a growing organization consistent insights on the progress of other projects and teams.
+To reduce the overhead of planning and evaluating sprints, we eventually move to two week sprint cycles. A reduced time spent in meetings, increases the time spent solving problems. Two week cycles have become standard across the majority of scale-ups and provide a consistent insights on the progress for growing organization.
 
-Established teams working in mature environments may decide to expand the cycle span to three weeks. When the main challenges in our organization are inter-team politics, processes, and protocols, a longer work cycle helps shield our team from noise. Longer work cycles require discipline, automation, and transparency for continuous integration and delivery practice, a topic we discuss in detail in Part II. Without established practices work gets lost or becomes unwieldy.
+Established teams in mature environments may decide to expand the cycle span to three weeks. When the main challenges in our organization are inter-team politics, processes, and protocols, a longer work cycle helps shield our team from noise. Longer work cycles require discipline, automation, and transparency for continuous integration and delivery practice (a topic we discuss in detail in Part II). Without these established practices, our work gets lost or becomes unwieldy.
 
-While they run on a weekly schedule, sprint cycles do not have to start on the first day of the week. Monday and Friday are excellent buffer days to polish work, demos, prepare screen recordings, apply code review feedback, and write additional documentation. We consider our team demographics when reserving time slots for our kick-off and demo meetings.
+While they run on a weekly schedule, sprint cycles do not have to start on the first day of the week. Monday and Friday are excellent buffer days to polish work, practice demos, prepare screen recordings, and write additional documentation.
 
 ## Planning
 
@@ -73,7 +73,7 @@ Part II of this book covers the lifecycle of a code change in-depth and recommen
 
 <!-- 👇 Current editing -->
 
-**Organizational updates** inform our project leads what projects allocate which resources. Our individual contributors inform us about the gradn scheme of things. Will the task at hand be completed by the expected time, are we delayed, are we blocked by something, did we shelve the task for something more important. These updates require no technical knowledge and do not include any technical jargon. We add comments to our tickets and update deadlines on our platform. Organizational updates are close to the ticket.
+**Organizational updates** inform our stakeholders of a projects allocated resources. Our individual contributors inform us about the gradn scheme of things. Will the task at hand be completed by the expected time, are we delayed, are we blocked by something, did we shelve the task for something more important. These updates require no technical knowledge and do not include any technical jargon. We add comments to our tickets and update deadlines on our platform. Organizational updates are close to the ticket.
 
 **Technical updates**. What decisions did we have to make and which option did we choose. Who needs to consume this. These are part of the planning process and typcailly involve a design document. The final decisions are documented within a Pull Request. We cover technical updates in Part II of the book, specificailly in the chapters [Planning Implementations](../collaborating-within-a-codebase/planning-implementations.md), [Pull Requests](../collaborating-within-a-codebase/pull-requests.md), and [Documentation](../collaborating-within-a-codebase/documentation.md). Technical updates are close to the code.
 
