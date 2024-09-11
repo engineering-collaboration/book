@@ -9,23 +9,21 @@
 
 <!-- What is a sprint -->
 
-Any significant work passes through three phases: planning, execution, and reflection. We determine what we want to achieve, do the work, and verify whether we completed our objective and if we can improve our approach. Within software engineering we commonly refer to this cycle as a *Sprint*.
+Any significant work passes through three phases: planning, execution, and reflection. We determine what we want to achieve, do the work, and verify whether we completed our objective and if we can improve our approach. Within software engineering we commonly refer to this cycle as a *Sprint*. By coordinating and planning our tasks for the next weeks, we can concentrate on executing them with minimal distractions.
 
-<!-- Stick to the plan -->
+A sprint plan offers a stable framework for us to complete our work. Pivoting our attention across unexpected tasks leads to expensive context changes. We run the risk of becoming overly reactionary and hinder our progress on our current goal. This becomes especially costly when other people depend on our work, as we effectively stall development across teams.
 
-By coordinating and planning our tasks for the next weeks, we can concentrate on executing them with minimal distractions. After agreeing on a sprint plan, we do not change what we work on mid-sprint, except for immediate and urgent issues. These issues, called *showstoppers*, consist of severe issues and crashes which our software cannot recover from and leaves our customers unable to continue their operations.
-
-Showstoppers do not include customer feedback, bug reports, or user inconveniences; anything with a work-around can wait a cycle. Instead of working on incoming non-severe issues, we include them in our next sprint cycle's planning. Pivoting our attention across unexpected tasks leads to expensive context changes. We run the risk of becoming to reactionary and hinder our progress on our current goal. This becomes especially costly when other people depend on our work, as we effectively stall development across teams.
+Naturally, immediate and urgent issues do warrant attention. If we observe metrics or reports that present potential lethal problems, we put our work aside and ensure our customers can continue using our software. However, non-severe customer feedback should not interfere with our current progress and can be included in our next sprint cycle's planning.
 
 <!-- Reflect on the work done -->
 
-We complete a sprint cycle by reflecting on our work during a retrospective session. These scheduled conclusions to a sprint accomplish two functions. Firstly, we have the chance to share our insights on things that went well, and things that did not, including mistakes we made personally, or company tooling with missing functionality, insights and information we wish we had had sooner, or conversations we could have avoided entirely, unexpected development friction, and time sinks we may anticipate next time.
+We complete a sprint cycle by reflecting on our work. Scheduled retrospective sessions accomplish two functions. Firstly, we have the chance to share our insights on things that went well, and things that did not, including mistakes we made personally, missing functionality in tools, insights and information we wish we had had sooner, or conversations we could have avoided entirely.
 
-Secondly, sprint retrospectives enable us to evangelize our work internally. We showcase screen recordings and images of our work, provide demos and distribute these within and across our teams. Sharing our progress and future plans with other teams potentially avoids duplicate work done within our organization. Plus, we can consolidate feedback and additional use cases from other teams and identify innersourcing opportunities.
+Secondly, sprint retrospectives enable us to evangelize our work internally. We showcase our work and distribute demos across our organization. Sharing our progress with other teams potentially avoids duplicate work and promotes innersourcing opportunities.
 
 <!-- What a sprint is NOT -->
 
-Fashionable Scrum and Agile practices preach sprints as a framework for delivering binaries every sprint for feedback cycles. This is nonsense. As high-performing teams we ship our software when needed (as often as multiple times per day), as a feedback cycle measured in weeks is unacceptable for the majority of software. Part II of this book discusses our approach for continuous delivery in detail, but presently we establish that **a sprint cycle has no relationship with the delivery of our software**.
+Fashionable Scrum and Agile practices preach sprints as a framework for delivering binaries every sprint for feedback cycles. This is nonsense. As high-performing teams we ship our software when needed (as often as multiple times per day). Feedback cycles measured in weeks are unacceptable for the majority of software. Part II of this book discusses our approach for continuous delivery in detail, but presently we establish that **a sprint cycle has no relationship with the delivery of our software**.
 
 ## Cycle duration
 
@@ -69,13 +67,11 @@ Story points only work team internally. They cannot be directly used as a measur
 
 Finally, as a team lead, we plan for unexpected work. People get distracted, called into additional meetings, have family emergencies, and get sick, hurt, or hungover.
 
-<!-- 👇 Current editing -->
-
 ## Communicating progress
 
-With the planning meeting completed, we have locked in our tasks for the sprint. Part II of this book covers the lifecycle of a code change in-depth and recommends practices for planning and executing tasks. Thus, we postpone the mental and manual labour of software engineering to another chapter and focus on a different responsibility, communicating progress. We enable our teams to share updates on progress or, more crucially, a lack of progress, with little effort and no judgement.
+Part II of this book covers the lifecycle of a code change in-depth and recommends practices for planning and executing tasks. This chapter focuses on communicating development updates and how we enable our teams to share progress and, more crucially, a lack of progress with little effort and no judgement. We typically find ourselves giving three different kinds of status reports: organizational updates, technical updates, and progress updates.
 
-While chipping away on our work, we typically find ourselves giving three different kinds of status reports: organizational updates, technical updates, and progress updates.
+<!-- 👇 Current editing -->
 
 **Organizational updates** inform our project leads what projects allocate which resources. Our individual contributors inform us about the gradn scheme of things. Will the task at hand be completed by the expected time, are we delayed, are we blocked by something, did we shelve the task for something more important. These updates require no technical knowledge and do not include any technical jargon. We add comments to our tickets and update deadlines on our platform. Organizational updates are close to the ticket.
 
@@ -162,3 +158,5 @@ An inherent problem with metric-driven performance evaluation is that when thing
 Some companies famously pride themselves on creating a cut-throat environment of constant competitiveness. That mindset is the antithesis of this book. Productivity increases when our team members take responsibility for their work. In order to do that for work worth doing, our teams must be permitted to fail. We prefer to own an issue, rather than hitting a deadline.
 
 In summary, while retrospectives offer a chance for self reflection, we do not misuse them to extract data sets for future performance interviews. Measuring performance is an emotional process which relies heavily on empathy and a transparent feedback cycle of expectations and responsibilities from both parties.
+
+Sprint goal achieved.
