@@ -11,7 +11,7 @@
 
 Any significant work passes through three phases: planning, execution, and reflection. We determine what we want to achieve, do the work, and verify whether we completed our objective and how to improve our process. Within software engineering we commonly refer to this cycle as a *Sprint*.
 
-Sprints offer a stable framework for us to complete our work. By coordinating and planning our tasks for the next weeks, we can concentrate on executing them with minimal distractions. Pivoting our attention across unexpected tasks leads to expensive context changes and we run the risk of hindering progress by becoming overly reactionary. This becomes especially costly when other people depend on our work, as we effectively stall development across teams.
+Sprints offer a stable framework for us to complete our work. By coordinating and planning our tasks for the next weeks, we can concentrate on executing them with minimal distractions. Pivoting our attention across unexpected tasks  leaders to expensive context changes and we run the risk of hindering progress by becoming overly reactionary. This becomes especially costly when other people depend on our work, as we effectively stall development across teams.
 
 Naturally, immediate and urgent issues do warrant attention. If we observe metrics or reports that present potential lethal problems, we put our work aside and ensure our customers can continue using our software. However, non-severe customer feedback should not interfere with our current progress and can be included in our next sprint cycle's planning.
 
@@ -39,39 +39,39 @@ While they run on a weekly schedule, sprint cycles do not have to start on the f
 
 ## Planning
 
-Before a sprint cycle, our team leads work with our product stakeholders to prioritize immediate tasks and create a *backlog*, a list of outstanding things to do. Our team leads refine bigger backlog items into granular actionable items, broadly called *tickets*. Tickets cover bug reports, support requests, and feature implementation.
+At least once per yearly quarter, product stakeholders are forced to and arrange their product wishes by priority. We refer to this list of outstanding things as our *backlog*. Before a sprint cycle, our team leaders refine backlog items into granular actionable tasks, fashionably called *tickets*. These tickets represent work on bug reports, support requests, and feature implementation.
 
-We start sprints with a kick-off meeting in which we discuss the tasks within the team. Our team leads pre-assign tickets to the team members that most match the tasks domain. During the kick-off meeting, we might decide to redesignate certain tasks to upskill team members, spread knowledge horizontally, or distribute an unusual amount of domain work across the team.
+We kick off a sprint by meeting with our team to discuss this cycle's tasks. Before the meeting, our team leaders provisionally assign tickets to the team members that most match the tasks domain. While discussing the tasks, the team might decide to redesignate certain tasks in order to upskill team members, spread knowledge horizontally, or distribute the amount of work across the team.
 
-All team members are present for the duration of the meeting. Every individual contributor describes their task to the team, after which we estimate the workload as a group. Presenting our tickets to the team ensures we collectively have an idea about our team's current responsibilities and progress.
+All team members are present for the duration of the meeting and every individual contributor describes their task to the team, after which we estimate the workload as a group. Presenting our tickets to the team ensures we collectively understand our team's current responsibilities and progress.
 
 ### Estimating work
 
-Humans are remarkably bad at estimating work. It's a skill that we simply cannot intuit. Besides not being able to predict the actual time it takes to execute work, we severely underestimate the amount of distractions in our lives that hinders our progress.
+Humans are remarkably bad at estimating work. It's a skill that we simply cannot intuit. Besides not being able to predict the actual time it takes to execute work, we severely underestimate the amount of distractions in our lives that hinder our progress.
 
-In their book *Noise: A Flaw in Human Judgement*, *Daniel Kahneman*, *Olivier Sibony*, and *Cass R. Sunstein* discuss how individual judgement and estimates tend to be so unpredictable they border on randomness. Every decision is affected by a person's mood; caused by breakfast intake, weather, spousal discourses, and numerous subtle influences we do not consciously control. When asked to judge the workload for an upcoming feature, the a persons estimation differs significantly from one day to another.
+In the book *Noise: A Flaw in Human Judgement*, *Daniel Kahneman*, *Olivier Sibony*, and *Cass R. Sunstein* discuss how individual judgement and estimates are so unpredictable the outcomes effectively become random. Every decision varies depending on a person's current state of mind; caused by breakfast intake, weather, spousal discourses, and more. We do not control these subtle influences consciously, nor are we aware of them. This causes our estimation for upcoming work to differ significantly from one day to another.
 
-Classifying human judgement as random allows us to gather data and use statistical sampling to obtain numerical results. The book *Noise* covers an experiment demonstrating the so-called the *Wisdom of the Crowds*: *"In 1907, Francis Galton, [...] asked 787 villagers at a country fair to estimate the weight of a prize ox. None of the villagers guessed the actual weight of the ox, which was 1,198 pounds, but the mean of their guesses was 1,200, just 2 pounds off [...]"*
+Classifying human judgement as random allows us to gather data and use statistical sampling to obtain numerical results. The book *Noise* covers an experiment demonstrating of the so-called *Wisdom of the Crowds* effect: *"In 1907, Francis Galton, [...] asked 787 villagers at a country fair to estimate the weight of a prize ox. None of the villagers guessed the actual weight of the ox, which was 1,198 pounds, but the mean of their guesses was 1,200, just 2 pounds off [...]"*
 
-The *Wisdom of the Crowds* is a natural phenomena where the average educated guess of a group of people becomes surprisingly accurate to the actual result. We can leverage that effect by having all our team members estimate the workload of a ticket and averaging the result. To avoid influencing each other, we give these estimates independently from one another in a poll before revealing the result.
+This natural phenomena demonstrates how the average estimate from a large group of people becomes surprisingly accurate to the actual result. We can leverage that effect by having all our team members estimate the workload of a ticket and averaging the result. To avoid influencing each other, we poll these estimates independently from one another before revealing the result.
 
 <!-- Story points -->
 
-We further increase the quality of our estimates by introducing a layer of abstraction on how we measure progress. A popular, yet divisive, practice is the use of *Story Points*. These represent an arbitrary unit of measurement for development velocity. Instead of calculating our workload in time, e.g. hours or days, we estimate our tasks in *Story Points*. These have no real-life counterpart and it is difficult to determine whether our estimation was wrong.
+We may further increase the quality of our estimates by introducing a layer of abstraction on how we measure progress. A widespread (yet divisive) practice is the use of *Story Points*. These represent an arbitrary unit of measurement for development velocity. Instead of calculating our workload in time, e.g. hours or days, we estimate our tasks in *Story Points*. These have no real-life counterpart and thus lend themselves to subjectivity.
 
-Every developer has an internal mapping of what a story point represents to them. However, as we have already established, we struggle to accurately predict the workload of an assigned task. The additional layer of abstraction between the unit of time and the unit of velocity allows us to create benchmarks of velocity across sprints. After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realistic plans and expectations, even if our team misjudges the workload internally.
+Every developer has an internal mapping of what a story point represents to them. However, as already established, we struggle to accurately predict the workload of an assigned task. The additional layer of abstraction between the unit of time and the unit of velocity allows us to create benchmarks of velocity across sprints. After a certain amount of sprints we can realistically deduce how many story points our team can achieve per sprint and share realistic plans and expectations, even if our team misjudges the workload internally.
 
-Predicting the future with arbitrary guesswork makes us uncomfortable. It feels unscientific. Thus, we employ a mathematical guide to structure our story points. The Fibonacci sequence is a numerical pattern in which each number consists of the sum of the two preceding ones. Our tasks may therefore allocate any one of the following amount of story points: 1, 2, 3, 5, 8, 13, or 21. Limiting our estimations to these options, reduces our cognitive load and increases our confidence in estimating a task. We may now deduce the workload on a spectrum ranging from very small to very large effort.
+Predicting the future through arbitrary guesswork makes us uncomfortable. It feels unscientific. To make the process feel methodical, we attach a mathematical structure to our story points. The Fibonacci sequence is a numerical pattern in which each number consists of the sum of the two preceding ones. Our tasks may therefore allocate any one of the following amount of story points: 1, 2, 3, 5, 8, 13, or 21. Limiting our estimations to these options reduces our cognitive load and increases our confidence in estimating a task. We may now assign a unit of effort, ranging from very small to very large.
 
-Story points only work team internally. They cannot be directly used as a measurement for productivity across teams. The mix of tools, communication channels, personalities, and infrastructure deployments is likely to be unique to our team. Comparing story points across teams is as useful as comparing shoe sizes across teams.
+Story points are team internal metrics. They cannot be directly used as a measurement for productivity across teams. The combination of tools, communication channels, personalities, and infrastructure is likely unique per team. Comparing story points across teams is as useful as comparing shoe sizes across teams.
 
-Finally, as a team lead, we plan for unexpected work. People get distracted, called into additional meetings, have family emergencies, and get sick, hurt, or hungover.
+Finally, team leaders plan additional time to compensate for unexpected work. People get distracted, called into additional meetings, and have family emergencies. We also get sick, hurt, and hungover, which increases the time spent on our tasks.
+
+<!-- 👇 Current editing -->
 
 ## Communicating progress
 
 Part II of this book covers the lifecycle of a code change in-depth and recommends practices for planning and executing tasks. This chapter focuses on communicating development updates and how we enable our teams to share progress and, more crucially, a lack of progress with little effort and no judgement. We typically find ourselves giving three different kinds of status reports: organizational updates, technical updates, and progress updates.
-
-<!-- 👇 Current editing -->
 
 **Organizational updates** inform our stakeholders of a projects allocated resources. Our individual contributors inform us about the gradn scheme of things. Will the task at hand be completed by the expected time, are we delayed, are we blocked by something, did we shelve the task for something more important. These updates require no technical knowledge and do not include any technical jargon. We add comments to our tickets and update deadlines on our platform. Organizational updates are close to the ticket.
 
@@ -108,13 +108,13 @@ Engineers that talk to each other, solve problems faster. Once a day the entire 
 - What am I working on today?
 - Do I have any blockers?
 
-Daily status updates help the individual, the team, and the team lead to reflect on the work being done. These updates are not a mechanism to evaluate performance and we stop any indication that the are viewed as such. The person with the busiest status is not the most productive team member, in fact most times it's the opposite.
+Daily status updates help the individual, the team, and the team leader to reflect on the work being done. These updates are not a mechanism to evaluate performance and we stop any indication that the are viewed as such. The person with the busiest status is not the most productive team member, in fact most times it's the opposite.
 
 If we find ourselves regularly considering "what we even worked on yesterday", we reflect on our current responsibilities and how these take shape throughout our work day. How many meetings did we attend, and how many did we actually contribute to? How many tasks run in parallel and do our context switches hinder our progress? Daily status updates help us identify frictions in our tasks, which would otherwise go unnoticed for a while.
 
 Teams benefit of the shared knowledge and insights from daily status updates. Teams typically share a domain overlap and other team members might have faced the same issues we are currently working. The help of our immediate colleagues is a quick and cheap way to become unstuck, if we should ever feel so.
 
-As team leads, daily status updates inform us whether our team has any blocking issues. With extended experienced, we might even be able to anticipate and prevent blocking issues before they arise. Besides blockers, we keep an eye out for distractions and additional workload. We protect our team from top-down priority shifts or unplanned support tasks from other teams. Allowing other teams to allocate large portions of our team's development time reduces our output. Besides costing our company money, this perceived lack in performance is detrimental to our team member's career progression.
+As team  leaders, daily status updates inform us whether our team has any blocking issues. With extended experienced, we might even be able to anticipate and prevent blocking issues before they arise. Besides blockers, we keep an eye out for distractions and additional workload. We protect our team from top-down priority shifts or unplanned support tasks from other teams. Allowing other teams to allocate large portions of our team's development time reduces our output. Besides costing our company money, this perceived lack in performance is detrimental to our team member's career progression.
 
 Lastly, sprint plans change. Daily status meetings enable us to detect and communicate delays early and to plan accordingly. 
 
