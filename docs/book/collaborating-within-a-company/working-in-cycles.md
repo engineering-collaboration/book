@@ -91,8 +91,6 @@ Having too many cards "stuck" in a certain column potentially heralds a problem 
 
 The strength of Kanban boards lie within their simplicity. They should load quickly and be the landing page for our team's ticket platform. Making our engineers jump through additional hoops for creating or updating tickets reduces the acceptance and effectiveness of the practice.
 
-<!-- 👇 Current editing -->
-
 ### Daily status updates
 
 <!-- Why have dailies -->
@@ -103,11 +101,19 @@ Engineers that talk to each other, solve problems faster. Once a day the entire 
 - What am I working on today?
 - Do I have any blockers?
 
-Daily status updates help the individual, the team, and the team leader to reflect on the work being done. These updates are not a mechanism to evaluate performance and we stop any indication that the are viewed as such. The person with the busiest status is not the most productive team member, in fact most times it's the opposite.
+Daily progress updates help the engineer and the team to reflect on the work being done. These updates are not a mechanism to evaluate performance. If these start to be viewed as such, we correct any behavior that might have led to that conclusion. There is little correlation between the verbosity of the status update and the productivity of the team member. Being busy differs from being productive.
+
+<!-- 👇 Current editing -->
+
+<!-- Personal use -->
 
 If we find ourselves regularly considering "what we even worked on yesterday", we reflect on our current responsibilities and how these take shape throughout our work day. How many meetings did we attend, and how many did we actually contribute to? How many tasks run in parallel and do our context switches hinder our progress? Daily status updates help us identify frictions in our tasks, which would otherwise go unnoticed for a while.
 
+<!-- Team use -->
+
 Teams benefit of the shared knowledge and insights from daily status updates. Teams typically share a domain overlap and other team members might have faced the same issues we are currently working. The help of our immediate colleagues is a quick and cheap way to become unstuck, if we should ever feel so.
+
+<!-- Team Leader use -->
 
 As team  leaders, daily status updates inform us whether our team has any blocking issues. With extended experienced, we might even be able to anticipate and prevent blocking issues before they arise. Besides blockers, we keep an eye out for distractions and additional workload. We protect our team from top-down priority shifts or unplanned support tasks from other teams. Allowing other teams to allocate large portions of our team's development time reduces our output. Besides costing our company money, this perceived lack in performance is detrimental to our team member's career progression.
 
