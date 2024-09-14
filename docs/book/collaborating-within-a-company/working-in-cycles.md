@@ -71,29 +71,27 @@ Finally, team leaders plan additional time to compensate for unexpected work. Pe
 
 Part II, Collaborating within a Codebase, details the lifecycle of a code change. Since Part II examines how we can improve working on code-related tasks, this chapter focuses on communicating development updates, rather than the execution process itself. During development our team members need a way to share progress and, more crucially, a lack of progress with little effort and less judgement.
 
-While working on code improvements, we typically find ourselves giving three different kinds of status reports: technical updates, organizational updates, and progress updates.
+While working on code improvements, we typically find ourselves giving three different kinds of status reports: technical updates, organizational updates, and progress updates. Some organizations make the mistake of not separating between these three kinds of updates. They provide different functinos and are read in different context. The longevity, searchability, and storage vary between the three.
 
-When sharing **technical updates**, we detail the decision making process for our implementation strategy. As these are tightly coupled to the code we create, we skip technical updates for now and cover them in the chapters [*Planning Implementations*](../collaborating-within-a-codebase/planning-implementations.md), [*Pull Requests*](../collaborating-within-a-codebase/pull-requests.md), and [*Documentation*](../collaborating-within-a-codebase/documentation.md) of Part II - Collaborating within a Codebase. 
+When writing **technical updates**, we detail the decision making process for our implementation strategy. These documents live as long as the feature they describe, and should thus be stored with the source code. We skip the intricacies of technical updates for now and cover them in the chapters [*Planning Implementations*](../collaborating-within-a-codebase/planning-implementations.md), [*Pull Requests*](../collaborating-within-a-codebase/pull-requests.md), and [*Documentation*](../collaborating-within-a-codebase/documentation.md) of Part II - Collaborating within a Codebase.
 
-**Organizational updates** inform our stakeholders how much time, effort, and money are we spending on tasks and whether we can deliver projects on time and on budget. Our organization derives this information from our ticketing system, and requires little input from our individual contributors.
+**Organizational updates** inform our stakeholders how much time, effort, and money are we spending on tasks and whether we can deliver projects on time and on budget. Our organization derives this information from our ticketing system, and requires little input from our individual contributors as we do not include technical topics in organizational updates.
 
-We'll take a deeper dive into **progress updates**, discussing how we inform our team of the work we are currently doing and the problems we are facing. These updates are immediately actionable and become outdated quickly. We share progress updates frequently and err on the side of overcommunication. Nobody wants our team to be the source of surprises.
-
-<!-- 👇 Current editing -->
+Our **progress updates** detail the work we are currently doing and the problems we are facing. These updates are immediately actionable and become outdated quickly. We share progress updates frequently with our team and err on the side of overcommunication. Nobody wants our team to be the source of surprises.
 
 ### Kanban boards
 
-These boards have gained popularity over the last decade. All modern task management platforms now offer a Kanban view. Kanban boards visualize tasks as cards that can be placed within one of several columns to represent the state the task is currently in. Typical states are "Todo", "In progress", "In review", and "Completed", but any team can create an arbitrary set of columns.
+These boards have gained popularity over the last decade. All modern task management platforms now offer a Kanban view. Kanban boards visualize tasks as cards that can be placed within one of several columns. These columns to represent the state the task is currently in. Typical states are "Todo", "In progress", "In review", and "Completed", but any team can create an arbitrary set of columns.
 
 ![Representation of a kanban board, with four columns showing stages of a workflow, with various cards scattered across the board.](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Abstract_Kanban_Board.svg/2880px-Abstract_Kanban_Board.svg.png)
 
-The visual simplicity of Kanban boards communicates the progress of a team member's workload at a glance. They are easy to update and make organizational updates frictionless. Engineers drag and drop cards between columns without the need of devoting time or cognitive load to communication. Most platforms offer events or hooks to to trigger automated processes or to notify stakeholders and provide additional context for organizational updates and progress updates. 
+The visual simplicity of Kanban boards details our current workload in an intuitive way. Our tasks are easy to update and make organizational updates frictionless. Engineers drag and drop cards between columns without the need of devoting time or cognitive load to communication. Most task management platforms offer events or hooks to to trigger automated processes when moving tickets between columns. We use these tools to notify stakeholders and provide context for organizational and progress updates.
 
-Kanban boards act as early warnings for problems in development processes if too many cards are "stuck" in a certain column. For example, a large pool of cards in the "Todo" section in the latter half of our sprint cycle, suggests we might not be able to achieve our sprint goals. Too many cards in the "In progress" section indicate a wide spread of responsibilities that signals expensive context switching. Bottle necks in the "In Review" alerts us to review our review process, as it may no longer not match our teams current needs.
+Having too many cards "stuck" in a certain column potentially heralds a problem in our development process. For example, a large pool of cards in the "Todo" section during latter half of our sprint cycle, suggests we might not be able to achieve our sprint goals. Too many cards flagged as "In progress" indicates a very wide spread of responsibilities, leading to expensive context switches. "In Review" bottle necks invite us to review our review process, as it may no longer not match our teams current needs.
 
-we do not add technical information to tickets.
+The strength of Kanban boards lie within their simplicity. They should load quickly and be the landing page for our team's ticket platform. Making our engineers jump through additional hoops for creating or updating tickets reduces the acceptance and effectiveness of the practice.
 
-The strength of Kanban boards lie within their simplicity. Slow loading times or encumbering state changes with additional requirements reduces the acceptance and effectiveness of the practice.
+<!-- 👇 Current editing -->
 
 ### Daily status updates
 
