@@ -67,34 +67,31 @@ Story points are team internal metrics. They cannot be directly used as a measur
 
 Finally, team leaders plan additional time to compensate for unexpected work. People get distracted, called into additional meetings, and have family emergencies. We also get sick, hurt, and hungover, which increases the time spent on our tasks.
 
-<!-- 👇 Current editing -->
-
 ## Communicating progress
 
-Part II of this book covers the lifecycle of a code change in-depth and recommends practices for planning and executing tasks. This chapter focuses on communicating development updates and how we enable our teams to share progress and, more crucially, a lack of progress with little effort and no judgement. We typically find ourselves giving three different kinds of status reports: organizational updates, technical updates, and progress updates.
+Part II, Collaborating within a Codebase, details the lifecycle of a code change. Since Part II examines how we can improve working on code-related tasks, this chapter focuses on communicating development updates, rather than the execution process itself. During development our team members need a way to share progress and, more crucially, a lack of progress with little effort and less judgement.
 
-**Organizational updates** inform our stakeholders of a projects allocated resources. Our individual contributors inform us about the gradn scheme of things. Will the task at hand be completed by the expected time, are we delayed, are we blocked by something, did we shelve the task for something more important. These updates require no technical knowledge and do not include any technical jargon. We add comments to our tickets and update deadlines on our platform. Organizational updates are close to the ticket.
+While working on code improvements, we typically find ourselves giving three different kinds of status reports: technical updates, organizational updates, and progress updates.
 
-**Technical updates**. What decisions did we have to make and which option did we choose. Who needs to consume this. These are part of the planning process and typcailly involve a design document. The final decisions are documented within a Pull Request. We cover technical updates in Part II of the book, specificailly in the chapters [Planning Implementations](../collaborating-within-a-codebase/planning-implementations.md), [Pull Requests](../collaborating-within-a-codebase/pull-requests.md), and [Documentation](../collaborating-within-a-codebase/documentation.md). Technical updates are close to the code.
+When sharing **technical updates**, we detail the decision making process for our implementation strategy. As these are tightly coupled to the code we create, we skip technical updates for now and cover them in the chapters [*Planning Implementations*](../collaborating-within-a-codebase/planning-implementations.md), [*Pull Requests*](../collaborating-within-a-codebase/pull-requests.md), and [*Documentation*](../collaborating-within-a-codebase/documentation.md) of Part II - Collaborating within a Codebase. 
 
-This chapter focuses on the third kind of updates, **progress updates**. We inform our team of the work we are currently doing and the problems we are facing.
+**Organizational updates** inform our stakeholders how much time, effort, and money are we spending on tasks and whether we can deliver projects on time and on budget. Our organization derives this information from our ticketing system, and requires little input from our individual contributors.
 
-We actively communicate our current work and challenges and share our progress on solving the problems we are facing in a couple of lines. We verify the progress achieved with the remaining sprint duration and keep track what we can and cannot realistically achieve. We do not want our team to be the source of suprises when reporting our status to our department head.
+We'll take a deeper dive into **progress updates**, discussing how we inform our team of the work we are currently doing and the problems we are facing. These updates are immediately actionable and become outdated quickly. We share progress updates frequently and err on the side of overcommunication. Nobody wants our team to be the source of surprises.
 
-To offer
-Checkign for blockers. Everybody can reach out on their own at any time anyway, we're all adults.
-Overcommunicate
-ask for clarification
+<!-- 👇 Current editing -->
 
 ### Kanban boards
 
-These boards have gained popularity over the last decade with all modern task management platforms offering a Kanban view. Kanban boards visualize tasks as cards that can be placed within one of several columns to represent the state the task is currently in. Typical states are "Todo", "In progress", "In review", and "Completed", but any team can create an arbitrary set of columns.
+These boards have gained popularity over the last decade. All modern task management platforms now offer a Kanban view. Kanban boards visualize tasks as cards that can be placed within one of several columns to represent the state the task is currently in. Typical states are "Todo", "In progress", "In review", and "Completed", but any team can create an arbitrary set of columns.
 
 ![Representation of a kanban board, with four columns showing stages of a workflow, with various cards scattered across the board.](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Abstract_Kanban_Board.svg/2880px-Abstract_Kanban_Board.svg.png)
 
-The visual simplicity of Kanban boards communicates the progress of a team member's workload at a glance. They are easy to update and maintain, as we just drag and drop cards between columns without the need of devoting time or cognitive load to communication. When dragging cards between states, we trigger downstream actions to kick off automated processes or to notify stakeholders and provide additional context for organizational updates and progress updates. 
+The visual simplicity of Kanban boards communicates the progress of a team member's workload at a glance. They are easy to update and make organizational updates frictionless. Engineers drag and drop cards between columns without the need of devoting time or cognitive load to communication. Most platforms offer events or hooks to to trigger automated processes or to notify stakeholders and provide additional context for organizational updates and progress updates. 
 
 Kanban boards act as early warnings for problems in development processes if too many cards are "stuck" in a certain column. For example, a large pool of cards in the "Todo" section in the latter half of our sprint cycle, suggests we might not be able to achieve our sprint goals. Too many cards in the "In progress" section indicate a wide spread of responsibilities that signals expensive context switching. Bottle necks in the "In Review" alerts us to review our review process, as it may no longer not match our teams current needs.
+
+we do not add technical information to tickets.
 
 The strength of Kanban boards lie within their simplicity. Slow loading times or encumbering state changes with additional requirements reduces the acceptance and effectiveness of the practice.
 
