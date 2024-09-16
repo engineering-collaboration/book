@@ -71,92 +71,117 @@ Finally, team leaders plan additional time to compensate for unexpected work. Pe
 
 Part II, *Collaborating Within a Codebase*, details the lifecycle of a code change. Since Part II examines how we can improve working on code-related tasks, this chapter focuses on communicating development updates rather than the execution process itself. During development, our team members need a way to share progress, and more crucially, a lack of progress, with little effort and less judgment.
 
-While working on code improvements, we typically find ourselves giving three different kinds of status reports: technical updates, organizational updates, and progress updates. Some organizations make the mistake of not separating between these three kinds of updates. They provide different functions and are read in different contexts. The longevity, searchability, and storage vary between the three.
+While working on code improvements, we typically find ourselves giving three different kinds of status reports: technical updates, organizational updates, and progress updates. Some organizations make the mistake of not separating these three kinds of updates. They serve different functions and are read in different contexts. The longevity, searchability, and storage vary between them.
 
 When writing **technical updates**, we detail the decision-making process for our implementation strategy. These documents live as long as the feature they describe and should be stored with the source code. We skip the intricacies of technical updates for now and cover them in the chapters [*Planning Implementations*](../collaborating-within-a-codebase/planning-implementations.md), [*Pull Requests*](../collaborating-within-a-codebase/pull-requests.md), and [*Documentation*](../collaborating-within-a-codebase/documentation.md) of Part II - *Collaborating Within a Codebase*.
 
-**Organizational updates** inform our stakeholders of how much time, effort, and money are we spending on a particular objective and whether we can deliver projects on time and on budget. Our organization derives this information from our ticketing system, and requires little input from our individual contributors as we do not include technical topics in organizational updates.
+**Organizational updates** inform our stakeholders about how much time, effort, and money we are spending on a particular objective and whether we can deliver projects on time and on budget. Our organization derives this information from our ticketing system, and it requires little input from individual contributors, as we do not include technical topics in organizational updates.
 
-Our **progress updates** detail the work we are currently doing and the problems we are facing. These updates are immediately actionable and become outdated quickly. We share progress updates frequently with our team and err on the side of overcommunication. Nobody wants our team to be the source of surprises.
+Our **progress updates** detail the work we are currently doing and the problems we are facing. These updates are immediately actionable and become outdated quickly. We share progress updates frequently with our team and err on the side of over-communication. Nobody wants our team to be the source of surprises.
 
-### Kanban boards
+### Kanban Boards
 
-These boards have gained popularity over the last decade. All modern task management platforms now offer a Kanban view. Kanban boards visualize tasks as cards that can be placed within one of several columns. These columns to represent the state the task is currently in. Typical states are "Todo", "In progress", "In review", and "Completed", but any team can create an arbitrary set of columns.
+These boards have gained popularity over the last decade. All modern task management platforms now offer a Kanban view. Kanban boards visualize tasks as cards that can be placed within one of several columns. These columns represent the state the task is currently in. Typical states are "To Do", "In Progress", "In Review", and "Completed", but any team can create an arbitrary set of columns.
 
-![Representation of a kanban board, with four columns showing stages of a workflow, with various cards scattered across the board.](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Abstract_Kanban_Board.svg/2880px-Abstract_Kanban_Board.svg.png)
+![Representation of a Kanban board, with four columns showing stages of a workflow, with various cards scattered across the board.](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Abstract_Kanban_Board.svg/2880px-Abstract_Kanban_Board.svg.png)
 
-The visual simplicity of Kanban boards details our current workload in an intuitive way. Our tasks are easy to update and make organizational updates frictionless. Engineers drag and drop cards between columns without the need of devoting time or cognitive load to communication. Most task management platforms offer events or hooks to trigger automated processes when moving tickets between columns. We use these tools to notify stakeholders and provide context for organizational and progress updates.
+The visual simplicity of Kanban boards details our current workload in an intuitive way. Our tasks are easy to update and make organizational updates frictionless. Engineers drag and drop cards between columns without the need to devote time or cognitive load to communication. Most task management platforms offer events or hooks to trigger automated processes when moving tickets between columns. We use these tools to notify stakeholders and provide context for organizational and progress updates.
 
-Having too many cards "stuck" in a certain column potentially heralds a problem in our development process. For example, a large pool of cards in the "Todo" section during latter half of our sprint cycle, suggests we might not be able to achieve our sprint goals. Too many cards flagged as "In progress" indicates a very wide spread of responsibilities, leading to expensive context switches. "In Review" bottle necks invite us to review our review process, as it may no longer not match our teams current needs.
+Having too many cards "stuck" in a certain column potentially signals a problem in our development process. For example, a large pool of cards in the "To Do" section during the latter half of our sprint cycle suggests we might not be able to achieve our sprint goals. Too many cards flagged as "In Progress" indicates a wide spread of responsibilities, leading to expensive context switches. "In Review" bottlenecks invite us to review our review process, as it may no longer match our team's current needs.
 
-The strength of Kanban boards lie within their simplicity. They should load quickly and be the landing page for our team's ticket platform. Making our engineers jump through additional hoops for creating or updating tickets reduces the acceptance and effectiveness of the practice.
+The strength of Kanban boards lies in their simplicity. They should load quickly and be the landing page for our team's ticket platform. Making our engineers jump through additional hoops to create or update tickets reduces the acceptance and effectiveness of the practice.
 
-### Daily status updates
+<!-- vale Vale.Terms = NO -->
+<!-- Daily -->
+### Daily Status Updates
+<!-- vale Vale.Terms = YES -->
 
 <!-- Why have dailies -->
 
-Engineers that talk to each other, solve problems faster. Once a day the entire team gathers to share their progress by answering three question:
+Engineers who talk to each other solve problems faster. Once a day, the entire team gathers to share their progress by answering three questions:
 
 - What did I work on yesterday?
 - What am I working on today?
 - Do I have any blockers?
 
-Daily progress updates help the engineer and the team to reflect on the work being done. These updates are not a mechanism to evaluate performance. If these start to be viewed as such, we correct any behavior that might have led to that conclusion. There is little correlation between the verbosity of the status update and the productivity of the team member. Being busy differs from being productive.
+<!-- vale write-good.ThereIs = NO -->
+<!-- vale Vale.Terms = NO -->
+<!-- Daily -->
+
+Daily progress updates help the engineer and the team reflect on the work being done. These updates are not a mechanism to evaluate performance. If they start to be viewed as such, we correct any behavior that might have led to that conclusion. There is little correlation between the verbosity of the status update and the productivity of the team member. Being busy does not equal being productive.
+
+<!-- vale Vale.Terms = YES -->
+<!-- vale write-good.ThereIs = YES -->
 
 <!-- Personal use -->
 
-Status updates force us to reflect on our tasks on a daily basis. The practice helps us identify development friction, that might otherwise go unnoticed for a longer period of time. If we frequently struggle to vocalize what yesterday's progress was, it's a strong indication of scattered focus. "What did I even do yesterday?" suggests we review the number of context switches we are forced to make, including how many meetings we attend (and contribute to). 
+<!-- vale write-good.Weasel = NO -->
+<!-- many -->
+
+Status updates force us to reflect on our tasks on a daily basis. The practice helps us identify development friction that might otherwise go unnoticed for a longer period of time. If we frequently struggle to vocalize what yesterday's progress was, it's a strong indication of scattered focus. "What did I even do yesterday?" suggests we review the number of context switches we are forced to make, including how many meetings we attend (and contribute to).
+
+<!-- vale write-good.Weasel = YES -->
 
 <!-- Team use -->
 
-Teams benefit of the shared knowledge and insights from daily status updates. Teams typically share a domain overlap and other team members might have faced the same issues we are currently working. The help of our immediate colleagues is a quick and cheap way to become unstuck, if we should ever feel so.
+Teams benefit from the shared knowledge and insights from daily status updates. Teams typically share a domain overlap, and other team members might have faced the same issues we are working on. The help of our immediate colleagues is a quick and cheap way to become unstuck, if we ever feel that way.
 
 <!-- Team Leader use -->
 
-As team leaders, daily status updates inform us of any blocking issues. With extended experience we might even be able to anticipate and prevent blocking issues before they arise. Besides blockers, we watch for distractions and unexpected workload. We protect our team from fluctuating priority shifts or a high amount of support requests. Allowing other teams to allocate large portions of our team's development time reduces our output measurably. Besides costing our company money, this perceived lack in performance is detrimental to our team member's career progression.
+As team leaders, daily status updates inform us of any blocking issues. With extended experience, we might even be able to anticipate and prevent blocking issues before they arise. Besides blockers, we watch for distractions and unexpected workload. We protect our team from fluctuating priority shifts or a high volume of support requests. Allowing other teams to allocate large portions of our team's development time reduces our output measurably. Besides costing our company money, this perceived lack of performance is detrimental to our team members' career progression.
+
+<!-- vale Vale.Terms = NO -->
+<!-- Daily -->
 
 Lastly, sprint plans change. Daily status meetings enable us to detect and communicate delays early and to plan accordingly. As mentioned, we never want to be the source of unpleasant surprises.
 
-#### Synchronous vs Asynchronous Updates
+<!-- vale Vale.Terms = YES -->
+
+#### Synchronous vs. Asynchronous Updates
 
 <!-- Current practices -->
 
-Daily progress updates have gained popularity via *Daily Stand-Up Meetings* from modern project management frameworks. Stand-ups are a form of meetings in which participants remain standing during the meeting. The main goal of this format is to keep the meeting brief and focused.
+<!-- vale Vale.Terms = NO -->
+<!-- Daily -->
 
-The context switch of a meeting forces us to spend around half an hour to refocus on our task after this interruption. Thus, the productivity we lose to meetings exceeds the duration of the meeting itself. It is up to us and the team to decide whether the the benefit of synchronous in-person (or virtual) meetings outweigh this cost. Alternatively, we might prefer asynchronous written updates.
+Daily progress updates have gained popularity via *Daily Stand-Up Meetings* from modern project management frameworks. Stand-ups are a type of meeting in which participants remain standing during the meeting. The main goal of this format is to keep the meeting brief and focused.
+
+<!-- vale Vale.Terms = YES -->
+
+The context switch of a meeting forces us to spend around half an hour refocusing on our task after the interruption. Thus, the productivity we lose to meetings exceeds the duration of the meeting itself. It is up to us and the team to decide whether the benefit of synchronous in-person (or virtual) meetings outweighs this cost. We might prefer asynchronous written updates.
 
 <!-- Meetings -->
 
-When practicing synchronous updates, we dedicate a maximum of 60 seconds to each member. A team consisting of ten people should last no longer than ten minutes. The objective stand-ups is not to solve problems, but to identify who might be able to assist us. It is the meeting's owner's responsibility to enforce this rule. When topics drift towards prolonged conversations about implementation details, we request the participants to set up a dedicated meeting ro resolve their conversation. As with any meeting, we expect the participants to be prepared and succinctly recite yesterdays and todays responsibilities.
+When practicing synchronous updates, we dedicate a maximum of 60 seconds to each member. A team consisting of ten people should last no longer than ten minutes. The objective of stand-ups is not to solve problems but to identify who might be able to assist us. It is the meeting owner's responsibility to enforce this rule. When topics drift toward prolonged conversations about implementation details, we request the participants to set up a dedicated meeting to resolve their conversation. As with any meeting, we expect participants to be prepared and succinctly recite yesterday's and today's responsibilities.
 
 <!-- ASYNC -->
 
-Asynchronous updates can be shared at the convenience of our team members' schedule. This can be done while we're between tasks and thus does not derail focused work. When practicing written daily updates, we use our day-to-day communication tool and not dedicated spaces on documentation platforms. If our team uses Slack, we write our daily updates in Slack.
+Asynchronous updates can be shared at the convenience of our team members' schedules. This can be done while we're between tasks and thus does not derail focused work. When practicing written daily updates, we use our day-to-day communication tool rather than dedicated spaces on documentation platforms. If our team uses Slack, we write our daily updates in Slack.
 
-Difficult to find status reports become useless. Our team members should organically stumble over written dailies without any further prompts. Thus, we avoid adding them to tickets or documentation platforms. Our progress updates become outdated within days, there is little need for long-term indexing.
+Difficult-to-find status reports become useless. Our team members should organically stumble upon written dailies without any further prompts. Thus, we avoid adding them to tickets or documentation platforms. Our progress updates become outdated within days; there is little need for long-term indexing.
 
 We can combine synchronous and asynchronous approaches. Some teams find success by reducing the costly context switches of synchronous meetings to three days a week and defer to written status updates for the rest.
 
 ## Retrospective
 
-At the end of each sprint cycle we dedicate time to review our successes and concerns of the execution phase. We identify what went well, what could have gone better, and what we can improve next cycle. Documenting and revisiting these changes allows us to track our teams improvement over a given time, or a lack thereof. If we notice similar problems over an extended period of time, we analyze how we make internal decisions to improve our development experience.
+At the end of each sprint cycle, we dedicate time to review our successes and concerns from the execution phase. We identify what went well, what could have gone better, and what we can improve in the next cycle. Documenting and revisiting these changes allows us to track our team's improvement over time—or a lack thereof. If we notice similar problems over an extended period, we analyze how we make internal decisions to improve our development experience.
 
-Besides internal reflection, retrospectives offer an organic opportunity to evangelize our work to the organization. At the end of every cycle, our team members create a demonstration, write-up, or screen recording of their work. We present our progress during synchronous end-of-cycle meetings and distribute the materials organization-wide, together with a recording the meeting.
+Besides internal reflection, retrospectives offer an organic opportunity to evangelize our work to the organization. At the end of every cycle, our team members create a demonstration, write-up, or screen recording of their work. We present our progress during synchronous end-of-cycle meetings and distribute the materials organization-wide, together with a recording of the meeting.
 
-Evangelizing our work is an exciting way to communicate progress and value throughout our organization. It encourages cross team interest and future collaboration. By promoting our solutions early and frequently we reduce duplicate work and encourage innersourcing practices.
+Evangelizing our work is an exciting way to communicate progress and value throughout our organization. It encourages cross-team interest and future collaboration. By promoting our solutions early and frequently, we reduce duplicate work and encourage innersourcing practices.
 
-If done consistently, our teams initially search for existing solutions within our company, before building something new. An internal platform with evangelized work can remove two sprint cycles for a different team. Vice versa our team can reduce bottle necks in communication, integration, or release processes by getting inspired from other a different team's approach.
+If done consistently, our teams initially search for existing solutions within our company before building their own. An internal platform with evangelized work can save two sprint cycles for a different team. Conversely, our team can reduce bottlenecks in communication, integration, or release processes by being inspired by another team's approach.
 
-Public showings offer our engineers a platform to demonstrate their accomplishments and accelerate their career progression within our company. The responsibility of planning, implementing, and presenting our work increases the sense of ownership over our work. We can be proud of our work and eager to improve it. Companies with healthy retrospectives develop and retain top talent.
+Public showings offer our engineers a platform to demonstrate their accomplishments and accelerate their career progression within our company. The responsibility of planning, implementing, and presenting our work increases the sense of ownership. We can be proud of our work and eager to improve it. Companies with healthy retrospectives develop and retain top talent.
 
-### Measuring productivity
+### Measuring Productivity
 
-Over the years various organizations implemented different standardized metric-based performance evaluations to varying degrees of failure. This ongoing ambition unveiled an excess of metrics that do NOT work. The list of paradoxical items includes: lines of code written, lines of code deleted, story points completed in a sprint, story points pushed over to next sprint, number of bug reports closed, number of bug reports opened, ...
+Over the years, various organizations have implemented different standardized metric-based performance evaluations, with varying degrees of failure. This ongoing ambition has revealed an excess of metrics that do NOT work. The list of paradoxical items includes lines of code written, lines of code deleted, story points completed in a sprint, story points pushed over to the next sprint, number of bug reports closed, and number of bug reports opened.
 
-An inherent problem with metric-driven performance evaluation is that when things go well, we create less metrics to measure. Reviewing performance by activity, rather than progress, results in our team prioritizing busy work over difficult problems with long-term improvements. We want our employees to focus on delivering quality work for our product, not optimizing their output for internal metrics.
+An inherent problem with metric-driven performance evaluation is that when things go well, we create fewer metrics to measure. Reviewing performance by activity, rather than progress, results in our team prioritizing busy work over difficult problems with long-term improvements. We want our employees to focus on delivering quality work for our product, not optimizing their output for internal metrics.
 
-Some companies famously pride themselves on creating a cut-throat environment of constant competitiveness. That mindset is the antithesis of this book. Productivity increases when our team members take responsibility for their work. In order to do that for work worth doing, our teams must be permitted to fail. We prefer to own an issue, rather than hitting a deadline.
+Some companies famously pride themselves on creating a cutthroat environment of constant competitiveness. That mindset is the antithesis of this book. Productivity increases when our team members take responsibility for their work. To do that for work worth doing, our teams must be permitted to fail. We prefer to own an issue rather than merely hitting a deadline.
 
-In summary, while retrospectives offer a chance for self reflection, we do not misuse them to extract data sets for future performance interviews. Measuring performance is an emotional process which relies heavily on empathy and a transparent feedback cycle of expectations and responsibilities from both parties.
+In summary, while retrospectives offer a chance for self-reflection, we do not misuse them to extract data sets for future performance interviews. Measuring performance is an emotional process that relies heavily on empathy and a transparent feedback cycle of expectations and responsibilities from both parties.
 
 Sprint goal achieved.
