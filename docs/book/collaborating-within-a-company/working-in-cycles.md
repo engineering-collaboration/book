@@ -103,11 +103,9 @@ Engineers that talk to each other, solve problems faster. Once a day the entire 
 
 Daily progress updates help the engineer and the team to reflect on the work being done. These updates are not a mechanism to evaluate performance. If these start to be viewed as such, we correct any behavior that might have led to that conclusion. There is little correlation between the verbosity of the status update and the productivity of the team member. Being busy differs from being productive.
 
-<!-- 👇 Current editing -->
-
 <!-- Personal use -->
 
-If we find ourselves regularly considering "what we even worked on yesterday", we reflect on our current responsibilities and how these take shape throughout our work day. How many meetings did we attend, and how many did we actually contribute to? How many tasks run in parallel and do our context switches hinder our progress? Daily status updates help us identify frictions in our tasks, which would otherwise go unnoticed for a while.
+Status updates force us to reflect on our tasks on a daily basis. The practice helps us identify development friction, that might otherwise go unnoticed for a longer period of time. If we frequently struggle to vocalize what yesterday's progress was, it's a strong indication of scattered focus. "What did I even do yesterday?" suggests we review the number of context switches we are forced to make, including how many meetings we attend (and contribute to). 
 
 <!-- Team use -->
 
@@ -115,40 +113,41 @@ Teams benefit of the shared knowledge and insights from daily status updates. Te
 
 <!-- Team Leader use -->
 
-As team  leaders, daily status updates inform us whether our team has any blocking issues. With extended experienced, we might even be able to anticipate and prevent blocking issues before they arise. Besides blockers, we keep an eye out for distractions and additional workload. We protect our team from top-down priority shifts or unplanned support tasks from other teams. Allowing other teams to allocate large portions of our team's development time reduces our output. Besides costing our company money, this perceived lack in performance is detrimental to our team member's career progression.
+As team leaders, daily status updates inform us of any blocking issues. With extended experience we might even be able to anticipate and prevent blocking issues before they arise. Besides blockers, we watch for distractions and unexpected workload. We protect our team from fluctuating priority shifts or a high amount of support requests. Allowing other teams to allocate large portions of our team's development time reduces our output measurably. Besides costing our company money, this perceived lack in performance is detrimental to our team member's career progression.
 
-Lastly, sprint plans change. Daily status meetings enable us to detect and communicate delays early and to plan accordingly. 
+Lastly, sprint plans change. Daily status meetings enable us to detect and communicate delays early and to plan accordingly. As mentioned, we never want to be the source of unpleasant surprises.
 
 #### Synchronous vs Asynchronous Updates
 
 <!-- Current practices -->
 
-Daily progress updates have gained prevalence through *Daily Stand-Up Meetings*, an apparent requisite for modern project management. Stand-ups are a form of meetings in which participants remain standing during the meeting. The main goal of this format is to keep the meeting brief and focused.
+Daily progress updates have gained popularity via *Daily Stand-Up Meetings* from modern project management frameworks. Stand-ups are a form of meetings in which participants remain standing during the meeting. The main goal of this format is to keep the meeting brief and focused.
 
-As discussed in Autonomous Teams, context switches force us to spend fifteen to thirty minutes to fully refocus on our task after an interruption. Thus, the productivity we lose to meetings exceeds the duration of the meeting itself. It is up to us and the team to decide whether the the benefit of synchronous virtual or in-person outweigh the costs, or if we prefer asynchronous written updates.
+The context switch of a meeting forces us to spend around half an hour to refocus on our task after this interruption. Thus, the productivity we lose to meetings exceeds the duration of the meeting itself. It is up to us and the team to decide whether the the benefit of synchronous in-person (or virtual) meetings outweigh this cost. Alternatively, we might prefer asynchronous written updates.
 
 <!-- Meetings -->
 
-When practicing synchronous dailies, we dedicate a maximum of 60 seconds to each member. A team consisting of ten people should last no longer than ten minutes. The objective of the stand-up is not to solve problems, but to identify who might be able to assist us. If the conclusion does not happen naturally, e.g. "I would like to hear how you solved this last time. Let's have a call after the meeting", it is the responsibility of the person leading the meeting to request that we move on.
-Prepare for dailies
+When practicing synchronous updates, we dedicate a maximum of 60 seconds to each member. A team consisting of ten people should last no longer than ten minutes. The objective stand-ups is not to solve problems, but to identify who might be able to assist us. It is the meeting's owner's responsibility to enforce this rule. When topics drift towards prolonged conversations about implementation details, we request the participants to set up a dedicated meeting ro resolve their conversation. As with any meeting, we expect the participants to be prepared and succinctly recite yesterdays and todays responsibilities.
 
 <!-- ASYNC -->
 
-Asynchronous updates can be shared at the convenience of our team members' schedule and location and thus intrude less on our work day. We prefer our day-to-day communication tool for updates over dedicated spaced on documentation platforms or online documents. Immediate visibility trumps searchability and long-term archiving of daily status updates. It is very unlikely we ever need to check updates from a couple months ago, it is very likely we have to remind engineers to update and check entries in a "remote" location. Our team members should organically stumble over the updates in order to see what the team is working on.
+Asynchronous updates can be shared at the convenience of our team members' schedule. This can be done while we're between tasks and thus does not derail focused work. When practicing written daily updates, we use our day-to-day communication tool and not dedicated spaces on documentation platforms. If our team uses Slack, we write our daily updates in Slack.
 
-We can mix our approaches. Some teams find more success by avoiding costly context switches on a daily basis by dedicating three days a week to synchronous meetings and defer to written status updates for the rest.
+Difficult to find status reports become useless. Our team members should organically stumble over written dailies without any further prompts. Thus, we avoid adding them to tickets or documentation platforms. Our progress updates become outdated within days, there is little need for long-term indexing.
+
+We can combine synchronous and asynchronous approaches. Some teams find success by reducing the costly context switches of synchronous meetings to three days a week and defer to written status updates for the rest.
 
 ## Retrospective
 
-At the end of each sprint cycle we dedicate time to review our successes and concerns of our execution phase. We identify what went well, what could have gone better, and what we can improve next cycle. Documenting and revisiting these changes allows us to track our organization's progress over a given time, or a lack thereof. If we consider to note similar problems over an extended period of time, we analyze how we make internal decisions to improve our development experience.
+At the end of each sprint cycle we dedicate time to review our successes and concerns of the execution phase. We identify what went well, what could have gone better, and what we can improve next cycle. Documenting and revisiting these changes allows us to track our teams improvement over a given time, or a lack thereof. If we notice similar problems over an extended period of time, we analyze how we make internal decisions to improve our development experience.
 
-Retrospectives offer an organic opportunity to evangelize our work to teams and stakeholders. Every team member creates a demonstration, write-up, or screen recording of their work and presents it in five minutes during synchronous end-of-cycle meetings. We collect the shared materials, record the meeting and share it publicly across the organization.
+Besides internal reflection, retrospectives offer an organic opportunity to evangelize our work to the organization. At the end of every cycle, our team members create a demonstration, write-up, or screen recording of their work. We present our progress during synchronous end-of-cycle meetings and distribute the materials organization-wide, together with a recording the meeting.
 
-Evangelizing our work is an exciting way to communicate progress and value throughout our organization. It encourages cross team interest, feedback, and future collaboration on shared pain points. By promoting our solutions early and frequently we reduce duplicate work and encourage innersourcing practices.
+Evangelizing our work is an exciting way to communicate progress and value throughout our organization. It encourages cross team interest and future collaboration. By promoting our solutions early and frequently we reduce duplicate work and encourage innersourcing practices.
 
-If done consistently, our teams initially search for existing solutions within our company, before building something new. An internal platform with properly evangelized work can remove two sprint cycles for a different team. Vice versa our team can reduce bottle necks in communication, integration, or release processes by getting inspired by other teams approach.
+If done consistently, our teams initially search for existing solutions within our company, before building something new. An internal platform with evangelized work can remove two sprint cycles for a different team. Vice versa our team can reduce bottle necks in communication, integration, or release processes by getting inspired from other a different team's approach.
 
-Public showings offer our engineers a platform to demonstrate their accomplishments and accelerate their career progression. Plus, the sense of responsibility we experience when planning, implementing, delivering, and presenting our work reduces the likelihood of feeling unfulfilled at our current organization. Healthy retrospectives help develop and retain top talent.
+Public showings offer our engineers a platform to demonstrate their accomplishments and accelerate their career progression within our company. The responsibility of planning, implementing, and presenting our work increases the sense of ownership over our work. We can be proud of our work and eager to improve it. Companies with healthy retrospectives develop and retain top talent.
 
 ### Measuring productivity
 
