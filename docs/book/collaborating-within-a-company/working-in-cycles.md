@@ -1,9 +1,7 @@
-<!-- TODO: (Daniel) Planning quaterly goals
-  Points or star method
-  map points to product feature
-  keep mapping anonymous to avoid horizotnally distributing points
-  plan features according to priorities of customers
- -->
+---
+title: Working in Cycles
+description: A sprint cycle has no relationship with the delivery of our software. This chapter covers how we establish a framework for productive sprint cycles, from planning to retrospectives.
+---
 
 # Working in Cycles
 
@@ -11,7 +9,7 @@
 
 Any significant work passes through three phases: planning, execution, and reflection. We determine what we want to achieve, do the work, and verify whether we completed our objectives and how to improve our process. Within software engineering, we commonly refer to this cycle as a *Sprint*.
 
-Sprints offer a stable framework for us to complete our work. By coordinating and planning our tasks for the next few weeks, we can concentrate on executing them with minimal distractions. Pivoting our attention across unexpected tasks leads to costly context changes, and we run the risk of hindering progress by becoming overly reactionary. This becomes <!-- vale write-good.Weasel = NO -->especially<!-- vale write-good.Weasel = YES --> costly when other people depend on our work, as we effectively stall development across teams.
+Sprints offer a stable framework for us to complete our work. By coordinating and planning our tasks for the next weeks, we can concentrate on executing them with minimal distractions. Pivoting our attention across unexpected tasks leads to costly context changes, and we run the risk of hindering progress by becoming overly reactionary. This becomes <!-- vale write-good.Weasel = NO -->especially<!-- vale write-good.Weasel = YES --> costly when other people depend on our work, as we effectively stall development across teams.
 
 Naturally, immediate and urgent issues warrant attention. If we observe metrics or reports that present potentially critical problems, we put our work aside and ensure our customers can continue using our software. However, non-severe customer feedback should not interfere with our current progress and can be included in our next sprint cycle's planning.
 
@@ -31,7 +29,12 @@ The length of our sprint cycles depends on the needs of our organization and pro
 
 Our sprint length adapts and grows with our organization's size and maturity. Successful start-ups address feedback from customers and investors quickly, so code-related tasks shift on a weekly basis. Planning, executing, and delivering weekly with a minimum of actionable distractions ensures steady progress and dampens the emotional amplitudes of founding a company.
 
+<!-- vale write-good.Weasel = NO -->
+<!-- eventually -->
+
 To reduce the overhead of planning and evaluating sprints, we eventually move to two-week sprint cycles. Less time spent in meetings increases the time spent solving problems. Two-week cycles have become standard across the majority of scale-ups and provide consistent insights on progress for growing organizations.
+
+<!-- vale write-good.Weasel = YES -->
 
 Established teams in mature environments may decide to expand the cycle span to three weeks. When the main challenges in our organization are inter-team politics, processes, and protocols, a longer work cycle helps shield our team from noise. Longer work cycles require discipline, automation, and transparency for continuous integration and delivery practices (a topic we discuss in detail in Part II). Without these established practices, our work gets lost or becomes unwieldy.
 
@@ -47,13 +50,22 @@ All team members are present for the duration of the meeting, and every individu
 
 ### Estimating Work
 
+<!-- vale write-good.Weasel = NO -->
+<!-- remarkably -->
+
+<!-- vale alex.Condescending = NO -->
+<!-- simply -->
+
 Humans are remarkably bad at estimating work. It's a skill we simply cannot intuit. Besides not being able to predict the actual time it takes to execute work, we severely underestimate the amount of distractions in our lives that hinder our progress.
 
-In the book *Noise: A Flaw in Human Judgment*, *Daniel Kahneman*, *Olivier Sibony*, and *Cass R. Sunstein* discuss how individual judgment and estimates are so unpredictable that the outcomes effectively become random. Every decision varies depending on a person's current state of mind, affected by breakfast intake, weather, spousal discourses, and more. We do not control these subtle influences consciously, nor are we aware of them. This causes our estimation for upcoming work to differ significantly from one day to another.
+<!-- vale alex.Condescending = YES -->
+<!-- vale write-good.Weasel = YES -->
 
-Classifying human judgment as random allows us to gather data and use statistical sampling to obtain numerical results. The book *Noise* covers an experiment demonstrating the so-called *Wisdom of the Crowds* effect: *"In 1907, Francis Galton, [...] asked 787 villagers at a country fair to estimate the weight of a prize ox. None of the villagers guessed the actual weight of the ox, which was 1,198 pounds, but the mean of their guesses was 1,200, just 2 pounds off [...]"*
+In the book *Noise: A Flaw in Human Judgment*, *Daniel Kahneman*, *Olivier Sibony*, and *Cass R. Sunstein* discuss how individual judgment and estimates are so unpredictable that the outcomes effectively become random. Every decision varies depending on a person's current state of mind, affected by breakfast intake, weather, spousal discourses, and more. We do not control these subtle influences consciously, nor are we aware of them. This causes our estimation for upcoming work to differ considerably from one day to another.
 
-This natural phenomenon demonstrates how the average estimate from a large group of people becomes surprisingly accurate to the actual result. We can leverage that effect by having all our team members estimate the workload of a ticket and averaging the results. To avoid influencing each other, we poll these estimates independently before revealing the result.
+Classifying human judgment as random allows us to gather data and use statistical sampling to obtain numerical results. The book *Noise* covers an experiment demonstrating the so-called *Wisdom of the Crowds* effect: *"In 1907, Francis Galton, […] asked 787 villagers at a country fair to estimate the weight of a prize ox. None of the villagers guessed the actual weight of the ox, which was 1,198 pounds, but the mean of their guesses was 1,200, just 2 pounds off […]"*
+
+This natural phenomenon demonstrates how the average estimate from a large group of people becomes <!-- vale write-good.Weasel = NO -->surprisingly<!-- vale write-good.Weasel = YES --> accurate to the actual result. We can leverage that effect by having all our team members estimate the workload of a ticket and averaging the results. To avoid influencing each other, we poll these estimates independently before revealing the result.
 
 <!-- Story points -->
 
@@ -61,11 +73,18 @@ We may further increase the quality of our estimates by introducing a layer of a
 
 Every developer has an internal mapping of what a story point represents to them. However, as already established, we struggle to accurately predict the workload of an assigned task. The additional layer of abstraction between the unit of time and the unit of velocity allows us to create benchmarks of velocity across sprints. After a certain number of sprints, we can realistically deduce how many story points our team can achieve per sprint and share realistic plans and expectations, even if our team misjudges the workload internally.
 
+<!-- vale write-good.Weasel = NO -->
+<!-- vale proselint.Very = NO -->
+<!-- very small, very large -->
+
 Predicting the future through arbitrary guesswork makes us uncomfortable. It feels unscientific. To make the process feel methodical, we attach a mathematical structure to our story points. The Fibonacci sequence is a numerical pattern in which each number consists of the sum of the two preceding ones. Our tasks may therefore allocate any one of the following amounts of story points: 1, 2, 3, 5, 8, 13, or 21. Limiting our estimations to these options reduces our cognitive load and increases our confidence in estimating a task. We may now assign a unit of effort, ranging from very small to very large.
 
-Story points are team-internal metrics. They cannot be directly used as a measurement for productivity across teams. The combination of tools, communication channels, personalities, and infrastructure is likely unique per team. Comparing story points across teams is as useful as comparing shoe sizes across teams.
+<!-- vale proselint.Very = YES -->
+<!-- vale write-good.Weasel = YES -->
 
-Finally, team leaders plan additional time to compensate for unexpected work. People get distracted, called into extra meetings, and have family emergencies. We also get sick, hurt, and hungover, which increases the time spent on our tasks.
+Story points are team-internal metrics. They cannot be directly used as a measurement for productivity across teams. The combination of tools, communication channels, personalities, and infrastructure is <!-- vale write-good.Weasel = NO -->likely<!-- vale write-good.Weasel = YES --> unique per team. Comparing story points across teams is as useful as comparing shoe sizes across teams.
+
+Lastly, team leaders plan additional time to compensate for unexpected work. People get distracted, called into extra meetings, and have family emergencies. We also get sick, hurt, and hungover, which increases the time spent on our tasks.
 
 ## Communicating Progress
 
@@ -73,19 +92,24 @@ Part II, *Collaborating Within a Codebase*, details the lifecycle of a code chan
 
 While working on code improvements, we typically find ourselves giving three different kinds of status reports: technical updates, organizational updates, and progress updates. Some organizations make the mistake of not separating these three kinds of updates. They serve different functions and are read in different contexts. The longevity, searchability, and storage vary between them.
 
-When writing **technical updates**, we detail the decision-making process for our implementation strategy. These documents live as long as the feature they describe and should be stored with the source code. We skip the intricacies of technical updates for now and cover them in the chapters [*Planning Implementations*](../collaborating-within-a-codebase/planning-implementations.md), [*Pull Requests*](../collaborating-within-a-codebase/pull-requests.md), and [*Documentation*](../collaborating-within-a-codebase/documentation.md) of Part II - *Collaborating Within a Codebase*.
+When writing **technical updates**, we detail the decisions of our implementation. These documents live as long as the feature they describe and should be stored with the source code. We skip the intricacies of technical updates for now and cover them in the chapters [*Planning Implementations*](../collaborating-within-a-codebase/planning-implementations.md), [*Pull Requests*](../collaborating-within-a-codebase/pull-requests.md), and [*Documentation*](../collaborating-within-a-codebase/documentation.md) of Part II - *Collaborating Within a Codebase*.
 
 **Organizational updates** inform our stakeholders about how much time, effort, and money we are spending on a particular objective and whether we can deliver projects on time and on budget. Our organization derives this information from our ticketing system, and it requires little input from individual contributors, as we do not include technical topics in organizational updates.
 
-Our **progress updates** detail the work we are currently doing and the problems we are facing. These updates are immediately actionable and become outdated quickly. We share progress updates frequently with our team and err on the side of over-communication. Nobody wants our team to be the source of surprises.
+<!-- vale write-good.Weasel = NO -->
+<!-- immediately -->
+
+Our **progress updates** detail the work we are doing and the problems we are facing. These updates are immediately actionable and become outdated quickly. We share progress updates frequently with our team and err on the side of over-communication. Nobody wants our team to be the source of surprises.
+
+<!-- vale write-good.Weasel = YES -->
 
 ### Kanban Boards
 
-These boards have gained popularity over the last decade. All modern task management platforms now offer a Kanban view. Kanban boards visualize tasks as cards that can be placed within one of several columns. These columns represent the state the task is currently in. Typical states are "To Do", "In Progress", "In Review", and "Completed", but any team can create an arbitrary set of columns.
+These boards have gained popularity over the last decade. All modern task management platforms now offer a Kanban view. Kanban boards visualize tasks as cards that can be placed within one of several columns. These columns represent the task's state. Typical states are "To Do", "In Progress", "In Review", and "Completed", but any team can create an arbitrary set of columns.
 
 ![Representation of a Kanban board, with four columns showing stages of a workflow, with various cards scattered across the board.](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Abstract_Kanban_Board.svg/2880px-Abstract_Kanban_Board.svg.png)
 
-The visual simplicity of Kanban boards details our current workload in an intuitive way. Our tasks are easy to update and make organizational updates frictionless. Engineers drag and drop cards between columns without the need to devote time or cognitive load to communication. Most task management platforms offer events or hooks to trigger automated processes when moving tickets between columns. We use these tools to notify stakeholders and provide context for organizational and progress updates.
+The visual simplicity of Kanban boards details our current workload in an intuitive way. Our tasks are <!-- vale alex.Condescending = NO -->easy<!-- vale alex.Condescending = YES --> to update and make organizational updates frictionless. Engineers drag and drop cards between columns without the need to devote time or cognitive load to communication. Most task management platforms offer events or hooks to trigger automated processes when moving tickets between columns. We use these tools to notify stakeholders and provide context for organizational and progress updates.
 
 Having too many cards "stuck" in a certain column potentially signals a problem in our development process. For example, a large pool of cards in the "To Do" section during the latter half of our sprint cycle suggests we might not be able to achieve our sprint goals. Too many cards flagged as "In Progress" indicates a wide spread of responsibilities, leading to expensive context switches. "In Review" bottlenecks invite us to review our review process, as it may no longer match our team's current needs.
 

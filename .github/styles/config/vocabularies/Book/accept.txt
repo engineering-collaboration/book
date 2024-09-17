@@ -83,4 +83,8 @@ Statsz
 Tracez
 only
 [Dd]aily
+yearly
+weekly
 Kanban
+upskill
+many
