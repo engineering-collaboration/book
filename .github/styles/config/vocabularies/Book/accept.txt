@@ -12,6 +12,10 @@ Procida
 Drucker
 Womack
 Elting
+Sibony
+Cass
+Kahneman
+Sunstein
 Diátaxis
 Spotify
 API
@@ -78,3 +82,9 @@ RPCz
 Statsz
 Tracez
 only
+[Dd]aily
+yearly
+weekly
+Kanban
+upskill
+many

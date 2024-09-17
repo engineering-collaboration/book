@@ -5,6 +5,8 @@ description: Large-scale organizations rely on a multitude of autonomous teams s
 
 # Team Interactions
 
+<!-- Move inverse conway maneuver here -->
+
 Conway's law is not solely defined by the architecture of our teams; it also covers how these subsystems communicate with each other. We use people who are skilled in technical API design to help build boundaries between teams within an organization.
 
 Large-scale organizations rely on a multitude of autonomous teams solving their respective domain problems in an efficient manner. When autonomous teams interact, we ensure distinct ownership and responsibility of the domains by applying communication based on *Promise theory*. Rather than teams imposing obligations upon one another, teams promise to deliver a product beneficial for the interaction.
@@ -82,6 +84,16 @@ The 3D rendering team already matured from a *collaboration* state, offering sop
 Our vertical platform teams working on the product search component and the metrics deliver their respective releases to the internal platform, accessible to all teams across the company. The platform teams consolidate fragmented implementations into shared high-performance implementations.
 
 Our CI/CD research team spent the last months evaluating tools and strategies for advanced testing practices. Facilitating our metrics team, our research team is presenting and validating its findings in a low-risk internal environment. As soon as the metrics team reaches self-reliance with the new practices, the CI/CD R&D team moves to facilitate the next vertical team.
+
+<!-- 
+TODO: (Daniel) Communicating via Team interactions
+The default cannot be to directly call members from other teams to request help and support
+Find good channel, e.g. support line, or create a ticket and meeting, otherwise ask other team to book time
+-->
+
+<!--
+TODO: (Daniel) Move the two paragraphs below to the chapter communication channels
+-->
 
 ## Workspace Design
 

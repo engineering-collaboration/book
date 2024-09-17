@@ -33,6 +33,11 @@ We encourage our teams and individuals to continuously improve our processes and
 
 ## Blameless Culture
 
+<!--
+TODO: (Daniel) embed here from working in cycles
+In unhealthy environments, reporting our progress to our supervisor feels like awaiting judgement from a despotic career delegation. When employed in such an environment, we optimize our reports for our personal benefit and professional progression. Thus, we prioritize being busy over solving problems and hesitate to setbacks, errors, and mistakes. Unfortunately, mistakes do not fix themselves and become more costly the longer they go unaddressed.
+ -->
+
 When we blame and punish our employees for errors, we nourish a self-centered community that opposes transparent communication. This leads to people covering up mistakes and pushing them down the line. When discovered in time, these mistakes are costly to fix.
 
 Instead, we treat human error as a symptom of the system and ask ourselves how we got here in the first place and how we can avoid it in the future. When we tackle issues cooperatively, we reframe them as learning opportunities. We cannot change people's behavior by changing their minds; we change their minds by changing people's behavior.

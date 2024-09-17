@@ -15,6 +15,8 @@ Implementing autonomy requires a guiding hand. This chapter focuses on strategie
 
 ## Inverse Conway Maneuver
 
+<!-- TODO: (Daniel) move to team interactions -->
+
 !!! quote
     *"Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."*  
     - Melvin E. Conway
@@ -37,6 +39,8 @@ The above quotes refer to Conway's Law. It observes the universal behavior that 
 Utilizing Conway's Law as a tool, the *Inverse Conway Maneuver* states that we design our organization around our desired software architecture and continuous delivery flow, not the other way around. Moving people and teams in a way to design communication channels more efficiently will ultimately and organically lead to less friction in software delivery.
 
 ## Growth mindset
+
+<!-- TODO: (Daniel) move to devops -->
 
 <!-- Why do we need a growth mindset? -->
 

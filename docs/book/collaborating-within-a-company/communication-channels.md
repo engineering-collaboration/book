@@ -23,6 +23,12 @@ Communication covers all exchanges of information necessary to complete our task
 
 This broad collection of communication tools allows us to enable channels of various types of information exchange, from low-noise high-concentration work to collaborative work and cross-disciplinary brainstorming.
 
+<!-- 
+TODO: (Daniel) Communicating via Team interactions
+The default cannot be to directly call members from other teams to request help and support
+Find good channel, e.g. support line, or create a ticket and meeting, otherwise ask other team to book time
+-->
+
 ## Communication Medium Aspects
 
 Communication channels present individual strengths and weaknesses, which are typically complementary. We distinguish between the following aspects of the communication media to highlight the appropriate tool selection for our communication purposes.
@@ -39,6 +45,15 @@ Communication channels present individual strengths and weaknesses, which are ty
   Are we able to search for semantic content and references within the information? Longevity by itself is necessary for audits, compliance, and potential legal issues, but longevity without searchability is pointless for daily business.
 - **Context**  
   Is the medium referencing work? Can we attach information? Do we know who is sharing information and in what their position might be regarding the shared information?
+
+<!-- TODO: (Daniel) Meetings
+Share agenda
+Make sure people are prepared
+only invite who is necessary
+Let people go when no longer needed
+Write notes
+Share results
+ -->
 
 Meetings, both virtual and in-person, are immediate. Information is shared, received, processed, and responded to within seconds. However, meetings do require a high amount of investment due to preparation time and full task switching of all attendees. Meeting minutes, transcripts, and recordings increase longevity and searchability.
 
