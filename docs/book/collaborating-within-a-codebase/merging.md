@@ -5,6 +5,8 @@ description: Policies and strategies for successful long-term integrations in tr
 
 # Merging
 
+<!-- TODO: (Daniel) embed chapter Commits here -->
+
 Depending on the discipline, the concept of repository streams, and branch isolation, merging changes differs between version control solutions. Universally, we discuss the idea of re-integrating changes into our main software product or uniting changes of differing origins.
 
 !!! note
