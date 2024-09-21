@@ -9,25 +9,11 @@ Testing is a complex and divisive topic. If not done adequately for our use case
 
 This chapter covers what we have found to be generally most useful. Despite our good intentions, we do want to point out that testing is the least directly applicable undertaking from all recommendations in this book. Successful and sensible testing is modeled against our team's needs and evolves over time. We revisit our testing strategy periodically and after significant events.
 
-## Test-Driven Development
-
 A term often cited in software engineering job listings is *Test-Driven Development* (TDD). TDD is the practice of writing tests for the behavior of a feature before working on the source code. An implementation is considered complete once it passes all tests and edge cases.
 
 TDD encourages us to consider and transcribe a strategy to tackle problems in small increments. The upside of TDD sees diminishing returns with a growing complexity of implementations. Functions using file I/O or network I/O, or processes reliant on environment configurations are difficult to write tests for, even more so before the implementation is available.
 
-## The Testing Pyramid
-
-In the 2009 book "Succeeding with agile" Mike Cohn provides the metaphorical representation of the testing pyramid. The three-layered structure indicates guidelines for the amount of automated testing for each scope. The scope of the tests relates to the execution time and complexity of the test environment. The nature of these tests is outlined in detail in their individual chapters.
-
-[![Testing Pyramid](../../../assets/images/book/collaborating-within-a-codebase/testing/testing-pyramid.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/testing-pyramid.png)
-
-The base of the pyramid relies on numerous small-scoped unit tests that are run most frequently. Unit tests ([Small-Scoped Tests](./small-scoped-tests.md)) ensure correct behavior within a system.
-
-The mid-layer consists of a reduced number of integration tests ([Medium-Scoped Tests](./medium-scoped-tests.md)) ensuring correct behavior between embedded or connected systems.
-
-The pinnacle of the pyramid consists of automated end-to-end tests ([Large-Scoped Tests](./large-scoped-tests.md)). These ensure correct behavior across the entire product and require complex setups and are generally long-running operations.
-
-From bottom to top, every layer of the pyramid reduces the number of tests by an order of magnitude. If we have 1000 SST, we aim for 100 MST, and no more than 10 LST. A common anti-pattern is what we refer to as a test snow cone, or inverted pyramid. These projects contain little to no small-scoped tests with all the testing done in labor and time-intensive manual tests. The emerging results are slow test runs and long feedback cycles.
+<!-- Write code for testability -->
 
 ## When to Test
 
@@ -49,6 +35,89 @@ Tests run on various machines and runners, by various users and scripts, on vari
 A hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful. Tests set up, execute, and tear down independently and in a confined manner. Tests provide accurate information regardless of the order in which they are run.
 
 Medium and large-scoped tests provide the environment and infrastructure needed to execute expectedly. Using container tools such as Docker and [Infrastructure as Code (*WIP)]() (IaC) workflows ensures consistent configuration across platforms and machines. Small-scoped tests run without requiring a dedicated hermetic environment. Our testing suite performs as intended on every machine regardless of environmental configurations. As developers, we are able to replicate failing tests on the CI/CD runners on our machines.
+
+
+## Test against Public-Facing APIs
+
+When writing tests, we assume as little as possible of the implementation. We compose tests for public-facing interfaces, not private ones. Private implementations change more frequently over time as additional feature requests come in and code is refactored, moved to libraries, or removed entirely.
+
+When refactoring code, we run tests to ensure we haven't changed behavior for implementations that call the public-facing methods and APIs. Testing against private implementations increases the workload, as we actively just changed the private implementation and are now required to update the tests. It is a hurdle comprised of more effort than benefit.
+
+Good tests assume as little as possible of the internal workings of the implementation and test against expected *behavior*, not an expected chain of *processes*. An example highlighting the difference:
+
+```golang
+func Test_SerializeStringSuccess(t *testing.T) {
+    path := "/a/path/to/a/file"
+    my_utils.WriteString("my-example-string", path)
+    if err != nil {
+		t.Fatalf("WriteString failed with error: " + err.Error())
+	}
+
+    data, err := os.ReadFile(path)
+	if err != nil {
+		t.Fatalf(err.Error())
+	}
+
+    hasString := string(data)
+    wantString := "my-example-string"
+    if hasBalance != wantBalance {
+        t.Fatalf(`has %s, want match for %s`, hasBalance, wantBalance)
+    }
+}
+```
+
+The above implementation tests whether `my_utils.WriteString` writes the given input string to a file provided via a path. The problem with the above test lies within the fact that we are testing against the *process* of **how** `my_utils.WriteString` serializes the given string input.
+
+The implementation becomes brittle with every future evolution of `my_utils.WriteString`. It cannot account for any additional tasks that are performed, such as byte padding, prefixing metadata, or serializing as clear text json vs binary json; assuming we output directly to a filesystem, instead of a virtualized environment or an in-memory database.
+
+These aspects *might* be worth testing at a later stage in the product lifecycle for specialized software consumed by millions of clients. Assuming we are not working on products for healthcare or aviation, we prioritize development velocity over full process coverage and add tests solely after specific problems occurred in production. Instead, we write tests against the *behavior* of **what** we expect to happen.
+
+```golang
+func Test_SerializeStringSuccess(t *testing.T) {
+    path := "/a/path/to/a/file"
+    err := my_utils.WriteString("my-example-string", path)
+    if err != nil {
+		t.Fatalf("WriteString failed with error: " + err.Error())
+	}
+
+    // changed the line below to use our
+    // public-facing ReadString instead of os lib
+    data, err := my_utils.ReadString(path)
+    if err != nil {
+		t.Fatalf("ReadString failed with error: " + err.Error())
+	}
+
+    hasString := data
+    wantString := "my-example-string"
+    if hasBalance != wantBalance {
+        t.Fatalf(`has %s, want match for %s`, hasBalance, wantBalance)
+    }
+}
+```
+
+<!-- vale write-good.Weasel = NO -->
+<!-- likely -->
+If the above implementation fails, we can now reasonably assume that changes done to `my_utils.WriteString` or `my_utils.ReadString` are no longer compatible, which is the behavior we are actually interested in during the development cycle. The second implementation is less likely to be flaky and scales with the product. It also models our customers' behavior, validating that the software meets our users' expectations.
+<!-- vale write-good.Weasel = YES -->
+
+### Hyrum's Law
+
+<!-- vale Vale.Avoid = NO -->
+!!! quote
+    *"With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody."*  
+    - Hyrum Wright
+<!-- vale Vale.Avoid = YES -->
+
+Hyrum's law states that every public-facing behavior of our implementation will be relied upon. While this includes error types and return codes, it also covers incidental actions, such as data layouts (e.g., if a seemingly random return value always follows the same pattern) and execution time (e.g., performance upgrades might trigger hitherto undetected race conditions).
+
+We cannot foresee or control how third-party systems depend upon our implementation, and we question the feasibility of testing all public-facing characteristics of our implementation. We are aware that changes might be incompatible with current dependencies, and it is up to us to weigh the responsibility we delegate to our consumers.
+
+## When Tests Break
+
+Accidental breaking changes aside, changes to products will inevitably cease to pass established tests. We may have encountered a brittle test that is not scaling with our product changes. Depending on the severity of the fragility, we resolve the issue synchronously or asynchronously. Prominent brittleness may be removed by slightly altering the test and sending the initial author a direct message to corroborate our changes. Opaque tests may require a meeting to determine a resolution.
+
+Failing tests for working code are an indicator of backward incompatibility. If these consequences have already been discussed, we ensure they are present within the [Design Document](../planning-implementations.md) and verified by all stakeholders. In case we find our design doc lacking, it is imperative to communicate the situation to our team lead until a strategy is agreed upon by all involved departments. While this sounds histrionic, most cases resolve themselves astutely with a brief email chain.
+
 
 ## Testing over Time
 
