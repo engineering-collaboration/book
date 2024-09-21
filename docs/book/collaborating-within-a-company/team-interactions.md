@@ -7,6 +7,10 @@ description: Large-scale organizations rely on a multitude of autonomous teams s
 
 <!-- Move inverse conway maneuver here -->
 
+<!-- 
+Throughout these processes, remember Conway's Law. Changes to our departments will ultimately find their way into the architecture of our software. Software architecture is a continuous process. In modern times, no commercial software is as trivial as to be designed in whole and not influenced by changes.
+ -->
+
 Conway's law is not solely defined by the architecture of our teams; it also covers how these subsystems communicate with each other. We use people who are skilled in technical API design to help build boundaries between teams within an organization.
 
 Large-scale organizations rely on a multitude of autonomous teams solving their respective domain problems in an efficient manner. When autonomous teams interact, we ensure distinct ownership and responsibility of the domains by applying communication based on *Promise theory*. Rather than teams imposing obligations upon one another, teams promise to deliver a product beneficial for the interaction.
