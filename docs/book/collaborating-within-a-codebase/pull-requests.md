@@ -81,3 +81,5 @@ When creating a PR, we do not mix solutions across tasks. If a feature happens t
 An amalgamation of labor happens when we come across faulty code while working on our feature. In this case, we proceed by creating another branch from the latest main, fix the bug in question, open a PR for our fix, and integrate it into main. If our fix passes the process and tests, we rebase our feature branch to the latest main and continue our work.
 
 The isolation of PRs increases code stability and transparency. We strive to increase productivity, not introduce unnecessary bureaucratic red tape. Frequent integrations to main executing our automated test suite help us map issues to specific implementations. Code reviews containing multiple fixes and refactors increase cognitive load and time investment by reviewers. Bug fixes or features that are mixed with whitespace alterations introduce unnecessary noise when comparing the differences to the current working solution.
+
+<!-- TODO: (Daniel) Add merge queues -->

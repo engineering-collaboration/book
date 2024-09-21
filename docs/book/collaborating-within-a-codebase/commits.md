@@ -3,6 +3,8 @@ title: Commits
 description: Frequent commits make our life easier as we have multiple saved states to track and rollback changes during development. Periodically pushing changes stores these at a second site to prevent data loss in case of problems with our development machine.
 ---
 
+<!-- TODO: (Daniel) Move to Merging -->
+
 # Commits
 
 We commit frequently and push changes often. Contrary to our main branch, not all commits to our development branch need to compile or pass tests.
