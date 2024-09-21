@@ -47,21 +47,25 @@ Because cognitive overload and context switches have such a detrimental effect o
 
 All teams within our organization are vertical, and most of our teams work on features for our customers. However, complex problems can be solved more efficiently by dedicated teams. These supporting teams reduce the burden for product teams by delivering software internally.
 
-In the 2012 paper, *A Taxonomy of Dependencies in Agile Software Development*, Diane Strode and Sid Huff propose three different categories of dependencies: knowledge, task, and resource dependencies. These were adapted by Matthew Skelton and Manuel Pais in the book *Team Topologies*. Based on the findings of the paper and their personal experience, the authors differentiate three different types of supporting teams: complicated-subsystem teams, enabling teams, and platform teams.
+In the 2012 paper, *A Taxonomy of Dependencies in Agile Software Development*, Diane Strode and Sid Huff propose three different categories of dependencies: knowledge, task, and resource dependencies.
+
+These were adapted by Matthew Skelton and Manuel Pais in the book *Team Topologies*. Based on the findings of the paper and their personal experience, the authors differentiate three different types of supporting teams: complicated-subsystem teams, enabling teams, and platform teams.
 
 ### Complicated-Subsystem Teams
 
-Our product teams inevitably encounter problems that introduce a lot of effort to delivering a feature. The additional effort usually presents itself in one of three forms. 
+Product teams inevitably encounter a problem that syphons focus from their attributed task. A distracted product team delivers improvements to our software less frequently. If the negative impact of the problem becomes an issue, we remove the burden from our team by establishing a complicated-subsystem team. The newly formed team takes responsibility of the current trouble and delivers usable solutions.
 
-The problem we are facing requires highly specialized knowledge outside of our current team's domain. In order to deliver a solution for technology we hire or upskill dedicated personell to own the problem. One example would be to hire computer graphics engineers to build 3D rendering solutions for our web teams.
+Unwanted effort for product teams manifest itself in three ways: specialty, time, or complexity. If the problem requires highly specialized knowledge outside of our current team's domain, we hire or upskill dedicated personell to own the problem. One example would be to hire computer graphics engineers to build 3D rendering solutions for our web teams.
 
-A problem becomes too time intensive. Instead of delivering features within our team's domain, we spend an unreasonable amount of time solving a problem that concerns us tangiantelly. We spin out a dedicated team to fix the problem without context switches. Release pressure or feature pressure.
+Once our product team spends an unreasonable amount of time solving a tangential problem, rather than delivering features within its domain, a complicated-subsystem team can take on the problem instead. This dedicated team has the resources to work on a sustainable solution without the overhead of context switches.
 
-A problem introduces complexity. When working on our product, the problem causes signifacant disturbance to our software architecture and code complexity. Our engineers require signifcant cognitive load to mentally retain the intricacies of the problem. This problem occurs when we finally pay off our technical debt.
+Problems of complexities require our engineers to mentally retain the intricacies of a problem. This results in convoluted software architecture and code complexity. Depending on the nature of the complexity, we establish a complicated-subsystem team or an enabling team (which we cover next) to rectify the issue.
 
-Three indicators for creating a new team.  Through a combination of hiring engineers and upskilling our current employees, we establish a complicated-subsystem team. The driving factor of establishing a complicated-subsystem is to reduce the cognitive load of a vertical team, not necessarily to share the component across multiple vertical teams. Typically, these teams work on libraries that are then consumed by product teams.
+The driving factor for complicated-subsystem teams is to reduce the cognitive load of a vertical team, not necessarily to share the component across multiple teams. Complicated-subsystem teams own the problem long-term and work on libraries that are then consumed by product teams.
 
 ### Enabling Teams
+
+Enabling teams consists of subject experts for a single mission.
 
 Enabling teams understand potential areas of improvements of vertical teams. Enabling teams stay up-to-date with new approaches, tooling, and practices to bridge internal knowledge gaps. Enabling teams typically appear in the form of coaches, consultants, and research and development.
 
@@ -91,6 +95,9 @@ However, platforms can be as small as providing a thin wrapper or merely extende
 
 A supporting team is a nested team consisting of vertical teams and potentially consuming other supporting teams. Typically, we want a 6:1 to 9:1 mapping between vertical teams working on the product we sell and vertical teams working on other deliverables.
 
+ Most issues of complexity start innocuously and are ignored for some time. This technical debt is the cost of doing business, as we prefer delivering features and then getting paid to clean up code later. 
+
+These are general patterns, not strict rules. Technical debt can be paid with enabling teams or complicated sub system teams, or platform teams. The mai difference is the scope and longevity of the deliverable.
 
 ## Team Topology over Time
 
