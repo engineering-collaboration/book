@@ -51,25 +51,33 @@ In the 2012 paper, *A Taxonomy of Dependencies in Agile Software Development*, D
 
 These were adapted by Matthew Skelton and Manuel Pais in the book *Team Topologies*. Based on the findings of the paper and their personal experience, the authors differentiate three different types of supporting teams: complicated-subsystem teams, enabling teams, and platform teams.
 
+### Enabling Teams
+
+Product teams inevitably encounter a problem that syphons focus from their work. A distracted product team delivers improvements less frequently, making our organization vulnerable to changing market demands. We remove the strain on the product team's development velocity, we establish an enabling team. The newly formed team takes responsibility of the impeding issue and delivers usable solutions.
+
+Enabling teams solve limitations of three kinds: problems of time, complexity, or magnitude. The first category - time - might be the most immediately relatable experience. A team spends an unreasonable amount of time solving a tangential problem. This hinders the team's primary responsibility of delivering features within its domain. We create an enabling team to take on the problem instead. The dedicated enabling team has the resources and cognitive load deliver a sustainable solution to the initial team.
+
+Problems of complexity grow over time. Once they reach a certain threshold, our engineers struggle to mentally retain the intricacies of a problem. One possible reason might be that our product evolved and the team's responsibility has become too broad. In that case we reassess whether to split our team into multiple product teams.
+
+Another cause for complexity originates from organic code growth leading to accumulated technical debt. Technical debt is the cost of doing business. As an organization, we prefer to deliver features fast and generate income as early as possible. Accumulated complexity results in opaque software architecture and convoluted code. An enabling team with the domain expertise can identify the extent of the problem and implement a strategy to pay off our technical debt.
+
+Problems of magnitude entail large-scale changes across our organization that require deep knowledge of a problem. Typical scenarios include regulatory compliance for industries and location, uncovering security vulnerabilities, or comprehensive technical migration.
+
+As an example, our organization decided to globally transition from Python 2 to version 3. A dedicated enabling team researches the challenges of the migration and explores strategies to minimize disruptions for our workforce. The team writes migration guides, automation tooling, and provides testing suites. After the enabling team has solidified an approach, it collaborates with vertical teams across the organization to ensure a successful transition.
+
+Enabling teams are temporary and focused on transferring knowledge, introducing capabilities, or solving singular problems. They focus on making product teams self-sufficient.
+
 ### Complicated-Subsystem Teams
 
-Product teams inevitably encounter a problem that syphons focus from their attributed task. A distracted product team delivers improvements to our software less frequently. If the negative impact of the problem becomes an issue, we remove the burden from our team by establishing a complicated-subsystem team. The newly formed team takes responsibility of the current trouble and delivers usable solutions.
-
-Unwanted effort for product teams manifest itself in three ways: specialty, time, or complexity. If the problem requires highly specialized knowledge outside of our current team's domain, we hire or upskill dedicated personell to own the problem. One example would be to hire computer graphics engineers to build 3D rendering solutions for our web teams.
-
-Once our product team spends an unreasonable amount of time solving a tangential problem, rather than delivering features within its domain, a complicated-subsystem team can take on the problem instead. This dedicated team has the resources to work on a sustainable solution without the overhead of context switches.
-
-Problems of complexities require our engineers to mentally retain the intricacies of a problem. This results in convoluted software architecture and code complexity. Depending on the nature of the complexity, we establish a complicated-subsystem team or an enabling team (which we cover next) to rectify the issue.
+If the problem requires highly specialized knowledge outside of our current team's domain, we hire or upskill dedicated personell to own the problem. One example would be to hire computer graphics engineers to build 3D rendering solutions for our web teams.
 
 The driving factor for complicated-subsystem teams is to reduce the cognitive load of a vertical team, not necessarily to share the component across multiple teams. Complicated-subsystem teams own the problem long-term and work on libraries that are then consumed by product teams.
 
-### Enabling Teams
 
 Enabling teams consists of subject experts for a single mission.
 
 Enabling teams understand potential areas of improvements of vertical teams. Enabling teams stay up-to-date with new approaches, tooling, and practices to bridge internal knowledge gaps. Enabling teams typically appear in the form of coaches, consultants, and research and development.
 
-For example, our organization is required to fully transition from the deprecated Python version 2.7 to version 3.x. An enabling team is set up to research the challenges, timing, and behavior parity in future versions. The enabling team may build best practice guides, automation tooling, and testing suites. After the enabling team has solidified an approach, it collaborates with vertical teams across the organization to ensure a successful transition.
 
 On a more egocentric note, an enabling team may also be set up to apply the processes described in this book across vertical teams.
 
@@ -95,7 +103,6 @@ However, platforms can be as small as providing a thin wrapper or merely extende
 
 A supporting team is a nested team consisting of vertical teams and potentially consuming other supporting teams. Typically, we want a 6:1 to 9:1 mapping between vertical teams working on the product we sell and vertical teams working on other deliverables.
 
- Most issues of complexity start innocuously and are ignored for some time. This technical debt is the cost of doing business, as we prefer delivering features and then getting paid to clean up code later. 
 
 These are general patterns, not strict rules. Technical debt can be paid with enabling teams or complicated sub system teams, or platform teams. The mai difference is the scope and longevity of the deliverable.
 
