@@ -11,7 +11,7 @@ In early web development, teams were organized by discipline. The front-end depa
 
 Teams partitioned by discipline face multiple handoffs and extensive inter-team communication to deliver customer-facing features. This approach drastically reduces the velocity of releases and potentially introduces internal friction and an "us-vs-them" blame culture across teams.
 
-The natural inertia within monodisciplinary teams directs our team toward misguided goals. A team consisting entirely of backend engineers will focus on building the best back-end system they can envision. While this might be an attractive and self-rewarding task for engineers, our organizational needs require our teams to focus on the best possible customer experience.
+The natural inertia within monodisciplinary teams directs our team toward misguided goals. A team consisting entirely of backend engineers will focus on building the best back-end system they can envision. While this might be an attractive and self-rewarding task for engineers, our organization requires our teams to focus on the best possible customer experience.
 
 ## Vertical Teams
 
