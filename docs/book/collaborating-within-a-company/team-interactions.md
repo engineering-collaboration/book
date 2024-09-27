@@ -5,7 +5,38 @@ description: Large-scale organizations rely on a multitude of autonomous teams s
 
 # Team Interactions
 
-<!-- Move inverse conway maneuver here -->
+
+## Inverse Conway Maneuver
+
+<!-- TODO: (Daniel) move to team interactions -->
+
+!!! quote
+    *"Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."*  
+    - Melvin E. Conway
+
+    *"If you have four groups working on a compiler, you'll get a 4-pass compiler."*  
+    - Eric S. Raymond
+
+    *"The architecture of the system gets cemented in the forms of the teams that develop it."*  
+    - Ruth Malan
+
+    *"Someone who claims to be an [Software] architect needs both technical and social skills. They also need a remit that is broader than pure technology - they need to have a say in business strategies, organizational structures, and personnel issues."*  
+    - Allan Kelly
+
+<!-- What is Conway's Law? -->
+
+The above quotes refer to Conway's Law. It observes the universal behavior that our software architecture ultimately copies our organization's team layout. Before a single line of code is written, we may deduce shape of our product by observing our teams' topology.
+
+<!-- What is the Inverse Conway Maneuver? -->
+
+Utilizing Conway's Law as a tool, the *Inverse Conway Maneuver* states that we design our organization around our desired software architecture and continuous delivery flow, not the other way around. Moving people and teams in a way to design communication channels more efficiently will ultimately and organically lead to less friction in software delivery.
+
+
+<!-- 
+Throughout these processes, remember Conway's Law. Changes to our departments will ultimately find their way into the architecture of our software. Software architecture is a continuous process. In modern times, no commercial software is as trivial as to be designed in whole and not influenced by changes.
+
+The success of our company does not rely on us labeling our teams correctly, 
+ -->
 
 <!-- 
 Throughout these processes, remember Conway's Law. Changes to our departments will ultimately find their way into the architecture of our software. Software architecture is a continuous process. In modern times, no commercial software is as trivial as to be designed in whole and not influenced by changes.
@@ -19,9 +50,6 @@ Large-scale organizations rely on a multitude of autonomous teams solving their 
 To highlight the difference of the two approaches, we are borrowing a quote from *Mark Burgess*'s book *Thinking in Promises* - "Don't tell me what you are doing, tell me what you are trying to achieve!".
 <!-- vale Vale.Avoid = YES -->
 
-<!-- 
-TODO: (Daniel) Embed here, moved from autonomous teams section
-
 ## Organizational Charts
 
 Organizational charts visualize the level of responsibility "who is in charge of what and whom". For day-to-day practices, the org chart shows the strategically placed chain of command for each business division. The higher up the org chart we go, the more long-term decisions we encounter.
@@ -29,7 +57,7 @@ Organizational charts visualize the level of responsibility "who is in charge of
 Org charts are not a device to visualize communication channels and team structures within organizations. Any practical planning of team responsibilities or day-to-day tasks based on org charts is an inherently flawed process as teams and products within software companies strive to adapt to market conditions.
 
 A healthy business is not built upon software alone, and an org chart has little relationship with our engineers, and inserting any names of our workforce into our chart is pointless. Reasonable org chart updates include changes to geographic compliance responsibilities, drastic updates to our organization's cap table.
--->
+
 
 ## Interaction Forms by Team Topologies
 
@@ -93,44 +121,8 @@ Our CI/CD research team spent the last months evaluating tools and strategies fo
 TODO: (Daniel) Communicating via Team interactions
 The default cannot be to directly call members from other teams to request help and support
 Find good channel, e.g. support line, or create a ticket and meeting, otherwise ask other team to book time
+
+If we can track our team interactions, we can make decisions regarding team responsibilities. If we find exclusive strong dependencies and a reduced cognitive load of maintaining a platform or library, it might be advantageous to empower the team to do so.
+
+A topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. 
 -->
-
-<!--
-TODO: (Daniel) Move the two paragraphs below to the chapter communication channels
--->
-
-## Workspace Design
-
-We have influence on the communication behavior of our teams. As with the *Inverse Conway Maneuver*, we ask ourselves who we want to communicate with whom, how frequently, and design our workspaces around this mandate. This approach works for both physical and virtual workspaces.
-
-The most physical method for steering communication within an office is, quite physically, walls. We plan who shares an office with whom and the physical distance between teams. We arrange our vertical teams by rooms, floors, and buildings. Subtler influences of communication behavior are established by designing the viewing angles of individual contributors. For office workers, we strategically place table arrangements, whiteboards, plants, and décor.
-
-Over the course of a product cycle, we want to offer workspace characteristics for our teams:
-
-- Environments for low-noise, high-concentration work
-- Environments for collaborative work and brainstorming
-- Environments for social engagement across disciplines
-
-Our teams and individual contributors should be able to cycle through these environments with little overhead. We can support the creation of these environments through **tactile efforts**, **virtual tools**, and **process guidelines**.
-
-Within office buildings, we offer closed offices with high ceilings and natural and adjustable lighting for low-noise environments. We establish war rooms and conference rooms for collaborative experiences and nurture social encounters in the kitchen, break rooms, or lounges. While we are somewhat limited by the physical location of our remote teams, we have the ability to offer equipment for home office design, noise-canceling headphones, or offer coworking office spaces.
-
-We guide virtual collaboration experiences with our set of tools and features. The ability to send and also mute incoming noise in the form of emails, instant messages, or calls enables our contributors to focus on high-concentration work without distractions. Real-time collaboration tools support our teams when sketching out ideas and brainstorming. Cross-disciplinary channels and public-by-default channels within our primary communication tool underline our organization's practice of open communication.
-
-Our policies and processes enable helpful workplace characteristics by setting certain expectations in the way our teams do their work. Offering flexible hours supports our teams to plan out work hours which are most productive for them. Disallowing meetings during certain days or times of days in the week guarantees that teams can plan low-noise work. Setting our kick-off events and social events during work hours prevents the exclusion of team members with responsibilities outside of work. Ensuring consistent work practices across teams nurtures inter-team work discovery.
-
-By setting up organic traits and processes, we encourage interaction modes to become team habits.
-
-## On-site, Remote, and Hybrid 
-
-Since a global pandemic and government-dictated self-isolation accelerated work-from-home policies, remote work has become a debated topic. With software, we have the unique ability to hire (almost) any division of our workforce from any timezone. Hiring across state and country borders introduces additional HR responsibilities of income tax, potential organizational tax, etc.
-
-Virtual and remote work have the potential to hire a more diverse workforce from a larger talent pool. These factors should be the driving factor of workplace design and need to be documented. Workspaces are tools towards productivity and should be wielded as such. Offices are not to monitor our employees. Our employees are not children.
-
-If we offer remote work, our organization has to ensure full remote capabilities. Decisions have to be made and understood using remote tools. If decisions or agreements are made within the office walls <!-- vale write-good.Weasel = NO -->exclusively<!-- vale write-good.Weasel = YES -->, it negates the positive impact our remote members have on our organization.
-
-Remote work performs best with the correct infrastructure. Established tools, processes, communication habits. Proper cameras, multiple screens, good microphones, and a stable and fast internet connection. Our remote employees are still working in physical locations. While we cannot fully control the environment, we can, if necessary, influence it by offering coworking spaces or dedicating infrastructure or equipment.
-
-As our teams evolve and interactions evolve, we also adapt our office design. This requires high flexibility for physical offices. Virtual offices are easier to scale.
-
-Hybrid models have the advantage to focus our employees on work. Parents can choose to work undisturbed in the office. The downside is potential expenses for unused space. We can offer free access to co-working spaces.

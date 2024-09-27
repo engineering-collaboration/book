@@ -98,3 +98,39 @@ Communication helps build resilience among individuals and teams - letting peopl
 All of our internal media is public by default to every team member. This includes source code, development environments, documentation, and assigned tasks and backlog. We actively encourage our employees to confer about work in progress and completed work. If our employees are able to access all knowledge that was tackled throughout the history of our organization, we drastically reduce duplicated work and initial research phases.
 
 Non-harmful exceptions to this transparency rule include necessary compliance enforcement, security-driven decisions, and C-level market-driving decisions such as potential acquisitions.
+
+## Workspace Design
+
+We have influence on the communication behavior of our teams. As with the *Inverse Conway Maneuver*, we ask ourselves who we want to communicate with whom, how frequently, and design our workspaces around this mandate. This approach works for both physical and virtual workspaces.
+
+The most physical method for steering communication within an office is, quite physically, walls. We plan who shares an office with whom and the physical distance between teams. We arrange our vertical teams by rooms, floors, and buildings. Subtler influences of communication behavior are established by designing the viewing angles of individual contributors. For office workers, we strategically place table arrangements, whiteboards, plants, and décor.
+
+Over the course of a product cycle, we want to offer workspace characteristics for our teams:
+
+- Environments for low-noise, high-concentration work
+- Environments for collaborative work and brainstorming
+- Environments for social engagement across disciplines
+
+Our teams and individual contributors should be able to cycle through these environments with little overhead. We can support the creation of these environments through **tactile efforts**, **virtual tools**, and **process guidelines**.
+
+Within office buildings, we offer closed offices with high ceilings and natural and adjustable lighting for low-noise environments. We establish war rooms and conference rooms for collaborative experiences and nurture social encounters in the kitchen, break rooms, or lounges. While we are somewhat limited by the physical location of our remote teams, we have the ability to offer equipment for home office design, noise-canceling headphones, or offer coworking office spaces.
+
+We guide virtual collaboration experiences with our set of tools and features. The ability to send and also mute incoming noise in the form of emails, instant messages, or calls enables our contributors to focus on high-concentration work without distractions. Real-time collaboration tools support our teams when sketching out ideas and brainstorming. Cross-disciplinary channels and public-by-default channels within our primary communication tool underline our organization's practice of open communication.
+
+Our policies and processes enable helpful workplace characteristics by setting certain expectations in the way our teams do their work. Offering flexible hours supports our teams to plan out work hours which are most productive for them. Disallowing meetings during certain days or times of days in the week guarantees that teams can plan low-noise work. Setting our kick-off events and social events during work hours prevents the exclusion of team members with responsibilities outside of work. Ensuring consistent work practices across teams nurtures inter-team work discovery.
+
+By setting up organic traits and processes, we encourage interaction modes to become team habits.
+
+## On-site, Remote, and Hybrid 
+
+Since a global pandemic and government-dictated self-isolation accelerated work-from-home policies, remote work has become a debated topic. With software, we have the unique ability to hire (almost) any division of our workforce from any timezone. Hiring across state and country borders introduces additional HR responsibilities of income tax, potential organizational tax, etc.
+
+Virtual and remote work have the potential to hire a more diverse workforce from a larger talent pool. These factors should be the driving factor of workplace design and need to be documented. Workspaces are tools towards productivity and should be wielded as such. Offices are not to monitor our employees. Our employees are not children.
+
+If we offer remote work, our organization has to ensure full remote capabilities. Decisions have to be made and understood using remote tools. If decisions or agreements are made within the office walls <!-- vale write-good.Weasel = NO -->exclusively<!-- vale write-good.Weasel = YES -->, it negates the positive impact our remote members have on our organization.
+
+Remote work performs best with the correct infrastructure. Established tools, processes, communication habits. Proper cameras, multiple screens, good microphones, and a stable and fast internet connection. Our remote employees are still working in physical locations. While we cannot fully control the environment, we can, if necessary, influence it by offering coworking spaces or dedicating infrastructure or equipment.
+
+As our teams evolve and interactions evolve, we also adapt our office design. This requires high flexibility for physical offices. Virtual offices are easier to scale.
+
+Hybrid models have the advantage to focus our employees on work. Parents can choose to work undisturbed in the office. The downside is potential expenses for unused space. We can offer free access to co-working spaces.
