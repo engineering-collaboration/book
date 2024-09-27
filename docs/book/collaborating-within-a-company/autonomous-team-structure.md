@@ -73,7 +73,7 @@ Hard problems are hard. This tautology is the driving force behind complicated-s
 
 <!-- vale write-good.Weasel = NO -->
 <!-- rarely -->
-Within *Engineering Collaboration*, we emphasize the importance of enabling our employees to learn new skills and grow in their careers. Complicated-subsystems are rarely an such an opportunity. Typical complicated problems require higher education and experience in advanced physics, mathematics, and computer science.
+Within *Engineering Collaboration*, we emphasize the importance of enabling our employees to learn new skills and grow in their careers. Complicated-subsystems are rarely such an opportunity. Typical complicated problems require higher education and experience in advanced physics, mathematics, and computer science.
 <!-- vale write-good.Weasel = YES -->
 
 The driving factor for complicated-subsystem teams is to reduce the cognitive load of a vertical team, not necessarily to share the component across multiple teams. Complicated-subsystem teams own the problem long-term and work on libraries that are then consumed by product teams.
