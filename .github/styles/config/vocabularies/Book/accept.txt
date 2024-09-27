@@ -16,6 +16,7 @@ Sibony
 Cass
 Kahneman
 Sunstein
+Pais
 Diátaxis
 Spotify
 API

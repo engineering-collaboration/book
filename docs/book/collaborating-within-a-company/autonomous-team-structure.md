@@ -5,124 +5,117 @@ description: Designing teams as cross-disciplinary structures allows us to align
 
 # Autonomous Team Structure
 
-During early web development, teams were organized by disciplines. The front-end department developed the visual interaction for websites, the back-end department worked on the system logic of received input from the user, and the database department serialized data across user sessions.
+In early web development, teams were organized by discipline. The front-end department developed the visual interaction for websites, the back-end department worked on the system logic of input received from the user, and the database department managed data across user sessions.
 
 [![Horizontal Teams](../../assets/images/book/collaborating-within-a-company/horizontal-teams.webp)](../../assets/images/book/collaborating-within-a-company/horizontal-teams.png)
 
-Teams partitioned via disciplines face multiple handoffs and inter-team communication to deliver a customer-facing feature. This approach drastically reduces the velocity of releases and potentially introduces friction of internal politics and an us-vs-them blame culture across teams.
+Teams partitioned by discipline face multiple handoffs and extensive inter-team communication to deliver customer-facing features. This approach drastically reduces the velocity of releases and potentially introduces internal friction and an "us-vs-them" blame culture across teams.
 
-The organic inertia within monodisciplinary teams directs our team members toward misguided goals. A team consisting entirely of backend engineers will focus on building the best backend the team can envision. While this may be an attractive and self-fulfilling task for our engineers, our organizational needs require our employees to focus on the best customer experience.
+The natural inertia within monodisciplinary teams directs our team toward misguided goals. A team consisting entirely of backend engineers will focus on building the best back-end system they can envision. While this might be an attractive and self-rewarding task for engineers, our organizational needs require our teams to focus on the best possible customer experience.
 
 ## Vertical Teams
 
-Designing teams as cross-disciplinary vertical structures allows us to align multiple competences with a shared purpose. A vertical team focuses on a single service, feature, or user persona and is empowered to build and deliver customer value as quickly and independently as possible. The team does not require hand-offs to other teams to perform parts of the task and achieves rapid iteration cycles by working autonomously.
+Designing teams as cross-disciplinary vertical structures allows us to align multiple competencies with a shared purpose. A vertical team focuses on a single service, feature, or user persona and is empowered to build and deliver customer value as quickly and independently as possible. The team doesn't require handoffs to other teams to perform parts of the task, which helps achieve rapid iteration cycles by working autonomously.
 
 [![Vertical Teams](../../assets/images/book/collaborating-within-a-company/vertical-teams.webp)](../../assets/images/book/collaborating-within-a-company/vertical-teams.png)
 
-Vertical teams include all disciplines across the necessary tech stack. Typically, a vertical team has members versed in the areas of project management, security, infrastructure, development, metrics and monitoring, and UX. These do not represent a one-to-one mapping of skills to members. A member may cover multiple disciplines, and more or fewer disciplines may be needed per team.
+Vertical teams include all disciplines across the necessary tech stack. Typically, a vertical team has members versed in project management, security, infrastructure, development, metrics and monitoring, and UX. These disciplines aren’t a strict one-to-one mapping of skills to members; a member may cover multiple areas, and teams may require more or fewer disciplines depending on their needs.
 
-The foundation of a vertical team's success lies in the ability to deliver changes to production without dependencies on other teams. It owns its tech stack and its continuous delivery pipeline and addresses newly discovered limitations and flaws in the software system autonomously. This ensures a reliable feedback loop with its customers and the ability to select the technology most appropriate for the specific problem, e.g., using a document database or a graph database.
+The success of a vertical team lies in its ability to deliver changes to production without dependencies on other teams. It owns its tech stack and continuous delivery pipeline and can address newly discovered limitations or flaws in the system autonomously. This ensures a reliable feedback loop with customers and the ability to choose the most appropriate technology for a problem, e.g., using a document database or a graph database.
 
-In 1955, *Elting Morison* published the study *"Mining Coal: How Long Can We Continue?"* exploring efficiencies for team structures in coal mines. The key findings emphasize the importance of team autonomy and self-management in improving productivity. In the study, smaller teams tend to operate more efficiently because each member has a clearer understanding of their responsibilities and can coordinate their efforts more effectively.
+In 1955, *Elting Morison* published a study, *"Mining Coal: How Long Can We Continue?"*, exploring team efficiencies in coal mines. The key findings emphasized the importance of team autonomy and self-management in improving productivity. The study showed that smaller teams tend to operate more efficiently because each member has a clearer understanding of their responsibilities and can coordinate efforts more effectively.
 
-Before *James P. Womack*'s *"The Machine That Changed the World"* popularized the concept of lean manufacturing, *Womack* was a project manager at Ford. When his team visited the Toyota operations in Japan and were surprised to see how autonomously the teams at Toyota operated on the production floor; a stark contrast to the centralized decision-making and hierarchical structure they were used to at Ford.
+Before *James P. Womack*'s *"The Machine That Changed the World"* popularized lean manufacturing, *Womack* worked as a project manager at Ford. His team visited the Toyota operations in Japan and were surprised to see how autonomously teams at Toyota operated on the production floor - a stark contrast to Ford's centralized decision-making and hierarchical structure.
 
-Vertical teams were rediscovered in software development in the early 2010s. The book *Team topologies*, a major influence for *Engineering Collaboration*, refers to vertical teams as *stream-aligned teams* and emphasizes the importance of autonomous delivery. Spotify published their ongoing organizational effort with *The Spotify model*, including a multidisciplinary team composition called *Squads*. However, vertical teams as described in *Engineering Collaboration* do not necessarily follow the same reporting schema or chapter structure of the Spotify model.
+Vertical teams were rediscovered in software development in the early 2010s. The book *Team Topologies*, a major influence on *Engineering Collaboration*, refers to vertical teams as *stream-aligned teams* and emphasizes the importance of autonomous delivery. Spotify popularized its organizational approach with *The Spotify Model*, which includes a multidisciplinary team composition called *Squads*. However, the vertical teams in *Engineering Collaboration* don't necessarily follow the same reporting schema or chapter structure as the Spotify model.
 
 ## Team Size
 
-Based on the behavior of primates, British anthropologist Robin Dunbar proposed that humans can comfortably maintain 150 active social contacts. This number represents our social outer circle and decreases as we approach our inner circle. According to the theory, we are capable of 50 meaningful relationships, 15 people with whom we share a strong relationship, and 5 people whom we deeply trust. Naturally, these numbers are subjective.
+Based on the behavior of primates, British anthropologist Robin Dunbar proposed that humans can comfortably maintain 150 active social contacts. This number represents our social outer circle, with smaller numbers as we approach our inner circle. According to the theory, we are capable of 50 meaningful relationships, share strong relationships with 15 people, and deeply trust 5 people. These numbers are subjective and vary by individual.
 
-Based on Dunbar's theory, a team should consist of three to nine people. Teams smaller than three struggle with diverse responsibilities, while teams larger than that struggle with communication overhead and accumulated noise. *Amazon* famously put it as *"A team should be fed with two pizzas."* - a unit of measurement that may work in the United States, but will starve any team larger than three based in Europe.
+According to Dunbar's theory, a team should consist of three to nine people. Teams smaller than three may struggle with diverse responsibilities, while larger teams face communication overhead and accumulated noise. *Amazon* famously put it as *"A team should be fed with two pizzas."* - a unit of measurement that may work in the United States, but would starve any team larger than three in Europe.
 
-A second factor affecting team size is the cognitive load of our team. We handle increased workload of the same nature by scaling up our team to the maximum of Dunbar's number. If the workload increases beyond the maximum scope, we identify a separation of concerns within our software and split the team along this architecture. Teams adapt quickly to an increased volume of similar work; a more interesting problem is an increase in complexity.
+We handle increased workload of the same nature by scaling up our team to the maximum of Dunbar's number. If the workload increases beyond this scope, we identify a separation of concerns within our software and split the team along this architecture. Teams adapt quickly to an increase in volume of similar work, but a more interesting challenge arises when complexity increases.
 
-When working on problems, we have a limited capacity of information we can hold in our mind. Most engineering work consists of solving problems within a specific context. This context becomes increasingly more complex with additional abstractions, user personas, and architecture demands. The larger and the more complex the systems of teams get, the more cognitive load is required to effectively deliver results.
+When working on problems, we have a limited capacity for the information we can hold in our minds. Most engineering work involves solving problems within a specific context. This context becomes increasingly complex with additional abstractions, user personas, and architectural demands. The larger and more complex a team's systems become, the greater the cognitive load required to effectively deliver results.
 
-Besides the complexity of systems, context switches reserve a large amount of cognitive load. When we work on a problem, we enter a focused state often referred to as *the zone* or a *state of flow*. Within this state of heightened productivity, we lose ourselves to the task at hand and toil at peak performance. We reach *the zone* after fifteen to thirty minutes of uninterrupted focus. Every context switch removes us from this state.
+Besides the complexity of systems, context switches consume a large amount of cognitive load. When we work on a problem, we enter a focused state often referred to as *the zone* or a *state of flow*. In this state of heightened productivity, we lose ourselves in the task at hand and perform at peak efficiency. We reach *the zone* after fifteen to thirty minutes of uninterrupted focus. Every context switch pulls us out this state.
 
-Because cognitive overload and context switches have such a detrimental effect on our productivity, it makes sense to split the team with dedicated responsibilities before we reach the upper limit of Dunbar's number.
+Because cognitive overload and context switching have such a detrimental effect on our productivity, it makes sense to split the team and assign dedicated responsibilities before reaching the upper limit of Dunbar's number.
 
 ## Internal Supporting Teams
 
-All teams within our organization are vertical, and most of our teams work on features for our customers. However, complex problems can be solved more efficiently by dedicated teams. These supporting teams reduce the burden for product teams by delivering software internally.
+All teams within our organization are vertical, and most of our teams work on features for our customers. However, complex problems can be solved more efficiently by dedicated teams. These supporting teams reduce the burden on product teams by delivering software internally.
 
 In the 2012 paper, *A Taxonomy of Dependencies in Agile Software Development*, Diane Strode and Sid Huff propose three different categories of dependencies: knowledge, task, and resource dependencies.
 
-These were adapted by Matthew Skelton and Manuel Pais in the book *Team Topologies*. Based on the findings of the paper and their personal experience, the authors differentiate three different types of supporting teams: complicated-subsystem teams, enabling teams, and platform teams.
+These were adapted by Matthew Skelton and Manuel Pais in the book *Team Topologies*. Based on the findings of the paper and their personal experience, the authors differentiate three types of supporting teams: complicated-subsystem teams, enabling teams, and platform teams.
 
 ### Enabling Teams
 
-Product teams inevitably encounter a problem that syphons focus from their work. A distracted product team delivers improvements less frequently, making our organization vulnerable to changing market demands. We remove the strain on the product team's development velocity, we establish an enabling team. The newly formed team takes responsibility of the impeding issue and delivers usable solutions.
+Product teams inevitably encounter a problem that syphons focus from their work and reduces the frequency of product updates. A distracted product team makes our organization vulnerable to changing market demands. To remove the strain on their development velocity, we establish an enabling team. The newly formed group takes responsibility for the impeding issue and delivers usable solutions.
 
-Enabling teams solve limitations of three kinds: problems of time, complexity, or magnitude. The first category - time - might be the most immediately relatable experience. A team spends an unreasonable amount of time solving a tangential problem. This hinders the team's primary responsibility of delivering features within its domain. We create an enabling team to take on the problem instead. The dedicated enabling team has the resources and cognitive load deliver a sustainable solution to the initial team.
+Enabling teams solve limitations of three kinds: problems of time, complexity, or magnitude. The first category - time - might be the most relatable experience. A team spends an unreasonable amount of time solving a tangential problem, hindering the team's primary responsibility of delivering features within its domain. We create an enabling team to take on the problem instead. The dedicated enabling team has the resources and cognitive load to deliver a sustainable solution to the initial team.
 
-Problems of complexity grow over time. Once they reach a certain threshold, our engineers struggle to mentally retain the intricacies of a problem. One possible reason might be that our product evolved and the team's responsibility has become too broad. In that case we reassess whether to split our team into multiple product teams.
+Problems of complexity grow over time. Once they reach a certain threshold, our engineers struggle to <!-- vale write-good.Weasel = NO -->mentally<!-- vale write-good.Weasel = YES --> retain the intricacies of a problem. One possible reason might be that our product evolved and the team's responsibility has become too broad. In that case, we reassess whether to split our team into multiple product teams.
 
-Another cause for complexity originates from organic code growth leading to accumulated technical debt. Technical debt is the cost of doing business. As an organization, we prefer to deliver features fast and generate income as early as possible. Accumulated complexity results in opaque software architecture and convoluted code. An enabling team with the domain expertise can identify the extent of the problem and implement a strategy to pay off our technical debt.
+Another cause of complexity originates from organic code growth leading to accumulated technical debt. Technical debt is the cost of doing business. As an organization, we prefer to deliver features fast and generate income as early as possible. The accumulated complexity results in opaque software architecture and convoluted code. An enabling team with domain expertise can identify the extent of the problem and implement a strategy to pay off our technical debt.
 
-Problems of magnitude entail large-scale changes across our organization that require deep knowledge of a problem. Typical scenarios include regulatory compliance for industries and location, uncovering security vulnerabilities, or comprehensive technical migration.
+Problems of magnitude entail large-scale changes across our organization that require deep knowledge of a problem. Typical scenarios include regulatory compliance, uncovering security vulnerabilities, or comprehensive technical migration. For example, our organization decided to globally transition from Python 2 to version 3:
 
-As an example, our organization decided to globally transition from Python 2 to version 3. A dedicated enabling team researches the challenges of the migration and explores strategies to minimize disruptions for our workforce. The team writes migration guides, automation tooling, and provides testing suites. After the enabling team has solidified an approach, it collaborates with vertical teams across the organization to ensure a successful transition.
+A dedicated enabling team researches the challenges of the migration and explores strategies to minimize disruptions for our workforce. The team writes migration guides, automation tooling, and provides testing suites. After the enabling team has solidified an approach, it collaborates with vertical teams across the organization to ensure a successful transition.
 
-Enabling teams are temporary and focused on transferring knowledge, introducing capabilities, or solving singular problems. They focus on making product teams self-sufficient.
+Enabling teams are temporary and focused on transferring knowledge, introducing capabilities, or solving singular problems. They aim to make product teams self-sufficient.
 
 ### Complicated-Subsystem Teams
 
-If the problem requires highly specialized knowledge outside of our current team's domain, we hire or upskill dedicated personell to own the problem. One example would be to hire computer graphics engineers to build 3D rendering solutions for our web teams.
+Hard problems are hard. This tautology is the driving force behind complicated-subsystem teams. If a problem requires highly specialized knowledge outside of our current team's domain, we hire dedicated personnel to own the problem. One example would be hiring computer graphics engineers to build 3D rendering solutions for our web teams.
+
+<!-- vale write-good.Weasel = NO -->
+<!-- rarely -->
+Within *Engineering Collaboration*, we emphasize the importance of enabling our employees to learn new skills and grow in their careers. Complicated-subsystems are rarely an such an opportunity. Typical complicated problems require higher education and experience in advanced physics, mathematics, and computer science.
+<!-- vale write-good.Weasel = YES -->
 
 The driving factor for complicated-subsystem teams is to reduce the cognitive load of a vertical team, not necessarily to share the component across multiple teams. Complicated-subsystem teams own the problem long-term and work on libraries that are then consumed by product teams.
 
-
-Enabling teams consists of subject experts for a single mission.
-
-Enabling teams understand potential areas of improvements of vertical teams. Enabling teams stay up-to-date with new approaches, tooling, and practices to bridge internal knowledge gaps. Enabling teams typically appear in the form of coaches, consultants, and research and development.
-
-
-On a more egocentric note, an enabling team may also be set up to apply the processes described in this book across vertical teams.
-
 ### Platform Teams
 
-Platform teams build internal products with the same sophistication needed to be commercially publicly. Platforms offer a high level of self-service documentation, contacts to support engineers, and a polished UX and API.
+The larger our software product becomes, the greater the overlap of common challenges. Every team needs to build, test, and deploy software. Every team needs to gather crash reports, logs, and metrics. Every team needs to store, request, and back up data. To consolidate our approaches, we build internal platforms.
 
-Our vertical product teams maintain full ownership of building, running, and fixing their application in production. Our platform teams provide internal self-service services to reduce the cognitive load that would be required to develop the underlying services. Platform teams have a strong focus on usability and treat the platform as a product with a typical product life cycle.
+<!-- platforms consist of multiple teams -->
 
-For example, our organization has been utilizing object storage from a popular cloud provider. We have reached a maturity and size that we decide to try and lower costs by building internal teams that focus on internal needs. We start recruiting for multiple vertical teams that establish an internal storage platform team.
+Platform teams are vertical teams that deliver features to an internal platform. Platform teams differ little from product teams. They are structured alike and use the same processes. As with our public software, an internal platform consists of multiple teams delivering different feature sets to the rostrum. And just like product teams, platform teams use the platform to build the platform.
 
-However, platforms can be as small as providing a thin wrapper or merely extended documentation and implementation examples of a publicly available product.
+<!-- responsibility -->
 
+Internal platforms provide services with self-service endpoints and configuration options to satisfy the product team's needs. The product teams maintain full ownership of building, testing, and deploying their applications to production. If their system breaks, it is the product team's (not the platform team's) responsibility to investigate and fix the problem. However, the platform must offer mature debugging tools and proper documentation for our product teams to do so.
+
+<!-- usability -->
+
+Enabling teams and complicated-subsystem teams deliver solutions for one-off problems or to a single team. Through tight collaboration, these teams fine-tune the solutions to the specific product team's needs. Conversely, platforms serve the majority of our technology teams. As we cannot expect to onboard all teams in person, we mandate a strong focus on usability when developing our platform. Platforms offer a high level of documentation, a polished API experience, and dedicated contact channels for support requests.
 
 !!! tip "Recommendation"
     <img src="https://images.squarespace-cdn.com/content/v1/5b3296b78ab7229ecafcf4ed/1566982599895-T0K28HX7RF7YJ2GE1D4K/TeamTop_cover_RGB_flat_stroke.jpg?format=1000w" width="360" style="display: block; margin-left: auto; margin-right: auto;" alt="Engineering Collaboration">
     <br>
     <br>
-    In *Team Topologies*, IT consultants Matthew Skelton and Manuel Pais share secrets of successful team patterns and interactions. Some topics in *Engineering Collaboration* are written with the help of the publicly available information from Team Topologies.
+    In *Team Topologies*, IT consultants Matthew Skelton and Manuel Pais share secrets of successful team patterns and interactions to help product, technology, and engineering leaders design high-impact team-of-teams organizations. *Engineering Collaboration* covers some high-level concepts of *Team Topologies*.
+    
+    For additional details and information, I highly recommend you check out the book and more at [***teamtopologies.com***](https://teamtopologies.com/).
 
-    I highly recommend you check out the book and more at https://teamtopologies.com/
+## Team Topology Over Time
 
+<!-- Changing team dynamics -->
 
-A supporting team is a nested team consisting of vertical teams and potentially consuming other supporting teams. Typically, we want a 6:1 to 9:1 mapping between vertical teams working on the product we sell and vertical teams working on other deliverables.
+Team constellations are not static. We revisit our teams and their positioning with the adoption of additional technology, changing market practices, and an expanding internal skill set. Additional workload or cognitive load encourages us to split product teams. Barriers and distractions to development progress lead us to establish temporary enabling teams, permanent complicated-subsystem teams, or build an internal platform with platform teams.
 
+Identifying and labeling internal supporting teams helps us recognize patterns. Technical debt, for example, can be paid with either team category. We decide which team to deploy depending on the scope and longevity of the solution. Visualizing the flow of software through supporting teams clarifies who a specific team's customer is. We then build inter-team interactions and communication channels to understand their needs.
 
-These are general patterns, not strict rules. Technical debt can be paid with enabling teams or complicated sub system teams, or platform teams. The mai difference is the scope and longevity of the deliverable.
+<!-- Changing requirements and costs -->
 
-## Team Topology over Time
+Different industries require different compositions of internal supporting teams and product teams. The needs of a SaaS platform do not match the development practices of a AAA gaming studio. If any cross-industry axiom were to be found, it would be that the work of product teams generates revenue, the work of supporting teams reduces the cost of the former. We create and hire for internal supporting teams if and when we discern a fiscal advantage.
 
+<!-- Control team development focus -->
 
-<!--
-TODO: (Daniel) embed here, moved from introduction
+Further, we offer our platform and complicated-subsystem services to our product teams at cost. If product teams need to account for the cost of supporting teams in their budget, we can reason that only necessary technology survives within our organization. If a majority of product teams decide the benefit of a certain aspect of the platform is not worth the cost, we reconsider the benefits of maintaining it. Conversely, if we provide all services for "free", our organization may burn through significant capital for non-essential features.
 
-A topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. We build inter-team interactions and communication channels to explain who our customers are and to appreciate their needs.
--->
-
-As with most topics covered in this book, teams are not static. It is not sufficient to choose a team boundary a single time and expect no further changes. With the adoption of additional technology, market practices, competitors, and internal knowledge, our team constellations and interaction modes will evolve.
-
-If we can track our team interactions, we can make decisions regarding team responsibilities. If we find exclusive strong dependencies and a reduced cognitive load of maintaining a platform or library, it might be advantageous to empower the team to do so.
-
-A relevant topic for this book is a different example. Learning and setting up CI/CD principles requires high cognitive load that can be tasked to an enabling team. The enabling team will set up a minimal pipeline for vertical teams, and after a hand-off and education period, the vertical team is responsible for adjusting the pipeline to their needs.
-
-Successful companies follow a general rule that actionable feedback originates from paying customers solely. These are the people willing to spend money on the problem we are solving; these are the people we primarily listen to.
-
-We set up the same strategy with our internal deliveries and offer products of supporting teams to vertical teams at cost. If vertical teams and their leads have to budget their dependencies on enabling teams, platform teams, or complicated subsystem teams, we can reason that only necessary technology survives within our organization.
-
-Internal payments support baseline metrics of usage and help avoid building bloated platforms with <!-- vale alex.ProfanityMaybe = NO -->sexy<!-- vale alex.ProfanityMaybe = YES --> but unnecessary features. Platform teams should strive for the thinnest viable platform able to support our vertical teams to generate product revenue.
+The price barrier of internal tools allows us to identify effective opinions for further development. Actionable feedback originates from paying customers only. A wish list of nice-to-have features from non-paying users leads to bloated platforms with unnecessary features. As an organization, we want to mimic the free market consequences of poor product-market fit within our internal ecosystem - just a little less harshly.
