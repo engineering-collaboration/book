@@ -13,6 +13,10 @@ For the majority of changes, before diving straight into producing code we write
 
 To prevent turning this process into unnecessary red tape, we involve the minimum number of people necessary and strictly discuss the minimum requirements for the task. The individuals involved can be limited to the engineer implementing the task, an engineer from the customer team, and optionally a tech lead. These conversations typically happen organically, either verbally or in team chats. We make it a habit to copy the information to a publicly available platform.
 
+<!-- TODO: (Daniel) embed here
+*Mark Burgess*'s book *Thinking in Promises* - "Don't tell me what you are doing, tell me what you are trying to achieve!".
+ -->
+
 ### Documenting Decisions
 
 Making decisions is a speculative process. Even those deduced from considerable experience and data points are still predicting the future. Recording the process of our conclusions and the outcomes improves the precision of our fortune-telling over time, as we can identify successful and unsuccessful patterns.
