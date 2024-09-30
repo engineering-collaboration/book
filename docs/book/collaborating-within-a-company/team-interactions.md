@@ -5,12 +5,9 @@ description: Large-scale organizations rely on a multitude of autonomous teams s
 
 # Team Interactions
 
+In [Autonomous Team Structure](./autonomous-team-structure.md) we discussed the importance of assigning software responsibilities to self-sufficient teams that plan, implement, and deliver features independently. In order for them to do so, we establish internal supporting teams to improve the product team's efficiency. The previous chapter classified three types of supporting teams and their functions. *Team Interactions* highlights distinct approaches for software teams to work together effectively.
 
-## Inverse Conway Maneuver
-
-<!-- TODO: (Daniel) move to team interactions -->
-
-!!! quote
+!!! quote "Conway's Law"
     *"Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."*  
     - Melvin E. Conway
 
@@ -25,53 +22,13 @@ description: Large-scale organizations rely on a multitude of autonomous teams s
 
 <!-- What is Conway's Law? -->
 
-The above quotes refer to Conway's Law. It observes the universal behavior that our software architecture ultimately copies our organization's team layout. Before a single line of code is written, we may deduce shape of our product by observing our teams' topology.
+Conway's Law decrees the universal behavior that every software architecture ultimately mirrors the layout and communication practices of the team working on the software. The law highlights the fallacy of separating department structure and software architecture. No matter how insistent we are about our architecture mandate, the software structure will ultimately converge towards towards the department structure. This truth has been an inconvenience to software companies that emerged from conventional departments organized by discipline and reporting hierarchy.
 
-<!-- What is the Inverse Conway Maneuver? -->
+Modern software companies can use Conway's law to their benefit. A strategy called the *Inverse Conway Maneuver* suggests that we design our organization, not the other way around. First we design the software, then we position autonomous vertical teams to match the software's features and modules. Placing people and teams according to their software contributions leads to less friction in software delivery.
 
-Utilizing Conway's Law as a tool, the *Inverse Conway Maneuver* states that we design our organization around our desired software architecture and continuous delivery flow, not the other way around. Moving people and teams in a way to design communication channels more efficiently will ultimately and organically lead to less friction in software delivery.
+But software architecture goes beyond identifying modules and components. We define responsibility and boundaries of each component, plan accessability patterns and build APIs for each module. We mirror these patterns into our inter-team dynamics. When autonomous teams interact, we ensure distinct ownership and responsibility of the domains. Thankfully, some smart people documented successful interaction patterns between teams. 
 
-
-<!-- 
-Throughout these processes, remember Conway's Law. Changes to our departments will ultimately find their way into the architecture of our software. Software architecture is a continuous process. In modern times, no commercial software is as trivial as to be designed in whole and not influenced by changes.
-
-The success of our company does not rely on us labeling our teams correctly, 
- -->
-
-<!-- 
-Throughout these processes, remember Conway's Law. Changes to our departments will ultimately find their way into the architecture of our software. Software architecture is a continuous process. In modern times, no commercial software is as trivial as to be designed in whole and not influenced by changes.
- -->
-
-Conway's law is not solely defined by the architecture of our teams; it also covers how these subsystems communicate with each other. We use people who are skilled in technical API design to help build boundaries between teams within an organization.
-
-Large-scale organizations rely on a multitude of autonomous teams solving their respective domain problems in an efficient manner. When autonomous teams interact, we ensure distinct ownership and responsibility of the domains by applying communication based on *Promise theory*. Rather than teams imposing obligations upon one another, teams promise to deliver a product beneficial for the interaction.
-
-<!-- vale Vale.Avoid = NO -->
-To highlight the difference of the two approaches, we are borrowing a quote from *Mark Burgess*'s book *Thinking in Promises* - "Don't tell me what you are doing, tell me what you are trying to achieve!".
-<!-- vale Vale.Avoid = YES -->
-
-## Organizational Charts
-
-Organizational charts visualize the level of responsibility "who is in charge of what and whom". For day-to-day practices, the org chart shows the strategically placed chain of command for each business division. The higher up the org chart we go, the more long-term decisions we encounter.
-
-Org charts are not a device to visualize communication channels and team structures within organizations. Any practical planning of team responsibilities or day-to-day tasks based on org charts is an inherently flawed process as teams and products within software companies strive to adapt to market conditions.
-
-A healthy business is not built upon software alone, and an org chart has little relationship with our engineers, and inserting any names of our workforce into our chart is pointless. Reasonable org chart updates include changes to geographic compliance responsibilities, drastic updates to our organization's cap table.
-
-
-## Interaction Forms by Team Topologies
-
-!!! abstract "This section is heavily based on the book *Team Topologies*."
-
-!!! quote 
-    *"Technologies and organizations should be redesigned to intermittently isolate people from each other's work for the best collective performance in solving complex problems."*  
-    - Etha Bernstain, Jesse Shore, and David Lazer
-    
-    *"Intermittent collaboration found better solutions than constant interaction."*  
-    - Bernstein and colleagues
-    
-    *"The roots of Toyota's success lie not in its organizational structures but in developing capability and habits in its people."*  
-    - Mike Rother
+## Interaction Forms
 
 While we incentivize organization-wide public communication (as discussed in [Communication Channels](./communication-channels.md)), we do not encourage teams collaborating via an organization-wide free-for-all. In order to get work done, it is necessary to define sensible and effective interactions between teams.
 
@@ -117,6 +74,15 @@ Our vertical platform teams working on the product search component and the metr
 
 Our CI/CD research team spent the last months evaluating tools and strategies for advanced testing practices. Facilitating our metrics team, our research team is presenting and validating its findings in a low-risk internal environment. As soon as the metrics team reaches self-reliance with the new practices, the CI/CD R&D team moves to facilitate the next vertical team.
 
+!!! tip "Recommendation"
+    <img src="https://images.squarespace-cdn.com/content/v1/5b3296b78ab7229ecafcf4ed/1566982599895-T0K28HX7RF7YJ2GE1D4K/TeamTop_cover_RGB_flat_stroke.jpg?format=1000w" width="360" style="display: block; margin-left: auto; margin-right: auto;" alt="Engineering Collaboration">
+    <br>
+    <br>
+    In *Team Topologies*, IT consultants Matthew Skelton and Manuel Pais share secrets of successful team patterns and interactions to help product, technology, and engineering leaders design high-impact team-of-teams organizations. *Engineering Collaboration* covers some high-level concepts of *Team Topologies*.
+    
+    For additional details and information, I highly recommend you check out the book and more at [***teamtopologies.com***](https://teamtopologies.com/).
+
+
 <!-- 
 TODO: (Daniel) Communicating via Team interactions
 The default cannot be to directly call members from other teams to request help and support
@@ -125,4 +91,28 @@ Find good channel, e.g. support line, or create a ticket and meeting, otherwise 
 If we can track our team interactions, we can make decisions regarding team responsibilities. If we find exclusive strong dependencies and a reduced cognitive load of maintaining a platform or library, it might be advantageous to empower the team to do so.
 
 A topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. 
+
+!!! quote "Why we mandate collaboration methods"
+    *"Technologies and organizations should be redesigned to intermittently isolate people from each other's work for the best collective performance in solving complex problems."*  
+    - Etha Bernstain, Jesse Shore, and David Lazer
+    
+    *"Intermittent collaboration found better solutions than constant interaction."*  
+    - Bernstein and colleagues
+    
+    *"The roots of Toyota's success lie not in its organizational structures but in developing capability and habits in its people."*  
+    - Mike Rother
 -->
+
+<!-- architecture over time -->
+
+Our software architecture evolves with our organization. The amount and nature of our users influences how we provide our services. The number of employees in our company affects how we build software. Changes to our software architecture and continuous delivery flow convert into our team constellation.
+
+
+## Organizational Charts
+
+Organizational charts visualize the level of responsibility "who is in charge of what and whom". For day-to-day practices, the org chart shows the strategically placed chain of command for each business division. The higher up the org chart we go, the more long-term decisions we encounter.
+
+Org charts are not a device to visualize communication channels and team structures within organizations. Any practical planning of team responsibilities or day-to-day tasks based on org charts is an inherently flawed process as teams and products within software companies strive to adapt to market conditions.
+
+A healthy business is not built upon software alone, and an org chart has little relationship with our engineers, and inserting any names of our workforce into our chart is pointless. Reasonable org chart updates include changes to geographic compliance responsibilities, drastic updates to our organization's cap table.
+
