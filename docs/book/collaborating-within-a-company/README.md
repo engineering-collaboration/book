@@ -13,6 +13,17 @@ Technology officers and software architects make decisions about long-term succe
 
 Implementing autonomy requires a guiding hand. This chapter focuses on strategies to ensure we foster collaboration and reduce distractions, we manage the information to noise ratio in communication and ensure our teams have all the tools to make decisions without propagating them up the hierarchy. We lay the foundation of our software with our organization's topology and culture.
 
+!!! note "Rewrite progress"
+
+    The book includes a rough draft of the chapters I want to cover. However, these mostly consist of notes and currently do not offer a coherent reading experience. I am in the process of rewriting and editing the book for an initial release version. The following chapters are in a somewhat decent shape:
+
+    - [x] Autonomous Team Structure
+    - [x] Team Interactions
+    - [ ] Communication Channels
+    - [x] Working in Cycles
+    - [ ] Innersourcing
+    - [ ] Education and Training
+
 ## Growth mindset
 
 <!-- TODO: (Daniel) move to devops -->

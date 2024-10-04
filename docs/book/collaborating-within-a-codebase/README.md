@@ -9,23 +9,25 @@ Part two of this book covers the day-to-day processes for streamlining technical
 
 The practices covered in this part may be extended beyond our engineering departments. Our mantra is to do less, but inversely do the hard work to make things <!-- vale alex.Condescending = NO -->simple<!-- vale alex.Condescending = YES -->.
 
-The current progress of this section:
+!!! note "Rewrite progress"
 
-- [x] CI/CD
-- [x] Trunk Based Development
-- [x] Planning Implementations
-- [x] Commits
-- [x] Pull Requests
-- [x] Static Analysis
-- [x] Code Reviews
-- [x] Merging
-- [x] Testing
-- [x] Release Mechanisms
-- [x] Artifact Management
-- [x] Release Strategies
-- [x] Documentation
-- [x] Repository Strategies
-- [x] Monitoring and Observability
+    The book includes a rough draft of the chapters I want to cover. However, these mostly consist of notes and currently do not offer a coherent reading experience. I am in the process of rewriting and editing the book for an initial release version. The following chapters are in a somewhat decent shape:
+
+    - [ ] CI/CD
+    - [ ] Trunk Based Development
+    - [ ] Planning Implementations
+    - [ ] Commits
+    - [ ] Pull Requests
+    - [ ] Static Analysis
+    - [ ] Code Reviews
+    - [ ] Merging
+    - [ ] Testing
+    - [ ] Release Mechanisms
+    - [ ] Artifact Management
+    - [ ] Release Strategies
+    - [ ] Documentation
+    - [ ] Repository Strategies
+    - [ ] Monitoring and Observability
 
 ## Version Control
 
