@@ -30,27 +30,31 @@ But software architecture goes beyond identifying modules and components. We def
 
 ## Interaction Forms
 
-While we incentivize organization-wide public communication (as discussed in [Communication Channels](./communication-channels.md)), we do not encourage teams collaborating via an organization-wide free-for-all. In order to get work done, it is necessary to define sensible and effective interactions between teams.
+While we incentivize inter-team communication, teams can not work together in an organization-wide free-for-all. In order to get work done, we define sensible and effective interactions between teams. Depending on the team dynamics, the forms of interactions differ through approach, frequency, duration of inter-team work.
 
-The book *Team Topologies* lists three interaction modes between teams. By framing interaction modes with *promise theory* and consistent communication styles for each team and interaction mode, we encourage an increase of confidence and trust between teams.
+As in *Autonomous Teams*, we defer to the wisdom of Matthew Skelton and Manuel Pais, publicized in their book *Team Topologies* (I, personally, cannot recommend this book enough and encourage all readers to visit their website and watch the videos on Youtube). The two authors identified and listed three common interaction patterns between teams.
 
 ### Collaboration
 
-The collaboration phase is characterized by a high degree of discovery. It is a useful tool when working on new systems or when spinning out platform or complicated-subsystem teams. During inter-team collaboration, our team members join in pair programming, whiteboarding, and brainstorming sessions.
+A collaboration phase incorporates a high degree of discovery. When a difficult problem within a vertical team propels us to spin out an enabling teams or complicated sub-system team, we initially rely on close collaboration between the teams to understand and solve the problem effectively and long-term. When we design new systems across multiple domains, we include multiple vertical teams to collectively solve problems that span different disciplines.
 
-Collaboration is a finite phase. The communicative and social overhead leads to a reduced return on investment after a while and becomes actively a hindrance if done interminably. Following Conway's law, tight collaboration over time will lead to interdependent software services lacking well-defined limits/borders.
+During the inter-team collaboration, our team members join in pair programming, whiteboarding, and brainstorming sessions. In the early stages of collaboration teams communicate frequently and across all available channels. Yet, collaboration is a finite phase. The communicative and social overhead becomes a hindrance if done interminably. Initial problem solving turns into a multi-disciplinary serendipity-driven form of busy work.
 
-After foundational success criteria have been established, we can cap the amount of communication to work on the product. Initially, we check in periodically with reduced frequency over time. After a predetermined amount of time, teams distance themselves and move into an "X-as-a-Service" model or a facilitating model.
+Conway's law counsels us that tight collaboration over time leads to interdependent software services lacking well-defined responsibilities. After foundational success criteria have been established, we cap the amount of communication between teams and refocus our efforts on solving our domain problems. Depending on the problem, we completely shield the team from the work they collaborated on, or establish them as the first consumer of of an *X-as-a-Service*.
 
 ### X-as-a-Service
 
-Mirroring the titular product strategies, X-as-a-Service interactions consist of a vertical team consuming the output that a different team provides. Typical scenarios include vertical teams consuming libraries of complicated subsystem teams or relying on functionality and APIs of platform teams. This interaction mode provides distinct clarity of ownership between the teams.
+As indicated by the titular software strategy, vertical teams consume the output of a X-as-a-Service interaction strategy. Whether our teams consume libraries of a complicated sub-system team or rely on functionality of an internal platform, this interaction form is unidirectional. It provides distinct clarity of ownership between the teams.
 
-The communication during this interaction mode relies mainly on documentation. Dedicated support may be required for Day 0 and Day 1 tasks, with isolated assistance over time. The quality of the interaction improves with predictable deliveries, consistent APIs, and a focus on developer experience.
+Mature *X-as-a-Service* communication builds its foundation on strong documentation and self-service functionality. Besides dedicated support for Day 0 and Day 1 tasks, this interaction form requires little in-person assistance. As is the case with public software, the quality of the interaction improves with predictable deliveries, consistent APIs, and a focus on positive developer experience.
 
 ### Facilitating
 
-A facilitating team actively supports a vertical team in tasks other than directly building the main software systems. Technical facilitating teams consist of experts that accelerate the delivery of software processes into vertical teams. Having completed the facilitating action, the vertical team is able to function fully autonomously.
+A facilitating team actively supports a vertical team in tasks other than directly building the main software systems.
+
+Technical facilitating teams consist of experts that accelerate the delivery of software processes into vertical teams.
+
+Having completed the facilitating action, the vertical team is able to function fully autonomously.
 
 Typical facilitating scenarios include:
 
@@ -87,6 +91,8 @@ Our CI/CD research team spent the last months evaluating tools and strategies fo
 TODO: (Daniel) Communicating via Team interactions
 The default cannot be to directly call members from other teams to request help and support
 Find good channel, e.g. support line, or create a ticket and meeting, otherwise ask other team to book time
+
+By framing interaction modes with *promise theory* and consistent communication styles for each team and interaction mode, we encourage an increase of confidence and trust between teams.
 
 If we can track our team interactions, we can make decisions regarding team responsibilities. If we find exclusive strong dependencies and a reduced cognitive load of maintaining a platform or library, it might be advantageous to empower the team to do so.
 
