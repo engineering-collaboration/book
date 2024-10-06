@@ -50,31 +50,25 @@ Mature *X-as-a-Service* communication builds its foundation on strong documentat
 
 ### Facilitating
 
-A facilitating team actively supports a vertical team in tasks other than directly building the main software systems.
+A facilitating team actively supports a vertical team in tasks other than directly working on the main software systems. These teams provide their expertise to enhance aspects of the product development cycle. For example, facilitating teams may accelerate the software development by setting up skeleton systems of continuous delivery tools and demonstrate how to extend and configure the team's setup.
 
-Technical facilitating teams consist of experts that accelerate the delivery of software processes into vertical teams.
+When teams tackle a problem that requires different skills than previous problems, facilitating teams fulfill an educational role by teaching the team a new language, framework, or design pattern. For example, due to organic growth, our team decides to move from a synchronous architecture to an event-driven architecture. A facilitating expert demonstrates the opportunities and challenges this decision brings, and shares successful approaches and popular tooling for the transition.
 
-Having completed the facilitating action, the vertical team is able to function fully autonomously.
-
-Typical facilitating scenarios include:
-
-- Education and upskilling, where coaches teach new techniques or processes to team members.
-- Adoption of new tools, where skeleton systems are set up by the facilitating team and handed over to the vertical team at the end of the phase.
-- Political duties or user insights from vertical teams adopting new feature rollouts from X-as-a-Service interactions.
+Besides facilitating technical problems, we utilize these supporting teams to mediate inter-team conflict, bridge political gaps, or gather company insights via holistic evaluations. Just as *Collaboration*, *Facilitation* is a temporary state. Having completed the facilitating action, the vertical team is able to function fully autonomously.
 
 ## Putting it all Together
 
-Combining the practices of [autonomous vertical teams](./autonomous-team-structure.md), [internal supporting teams](internal-supporting-teams.md), and the team interactions discussed within this chapter, we start visualizing our team structure. When designing team boundaries and interaction modes, we commit to the *Inverse Conway Maneuver* and map our communication channels to our software architecture. The following picture showcases an academic slice of a larger company.
+We visualize our team topology by connecting [Autonomous Teams](./autonomous-team-structure.md) using the corresponding team interactions discussed within this chapter. Utilizing the *Inverse Conway Maneuver*, we base our team boundaries and interaction on our software architecture. The following picture demonstrates an academic example with all interaction modes.
 
-[![Team Topology](../../assets/images/book/collaborating-within-a-company/team-topology.webp)](../../assets/images/book/collaborating-within-a-company/team-topology.png)
+[![A graph with different autonomous software teams for an e-commerce company. The teams are labeled with the following responsibilities: checkout team, payment team, web shop team, 3D team, search team, metrics team, ci/cd research and development team. The checkout team collaborates with the payment team. The web shop team consumes a library from the 3D team via the x-as-a-service mode. The picture depicts an internal platform. The platform consists of features produced by the search team and metrics team. The checkout team and the web shop team both consume the internal platform via the x-as-a-service mode. The CI/CD team research and development team facilitates the metrics team and introduces new continuous testing techniques.](../../assets/images/book/collaborating-within-a-company/team-topology.webp)](../../assets/images/book/collaborating-within-a-company/team-topology.png)
 
-Exploring the product teams, the check-out team, and the web shop team release features to the consumer-facing side of our software. These vertical teams own the entire development lifecycle of their respective features, from customer feedback to design, code, testing, and delivery. Contrary to the image's austerity, our organization consists mainly of product feature teams. We aim for one supporting team for every six to nine product teams.
+As an image offers limited space, we confine ourselves to two product teams in our example. In reality our product teams far outnumber our supporting teams. The check-out team and the web shop team release features to our consumer-facing product. These autonomous teams own the entire development lifecycle of their respective domains, from customer feedback to design, code, testing, and delivery.
 
-As the cognitive load of global payment systems exceeds the check-out team's limits, we split off a dedicated team for compliance and localization of payments. Initially, the team collaborates meticulously with the check-out team to establish requirements and services for payment interactions. Over time, the payment team offers either a set of libraries or a platform for payments via the *X-as-a-Service* interaction.
+As the responsibility of global payment systems exceeds the check-out team's resources, we split off a dedicated team for compliance and localization of payments. Initially, the team collaborates meticulously with the check-out team to establish requirements and services for payment interactions. Over time, the payment team offers a set of libraries or a platform for payments via the *X-as-a-Service* interaction.
 
-The 3D rendering team already matured from a *collaboration* state, offering sophisticated 3D rendering libraries as a service to display products within an additional dimension. Our web shop team consumes the libraries, and over time the communication has receded to reading the provided documentation of the API.
+The 3D rendering team already matured into this state. Our web shop team consumes the 3D team's sophisticated 3D rendering libraries to display products within an additional dimension. Over time the interaction between these two teams receded from personal interactions to communicating via the provided documentation of the API.
 
-Our vertical platform teams working on the product search component and the metrics deliver their respective releases to the internal platform, accessible to all teams across the company. The platform teams consolidate fragmented implementations into shared high-performance implementations.
+The image shows two vertical platform teams, respectively working on product search capabilities and the self-service metrics offerings. These teams provide their services via an internal platform, accessible to all teams across the company. As a large number of teams consume these services, the platform teams reduce computational cost by building high-performance solutions and reduce communication overhead by providing a solid and transparent developer experience.
 
 Our CI/CD research team spent the last months evaluating tools and strategies for advanced testing practices. Facilitating our metrics team, our research team is presenting and validating its findings in a low-risk internal environment. As soon as the metrics team reaches self-reliance with the new practices, the CI/CD R&D team moves to facilitate the next vertical team.
 
@@ -86,13 +80,34 @@ Our CI/CD research team spent the last months evaluating tools and strategies fo
     
     For additional details and information, I highly recommend you check out the book and more at [***teamtopologies.com***](https://teamtopologies.com/).
 
+## Communicating via Team interactions
 
-<!-- 
-TODO: (Daniel) Communicating via Team interactions
+<!-- software design -->
+
+We do want to ensure direct messages are not the modus operandi for the majority of the work. Knowledge shared, decisions made, interferes with software architecture. 
+
+<!-- communication has overhead -->
+
+<!-- tracking communication -->
+
+<!-- promise theory -->
+
+When joining teams via an interaction mode we take care to ensure the communication is based on trust and mutual respect. A popular tool to prime our teams for success is the *Promise Theory*. Originally developed by computer scientist Mark Burgess, the framework defines our inter-team interactions by promises, rather than obligations.
+
+Contracts are the most common example of interacting via obligations. When foreign entities cooperate, a neutral third party writes a contract outlining the responsibilities of each entity. In the corporate world we interact with caution and distrust. With no precise language, any failing in personnel, personality, or politics has disastrous consequences for our organization.
+
+However, within our organization we trust our teams implicitly. Our fellow teams have our best interest at heart and want to see us succeed. Even if a partner team does fail to deliver on a promise, we resolve the issue together, rather than assigning blame. Failure may seldomly be attributed to incompetence or malevolence, but rather a lack of resources and inconsistent communication.
+
+Rather than presenting our current approach and requesting requirements, we tell the team what we want to achieve. This way the team with domain expertise has the know-how freedom to work on an optimal solution. The resulting output often outperforms any requirements we could have come up with from the consuming end. Ultimately, this a trust-by-default approach ensures the right people are solving the right problems the right way.
+
+<!-- confidence and trust -->
+
+We cannot (and don't want to) control all communication flow within our company. Designing team interactions creates blueprints for exactly that, inter-*team* interactions. Individual contributors will always need to send direct messages to each other across the organization. Be it for quick clarifications, asking for advice, or ranting about work problems. These back channels skip any bureaucratic processes and ensure our teams get work done faster.
+
+
+
 The default cannot be to directly call members from other teams to request help and support
 Find good channel, e.g. support line, or create a ticket and meeting, otherwise ask other team to book time
-
-By framing interaction modes with *promise theory* and consistent communication styles for each team and interaction mode, we encourage an increase of confidence and trust between teams.
 
 If we can track our team interactions, we can make decisions regarding team responsibilities. If we find exclusive strong dependencies and a reduced cognitive load of maintaining a platform or library, it might be advantageous to empower the team to do so.
 
@@ -107,14 +122,22 @@ A topological view of our organization clarifies what we work on. Our team's soc
     
     *"The roots of Toyota's success lie not in its organizational structures but in developing capability and habits in its people."*  
     - Mike Rother
--->
+
 
 <!-- architecture over time -->
 
 Our software architecture evolves with our organization. The amount and nature of our users influences how we provide our services. The number of employees in our company affects how we build software. Changes to our software architecture and continuous delivery flow convert into our team constellation.
 
 
-## Organizational Charts
+## What about Org Charts?
+
+<!-- Reporting structure -->
+
+In autonomous teams we enabled our teams to deliver value autonomously. In team interactions we design our organization around delivering value together. 
+
+We completely separate our working structure from our reporting structure. 
+
+Any organizational chart that contains names of individual contributors is overdone.
 
 Organizational charts visualize the level of responsibility "who is in charge of what and whom". For day-to-day practices, the org chart shows the strategically placed chain of command for each business division. The higher up the org chart we go, the more long-term decisions we encounter.
 
