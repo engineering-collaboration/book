@@ -5,17 +5,11 @@ description: Testing is a complex and divisive topic. If not done adequately for
 
 # Testing
 
-Testing is a complex and divisive topic. If not done adequately for our use case, we are better off doing less of it. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether.
+Testing is a complex and divisive topic, which if not done adequately, we are better off doing less of. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether. This chapter outlines a broad view of practices and highlights what leavers we can pull to improve how we test our software. Successful and sensible testing is modeled against our team's needs and evolves over time. We revisit our testing strategy periodically and after significant events.
 
-This chapter covers what we have found to be generally most useful. Despite our good intentions, we do want to point out that testing is the least directly applicable undertaking from all recommendations in this book. Successful and sensible testing is modeled against our team's needs and evolves over time. We revisit our testing strategy periodically and after significant events.
+<!-- automation -->
 
-A term often cited in software engineering job listings is *Test-Driven Development* (TDD). TDD is the practice of writing tests for the behavior of a feature before working on the source code. An implementation is considered complete once it passes all tests and edge cases.
-
-TDD encourages us to consider and transcribe a strategy to tackle problems in small increments. The upside of TDD sees diminishing returns with a growing complexity of implementations. Functions using file I/O or network I/O, or processes reliant on environment configurations are difficult to write tests for, even more so before the implementation is available.
-
-<!-- Write code for testability -->
-
-## When to Test
+The foundation of successful testing is built upon automation and frequency of execution. Depending on our team size, we run the same tests hundreds to thousands times a week. No amount of manual labour 
 
 Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code change, a varying suite of automated tests ensures the correct integration of code changes at different times. Tests are executed …
 
@@ -27,6 +21,15 @@ Testing is not a one-off task done as a step in the waterfall methodology. Throu
 - … against the live version of our software (**Post-release**).
 
 For every step, we provide context as to why that particular constraint exists to make it feel less arbitrary. People are less inclined to push back against rules when there is a clear reason behind them.
+
+
+
+A term often cited in software engineering job listings is *Test-Driven Development* (TDD). TDD is the practice of writing tests for the behavior of a feature before working on the source code. An implementation is considered complete once it passes all tests and edge cases.
+
+TDD encourages us to consider and transcribe a strategy to tackle problems in small increments. The upside of TDD sees diminishing returns with a growing complexity of implementations. Functions using file I/O or network I/O, or processes reliant on environment configurations are difficult to write tests for, even more so before the implementation is available.
+
+<!-- Write code for testability -->
+
 
 ## Hermetic Environments
 
