@@ -84,28 +84,15 @@ Our CI/CD research team spent the last months evaluating tools and strategies fo
 
 <!-- software design -->
 
-Limiting ourselves to three interaction patterns allows us to develop, share, and continuously improve communication strategies for our interactions. We can enforce guidelines on how we document *x-as-a-service* offerings. A unified documentation style and language lessens onboarding friction of new teams. Tooling and standards help us find and consume documentation and tutorials.
+A topological view of our organization clarifies what our teams work on and who they deliver to. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. If we can track our team interactions, we can make decisions regarding team responsibilities. If we find exclusive strong dependencies and a reduced cognitive load of maintaining a platform or library, it might be advantageous to empower the team to do so.  Collaborating effectively within our team has less impact when collaborating beyond it becomes redundant.
+
+Limiting ourselves to three interaction patterns allows us to develop, share, and continuously improve communication strategies for our interactions. We can enforce guidelines on how we document *x-as-a-service* offerings. A unified documentation style and language lessens onboarding friction of new teams. Tooling and standards help us find and consume documentation and tutorials. We offer support channels to not bombard our team members with untracked support requests via direct messages.
 
 When sequentially facilitating a large number of teams due to large-scale changes across our organization, we document, store, and improve the way we support these teams. After a couple sessions, the facilitating teams should improve their efficiency of imprinting knowledge just by sheer practice. We keep our material and demonstrations up-to-date and available to teams even after we completed our facilitating interactions.
 
-Collaboration frameworks support coherent and ordered interactions between teams. By mandating the frequency and shape of meetings, we can 
-
-Direct messages are not the modus operandi for the majority of the work. Knowledge shared, decisions made, interferes with software architecture. 
-
-
-The default cannot be to directly call members from other teams to request help and support
-Find good channel, e.g. support line, or create a ticket and meeting, otherwise ask other team to book time
-
-
-communcation channels based on patterns
+Collaboration frameworks support coherent and ordered interactions between teams. By developing practices for the frequency and shape of successful collaboration meetings, we steer clear of the chaos a multi-team free-for-all meeting session entails. We encourage direct messages between teams and team members, but ensure they are not the forum in which decisions are made.
 
 We cannot (and don't want to) control all communication flow within our company. Designing team interactions creates blueprints for exactly that, inter-*team* interactions. Individual contributors will always need to send direct messages to each other across the organization. Be it for quick clarifications, asking for advice, or ranting about work problems. These back channels skip any bureaucratic processes and ensure our teams get work done faster.
-
-<!-- communication has overhead -->
-
-<!-- A topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. If we can track our team interactions, we can make decisions regarding team responsibilities. If we find exclusive strong dependencies and a reduced cognitive load of maintaining a platform or library, it might be advantageous to empower the team to do so. -->
-
-<!-- tracking communication -->
 
 !!! quote "Why we mandate collaboration methods"
     *"Technologies and organizations should be redesigned to intermittently isolate people from each other's work for the best collective performance in solving complex problems."*  
