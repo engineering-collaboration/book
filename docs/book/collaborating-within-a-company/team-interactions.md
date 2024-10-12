@@ -84,34 +84,28 @@ Our CI/CD research team spent the last months evaluating tools and strategies fo
 
 <!-- software design -->
 
-We do want to ensure direct messages are not the modus operandi for the majority of the work. Knowledge shared, decisions made, interferes with software architecture. 
+Limiting ourselves to three interaction patterns allows us to develop, share, and continuously improve communication strategies for our interactions. We can enforce guidelines on how we document *x-as-a-service* offerings. A unified documentation style and language lessens onboarding friction of new teams. Tooling and standards help us find and consume documentation and tutorials.
 
-<!-- communication has overhead -->
+When sequentially facilitating a large number of teams due to large-scale changes across our organization, we document, store, and improve the way we support these teams. After a couple sessions, the facilitating teams should improve their efficiency of imprinting knowledge just by sheer practice. We keep our material and demonstrations up-to-date and available to teams even after we completed our facilitating interactions.
 
-<!-- tracking communication -->
+Collaboration frameworks support coherent and ordered interactions between teams. By mandating the frequency and shape of meetings, we can 
 
-<!-- promise theory -->
-
-When joining teams via an interaction mode we take care to ensure the communication is based on trust and mutual respect. A popular tool to prime our teams for success is the *Promise Theory*. Originally developed by computer scientist Mark Burgess, the framework defines our inter-team interactions by promises, rather than obligations.
-
-Contracts are the most common example of interacting via obligations. When foreign entities cooperate, a neutral third party writes a contract outlining the responsibilities of each entity. In the corporate world we interact with caution and distrust. With no precise language, any failing in personnel, personality, or politics has disastrous consequences for our organization.
-
-However, within our organization we trust our teams implicitly. Our fellow teams have our best interest at heart and want to see us succeed. Even if a partner team does fail to deliver on a promise, we resolve the issue together, rather than assigning blame. Failure may seldomly be attributed to incompetence or malevolence, but rather a lack of resources and inconsistent communication.
-
-Rather than presenting our current approach and requesting requirements, we tell the team what we want to achieve. This way the team with domain expertise has the know-how freedom to work on an optimal solution. The resulting output often outperforms any requirements we could have come up with from the consuming end. Ultimately, this a trust-by-default approach ensures the right people are solving the right problems the right way.
-
-<!-- confidence and trust -->
-
-We cannot (and don't want to) control all communication flow within our company. Designing team interactions creates blueprints for exactly that, inter-*team* interactions. Individual contributors will always need to send direct messages to each other across the organization. Be it for quick clarifications, asking for advice, or ranting about work problems. These back channels skip any bureaucratic processes and ensure our teams get work done faster.
-
+Direct messages are not the modus operandi for the majority of the work. Knowledge shared, decisions made, interferes with software architecture. 
 
 
 The default cannot be to directly call members from other teams to request help and support
 Find good channel, e.g. support line, or create a ticket and meeting, otherwise ask other team to book time
 
-If we can track our team interactions, we can make decisions regarding team responsibilities. If we find exclusive strong dependencies and a reduced cognitive load of maintaining a platform or library, it might be advantageous to empower the team to do so.
 
-A topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. 
+communcation channels based on patterns
+
+We cannot (and don't want to) control all communication flow within our company. Designing team interactions creates blueprints for exactly that, inter-*team* interactions. Individual contributors will always need to send direct messages to each other across the organization. Be it for quick clarifications, asking for advice, or ranting about work problems. These back channels skip any bureaucratic processes and ensure our teams get work done faster.
+
+<!-- communication has overhead -->
+
+<!-- A topological view of our organization clarifies what we work on. Our team's sociotechnical dependencies and deliverables are subject to our product and organizational structures. Collaborating effectively within our team has less impact when our output is redundant. If we can track our team interactions, we can make decisions regarding team responsibilities. If we find exclusive strong dependencies and a reduced cognitive load of maintaining a platform or library, it might be advantageous to empower the team to do so. -->
+
+<!-- tracking communication -->
 
 !!! quote "Why we mandate collaboration methods"
     *"Technologies and organizations should be redesigned to intermittently isolate people from each other's work for the best collective performance in solving complex problems."*  
@@ -124,24 +118,18 @@ A topological view of our organization clarifies what we work on. Our team's soc
     - Mike Rother
 
 
+<!-- promise theory -->
+
+When joining teams via an interaction mode we take care to ensure the communication is based on trust and mutual respect. A popular tool to prime our teams for success is the *Promise Theory*. Originally developed by computer scientist Mark Burgess, the framework defines our inter-team interactions by promises, rather than obligations.
+
+Contracts are the most common example of interacting via obligations. When foreign entities cooperate, a neutral third party writes a contract outlining the responsibilities of each entity. In the corporate world we interact with caution and distrust. With no precise language, any failing in personnel, personality, or politics has disastrous consequences for our organization.
+
+However, within our organization we trust our teams implicitly. Our fellow teams have our best interest at heart and want to see us succeed. Even if a partner team does fail to deliver on a promise, we resolve the issue together, rather than assigning blame. Failure may seldomly be attributed to incompetence or malevolence, but rather a lack of resources and inconsistent communication.
+
+Rather than presenting our current approach and requesting requirements, we tell the team what we want to achieve. This way the team with domain expertise has the know-how freedom to work on an optimal solution. The resulting output often outperforms any requirements we could have come up with from the consuming end. Ultimately, this a trust-by-default approach ensures the right people are solving the right problems the right way.
+
 <!-- architecture over time -->
 
 Our software architecture evolves with our organization. The amount and nature of our users influences how we provide our services. The number of employees in our company affects how we build software. Changes to our software architecture and continuous delivery flow convert into our team constellation.
 
-
-## What about Org Charts?
-
-<!-- Reporting structure -->
-
-In autonomous teams we enabled our teams to deliver value autonomously. In team interactions we design our organization around delivering value together. 
-
-We completely separate our working structure from our reporting structure. 
-
-Any organizational chart that contains names of individual contributors is overdone.
-
-Organizational charts visualize the level of responsibility "who is in charge of what and whom". For day-to-day practices, the org chart shows the strategically placed chain of command for each business division. The higher up the org chart we go, the more long-term decisions we encounter.
-
-Org charts are not a device to visualize communication channels and team structures within organizations. Any practical planning of team responsibilities or day-to-day tasks based on org charts is an inherently flawed process as teams and products within software companies strive to adapt to market conditions.
-
-A healthy business is not built upon software alone, and an org chart has little relationship with our engineers, and inserting any names of our workforce into our chart is pointless. Reasonable org chart updates include changes to geographic compliance responsibilities, drastic updates to our organization's cap table.
-
+Limiting ourselves to these interaction patterns leads to simple software architecture. Components with clearly defined boundaries connect via practical interfaces. As Ruth Malan put it: *"The architecture of the system gets cemented in the forms of the teams that develop it"*, and we can hardly get any more concrete than that.
