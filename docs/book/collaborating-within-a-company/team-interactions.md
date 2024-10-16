@@ -30,7 +30,7 @@ But software architecture goes beyond identifying modules and components. We def
 
 ## Interaction Forms
 
-While we incentivize inter-team communication, teams cannot work together in an organization-wide free-for-all. In order to get work done, we define sensible and effective interactions between teams. Depending on the team dynamics, the forms of interactions differ through approach, frequency, and duration of inter-team work.
+While we incentivize inter-team communication, teams cannot work together in an organization-wide free-for-all. Operating effectively within our team has less impact when operating beyond it becomes strenuous. In order to get work done, we define sensible and effective interactions between teams. Depending on the team dynamics, the forms of interactions differ through approach, frequency, and duration of inter-team work.
 
 As in [*Autonomous Team Structure*](./autonomous-team-structure.md), we defer to the wisdom of Matthew Skelton and Manuel Pais, publicized in their book *Team Topologies* (I, personally, cannot recommend this book enough and encourage all readers to visit their website and watch the videos on Youtube). The two authors identified and listed three common forms of interaction between teams.
 
@@ -88,11 +88,11 @@ Limiting ourselves to three interaction patterns allows us to develop, share, an
 
 As an example, we consolidate practices, presentation, and prose for *X-as-a-Service* documentation. Shared tools and standards help our engineers find relevant documentation and lessen the friction when onboarding new teams. Official support channels for *X-as-a-Service* teams ensure we identify repeated problems and reserve time for dedicated support personnel.
 
-During substantial changes across our organization we sequentially facilitate a large number of teams. After every iteration, we reflect and document how we may expand on our approach for future teams. Facilitating teams become more efficient by sheer practice. We update our material and demonstrations after every session and ensure all teams have access to the latest versions.
+During substantial changes across our organization we sequentially *facilitate* a large number of teams. After every iteration, we reflect and document how we may expand on our approach for future teams. Facilitating teams become more efficient by sheer practice. We update our material and demonstrations after every session and ensure all teams have access to the latest versions.
 
-Frameworks for successful collaboration patterns support coherent and ordered interactions between teams. By recommending the frequency and shape of collaboration meetings, we steer clear of chaotic multi-team free-for-alls. While we encourage direct messages between teams and team members, we ensure they are not the forum in which decisions are made.
+Frameworks for successful *collaboration* patterns support coherent and ordered interactions between teams. By recommending the frequency and shape of collaboration meetings, we steer clear of chaotic multi-team free-for-alls. While we encourage direct messages between teams and team members, we ensure they are not the forum in which decisions are made.
 
-However, we can't (and don't want to) control all communication flow within our company. Designing team interactions creates blueprints for exactly that, inter-*team* interactions. Individual contributors will always need to send direct messages to each other across the organization. Be it for quick clarifications, asking for advice, or ranting about work problems. These back channels skip any bureaucratic processes and ensure our teams get work done faster.
+However, we can't (and don't want to) control all communication flow within our company. Designing team interactions creates blueprints for exactly that, inter-*team* interactions. Individual contributors will always need to send direct messages to each other across the organization. Be it for quick clarifications, asking for advice, or ranting about work. These back channels skip any bureaucratic processes and ensure our teams get work done faster.
 
 !!! quote "Why we mandate collaboration methods"
     *"Technologies and organizations should be redesigned to intermittently isolate people from each other's work for the best collective performance in solving complex problems."*  
@@ -107,16 +107,16 @@ However, we can't (and don't want to) control all communication flow within our 
 
 <!-- promise theory -->
 
-When joining teams via interaction modes we ensure all communication builds on trust and mutual respect. A popular tool to prime our teams for success is the *Promise Theory*. Originally developed by computer scientist Mark Burgess, the framework defines our inter-team interactions by promises, rather than obligations.
+When joining teams via interaction modes we ensure their communication emphasizes trust and mutual respect. A popular tool to prime our teams for success is the *Promise Theory*. Originally developed by computer scientist Mark Burgess, the framework defines our inter-team interactions by promises, rather than obligations.
 
 Contracts are the most common example of interacting via obligations. When foreign entities cooperate, a neutral third party outlines the responsibilities of each entity in a written contract. The corporate world demands we interact with caution and distrust. With no precise language, any failing in personnel, personality, or politics has disastrous consequences for our organization.
 
-However, within our organization we trust our teams implicitly. Our fellow teams have our best interest at heart and want to see us succeed. Even if a partner team does fail to deliver on a promise, we resolve the issue together, rather than assigning blame. Failure may seldomly be attributed to incompetence or malevolence, but rather a lack of resources and inconsistent communication.
+However, within our organization we trust our teams implicitly. Our peers want to see us succeed. Even if a partner team does fail to deliver on a promise, rather than assigning blame, we resolve the issue together. Failure seldomly arises from incompetence or malevolence, but rather a lack of resources or inconsistent communication.
 
-Rather than presenting our current approach and requesting implementations, we tell the team what we want to achieve. This guarantees that the team with domain expertise has the know-how and freedom to work on an optimal solution. The resulting output often outperforms any requirements we could have come up with. Ultimately, this trust-by-default approach ensures the right people are solving the right problems the right way.
+Instead of requesting obligations, we present our objectives to our partner team. This guarantees that the team with domain expertise has all the information available and the freedom to work on an optimal solution. The resulting output often outperforms any requirements we could have come up with. Ultimately, this trust-by-default approach ensures the right people are solving the right problems the right way.
 
 <!-- architecture over time -->
 
-A topological view of our organization clarifies what our teams work on and who they deliver to. Tracking these sociotechnical dependencies enables us to evolve our teams' responsibilities. If we find exclusive strong dependencies and a reduced cognitive load of maintaining a platform or library, it might be advantageous to empower the team to do so. Collaborating effectively within our team has less impact when collaborating beyond it becomes redundant.
+Over time, the topological view of our organization clarifies what our teams work on and who they deliver to. Tracking these sociotechnical dependencies enables us to evolve our teams' responsibilities. We covered the necessity of creating new dedicated teams to reduce cognitive load of product teams. But, we also identify signals for the opposite. Strong and exclusive dependencies between software components indicate misplaced responsibilities. When the communication overhead eclipses the maintenance work, it might be advantageous to empower the consuming team to maintain the dependency.
 
 Our software architecture evolves with our organization. The amount and nature of our users influences how we provide our services. The number of employees in our company affects how we build software. Changes to our software architecture and continuous delivery flow convert into our team constellation. As Ruth Malan put it: *"The architecture of the system gets cemented in the forms of the teams that develop it"*, and we can hardly get any more concrete than that.
