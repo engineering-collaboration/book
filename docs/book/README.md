@@ -69,19 +69,30 @@ I have strong opinions on the topics backed by experience, but I tend to hold my
 
 Lastly, while we do our best to keep the language as inclusive as possible, there is a non-zero chance that certain words or phrases will not be received in the way they were meant to be. Language is difficult. The written word is difficult. Please read this book with the positive intent in which it was penned.
 
-## Current Progress
+!!! note "Rewrite progress"
 
-We are hard at work on *Collaborating within a Codebase* and are releasing new chapters periodically. A breakdown of our progress with a detailed list of chapters is available on the individual section pages.
+    The book includes a rough draft of the chapters I want to cover. However, these mostly consist of notes and currently do not offer a coherent reading experience. I am in the process of rewriting and editing the book for an initial release version. The following chapters are in a somewhat decent shape:
 
-- [x] Introduction
-    - [x] Notes and structure
-    - [x] First draft
-    - [ ] Edit for v1.0.0 (in progress)
-- [x] [Collaborating within a Company](../collaborating-within-a-company/README.md)
-    - [x] Notes and structure
-    - [x] First draft
-    - [ ] Edit for v1.0.0 (in progress)
-- [ ] [Collaborating within a Codebase](../collaborating-within-a-codebase/README.md)
-    - [x] Notes and structure
-    - [x] First draft
-    - [ ] Edit for v1.0.0 (in progress)
+    - [ ] [Collaborating within a Company](../collaborating-within-a-company/README.md)
+        - [x] Autonomous Team Structure
+        - [x] Team Interactions
+        - [ ] Communication Channels
+        - [x] Working in Cycles
+        - [ ] Innersourcing
+        - [ ] Education and Training
+    - [ ] [Collaborating within a Codebase](../collaborating-within-a-codebase/README.md)
+        - [ ] CI/CD
+        - [ ] Trunk Based Development
+        - [ ] Planning Implementations
+        - [ ] Commits
+        - [ ] Pull Requests
+        - [ ] Static Analysis
+        - [ ] Code Reviews
+        - [ ] Merging
+        - [ ] Testing
+        - [ ] Release Mechanisms
+        - [ ] Artifact Management
+        - [ ] Release Strategies
+        - [ ] Documentation
+        - [ ] Repository Strategies
+        - [ ] Monitoring and Observability
