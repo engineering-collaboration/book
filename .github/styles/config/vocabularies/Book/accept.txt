@@ -17,8 +17,10 @@ Cass
 Kahneman
 Sunstein
 Pais
+Malan
 Diátaxis
 Spotify
+Youtube
 API
 CTO
 SDK
