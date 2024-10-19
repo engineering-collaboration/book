@@ -5,7 +5,7 @@ description: Large-scale organizations rely on a multitude of autonomous teams t
 
 # Team Interactions
 
-In [*Autonomous Team Structure*](./autonomous-team-structure.md), we discussed how self-sufficient teams plan, implement, and deliver their respective software features independently. To enhance their productivity, we established three types of internal supporting teams and their functions. This chapter highlights distinct approaches to how these software teams work together effectively.
+In [*Autonomous Team Structure*](./autonomous-team-structure.md), we discussed how self-sufficient teams plan, implement, and deliver their respective software features independently. To enhance their productivity, we established three types of internal supporting teams and outlined their functions. This chapter highlights distinct approaches to how these software teams work together effectively.
 
 !!! quote "Conway's Law"
     *"Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."*  
@@ -22,23 +22,23 @@ In [*Autonomous Team Structure*](./autonomous-team-structure.md), we discussed h
 
 <!-- What is Conway's Law? -->
 
-Conway's Law decrees that every software architecture ultimately mirrors the structure and communication practices of the team working on the software. It highlights the misconception that organizational structure and software architecture can be separated. No matter how strongly we mandate a certain architecture, the software structure will ultimately converge towards the department structure. This reality has been an inconvenience for software companies that organize their of departments by discipline and enforce conservative reporting hierarchies.
+Conway's Law decrees that every software architecture ultimately mirrors the structure and communication practices of the team working on the software. It emphasizes the misconception that organizational structure and software architecture can be separated. No matter how strongly we mandate a certain architecture, the software structure will ultimately converge towards the department structure. This reality has been an inconvenience for software companies that organize their departments by discipline and enforce conservative reporting hierarchies.
 
-Modern software companies leverage Conway's Law to their advantage. A strategy called the *Inverse Conway Maneuver* demands that we design our organization around the product, not the other way around. First, we design the software, and then we position autonomous vertical teams to align with the software's features and modules. Assigning people and teams according to their software contributions reduces friction in software delivery.
+Modern software companies leverage Conway's Law to their advantage. A strategy called the *Inverse Conway Maneuver* demands that we design our organization around the product, not the other way around. First, we design the software, and then we position autonomous teams in line with the software's modules. Assigning people and teams according to their software contributions reduces friction in software delivery.
 
-Alas, software architecture goes beyond identifying modules and components. We define the responsibilities and boundaries of each component, plan access patterns, and build programming interfaces for each module. We mirror these patterns in our inter-team dynamics. When autonomous teams interact, we ensure distinct ownership and accountability of domains through established interaction patterns.
+Alas, software architecture goes beyond identifying modules and components. We define the responsibilities and boundaries of each part and build programming interfaces for each module. We mirror these patterns in our inter-team dynamics. When autonomous teams interact, we ensure distinct ownership and accountability of domains through established interaction patterns.
 
 ## Interaction Forms
 
-While we incentivize inter-team communication, teams cannot work together in an organization-wide free-for-all. Operating effectively within a team has less impact when operating beyond it becomes burdensome. To get work done, we define sensible and productive interactions between teams. Depending on team dynamics, these interactions differ in approach, frequency, and duration.
+While we incentivize inter-team communication, teams cannot work together in an organization-wide free-for-all. Operating effectively within a team has less impact when operating beyond it becomes burdensome. To get work done, we define sensible and productive interactions between teams. Depending on team dynamics, these differ in approach, frequency, and duration.
 
-As mentioned in [*Autonomous Team Structure*](./autonomous-team-structure.md), we refer to the insights of Matthew Skelton and Manuel Pais, authors of *Team Topologies* (I highly recommend this book and encourage readers to explore their website and watch their YouTube videos.). Skelton and Pais identified three common forms of interaction between teams.
+As mentioned in [*Autonomous Team Structure*](./autonomous-team-structure.md), we refer to the insights of Matthew Skelton and Manuel Pais, authors of *Team Topologies* (I highly recommend this book and encourage readers to further explore their website and YouTube videos.). Skelton and Pais identified three common forms of interaction between teams.
 
 ### Collaboration
 
 A collaboration phase is characterized by a high degree of discovery. When a difficult problem within a vertical team prompts us to spin off an *Enabling Team* or *Complicated-Subsystem Team*, close collaboration between the teams is essential to understand and solve the problem. When we design new systems across multiple domains, several vertical teams work together to solve problems that span disciplines.
 
-During inter-team collaboration, team members participate in pair programming and (virtual) whiteboarding sessions. In the early stages of collaboration, teams communicate frequently and through all available channels. Yet, collaboration is a finite phase. Prolonged communication and social overhead become a hindrance, as problem-solving turns into multidisciplinary, serendipity-driven busy work.
+During inter-team collaboration, team members participate in pair programming and (virtual) whiteboarding sessions. In the early stages of collaboration, teams communicate frequently and through all available channels. Yet, collaboration is a finite phase. Prolonged communication leads to increased administrative and social overhead, as problem-solving turns into multidisciplinary, serendipity-driven busy work.
 
 Conway's Law counsels us that tight collaboration over time leads to interdependent software services lacking well-defined responsibilities. After establishing foundational success criteria, we cap the amount of communication between teams and refocus our efforts on solving our domain problems. Depending on the problem, we either shield the team from the work they collaborated on or establish them as the first consumer of an *X-as-a-Service*.
 
