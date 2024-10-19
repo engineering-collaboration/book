@@ -32,7 +32,7 @@ Alas, software architecture goes beyond identifying modules and components. We d
 
 While we incentivize inter-team communication, teams cannot work together in an organization-wide free-for-all. Operating effectively within a team has less impact when operating beyond it becomes burdensome. To get work done, we define sensible and productive interactions between teams. Depending on team dynamics, these differ in approach, frequency, and duration.
 
-As mentioned in [*Autonomous Team Structure*](./autonomous-team-structure.md), we refer to the insights of Matthew Skelton and Manuel Pais, authors of *Team Topologies* (I highly recommend this book and encourage readers to further explore their website and YouTube videos.). Skelton and Pais identified three common forms of interaction between teams.
+As mentioned in [*Autonomous Team Structure*](./autonomous-team-structure.md), we refer to the insights of Matthew Skelton and Manuel Pais, authors of *Team Topologies* (I highly recommend this book and encourage readers to further explore their website and Youtube videos.). Skelton and Pais identified three common forms of interaction between teams.
 
 ### Collaboration
 
@@ -70,7 +70,7 @@ The 3D rendering team has already matured into this state. Our web shop team con
 
 The image includes two vertical platform teams, respectively working on product search capabilities and self-service metrics tools. These teams provide their services via an internal platform, accessible to all teams across the company. With a growing number of teams consuming these services, the platform teams reduce computational costs by building high-performance solutions and reduce communication overhead by providing a solid and transparent developer experience.
 
-Our CI/CD research team spent the last few months evaluating tools and strategies for advanced testing practices. Facilitating our metrics team, the research team presents and validates its findings in a low-risk internal environment. Once the metrics team reaches self-reliance with the new practices, the research team facilitates the next vertical team.
+Our CI/CD research team spent the last months evaluating tools and strategies for advanced testing practices. Facilitating our metrics team, the research team presents and validates its findings in a low-risk internal environment. Once the metrics team reaches self-reliance with the new practices, the research team facilitates the next vertical team.
 
 !!! tip "Recommendation"
     <img src="https://images.squarespace-cdn.com/content/v1/5b3296b78ab7229ecafcf4ed/1566982599895-T0K28HX7RF7YJ2GE1D4K/TeamTop_cover_RGB_flat_stroke.jpg?format=1000w" width="360" style="display: block; margin-left: auto; margin-right: auto;" alt="Engineering Collaboration">
