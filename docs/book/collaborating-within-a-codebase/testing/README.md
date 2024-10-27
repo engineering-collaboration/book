@@ -5,33 +5,22 @@ description: Testing is a complex and divisive topic. If not done adequately for
 
 # Testing
 
-Testing is a complex and divisive topic, which if not done adequately, we are better off doing less of. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether. This chapter outlines a broad view of practices and highlights what leavers we can pull to improve how we test our software. Successful and sensible testing is modeled against our team's needs and evolves over time. We revisit our testing strategy periodically and after significant events.
+Even between friends testing leads to divisive conversations. It is a complex topic, which if not done adequately, we are better off doing less of. Zealously over-testing potentially ends up being as expensive as imprudently disregarding testing altogether. This chapter outlines a broad view of practices and highlights what leavers we can pull to improve how we test our software.
 
 <!-- automation -->
 
-The foundation of successful testing is built upon automation and frequency of execution. Depending on our team size, we run the same tests hundreds to thousands times a week. No amount of manual labour 
+Automation builds the foundation for any successful testing strategy. To catch errors, we run tests. To catch errors as early as possible, we run tests often. Every change to our code base warrants assessment, and we execute the same tests hundreds to thousands of times per week. Far exceeding any scope we could realistically cover with manual labour.
 
-Testing is not a one-off task done as a step in the waterfall methodology. Throughout the life of a code change, a varying suite of automated tests ensures the correct integration of code changes at different times. Tests are executed …
+Testing happens throughout the life of a code change. Varying suites of automated tests ensure the correct integration of code changes at different times, e.g.:
 
-- … on our developers' machine during development;
-- … on pull requests (**Pre-merge**);
-- … after a merge into main (**Post-merge**);
-- … periodically on the main branch;
-- … when creating a release candidate (**Pre-release**);
-- … against the live version of our software (**Post-release**).
+- On our developers' machine during development
+- On pull requests (*Pre-merge*)
+- After a merge into main (*Post-merge*)
+- Periodically on the main branch
+- When creating a release candidate (*Pre-release*)
+- Against the live version of our software (*Post-release*)
 
 For every step, we provide context as to why that particular constraint exists to make it feel less arbitrary. People are less inclined to push back against rules when there is a clear reason behind them.
-
-
-
-A term often cited in software engineering job listings is *Test-Driven Development* (TDD). TDD is the practice of writing tests for the behavior of a feature before working on the source code. An implementation is considered complete once it passes all tests and edge cases.
-
-TDD encourages us to consider and transcribe a strategy to tackle problems in small increments. The upside of TDD sees diminishing returns with a growing complexity of implementations. Functions using file I/O or network I/O, or processes reliant on environment configurations are difficult to write tests for, even more so before the implementation is available.
-
-<!-- Write code for testability -->
-
-
-## Hermetic Environments
 
 Tests run on various machines and runners, by various users and scripts, on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place.
 
@@ -41,6 +30,12 @@ Medium and large-scoped tests provide the environment and infrastructure needed 
 
 
 ## Test against Public-Facing APIs
+
+<!-- Write code for testability -->
+
+A term often cited in software engineering job listings is *Test-Driven Development* (TDD). TDD is the practice of writing tests for the behavior of a feature before working on the source code. An implementation is considered complete once it passes all tests and edge cases.
+
+TDD encourages us to consider and transcribe a strategy to tackle problems in small increments. The upside of TDD sees diminishing returns with a growing complexity of implementations. Functions using file I/O or network I/O, or processes reliant on environment configurations are difficult to write tests for, even more so before the implementation is available.
 
 When writing tests, we assume as little as possible of the implementation. We compose tests for public-facing interfaces, not private ones. Private implementations change more frequently over time as additional feature requests come in and code is refactored, moved to libraries, or removed entirely.
 
@@ -103,7 +98,7 @@ func Test_SerializeStringSuccess(t *testing.T) {
 If the above implementation fails, we can now reasonably assume that changes done to `my_utils.WriteString` or `my_utils.ReadString` are no longer compatible, which is the behavior we are actually interested in during the development cycle. The second implementation is less likely to be flaky and scales with the product. It also models our customers' behavior, validating that the software meets our users' expectations.
 <!-- vale write-good.Weasel = YES -->
 
-### Hyrum's Law
+## Hyrum's Law
 
 <!-- vale Vale.Avoid = NO -->
 !!! quote
@@ -123,6 +118,10 @@ Failing tests for working code are an indicator of backward incompatibility. If 
 
 
 ## Testing over Time
+
+
+Successful and sensible testing is modeled against our team's needs and evolves over time. We revisit our testing strategy periodically and after significant events.
+
 
 The most important property of our testing suite is our developers' trust in the process. The rare superlative is warranted, and we elevate the former statement to our absolute priority. We add tests when bugs are reported. We remove tests when they become brittle, flaky, redundant, or even just inconvenient. We move tests to be executed at different times when the current setup proves inefficient or ineffective. The following statements are red flags to be addressed:
 
