@@ -11,6 +11,8 @@ Code reviews are an excellent point in time for gathering data for future automa
 
 ## Benefits of Code Review
 
+<!-- code review in the sense of "code study" rather than "code critique" -->
+
 Alas, it is to be said, code review is broadly (and misleadingly) understood to serve as a gating mechanism to assess changes by colleagues before these are added to our software product. While increasing code quality is most certainly an aspect of this practice, this kind of code "critique" thinking hampers development velocity and diminishes the other beneficial factors of code reviews. Beyond quality assurance, code reviews provide us a tool for encouraging blameless interaction and a blameless culture within our team.
 
 ### Sharing Knowledge
