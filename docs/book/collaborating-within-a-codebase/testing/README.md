@@ -9,115 +9,63 @@ Even between friends testing leads to divisive conversations. It is a complex to
 
 <!-- automation -->
 
-Automation builds the foundation for any successful testing strategy. To catch errors, we run tests. To catch errors as early as possible, we run tests often. Every change to our code base warrants assessment, and we execute the same tests hundreds to thousands of times per week. Far exceeding any scope we could realistically cover with manual labour.
+Automation builds the foundation for any successful testing strategy. To catch errors, we run tests. To catch errors as early as possible, we run tests often. Every change to our code base warrants assessment, and we execute the same tests hundreds (or thousands) of times a week. Far exceeding any scope we could realistically cover with manual labour.
 
-Testing happens throughout the life of a code change. Varying suites of automated tests ensure the correct integration of code changes at different times, e.g.:
+We test throughout the life of a code change with varying suites of automated tests. For every step, we provide context as to why that particular constraint exists to make it feel less arbitrary. People are less inclined to push back against rules when there is a clear reason behind them. With trunk-based development, we ensure the integrity of changes at the following times:
 
 - On our developers' machine during development
-- On pull requests (*Pre-merge*)
+- On merge requests (*Pre-merge*)
 - After a merge into main (*Post-merge*)
 - Periodically on the main branch
 - When creating a release candidate (*Pre-release*)
 - Against the live version of our software (*Post-release*)
 
-For every step, we provide context as to why that particular constraint exists to make it feel less arbitrary. People are less inclined to push back against rules when there is a clear reason behind them.
+<!-- The longer we go without testing, the more changes are introduced -->
 
-Tests run on various machines and runners, by various users and scripts, on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place.
+We run our tests as often and as early as feasible. The sooner we detect an error, the less money and time we spend correcting it. We dive into the scope of different test suits in the two sub-chapters
 
-A hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful. Tests set up, execute, and tear down independently and in a confined manner. Tests provide accurate information regardless of the order in which they are run.
-
-Medium and large-scoped tests provide the environment and infrastructure needed to execute expectedly. Using container tools such as Docker and [Infrastructure as Code (*WIP)]() (IaC) workflows ensures consistent configuration across platforms and machines. Small-scoped tests run without requiring a dedicated hermetic environment. Our testing suite performs as intended on every machine regardless of environmental configurations. As developers, we are able to replicate failing tests on the CI/CD runners on our machines.
-
-
-## Test against Public-Facing APIs
+## Writing tests
 
 <!-- Write code for testability -->
 
-A term often cited in software engineering job listings is *Test-Driven Development* (TDD). TDD is the practice of writing tests for the behavior of a feature before working on the source code. An implementation is considered complete once it passes all tests and edge cases.
+When it comes to testing, the engineering community defaults to the popular term *Test-Driven Development* (TDD). Popular as in well-known, not necessarily well-liked. Widespread sources define *TDD* as the practice of writing tests for a piece of software before working on the source code. An implementation is considered complete once it passes all tests and edge cases. Practically, I consider this definition both ambitious and lackadaisical.
+
+Instead of declaring an order of implementation tasks, a practical definition of TDD is to prioritize code testability above all else. We design our classes, methods, and API for writing uncomplicated, performant, and resilient tests against them. We consider our data accessability, how we inject dependencies into implementations, and how to set up and tear down comparable states of our software. Our code encourages the use of test doubles and can be initialized with no hard dependency on file i/o or network i/o operations.
+
+Beyond pre-release testing, TDD encourages us to consider what runtime metrics we care about and how to extract these metrics from processes with minimal impact on business operations.
+
+
+As any X-driven-development, a systematic approach to our development encourages to document, plan, and tackle problems in small increments.
+
+
 
 TDD encourages us to consider and transcribe a strategy to tackle problems in small increments. The upside of TDD sees diminishing returns with a growing complexity of implementations. Functions using file I/O or network I/O, or processes reliant on environment configurations are difficult to write tests for, even more so before the implementation is available.
 
-When writing tests, we assume as little as possible of the implementation. We compose tests for public-facing interfaces, not private ones. Private implementations change more frequently over time as additional feature requests come in and code is refactored, moved to libraries, or removed entirely.
+Some languages come with native testing tools, others require frameworks and external dependencies to execute test code. Factor in that different testing stages typically have different requirements, and we are faced with quite a collection of tools. It is reasonable to assign the selection, maintenance, or development of test tooling to dedicated teams.
 
-When refactoring code, we run tests to ensure we haven't changed behavior for implementations that call the public-facing methods and APIs. Testing against private implementations increases the workload, as we actively just changed the private implementation and are now required to update the tests. It is a hurdle comprised of more effort than benefit.
+It is **not** reasonable, in fact, it is highly discouraged, to move the responsibility of writing and executing the tests away from the developer writing the functionality. This change is sometimes introduced when the complexity of testing increases, such as end-to-end tests involving UI, middleware, backend services, and database entries. In order to reduce cycle times, it is imperative that developers write and maintain the tests.
 
-Good tests assume as little as possible of the internal workings of the implementation and test against expected *behavior*, not an expected chain of *processes*. An example highlighting the difference:
 
-```golang
-func Test_SerializeStringSuccess(t *testing.T) {
-    path := "/a/path/to/a/file"
-    my_utils.WriteString("my-example-string", path)
-    if err != nil {
-		t.Fatalf("WriteString failed with error: " + err.Error())
-	}
 
-    data, err := os.ReadFile(path)
-	if err != nil {
-		t.Fatalf(err.Error())
-	}
+## Hermetic Environments
 
-    hasString := string(data)
-    wantString := "my-example-string"
-    if hasBalance != wantBalance {
-        t.Fatalf(`has %s, want match for %s`, hasBalance, wantBalance)
-    }
-}
-```
+A hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful. Tests set up, execute, and tear down independently and in a confined manner. Tests provide accurate information regardless of the order in which they are run.
 
-The above implementation tests whether `my_utils.WriteString` writes the given input string to a file provided via a path. The problem with the above test lies within the fact that we are testing against the *process* of **how** `my_utils.WriteString` serializes the given string input.
+These tests run on various machines, executed by different users in multiple execution contexts. Yet, we require the output of each test run to be representative of our software's current state. 
 
-The implementation becomes brittle with every future evolution of `my_utils.WriteString`. It cannot account for any additional tasks that are performed, such as byte padding, prefixing metadata, or serializing as clear text json vs binary json; assuming we output directly to a filesystem, instead of a virtualized environment or an in-memory database.
+Tests on on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place.
 
-These aspects *might* be worth testing at a later stage in the product lifecycle for specialized software consumed by millions of clients. Assuming we are not working on products for healthcare or aviation, we prioritize development velocity over full process coverage and add tests solely after specific problems occurred in production. Instead, we write tests against the *behavior* of **what** we expect to happen.
+Most modern CI/CD platforms offer hermetic environments for running tests in a sealed environment. 
 
-```golang
-func Test_SerializeStringSuccess(t *testing.T) {
-    path := "/a/path/to/a/file"
-    err := my_utils.WriteString("my-example-string", path)
-    if err != nil {
-		t.Fatalf("WriteString failed with error: " + err.Error())
-	}
+These tests run on various machines, by various users. Yet, we require the output of each run to be representative, regardless of the execution context. Tests on on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place.
 
-    // changed the line below to use our
-    // public-facing ReadString instead of os lib
-    data, err := my_utils.ReadString(path)
-    if err != nil {
-		t.Fatalf("ReadString failed with error: " + err.Error())
-	}
+Using container tools such as Docker and [Infrastructure as Code (*WIP)]() (IaC) workflows ensures consistent configuration across platforms and machines. Small-scoped tests run without requiring a dedicated hermetic environment. Our testing suite performs as intended on every machine regardless of environmental configurations. As developers, we are able to replicate failing tests on the CI/CD runners on our machines.
 
-    hasString := data
-    wantString := "my-example-string"
-    if hasBalance != wantBalance {
-        t.Fatalf(`has %s, want match for %s`, hasBalance, wantBalance)
-    }
-}
-```
-
-<!-- vale write-good.Weasel = NO -->
-<!-- likely -->
-If the above implementation fails, we can now reasonably assume that changes done to `my_utils.WriteString` or `my_utils.ReadString` are no longer compatible, which is the behavior we are actually interested in during the development cycle. The second implementation is less likely to be flaky and scales with the product. It also models our customers' behavior, validating that the software meets our users' expectations.
-<!-- vale write-good.Weasel = YES -->
-
-## Hyrum's Law
-
-<!-- vale Vale.Avoid = NO -->
-!!! quote
-    *"With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody."*  
-    - Hyrum Wright
-<!-- vale Vale.Avoid = YES -->
-
-Hyrum's law states that every public-facing behavior of our implementation will be relied upon. While this includes error types and return codes, it also covers incidental actions, such as data layouts (e.g., if a seemingly random return value always follows the same pattern) and execution time (e.g., performance upgrades might trigger hitherto undetected race conditions).
-
-We cannot foresee or control how third-party systems depend upon our implementation, and we question the feasibility of testing all public-facing characteristics of our implementation. We are aware that changes might be incompatible with current dependencies, and it is up to us to weigh the responsibility we delegate to our consumers.
-
-## When Tests Break
+## Testing over Time
 
 Accidental breaking changes aside, changes to products will inevitably cease to pass established tests. We may have encountered a brittle test that is not scaling with our product changes. Depending on the severity of the fragility, we resolve the issue synchronously or asynchronously. Prominent brittleness may be removed by slightly altering the test and sending the initial author a direct message to corroborate our changes. Opaque tests may require a meeting to determine a resolution.
 
 Failing tests for working code are an indicator of backward incompatibility. If these consequences have already been discussed, we ensure they are present within the [Design Document](../planning-implementations.md) and verified by all stakeholders. In case we find our design doc lacking, it is imperative to communicate the situation to our team lead until a strategy is agreed upon by all involved departments. While this sounds histrionic, most cases resolve themselves astutely with a brief email chain.
-
-
-## Testing over Time
 
 
 Successful and sensible testing is modeled against our team's needs and evolves over time. We revisit our testing strategy periodically and after significant events.
@@ -143,14 +91,6 @@ We remove the test should it not provide the appropriate value. Twenty minutes i
 
 See if we can test a higher layer of abstraction of the functionality. If not, we throw it away. The utmost priority is for developers to actively use the automated test suite and not build resentment towards the process.
 
-## Tests as Documentation
-
 Software documentation is notoriously unreliable and commonly has a tenuous relationship with the realities of the code it references. Written documentation about the behavior of edge cases or default return values is not to be trusted. No matter the extent of the drift, documentation still "functions". Tests break.
 
 Clear and focused tests provide context as to the purpose and limitations of code segments. Tests of edge cases demonstrate expected behavior for teams consuming our code. Demonstrated expected behavior streamlines pull requests, as code reviewers spend less manual effort verifying code correctness.
-
-## Who writes Tests?
-
-Some languages come with native testing tools, others require frameworks and external dependencies to execute test code. Factor in that different testing stages typically have different requirements, and we are faced with quite a collection of tools. It is reasonable to assign the selection, maintenance, or development of test tooling to dedicated teams.
-
-It is **not** reasonable, in fact, it is highly discouraged, to move the responsibility of writing and executing the tests away from the developer writing the functionality. This change is sometimes introduced when the complexity of testing increases, such as end-to-end tests involving UI, middleware, backend services, and database entries. In order to reduce cycle times, it is imperative that developers write and maintain the tests.
