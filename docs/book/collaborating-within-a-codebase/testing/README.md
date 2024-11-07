@@ -24,28 +24,23 @@ We test throughout the life of a code change with varying suites of automated te
 
 We run our tests as often and as early as feasible. The sooner we detect an error, the less money and time we spend correcting it. We dive into the scope of different test suits in the two sub-chapters
 
-## Writing tests
+## On Test-Driven Development
 
 <!-- Write code for testability -->
 
-When it comes to testing, the engineering community defaults to the popular term *Test-Driven Development* (TDD). Popular as in well-known, not necessarily well-liked. Widespread sources define *TDD* as the practice of writing tests for a piece of software before working on the source code. An implementation is considered complete once it passes all tests and edge cases. Practically, I consider this definition both ambitious and lackadaisical.
+When it comes to testing, the engineering community defaults to a popular strategy called *Test-Driven Development* (TDD). Popular as in well-known, not necessarily well-liked, widespread sources define *TDD* as the practice of writing tests before writing the source code. An implementation is considered complete once it passes all tests and edge cases. Practically, I consider this definition lackadaisical.
 
-Instead of declaring an order of implementation tasks, a practical definition of TDD is to prioritize code testability above all else. We design our classes, methods, and API for writing uncomplicated, performant, and resilient tests against them. We consider our data accessability, how we inject dependencies into implementations, and how to set up and tear down comparable states of our software. Our code encourages the use of test doubles and can be initialized with no hard dependency on file i/o or network i/o operations.
+Instead of declaring an order of implementation tasks, a practical definition of TDD prioritizes code testability above all else. We design our classes, methods, and API for writing uncomplicated, performant, and resilient tests against them. We consider internal data accessability, how we inject dependencies into implementations, and how to set up and tear down states of our software.
 
-Beyond pre-release testing, TDD encourages us to consider what runtime metrics we care about and how to extract these metrics from processes with minimal impact on business operations.
+Our code encourages painless use of test doubles and computes without file i/o or network i/o operations. Any method that operates on data ordinarily loaded from disk, offers the capability of injecting mock data for running tests. It's extremely difficult (and pointless) to write tests for these implementations before the source code is mature enough to run tests against it.
 
+Beyond functional testing, TDD encourages us to consider post-release monitoring and observability during development. Every form of telemetry demands computational resources. Planning these while writing the business logic allows us to minimize the runtime cost of telemetry. We decide which metrics we care about and how to extract, store, and transmit these to our server with minimal impact on software operations.
 
-As any X-driven-development, a systematic approach to our development encourages to document, plan, and tackle problems in small increments.
+Any engineer who went through the joy of adding tests or telemetry to legacy systems shares the opinion about the unsatisfactory nature of the task. Appending these procedures in hindsight usually involves ripping the code apart and introducing wrappers. The majority of testing-after-the-fact projects carry a high risk of introducing regressions in functionality and performance. 
 
+As any X-driven-development, a systematic approach to development encourages us to document, plan, and tackle problems in small increments. Additionally, TDD ensures the developer of the feature owns the problem and the tests. When the complexity of testing increases, some companies defer the majority of testing to dedicated teams of QA engineers. These take over the testing and infrastructure provision for large-scale efforts including end-to-end tests involving UI, middleware, backend services, and database entries. I believe this to be an unsound approach.
 
-
-TDD encourages us to consider and transcribe a strategy to tackle problems in small increments. The upside of TDD sees diminishing returns with a growing complexity of implementations. Functions using file I/O or network I/O, or processes reliant on environment configurations are difficult to write tests for, even more so before the implementation is available.
-
-Some languages come with native testing tools, others require frameworks and external dependencies to execute test code. Factor in that different testing stages typically have different requirements, and we are faced with quite a collection of tools. It is reasonable to assign the selection, maintenance, or development of test tooling to dedicated teams.
-
-It is **not** reasonable, in fact, it is highly discouraged, to move the responsibility of writing and executing the tests away from the developer writing the functionality. This change is sometimes introduced when the complexity of testing increases, such as end-to-end tests involving UI, middleware, backend services, and database entries. In order to reduce cycle times, it is imperative that developers write and maintain the tests.
-
-
+It is reasonable to assign the selection, maintenance, or development of test tooling to dedicated teams, as some languages come with native testing tools, others require frameworks and external dependencies to execute test code. It is **not** reasonable, in fact, it is highly discouraged, to move the responsibility of writing and executing the tests away from the developer writing the functionality. In order to reduce cycle times, it is imperative that the feature developers write and maintain the tests.
 
 ## Hermetic Environments
 
