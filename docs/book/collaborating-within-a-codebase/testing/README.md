@@ -42,19 +42,24 @@ As any X-driven-development, a systematic approach to development encourages us 
 
 It is reasonable to assign the selection, maintenance, or development of test tooling to dedicated teams, as some languages come with native testing tools, others require frameworks and external dependencies to execute test code. It is **not** reasonable, in fact, it is highly discouraged, to move the responsibility of writing and executing the tests away from the developer writing the functionality. In order to reduce cycle times, it is imperative that the feature developers write and maintain the tests.
 
-## Hermetic Environments
+## Hermeticity
 
-A hard requirement for tests is to be hermetic, meaning not reliant on a specific environment or execution order to be successful. Tests set up, execute, and tear down independently and in a confined manner. Tests provide accurate information regardless of the order in which they are run.
+Tests that succeed or fail due to exogenous factors are pointless. Regardless of their result, we cannot trust their outcome and they tarnish any confidence we have in any other test cases. When writing and executing tests, we establish hermetic procedures keep our tests self-contained and consistent. Our tests do not rely on a specific environment or process to be successful.
 
-These tests run on various machines, executed by different users in multiple execution contexts. Yet, we require the output of each test run to be representative of our software's current state. 
+<!-- Hermeticity in tests -->
 
-Tests on on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place.
+Hermeticity in test code demands that tests do not influence each other. They do not share resources between them and do not leak any result beyond their execution. Each test sets up, executes, and tears down the required resources independently and thus provides accurate information regardless of the order in which they are run.
 
-Most modern CI/CD platforms offer hermetic environments for running tests in a sealed environment. 
+<!-- Hermeticity in enviornments -->
 
-These tests run on various machines, by various users. Yet, we require the output of each run to be representative, regardless of the execution context. Tests on on various operating systems and environments. Failing tests due to drifting environmental configurations hinder development and build resentment towards writing and executing tests in the first place.
+Our tests run on various machines, at various times, instigated by various users. Yet, we require the output of each run to be representative of the software's current state, regardless of the execution context. The effectiveness of our tests can not depend on whether certain files exist in a specific directory or whether certain environment variables and configurations have changed on a test runner. Failing tests due to drifting environmental configurations dampens the enthusiasm of writing and executing tests.
 
-Using container tools such as Docker and [Infrastructure as Code (*WIP)]() (IaC) workflows ensures consistent configuration across platforms and machines. Small-scoped tests run without requiring a dedicated hermetic environment. Our testing suite performs as intended on every machine regardless of environmental configurations. As developers, we are able to replicate failing tests on the CI/CD runners on our machines.
+Most CI/CD platforms offer tooling to run tests in team-defined hermetic environments. Using container tools and Infrastructure as Code workflows we can create a variety of configurations for different test contexts and ensure these are consistent across platforms and machines. Thus we can test different operating systems and environments on any machine. Software defined infrastructure also enables us developers to replicate any failing tests on our machines.
+
+<!-- Hermeticity in test data? -->
+<!-- line endings, metadata, disk block size -->
+
+
 
 ## Testing over Time
 
