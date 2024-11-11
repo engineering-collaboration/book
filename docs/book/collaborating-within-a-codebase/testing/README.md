@@ -48,18 +48,23 @@ Tests that succeed or fail due to exogenous factors are pointless. Regardless of
 
 <!-- Hermeticity in tests -->
 
-Hermeticity in test code demands that tests do not influence each other. They do not share resources between them and do not leak any result beyond their execution. Each test sets up, executes, and tears down the required resources independently and thus provides accurate information regardless of the order in which they are run.
+Hermeticity in test code demands that tests do not influence each other. They do not share resources between them and do not leak any result beyond their execution. Each test sets up, executes, and tears down the required resources independently and thus provides accurate information regardless of the order in which they are run. As tests might be run in parallel, we ensure every suites do not read and write to the same location.
 
-<!-- Hermeticity in enviornments -->
+<!-- Hermeticity in environments -->
 
-Our tests run on various machines, at various times, instigated by various users. Yet, we require the output of each run to be representative of the software's current state, regardless of the execution context. The effectiveness of our tests can not depend on whether certain files exist in a specific directory or whether certain environment variables and configurations have changed on a test runner. Failing tests due to drifting environmental configurations dampens the enthusiasm of writing and executing tests.
+Our tests run on various machines, at various times, instigated by various users. Yet, we require the output of each run to be representative of the software's current state, regardless of the execution context. The effectiveness of our tests can not depend on whether certain files exist in a specific directory or whether certain environment variables and configurations have changed on a test runner. Failing tests due to drifting environmental configurations dampens the enthusiasm of engineers to write and run tests in the first place.
 
-Most CI/CD platforms offer tooling to run tests in team-defined hermetic environments. Using container tools and Infrastructure as Code workflows we can create a variety of configurations for different test contexts and ensure these are consistent across platforms and machines. Thus we can test different operating systems and environments on any machine. Software defined infrastructure also enables us developers to replicate any failing tests on our machines.
+Most CI/CD platforms offer tooling to run tests in team-defined hermetic environments. Using container tools and Infrastructure as Code workflows we create a variety of test configurations. These test contexts ensure consistent execution across platforms and machines. Thus we can test different operating systems and environments on any machine. Software defined infrastructure also enables us developers to replicate any failing tests on our machines.
 
-<!-- Hermeticity in test data? -->
-<!-- line endings, metadata, disk block size -->
+<!-- Hermeticity in test data -->
 
+With hermetic tests running in hermetic environments, the final avenue of introducing inconsistencies comes in form of variable test data. We can realistically test with only a single variation across behavior, environment, and data. In order to verify code changes, our execution environment and test data needs to be identical.
 
+Across industries we face different challenges for test data: size of data, data complexity, context dependencies, cyclic references, metadata compliance, and delimiter tokens. We verify correct processing of expected data and ensure we fail early and gracefully to defective input. The further we delegate a faulty process, the more havoc it creates downstream. 
+
+<!-- Using production data -->
+
+Static test data helps us detect unwanted behavior across code changes. This baseline builds confidence that we did not introduce any side effects. Yet, hand-crafted homogenous test data limits the amount of errors we detect before releasing our software to the public. In reality, our customers display incredibly creative ambition to break our product. To build resilient software, we also run test cases against captured production data.
 
 ## Testing over Time
 
