@@ -68,31 +68,23 @@ Static test data helps us detect unwanted behavior across code changes. This bas
 
 ## Testing over Time
 
-Accidental breaking changes aside, changes to products will inevitably cease to pass established tests. We may have encountered a brittle test that is not scaling with our product changes. Depending on the severity of the fragility, we resolve the issue synchronously or asynchronously. Prominent brittleness may be removed by slightly altering the test and sending the initial author a direct message to corroborate our changes. Opaque tests may require a meeting to determine a resolution.
+Besides accidental breaking changes, modifications to our software will inevitably fail established tests. As our product evolves, it becomes incompatible with earlier versions. Failing tests due to backwards incompatibility should not come as a surprise. These changes usually include all stakeholders across multiple departments. We update or remove the tests and make a note in our Merge Request.
 
-Failing tests for working code are an indicator of backward incompatibility. If these consequences have already been discussed, we ensure they are present within the [Design Document](../planning-implementations.md) and verified by all stakeholders. In case we find our design doc lacking, it is imperative to communicate the situation to our team lead until a strategy is agreed upon by all involved departments. While this sounds histrionic, most cases resolve themselves astutely with a brief email chain.
+A more severe symptom are brittle or flaky tests. Brittle tests fail whenever minor changes are introduced to our code and typically indicate ill-formed testing code. Flaky tests succeed or fail at random and indicate non-hermetic environments or race conditions in test code.
 
+
+We may have encountered a brittle test that is not scaling with our product changes. Depending on the severity of the fragility, we resolve the issue synchronously or asynchronously. Prominent brittleness may be removed by slightly altering the test and sending the initial author a direct message to corroborate our changes. Opaque tests may require a meeting to determine a resolution.
+
+While this sounds histrionic, most cases resolve themselves astutely with a brief email chain.
 
 Successful and sensible testing is modeled against our team's needs and evolves over time. We revisit our testing strategy periodically and after significant events.
 
 
 The most important property of our testing suite is our developers' trust in the process. The rare superlative is warranted, and we elevate the former statement to our absolute priority. We add tests when bugs are reported. We remove tests when they become brittle, flaky, redundant, or even just inconvenient. We move tests to be executed at different times when the current setup proves inefficient or ineffective. The following statements are red flags to be addressed:
 
-**"All tests passed, except for Test A. That one fails about 60% of the time, though, so I'm ignoring it."**
-
 Brittle tests normalize the tendency of ignoring failed tests. Introducing that mindset turns our product testing into an expensive waste of time instead of a useful tool of shifting left.
 
-**"That test takes about twenty minutes, just merge the code now. We don't have time for this!"**
-
 We remove the test should it not provide the appropriate value. Twenty minutes is a long time to occupy machines that may be better suited for other jobs. If the test is necessary, we consider shifting it right, e.g., from pre-merge to post-merge.
-
-<!-- vale proselint.Cliches = NO -->
-<!-- vale write-good.Cliches = NO -->
-<!-- vale alex.ProfanityLikely = NO -->
-**"Every time I touch that function, the tests fail; it's a huge pain in the ass!"**
-<!-- vale alex.ProfanityLikely = YES -->
-<!-- vale write-good.Cliches = YES -->
-<!-- vale proselint.Cliches = YES -->
 
 See if we can test a higher layer of abstraction of the functionality. If not, we throw it away. The utmost priority is for developers to actively use the automated test suite and not build resentment towards the process.
 
