@@ -18,16 +18,6 @@ The pinnacle of the pyramid consists of automated end-to-end tests ([Large-Scope
 From bottom to top, every layer of the pyramid reduces the number of tests by an order of magnitude. If we have 1000 SST, we aim for 100 MST, and no more than 10 LST. A common anti-pattern is what we refer to as a test snow cone, or inverted pyramid. These projects contain little to no small-scoped tests with all the testing done in labor and time-intensive manual tests. The emerging results are slow test runs and long feedback cycles.
 
 
-## Readability
-
-Method-oriented tests are named after the method being tested. Names of behavior-driven tests offer the chance to convey useful information, as the name is the first token visible to us on failing tests.
-
-A good name describes the actions being taken on a system and the expected outcome. We encourage increased verbosity in test method names compared to production code method names as the use case is different. We never write code that calls these, and their names frequently need to be read by humans in reports. The extra verbosity is worth it.
-
-Concise naming combined with clear failure messages enable us to fix our implementation transgressions with poise and grace. Test method naming and error messages follow the acronym DAMP (descriptive and meaningful phrases) rather than DRY (don't repeat yourself).
-
-Complexity is introduced in the form of logic, such as operators, loops, and conditionals. When a piece of code contains logic, we require <!-- vale alex.Ablist = NO -->mental<!-- vale alex.Ablist = YES --> computation to determine its result instead of just reading it off the screen. In test code, we stick to straight-line code over clever logic. Duplication is preferred when it makes the test more descriptive and meaningful.
-
 ## Example
 
 When writing tests, we assume as little as possible of the implementation. We compose tests for public-facing interfaces, not private ones. Private implementations change more frequently over time as additional feature requests come in and code is refactored, moved to libraries, or removed entirely.

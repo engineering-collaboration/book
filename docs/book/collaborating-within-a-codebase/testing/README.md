@@ -66,32 +66,32 @@ Across industries we face different challenges for test data: size of data, data
 
 Static test data helps us detect unwanted behavior across code changes. This baseline builds confidence that we did not introduce any side effects. Yet, hand-crafted homogenous test data limits the amount of errors we detect before releasing our software to the public. In reality, our customers display incredibly creative ambition to break our product. To build resilient software, we also run test cases against captured production data.
 
-## Testing over Time
+## Readability
 
-Besides catching unintenional breaking changes, tests fail because of three reasons: backwards incompatability, brittle test code, and flaky test execution. As our product evolves, we add and change features to it. These changes may become incompatible with earlier versions of our software, in which case we update the tests to reflect the new behavior.
+Method-oriented tests are named after the method being tested. Names of behavior-driven tests offer the chance to convey useful information, as the name is the first token visible to us on failing tests.
 
+A good name describes the actions being taken on a system and the expected outcome. We encourage increased verbosity in test method names compared to production code method names as the use case is different. We never write code that calls these, and their names frequently need to be read by humans in reports. The extra verbosity is worth it.
 
-The term *brittle tests* describes tests that fail with minor (or even unrelated) source code changes. These tests typically indicate ill-formed testing code.
+Concise naming combined with clear failure messages enable us to fix our implementation transgressions with poise and grace. Test method naming and error messages follow the acronym DAMP (descriptive and meaningful phrases) rather than DRY (don't repeat yourself).
 
+Complexity is introduced in the form of logic, such as operators, loops, and conditionals. When a piece of code contains logic, we require <!-- vale alex.Ablist = NO -->mental<!-- vale alex.Ablist = YES --> computation to determine its result instead of just reading it off the screen. In test code, we stick to straight-line code over clever logic. Duplication is preferred when it makes the test more descriptive and meaningful.
 
-*Flaky tests* succeed or fail at random and indicate non-hermetic execution environments or race conditions in test code.
-
-
-We may have encountered a brittle test that is not scaling with our product changes. Depending on the severity of the fragility, we resolve the issue synchronously or asynchronously. Prominent brittleness may be removed by slightly altering the test and sending the initial author a direct message to corroborate our changes. Opaque tests may require a meeting to determine a resolution.
-
-While this sounds histrionic, most cases resolve themselves astutely with a brief email chain.
-
-Successful and sensible testing is modeled against our team's needs and evolves over time. We revisit our testing strategy periodically and after significant events.
-
-
-The most important property of our testing suite is our developers' trust in the process. The rare superlative is warranted, and we elevate the former statement to our absolute priority. We add tests when bugs are reported. We remove tests when they become brittle, flaky, redundant, or even just inconvenient. We move tests to be executed at different times when the current setup proves inefficient or ineffective. The following statements are red flags to be addressed:
-
-Brittle tests normalize the tendency of ignoring failed tests. Introducing that mindset turns our product testing into an expensive waste of time instead of a useful tool of shifting left.
-
-We remove the test should it not provide the appropriate value. Twenty minutes is a long time to occupy machines that may be better suited for other jobs. If the test is necessary, we consider shifting it right, e.g., from pre-merge to post-merge.
-
-See if we can test a higher layer of abstraction of the functionality. If not, we throw it away. The utmost priority is for developers to actively use the automated test suite and not build resentment towards the process.
+An opaque test may require a synchronous meeting to rewrite it together to improve readability.
 
 Software documentation is notoriously unreliable and commonly has a tenuous relationship with the realities of the code it references. Written documentation about the behavior of edge cases or default return values is not to be trusted. No matter the extent of the drift, documentation still "functions". Tests break.
 
 Clear and focused tests provide context as to the purpose and limitations of code segments. Tests of edge cases demonstrate expected behavior for teams consuming our code. Demonstrated expected behavior streamlines pull requests, as code reviewers spend less manual effort verifying code correctness.
+
+## Testing over Time
+
+Besides catching unintentional breaking changes, tests fail because of three reasons: backwards incompatibility, brittle test code, and flaky test execution. As our product evolves, we add and update its features. These changes may become incompatible with earlier versions of our software. We update our tests to reflect the new expected behavior. When changing API behavior, we run product-wide tests to ensure downstream compatibility.
+
+The term *brittle tests* describes tests that fail with minor (or even unrelated) source code changes. These tests typically indicate ill-formed testing code that is tightly coupled to an implementation. Brittleness does not scale with our product changes and becomes an annoyance to any engineer who deals with it. When encountering a brittle test, we edit the code to test a higher layer of abstraction of the functionality and verify our changes with the initial author.
+
+If we cannot remove the brittleness, we remove the test. If the test code needs to be edited every time an engineer touches a certain code path, we might as well not have it. Our utmost priority is for developers to actively use the automated test suite and not build resentment towards the process. Propagating a brittle test for the next developer to fix it for their implementation achieves the opposite.
+
+*Flaky tests* succeed or fail at random and indicate non-hermetic execution environments or race conditions in test code. The non-determinism of flaky tests normalizes the tendency of ignoring failed tests. Introducing that mindset turns our testing strategy into an expensive waste of time instead of a useful tool of shifting left. As randomly failing tests are inherently difficult to reproduce, we skip them during our testing pipeline until a dedicated team removes the flakiness.
+
+We remove the test should it not provide the appropriate value. Twenty minutes is a long time to occupy machines that may be better suited for other jobs. If the test is necessary, we consider shifting it right, e.g., from pre-merge to post-merge. Successful and sensible testing is modeled against our team's needs and evolves over time. We revisit our testing strategy periodically and after significant events.
+
+The most important property of our testing suite is our developers' trust in the process. The rare superlative is warranted, and we elevate the former statement to our absolute priority. We add tests when bugs are reported. We remove tests when they become brittle, flaky, redundant, or even just inconvenient. We move tests to be executed at different times when the current setup proves inefficient or ineffective.
