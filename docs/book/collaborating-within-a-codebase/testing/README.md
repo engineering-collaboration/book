@@ -68,9 +68,13 @@ Static test data helps us detect unwanted behavior across code changes. This bas
 
 ## Testing over Time
 
-Besides accidental breaking changes, modifications to our software will inevitably fail established tests. As our product evolves, it becomes incompatible with earlier versions. Failing tests due to backwards incompatibility should not come as a surprise. These changes usually include all stakeholders across multiple departments. We update or remove the tests and make a note in our Merge Request.
+Besides catching unintenional breaking changes, tests fail because of three reasons: backwards incompatability, brittle test code, and flaky test execution. As our product evolves, we add and change features to it. These changes may become incompatible with earlier versions of our software, in which case we update the tests to reflect the new behavior.
 
-A more severe symptom are brittle or flaky tests. Brittle tests fail whenever minor changes are introduced to our code and typically indicate ill-formed testing code. Flaky tests succeed or fail at random and indicate non-hermetic environments or race conditions in test code.
+
+The term *brittle tests* describes tests that fail with minor (or even unrelated) source code changes. These tests typically indicate ill-formed testing code.
+
+
+*Flaky tests* succeed or fail at random and indicate non-hermetic execution environments or race conditions in test code.
 
 
 We may have encountered a brittle test that is not scaling with our product changes. Depending on the severity of the fragility, we resolve the issue synchronously or asynchronously. Prominent brittleness may be removed by slightly altering the test and sending the initial author a direct message to corroborate our changes. Opaque tests may require a meeting to determine a resolution.
