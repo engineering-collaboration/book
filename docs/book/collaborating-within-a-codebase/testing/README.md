@@ -68,19 +68,17 @@ Static test data helps us detect unwanted behavior across code changes. This bas
 
 ## Readability
 
-Method-oriented tests are named after the method being tested. Names of behavior-driven tests offer the chance to convey useful information, as the name is the first token visible to us on failing tests.
+A popular proverb in software engineering goes *Source code is written once and read many times*. Test code escalates the implications as we write it once, never reference it again, and read it only when the test case fails. The emotional state between reading source code and test code differs. While we approach our day-to-day work analytically, failing tests invite frustration, an illegible ones invite violence.
 
 A good name describes the actions being taken on a system and the expected outcome. We encourage increased verbosity in test method names compared to production code method names as the use case is different. We never write code that calls these, and their names frequently need to be read by humans in reports. The extra verbosity is worth it.
 
-Concise naming combined with clear failure messages enable us to fix our implementation transgressions with poise and grace. Test method naming and error messages follow the acronym DAMP (descriptive and meaningful phrases) rather than DRY (don't repeat yourself).
+Method-oriented tests are named after the method being tested. Names of behavior-driven tests offer the chance to convey useful information, as the name is the first token visible to us on failing tests. Concise naming combined with clear failure messages enable us to fix our implementation transgressions with poise and grace. Test method naming and error messages follow the acronym DAMP (descriptive and meaningful phrases) rather than DRY (don't repeat yourself).
 
-Complexity is introduced in the form of logic, such as operators, loops, and conditionals. When a piece of code contains logic, we require <!-- vale alex.Ablist = NO -->mental<!-- vale alex.Ablist = YES --> computation to determine its result instead of just reading it off the screen. In test code, we stick to straight-line code over clever logic. Duplication is preferred when it makes the test more descriptive and meaningful.
-
-An opaque test may require a synchronous meeting to rewrite it together to improve readability.
-
-Software documentation is notoriously unreliable and commonly has a tenuous relationship with the realities of the code it references. Written documentation about the behavior of edge cases or default return values is not to be trusted. No matter the extent of the drift, documentation still "functions". Tests break.
+We keep test code simple. Complexity is introduced in the form of logic, such as operators, loops, and conditionals. When a piece of code contains logic, we require <!-- vale alex.Ablist = NO -->mental<!-- vale alex.Ablist = YES --> computation to determine its result instead of just reading it off the screen. In test code, we stick to straight-line code over clever logic. Duplication is preferred when it makes the test more descriptive and meaningful.
 
 Clear and focused tests provide context as to the purpose and limitations of code segments. Tests of edge cases demonstrate expected behavior for teams consuming our code. Demonstrated expected behavior streamlines pull requests, as code reviewers spend less manual effort verifying code correctness.
+
+Software documentation is notoriously unreliable and commonly has a tenuous relationship with the realities of the code it references. Written documentation about the behavior of edge cases or default return values is not to be trusted. No matter the extent of the drift, documentation still "functions". Tests break. Every opaque test will require a synchronous meeting to rewrite it together to improve readability.
 
 ## Testing over Time
 
