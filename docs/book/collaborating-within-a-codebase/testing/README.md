@@ -68,17 +68,21 @@ Static test data helps us detect unwanted behavior across code changes. This bas
 
 ## Readability
 
-A popular proverb in software engineering goes *Source code is written once and read many times*. Test code escalates the implications as we write it once, never reference it again, and read it only when the test case fails. The emotional state between reading source code and test code differs. While we approach our day-to-day work analytically, failing tests invite frustration, an illegible ones invite violence.
+Source code is written once and read many times. Test code escalates the popular proverb as we write it once, and read under the emotional duress accompanied by failing test cases. Failing tests invite frustration and illegible ones invite violence. Readable tests avoid smashed computer screens by succinctly explaining three key questions:
 
-A good name describes the actions being taken on a system and the expected outcome. We encourage increased verbosity in test method names compared to production code method names as the use case is different. We never write code that calls these, and their names frequently need to be read by humans in reports. The extra verbosity is worth it.
+- What is the expected outcome of the test?
+- Why did it fail?
+- How do we expect the tested code to behave?
 
-Method-oriented tests are named after the method being tested. Names of behavior-driven tests offer the chance to convey useful information, as the name is the first token visible to us on failing tests. Concise naming combined with clear failure messages enable us to fix our implementation transgressions with poise and grace. Test method naming and error messages follow the acronym DAMP (descriptive and meaningful phrases) rather than DRY (don't repeat yourself).
+The first token presented to any engineer experiencing a failing test case is its name. A good name describes the actions being taken and the expected outcome. We encourage increased verbosity in test method names compared to production code as their names frequently need to be read by humans in reports. The extra verbosity is worth it to offer the chance to convey useful information for behavior-driven tests.
 
-We keep test code simple. Complexity is introduced in the form of logic, such as operators, loops, and conditionals. When a piece of code contains logic, we require <!-- vale alex.Ablist = NO -->mental<!-- vale alex.Ablist = YES --> computation to determine its result instead of just reading it off the screen. In test code, we stick to straight-line code over clever logic. Duplication is preferred when it makes the test more descriptive and meaningful.
+Writing informative error messages in production code is difficult. Writing informative error messages in test code is slightly less so. Since we control the entire context of the testing procedure we can efficiently communicate how the current state differs from the expected state. Test methods and error messages benefit from descriptive and meaningful phrases (DAMP) rather than the engineering dogma "don't repeat yourself" (DRY).
 
-Clear and focused tests provide context as to the purpose and limitations of code segments. Tests of edge cases demonstrate expected behavior for teams consuming our code. Demonstrated expected behavior streamlines pull requests, as code reviewers spend less manual effort verifying code correctness.
+As for test code itself, we prefer simplicity over elegance. Every form of logic, such as operators, loops, and conditionals introduces complexity into our tests. When a piece of code contains logic, we require cognitive effort to determine its result instead of just reading it off the screen. Duplication is preferred when it makes the test more descriptive and meaningful. Every opaque test requires a synchronous meeting between authors to improve readability.
 
-Software documentation is notoriously unreliable and commonly has a tenuous relationship with the realities of the code it references. Written documentation about the behavior of edge cases or default return values is not to be trusted. No matter the extent of the drift, documentation still "functions". Tests break. Every opaque test will require a synchronous meeting to rewrite it together to improve readability.
+Concise naming combined with clear failure messages enable us to communicate the actions of our implementation. Focused tests provide context to the source code and demonstrate its purpose and limitations. Teams working on upstream dependencies reference the tests to consume our distributed source code and libraries. Internally, our tests streamlines merge requests as code reviewers spend less manual effort verifying code correctness.
+
+Software documentation is notoriously unreliable and commonly has a tenuous relationship with the realities of the code it references. We cannot implicitly trust any written documentation about our software's error handling or processing of edge cases. Documentation may be severely erroneous, or only slightly outdated, but no matter the extent of the drift, documentation still "functions". Tests break. Our code behaves as reported for any passing test.
 
 ## Testing over Time
 
@@ -95,7 +99,6 @@ We remove the test should it not provide the appropriate value. Twenty minutes i
 The most important property of our testing suite is our developers' trust in the process. The rare superlative is warranted, and we elevate the former statement to our absolute priority. We add tests when bugs are reported. We remove tests when they become brittle, flaky, redundant, or even just inconvenient. We move tests to be executed at different times when the current setup proves inefficient or ineffective.
 
 ### An example of Brittleness
-
 
 When writing tests, we assume as little as possible of the implementation. We compose tests for public-facing interfaces, not private ones. Private implementations change more frequently over time as additional feature requests come in and code is refactored, moved to libraries, or removed entirely.
 
