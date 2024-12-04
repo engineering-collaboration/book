@@ -105,7 +105,7 @@ nav:
 
       - Testing:
         - './book/collaborating-within-a-codebase/testing/README.md'
-        - Functional Tests: './book/collaborating-within-a-codebase/testing/small-scoped-tests.md'
+        - Automated Functional Tests: './book/collaborating-within-a-codebase/testing/small-scoped-tests.md'
         - Beyond Functional Tests: './book/collaborating-within-a-codebase/testing/benchmark-tests.md'
 
       - Release Mechanisms: './book/collaborating-within-a-codebase/release-mechanisms.md'
