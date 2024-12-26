@@ -42,15 +42,13 @@ The test snow cone typically emerges from legacy software that was not written w
 
 ## Small-Scoped Tests
 
-The potency of small-scoped tests comes from the little amount resources they require. They are straightforward and fast to write, and the isolated nature of focused test code makes them easy to maintain. The limitations we enforce on these tests reduces the time needed to run them. Our software commonly contains thousands of small-scoped tests, all collectively executed in seconds.
+The advantage of small-scoped tests lies in the little amount of resources they require. The limitations we enforce and the isolated nature of small focused tests make the the code straightforward to write and easy to maintain. Small-scoped tests execute speedily without arranging external dependencies. Our software commonly contains thousands of small-scoped tests, all collectively executed in seconds.
 
-Mike Cohn's testing pyramid builds upon small-scoped tests to enable expedited continuous integration. A complete suite of passing SSTs increases the confidence of introducing non-breaking changes to our code base.
+We limit small-scoped tests to the fastest possible testable entity in our code, in-memory operations. Small-scoped tests do not run disk operations or network operations. They do not not sleep, make other blocking calls, or consume other OS processes. These factors are covered by medium-scoped tests. Writing source code and its tests code with these constraints in mind, enables us to verify a broad set of behavior with minimal effort.
 
-SSTs consist of the smallest possible testable entity in our code to confirm the expected process of a single public behavior executed in memory. SSTs do not rely on environmental factors, including file operations, network operations, and implementations specific to operating systems. The other fundamental constraint on small tests is that they do not sleep, perform I/O operations, or make any blocking calls. SSTs do not access the network, disk, or OS processes. These factors are covered by Medium Scaled Tests.
+The limitations on their complexity make small-scoped tests rapid. Hence, we run them as often as possible. Their small footprint facilitates executing them during every step of the development cycle: while coding on our local machines, on pre-merge checks, post-merge validations, and as pre-release requirements. A complete suite of passing small-scoped tests increases the confidence of introducing changes without irritating our code base.
 
-Every serious programming language comes equipped with tooling for writing and executing small-scoped tests. The internet is bursting with blogs, tutorials, and guides for setting up SSTs for any language in any IDE. Beyond the strategies shared in [Good Practices](./good-practices.md), we avail full creative freedom for concrete implementations.
-
-We do, however, share the recommendation that SST's small footprint warrants frequent execution. Hence, we run these kinds of tests during most steps of the development cycle: during development on our local machines, on pre-merge checks, post-merge validations, and as pre-release requirements.
+Every serious programming language ships with tooling for writing and executing small-scoped tests. Numerous blogs, tutorials, and guides cover setting up these tests for any language in any integrated development environment. Beyond the limitations highlighted above, we suggest following our programming languages most supported practices.
 
 [![Small-Scoped Test Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/sst-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/sst-execution.png)
 
