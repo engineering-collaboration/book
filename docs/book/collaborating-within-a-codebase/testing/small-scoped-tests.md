@@ -54,13 +54,15 @@ Every serious programming language ships with tooling for writing and executing 
 
 ## Medium-Scoped Tests
 
-As with the term *unit tests*, the expression *integration tests* conjures a bias towards differing implementation strategies. We, therefore, advance our naming from *small-scoped tests* to *medium-scoped tests* (MST). MSTs are the second and penultimate layer of [Mike Cohn's testing pyramid](../#the-testing-pyramid). These verify correct and expected behavior between **embedded systems and connected systems**.
+Incrementing our nomenclature by a size, medium-scoped tests verify the expected behavior between embedded and connected systems and validate the interactions between our software and its execution environment. Typical medium-scoped tests check features on different operating systems, read and write files from disk, connect to network endpoints, and confirm the interaction between subsystems of our product, e.g. a service with a database, a service with a connected service, or inter-process communication.
 
-MSTs verify interactions between the code and execution environment, e.g. operating systems, file I/O, network I/O, and the interplay between subsystems of our product, e.g. a service with a database, a service with a connected service.
+In order to test against these environments, we need to set them up. While we could build physical test farms consisting of dedicated hardware for different environments, this approach becomes unwieldy for modern software requirements. The sheer amalgamation of execution environments grew exponentially over the years. We cannot store and maintain every Android device on the market, nor can we provide Windows machinery with all combinations of graphic card models and their various drivers.
 
-<!--
-Medium and large-scoped tests provide the environment and infrastructure needed to execute expectedly.
--->
+Besides adaptability, running on dedicated but a limited amount of hardware introduces a bottleneck to our testing availability. Once our testing frequency surpasses our testing load we delay discovering any breaking changes in our software. Additionally, if we cannot isolate test runs on shared hardware we influence other test runs. Tests that leave the environment in a non-neutral state tarnish all following executions, and parallel tests competing over limited resources lead to flaky test results.
+
+To counter these problems, we move from wholly physical environments to software-defined infrastructure. Virtual machines and containers allow us to isolate various test environments on shared machinery. To ensure hermeticity across sessions and devices, we use declarative and imperative tools to construct consistent testing infrastructure. Thus, any machine with the required virtualization technology installed may run our test cases.
+
+To run medium-scoped tests and large-scoped tests in virtualized environments, we provide the infrastructure declarations with the source code itself. We place our setup scripts and definition files for test environments in the same repository and version it with our code changes. This allows our engineers to spawn the same test environment on their development machine that runs on our build servers. Hard coupling between source code and infrastructure code enables us to recreate the infrastructure our software expects at any given version.
 
 ### Test Doubles
 
