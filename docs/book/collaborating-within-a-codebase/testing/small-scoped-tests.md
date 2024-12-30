@@ -66,11 +66,82 @@ To run medium-scoped tests and large-scoped tests in virtualized environments, w
 
 ### Test Doubles
 
-Test doubles stand in during the testing procedure when real implementations are too complex or costly to set up for hermetic testing. As an example, when writing services against a third-party platform, we validate API calls against a double instead of spawning the entire platform ephemerally. Test doubles also function as deputies for legacy code written with limited testability in mind.
+We prefer to test against real implementations of connected systems. While modern container offerings make this goal achievable more often than not, unfortunately, sometimes, real implementations are too complex or costly to set up for frequent isolated runs. In these situations test doubles stand in as lightweight alternatives. Depending on their implementation, we categorize test doubles as *stubs*, *mocks*, or *fakes*.
 
-Depending on the implementation, test doubles are called *stubs*, *mocks*, or *fakes*. These terms refer to differing strategies in terms of fidelity and execution cost. By definition, perfect fidelity with doubles is not feasible, as these need to be vastly simpler than the real implementation to be suitable for use in our tests.
+*Stubs* replace external dependencies with hard-coded responses. These canned implementations allow us to test code paths where response values are expected, but its content proves insignificant to our test case. *Stubs* require low effort and often consist of a single return value for stubbed methods. Initially typed out manually, sophisticated code bases may eventually autogenerate these based on source code. Example:
+
+```golang
+// Stub method for host/product/db/user.go#43
+//
+//   GetUsername(id int) string
+//
+func GetUsername(id int) string {
+    return "stubbed_username"
+}
+```
+
+If we require interactivity in our tests, we write *mock* implementations. Stateful objects with the minimum fidelity needed for our tests.
+
+```golang
+// Mock implementation for host/product/db
+
+type MockDB struct {
+    users map[int]string
+}
+
+func (db *MockDB) CreateUsername(username string) (int, error) {
+    _, exists := db.users[id]
+    if exists {
+        return -1, fmt.Errorf("user with id %d already exists", id)
+    }
+
+    db.id++
+    db.users[db.id] = username
+    return nil, db.id
+}
+
+func (db *MockDB) GetUsername(id int) string {
+    username, _ := db.users[id]
+    return username
+}
+
+func (db *MockDB) UpdateUsername(id int, username string) error {
+    _, exists := db.users[id]
+    if !exists {
+        return fmt.Errorf("user with id %d does not exist", id)
+    }
+
+    db.users[id] = username
+    return nil
+}
+
+func (db *MockDB) DeleteUsername(id int) {
+    delete(db.users, id)
+}
+```
+
+For our tests we pass the mock implementation.
+
+```golang
+func Test_AuthenticateUserFromPayload(t *testing.T) {
+    service := CreateNewService()
+    mockDB := CreateNewMockDB()
+    service.SetDB(mockDB)
+
+    // run whatever tests we want
+    // ...
+}
+```
+
+These terms refer to differing strategies in terms of fidelity and execution cost. By definition, perfect fidelity with doubles is not feasible, as these need to be vastly simpler than the real implementation to be suitable for use in our tests.
 
 Fakes require effort and domain knowledge to behave similarly to the real implementation. If the real implementation changes, so must the fake. Depending on the nature of the doubles used, testing against these organically leads to testing against processes instead of behaviors, which leads to brittle tests (as covered in [Good Practices](./good-practices.md)).
+
+&nbsp; | Stub | Mock | Fake
+-|-|-|-
+**Purpose** | Provide predefined responses | Verify interactions | Simulate functionality
+**Behavior** | Passive | Active, validates behavior | Functional alternative
+**Complexity** | Simple | Requires setup for validation | Often more complex
 
 The simplicity of test doubles compared to their complex counterparts reduces the flakiness of MSTs. When tests fail against test doubles, we gain certainty that the issues originate in our source, rather than the dependency.
 
