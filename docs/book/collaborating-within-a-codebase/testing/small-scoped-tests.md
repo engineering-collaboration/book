@@ -68,7 +68,9 @@ To run medium-scoped tests and large-scoped tests in virtualized environments, w
 
 We prefer to test against real implementations of connected systems. While modern container offerings make this goal achievable more often than not, unfortunately, sometimes, real implementations are too complex or costly to set up for frequent isolated runs. In these situations test doubles stand in as lightweight alternatives. Depending on their implementation, we categorize test doubles as *stubs*, *mocks*, or *fakes*.
 
-*Stubs* replace external dependencies with hard-coded responses. These canned implementations allow us to test code paths where response values are expected, but its content proves insignificant to our test case. *Stubs* require low effort and often consist of a single return value for stubbed methods. Initially typed out manually, sophisticated code bases may eventually autogenerate these based on source code. Example:
+#### Stubs
+
+*Stubs* replace external dependencies with hard-coded responses. These canned implementations allow us to test code paths where response values are expected, but its content proves insignificant to our test case. *Stubs* require low effort and often consist of a single return value for stubbed methods. Initially typed out manually, sophisticated code bases may eventually autogenerate these based on source code or OpenAPI schemas with examples.
 
 ```golang
 // Stub method for host/product/db/user.go#43
@@ -80,58 +82,34 @@ func GetUsername(id int) string {
 }
 ```
 
-If we require interactivity in our tests, we write *mock* implementations. Stateful objects with the minimum fidelity needed for our tests.
+#### Mocks
 
-```golang
-// Mock implementation for host/product/db
+If we require higher fidelity in our tests, we write *mock* implementations - stateful replacements with a reduced feature set of the original dependency. These substitutes supplant - or *mock* - calls made to external systems with cheap and performant in-memory implementations. Any good mock requires knowledge of the original tools workings to provide an implementation with the minimum fidelity required to run our tests.
 
-type MockDB struct {
-    users map[int]string
-}
+We use mocks for convenience when testing our source code. High-quality mocks require a low amount of resources, start up quickly, and are dead simple to use. The smarter a mock implementation, the less fitting it becomes for medium-scoped testing. A common fallacy of misplaced enthusiasm are *mirror doubles*. High fidelity systems that trade one complex dependency for a another slightly less complex one.
 
-func (db *MockDB) CreateUsername(username string) (int, error) {
-    _, exists := db.users[id]
-    if exists {
-        return -1, fmt.Errorf("user with id %d already exists", id)
-    }
+Substituting dependencies with mock implementations works best when code was written with testability in mind. Writing tests in tandem with source code improves the odds of injecting mocks for testing in greenfield projects. Especially when we work on "glue" code between platforms we pause to consider the testing code. Typically any officially supported API wrapper offers a mock substitute for the wrapper.
 
-    db.id++
-    db.users[db.id] = username
-    return nil, db.id
-}
-
-func (db *MockDB) GetUsername(id int) string {
-    username, _ := db.users[id]
-    return username
-}
-
-func (db *MockDB) UpdateUsername(id int, username string) error {
-    _, exists := db.users[id]
-    if !exists {
-        return fmt.Errorf("user with id %d does not exist", id)
-    }
-
-    db.users[id] = username
-    return nil
-}
-
-func (db *MockDB) DeleteUsername(id int) {
-    delete(db.users, id)
-}
-```
-
-For our tests we pass the mock implementation.
+For the sake of brevity the following code snippet omits the actual mock code, but demonstrates how we inject a mock database to run our test against.
 
 ```golang
 func Test_AuthenticateUserFromPayload(t *testing.T) {
+
     service := CreateNewService()
+
+    // Mock implementation for host/product/db/mock_db.go
+    // lightweight in-memory db to create, read, update,
+    // and delete a user via their id
     mockDB := CreateNewMockDB()
+
     service.SetDB(mockDB)
 
     // run whatever tests we want
     // ...
 }
 ```
+
+#### Fakes
 
 These terms refer to differing strategies in terms of fidelity and execution cost. By definition, perfect fidelity with doubles is not feasible, as these need to be vastly simpler than the real implementation to be suitable for use in our tests.
 
