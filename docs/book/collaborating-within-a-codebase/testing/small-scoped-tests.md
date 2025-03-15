@@ -111,9 +111,13 @@ func Test_AuthenticateUserFromPayload(t *testing.T) {
 
 #### Fakes
 
-These terms refer to differing strategies in terms of fidelity and execution cost. By definition, perfect fidelity with doubles is not feasible, as these need to be vastly simpler than the real implementation to be suitable for use in our tests.
+In the real world we find ourselves limited by factors out of our control. Previous decisions hardcoded an external dependency which monopolizes our testing resources. Initially we were able to increase our testing hardware to run multiple instances of our expensive system, but our CI/CD journey is blocked by the increased costs. We spend over half the testing time getting our dependencies up and running, or allocate massive amount of CPU and memory for code not currently being tested.
 
-Fakes require effort and domain knowledge to behave similarly to the real implementation. If the real implementation changes, so must the fake. Depending on the nature of the doubles used, testing against these organically leads to testing against processes instead of behaviors, which leads to brittle tests (as covered in [Good Practices](./good-practices.md)).
+Fakes can be written either as a full stand-in replacement for testing, or within the original source code with alternate runtime configuration. We prune our dependency tree by skipping any expensive operations in form of validation, encryption, telemetry, serialization, authentication. All the aspects necessary for running in production, burden our test runs.
+
+By definition, perfect fidelity with fakes is not feasible, as these need to be vastly simpler than the real implementation to be suitable for use in our tests. Fakes require effort and domain knowledge to behave similarly to the real implementation. If the real implementation changes, so must the fake.
+
+A fake database does not have the fidelity of a real database but maintains fidelity to the API contracts. A fake does not keep fidelity to latency and resource consumption and is therefore unreliable to provide information about race conditions, timeouts, or benchmarking. On the other hand, the simplicity of test doubles compared to their legitimate counterparts reduces the flakiness of MSTs. When tests fail against test doubles, we gain certainty that the issue originated from our source, rather than the dependency.
 
 &nbsp; | Stub | Mock | Fake
 -|-|-|-
@@ -121,13 +125,17 @@ Fakes require effort and domain knowledge to behave similarly to the real implem
 **Behavior** | Passive | Active, validates behavior | Functional alternative
 **Complexity** | Simple | Requires setup for validation | Often more complex
 
-The simplicity of test doubles compared to their complex counterparts reduces the flakiness of MSTs. When tests fail against test doubles, we gain certainty that the issues originate in our source, rather than the dependency.
+Using test doubles does not replace the need for testing against production environments. We employ them to increase our integration velocity by frequently testing against lighter-weight pseudo-implementations. We defer longer-running tests across sophisticated environments once we are confident with our code changes. This approach improves both our development velocity and final code stability.
 
-A fake database does not have the fidelity of a real database but maintains fidelity to the API contracts. A fake does not keep fidelity to latency and resource consumption and is therefore unreliable to provide information about race conditions, timeouts, or benchmarking.
+Stubs, mocks, and fakes stand in for production services. Each method differs in terms of fidelity, maintenance cost, and execution rate. However, modern software development tooling have made testing against real implementations more commonplace. We build and test against all operating systems on our build machines, and it has become trivial to spin up lightweight ephemeral containers of our preferred database for MSTs.
 
-With modern software development tooling, testing against real implementations becomes the more commonplace practice. We build and test against all operating systems on our build machines, and it has become trivial to spin up lightweight ephemeral containers of our preferred database for MSTs.
+Intuitively, we run any medium-scoped test against test doubles as a requirement of a merge request. The entire point of writing and maintaining test doubles is to verify our code changes as early as possible. After merging a green branch into main, we confirm the same tests against an actual implementation. The asynchronicity frees our developers to focus on a new task.
 
-MSTs' complexity and computational requirements position them to be executed after code changes are merged to main. Should we find that our MSTs utilize fewer resources than expected and code integrations to our main branch frequently fail, we consider moving them to pre-merge.
+Testing pipelines evolve continuously. If we have written test-doubles for pre-merge testing, we might encounter two scenarios which encourage us to abandon our test doubles and execute the actual test to our pre-merge testing suite:
+
+Firstly, we find that a test against an actual service requires fewer resources than expected. As our downstream dependencies become more mature and efficient, or our testing infrastructure evolves, we might be able to abandon a previous stand-in. We always prefer to test as against environments as close to production as possible.
+
+Secondly, our code integrations fails frequently against the real-life component after passing the test double. We write test doubles to increase our integration velocity, not to add an additional burden to debug and maintain testing code. If at all feasible, we forsake the abstraction and run real-life tests on pre-merge. The effort we put into maintaining the light-weight alternative might be reallocated to making the actual component more efficient to run tests against.
 
 [![Medium-Scoped Test Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/mst-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/mst-execution.png)
 
