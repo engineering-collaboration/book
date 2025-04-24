@@ -142,17 +142,18 @@ Secondly, our code integrations fails frequently against the real-life component
 
 ## Large-Scoped Tests
 
-Large-scoped tests (LST) test the flow of commands from user input across different APIs, serialization strategies, and verify that the returned behavior is as expected.
+<!--
+TODO: (Daniel) Make this chapter coherent. Avoid going in to detail.
+This is an introduction. Detailed LST could be a book of itself.
+-->
 
-Within the cosmology of automated testing, LSTs represent the most expensive, complex, and lengthy test suite to set up and execute. Commonly referred to as *end-to-end tests* or *system tests*, they cover the pinnacle of the testing pyramid. From bottom to top, every layer of the pyramid reduces the number of tests by an order of magnitude. A project containing 1000 SSTs includes 100 MSTs and comprises no more than 10 LSTs.
+Within the cosmology of automated testing, large-scoped tests embody the most expensive, complex, and adventurous test suite to set up and execute. Commonly referred to as *end-to-end tests* or *system tests*, they round off the pinnacle of the testing pyramid. Large-scoped tests validate a full roundtrip of a product feature - triggering an action via a UI or an API, authenticating the instigator, processing the request, forwarding the request to downstream components, reading and writing states to a database, and finally presenting a result to the user.
 
-LSTs are so subjective to the organizations and products they are run in; no solution applies across companies. The technology stack and approach of game companies have little in common with the approach of cloud providers, which, in turn, differs tremendously from mobile applications or embedded systems. The complex nature of LST makes disregarding them altogether a **valid option**.
-
-Due to the complexity and effort of creating environments for LSTs, an instinctive initial approach is to run a second deployment, identical to the live production, dedicated to staging and verifying our changes. This approach may well be a good solution for us, but it is an expensive endeavor and does not scale well.
-
-An increasing number of teams staging changes to the same environment inflates the brittleness of said environment. Forcing a massive end-to-end test environment introduces problematic correlations and false positives or negatives. If we do offer LST staging areas, we must ensure every team can spin up a fenced-off instance to singularly test changes specified by that team.
+Due to the complexity and effort of creating environments for LSTs, an instinctive initial approach is to run a second deployment, identical to the live production, dedicated to staging and verifying our changes. However, n increasing number of teams staging changes to the same environment inflates the brittleness of said environment. Forcing a massive end-to-end test environment introduces problematic correlations and false positives or negatives. If we do offer LST staging areas, we must ensure every team can spin up a fenced-off instance to singularly test changes specified by that team.
 
 The sheer herculean effort of running LSTs excludes them from being run as part of the merging process. At a minimum, though, we run LSTs as part of the pre-release process. We may execute LST on our main branch periodically during the week, preferably at nighttime to minimize interference with resources during active development. While LSTs can be run over the weekend, coming to the office on a Monday morning to failed test alerts of non-production technology is a stressful way to start the week.
+
+Depending on our product and tech stack we face a plethora of challenges for creating, executing, and maintaining these tests. Writing automated tests that trigger input and parse feedback of UI applications become outdated with minor iterations. The complex nature of LST makes disregarding them altogether a **valid option**.
 
 [![Large-Scoped Test Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/lst-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/lst-execution.png)
 
@@ -160,17 +161,8 @@ The sheer herculean effort of running LSTs excludes them from being run as part 
 
 Similar to test doubles introduced in MSTs, contract testing presents an alternative to testing against implementations in an LST environment. Whereas test doubles require technology domain experience, contract testing is built upon cross-team communication effort. Establishing consumer-driven contracts formalizes the clear lines of communication between vertical teams enforced by the team interactions discussed in [Team Interactions](../../collaborating-within-a-company/team-interactions.md).
 
-Contract tests validate established agreements between teams as instituted in the consumer-driven contracts. Contracts are drawn up between team members of the consumer service and the provider service, both of whom participate in writing the contract tests. All consumer contract tests are run against our pending implementation in the provider services to certify our changes do not break dependent behavior.
+Contrary to test doubles, we do not test our changes against an abstraction of other systems, but against the contract we provide to dependent systems. Contracts are drawn up between team members of the consumer service and the provider service, both of whom participate in writing the contract tests. We run changes to our service against the contracts established for our service to certify our changes do not break dependent behavior.
 
 Contract testing extends static strategies such as API testing and schema testing and requires more collaboration between contract parties. API testing and schema testing work exceptionally well when our organization embraces documentation-driven development, a practice where documentation is written first, and boilerplate code is generated based on the schema of the documentation. This kind of testing requires a lack of documentation drift, a fact realistically achievable if the documentation drives source code, not the other way round. [OpenAPI](https://www.openapis.org/) is a popular standard with a rich economy of open source tooling.
 
-
-<!-- vale Vale.Avoid = NO -->
-!!! quote
-    *"With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody."*  
-    - Hyrum Wright
-<!-- vale Vale.Avoid = YES -->
-
-Hyrum's law states that every public-facing behavior of our implementation will be relied upon. While this includes error types and return codes, it also covers incidental actions, such as data layouts (e.g., if a seemingly random return value always follows the same pattern) and execution time (e.g., performance upgrades might trigger hitherto undetected race conditions).
-
-We cannot foresee or control how third-party systems depend on our implementation, and we question the feasibility of testing all public-facing characteristics of our implementation. We are aware that changes might be incompatible with current dependencies, and it is up to us to weigh the responsibility we delegate to our consumers.
+Writing and editing this chapter coincided with the acquisition of our startup and the resulting release of Perforce P4 One. The intermittent chances I had to work on this book led to a somewhat disjointed chapter. Until I find time to properly edit the three thousand words about automated functional testing, I release you with the three main takeaways of this prose: Run tests as early as possible, at the smallest scope possible, and only keep tests that build trust in the testing procedure. Testing best-practices are the one that are actually run by our developers.
