@@ -3,19 +3,21 @@ title: Benchmark Tests
 description: In order to avoid any kind of performance regression, we run our changes through relevant benchmark tests. As the word benchmark indicates, these tests check for discrete metrics for a certain facet of our software.
 ---
 
-# Benchmark Tests
+# Well, working software
 
-When releasing new versions of our software, our acceptance criteria exceed operational functionality and stability. In order to avoid any kind of performance regression, we run our changes through relevant benchmark tests. As the word *benchmark* indicates, these tests check for discrete metrics for a certain facet of our software. The evaluated benchmarks of our software indicate whether our organization meets the acceptance criteria of stakeholders and compare our performance to competitors on the market.
+Once we reliably ship working software with the help of automated functional testing, we should take a moment to appreciate our accomplishment. Running frequent and dependable tests places us in the higher echelons of software companies. I'm confident that implementing the large-scoped automated tests inspired us to consider how else we might monitor software quality beyond function. But, just as wine tasting, tattoos, home improvements, once we have a taste for it, we're planning the next one.
 
-## Performance Tests
+This chapter covers ideas and strategies on how we move from "Well, it's working." to "It's working well.".
 
-Testing against performance identifies efficiency bottlenecks within our software and, if done over time, helps us avoid introducing performance regressions with our changes. We define performance as any metric occurring during runtime that we care about and decide to document.
+## Benchmark Tests
+
+As the word *benchmark* indicates, these tests validate discrete metrics for a certain facet of our software. The evaluated benchmarks of our software indicate whether our organization meets the acceptance criteria set by our stakeholders. Measured metrics help us analyze and compare our performance to competitors on the market. In order to avoid any kind of performance regression, we write and run benchmark tests.
+
+The primary example benchmarks performance. We write tests to identify efficiency bottlenecks within our software and. Over time, the practice helps us avoid performance regressions with our changes. We define performance as any metric occurring during runtime that we care about and decide to document.
 
 For example, we identify issues related to memory leaks and resource management by running our software at full capacity for an extended amount of time. We measure the system's maximum load and user interactions by continuously incrementing the amount of concurrent calls until processing errors crop up. We measure the acceptable loading time of a web page and response times for user interactions to ensure our system meets acceptable latency standards.
 
 We may measure performance-increasing strategies of cache effectiveness, edge content delivery, lazy loading, deferred executions, or whatever else we identify as crucial for our use cases.
-
-## Robustness Tests
 
 While *performance tests* evaluate our proficiency when everything goes well, *robustness tests* assess our capacity for dealing with increased load and failures.
 
@@ -31,18 +33,16 @@ We extend physical accessibility traits with demographic, economical, and geogra
 
 If our distribution location requires regulatory compliance, we appraise those when releasing changes to our software. We test against these requirements when packaging localized versions of our package.
 
-## Executing Benchmark Tests
-
 We run benchmark tests multiple times a week during low-traffic hours during the week or on the weekend. The longer we go without running performance tests, the harder it can be to track down the culprit.
 
 [![Benchmark Test Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/benchmark-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/benchmark-execution.png)
 
 
-# Manual Tests
+## Manual Tests
 
 The feasibility of automated tests has its limits. Human usability aspects are best evaluated with human judgment.
 
-## Qualitative
+### Qualitative
 
 Explorative manual testing appraises the quality of the output our software generates and its significance and validity in the given context. Interdisciplinary product decisions regarding usability and user experience require vision, creativity, and domain experience.
 
@@ -50,11 +50,11 @@ We automate supporting processes for manual testing; for example, we can statica
 
 We statically verify that our system follows the guidelines defined within our design system. Aesthetic components such as color, loaded fonts, and spacing. It is difficult to automatically evaluate product characteristics such as transparency, clicks to purchase, and consistent experiences throughout the product.
 
-## Security
+### Security
 
 During security tests and <!-- vale alex.ProfanityMaybe = NO -->penetration<!-- vale alex.ProfanityMaybe = YES --> tests, allies uncover and exploit vulnerabilities in our system before malicious entities take advantage of them. Domain experts stress the boundaries in systems, trying to effectively break our software. Broken states in our systems lead to flaws in our product, such as multiple shipments of a single order.
 
-## Nightly, Alpha, and Beta Programs
+### Nightly, Alpha, and Beta Programs
 
 Thus far, we have discussed manual tests done internally or by third-party providers. A common strategy to demonstrate build stability and user acceptance is to offer early releases to a restricted control group consisting of power users. Sorted by recency, these programs are termed:
 
@@ -67,8 +67,6 @@ The major benefit of early access programs is the user diversity. Our software i
 
 These (semi-)public manual testing strategies require dedicated personnel with product experience qualified in communications. This is much less a technological role than it is a mediatory role. Often, our software builds the base of the livelihood of our users. Perceived detrimental changes fuel anxiety and emotional responses.
 
-## Executing Manual Tests
-
 Strategies in user experience and accessibility steadily move from manual testing to automated testing. As security testing shifted left more and more, our terms evolved; for example, DevOps is now referred to as DevSecOps. Regardless of labels, we intend to shift all feasible product aspects left and introduce them to earlier testing stages.
 
 [![Manual Test Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/manual-testing-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/manual-testing-execution.png)
@@ -76,7 +74,7 @@ Strategies in user experience and accessibility steadily move from manual testin
 Security Engineers and QA Engineers work in close cooperation with product owners, feature engineers, site reliability engineers, and the user base to evolve feature life-cycles and testing strategies.
 
 
-# Testing in Production
+## Testing in Production
 
 The vast majority of tests focus on pre-production validation, specifically using tests to ensure that the software is of sufficient quality before deploying it into production. Test outcomes influence the decision on whether our software should be deployed.
 
@@ -84,11 +82,11 @@ The vast majority of tests focus on pre-production validation, specifically usin
 
 Alas, testing does not end once our software is in production. It would be embarrassing for our company if we were the last to know whether our live software is running or not. We do not rely on bug reports from our user base to be made aware of active problems. Since our production deployment varies from our test environment, we either test in production or live a lie.
 
-## Incremental Rollouts
+### Incremental Rollouts
 
 When releasing new versions, we roll out our changes to the public in iterations. Blue-green deployments and canary releases appraise working functionality and evaluate product decisions with a subset of our user base before fully committing to distributing changes. We cover these procedures in detail in [Release Strategies (*WIP)]().
 
-## Production Systems
+### Production Systems
 
 A live system used by a high number of users functions differently than our internal test environment. Our system copes with a higher amount of users, requests, bots, noise, and infrastructure dependencies.
 
@@ -98,7 +96,7 @@ As we do not have full control over our third-party integrations and partner con
 
 Registering fake users, our manual and automated tests perform tasks to verify expected outcomes of LSTs within the noisy live environments. Utilizing this pool of fake users, the product and quality departments uncover unexpected or opaque behavior for varying user groups.
 
-## Chaos Engineering
+### Chaos Engineering
 
 <!-- vale write-good.Weasel = NO -->
 <!-- only just works -->
@@ -108,7 +106,7 @@ If not pioneered by Netflix, chaos engineering is certainly being spearheaded by
 By introducing [Chaos Monkey](https://netflix.github.io/chaosmonkey/), a tool wreaking havoc on production systems, the mindset of engineers switched from *services might fail* to *services will be killed*. This practice leads to more robust systems as potential fragility (like network timeouts) is elevated from an outlier to being the norm. When outages do happen, the system and its services are designed to cope.
 
 
-# Testing Strategy
+## Testing Strategy
 
 Throughout this chapter, we discussed types of testing across the development cycle. From working on changes to releasing to production, we balance the execution of tests between utility and execution complexity, cost, and time. We have arrived at a solid foundation for a testing strategy for our organization.
 
