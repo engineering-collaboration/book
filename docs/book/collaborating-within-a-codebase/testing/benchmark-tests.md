@@ -3,54 +3,53 @@ title: Benchmark Tests
 description: In order to avoid any kind of performance regression, we run our changes through relevant benchmark tests. As the word benchmark indicates, these tests check for discrete metrics for a certain facet of our software.
 ---
 
-# Well, working software
+# Well working software
 
-Once we reliably ship working software with the help of automated functional testing, we should take a moment to appreciate our accomplishment. Running frequent and dependable tests places us in the higher echelons of software companies. I'm confident that implementing the large-scoped automated tests inspired us to consider how else we might monitor software quality beyond function. But, just as wine tasting, tattoos, home improvements, once we have a taste for it, we're planning the next one.
+Once we reliably ship working software with the help of automated functional testing, we take a moment to appreciate our new process. Running frequent and dependable tests places us in the higher echelons of software companies. After implementing large-scoped automated tests, teams typically consider how else we might monitor software quality beyond function. Just as one tattoo always leads to the next one, writing automation makes us eager for more.
 
 This chapter covers ideas and strategies on how we move from "Well, it's working." to "It's working well.".
 
 ## Benchmark Tests
 
-As the word *benchmark* indicates, these tests validate discrete metrics for a certain facet of our software. The evaluated benchmarks of our software indicate whether our organization meets the acceptance criteria set by our stakeholders. Measured metrics help us analyze and compare our performance to competitors on the market. In order to avoid any kind of performance regression, we write and run benchmark tests.
+As the word *benchmark* indicates, these tests validate metrics for a certain facet of our software. The tst results indicate whether our organization meets the acceptance criteria set by our stakeholders. These measurements help us analyze and compare our performance to competitors on the market. In order to avoid any kind of performance regression, we write and run benchmark tests.
 
-The primary example benchmarks performance. We write tests to identify efficiency bottlenecks within our software and. Over time, the practice helps us avoid performance regressions with our changes. We define performance as any metric occurring during runtime that we care about and decide to document.
+The most common - or most intuitively associated - facet to benchmark is our software's performance. We write tests to identify efficiency bottlenecks in our code. Over time, these tests warn us of performance regressions in code changes. With every metric we document and measure, we improve our ability to make implementation decisions based on facts rather than intuition. For example, we measure response times for user interactions to ensure our system meets acceptable latency standards. We identify issues related to memory leaks and resource management by running our software at full capacity for an extended amount of time.
 
-For example, we identify issues related to memory leaks and resource management by running our software at full capacity for an extended amount of time. We measure the system's maximum load and user interactions by continuously incrementing the amount of concurrent calls until processing errors crop up. We measure the acceptable loading time of a web page and response times for user interactions to ensure our system meets acceptable latency standards.
+Better benchmark runs prove the successful implementation of performance-oriented strategies, like cache effectiveness, edge content delivery, lazy loading, deferred executions, concurrency, and parallelism. Stable benchmarks, indicate that we implemented a new feature with no detrimental effect on our software's performance.
 
-We may measure performance-increasing strategies of cache effectiveness, edge content delivery, lazy loading, deferred executions, or whatever else we identify as crucial for our use cases.
+While they provide helpful information, performance benchmarks should not become our north star. The most performant software is the one that does nothing. Adding features extends a certain code execution time, because it does more work. Once we reach a performance degradation threshold, we take time to refactor the code for efficiency.
 
-While *performance tests* evaluate our proficiency when everything goes well, *robustness tests* assess our capacity for dealing with increased load and failures.
+While *performance tests* evaluate our proficiency when everything goes well, *robustness tests* assess our capacity for dealing with increased load and failures. We measure the system's maximum load and user interactions by continuously incrementing the amount of concurrent calls until processing errors crop up. We evaluate our system's ability to adapt to traffic spikes and increased resource requirements by scaling up or down in terms of hardware, software, or network resources.
 
-We evaluate our system's ability to adapt to traffic spikes and increased resource requirements by scaling up or down in terms of hardware, software, or network resources. We test our system's conduct under extreme conditions or beyond its expected maximum capacity, pinpointing the stress our software handles before breaking. When things break, we want them to break well-defined and with immediacy. Non-determinism and unknown states in our software are hazardous things.
+We test our system's conduct under extreme conditions or beyond its expected maximum capacity, pinpointing the stress our software handles before breaking. When things break, we want them to break well-defined and with immediacy. Non-determinism and unknown states in our software are hazardous things.
 
 After the worst has happened and our software crashed either due to a lack of scalability or malicious third-party attacks, we test our disaster recovery measures. Shorter durations to fully recover from downtime minimize potential costs and revenue losses to our organization.
-
-## Accessibility Tests
-
-We maximize the number of potential users by making certain our software is usable by a broad spectrum of people. Traditionally, accessibility was related to physical traits, such as vision, mobility and motor skills, hearing, speech, or cognitive disabilities. Depending on our product, we utilize a mix of static and runtime tests to verify perceptibility and input options for various senses to interact with our software. We test for contrasting color palettes, labeling, navigation, text-to-speech, font size and content zooming, and inspect our UIs and APIs against our design system to ensure internal consistency within the software.
-
-We extend physical accessibility traits with demographic, economical, and geographic factors. We test whether our software runs on a broad range of devices, potential outdated hardware, and with low-bandwidth internet. Our payment options and processing work beyond US credit cards, our application layout adapts for reading both left-to-right and right-to-left, our software uses culturally invariant upper-case and lower-case characters when processing input text and we support a broad range of character encoding.
-
-If our distribution location requires regulatory compliance, we appraise those when releasing changes to our software. We test against these requirements when packaging localized versions of our package.
 
 We run benchmark tests multiple times a week during low-traffic hours during the week or on the weekend. The longer we go without running performance tests, the harder it can be to track down the culprit.
 
 [![Benchmark Test Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/benchmark-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/benchmark-execution.png)
 
+## Accessibility Tests
+
+We maximize the number of potential users by making certain our software is usable by a broad spectrum of people. Traditionally, accessibility was related to physical traits, such as vision, mobility and motor skills, hearing, speech, or cognitive disabilities.
+
+Depending on our product, we utilize a mix of static and runtime tests to verify perceptibility and input options for various senses to interact with our software. We test for contrasting color palettes, labeling, navigation, text-to-speech, font size and content zooming, and inspect our UIs and APIs against our design system to ensure internal consistency within the software.
+
+Besides physical accessibility, we develop for a spectrum of demographic, economical, and geographic factors. We test whether our software runs on a broad range of devices, potential outdated hardware, and with low-bandwidth internet. Our UI accepts Zip codes, phone numbers, and addresses of all forms.
+
+Our payment options and processing work beyond US credit cards, our application layout adapts for reading both left-to-right and right-to-left, our software uses culturally invariant upper-case and lower-case characters when processing input text and we support a broad range of character encoding.
+
+If our distribution location requires regulatory compliance, we appraise those when releasing changes to our software. We test against these requirements when packaging localized versions of our package.
 
 ## Manual Tests
 
 The feasibility of automated tests has its limits. Human usability aspects are best evaluated with human judgment.
-
-### Qualitative
 
 Explorative manual testing appraises the quality of the output our software generates and its significance and validity in the given context. Interdisciplinary product decisions regarding usability and user experience require vision, creativity, and domain experience.
 
 We automate supporting processes for manual testing; for example, we can statically analyze if every image on a webpage has an alt text, but it becomes impractical to analyze if the alt text accurately describes the image.
 
 We statically verify that our system follows the guidelines defined within our design system. Aesthetic components such as color, loaded fonts, and spacing. It is difficult to automatically evaluate product characteristics such as transparency, clicks to purchase, and consistent experiences throughout the product.
-
-### Security
 
 During security tests and <!-- vale alex.ProfanityMaybe = NO -->penetration<!-- vale alex.ProfanityMaybe = YES --> tests, allies uncover and exploit vulnerabilities in our system before malicious entities take advantage of them. Domain experts stress the boundaries in systems, trying to effectively break our software. Broken states in our systems lead to flaws in our product, such as multiple shipments of a single order.
 
