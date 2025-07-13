@@ -31,9 +31,13 @@ We run benchmark tests multiple times a week during low-traffic hours during the
 
 ## Accessibility Tests
 
-We maximize the number of potential users by making certain our software is usable by a broad spectrum of people. Traditionally, accessibility was related to physical traits, such as vision, mobility and motor skills, hearing, speech, or cognitive disabilities.
+Traditionally, accessability was considered an ethical obligation. An effort to extend our software's usability for users with diverging physical traits in vision, mobility, motor skills, hearing, speech, or cognitive abilities. While the moral argument still stands, I would like to introduce a more cynical one: The more consumers that are able to use our software, the higher our total addressable market. Or simply put, the more people we can sell to, the more money we make.
 
-Depending on our product, we utilize a mix of static and runtime tests to verify perceptibility and input options for various senses to interact with our software. We test for contrasting color palettes, labeling, navigation, text-to-speech, font size and content zooming, and inspect our UIs and APIs against our design system to ensure internal consistency within the software.
+Over the last years the industry developed a lot of tools and guides to write software for a broad spectrum of people. Contrasting and configurable color palettes, and scalable user interfaces help render our software for people with vision difficulties. Semantic content tagging provides context for text-to-speech and speech-to-text tools. Enabling navigation via keys, touch, and mouse clicks broadens the number of hardware input devices for our software.
+
+We can test all the above traits with a mix of static analysis and runtime tests. Writing and executing these tests also ensures our UI and APIs follow standardized patterns.
+
+Design systems provide an internal consistency across the product experience. 
 
 Besides physical accessibility, we develop for a spectrum of demographic, economical, and geographic factors. We test whether our software runs on a broad range of devices, potential outdated hardware, and with low-bandwidth internet. Our UI accepts Zip codes, phone numbers, and addresses of all forms.
 
