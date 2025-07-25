@@ -33,17 +33,15 @@ We run benchmark tests multiple times a week during low-traffic hours during the
 
 Traditionally, accessability was considered an ethical obligation. An effort to extend our software's usability for users with diverging physical traits in vision, mobility, motor skills, hearing, speech, or cognitive abilities. While the moral argument still stands, I would like to introduce a more cynical one: The more consumers that are able to use our software, the higher our total addressable market. Or simply put, the more people we can sell to, the more money we make.
 
-Over the last years the industry developed a lot of tools and guides to write software for a broad spectrum of people. Contrasting and configurable color palettes, and scalable user interfaces help render our software for people with vision difficulties. Semantic content tagging provides context for text-to-speech and speech-to-text tools. Enabling navigation via keys, touch, and mouse clicks broadens the number of hardware input devices for our software.
+Over the last years the industry developed a lot of tools and guides to write software for a broad spectrum of people. Contrasting and configurable color palettes with scalable user interfaces help render our software for people with vision difficulties. Semantic content tagging provides context for text-to-speech and speech-to-text tools. Enabling navigation via keys, touch, and mouse clicks broadens the number of hardware input devices for our software.
 
-We can test all the above traits with a mix of static analysis and runtime tests. Writing and executing these tests also ensures our UI and APIs follow standardized patterns.
+We can test all the above traits with a mix of static analysis and runtime tests. Writing and executing these tests also ensures our UI and APIs follow standardized patterns. Buttons behave the same when focused, hovered, disabled, or ina loading state. Testing against these design systems provides an internal consistency across the product experience. 
 
-Design systems provide an internal consistency across the product experience. 
+Besides physical accessibility, we develop for a spectrum of demographic, economic, and geographic factors. We test our software runs against a broad range of devices, including potentially outdated hardware and low-bandwidth internet. If our distribution requires localized regulatory compliance, we appraise those when releasing changes to our software.
 
-Besides physical accessibility, we develop for a spectrum of demographic, economical, and geographic factors. We test whether our software runs on a broad range of devices, potential outdated hardware, and with low-bandwidth internet. Our UI accepts Zip codes, phone numbers, and addresses of all forms.
+Our UI accepts Zip codes, phone numbers, and addresses of all forms. Our payment options and processing work beyond US credit cards, our application layout adapts for reading both left-to-right and right-to-left, our software uses culturally invariant upper-case and lower-case characters when processing input text and we support a broad range of character encoding.
 
-Our payment options and processing work beyond US credit cards, our application layout adapts for reading both left-to-right and right-to-left, our software uses culturally invariant upper-case and lower-case characters when processing input text and we support a broad range of character encoding.
-
-If our distribution location requires regulatory compliance, we appraise those when releasing changes to our software. We test against these requirements when packaging localized versions of our package.
+I have been forced more than once to abandon an online purchase due to my Austrian zip code not matching the standardized layouts of US addresses. 
 
 ## Manual Tests
 
