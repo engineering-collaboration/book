@@ -45,11 +45,9 @@ I have been forced more than once to abandon an online purchase due to my Austri
 
 ## Manual Tests
 
-The feasibility of automated tests has its limits. Human usability aspects are best evaluated with human judgment.
+Automated tests help us develop features and avoid regressions. Computers are great at doing the same thing over and over again with reliable results. Computers struggle to reliably evaluate quality. Human expectations and experience is best evaluate with human judgement.
 
-Explorative manual testing appraises the quality of the output our software generates and its significance and validity in the given context. Interdisciplinary product decisions regarding usability and user experience require vision, creativity, and domain experience.
-
-We automate supporting processes for manual testing; for example, we can statically analyze if every image on a webpage has an alt text, but it becomes impractical to analyze if the alt text accurately describes the image.
+Explorative manual testing appraises the quality of the output our software generates and its significance and validity in the given context. We automate supporting processes for manual testing; for example, we can statically analyze if every image on a webpage has an alternative text for accessibility, but it becomes impractical to analyze if the alt text accurately describes the image.
 
 We statically verify that our system follows the guidelines defined within our design system. Aesthetic components such as color, loaded fonts, and spacing. It is difficult to automatically evaluate product characteristics such as transparency, clicks to purchase, and consistent experiences throughout the product.
 
@@ -82,8 +80,6 @@ The vast majority of tests focus on pre-production validation, specifically usin
 [![Testing In Production Execution](../../../assets/images/book/collaborating-within-a-codebase/testing/testing-in-prod-execution.webp)](../../../assets/images/book/collaborating-within-a-codebase/testing/testing-in-prod-execution.png)
 
 Alas, testing does not end once our software is in production. It would be embarrassing for our company if we were the last to know whether our live software is running or not. We do not rely on bug reports from our user base to be made aware of active problems. Since our production deployment varies from our test environment, we either test in production or live a lie.
-
-### Incremental Rollouts
 
 When releasing new versions, we roll out our changes to the public in iterations. Blue-green deployments and canary releases appraise working functionality and evaluate product decisions with a subset of our user base before fully committing to distributing changes. We cover these procedures in detail in [Release Strategies (*WIP)]().
 
