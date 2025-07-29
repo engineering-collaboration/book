@@ -45,7 +45,13 @@ I have been forced more than once to abandon an online purchase due to my Austri
 
 ## Manual Tests
 
-Automated tests help us develop features and avoid regressions. Computers are great at doing the same thing over and over again with reliable results. Computers struggle to reliably evaluate quality. Human expectations and experience is best evaluate with human judgement.
+Automated tests verify that our technical software procedures execute as expected. Running these tests frequently ensures that the procedures keep working as expected. Automated tests struggle 
+
+<!-- 
+
+  LAST EDITED UNTIL HERE.
+
+ -->
 
 Explorative manual testing appraises the quality of the output our software generates and its significance and validity in the given context. We automate supporting processes for manual testing; for example, we can statically analyze if every image on a webpage has an alternative text for accessibility, but it becomes impractical to analyze if the alt text accurately describes the image.
 
@@ -116,3 +122,5 @@ Sticking to the testing pyramid for automated tests supports building short feed
 As with the terms *unit*, *integration*, and *end-to-end*, software testing strategies birthed the labels *smoke tests*, *sanity tests*, and *regression tests* for various flavors and testing verticality. While it may make sense to group the execution of a set of MSTs and LSTs into these categories, we do not zealously follow them or mimic our testing strategy to suit predefined terms.
 
 Testing is a complex topic with subjective implementations that evolve to fit our needs.
+
+Every test needs to run on the developers machine, but we only need to automate/hook small scoped tests.
