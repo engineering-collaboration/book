@@ -9,9 +9,9 @@ Modern software is complex. As we increase the amount of code in our product, we
 
 Across our industry, we certainly have standardized terminology for categories of functional tests, but we do not have standardized definitions for these. The most popular terms include *unit tests*, *integration tests*, and *end-to-end tests*. However, if we ask three different engineers about the definition of a "unit", we can expect n^3 number of interpretations.
 
-The book *Software Engineering at Google* by Titus Winters, Tom Manshrek, and Hyrum Wright matches these terms to a strictly defined scope and categorizes *narrow-scoped tests*, *medium-scoped tests*, and *large-scoped tests*. Disregarding the specificity of the term *narrow*-scoped, I renamed those to *small-scoped* in this book for the sake of simplicity and common use.
+The book *Software Engineering at Google* by Titus Winters, Tom Manshreck, and Hyrum Wright matches these terms to a strictly defined scope and categorizes *narrow-scoped tests*, *medium-scoped tests*, and *large-scoped tests*. Disregarding the specificity of the term *narrow*-scoped, I renamed those to *small-scoped* in this book for the sake of simplicity and common use.
 
-The scope of these tests refers to the difficulty of writing the tests, the complexity of assembling the test dependencies, and finally the execution time of the tests. The larger the scope, the more resources we invest in writing and running the category of test. We execute as broad a coverage of our tests as frequently and early in the development cycle as possible without stalling developer velocity.
+The scope of these tests refers to the difficulty of writing the tests, the complexity of assembling the test dependencies, and the execution time of the tests. The larger the scope, the more resources we invest in writing and running the category of test. We execute as broad a coverage of our tests as frequently and early in the development cycle as possible without stalling developer velocity.
 
 When testing on dedicated machinery on-prem, every minute our build and test computer sits idle increases the potential of propagating a faulty state down the line. However, every processing minute on third-party cloud runners increases our costs. Depending on our needs, we either buy more minutes, offload some tests to on-prem runners, or reduce the scope of tests and run larger tests less frequently.
 
@@ -31,7 +31,7 @@ A common anti-pattern to this approach is the *testing snow cone*, or *inverted 
 
 The test snow cone typically emerges from legacy software that was not written with testability in mind. Closed-off systems make it difficult to test individual steps and a lack of dependency-injection prevents us from writing light-weight in-memory tests. Besides that, a lack of ownership in infrastructure or testing workflows may invert our testing pyramid. If we find it difficult to write, update, and execute tests, we lack the motivation to do so and shift the responsibility to QA.
 
- Over the rest of this chapter we'll explore our testing scopes in detail.
+Over the rest of this chapter we'll explore our testing scopes in detail.
 
 !!! tip "Recommendation"
     <img src="https://abseil.io/img/swe_at_google.2.cover.jpg" width="360" style="display: block; margin-left: auto; margin-right: auto;" alt="Engineering Collaboration">
@@ -42,9 +42,9 @@ The test snow cone typically emerges from legacy software that was not written w
 
 ## Small-Scoped Tests
 
-The advantage of small-scoped tests lies in the little amount of resources they require. The limitations we enforce and the isolated nature of small focused tests make the the code straightforward to write and easy to maintain. Small-scoped tests execute speedily without arranging external dependencies. Our software commonly contains thousands of small-scoped tests, all collectively executed in seconds.
+The advantage of small-scoped tests lies in the little amount of resources they require. The limitations we enforce and the isolated nature of small focused tests make the code straightforward to write and maintain. Small-scoped tests execute swiftly and without initializing external dependencies. Our software commonly contains thousands of small-scoped tests, all collectively executed in seconds.
 
-We limit small-scoped tests to the fastest possible testable entity in our code, in-memory operations. Small-scoped tests do not run disk operations or network operations. They do not not sleep, make other blocking calls, or consume other OS processes. These factors are covered by medium-scoped tests. Writing source code and its tests code with these constraints in mind, enables us to verify a broad set of behavior with minimal effort.
+We limit small-scoped tests to the fastest possible testable entity in our code, in-memory operations. Small-scoped tests do not run disk operations or network operations. They do not sleep, make other blocking calls, or consume other OS processes. These factors are covered by medium-scoped tests. Writing source code and its tests code with these constraints in mind, enables us to verify a broad set of behavior with minimal effort.
 
 The limitations on their complexity make small-scoped tests rapid. Hence, we run them as often as possible. Their small footprint facilitates executing them during every step of the development cycle: while coding on our local machines, on pre-merge checks, post-merge validations, and as pre-release requirements. A complete suite of passing small-scoped tests increases the confidence of introducing changes without irritating our code base.
 
@@ -58,7 +58,7 @@ Incrementing our nomenclature by a size, medium-scoped tests verify the expected
 
 In order to test against these environments, we need to set them up. While we could build physical test farms consisting of dedicated hardware for different environments, this approach becomes unwieldy for modern software requirements. The sheer amalgamation of execution environments grew exponentially over the years. We cannot store and maintain every Android device on the market, nor can we provide Windows machinery with all combinations of graphic card models and their various drivers.
 
-Besides adaptability, running on dedicated but a limited amount of hardware introduces a bottleneck to our testing availability. Once our testing frequency surpasses our testing load we delay discovering any breaking changes in our software. Additionally, if we cannot isolate test runs on shared hardware we influence other test runs. Tests that leave the environment in a non-neutral state tarnish all following executions, and parallel tests competing over limited resources lead to flaky test results.
+Besides adaptability, running on dedicated but a limited amount of hardware introduces a bottleneck to our testing availability. Once our testing frequency surpasses our testing load we delay discovering any breaking changes in our software. Plus, if we cannot isolate test runs on shared hardware we influence other test runs. Tests that leave the environment in a non-neutral state tarnish all following executions, and parallel tests competing over limited resources lead to flaky test results.
 
 To counter these problems, we move from wholly physical environments to software-defined infrastructure. Virtual machines and containers allow us to isolate various test environments on shared machinery. To ensure hermeticity across sessions and devices, we use declarative and imperative tools to construct consistent testing infrastructure. Thus, any machine with the required virtualization technology installed may run our test cases.
 
@@ -70,7 +70,9 @@ We prefer to test against real implementations of connected systems. While moder
 
 #### Stubs
 
+<!-- vale write-good.Weasel = NO -->
 *Stubs* replace external dependencies with hard-coded responses. These canned implementations allow us to test code paths where response values are expected, but its content proves insignificant to our test case. *Stubs* require low effort and often consist of a single return value for stubbed methods. Initially typed out manually, sophisticated code bases may eventually autogenerate these based on source code or OpenAPI schemas with examples.
+<!-- vale write-good.Weasel = YES -->
 
 ```golang
 // Stub method for host/product/db/user.go#43
@@ -88,7 +90,7 @@ If we require higher fidelity in our tests, we write *mock* implementations - st
 
 We use mocks for convenience when testing our source code. High-quality mocks require a low amount of resources, start up quickly, and are dead simple to use. The smarter a mock implementation, the less fitting it becomes for medium-scoped testing. A common fallacy of misplaced enthusiasm are *mirror doubles*. High fidelity systems that trade one complex dependency for a another slightly less complex one.
 
-Substituting dependencies with mock implementations works best when code was written with testability in mind. Writing tests in tandem with source code improves the odds of injecting mocks for testing in greenfield projects. Especially when we work on "glue" code between platforms we pause to consider the testing code. Typically any officially supported API wrapper offers a mock substitute for the wrapper.
+Substituting dependencies with mock implementations works best when code was written with testability in mind. Writing tests in tandem with source code improves the odds of injecting mocks for testing in greenfield projects. <!-- vale write-good.Weasel = NO -->Especially<!-- vale write-good.Weasel = YES --> when we work on "glue" code between platforms we pause to consider the testing code. Typically any officially supported API wrapper offers a mock substitute for the wrapper.
 
 For the sake of brevity the following code snippet omits the actual mock code, but demonstrates how we inject a mock database to run our test against.
 
@@ -111,7 +113,7 @@ func Test_AuthenticateUserFromPayload(t *testing.T) {
 
 #### Fakes
 
-In the real world we find ourselves limited by factors out of our control. Previous decisions hardcoded an external dependency which monopolizes our testing resources. Initially we were able to increase our testing hardware to run multiple instances of our expensive system, but our CI/CD journey is blocked by the increased costs. We spend over half the testing time getting our dependencies up and running, or allocate massive amount of CPU and memory for code not currently being tested.
+In the real world we find ourselves limited by factors out of our control. Previous decisions hard-coded an external dependency which monopolizes our testing resources. Initially we were able to increase our testing hardware to run multiple instances of our expensive system, but our CI/CD journey is blocked by the increased costs. We spend over half the testing time getting our dependencies up and running, or allocate massive amount of CPU and memory for running code that has not changed.
 
 Fakes can be written either as a full stand-in replacement for testing, or within the original source code with alternate runtime configuration. We prune our dependency tree by skipping any expensive operations in form of validation, encryption, telemetry, serialization, authentication. All the aspects necessary for running in production, burden our test runs.
 
@@ -147,7 +149,10 @@ TODO: (Daniel) Make this chapter coherent. Avoid going in to detail.
 This is an introduction. Detailed LST could be a book of itself.
 -->
 
+<!-- vale write-good.Weasel = NO -->
+<!-- finally -->
 Within the cosmology of automated testing, large-scoped tests embody the most expensive, complex, and adventurous test suite to set up and execute. Commonly referred to as *end-to-end tests* or *system tests*, they round off the pinnacle of the testing pyramid. Large-scoped tests validate a full roundtrip of a product feature - triggering an action via a UI or an API, authenticating the instigator, processing the request, forwarding the request to downstream components, reading and writing states to a database, and finally presenting a result to the user.
+<!-- vale write-good.Weasel = YES -->
 
 Due to the complexity and effort of creating environments for LSTs, an instinctive initial approach is to run a second deployment, identical to the live production, dedicated to staging and verifying our changes. However, n increasing number of teams staging changes to the same environment inflates the brittleness of said environment. Forcing a massive end-to-end test environment introduces problematic correlations and false positives or negatives. If we do offer LST staging areas, we must ensure every team can spin up a fenced-off instance to singularly test changes specified by that team.
 
@@ -165,4 +170,4 @@ Contrary to test doubles, we do not test our changes against an abstraction of o
 
 Contract testing extends static strategies such as API testing and schema testing and requires more collaboration between contract parties. API testing and schema testing work exceptionally well when our organization embraces documentation-driven development, a practice where documentation is written first, and boilerplate code is generated based on the schema of the documentation. This kind of testing requires a lack of documentation drift, a fact realistically achievable if the documentation drives source code, not the other way round. [OpenAPI](https://www.openapis.org/) is a popular standard with a rich economy of open source tooling.
 
-Writing and editing this chapter coincided with the acquisition of our startup and the resulting release of Perforce P4 One. The intermittent chances I had to work on this book led to a somewhat disjointed chapter. Until I find time to properly edit the three thousand words about automated functional testing, I release you with the three main takeaways of this prose: Run tests as early as possible, at the smallest scope possible, and only keep tests that build trust in the testing procedure. Testing best-practices are the one that are actually run by our developers.
+Writing and editing this chapter coincided with the acquisition of our startup and the resulting release of Perforce P4 One. The intermittent chances I had to work on this book led to a somewhat disjointed chapter. Until I find time to properly edit the three thousand words about automated functional testing, I'll finish on the three main takeaways of this prose: Run tests as early as possible, at the smallest scope possible, and only keep tests that build trust in the testing procedure. Testing best-practices are the one that are actually run by our developers.

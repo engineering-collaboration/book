@@ -11,7 +11,7 @@ This chapter covers ideas and strategies on how we move from "Well, it's working
 
 ## Benchmark Tests
 
-As the word *benchmark* indicates, these tests validate metrics for a certain facet of our software. The tst results indicate whether our organization meets the acceptance criteria set by our stakeholders. These measurements help us analyze and compare our performance to competitors on the market. In order to avoid any kind of performance regression, we write and run benchmark tests.
+As the word *benchmark* indicates, these tests validate metrics for a certain facet of our software. The test results indicate whether our organization meets the acceptance criteria set by our stakeholders. These measurements help us analyze and compare our performance to competitors on the market. In order to avoid any kind of performance regression, we write and run benchmark tests.
 
 The most common - or most intuitively associated - facet to benchmark is our software's performance. We write tests to identify efficiency bottlenecks in our code. Over time, these tests warn us of performance regressions in code changes. With every metric we document and measure, we improve our ability to make implementation decisions based on facts rather than intuition. For example, we measure response times for user interactions to ensure our system meets acceptable latency standards. We identify issues related to memory leaks and resource management by running our software at full capacity for an extended amount of time.
 
@@ -31,11 +31,11 @@ We run benchmark tests multiple times a week during low-traffic hours during the
 
 ## Accessibility Tests
 
-Traditionally, accessability was considered an ethical obligation. An effort to extend our software's usability for users with diverging physical traits in vision, mobility, motor skills, hearing, speech, or cognitive abilities. While the moral argument still stands, I would like to introduce a more cynical one: The more consumers that are able to use our software, the higher our total addressable market. Or simply put, the more people we can sell to, the more money we make.
+Traditionally, accessibility was considered an ethical obligation. An effort to extend our software's usability for users with diverging physical traits in vision, mobility, motor skills, hearing, speech, or cognitive abilities. While the moral argument still stands, I would like to introduce a more cynical one: The more consumers that are able to use our software, the higher our total addressable market. Or <!-- vale awrite-good.Weasel = NO -->simply<!-- vale write-good.Weasel = YES -->, the more people we can sell to, the more money we make.
 
 Over the last years the industry developed a lot of tools and guides to write software for a broad spectrum of people. Contrasting and configurable color palettes with scalable user interfaces help render our software for people with vision difficulties. Semantic content tagging provides context for text-to-speech and speech-to-text tools. Enabling navigation via keys, touch, and mouse clicks broadens the number of hardware input devices for our software.
 
-We can test all the above traits with a mix of static analysis and runtime tests. Writing and executing these tests also ensures our UI and APIs follow standardized patterns. Buttons behave the same when focused, hovered, disabled, or ina loading state. Testing against these design systems provides an internal consistency across the product experience. 
+We can test all the above traits with a mix of static analysis and runtime tests. Writing and executing these tests also ensures our UI and APIs follow standardized patterns. Buttons behave the same when focused, hovered, disabled, or processing an action. Testing against these design systems provides an internal consistency across the product experience. 
 
 Besides physical accessibility, we develop for a spectrum of demographic, economic, and geographic factors. We test our software runs against a broad range of devices, including potentially outdated hardware and low-bandwidth internet. If our distribution requires localized regulatory compliance, we appraise those when releasing changes to our software.
 

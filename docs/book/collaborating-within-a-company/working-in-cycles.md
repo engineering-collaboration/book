@@ -53,12 +53,8 @@ All team members are present for the duration of the meeting, and every individu
 <!-- vale write-good.Weasel = NO -->
 <!-- remarkably -->
 
-<!-- vale alex.Condescending = NO -->
-<!-- simply -->
-
 Humans are remarkably bad at estimating work. It's a skill we simply cannot intuit. Besides not being able to predict the actual time it takes to execute work, we severely underestimate the amount of distractions in our lives that hinder our progress.
 
-<!-- vale alex.Condescending = YES -->
 <!-- vale write-good.Weasel = YES -->
 
 In the book *Noise: A Flaw in Human Judgment*, *Daniel Kahneman*, *Olivier Sibony*, and *Cass R. Sunstein* discuss how individual judgment and estimates are so unpredictable that the outcomes effectively become random. Every decision varies depending on a person's current state of mind, affected by breakfast intake, weather, spousal discourses, and more. We do not control these subtle influences consciously, nor are we aware of them. This causes our estimation for upcoming work to differ considerably from one day to another.
