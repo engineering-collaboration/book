@@ -7,7 +7,7 @@ description: Collaborating within a Codebase covers the day-to-day processes for
 
 Part two of this book covers the day-to-day processes for streamlining technical product development. It focuses on a solid foundation of CI/CD which can be extended by our organization. Utilizing automation we can <!-- vale write-good.Weasel = NO -->significantly<!-- vale write-good.Weasel = YES --> reduce cognitive load and ensure consistent deliveries of our product.
 
-The practices covered in this part may be extended beyond our engineering departments. Our mantra is to do less, but inversely do the hard work to make things <!-- vale alex.Condescending = NO -->simple<!-- vale alex.Condescending = YES -->.
+The practices covered in this part may be extended beyond our engineering departments. Our mantra is to do less, but inversely do the hard work to make things simple.
 
 !!! note "Rewrite progress"
 

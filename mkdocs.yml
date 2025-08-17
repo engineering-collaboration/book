@@ -105,14 +105,8 @@ nav:
 
       - Testing:
         - './book/collaborating-within-a-codebase/testing/README.md'
-        - Good Practices: './book/collaborating-within-a-codebase/testing/good-practices.md'
-        - Small-Scoped Tests: './book/collaborating-within-a-codebase/testing/small-scoped-tests.md'
-        - Medium-Scoped Tests: './book/collaborating-within-a-codebase/testing/medium-scoped-tests.md'
-        - Large-Scoped Tests: './book/collaborating-within-a-codebase/testing/large-scoped-tests.md'
-        - Benchmark Tests: './book/collaborating-within-a-codebase/testing/benchmark-tests.md'
-        - Manual Tests: './book/collaborating-within-a-codebase/testing/manual-tests.md'
-        - Testing in Production: './book/collaborating-within-a-codebase/testing/testing-in-production.md'
-        - Testing Strategy: './book/collaborating-within-a-codebase/testing/testing-strategy.md'
+        - Automated Functional Tests: './book/collaborating-within-a-codebase/testing/automated-functional-tests.md'
+        - Beyond Functional Tests: './book/collaborating-within-a-codebase/testing/beyond-functional-tests.md'
 
       - Release Mechanisms: './book/collaborating-within-a-codebase/release-mechanisms.md'
       - Artifact Management: './book/collaborating-within-a-codebase/artifact-management.md'
