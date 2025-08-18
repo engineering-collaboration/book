@@ -43,11 +43,16 @@ Most modern CI platforms allow users to create labels or key-value pairs for MRs
 
 ## Merge constraints
 
-We establish clear guidelines on how to structure our PRs and design a streamlined process with automated and manual steps for accepting a change. We do not advocate for any specific source control platform or their implementation of PRs. As with all things, differing solutions come with various pros and cons. That being said, PRs tend to consist of the following attributes.
+MRs act as a gate-keeping mechanism to our `main` branch. Thus, we subject requested integrations to a certain amount of scrutiny. We examine incoming changes using automated tools and manual reviews to ensure high-quality code integrations. For every check, we provide context as to why that particular constraint exists to make it feel less arbitrary. People are less inclined to push back against rules when there is a clear reason behind them. Once a branch passes all checks, it is considered *green* and may be merged into our trunk.
 
-We subject requested integrations to a certain amount of scrutiny. This scrutiny comes in the form of automated reviews and manual reviews to ensure high-quality code integrations. A branch that passes tests is referred to as *being green*.
+Typical merge constraints consist of:
 
-For every step, we provide context as to why that particular constraint exists to make it feel less arbitrary. People are less inclined to push back against rules when there is a clear reason behind them.
+- Verify conflict-free code changes: Ensure changes we made to the code do not collide with changes made by others. Any modern version control system offers this check out-of-the-box.
+- Build the software: Even if changes across developers do not collide, they may not result in a well-formed code base. Plus, people may forget to add new files to the version control system. We compile and/or build the software to verify the submitted state. 
+- Static Analysis: A suite of tools that inspects the code syntax without running the code. We discuss this step in detail in the next paragraph.
+- Automated test runs: A set of tools that runs the software and executes a test suite to verify our changes do not break existing behavior. We discuss automated tests in detail in the chapter [Testing](./testing/README.md).
+- AI code review: We feed our changes to an LLM. The model highlights dubious code based on the observations of its training data.
+- Manual code review: We ask a colleague to inspect our changes. A fresh set of eyes may catch a mistake we made or an edge-case we missed. We discuss manual code review in detail in the chapter [Code Reviews](./code-review.md).
 
 ### Static Analysis
 
@@ -135,6 +140,8 @@ The act of cherry-picking commits cannot, in good conscience, be described as a 
 Optionally, cherry-picking applies the contents of a commit to our current workspace, rather than appending a commit itself. This permits us to edit the content or revert unwanted modifications bundled within the cherry-picked change before creating a new commit in our development branch.
 
 ## Templates
+
+We establish clear guidelines on how to structure our PRs and design a streamlined process with automated and manual steps for accepting a change.
 
 Wherever possible, we reduce the workload of composing PRs by offering templates and boilerplate content. Using templates, we pave the way for our engineers to follow standardized titles, descriptions, labels, and assign reviewers. We list often-forgotten tasks for our engineers to check before opening a PR.
 
