@@ -1,3 +1,8 @@
+---
+title: Merge Requests
+description: Merge requests pave the way for introducing high-quality changes into our main branch and ultimately our product.
+---
+
 # Merge Requests
 
 We fixed the bug. We completed the feature. We underestimated the effort of our task and want to integrate the first code changes. Regardless, it works on our machine and we're ready to integrate our changes into the `main` branch. To ensure we only merge high-quality code into our main branch and ultimately our product, we scrutinize any additions into our trunk via a gate-keeping mechanism called a *Merge Request* (MR). All serious source control platforms offer automation, tooling, and UIs for creating and reviewing MRs.
