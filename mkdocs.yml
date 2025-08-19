@@ -97,11 +97,8 @@ nav:
       - CI/CD: './book/collaborating-within-a-codebase/cicd.md'
       - Trunk Based Development: './book/collaborating-within-a-codebase/trunk-based-development.md'
       - Planning Implementations: './book/collaborating-within-a-codebase/planning-implementations.md'
-      - Commits: './book/collaborating-within-a-codebase/commits.md'
-      - Pull Requests: './book/collaborating-within-a-codebase/pull-requests.md'
-      - Static Analysis: './book/collaborating-within-a-codebase/static-analysis.md'
+      - Merge Requests: './book/collaborating-within-a-codebase/merge-requests.md'
       - Code Reviews: './book/collaborating-within-a-codebase/code-review.md'
-      - Merging: './book/collaborating-within-a-codebase/merging.md'
 
       - Testing:
         - './book/collaborating-within-a-codebase/testing/README.md'
