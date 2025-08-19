@@ -6,7 +6,7 @@ A MR allows developers to provide context for their changes. We can provide info
 
 ## Metadata
 
-The first encounter to any MR is its title. Not only do our coworkers read it, our automation tooling consumes the MR title for different tasks. We use it as the message for merge commits, we include them in automated release notes, and when sharing the link to a MR, the title builds the foundation for the social content preview. Short, concise, and descriptive titles improve the readability and traceability of our changes.
+The entrypoint to any MR is its title. Not only do our coworkers read it, our automation tooling consumes the MR title for different tasks. We use it as the message for merge commits, we include them in automated release notes, and when sharing the link to a MR, the title builds the foundation for the social content preview. Short, concise, and descriptive titles improve the readability and traceability of our changes.
 
 !!! note "A quick guide on merge request titles"
     Writing MR titles follows the same principles as writing commit messages. 
@@ -56,11 +56,9 @@ Typical merge constraints consist of:
 
 ### Static Analysis
 
-Static analysis scans the code as text without actually executing it. It verifies that we follow agreed-upon conventions in our solution to maintain consistent readability, avoid bugs, and prevent security vulnerabilities before running our code. Static analysis is run at every step of our code change: pre-merge, post-merge, and pre-release.
+Static analysis scans the code as text without actually executing it. It verifies that our solution follows consistent standards to maintain readability, avoid bugs, and prevent security vulnerabilities. Maintaining a consistent code base reduces friction when integrating our work within and across our teams by reducing the cognitive load when reading code. People can focus on the content of what is being written if the syntax layout is identical to the layout of their work.
 
-The most fundamental form of static analysis uses pattern matching to ensure our compliance with internally agreed-upon code formatting. We follow our organization's conventions regarding the type of whitespace, indentation, maximum line length, naming of objects, etc. We execute code linters specific to the programming language and extend these to cover the needs of our team.
-
-Maintaining a consistent code base reduces friction when integrating our work within and across our teams by reducing the cognitive load when reading code. People can focus on the content of what is being written if the syntax layout is identical to the layout of their work.
+The most fundamental form of static analysis uses pattern matching to ensure our compliance with internally agreed-upon code formatting. We follow our organization's conventions regarding the type of whitespace, indentation, maximum line length, naming of objects, etc. We run language-specific code linters and extend these to cover the needs of our team.
 
 Aside from programmatic syntax, we utilize static analysis practices for documentation. Pattern matching enforces practices that enrich embedded documentation by flagging improperly formatted comments across functions and objects. External documentation follows style guides that we enforce by configuring our static analysis tools.
 
@@ -72,18 +70,17 @@ Resource leak detection in static analysis flags missing closures of objects, al
 
 We define goals for static analysis and monitor the progress over time. Propitiously, the output of this process lends itself to distinctly measurable metrics. We track the number and nature of issues detected, as well as the time it takes to address them. When migrating away from certain libraries, we deprecate the use of these to guard against new dependencies popping up across the organization.
 
-Our tools do not merely flag misuse of certain aspects but offer solutions. Wherever possible, we automate resolutions of static analysis issues. Every manual step creates cognitive load which opens the door to frustration and failure to follow standardized practices.
+Our tools do not merely flag misuse of certain aspects but offer solutions. Wherever possible, we automate resolutions of static analysis issues. Every manual step creates cognitive load which opens the door to frustration and failure to follow standardized practices. Static analysis is run at every step of our code change: pre-merge, post-merge, and pre-release.
 
 Throughout the organization, we enforce high-impact issues and severe security vulnerabilities with static analysis; we wield it as a scalpel, not a hammer. A facilitating team of security and performance experts creates the smallest common denominator in collaboration with stakeholders across the organization.
 
 Aside from prime issues, every team configures tooling to minimize noise and maximize development velocity. As with anything in the CI/CD mindset, static analysis practices evolve. We remove noisy configurations, add new rules to face novel problems, and adjust the severity of recommendations over time.
 
-
 ## Merging
 
 When multiple people work on the same project, other people may have introduced changes to `main` since we last diverged from the branch. If others worked on the same file as us, these changes might collide. We need to resolve these conflicts.
 
-*Git* merges compatible changes automatically. Resolving conflicts, however, requires manual intervention. We compare the clashing lines of changes and rectify the discord by editing the changes to accept a change from either source or manually edit a functioning resolution containing workings of both origins.
+Most version control tools merge compatible changes automatically. Resolving conflicts, however, requires manual intervention. We compare the clashing lines of changes and rectify the discord by editing the changes to accept a change from either source or manually edit a functioning resolution containing workings of both origins.
 
 When rebasing changes, we find ourselves recurrently resolving the same lines across commits; such is the nature of this process. We minimize our rebasing effort by integrating changes frequently into main, rebasing our development branch frequently, squashing development commits of our development branch.
 
