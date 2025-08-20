@@ -15,7 +15,10 @@ Setting up inter-team communication channels for shared topics helps teams unblo
 
 ## Discovering Code
 
+<!-- vale alex.Condescending = NO -->
+<!-- Easy -->
 When innersourcing is done well, engineers explore existing internal solutions before considering open-source code, licensed software, or (god forbid) writing bespoke code. Alas, in order to review internal code, we need to find it. Easy discovery of code avoids wasted time and duplicated work.
+<!-- vale alex.Condescending = YES -->
 
 We discussed the monorepo vs multirepo approach in the chapter [Trunk Based Development](). If our organization stores all source code across all its products in a single repository, all engineers have access to our organization's entire source code. This makes it easier to find, use, or build upon existing solutions across the product stack. We have access to the company's entire arsenal of automation tools and CI/CD processes. Well-formed examples help us write and execute tests. Since all engineers work with the same tools we have an easier time to support members of other teams.
 

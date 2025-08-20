@@ -48,7 +48,7 @@ Sometimes we discover a bug in an open-source project or find room for improveme
 
 We balance the rate of adoption of version updates to our dependencies. Accepting the latest release of each package increases our risk of introducing incompatible changes, while delaying adoption exposes us to security vulnerabilities and rising technical debt. Too much time between version bumps complicates the process of consolidating the new dependency version with our software and makes upstream fixes difficult.
 
-## Repo Strategy
+## Repository Strategy
 
 This monorepo contains code in various programming languages and dedicated CI/CD scripts per product. Every engineer pulls from and pushes to the same repository. Scaling monorepos requires additional tooling and mature processes.
 
