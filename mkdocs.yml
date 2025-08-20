@@ -106,11 +106,9 @@ nav:
         - Beyond Functional Tests: './book/collaborating-within-a-codebase/testing/beyond-functional-tests.md'
 
       - Release Mechanisms: './book/collaborating-within-a-codebase/release-mechanisms.md'
-      - Artifact Management: './book/collaborating-within-a-codebase/artifact-management.md'
-      - Release Strategies: './book/collaborating-within-a-codebase/release-strategies.md'
-
+      - Source and Artifact Management: './book/collaborating-within-a-codebase/source-and-artifact-management.md'
       - Documentation: './book/collaborating-within-a-codebase/documentation.md'
-      - Repository Strategies: './book/collaborating-within-a-codebase/repository-strategies.md'
+      - Release Strategies: './book/collaborating-within-a-codebase/release-strategies.md'
       - Monitoring and Observability: './book/collaborating-within-a-codebase/monitoring-and-observability.md'
 
   - Resources: 'resources.md'

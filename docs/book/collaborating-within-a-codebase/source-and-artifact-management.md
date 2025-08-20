@@ -3,7 +3,7 @@ title: Artifact Management
 description: How we manage a cornucopia of interdependent artifacts before, during, and after our build process.
 ---
 
-# Artifact Management
+# Source and Artifact Management
 
 Building a release produces a cornucopia of interdependent artifacts for us to manage. Depending on our product, a single release may build:
 
@@ -47,6 +47,26 @@ We create a hermetic environment with our dependent packages, libraries, and SDK
 Sometimes we discover a bug in an open-source project or find room for improvement in the current implementation. If appropriate, we instantiate a fork of the project in our organization's environment. A fork of a repository is a duplication of the source code with metadata references to the original project. We fix our issue internally and point our dependencies at our new internal solution. In the spirit of the open-source community, we share our work with the original project using the contribution guidelines.
 
 We balance the rate of adoption of version updates to our dependencies. Accepting the latest release of each package increases our risk of introducing incompatible changes, while delaying adoption exposes us to security vulnerabilities and rising technical debt. Too much time between version bumps complicates the process of consolidating the new dependency version with our software and makes upstream fixes difficult.
+
+## Repo Strategy
+
+This monorepo contains code in various programming languages and dedicated CI/CD scripts per product. Every engineer pulls from and pushes to the same repository. Scaling monorepos requires additional tooling and mature processes.
+
+When organizing code within a monorepository all engineers have access to our organization's entire source code. This makes it easier to find, use, or build upon existing solutions across the product stack. We have access to the company's entire arsenal of automation tools and CI/CD processes. Well-formed examples help us write and execute tests. Since all engineers work with the same tools we have an easier time to support members of other teams.
+
+When working on independently deployable services or applications, we organize the projects as separate repositories (multirepo) or within a single repository (monorepo). A distinguished company using the monorepo approach is Google. The company evangelized managing its entire source across all projects within a single code repository. All engineers work within that monorepo.
+
+Independent products within an organization depend on shared code to solve common problems. A major advantage of the monorepo strategy is that the overlap of shared code is easier to manage. Large-scale changes and refactors within a single repository represent a working state. Refactors across multiple repositories require external knowledge about compatible snapshots.
+
+Modern software products depend on packages, libraries, and binaries from third-party providers. Consuming artifacts of other products does not signal the need for a shared repository. However, substantial use of git submodules indicates hard dependencies on source code, which might benefit from consolidating the projects into a single repository.
+
+Our engineers have read access to the entire source code across the organization and write privileges to their respective work. However, at a given scale, we provide tooling for efficient transfer and storage of data. We cannot expect an intern with a narrow range of responsibilities to download and save a decade of code changes across all products.
+
+Monorepos organically tear down communication silos across teams, but we deal with increased noise from collaborators on a daily basis. At a given size, we necessarily implement the concept of a merge queue, or throw linear history out the window. Merge queues rebase and integrate the changes asynchronously and one at a time. It becomes easier to enforce company-wide standards and static analysis. As a result, moving engineers between teams becomes less of a bother.
+
+In monorepos, we encounter additional overhead with creating and handling CI workflows. We require additional dedicated personnel to ensure efficient automation runs in hermetic environments. However, a consolidated CD system means every team has the tools and know-how to deploy the entire system.
+
+In the end, we go with the approach that requires the least amount of proprietary effort. Our organization's repository strategies mirror the team constellation and module composition of our product. A growing module within a repository might require a spin-out. An increase in shared code across services leads to consolidation.
 
 ## Build and Test Dependencies
 
